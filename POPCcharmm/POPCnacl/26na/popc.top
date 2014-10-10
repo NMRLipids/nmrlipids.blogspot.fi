@@ -1,0 +1,14 @@
+; Include forcefield parameters
+#include "../charmm36.ff/forcefield.itp"
+#include "../charmm36.ff/ions.itp"
+#include "../POPC.itp"
+#include "../charmm36.ff/tip3p.itp"
+
+[ system ]
+72 POPC in water
+
+[molecules]
+POPC 72
+SOL 2190
+CL 26
+NA 26
