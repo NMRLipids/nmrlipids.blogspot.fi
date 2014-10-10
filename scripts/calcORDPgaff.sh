@@ -1,0 +1,9 @@
+awk -v Cname="   C7" -v Hname="   H8" -f gro_OP.awk runPROT.gro
+awk -v Cname="   C7" -v Hname="   H9" -f gro_OP.awk runPROT.gro
+awk -v Cname="   C6" -v Hname="   H6" -f gro_OP.awk runPROT.gro
+awk -v Cname="   C6" -v Hname="   H7" -f gro_OP.awk runPROT.gro
+awk -v Cname="   C5" -v Hname="   H4" -f gro_OP.awk runPROT.gro
+awk -v Cname="   C5" -v Hname="   H5" -f gro_OP.awk runPROT.gro
+awk -v Cname="   C3" -v Hname="   H3" -f gro_OP.awk runPROT.gro
+awk -v Cname="   C2" -v Hname="   H1" -f gro_OP.awk runPROT.gro
+awk -v Cname="   C2" -v Hname="   H2" -f gro_OP.awk runPROT.gro
