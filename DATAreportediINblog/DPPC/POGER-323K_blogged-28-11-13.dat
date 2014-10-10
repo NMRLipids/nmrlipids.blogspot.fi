@@ -1,0 +1,45 @@
+# Submitted to nmrlipids.blogspot.fi by Patrick Fuchs on 28 Nov 2013.
+#
+# Note. The setups here were identical to the "POGER-323K_blogged-25-10-13.dat",
+# except for the initial velocities, which were recreated.
+#
+# Poger. DPPC. 323K.
+#
+# Gromacs 4.0.7.
+#
+# 100 ns simulations, last 50 ns used for analysis.
+# Both PME and RF:
+#   rvdw=1.4, nstlist=5 for PME;
+#   rvdw=1.4, nstlist=5, rlist=0.8, rcoulomb=1.4, epsilon_rf=62 for RF (GROMOS standards)
+# Parrinello-Rahman barostat with time constant 4 ps.
+#
+# Note. The "dppc.itp" downloaded from Poger's website in April 2012.
+# Since then "dppc.itp" has changed: a version downloaded in Oct 2013
+# from the same web page has two dihedrals missing:
+# $ diff dppc_Apr2012.itp dppc_Oct2013.itp 
+# < 2 4 5 6 1 gd_29
+# < 3 4 5 6 1 gd_29
+# $
+
+
+
+#C-#PME-------#RF--------
+# beta:
+1 0.0103783 0.00709458
+1 0.0214663 0.0278493
+
+# alpha:
+2 0.0835412 0.0895108
+2 0.0985141 0.0855304
+
+# g3:
+3 0.10375   0.0849479
+3 0.238471  0.229221
+
+# g2:
+4 0.111633  0.0947689
+
+# g1:
+5 0.11745   0.117584
+5 0.0737633 0.103398
+

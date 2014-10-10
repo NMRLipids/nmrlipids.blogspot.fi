@@ -1,0 +1,30 @@
+# Seelig et al. BBA 467, 109 (1977)
+#
+#    http://dx.doi.org/10.1016/0005-2736(77)90188-2
+#
+# DPPC. 322K. 2H-NMR.
+#
+# Note. The values are apparently taken from Gally, Niederberger,
+# and Seelig, Biochemistry 14 3647 (1975),
+#
+#   http://dx.doi.org/10.1021/bi00687a021
+#
+# that measured these order parameters as a function of temperature.
+# Hence, it is better to refer to that paper directly.
+#
+# The funny 2-row format is to allow drawing horizontal lines in gnuplot.
+
+# beta:
+0.69 0.04
+0.95 0.04
+
+# alpha:
+1.69 0.05
+1.95 0.05
+
+# g3:
+2.69 0.23
+2.95 0.23
+
+2.69 0.21
+2.95 0.21

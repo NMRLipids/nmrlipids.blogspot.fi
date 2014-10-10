@@ -1,0 +1,29 @@
+# Posted by Matti Javanainen in nmrlipids.blogspot.fi on 22 Jan 2014.
+# Simulations done by Joona Tynkkynen.
+#
+# POPC. Unpublished Maciejewski-Rog force field. 310K.
+#
+# 120ns, last 50ns analyzed.
+#
+# PME. 288 lipids (as the parameters are identical to the ones posted
+# on Sep 20th 2013 by Matti Javanainen, and the only difference should
+# be the number of waters.). ~50 waters/lipid.
+
+# beta:
+1 0.0050
+1 0.0396
+
+# alpha:
+2 0.0577
+2 0.0344
+
+# g3:
+3 0.1352
+3 0.2417
+
+# g2:
+4 0.2017
+
+# g1: 
+5 0.1626
+5 0.0175

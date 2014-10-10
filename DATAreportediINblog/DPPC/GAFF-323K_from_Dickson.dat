@@ -1,0 +1,26 @@
+# Data taken from the GAFFlipid publication:
+#
+#    Dickson, Rosso, Betz, Walker & Gould.
+#    Soft Matter 8 9617-9627 (2012)
+#
+# GAFFlipids. DPPC. 323K.
+
+# beta:
+1  0.0220779220779
+1  0.0305194805195
+
+# alpha:
+2  0.0363636363636
+2  0.0285714285714
+
+# g3:
+3  0.221428571429
+3  0.237662337662
+
+# g2:
+4  0.231818181818
+
+# g1:
+5  0.185714285714
+5  0.0331168831169
+

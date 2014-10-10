@@ -1,0 +1,36 @@
+# Submitted to nmrlipids.blogspot.fi by Matti Javanainen on 26 Mar 2014.
+#
+# POPC. 128 lipids with 26 waters per lipid (the system available in Lipidbook).
+#
+# 100 ns simulation, analyzed the last 50 ns.
+#
+# 310K.
+#
+# Tried to set all parameters to match the ones used in the original publication
+#
+#   http://dx.doi.org/10.1021/ct900086b
+#
+# but it was not clear whether the dispersion correction (DC) had been used or not.
+# Therefore ran the simulation with and without the 'EnerPres' option in GROMACS.
+# The area per lipid differed somewhat: 0.635 (with DC) and 0.654 (without). However,
+# the head group order parameters are not affected much.
+
+#-- with DC -- without DC
+# beta:
+1   0.0703     0.0647
+1   0.0694     0.0601
+
+# alpha:
+2   0.0319     0.0332
+2   0.0508     0.0599
+
+# g3:
+3   0.2965     0.2911
+3   0.3037     0.2932
+
+# g2:
+4   0.3225     0.3176
+
+# g1:
+5   0.1373     0.1450
+5   0.2831     0.2767

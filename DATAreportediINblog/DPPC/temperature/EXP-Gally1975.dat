@@ -1,0 +1,65 @@
+# From Gally, Niederberger, and Seelig. 
+# Biochemistry 14 3647 (1975)
+#
+#   http://dx.doi.org/10.1021/bi00687a021
+#
+# DPPC.
+#
+# 2H-NMR. Absolute values of order parameters
+#
+#  |S_CD| = 0.00784 x Δν
+#
+# as a function of temperature.
+
+# T (Κ)		|S_CD|
+#gamma:
+290.25125	0.01590
+294.67709	0.01487
+302.90988	0.01385
+310.39484	0.01402
+313.63156	0.01279
+313.62085	0.00995
+317.92828	0.00934
+324.49146	0.00883
+331.94553	0.00827
+339.42261	0.00775
+346.95679	0.00716
+
+#beta:
+296.71667	0.06166
+301.40158	0.06087
+304.88782	0.05842
+311.77731	0.05655
+315.39240	0.04304
+318.42514	0.04202
+320.02640	0.04041
+328.36166	0.03611
+331.36066	0.03443
+335.81210	0.03213
+342.81970	0.02971
+344.86691	0.02936
+354.77032	0.02646
+364.31848	0.02386
+
+#alpha:
+310.26740	0.04986
+313.02689	0.04910
+315.48837	0.04667
+318.24377	0.04633
+322.87115	0.04613
+325.14377	0.04632
+334.96539	0.04646
+345.01279	0.04639
+354.89877	0.04662
+364.78833	0.04628
+
+#g3
+# (for which "the deuterium magnetic resonance spectra
+# reveal two quadrupole splittings with separations of
+# about 27 and 29 kHz" = 0.21168 and 0.22736 in terms
+# of order parameters. The values below are from Fig 6,
+# which showed the "[a]verage value of two couplings
+# with a difference of about 2 kHz" = 0.016):
+321.86353	0.22016
+327.72675	0.21916
+341.47504	0.21193

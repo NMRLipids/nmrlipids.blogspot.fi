@@ -1,0 +1,37 @@
+# From Dvinskikh et al. PCCP 7, 607 (2005):
+#
+#    http://dx.doi.org/10.1039/b418131j
+#
+# DMPC. 313K. 13 lipids / H2O.
+#
+# NOTE! THESE ARE *COUPLINGS* -> DIVIDE BY 21.5 (kHz) TO GET ORDER PARAMETERS.
+#
+# 13C-NMR FSLG-CP (Frequency-Switched Lee-Goldburg Cross-Polarization) and
+# 13C-NMR R-PDLF (R-type Proton-Detected Local Field) experiments.
+#
+# The funny 2-row format is to allow drawing horizontal lines in gnuplot.
+
+#######	FSLG-CP	R-PDLF
+
+# beta:
+0.54 	0.9	0.7
+0.67	0.9	0.7
+
+# alpha:
+1.54	1.4	1.3
+1.67	1.4	1.3
+
+# g3:
+2.54	5.1	5.0
+2.67	5.1	5.0
+
+# g2:
+3.54	4.4	4.3
+3.67	4.4	4.3
+
+# g1:
+4.54	---	3.4
+4.67	---	3.4
+
+4.54	---	0
+4.67	---	0

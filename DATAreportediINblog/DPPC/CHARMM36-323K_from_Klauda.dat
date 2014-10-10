@@ -1,0 +1,29 @@
+# Data taken from (Fig. S4 in) publication:
+#
+#   Klauda, Venable, Freites, O'Connor,
+#   Tobias, Mondragon-Ramirez, Vorobyov,
+#   MacKerell & Pastor.
+#   J. Phys. Chem. B 114 7830–7843 (2010)
+#
+# CHARMM36. DPPC. T=323.15K.
+# NPT-ensemble.
+# 72 lipids, 30.4 H2O/lipid.
+#
+# Total 130 ns, equilibration time unknown.
+
+# beta:
+1  0.0640569395018
+
+# alpha:
+2  0.0382197830468
+
+# g3:
+3  0.250207949235
+3  0.239283111092
+
+# g2:
+4  0.200840372165
+
+# g1:
+5  0.174994640484
+5  0.0380139776187

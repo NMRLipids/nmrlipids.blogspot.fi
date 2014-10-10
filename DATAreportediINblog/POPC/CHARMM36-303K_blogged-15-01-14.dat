@@ -1,0 +1,39 @@
+# Submitted to nmrlipids.blogspot.fi by Hubert Santuz on 15 Jan 2014.
+#
+# POPC. 303K.
+#
+# 128 lipids, no ions, ~40 H2O molecules/lipid, TIPS3P.
+#
+# CHARMM36. Force field files downloaded from:
+#
+#    http://www.gromacs.org/@api/deki/files/184/=charmm36.ff_4.5.4_ref.tgz,
+#
+# i.e., they are those of Piggot et al., 2012, JCTC. Starting structures from:
+#
+#    http://people.su.se/~jjm/Stockholm_Lipids/Downloads.html.
+#
+# After equilibration, 150 ns simulations. The first 50ns was discarded for the
+# order parameter calculation. Area per lipid and order parameter of the acyl
+# chains were the same as reported by Piggot et al.
+#
+# Gromacs 4.5.7.
+
+
+# beta:
+1 0.0803443
+1 0.0798408
+
+# alpha:
+2 0.0272208
+2 0.0252511
+
+# g3:
+3 0.244336
+3 0.252601
+
+# g2:
+4 0.214783
+
+# g1:
+5 0.189221
+5 0.0435286

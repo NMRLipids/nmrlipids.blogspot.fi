@@ -1,0 +1,27 @@
+# Posted by Samuli Ollila in nmrlipids.blogspot.fi on 10 Sep 2013.
+# First used in Fig. 4 of the arXiv preprint (version 1):
+#
+#    http://arxiv.org/abs/1309.2131
+#
+# POPC. Berger forcefield. 298K. 200 mM NaCl.
+# 128 lipids, 7204 waters, 44 Na+ and Cl− ions.
+# Last 50ns of 110ns analyzed.
+
+# beta:
+1 0.0162605
+1 0.0114806
+
+# alpha:
+2 0.0520696
+2 0.11722
+
+# g3:
+3 0.210983
+3 0.281361
+
+# g2:
+4 0.184542
+
+# g1:
+5 0.128134
+5 0.1154

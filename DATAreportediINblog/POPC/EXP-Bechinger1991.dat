@@ -1,0 +1,17 @@
+# From Bechinger and Seelig. Chem. Phys. Lipids 58 1 (1991)
+#
+#	http://dx.doi.org/10.1016/0009-3084(91)90105-K
+#
+# POPC.
+# 296K.
+#
+# 2H-NMR.
+
+#beta (average of 2 measurements at full hydration):
+0.97 0.0431
+1.46 0.0431
+
+#alpha (average of 4 measurements at full hydration):
+1.97 0.047775
+2.46 0.047775
+

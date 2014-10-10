@@ -1,0 +1,37 @@
+# Submitted to nmrlipids.blogspot.fi by Samuli Ollila on 24 Oct 2013. (*)
+#
+# Calculated from a Berger DMPC bilayer trajectory of 323K:
+#
+#    http://dx.doi.org/10.6084/m9.figshare.829642
+#
+# that was used in publication:
+#
+#    http://dx.doi.org/10.1021/jp810233q
+#
+# 128 lipids.
+#
+# (*) Note that the original submission suffered from a bug in the analysis
+#     script, and only the first 75 of the 128 lipids were taken into account.
+#     The data for all the lipids was provided by Samuli Ollila on 10 Apr 2014.
+
+# 128 lipids --- 75 lipids
+#   (S_CH)   ---  (|S_CH|)
+# beta:
+1 0.0510405      0.0500613
+1 0.0643061      0.0629653
+
+# alpha:
+2 0.103433       0.0995867
+2 0.153471       0.149136
+
+# g3:
+3 -0.177112      0.170976
+3 -0.251111      0.250223
+
+# g2:
+4 -0.166239      0.163619
+
+# g1:
+5 0.138638       0.146137
+5 0.0849596      0.0793917
+

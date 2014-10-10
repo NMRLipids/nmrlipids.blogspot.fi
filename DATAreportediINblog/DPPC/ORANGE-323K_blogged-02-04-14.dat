@@ -1,0 +1,31 @@
+# Data submitted to nmrlipdids.blogspot.fi on 2 Apr 2014 by Jukka Määttä and Luca Monticelli.
+#
+# Orange (*)
+#
+# DPPC. 323K.
+# Gromacs 4.6.1.
+# 100 ns, the whole trajectory analyzed.
+#
+# Full hydration.
+#
+# (*) A new lipid force field currently under development. The parameters are not yet publicly
+#     available but here are some preliminary order parameter results.
+
+#beta:
+1 0.044009
+1 0.035899
+
+#alpha:
+2 0.061717
+2 0.077656
+
+#g3:
+3 0.229328
+3 0.267008
+
+#g2:
+4 0.283727
+
+#g1:
+5 0.032486
+5 0.115361

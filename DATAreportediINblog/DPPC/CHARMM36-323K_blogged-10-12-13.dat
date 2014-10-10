@@ -1,0 +1,26 @@
+# Submitted to nmrlipids.blogspot.fi by Samuli Ollila on 10 Dec 2013.
+#
+# DPPC. CHARMM36. 323K.
+# 72 lipids, 30.4 waters/lipid.
+# 30 ns, analyzed last 25 ns.
+#
+# [The area per molecule did not drift after 5 ns.]
+
+# beta:
+1 0.0738207
+1 0.0722581
+
+# alpha:
+2 0.0251479
+2 0.0248203
+
+# g3:
+3 0.251028
+3 0.254695
+
+# g2:
+4 0.209637
+
+# g1:
+5 0.1858
+5 0.0635338

@@ -1,0 +1,51 @@
+# From Gally, Niederberger, and Seelig. 
+# Biochemistry 14 3647 (1975)
+#
+#   http://dx.doi.org/10.1021/bi00687a021
+#
+# DPPC. 322K.
+#
+# 2H-NMR. Absolute values of order parameters
+#
+#  |S_CD| = 0.00784 x Δν
+#
+# were given in the publication as a function
+# of temperature. The numbers given here were
+# calculated by fitting a line to the data points
+# nearest to 322K and reading the value of the fit
+# at 322K.
+#
+# The funny 2-row format is to allow drawing
+# horizontal lines in gnuplot.
+
+
+#gamma:
+#0.00902360197343361
+
+
+#beta:
+0.69 0.0393918577944779
+0.95 0.0393918577944779
+
+
+#alpha:
+1.69 0.0460571684223495
+1.95 0.0460571684223495
+
+
+#g3:
+# for which "the deuterium magnetic resonance spectra
+# reveal two quadrupole splittings with separations of
+# about 27 and 29 kHz" = 0.21168 and 0.22736 in terms
+# of order parameters. The values below are extracted
+# (using the fitting approach described above) from
+# Fig 6 of the publication, which showed the "[a]verage
+# value of two couplings with a difference of about
+# 2 kHz" = 0.016, hence the values below are the fitted
+# value of 0.220136724393763 +/- 0.008.
+
+2.69 0.228136724393763
+2.95 0.228136724393763
+
+2.69 0.212136724393763
+2.95 0.212136724393763

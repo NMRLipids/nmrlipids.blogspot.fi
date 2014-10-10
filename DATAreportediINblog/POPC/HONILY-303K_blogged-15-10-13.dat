@@ -1,0 +1,29 @@
+# Submitted to nmrlipids.blogspot.fi by Alexander Lyubartsev on 15 Oct 2013.
+#
+# POPC. 303K. Modified CHARMM force field (*).
+# NPT. Ewald. Flexible SPC water.
+#
+# (*) Högberg, Nikitin & Lyubartsev:
+#     Modification of the CHARMM force field for DMPC lipid bilayer.
+#     J. Comput. Chem. 29 2359-2369 (2008)
+#     http://onlinelibrary.wiley.com/doi/10.1002/jcc.20974/abstract
+
+
+#beta:
+1 -0.040
+1 -0.044 
+
+#alpha:
+2 +0.082
+2 +0.106
+
+# g3:
+3 -0.202 # g3s
+3 -0.260 # g3r
+
+# g2:
+4 -0.168
+
+# g1:
+5 -0.004 # g1s
+5 -0.113 # g1r

@@ -1,0 +1,24 @@
+# Submitted to nmrlipids.blogspot.fi by Joona Tynkkynen on 19 Sep 2013.
+#
+# OPLS-AA. POPC. 310K. 150 mM NaCl.
+# 304 lipids. "Extensive hydration". 200ns.
+# PME.
+
+# beta:
+1 0.0382
+1 0.0018
+
+# alpha:
+2 0.1133
+2 0.0711
+
+# g3:
+3 0.2777
+3 0.1901
+
+# g2:
+4 0.1805
+
+# g1:
+5 0.1792
+5 0.1836

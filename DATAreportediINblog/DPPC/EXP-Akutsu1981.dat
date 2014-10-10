@@ -1,0 +1,26 @@
+# Akutsu et al. Biochemistry 20, 7366 (1981)
+#
+#    http://dx.doi.org/10.1021/bi00529a007
+#
+# DPPC. 332K. 2H-NMR.
+#
+# The order parameters S_CD given here are calculated using
+# the Eq. (5) of the publication:
+#
+#    S_CD =  Δν * 4/(3*170 kHz),
+#
+# where Δν is the quadrupolar splitting.
+#
+# The funny 2-row format is to allow drawing horizontal lines in gnuplot.
+
+# beta:
+0.68 0.0330980392156863
+0.96 0.0330980392156863
+
+# alpha:
+1.68 0.0466666666666667
+1.96 0.0466666666666667
+
+# g3 ("average of two closely spaced splittings" at 332K):
+2.68 0.214117647058824
+2.96 0.214117647058824

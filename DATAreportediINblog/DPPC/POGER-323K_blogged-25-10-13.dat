@@ -1,0 +1,37 @@
+# Submitted to nmrlipids.blogspot.fi by Patrick Fuchs on 25 Oct 2013.
+#
+# Poger. DPPC. 323K.
+# 100 ns simulations, last 50 ns used for analysis.
+# Both PME and RF:
+#   rvdw=1.4, nstlist=5 for PME;
+#   rvdw=1.4, nstlist=5, rlist=0.8, rcoulomb=1.4, epsilon_rf=62 for RF (GROMOS standards)
+# Parrinello-Rahman barostat with time constant 4 ps.
+#
+# Note. The "dppc.itp" downloaded from Poger's website in April 2012.
+# Since then "dppc.itp" has changed: a version downloaded in Oct 2013
+# from the same web page has two dihedrals missing:
+# $ diff dppc_Apr2012.itp dppc_Oct2013.itp 
+# < 2 4 5 6 1 gd_29
+# < 3 4 5 6 1 gd_29
+# $
+
+
+#C-#PME-------#RF--------
+# beta:
+1  0.00755344 0.000290482
+1  0.0274534  0.0147462
+
+# alpha:
+2  0.0602613  0.0860009
+2  0.0668811  0.121084
+
+# g3:
+3  0.0685195  0.117486
+3  0.240482   0.234245
+
+# g2:
+4  0.0839291  0.12262
+
+# g1:
+5  0.119438   0.0588791
+5  0.0706316  0.0451602
