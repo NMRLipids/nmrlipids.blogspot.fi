@@ -1,0 +1,11 @@
+#include "POPC.itp"
+#include "tip3pGAFF.itp"
+
+[ system ]
+128 POPC in water
+
+[molecules]
+POPC 126
+SOL 3948
+  
+
