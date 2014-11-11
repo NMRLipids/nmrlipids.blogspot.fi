@@ -2,7 +2,7 @@
 #include "tip3pGAFF.itp"
 
 [ system ]
-128 POPC in water
+126 POPC in water
 
 [molecules]
 POPC 126
