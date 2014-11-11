@@ -1,0 +1,23 @@
+; Include forcefield parameters
+#include "../charmm36.ff_lipids_Piggot/forcefield.itp"
+
+;Include Cholesterol topology
+#include "../params_chol.itp"
+#include "../cholesterol.itp"
+
+;Include lipid topology
+#include "../popc.itp"
+
+; Include water topology
+#include "../charmm36.ff_lipids_Piggot/tips3p.itp"
+
+
+[ system ]
+; Name
+POPC + 50% Chol Bilayer
+
+[ molecules ]
+; Compound        #mols
+POPC              80
+CHL1              80
+SOL               4496     

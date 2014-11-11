@@ -1,0 +1,199 @@
+; Converted from CHARMM Parameters
+; Reference Lim, J.B., Rogaski, B. and Klauda, J.B.. "Update of the Cholesterol Force Field 
+; Parameters in CHARMM" 116: 203-210 (2012).
+; http://chbe.umd.edu/~jbklauda/research/download.html
+
+; PyTopol was use for the conversion https://github.com/resal81/PyTopol
+; SPE calculcation (namd-2.9 and gromacs-4.5.7) was done to assess the convertion
+
+; Manually curation as done to remove defined [*types] already present in the charmm36.ff
+
+; Made by Hubert Santuz Jan. 2014
+; This file has to be use in conjunction with "cholesterol.itp"
+
+
+
+[ atomtypes ]      
+CRL1      6 12.0110    0.1   A       0.358141284692      0.1506240  
+HGA1      1  1.0080    0.1   A       0.238760856462      0.1882800  
+CRL2      6 12.0110   -0.2   A       0.359923082129      0.2510400  
+HGA2      1  1.0080    0.1   A       0.238760856462      0.1464400
+
+    
+
+[ nonbond_params ] 
+CRL2   HAL2     1    0.299341969295     0.173636000000    
+HGA2   CTL1     1    0.297560171859     0.113386400000    
+HGA2   HAL1     1    0.238760856462     0.120917600000    
+HGA1   CTL1     1    0.297560171859     0.128867200000    
+CRL1   CTL1     1    0.357250385974     0.115060000000    
+CRL1   HAL1     1    0.298451070577     0.122591200000    
+HGA1   HAL2     1    0.238760856462     0.150205600000    
+HGA2   HAL2     1    0.238760856462     0.132632800000    
+CRL2   CTL1     1    0.358141284692     0.148532000000    
+CRL1   HAL2     1    0.298451070577     0.134306400000    
+HGA1   HAL1     1    0.238760856462     0.137653600000    
+CRL2   HAL1     1    0.299341969295     0.158573600000    
+ 
+
+[ pairtypes ]    
+CRL1   CRL1     1    0.338541512893     0.041840000000    
+CRL1   OHL      1    0.326959829558     0.163176000000    
+CRL1   HOL      1    0.189271432669     0.089736802707    
+CRL1   HGA1     1    0.288651184677     0.088756043175    
+CRL1   CRL2     1    0.338541512893     0.041840000000    
+CRL1   HGA2     1    0.288651184677     0.078275472531    
+CRL1   CEL1     1    0.355468588538     0.109105371453    
+CRL1   HEL1     1    0.280633096214     0.073666921749    
+CRL1   CTL3     1    0.338541512893     0.041840000000    
+CRL1   HAL3     1    0.288651184677     0.064818249282    
+CRL1   CTL1     1    0.357250385974     0.115060000000    
+CRL1   HAL1     1    0.298451070577     0.122591200000    
+CRL1   CTL2     1    0.338541512893     0.041840000000    
+CRL1   HAL2     1    0.298451070577     0.134306400000    
+OHL    CRL2     1    0.326959829558     0.163176000000    
+HOL    CRL2     1    0.189271432669     0.089736802707    
+HGA1   CRL2     1    0.288651184677     0.088756043175    
+HGA1   CTL3     1    0.288651184677     0.088756043175    
+HGA1   CTL1     1    0.297560171859     0.128867200000    
+HGA1   HAL1     1    0.238760856462     0.137653600000    
+HGA1   CTL2     1    0.288651184677     0.088756043175    
+HGA1   HAL2     1    0.238760856462     0.150205600000    
+CRL2   CRL2     1    0.338541512893     0.041840000000    
+CRL2   HGA2     1    0.288651184677     0.078275472531    
+CRL2   CEL1     1    0.355468588538     0.109105371453    
+CRL2   HEL1     1    0.280633096214     0.073666921749    
+CRL2   CTL3     1    0.338541512893     0.041840000000    
+CRL2   HAL3     1    0.288651184677     0.064818249282    
+CRL2   CTL1     1    0.358141284692     0.148532000000    
+CRL2   HAL1     1    0.299341969295     0.158573600000    
+CRL2   CTL2     1    0.338541512893     0.041840000000    
+CRL2   HAL2     1    0.299341969295     0.173636000000    
+HGA2   CTL3     1    0.288651184677     0.078275472531    
+HGA2   CTL1     1    0.297560171859     0.113386400000    
+HGA2   HAL1     1    0.238760856462     0.120917600000    
+HGA2   CTL2     1    0.288651184677     0.078275472531    
+HGA2   HAL2     1    0.238760856462     0.132632800000    
+
+
+[ bondtypes ]    
+CRL1   OHL    1  0.1420  358150.4
+CRL1   HGA1   1  0.1111  258571.2
+CRL1   CRL2   1  0.1538  186188.0
+CRL2   HGA2   1  0.1111  258571.2
+CRL2   CEL1   1  0.1502  305432.0
+CEL1   CRL1   1  0.1502  200832.0
+CRL1   CRL1   1  0.1500  186188.0
+CRL2   CRL2   1  0.1530  186188.0
+CRL1   CTL1   1  0.1500  186188.0
+CRL1   CTL3   1  0.1538  186188.0
+
+   
+[ angletypes ]   
+CRL1   CRL2   CRL2   5    113.5000     488.27280      0.25610     9338.68800
+CRL1   CRL2   HGA2   5    110.1000     221.75200      0.21790    18853.10400
+CRL1   CRL2   CEL1   5    112.2000     267.77600      0.00000        0.00000
+CRL1   OHL    HOL    5    106.0000     481.16000      0.00000        0.00000
+OHL    CRL1   CRL2   5    110.1000     633.45760      0.00000        0.00000
+OHL    CRL1   HGA1   5    108.8900     384.09120      0.00000        0.00000
+HGA1   CRL1   CRL2   5    110.1000     288.69600      0.21790    18853.10400
+CRL2   CEL1   CEL1   5    123.5000     401.66400      0.00000        0.00000
+CRL2   CEL1   CRL1   5    113.0000     418.40000      0.00000        0.00000
+HGA2   CRL2   CEL1   5    111.5000     376.56000      0.00000        0.00000
+HGA2   CRL2   HGA2   5    109.0000     297.06400      0.18020     4518.72000
+CEL1   CRL1   CRL1   5    112.2000     267.77600      0.00000        0.00000
+CEL1   CRL1   CTL3   5    112.2000     267.77600      0.00000        0.00000
+CEL1   CRL1   CRL2   5    112.2000     267.77600      0.00000        0.00000
+HEL1   CEL1   CRL2   5    116.0000     334.72000      0.00000        0.00000
+CRL2   CRL1   CRL1   5    113.5000     488.27280      0.25610     9338.68800
+CRL1   CRL1   CRL1   5    111.0000     446.43280      0.25610     6694.40000
+CRL1   CRL1   HGA1   5    110.1000     288.69600      0.21790    18853.10400
+CRL1   CRL1   CTL3   5    108.5000     446.43280      0.25610     6694.40000
+CRL2   CRL2   HGA2   5    110.1000     221.75200      0.21790    18853.10400
+CRL2   CRL1   CTL1   5    113.5000     488.27280      0.25610     9338.68800
+CRL1   CTL1   CTL2   5    113.5000     488.27280      0.25610     9338.68800
+CRL1   CTL1   CTL3   5    108.5000     446.43280      0.25610     6694.40000
+CRL1   CTL1   HAL1   5    110.1000     288.69600      0.21790    18853.10400
+HGA1   CRL1   CTL1   5    110.1000     288.69600      0.21790    18853.10400
+CRL1   CTL3   HAL3   5    110.1000     279.74224      0.21790    18853.10400
+CRL1   CRL1   CTL1   5    111.0000     446.43280      0.25610     6694.40000
+CRL2   CRL1   CTL3   5    113.5000     488.27280      0.25610     9338.68800
+CRL1   CEL1   CEL1   5    123.5000     401.66400      0.00000        0.00000
+CRL2   CRL1   CRL2   5    113.5000     488.27280      0.25610     9338.68800
+
+
+[ dihedraltypes ]
+CRL1   CRL2   CRL2   HGA2     9      0.00       0.79496    3
+CRL1   CRL2   CRL2   CRL1     9      0.00       0.79496    3
+CRL1   CRL2   CEL1   CRL1     9    180.00       1.25520    3
+CRL1   CRL2   CEL1   CEL1     9    180.00       2.09200    1
+CRL1   CRL2   CEL1   CEL1     9    180.00       5.43920    3
+OHL    CRL1   CRL2   HGA2     9      0.00       0.83680    3
+OHL    CRL1   CRL2   CRL2     9      0.00       0.83680    3
+OHL    CRL1   CRL2   CEL1     9      0.00       0.83680    3
+HOL    OHL    CRL1   HGA1     9      0.00       0.58576    3
+HOL    OHL    CRL1   CRL2     9      0.00       0.58576    3
+HGA1   CRL1   CRL2   HGA2     9      0.00       0.83680    3
+HGA1   CRL1   CRL2   CRL2     9      0.00       0.83680    3
+HGA1   CRL1   CRL2   CEL1     9      0.00       0.83680    3
+CRL2   CEL1   CRL1   CRL2     9    180.00       1.25520    3
+CRL2   CEL1   CRL1   CTL3     9    180.00       0.00000    3
+CRL2   CEL1   CRL1   CRL1     9    180.00       0.00000    3
+CRL2   CRL1   CRL2   HGA2     9      0.00       0.83680    3
+CRL2   CRL1   CRL2   CRL2     9      0.00       0.83680    3
+HGA2   CRL2   CEL1   CRL1     9      0.00       0.12552    3
+HGA2   CRL2   CEL1   CEL1     9    180.00       1.25520    3
+CEL1   CRL1   CRL2   CRL2     9      0.00       0.83680    3
+CEL1   CRL1   CRL2   HGA2     9      0.00       0.83680    3
+CEL1   CRL1   CTL3   HAL3     9      0.00       0.83680    3
+CEL1   CRL1   CRL1   CRL1     9      0.00       0.83680    3
+CEL1   CRL1   CRL1   HGA1     9      0.00       0.83680    3
+CEL1   CRL1   CRL1   CRL2     9      0.00       0.83680    3
+CEL1   CRL2   CRL1   CRL2     9      0.00       0.83680    3
+CEL1   CRL2   CRL1   CRL1     9      0.00       0.83680    3
+CEL1   CEL1   CRL1   CRL2     9    180.00       2.09200    1
+CEL1   CEL1   CRL1   CRL2     9    180.00       5.43920    3
+CEL1   CEL1   CRL1   CTL3     9    180.00       2.09200    1
+CEL1   CEL1   CRL1   CTL3     9    180.00       5.43920    3
+CEL1   CEL1   CRL1   CRL1     9    180.00       2.09200    1
+CEL1   CEL1   CRL1   CRL1     9    180.00       5.43920    3
+HEL1   CEL1   CRL2   HGA2     9      0.00       0.00000    3
+HEL1   CEL1   CRL2   CRL1     9      0.00       0.00000    3
+CRL2   CRL1   CRL1   HGA1     9      0.00       0.83680    3
+CRL2   CRL1   CRL1   CRL1     9      0.00       0.83680    3
+CRL2   CRL1   CRL1   CRL2     9      0.00       0.83680    3
+HGA2   CRL2   CRL1   CRL1     9      0.00       0.83680    3
+CRL1   CRL1   CRL1   CTL3     9      0.00       0.83680    3
+CRL1   CRL1   CRL2   CRL2     9      0.00       0.83680    3
+CRL1   CRL1   CRL1   CRL1     9      0.00       0.83680    3
+HGA1   CRL1   CRL1   HGA1     9      0.00       0.83680    3
+HGA1   CRL1   CRL1   CRL1     9      0.00       0.83680    3
+CRL1   CRL1   CTL3   HAL3     9      0.00       0.83680    3
+CRL1   CRL1   CRL1   CTL1     9      0.00       0.83680    3
+HGA1   CRL1   CRL1   CTL3     9      0.00       0.83680    3
+CRL2   CRL2   CRL1   CTL1     9      0.00       0.83680    3
+CRL2   CRL1   CRL1   CTL3     9      0.00       0.83680    3
+HGA2   CRL2   CRL2   HGA2     9      0.00       0.79496    3
+CRL2   CRL1   CTL1   HAL1     9      0.00       0.83680    3
+CRL2   CRL1   CTL1   CTL3     9      0.00       0.83680    3
+CRL2   CRL1   CTL1   CTL2     9      0.00       0.83680    3
+HGA2   CRL2   CRL1   CTL1     9      0.00       0.83680    3
+HGA1   CRL1   CTL1   HAL1     9      0.00       0.83680    3
+HGA1   CRL1   CTL1   CTL3     9      0.00       0.83680    3
+HGA1   CRL1   CTL1   CTL2     9      0.00       0.83680    3
+CRL1   CRL1   CTL1   HAL1     9      0.00       0.83680    3
+CRL1   CRL1   CTL1   CTL3     9      0.00       0.83680    3
+CRL1   CRL1   CTL1   CTL2     9      0.00       0.00000    3
+CTL3   CRL1   CRL2   HGA2     9      0.00       0.83680    3
+CTL3   CRL1   CRL2   CRL2     9      0.00       0.83680    3
+CTL3   CRL1   CRL1   CTL1     9      0.00       0.83680    3
+HAL3   CTL3   CRL1   CRL2     9      0.00       0.83680    3
+CRL2   CRL1   CRL1   CTL1     9      0.00       0.83680    3
+
+;explicit definition in "cholesterol.itp"
+;Otherwise, the override of (X CTL1 CTL2 X) won't work.
+;CRL1   CTL1   CTL2   CTL2     9    180.00       0.50961    3
+;CRL1   CTL1   CTL2   CTL2     9    180.00       0.91002    2
+;CRL1   CTL1   CTL2   CTL2     9    180.00       1.00332    1
+
+
