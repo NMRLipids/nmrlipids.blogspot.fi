@@ -1,3 +1,3 @@
 Simulation files used in the nmrlipids.blogspot.fi project for the GAFFlipid force field: 
-Dickson et al. J. Chem. Theory Comput., 2014, 10 (2), pp 865–879
-http://dx.doi.org/10.1021/ct4010307
+Dickson et al. Soft Matter, 2012, 8, 9617 
+http://dx.doi.org/10.1039/C2SM26007G
