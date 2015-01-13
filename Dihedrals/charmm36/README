@@ -1,0 +1,7 @@
+#Here the correspondance between the filename and dihedral angle
+
+- angdist_choline.xvg  : N-beta-alpha-O
+- angdist_gly.xvg      : g3-g2-g1-O(sn-1)
+- angdist_ogly.xvg     : O(P)-g3-g2-g1
+- angdist_oglyo.xvg    : O(P)-g3-g2-O(sn-2)
+
