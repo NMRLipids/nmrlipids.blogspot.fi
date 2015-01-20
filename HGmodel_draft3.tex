@@ -172,7 +172,7 @@ Choline headgroup order parameters as function of ion concentration, and their r
 
   \begin{figure}[]
   \centering
-%  \includegraphics[width=8.6cm]{POPCstructure.eps}
+  \includegraphics[width=8.6cm]{POPCstructure.eps}
 
   \caption{\label{POPCstructure}
     Chemical structure of  1-palmitoyl-2-oleoylphosphatidylcholine (POPC).}
@@ -256,17 +256,17 @@ available for some systems. The references pointing to simulation details and fi
 Force field & lipid  & \footnote{The number of lipid molecules}N$_{\rm l}$   &  \footnote{The number of water molecules}N$_{\rm w}$ & \footnote{Simulation temperature}T (K)  & \footnote{The total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time frames used in the analysis}t$_{{\rm anal}}$ (ns) & \footnote{Reference link for the downloadable simulation files}Files  &  \footnote{Reference for the full simulation details} Details\\
 \hline
 Berger-POPC-07~\cite{ollila07a}          &   POPC & 128 & 7290  & 298  & 270 & 240 & \cite{bergerFILESpopc}$^*$ & \cite{ferreira15} \\
-\sout {Berger-POPC-07~\cite{ollila07a}}\todoi{Not included in the Fig. 2, to be removed}          &   POPC & 128 & 7290  & 323  & 56 & 56  & ? & SI \\
+\sout {Berger-POPC-07~\cite{ollila07a}}\todoi{Not included in the Fig. 2, to be removed?}          &   POPC & 128 & 7290  & 323  & 56 & 56  & ? & SI \\
 Berger-DPPC-98~\cite{marrink98}          &   DPPC & 72 & 2864  & 323  & 140 & 100  & \cite{bergerDPPCfiles} & SI \\
 Berger-DMPC-04~\cite{gurtovenko04}          &   DMPC & 128 & 5097  & 323  & 130 & 100  & \cite{dmpcFILES} & \cite{miettinen09} \\
 CHARMM36\cite{klauda10}       & POPC   & 72  &  2242 & 303 & 30 & 20  & \cite{charmm36filesSHORT}$^*$ & SI \\
-CHARMM36\cite{klauda10}\todoi{Hubert Santuz, these files are already in Gitbub, however to get doi citation it should be put to Zenodo}        & POPC   & 128 &  5120    & 303 & 150 & 100  & ? & SI \\
-CHARMM36\cite{klauda10}\todoi{Samuli, put to Zenodo}        & DPPC   & 72  &  2189 & 323 & 30 & 25  & ? & SI \\
-CHARMM36\cite{klauda10}\todoi{Not included in the Fig. 2. Should we remove or include?}        & DOPC   & 128 &  5120    & 303 & 150 & 100  & ? & SI \\
+CHARMM36\cite{klauda10}      & POPC   & 128 &  5120    & 303 & 150 & 100  & ? \todoi{Permanent link in progress by Hubert Santuz}   & SI \\
+CHARMM36\cite{klauda10}       & DPPC   & 72  &  2189 & 323 & 30 & 25  & ?\todoi{Samuli, put to Zenodo}  & SI \\
+CHARMM36\cite{klauda10}\todoi{Not included in the Fig. 2. Should we remove or include?}        & DOPC   & 128 &  5120    & 303 & 150 & 100  & ?\todoi{Permanent link in progress by Hubert Santuz}  & SI \\
 MacRog\cite{maciejewski14}  & POPC & 288  & 12600 & 310 & 100 & 80  & \cite{macrogFILES}$^*$ & SI  \\
 GAFFlipid\cite{dickson12}       & POPC & 126  & 3948  & 303 & 137 & 32  & \cite{GAFFlipidFILES}$^*$ & SI \\
 Lipid14\cite{dickson14}         & POPC  & 72 & 2234 & 303 & 100 & 50  & \cite{lipid14files}$^*$ & SI \\
-Poger\cite{poger10}             & DPPC  & 128 & 5841 & 323 & 2$\times$100 & 2$\times$50 & \cite{pogerFILES} & SI \\
+Poger\cite{poger10}             & DPPC  & 128 & 5841 & 323 & 2$\times$100 & 2$\times$50 & \cite{pogerFILES}\todoi{Permanent link in progress by Patrick Fuchs} & SI \\
 Slipid\cite{jambeck12}          & DPPC & 128 & 3840 & 323 & 150 & 100 & \cite{slipidsFILES}$^*$ & SI \\
 Kukol\cite{kukol09}          & POPC   & 512 & 20564 & 298 & 50 & 30  & \cite{kukolFILES}$^*$ & SI \\
 Chiu et al.\cite{chiu09} \todoi{Samuli, put to Zenodo}     & POPC  & 128 & 3552  & 298 & 56 & 50  & ? & SI \\
@@ -354,7 +354,7 @@ have been measured with several different implementations of $^{13}$C NMR experi
 The experimental absolute values of glycerol backbone and choline order parameters from various publications are shown in Fig.~\ref{HGorderparameters}.
 \begin{figure}[]
   \centering
-%  \includegraphics[width=8.6cm]{comparison3.pdf}
+  \includegraphics[width=8.6cm]{comparison3.pdf}
 %\todo{DONE}\\
 %The data in this figure should be updated to be consistent with the systems listed in Table~\ref{systems}. At least, Tjornhammar et al and CHARMM-UA values are missing. Some results in the figure are outdated due to longer simulations reported etc.} \\
 \todo{Markus Miettinen suggested that we should consider making one more figure where only experimental data would be shown and that would be discussed in Section~\ref{experiments}} \\
@@ -415,7 +415,7 @@ the most detailed experimentally available order parameter information for the g
 These data are shown in Fig.~\ref{HGorderparameters2}.
 \begin{figure*}[]
   \centering
-%  \includegraphics[width=8.6cm]{HGorderparameters5.eps} \\
+  \includegraphics[width=8.6cm]{HGorderparameters5.eps} \\
   \todo{Markus Miettinen suggested that we should consider ``spreading'' the values similarly to the figure~\ref{HGorderparameters}} \\
   \caption{\label{HGorderparameters2}
   Order parameteres from simulations with Berger-POPC-07, CHARMM36, GAFFlipid and MacRog force fields together with experimental values for POPC glycerol and choline groups.
@@ -475,7 +475,7 @@ In conclusion, models preferring the anti conformation for this dihedral give mo
 this in agreement with previous crystal structure and $^1$H NMR studies~\cite{hauser80,hauser81,hauser81b,hauser88,pascher92,marsh06}.
 \begin{figure}[]
   \centering
-%  \includegraphics[width=8.6cm]{g1-g2_Cdihs2.eps}
+  \includegraphics[width=8.6cm]{g1-g2_Cdihs2.eps}
   \caption{\label{dihDISTS}
     Dihedral angle distributions for g$_3$-g$_2$-g$_1$-O(\textit{sn}-1) dihedral from different models (POPC bilayer in full hydration).
       } 
@@ -499,7 +499,7 @@ this dihedral is in the gauche conformation in the absence of ions.
 %model suggesting that it has some other inaccuracies.
 \begin{figure}[]
   \centering
-%  \includegraphics[width=8.6cm]{a-bDIHS2.eps}
+  \includegraphics[width=8.6cm]{a-bDIHS2.eps}
   \caption{\label{dihDISTS2}
     Dihedral angle distributions for N-$\beta$-$\alpha$-O dihedral from different models (POPC bilayer in full hydration).
   } 
@@ -548,7 +548,7 @@ Slight decrease for the glycerol backbone g$_3$- and g$_2$- order parameters wer
 while g$_1$ remained practically unchanged~\cite{dvinskikh05b}.
 \begin{figure}[]
   \centering
-%  \includegraphics[width=8.6cm]{OrderParameterDEHYDpresentation.eps}
+  \includegraphics[width=8.6cm]{OrderParameterDEHYDpresentation.eps}
 \todo{Several people think that this plot should be clarified.}
   \caption{\label{ordPhydr}
     The effect of dehydration on glycerol and choline order parameters in experiments.
@@ -580,7 +580,7 @@ free energy landscape if the simulation model has an incorrect structure. The in
 dehydration energetics studied with simulations~\cite{eun09,schneck12} is left for future studies.
 \begin{figure}[]
   \centering
-%  \includegraphics[width=8.6cm]{PNangles.eps}
+  \includegraphics[width=8.6cm]{PNangles.eps}
 
   \caption{\label{PNangle}
     The angle between membrane normal and P--N vector as function of
@@ -621,7 +621,7 @@ headgroup composition~\cite{gally81} and that the headgroup stucture is independ
 charges are present~\cite{scherer87}.
 \begin{figure}[]
   \centering
-%  \includegraphics[width=8.6cm]{OrderParameterCHOLexpVSsim.eps}
+  \includegraphics[width=8.6cm]{OrderParameterCHOLexpVSsim.eps}
   \caption{\label{ordPchol}
     The effect of cholesterol content on the glycerol backbone and choline order parameters in experiments~\cite{brown78,ferreira13} and simulations
     with the Berger-POPC-07/H\"oltje-CHOL-13, CHARMM36 and MacRog force fields. The signs in the experimental values are based on the measurements by Hong et al.~\cite{hong95a,hong95b} 
@@ -849,7 +849,7 @@ force field parameterization). Using setup i) based on RF, we were able to repro
 GROMACS versions 4.0.X and earlier (the original authors~\cite{poger10} used GROMACS version 3.3.3). When switching to versions 4.5.X and above, the area per lipid dropped to below 0.58~nm$^2$. 
 The GROMACS developers were contacted and a redmine issue opened (\texttt{http://redmine.gromacs.org/issues/1400}). The difference comes from the new Trotter decomposition 
 introduced in versions 4.5.X. A fix has been introduced in version 4.6.6 that allows a recovery of an area per lipid value of 0.615~nm$^2$. The results in terms of area per lipid using the different 
-GROMACS versions are available at~\cite{fuchs14}.
+GROMACS versions are available at~\cite{fuchs14}\todoi{Permanent link in progress by Patrick Fuchs}.
 % http://www.dsimb.inserm.fr/~fuchs/project\_Samuli/Poger\_DPPC/tests\_gmx\_versions/)[Samuli, you may want to add this Figure+Legend+Comment 
 %o a stable link (Figshare?), let me know]. 
 %Of note, some tests (Miguel Machuqueiro, personnal communication) with the same RF scheme i) on simulations with proteins 
@@ -928,9 +928,7 @@ The non-bonded interactions are calculated using an atom-based switching functio
 Long range electrostatic interactions are implemented using the particle-particle particle-mesh solver with a relative accuracy of $10^{-4}$. The system 
 is first equilibrated for 30~ns in the NP$\gamma$T ensemble (Nos\'{e}--Hoover~\cite{nose84,hoover85} style thermostat and barostat with anisotropic pressure coupling) 
 at 323~K and 1~bar with timestep of 1~fs. The following 20~ns of dynamics are taken for calculation of configurational averages. 
-\todo{The simulation times given currently contradict with the Table~\ref{systems}.}
-Simulations were 
-carried out by using the LAMMPS package~\cite{plimpton95}. %( http://doi.org/10.1006/jcph.1995.1039 )., the input files are available ( http://dx.doi.org/10.5281/zenodo.13821 ).
+Simulations were carried out by using the LAMMPS package~\cite{plimpton95}. %( http://doi.org/10.1006/jcph.1995.1039 )., the input files are available ( http://dx.doi.org/10.5281/zenodo.13821 ).
 
 %\subsubsection{OPLS-AA}
 %\todo{Joona Tynkkynen. We have this only with 150mM of NaCl delivered by Joona Tynkkynen. Options are to remove these results from this publicatio, run the simulations without ions (if not yet available), 
@@ -941,10 +939,18 @@ carried out by using the LAMMPS package~\cite{plimpton95}. %( http://doi.org/10.
 \subsection{Dihedral angle distributions as a function of cholesterol in CHARMM36}
 \begin{figure*}[]
   \centering
-%  \includegraphics[width=17.2cm]{dihsCHOLcharmm.pdf}
+  \includegraphics[width=17.2cm]{dihsCHOLcharmm.pdf}
   \caption{\label{dihsCHOLcharmm}
     The effect of cholesterol content on the glycerol backbone and choline dihedral angles in CHARMM36 model.}
 \end{figure*}
+
+\subsection{General issues to think of about the manuscript}
+\todo{Should we emphasize more the excellent collection of simulation trajectories collected to Zenodo?}
+\todo{Maybe we should mention that CHARMM is significanlty more computationally expensive than other all-atom models.
+This seems evident for a person who has ran CHARMM and other all-atom models with the same computer. However, there
+may be some people who have never used any other model than CHARMM. In this case it may be difficult to realize.
+Would anyone have a good bencmark about this? I have assumed that the reason for the slowness are the extra Lennart-Jones
+interactionsi in water, however, I have never looked into it. Would someone have some hard facts on this?}
 
 %\newpage
 
