@@ -15,7 +15,7 @@ do
     echo
     echo 'Sorting after order parameter:' $op
     # sort in ascending order:
-    grep dat plotDataWsigns.gpl \
+    grep dat plotDataSorted.gpl \
 	| grep -v 'EXP' \
 	| grep -v '#' \
 	| awk '{print $1}' \
