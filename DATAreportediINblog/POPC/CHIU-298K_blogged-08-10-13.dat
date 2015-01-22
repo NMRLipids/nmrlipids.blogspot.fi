@@ -1,15 +1,22 @@
-# Posted by Samuli Ollila in nmrlipids.blogspot.fi on 8 Oct 2013 [x]
+# Posted by Samuli Ollila in nmrlipids.blogspot.fi on 8 Oct 2013:
 #
-# POPC. Chiu forcefield (*). 298K. 128 lipids.
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1381242761712#c7510376334060491773
+#
+# In the original posting only the first 75 of the 128 lipids  were included
+# in the analysis, because of a bug in the analysis script. Samuli Ollila
+# obtaided all data with the fixed script, now also including the signs,
+# on 10 April 2014:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1421505845728#c6114544664758578672
+#
+# POPC. 128 lipids, 3552 waters = 27.75 w/l
+# 298K.
 # 56ns, last 50ns analyzed.
 #
+# Chiu (JPCB 113, 2748–2763 (2009)) forcefield:
 #
-# (*) JPCB 113, 2748–2763 (2009)
-# http://dx.doi.org/10.1021/jp807056c).
-#
-# [x] Note. In the original posting only the first 75 of the 128 lipids
-# were included in the analysis, because of a bug in the analysis script.
-# Samuli Ollila provided the data with the fixed script on 10 April 2014.
+# 	http://dx.doi.org/10.1021/jp807056c
+
 
 #-128 lipids---75 lipids
 #-  (S_CH)  --- (|S_CH|)
@@ -31,5 +38,3 @@
 # g1:
 5 0.109495     0.111903
 5 -0.0473216   0.115047
-
-

@@ -1,0 +1,47 @@
+# Submitted to nmrlipids.blogspot.fi by Jukka Määttä on 11 Dec 2014.
+#
+#	http://nmrlipids.blogspot.com/2014/11/new-version-of-manuscript.html?showComment=1418829204551#c6187115466675831083
+#	http://doi.org/10.5281/zenodo.13287
+#
+# Slipids force field
+#
+#	http://doi.org/10.1021/jp212503e
+#
+# was used with Gromacs 4.6.6.
+#
+# DPPC. 128 lipids, 3840 tip3p waters = 30 w/l.
+# 323K.
+#
+# Simulation 150 ns, last 100 ns analyzed, that is, extension of
+# the previous 30-ns posting 'SLIPIDS-323K_blogged-30-09-13.dat',
+# which thus becomes obsolete.
+
+# gammas:
+#1 0.00435920776132
+#1 0.00593595913663
+#1 0.00519643603767
+#2 0.00385884851051
+#2 0.00794626014713
+#2 0.003963170873
+#3 0.00543576423881
+#3 0.00552315344346
+#3 0.00315510943761
+
+# beta:
+1 -0.0128656105204
+1 -0.0472119370881
+
+# alpha:
+2 0.0519181106249
+2 0.0405189884192
+
+# g3:
+3 -0.05376695763
+3 -0.0644008050181
+
+# g2:
+4 -0.0633609043527
+
+# g1:
+5 -0.12978964337
+5 -0.167892084364

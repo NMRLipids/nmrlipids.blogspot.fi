@@ -1,0 +1,29 @@
+# From M. Hong, K. Schmidt-Rohr, and D. Nanz, Biophys. J. 69 1939 (1995)
+#
+#     http://dx.doi.org/10.1016/S0006-3495(95)80064-0
+#
+# PCs in egg lecithin.
+# (The values might actually be for pure DMPC... it is a bit vague in the paper.)
+#
+# Temperature = ?
+#
+# 13C NMR. Proton-Detected Local-Field (PDLF).
+
+#	S_CD	error
+#gamma:
+	+0.005	0.005
+
+#beta:
+	-0.04	0.015
+
+#alpha:
+	+0.04	0.015
+
+#g3:
+	-0.185	0.025
+
+#g2:
+	-0.16	0.04
+
+#g1:
+	-0.12	0.04

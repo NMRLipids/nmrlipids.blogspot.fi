@@ -1,4 +1,12 @@
-# Submitted to nmrlipids.blogspot.fi by Samuli Ollila on 24 Oct 2013. (*)
+# Submitted to nmrlipids.blogspot.fi by Samuli Ollila on 24 Oct 2013:
+#
+#	http://nmrlipids.blogspot.com/2013/09/the-manuscript-is-now-available-what.html?showComment=1382610163278#c4154697582967287054
+#
+# Note that the original submission suffered from a bug in the analysis
+# script, and only the first 75 of the 128 lipids were taken into account.
+# The data for all the lipids was provided by Samuli Ollila on 10 Apr 2014, see:
+#
+#	http://nmrlipids.blogspot.com/2013/09/the-manuscript-is-now-available-what.html?showComment=1421508893084#c8611704172343802781
 #
 # Calculated from a Berger DMPC bilayer trajectory of 323K:
 #
@@ -8,11 +16,10 @@
 #
 #    http://dx.doi.org/10.1021/jp810233q
 #
-# 128 lipids.
-#
-# (*) Note that the original submission suffered from a bug in the analysis
-#     script, and only the first 75 of the 128 lipids were taken into account.
-#     The data for all the lipids was provided by Samuli Ollila on 10 Apr 2014.
+# DPMC. 128 lipids, 5097 waters = 39.8 w/l.
+# 323K.
+# 130 ns simulation, last 100 ns analyzed.
+
 
 # 128 lipids --- 75 lipids
 #   (S_CH)   ---  (|S_CH|)
@@ -34,4 +41,3 @@
 # g1:
 5 0.138638       0.146137
 5 0.0849596      0.0793917
-

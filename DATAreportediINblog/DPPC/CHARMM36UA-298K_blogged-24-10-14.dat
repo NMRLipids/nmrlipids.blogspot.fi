@@ -1,0 +1,41 @@
+# Posted by Alexandru Botan in nmrlipids.blogspot.fi on 24 Oct 2014.
+#
+# Updated (the original values were from a 1 ns simulation) on 28 Nov 2014.
+#
+#    http://nmrlipids.blogspot.com/p/to-do-list.html
+#
+# Simulated using LAMMPS (lammps.sandia.gov).
+#
+# DPPC.
+# 128 lipids, 3840 waters = 30 w/l.
+# 298K. (gel phase)
+#
+# Total simulation 50 ns, last 20 ns analyzed.
+#
+# CHARMM36 United Atom force field:
+#
+#    http://dx.doi.org/10.1021/jp410344g [*]
+#
+# as described by Alexandru Botan: "We took [CHARMM27 United Atom] FF
+# from [http://dx.doi.org/10.1021/jp800687p] and replaced CHARMM27 by
+# CHARMM36. This corresponds to the paper you cited [*]".
+
+# beta:
+1 -0.09415
+1 -0.06091
+
+# alpha:
+2  0.02928
+2  0.04799
+
+# g3:
+3 -0.24558 #g3R
+3 -0.28782 #g3R
+
+# g2:
+4 -0.31054
+
+# g1:
+5  0.04387 #g1R 
+5 -0.31255 #g1S
+

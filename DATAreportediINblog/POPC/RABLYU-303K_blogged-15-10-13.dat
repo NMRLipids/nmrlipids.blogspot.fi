@@ -1,0 +1,36 @@
+# Submitted to nmrlipids.blogspot.fi by Alexander Lyubartsev on 15 Oct 2013:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1381830266039#c1549743778187583119
+#
+# More details provided on in 2014, see the posting by Samuli Ollila:
+#
+#	http://nmrlipids.blogspot.fi/2014/11/new-version-of-manuscript.html
+#
+# Modified CHARMM "Rabinovitcs-Lyubartsev" force field:
+#
+#	http://doi.org/10.1088/1742-6596/510/1/012022
+#
+# POPC. 128 lipids, 3840 waters = 30.0 w/l.
+# 303K. 
+# 100 ns, last 80 ns analyzed.
+#
+# NPT. Ewald. Flexible SPC water.
+
+#beta:
+1 -0.040
+1 -0.044 
+
+#alpha:
+2 0.082
+2 0.106
+
+# g3:
+3 -0.202 # g3s
+3 -0.260 # g3r
+
+# g2:
+4 -0.168
+
+# g1:
+5 -0.004 # g1s
+5 -0.113 # g1r

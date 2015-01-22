@@ -1,6 +1,22 @@
-# Submitted to nmrlipids.blogspot.fi by Patrick Fuchs on 25 Oct 2013.
+# Submitted to nmrlipids.blogspot.fi by Patrick Fuchs on 25 Oct 2013:
 #
-# Poger. DPPC. 323K.
+#    http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1382718128134#c3341186425139768422
+#
+# more simulation details:
+#
+#    http://nmrlipids.blogspot.com/2014/12/new-version-of-manuscript-2.html?showComment=1420047624094#c3847074262085850467
+#
+# signs and hydrogen assignment (R/S):
+#
+#    http://nmrlipids.blogspot.com/2014/03/the-lipid-forcefield-comparison.html?showComment=1398274774752#c3458277172020403169
+#
+#
+# Poger force field:
+#
+#    http://dx.doi.org/10.1002/jcc.21396
+#
+# DPPC. 128 lipids, 5842 waters = 45.6 w/l
+# 323K.
 # 100 ns simulations, last 50 ns used for analysis.
 # Both PME and RF:
 #   rvdw=1.4, nstlist=5 for PME;
@@ -16,22 +32,23 @@
 # $
 
 
-#C-#PME-------#RF--------
+#C-S_CD-------S_CD--------
+#--PME--------RF----------
 # beta:
-1  0.00755344 0.000290482
-1  0.0274534  0.0147462
+1 -0.00755344 -0.000290482
+1  0.0274534   0.0147462
 
 # alpha:
-2  0.0602613  0.0860009
-2  0.0668811  0.121084
+2  0.0602613   0.0860009
+2  0.0668811   0.121084
 
 # g3:
-3  0.0685195  0.117486
-3  0.240482   0.234245
+3 -0.0685195  -0.117486 #R
+3 -0.240482   -0.234245 #S
 
 # g2:
-4  0.0839291  0.12262
+4 -0.0839291  -0.12262
 
 # g1:
-5  0.119438   0.0588791
-5  0.0706316  0.0451602
+5  0.119438    0.0588791 #R
+5 -0.0706316  -0.0451602 #S

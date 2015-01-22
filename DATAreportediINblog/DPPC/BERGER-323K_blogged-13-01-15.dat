@@ -1,0 +1,49 @@
+# Submitted to nmrlipids.blogspot.fi by Jukka Määttä on 13 and 14 Jan 2015:
+#
+#	http://nmrlipids.blogspot.com/2014/11/new-version-of-manuscript.html?showComment=1421185894594#c8104970513908474225
+#	http://nmrlipids.blogspot.com/2014/11/new-version-of-manuscript.html?showComment=1421231975768#c3582830273528800239
+#
+# Trajectories available at:
+#
+#	http://doi.org/10.5281/zenodo.13934
+#
+# DPPC. 72 lipids, 2880 SPC waters = 41.1 w/l.
+# 323K.
+#
+# 60ns, last 30 ns analyzed.
+#
+# "Berger-DPPC-98" of the Berger force field family:
+#
+#	http://dx.doi.org/10.1016/S0006-3495(98)74016-0
+
+
+# gammas:
+#1 0.00482577468108
+#1 -0.005821936945
+#1 -0.00600716575815
+#2 0.00603670872231
+#2 0.000859946312552
+#2 -0.00851070368993
+#3 0.00587745107892
+#3 -0.00531827053462
+#3 0.00159602933226
+
+# beta:
+1 0.0298135670971
+1 0.0595413042613
+
+# alpha:
+2 0.0895853417515
+2 0.111896930945
+
+# g3:
+3 -0.2519751251
+3 -0.161482750268
+
+# g2:
+4 -0.181396400932
+
+
+# g1:
+5 0.130892705377
+5 0.0469505878288 

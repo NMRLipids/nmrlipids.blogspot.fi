@@ -1,0 +1,37 @@
+# Submitted to nmrlipids.blogspot.fi by Matti Javanainen on 12 Jan 2015.
+#
+# Slipids force field. The initial structure (@303K) and force field
+# parameters were downloaded from the Slipids home page 
+#
+#	http://people.su.se/~jjm/Stockholm_Lipids/Home.html
+#
+# and used as such. The simulation parameters (except for temperature)
+# were also obtained from there.
+#
+# Trajectory and run input files are available at:
+#
+#	http://dx.doi.org/10.5281/zenodo.13887
+#
+# POPC. 128 lipids. 40 waters/lipid.
+# 310K.
+#
+# The last 150ns of a 200ns simulation were used for the analysis.
+
+# beta:
+1 -0.0221
+1 -0.0403
+
+# alpha:
+2  0.0582
+2  0.0522
+
+# g3:
+3 -0.0194
+3 -0.0193
+
+# g2:
+4 -0.0243
+
+# g1:
+5 -0.0930
+5 -0.1667

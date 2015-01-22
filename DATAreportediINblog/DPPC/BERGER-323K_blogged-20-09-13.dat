@@ -1,7 +1,26 @@
-# Submitted to nmrlipids.blogspot.fi by Jukka Määttä on 20 Sep 2013.
+# NOTE! There was a mistake in the run parameters here: The vdw cutoff was
+# 2.0 nm insted of the correct 1.0 nm. This is too long for Berger and
+# OPLS and causes artificial freezing in the bilayer resulting in wrong
+# glycerol order parameters. See the post by Jukka Määttä on 13 Jan 2015:
 #
-# Berger. DPPC. 323K.
-# 72 lipids. PME. 100 ns.
+#	http://nmrlipids.blogspot.com/2014/11/new-version-of-manuscript.html?showComment=1421156347500#c8209690050035233575
+#####
+#
+# Submitted to nmrlipids.blogspot.fi by Jukka Määttä on 20 Sep 2013:
+#
+#	http://nmrlipids.blogspot.com/2013/09/the-manuscript-is-now-available-what.html?showComment=1379688831713#c1336059898645395219
+#	http://nmrlipids.blogspot.com/2014/11/new-version-of-manuscript.html?showComment=1416826581038#c4840144537469994526
+#
+# Berger force field (OPLS-AA compatible version):
+#
+#	http://doi.org/10.1088/0953-8984/18/28/S07
+#
+# DPPC. 72 lipids and 2864 waters = 39.8 w/l.
+# 323K.
+# PME.
+# Simulation 140 ns, last 100 ns analyzed.
+#
+#
 
 ## gamma:
 #0 0.023526 0.006980 0.012376

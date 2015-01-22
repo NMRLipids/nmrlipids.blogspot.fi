@@ -1,7 +1,16 @@
-# Posted by Samuli Ollila in nmrlipids.blogspot.fi on 20 Nov 2013
+# Posted by Samuli Ollila in nmrlipids.blogspot.fi on 20 Nov 2013:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1384952948578#c797359712638534836
+#
+# with the signs (and slightly changed absolute values due to fixing
+# of a bug with periodic boundary conditions in the analysis script)
+# provided by Samuli Ollila on 19 Jan 2015:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1421661656321#c5719053620357324026
+#	https://github.com/NMRLipids/nmrlipids.blogspot.fi/blob/master/POPCcharmm/DEHYDRATIONset/OrderParametersNEW.dat
 #
 # POPC. CHARMM36. 303K.
-# 72 lipids, 30.1 waters / lipid.
+# 72 lipids, 2242 waters = 31.1 w/l.
 # 30 ns, analyzed last 20 ns.
 #
 # [The area per molecule was essentially unchanged after 10ns,
@@ -9,21 +18,22 @@
 # (dx.doi.org/10.1021/ct3003157) got with the CHARMM force
 # field simulated with Gromacs.]
 
+
 # beta:
-1 0.0868119
-1 0.0932349
+1 -0.0784416
+1 -0.0853033
 
 # alpha:
-2 0.0187398
-2 0.0250516
+2 0.0283049
+2 0.0350252
 
 # g3:
-3 0.248038
-3 0.256945
+3 -0.242142
+3 -0.251571
 
 # g2:
-4 0.202941
+4 -0.196443
 
 # g1:
-5 0.196547
-5 0.047776
+5 -0.189925
+5 -0.0382485

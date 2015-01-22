@@ -2,6 +2,10 @@
 #
 #   http://dx.doi.org/10.1021/bi00312a019
 #
+# Signs determined as described in:
+#
+#	http://arxiv.org/abs/1309.2131v2
+#
 # POPC. 313K. 2H-NMR.
 #
 # The funny 2-row format is to allow drawing horizontal lines in gnuplot.

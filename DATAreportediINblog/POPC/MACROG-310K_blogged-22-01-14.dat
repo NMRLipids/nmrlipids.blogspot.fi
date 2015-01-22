@@ -1,13 +1,35 @@
+######################################################################
+# NOTE! These data are to be considered OBSOLETE. This is because it is
+# not fully clear if and how much of the trajectory was skipped before
+# starting the analysis.
+#
+# Because of this unclarity the trajectory was carefully reanalyzed (as
+# a part, 50 w/l, of a dehydration series) by Matti Javanainen on 29 Dec
+# 2014, see:
+# 
+#    http://nmrlipids.blogspot.com/2014/12/new-version-of-manuscript-2.html?showComment=1419886523587#c919090876031096768
+#
+# This reanalysis is in the file 'MACROG-310K_blogged-29-12-14.dat',
+# which should thus be used when discussing the trajectory in question.
+#
+######################################################################
+
+
 # Posted by Matti Javanainen in nmrlipids.blogspot.fi on 22 Jan 2014.
 # Simulations done by Joona Tynkkynen.
 #
-# POPC. Unpublished Maciejewski-Rog force field. 310K.
+# Maciejewski-Rog force field:
+#
+#    http://doi.org/10.1021/jp5016627
+#
+# POPC. 288 lipids (as the parameters are identical to the ones posted
+# on Sep 20th 2013 by Matti Javanainen, and the only difference should
+# be the number of waters.). 50 waters/lipid.
+#
+# 310K.
 #
 # 120ns, last 50ns analyzed.
-#
-# PME. 288 lipids (as the parameters are identical to the ones posted
-# on Sep 20th 2013 by Matti Javanainen, and the only difference should
-# be the number of waters.). ~50 waters/lipid.
+# PME.
 
 # beta:
 1 0.0050

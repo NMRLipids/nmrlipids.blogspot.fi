@@ -1,0 +1,18 @@
+# From Gally et al. Biochemistry 20, 1826 (1981).
+#
+#    http://dx.doi.org/10.1021/bi00510a017
+#
+# PE- and PG-lipids in E. coli extract. 310K. 2H-NMR.
+#
+# The funny 2-row format is to allow drawing horizontal lines in gnuplot.
+
+# g2:
+3.71 0.20
+3.93 0.20
+
+# g1:
+4.71 0.13
+4.93 0.13
+
+4.71 0
+4.93 0

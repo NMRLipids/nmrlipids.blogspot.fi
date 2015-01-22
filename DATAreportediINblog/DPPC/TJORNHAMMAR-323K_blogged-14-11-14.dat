@@ -1,0 +1,41 @@
+# Posted by Matti Javanainen in nmrlipids.blogspot.fi on 14 Nov 2014.
+#
+#   http://nmrlipids.blogspot.com/p/the-project-has-been-success-by-this-far.html
+#
+# Trajectory available at:
+#
+#   http://dx.doi.org/10.5281/zenodo.12743
+#
+# The united atom forcefield by Tjörnhammar and Edholm
+#
+#   http://doi.org/10.1021/ct500589z (*)
+#
+# DPPC. 144 lipids, 7056 waters = 49 w/l.
+# 323K.
+#
+# Simulated 200 ns, last 100 ns analyzed.
+#
+# System preparation: The supplementary information (*) has parameters for a
+# 144-lipid DPPC system in gel phase without ions. Matti Javanainen ran a 5
+# ns simulation at 70 degrees in order to destroy the ordered gel configuration.
+#
+# The same mdp file as in the supplementary of (*) except for the temperatures.
+
+# beta:
+1  0.0495
+1  0.0455
+
+# alpha:
+2  0.0203
+2  0.0195
+
+# g3:
+3 -0.2322 #S
+3 -0.2909 #R
+
+# g2:
+4 -0.3211
+
+# g1:
+5:  0.0807 #S
+5: -0.2275 #R

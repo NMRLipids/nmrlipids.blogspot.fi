@@ -1,6 +1,17 @@
-# Submitted to nmrlipids.blogspot.fi by Alexander Lyubartsev on 15 Oct 2013.
+# Submitted to nmrlipids.blogspot.fi by Alexander Lyubartsev on 15 Oct 2013:
 #
-# DMPC. 303K. Modified CHARMM force field (*).
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1381830266039#c1549743778187583119
+#
+# Some more details were submitted in 2014, see posting by Samuli Ollila:
+#
+#	http://nmrlipids.blogspot.fi/2014/11/new-version-of-manuscript.html
+#
+# DMPC. 98 lipids, 2700 waters = 27.6 w/l.
+# 303K. 
+#
+# Simulated 75 ns, analyzed last 50 ns.
+#
+# Modified CHARMM force field (*).
 # NPT. Ewald. Flexible SPC water.
 #
 # (*) Högberg, Nikitin & Lyubartsev:
@@ -14,7 +25,7 @@
 1 -0.046 # average of the two (splitting was within 0.002)
 
 #alpha:
-2 +0.088 # average of the two (splitting was within 0.002)
+2  0.088 # average of the two (splitting was within 0.002)
 
 # g3:
 3 -0.206 # g3s
@@ -24,5 +35,5 @@
 4 -0.182
 
 # g1:
-5 +0.013 # g1s
+5  0.013 # g1s
 5 -0.132 # g1r

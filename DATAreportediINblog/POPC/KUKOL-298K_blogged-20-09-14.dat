@@ -1,0 +1,36 @@
+# Submitted to nmrlipids.blogspot.fi by Matti Javanainen on 20 Sep 2014.
+#
+#    http://nmrlipids.blogspot.com/2014/03/the-lipid-forcefield-comparison.html?showComment=1411160765055#c4481903312421738880
+#
+# Kukol UA model:
+#
+#    http://dx.doi.org/10.1021/ct8003468
+#
+# Trajectory available at:
+#
+#    https://zenodo.org/record/13393
+#
+# POPC. 512 lipids, 20564 waters = 40.16 w/l.
+# 298K.
+# 50ns simulation, last 30 ns analyzed.
+#
+# PME. (Cutoff for real space calculations.)
+
+#beta:
+1	-0.0595
+1	0.0087
+
+#alpha:
+2	-0.1202
+2	-0.1357
+
+#g3:
+3	0.2792
+3	0.1116
+
+#g2:
+4	0.1497
+
+#g1:
+5	-0.0161
+5	-0.2257

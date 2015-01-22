@@ -2,6 +2,10 @@
 #
 #    http://dx.doi.org/10.1021/ja962951b
 #
+# Signs determined as described in:
+#
+#	http://arxiv.org/abs/1309.2131v2
+#
 # DMPC. 303K.
 #
 # 1:1 weight ratio of lipids and D2O -> 678:20.0 = 33.9:1
@@ -11,24 +15,24 @@
 # The funny 2-row format is to allow drawing horizontal lines in gnuplot.
 
 # beta:
-0.54 0.03
-0.67 0.03
+0.54 -0.03
+0.67 -0.03
 
 # alpha:
 1.54 0.04
 1.67 0.04
 
 # g3:
-2.54 0.23
-2.67 0.23
+2.54 -0.23
+2.67 -0.23
 
 # g2:
-3.54 0.2
-3.67 0.2
+3.54 -0.2
+3.67 -0.2
 
 # g1:
-4.54 0.15
-4.67 0.15
+4.54 -0.15
+4.67 -0.15
 
-4.54 0
-4.67 0
+4.54 -0
+4.67 -0

@@ -1,4 +1,11 @@
-# Submitted to nmrlipids.blogspot.fi by Samuli Ollila on 10 Dec 2013.
+# Submitted to nmrlipids.blogspot.fi by Samuli Ollila on 10 Dec 2013:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1386678838247#c2996121584315706196
+#
+# signs submitted by Samuli Ollila on 19 Jan 2015:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1421659252324#c1707747956984238230
+#	https://github.com/NMRLipids/nmrlipids.blogspot.fi/blob/master/DPPCcharmm/OrderParametersNEW.dat
 #
 # DPPC. CHARMM36. 323K.
 # 72 lipids, 30.4 waters/lipid.
@@ -7,20 +14,21 @@
 # [The area per molecule did not drift after 5 ns.]
 
 # beta:
-1 0.0738207
-1 0.0722581
+1 -0.0738207
+1 -0.0722581
 
 # alpha:
 2 0.0251479
 2 0.0248203
 
 # g3:
-3 0.251028
-3 0.254695
+3 -0.251028
+3 -0.254695
 
 # g2:
-4 0.209637
+4 -0.209637
 
 # g1:
-5 0.1858
-5 0.0635338
+5 -0.1858
+5 -0.0635338
+

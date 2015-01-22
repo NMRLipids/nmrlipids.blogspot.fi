@@ -1,6 +1,16 @@
-# Submitted to nmrlipids.blogspot.fi by Matti Javanainen on 26 Mar 2014.
+# Submitted to nmrlipids.blogspot.fi by Matti Javanainen on 26 Mar 2014:
 #
-# POPC. 128 lipids with 26 waters per lipid (the system available in Lipidbook).
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1395838721832#c8520038250973168506
+#
+# signs:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1420807270097#c5898022759570679688
+#
+# Trajectories available at:
+#
+#     http://dx.doi.org/10.5281/zenodo.13392
+#
+# POPC. 128 lipids, 3328 waters = 26 w/l (the system available in Lipidbook).
 #
 # 100 ns simulation, analyzed the last 50 ns.
 #
@@ -14,23 +24,26 @@
 # Therefore ran the simulation with and without the 'EnerPres' option in GROMACS.
 # The area per lipid differed somewhat: 0.635 (with DC) and 0.654 (without). However,
 # the head group order parameters are not affected much.
+#
+# Area per lipid without DC closer to experimental value for POPC, thus let us use
+# that for our analysis.
 
-#-- with DC -- without DC
+#--	without DC	with DC
 # beta:
-1   0.0703     0.0647
-1   0.0694     0.0601
+1	-0.0647		-0.0703
+1	-0.0601		-0.0694
 
 # alpha:
-2   0.0319     0.0332
-2   0.0508     0.0599
+2	0.0332		0.0319
+2	0.0599		0.0508
 
 # g3:
-3   0.2965     0.2911
-3   0.3037     0.2932
+3	-0.2911		-0.2965
+3	-0.2932		-0.3037
 
 # g2:
-4   0.3225     0.3176
+4	-0.3176		-0.3225
 
 # g1:
-5   0.1373     0.1450
-5   0.2831     0.2767
+5	0.1450		0.1373
+5	-0.2767		-0.2831

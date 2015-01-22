@@ -1,0 +1,87 @@
+# Posted by Matti Javanainen in nmrlipids.blogspot.fi on 18 Sep 2014.
+#
+#    http://nmrlipids.blogspot.com/2014/05/response-of-headgroup-and-glycerol.html?showComment=1411047039346#c239509076088844869
+#    http://nmrlipids.blogspot.com/2014/05/response-of-headgroup-and-glycerol.html?showComment=1412018265565#c3120779622447444727
+#    http://nmrlipids.blogspot.com/2014/05/response-of-headgroup-and-glycerol.html?showComment=1420728911206#c334622693861000779
+#
+# Trajectories available at
+#
+#    http://dx.doi.org/10.5281/zenodo.13877
+#
+# Simulated by Waldemar Kulig for publication:
+#
+#    http://dx.doi.org/10.1016/j.bbamem.2014.10.032
+#
+# Maciejewski-Rog force field:
+#
+#    http://doi.org/10.1021/jp5016627
+#
+# POPC/Cholesterol. 128 lipids. 50 waters/lipid.
+# 310K.
+#
+# Total simulations 400 ns, analyzed 200 ns.
+
+
+#%-chol	S_CD
+#beta:
+ 0	0.0132
+10	0.0126
+40	0.0171
+50	0.0176
+60	0.0164
+
+ 0	0.0396
+10	0.0404
+40	0.0440
+50	0.0507
+60	0.0524
+
+
+#alpha:
+ 0	0.0432
+10	0.0419
+40	0.0461
+50	0.0432
+60	0.0419
+
+ 0	0.0569
+10	0.0563
+40	0.0611
+50	0.0674
+60	0.0678
+
+
+#g3:
+ 0	-0.2353
+10	-0.2346
+40	-0.2298
+50	-0.2276
+60	-0.1832
+
+ 0	-0.1254
+10	-0.1388
+40	-0.1019
+50	-0.0847
+60	-0.0560
+
+
+#g2:
+ 0	-0.1991
+10	-0.1986
+40	-0.1984
+50	-0.2062
+60	-0.1696
+
+
+#g1:
+ 0	-0.1612
+10	-0.1670
+40	-0.1545
+50	-0.1562
+60	-0.1193
+
+ 0	0.0186
+10	0.0002
+40	0.0112
+50	0.0479
+60	0.0386

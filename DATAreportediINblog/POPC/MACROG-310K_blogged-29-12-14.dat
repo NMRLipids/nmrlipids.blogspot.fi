@@ -1,0 +1,49 @@
+# Posted by Matti Javanainen in nmrlipids.blogspot.fi on 29 Dec 2014.
+#
+#   http://nmrlipids.blogspot.com/2014/12/new-version-of-manuscript-2.html?showComment=1419886523587#c919090876031096768
+#
+# see also
+#
+#   http://nmrlipids.blogspot.com/2014/12/new-version-of-manuscript-2.html?showComment=1419948781804#c352194468134630236
+#
+# and
+#
+#   http://nmrlipids.blogspot.com/2014/12/new-version-of-manuscript-2.html?showComment=1420206970679#c3026103690639993021
+#
+# NOTE. These data are a careful reanalysis of the same trajectory that
+# was used for the earlier data set 'MACROG-310K_blogged-22-01-14.dat',
+# and thus the present file makes the earlier file obsolete.
+#
+# Maciejewski-Rog force field:
+#
+#    http://doi.org/10.1021/jp5016627
+#
+# POPC. 288 lipids. 50 waters/lipid.
+#
+# 310K.
+#
+# 90ns, last 40ns analyzed.
+# PME.
+#
+# Trajectory available on Zenodo:
+#
+#    https://zenodo.org/record/13498/files/50WperL_40ns.xtc
+
+#beta:
+1  0.0063
+1  0.0404
+
+#alpha:
+2  0.0586
+2  0.0360
+
+#g1:
+3 -0.1379
+3 -0.2425
+
+#g2:
+4 -0.2018
+
+#g3:
+5 -0.1605
+5  0.0164

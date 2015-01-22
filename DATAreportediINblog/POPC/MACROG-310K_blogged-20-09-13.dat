@@ -1,9 +1,28 @@
 # Posted by Matti Javanainen in nmrlipids.blogspot.fi on 20 Sep 2013.
 #
-# POPC. Unpublished Maciejewski-Rog force field. 310K.
+#    http://nmrlipids.blogspot.com/2013/09/the-manuscript-is-now-available-what.html?showComment=1379682579439#c6323597574090582539
 #
-# 100ns, last 80ns analyzed.
-# PME. 288 lipids. 44 waters/lipid.
+# Simulated by Tomasz Rog [*]. Maciejewski-Rog force field:
+#
+#    http://doi.org/10.1021/jp5016627
+#
+# POPC. 288 lipids.
+# 44 waters/lipid. (43.75 to be exact [*])
+#
+# 310K.
+# Simulation of 100ns of which last 80ns analyzed. Samples every 10 ps.
+# PME. 
+#
+# The signs were checked by Matti Javanainen on 15 Apr 2014:
+#
+#    http://nmrlipids.blogspot.com/2014/04/on-signs-of-order-parameters.html?showComment=1397573770440#c6224997109733082015
+#
+# Trajectory (although 30–110 ns and sampled only every 100 ps [*]) available on Zenodo:
+#
+# http://dx.doi.org/10.5281/zenodo.13497
+#
+#
+# [*] Private communication Markus Miettinen - Matti Javanainen on 5 Jan 2015.
 
 # beta:
 1 0.0310 
@@ -14,12 +33,12 @@
 2 0.0483
 
 # g3:
-3 0.2328 
-3 0.1380
+3 -0.2328 
+3 -0.1380
 
 # g2:
-4 0.2020
+4 -0.2020
 
 # g1:
-5 0.1560 
+5 -0.1560 
 5 0.0137

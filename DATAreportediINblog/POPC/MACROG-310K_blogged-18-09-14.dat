@@ -1,0 +1,36 @@
+# Posted by Matti Javanainen in nmrlipids.blogspot.fi on 18 Sep 2014.
+#
+# http://nmrlipids.blogspot.com/2014/05/response-of-headgroup-and-glycerol.html?showComment=1411047039346#c239509076088844869
+# http://nmrlipids.blogspot.com/2014/05/response-of-headgroup-and-glycerol.html?showComment=1412018265565#c3120779622447444727
+#
+# Simulated by Waldemar Kulig for publication:
+#
+#    http://dx.doi.org/10.1016/j.bbamem.2014.10.032
+#
+# Maciejewski-Rog force field:
+#
+#    http://doi.org/10.1021/jp5016627
+#
+# POPC. 128 lipids. 50 waters/lipid.
+# 310K.
+#
+# Total simulation 400 ns, analyzed 200 ns.
+
+#beta:
+1 0.0132
+1 0.0396
+
+#alpha:
+2 0.0432
+2 0.0569
+
+#g3:
+3 -0.2353
+3 -0.1254
+
+#g2:
+4 -0.1991
+
+#g1:
+5 -0.1612
+5 0.0186

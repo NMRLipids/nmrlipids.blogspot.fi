@@ -1,0 +1,43 @@
+# Posted by Alexandru Botan in nmrlipids.blogspot.fi on 24 Oct 2014.
+#
+# Updated (the original values were from a 1 ns simulation) on 28 Nov 2014.
+#
+#    http://nmrlipids.blogspot.com/p/to-do-list.html
+#    http://nmrlipids.blogspot.com/2014/12/new-version-of-manuscript-2.html?showComment=1420977384988#c5245875118817975956
+#
+# Simulated using LAMMPS (lammps.sandia.gov), input files available at
+#
+#    http://dx.doi.org/10.5281/zenodo.13821
+#
+# DLPC. Dilauroyl phosphatidylcholine (12:0/12:0).
+# 128 lipids, 3840 waters = 30 w/l.
+# 323K.
+#
+# Total simulation 50 ns, last 20 ns analyzed.
+#
+# CHARMM36 United Atom force field:
+#
+#    http://dx.doi.org/10.1021/jp410344g [*]
+#
+# as described by Alexandru Botan: "We took [CHARMM27 United Atom] FF
+# from [http://dx.doi.org/10.1021/jp800687p] and replaced CHARMM27 by
+# CHARMM36. This corresponds to the paper you cited [*]".
+
+# beta:
+1 -0.06525
+1 -0.06584
+
+# alpha:
+2 0.03839
+2 0.02978
+
+# g3:
+3 -0.24805 #g3R
+3 -0.21785 #g3S
+
+# g2:
+4 -0.16463
+
+# g1:
+5 -0.15191 #g1R 
+5 -0.04938 #g1s 

@@ -1,0 +1,42 @@
+# Submitted by Matti Javanainen on nmrlipids.blogspot.fi on 22 Jan 2014:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1390399994906#c6089960040277687204
+# 
+# MacRog force field.
+# The lipid is PPPC (16:1,16:0).
+# Simulation time 100 ns (last 50 used for analysis).
+# 45 waters/lipid.
+# 150mM NaCl.
+
+0% Cholesterol
+
+1 0.0016 0.0187
+2 0.0371 0.0308
+3 0.1413 0.2426
+4 0.2064
+5 0.0067 0.1718
+
+5% Cholesterol
+
+1 0.0053 0.0222
+2 0.0393 0.0269
+3 0.1361 0.2401
+4 0.2059
+5 0.1724 0.0092
+
+10% Cholesterol
+
+1 0.0114 0.0153
+2 0.0340 0.0177
+3 0.1217 0.2528
+4 0.2291
+5 0.1784 0.0244
+
+20% Cholesterol
+
+1 0.0077 0.0097
+2 0.0282 0.0227
+3 0.1186 0.2467
+4 0.2196
+5 0.1730 0.0225
+

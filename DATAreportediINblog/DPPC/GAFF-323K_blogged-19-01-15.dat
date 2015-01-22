@@ -1,0 +1,44 @@
+# Submitted by Samuli Ollila to nmrlipid.blogspot.fi on 19 Jan 2015:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1421676570640#c9201156363562461128
+#	https://github.com/NMRLipids/nmrlipids.blogspot.fi/blob/master/DPPCgaff/OrderParametersWITHerros.dat
+#
+# for parameters see also:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1384171814481#c1949726239313069517
+#
+# DPPC. 72 lipids, 2197 waters = 31 w/l.
+# 323K.
+# Simulated 90 ns, of which first 40 ns with leap frog integrator,
+# the last 50 ns with Langevin. Last 50 ns analyzed.
+#
+# GAFFlipid force field by Dickson et al.:
+#
+#	 http://dx.doi.org/10.1039/C2SM26007G
+#
+# (Note. The average area per molecule was 57Å², which is roughly
+# 4Å² smaller compared to the results by Dickson et al.)
+#
+# SEM = standard error of mean, assuming each lipid to be an
+# independent measurement.
+#
+# 	S_CD		SEM
+# beta:
+1	-0.000268696 	0.0038315
+1	0.008525 	0.00412434
+
+# alpha:
+2	0.0660885 	0.00534567
+2	0.0525679 	0.00448497
+
+# g3:
+3	-0.230214 	0.00776519
+3	-0.244119 	0.00665626
+
+# g2:
+4	-0.230735 	0.0096703
+
+# g1:
+5	0.00235292 	0.0100992
+5	-0.180508 	0.00906497
+

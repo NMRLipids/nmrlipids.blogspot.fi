@@ -1,4 +1,6 @@
-# Data taken from (Fig. S4 in) publication:
+# Data taken from (Fig. S4 in) publication (except for signs,
+# which were set to be the same as those obtained for CHARMM36
+# DPPC 323K in the Gromacs simulations of the NMRlipids-project):
 #
 #   Klauda, Venable, Freites, O'Connor,
 #   Tobias, Mondragon-Ramirez, Vorobyov,
@@ -12,18 +14,18 @@
 # Total 130 ns, equilibration time unknown.
 
 # beta:
-1  0.0640569395018
+1  -0.0640569395018 # only one value visible in the plot
 
 # alpha:
-2  0.0382197830468
+2  0.0382197830468 # onle one value visible in the plot
 
 # g3:
-3  0.250207949235
-3  0.239283111092
+3  -0.250207949235
+3  -0.239283111092
 
 # g2:
-4  0.200840372165
+4  -0.200840372165
 
 # g1:
-5  0.174994640484
-5  0.0380139776187
+5  -0.174994640484
+5  -0.0380139776187

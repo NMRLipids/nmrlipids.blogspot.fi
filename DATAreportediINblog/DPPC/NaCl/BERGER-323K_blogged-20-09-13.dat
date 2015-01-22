@@ -1,0 +1,71 @@
+# Submitted to nmrlipids.blogspot.fi by Jukka Määttä on 20 Sep 2013:
+#
+#	http://nmrlipids.blogspot.com/2013/09/the-manuscript-is-now-available-what.html?showComment=1379688831713#c1336059898645395219
+#	http://nmrlipids.blogspot.com/2014/11/new-version-of-manuscript.html?showComment=1416826581038#c4840144537469994526
+#
+# Berger force field with three different ion force fields.
+# DPPC. 72 lipids.
+# 323K.
+# PME.
+# Simulation 140 ns, last 100 ns analyzed.
+
+#1) Pure DPPC
+# 2864 waters = 39.8 w/l.
+
+## gamma:
+#0 0.023526 0.006980 0.012376
+#0 0.023588 0.008533 0.009391
+#0 0.023229 0.014370 0.009469
+
+# beta:
+1 0.028587 
+1 0.047187
+
+# alpha:
+2 0.098500 
+2 0.148678
+
+# g3:
+3 0.234071 
+3 0.201362
+
+# g2:
+4 0.213305
+
+# g1:
+5 0.057871 
+5 0.065860
+
+
+#DPPC with 150 mM NaCl, Joung and Cheatham ions. The ions are parameterized using Lorenz-Berthelot LJ combination rules and since the simulation uses the standard geometric rules with Berger lipids, mixing combination rules most likely is the cause of the bad results.
+
+0 0.010982 0.007178 0.004313
+0 0.189192 0.190906 0.222319
+0 0.144293 0.238756 0.331118
+1 0.322813 0.217390
+2 0.224558 0.368983
+3 0.228063 0.345894
+4 0.110900
+5 0.102004 0.154022
+
+#DPPC with 150 mM NaCl, Åqvist ions. These ions are the standard ions used with Berger lipids. As pointed out earlier, in this case the sodium ions indeed bind into the phosphate/carbonyl parts (perhaps too strongly).
+
+0 0.029240 0.014293 0.012808
+0 0.031056 0.009083 0.018262
+0 0.029880 0.013904 0.006406
+1 0.025345 0.026001
+2 0.063802 0.132597
+3 0.250173 0.194344
+4 0.224224
+5 0.111435 0.082425
+
+#DPPC with 150 mM NaCl, Åqvist ions with scaled charges q=0.7 for both Na and Cl. The scaling is like Leontyev et al. PCCP 13, 2613 (2011) suggested. Now the order parameters are close to those of pure DPPC. Also, now the ions don't partition into the membrane, but instead reside in water. While the ions now behave 'better', now we have a problem where our partial charges are not integers for ions. This might cause serious issues especially with charged molecules.
+
+0 0.028271 0.010696 0.014559
+0 0.028739 0.011787 0.010310
+0 0.028564 0.013896 0.010641
+1 0.027294 0.036661
+2 0.084137 0.131134
+3 0.229839 0.184166
+4 0.224365
+5 0.094302 0.073641

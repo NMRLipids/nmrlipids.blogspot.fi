@@ -1,0 +1,97 @@
+# Posted by Matti Javanainen in nmrlipids.blogspot.fi on 29 Dec 2014.
+#
+#   http://nmrlipids.blogspot.com/2014/12/new-version-of-manuscript-2.html?showComment=1419886523587#c919090876031096768
+#   http://nmrlipids.blogspot.com/2014/12/new-version-of-manuscript-2.html?showComment=1419948781804#c352194468134630236
+#   http://nmrlipids.blogspot.com/2014/12/new-version-of-manuscript-2.html?showComment=1420206970679#c3026103690639993021
+#
+# Maciejewski-Rog force field:
+#
+#    http://doi.org/10.1021/jp5016627
+#
+# POPC. 288 lipids.
+#
+# 310K.
+#
+# 50 w/l: 90ns, last 40ns analyzed.
+# others: 100ns, last 50ns analyzed.
+#
+# PME.
+#
+# Trajectories available on Zenodo:
+#
+#    https://zenodo.org/record/13498
+
+
+# w/l	S_CD 
+#beta:
+50	 0.0063
+25	-0.0011
+20	 0.0188
+15	 0.0228
+10	 0.0562
+ 5	 0.1038
+
+50	0.0404
+25	0.0424
+20	0.0335
+15 	0.0506
+10	0.0550
+ 5 	0.0688
+
+
+#alpha:
+50	0.0586
+25	0.0571
+20	0.0534
+15	0.0688
+10	0.0741
+ 5	0.0851
+
+50	0.0360
+25	0.0306
+20	0.0468
+15	0.0503
+10 	0.0766
+ 5 	0.1279
+
+
+#g1:
+50	-0.1379
+25	-0.1169
+20	-0.1442
+15	-0.1450
+10	-0.1914
+ 5	-0.1898
+
+50 	-0.2425
+25	-0.2430
+20 	-0.2426
+15	-0.2407
+10 	-0.2639
+ 5 	-0.2612
+
+
+#g2:
+50	-0.2018
+25	-0.2077
+20	-0.2052
+15	-0.1991
+10	-0.2094
+ 5	-0.1881
+
+
+#g3:
+50	-0.1605
+25	-0.1566
+20	-0.1746
+15	-0.1722
+10	-0.1771
+ 5	-0.1624
+
+50  	0.0164
+25 	0.0102
+20	0.0277
+15	0.0214
+10  	0.0036
+ 5 	0.0030
+

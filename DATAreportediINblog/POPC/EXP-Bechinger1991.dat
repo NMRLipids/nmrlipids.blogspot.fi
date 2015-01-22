@@ -2,14 +2,18 @@
 #
 #	http://dx.doi.org/10.1016/0009-3084(91)90105-K
 #
+# Signs determined as described in:
+#
+#	http://arxiv.org/abs/1309.2131v2
+#
 # POPC.
 # 296K.
 #
 # 2H-NMR.
 
 #beta (average of 2 measurements at full hydration):
-0.97 0.0431
-1.46 0.0431
+0.97 -0.0431
+1.46 -0.0431
 
 #alpha (average of 4 measurements at full hydration):
 1.97 0.047775

@@ -1,0 +1,44 @@
+# Submitted to nmrlipids.blogspot.fi by Hubert Santuz on 01 Dec 2014.
+#
+#	http://nmrlipids.blogspot.com/2014/11/new-version-of-manuscript.html?showComment=1417431166329#c695324453039586835
+#
+# Note that this is the final version of two earlier submissions;
+# the original one on 15 Jan 2014:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1389803641603#c624924164693268730
+#
+# the data of which was used in the (now obsolete) file
+# "CHARMM36-303K_blogged-15-01-14.dat", and a second one
+# on 21 Apr 2014:
+#
+#	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1398343852245#c2329332797377254764
+#
+# in which all the lipids were taken into account for order parameter
+# calculation.
+#
+# POPC. 128 lipids, 5120 waters = 40 w/l.
+# 303K.
+# 200 ns, last 100 ns analyzed. 
+#
+# SEM = Standard Error of the Mean, assuming each lipid
+# as an independent measurement.
+
+# 	S_CH			SEM
+# beta:
+1 	-0.0744980003125 	0.00333904893917
+1 	-0.0755862078125 	0.00383798558434
+
+# alpha:
+2	0.0326603446094 	0.00395158851757
+2 	0.0337601656563 	0.00394836003457
+
+# g3:
+3 	-0.237312033594 	0.00504997490748
+3 	-0.247078038281 	0.0037838314359
+
+# g2:
+4 	-0.204273684375 	0.00714063250042 
+
+# g1:
+5 	-0.178665480469 	0.00848274544958 
+5 	-0.0421973746094 	0.00675247463245
