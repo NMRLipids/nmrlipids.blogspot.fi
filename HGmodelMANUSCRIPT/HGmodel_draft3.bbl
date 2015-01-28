@@ -1,0 +1,1151 @@
+\begin{thebibliography}{152}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Lipowsky and Sackmann}(1995)}]{lipowsky95}
+\bibinfo{editor}{\bibfnamefont{R.}~\bibnamefont{Lipowsky}} \bibnamefont{and}
+  \bibinfo{editor}{\bibfnamefont{E.}~\bibnamefont{Sackmann}}, eds.,
+  \emph{\bibinfo{title}{Structure and Dynamics of Membranes}}
+  (\bibinfo{publisher}{Elsevier}, \bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Tieleman et~al.}(1997)\citenamefont{Tieleman, Marrink,
+  and Berendsen}}]{tieleman97}
+\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Tieleman}},
+  \bibinfo{author}{\bibfnamefont{S.~J.} \bibnamefont{Marrink}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{H.~J.~C.}
+  \bibnamefont{Berendsen}}, \bibinfo{journal}{Biochim. Biophys. Acta}
+  \textbf{\bibinfo{volume}{1331}}, \bibinfo{pages}{235} (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{Klauda et~al.}(2008)\citenamefont{Klauda, Venable, Jr.,
+  and Pastor}}]{klauda08}
+\bibinfo{author}{\bibfnamefont{J.~B.} \bibnamefont{Klauda}},
+  \bibinfo{author}{\bibfnamefont{R.~M.} \bibnamefont{Venable}},
+  \bibinfo{author}{\bibfnamefont{A.~D.~M.} \bibnamefont{Jr.}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~W.}
+  \bibnamefont{Pastor}}, in \emph{\bibinfo{booktitle}{Computational Modeling of
+  Membrane Bilayers}}, edited by \bibinfo{editor}{\bibfnamefont{S.~E.}
+  \bibnamefont{Feller}} (\bibinfo{publisher}{Academic Press},
+  \bibinfo{year}{2008}), vol.~\bibinfo{volume}{60} of
+  \emph{\bibinfo{series}{Current Topics in Membranes}}, pp. \bibinfo{pages}{1
+  -- 48}.
+
+\bibitem[{\citenamefont{Edholm}(2008)}]{edholm08}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Edholm}}, in
+  \emph{\bibinfo{booktitle}{Computational Modeling of Membrane Bilayers}},
+  edited by \bibinfo{editor}{\bibfnamefont{S.~E.} \bibnamefont{Feller}}
+  (\bibinfo{publisher}{Academic Press}, \bibinfo{year}{2008}),
+  vol.~\bibinfo{volume}{60} of \emph{\bibinfo{series}{Current Topics in
+  Membranes}}, pp. \bibinfo{pages}{91 -- 110}.
+
+\bibitem[{\citenamefont{Tieleman}(2010)}]{tieleman10}
+\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Tieleman}}, in
+  \emph{\bibinfo{booktitle}{Molecular Simulations and Biomembranes: From
+  Biophysics to Function}}, edited by
+  \bibinfo{editor}{\bibfnamefont{M.}~\bibnamefont{Sansom}} \bibnamefont{and}
+  \bibinfo{editor}{\bibfnamefont{P.}~\bibnamefont{Biggin}}
+  (\bibinfo{publisher}{The Royal Society of Chemistry}, \bibinfo{year}{2010}),
+  pp. \bibinfo{pages}{1--25}.
+
+\bibitem[{\citenamefont{Piggot et~al.}(2012)\citenamefont{Piggot, Piñeiro, and
+  Khalid}}]{piggot12}
+\bibinfo{author}{\bibfnamefont{T.~J.} \bibnamefont{Piggot}},
+  \bibinfo{author}{\bibfnamefont{�.}~\bibnamefont{Piñeiro}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Khalid}},
+  \bibinfo{journal}{Journal of Chemical Theory and Computation}
+  \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{4593} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Rabinovich and Lyubartsev}(2013)}]{rabinovich13}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Rabinovich}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Lyubartsev}},
+  \bibinfo{journal}{Polymer Science Series C} \textbf{\bibinfo{volume}{55}},
+  \bibinfo{pages}{162} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Marsh}(2013)}]{marsh13}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Marsh}},
+  \emph{\bibinfo{title}{Handbook of Lipid Bilayers, Second Edition}}
+  (\bibinfo{publisher}{RSC press}, \bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Israelachvili et~al.}(1980)\citenamefont{Israelachvili,
+  Marcelja, and Horn}}]{Israelachvili80}
+\bibinfo{author}{\bibfnamefont{J.~N.} \bibnamefont{Israelachvili}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Marcelja}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.~G.} \bibnamefont{Horn}},
+  \bibinfo{journal}{Q. Rev. Biophys.} \textbf{\bibinfo{volume}{13}},
+  \bibinfo{pages}{121} (\bibinfo{year}{1980}).
+
+\bibitem[{\citenamefont{Seelig et~al.}(1977)\citenamefont{Seelig, Gally, and
+  Wohlgemuth}}]{seelig77b}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{author}{\bibfnamefont{H.-U.} \bibnamefont{Gally}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Wohlgemuth}},
+  \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
+  \textbf{\bibinfo{volume}{467}}, \bibinfo{pages}{109 } (\bibinfo{year}{1977}).
+
+\bibitem[{\citenamefont{Skarjune and Oldfield}(1979)}]{skarjune79}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Skarjune}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Oldfield}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{18}},
+  \bibinfo{pages}{5903} (\bibinfo{year}{1979}).
+
+\bibitem[{\citenamefont{Jacobs and Oldfield}(1980)}]{jacobs80}
+\bibinfo{author}{\bibfnamefont{R.~E.} \bibnamefont{Jacobs}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Oldfield}},
+  \bibinfo{journal}{Progress in Nuclear Magnetic Resonance Spectroscopy}
+  \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{113 } (\bibinfo{year}{1980}).
+
+\bibitem[{\citenamefont{Davis}(1983)}]{davis83}
+\bibinfo{author}{\bibfnamefont{J.~H.} \bibnamefont{Davis}},
+  \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Reviews on
+  Biomembranes} \textbf{\bibinfo{volume}{737}}, \bibinfo{pages}{117 }
+  (\bibinfo{year}{1983}).
+
+\bibitem[{\citenamefont{Strenk et~al.}(1985)\citenamefont{Strenk, Westerman,
+  and Doane}}]{strenk85}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Strenk}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Westerman}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Doane}},
+  \bibinfo{journal}{Biophysical Journal} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{765 } (\bibinfo{year}{1985}).
+
+\bibitem[{\citenamefont{Akutsu and Nagamori}(1991)}]{akutsu91}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Akutsu}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Nagamori}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{30}},
+  \bibinfo{pages}{4510} (\bibinfo{year}{1991}).
+
+\bibitem[{\citenamefont{Hong et~al.}(1995{\natexlab{a}})\citenamefont{Hong,
+  Schmidt-Rohr, and Nanz}}]{hong95b}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hong}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Schmidt-Rohr}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Nanz}},
+  \bibinfo{journal}{Biophysical Journal} \textbf{\bibinfo{volume}{69}},
+  \bibinfo{pages}{1939 } (\bibinfo{year}{1995}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Hong et~al.}(1996)\citenamefont{Hong, Schmidt-Rohr, and
+  Zimmermann}}]{hong96}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hong}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Schmidt-Rohr}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Zimmermann}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{35}},
+  \bibinfo{pages}{8335} (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Semchyschyn and Macdonald}(2004)}]{semchyschyn04}
+\bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Semchyschyn}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.~M.}
+  \bibnamefont{Macdonald}}, \bibinfo{journal}{Magnetic Resonance in Chemistry}
+  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{89} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Hauser et~al.}(1980)\citenamefont{Hauser, Guyer,
+  Pascher, Skrabal, and Sundell}}]{hauser80}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Hauser}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Guyer}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Pascher}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Skrabal}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sundell}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{19}},
+  \bibinfo{pages}{366} (\bibinfo{year}{1980}).
+
+\bibitem[{\citenamefont{Hauser et~al.}(1981{\natexlab{a}})\citenamefont{Hauser,
+  Guyer, and Paltauf}}]{hauser81}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Hauser}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Guyer}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Paltauf}},
+  \bibinfo{journal}{Chemistry and Physics of Lipids}
+  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{103 }
+  (\bibinfo{year}{1981}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Hauser et~al.}(1981{\natexlab{b}})\citenamefont{Hauser,
+  Pascher, Pearson, and Sundell}}]{hauser81b}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Hauser}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Pascher}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Pearson}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sundell}},
+  \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Reviews on
+  Biomembranes} \textbf{\bibinfo{volume}{650}}, \bibinfo{pages}{21 }
+  (\bibinfo{year}{1981}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Akutsu}(1981)}]{akutsu81b}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Akutsu}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{20}},
+  \bibinfo{pages}{7359} (\bibinfo{year}{1981}).
+
+\bibitem[{\citenamefont{Pascher et~al.}(1992)\citenamefont{Pascher, Lundmark,
+  Nyholm, and Sundell}}]{pascher92}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Pascher}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Lundmark}},
+  \bibinfo{author}{\bibfnamefont{P.-G.} \bibnamefont{Nyholm}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sundell}},
+  \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Reviews on
+  Biomembranes} \textbf{\bibinfo{volume}{1113}}, \bibinfo{pages}{339 }
+  (\bibinfo{year}{1992}).
+
+\bibitem[{\citenamefont{Hauser et~al.}(1988)\citenamefont{Hauser, Pascher, and
+  Sundell}}]{hauser88}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Hauser}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Pascher}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Sundell}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{27}},
+  \bibinfo{pages}{9166} (\bibinfo{year}{1988}).
+
+\bibitem[{\citenamefont{Marsh and Páli}(2006)}]{marsh06}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Marsh}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Páli}},
+  \bibinfo{journal}{Chemistry and Physics of Lipids}
+  \textbf{\bibinfo{volume}{141}}, \bibinfo{pages}{48 } (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Gally et~al.}(1981)\citenamefont{Gally, Pluschke,
+  Overath, and Seelig}}]{gally81}
+\bibinfo{author}{\bibfnamefont{H.~U.} \bibnamefont{Gally}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Pluschke}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Overath}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{20}},
+  \bibinfo{pages}{1826} (\bibinfo{year}{1981}).
+
+\bibitem[{\citenamefont{Scherer and Seelig}(1987)}]{scherer87}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Scherer}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{The EMBO journal} \textbf{\bibinfo{volume}{6}}
+  (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Shinoda et~al.}(1997)\citenamefont{Shinoda, Namiki, and
+  Okazaki}}]{shinoda97}
+\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Shinoda}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Namiki}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Okazaki}},
+  \bibinfo{journal}{The Journal of Chemical Physics}
+  \textbf{\bibinfo{volume}{106}} (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{H{\"o}gberg et~al.}(2008)\citenamefont{H{\"o}gberg,
+  Nikitin, and Lyubartsev}}]{hogberg08}
+\bibinfo{author}{\bibfnamefont{C.-J.} \bibnamefont{H{\"o}gberg}},
+  \bibinfo{author}{\bibfnamefont{A.~M.} \bibnamefont{Nikitin}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~P.}
+  \bibnamefont{Lyubartsev}}, \bibinfo{journal}{Journal of Computational
+  Chemistry} \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{2359}
+  (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Castro et~al.}(2008)\citenamefont{Castro, Stevensson,
+  Dvinskikh, H{\"o}gberg, Lyubartsev, Zimmermann, Sandström, and
+  Maliniak}}]{castro08}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Castro}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Stevensson}},
+  \bibinfo{author}{\bibfnamefont{S.~V.} \bibnamefont{Dvinskikh}},
+  \bibinfo{author}{\bibfnamefont{C.-J.} \bibnamefont{H{\"o}gberg}},
+  \bibinfo{author}{\bibfnamefont{A.~P.} \bibnamefont{Lyubartsev}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Zimmermann}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Sandström}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Maliniak}},
+  \bibinfo{journal}{Biochim. Biophys. Acta - Biomembranes}
+  \textbf{\bibinfo{volume}{1778}}, \bibinfo{pages}{2604 }
+  (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Klauda et~al.}(2010)\citenamefont{Klauda, Venable,
+  Freites, O'Connor, Tobias, Mondragon-Ramirez, Vorobyov, Jr, and
+  Pastor}}]{klauda10}
+\bibinfo{author}{\bibfnamefont{J.~B.} \bibnamefont{Klauda}},
+  \bibinfo{author}{\bibfnamefont{R.~M.} \bibnamefont{Venable}},
+  \bibinfo{author}{\bibfnamefont{J.~A.} \bibnamefont{Freites}},
+  \bibinfo{author}{\bibfnamefont{J.~W.} \bibnamefont{O'Connor}},
+  \bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Tobias}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Mondragon-Ramirez}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Vorobyov}},
+  \bibinfo{author}{\bibfnamefont{A.~D.~M.} \bibnamefont{Jr}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.~W.} \bibnamefont{Pastor}},
+  \bibinfo{journal}{J. Phys. Chem. B} \textbf{\bibinfo{volume}{114}},
+  \bibinfo{pages}{7830} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Kapla et~al.}(2012)\citenamefont{Kapla, Stevensson,
+  Dahlberg, and Maliniak}}]{kapla12}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Kapla}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Stevensson}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Dahlberg}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Maliniak}},
+  \bibinfo{journal}{J. Phys. Chem. B} \textbf{\bibinfo{volume}{116}},
+  \bibinfo{pages}{244} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Dickson et~al.}(2012)\citenamefont{Dickson, Rosso,
+  Betz, Walker, and Gould}}]{dickson12}
+\bibinfo{author}{\bibfnamefont{C.~J.} \bibnamefont{Dickson}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Rosso}},
+  \bibinfo{author}{\bibfnamefont{R.~M.} \bibnamefont{Betz}},
+  \bibinfo{author}{\bibfnamefont{R.~C.} \bibnamefont{Walker}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{I.~R.} \bibnamefont{Gould}},
+  \bibinfo{journal}{Soft Matter} \textbf{\bibinfo{volume}{8}},
+  \bibinfo{pages}{9617} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Poger and Mark}(2012)}]{poger12}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Poger}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~E.} \bibnamefont{Mark}},
+  \bibinfo{journal}{Journal of Chemical Theory and Computation}
+  \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{4807} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Ferreira et~al.}(2013)\citenamefont{Ferreira,
+  Coreta-Gomes, Ollila, Moreno, Vaz, and Topgaard}}]{ferreira13}
+\bibinfo{author}{\bibfnamefont{T.~M.} \bibnamefont{Ferreira}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Coreta-Gomes}},
+  \bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}},
+  \bibinfo{author}{\bibfnamefont{M.~J.} \bibnamefont{Moreno}},
+  \bibinfo{author}{\bibfnamefont{W.~L.~C.} \bibnamefont{Vaz}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Topgaard}},
+  \bibinfo{journal}{Phys. Chem. Chem. Phys.} \textbf{\bibinfo{volume}{15}},
+  \bibinfo{pages}{1976} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Chowdhary et~al.}(2013)\citenamefont{Chowdhary, Harder,
+  Lopes, Huang, MacKerell, and Roux}}]{chowdhary13}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Chowdhary}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Harder}},
+  \bibinfo{author}{\bibfnamefont{P.~E.~M.} \bibnamefont{Lopes}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Huang}},
+  \bibinfo{author}{\bibfnamefont{A.~D.} \bibnamefont{MacKerell}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Roux}},
+  \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \textbf{\bibinfo{volume}{117}}, \bibinfo{pages}{9142} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Maciejewski et~al.}(2014)\citenamefont{Maciejewski,
+  Pasenkiewicz-Gierula, Cramariuc, Vattulainen, and Rog}}]{maciejewski14}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Maciejewski}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Pasenkiewicz-Gierula}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Cramariuc}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Vattulainen}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Rog}},
+  \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \textbf{\bibinfo{volume}{118}}, \bibinfo{pages}{4571} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Robinson et~al.}(1994)\citenamefont{Robinson, Richards,
+  Thomas, and Hann}}]{robinson94}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Robinson}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Richards}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Thomas}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hann}},
+  \bibinfo{journal}{Biophysical Journal} \textbf{\bibinfo{volume}{67}},
+  \bibinfo{pages}{2345 } (\bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Essex et~al.}(1994)\citenamefont{Essex, Hann, and
+  Richards}}]{essex94}
+\bibinfo{author}{\bibfnamefont{J.~W.} \bibnamefont{Essex}},
+  \bibinfo{author}{\bibfnamefont{M.~M.} \bibnamefont{Hann}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.~G.} \bibnamefont{Richards}},
+  \bibinfo{journal}{Philosophical Transactions of the Royal Society of London
+  B: Biological Sciences} \textbf{\bibinfo{volume}{344}}, \bibinfo{pages}{239}
+  (\bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Kothekar}(1996)}]{kothekar96}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Kothekar}},
+  \bibinfo{journal}{Ind. J. Biochem. Biophys.} \textbf{\bibinfo{volume}{33}},
+  \bibinfo{pages}{431 } (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Hyv{\"o}nen et~al.}(1997)\citenamefont{Hyv{\"o}nen,
+  Rantala, and Ala-Korpela}}]{hyvonen97}
+\bibinfo{author}{\bibfnamefont{M.~T.} \bibnamefont{Hyv{\"o}nen}},
+  \bibinfo{author}{\bibfnamefont{T.~T.} \bibnamefont{Rantala}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Ala-Korpela}},
+  \bibinfo{journal}{Biophys. J.} \textbf{\bibinfo{volume}{73}},
+  \bibinfo{pages}{2907} (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{Duong et~al.}(1999)\citenamefont{Duong, Mehler, and
+  Weinstein}}]{duong99}
+\bibinfo{author}{\bibfnamefont{T.~H.} \bibnamefont{Duong}},
+  \bibinfo{author}{\bibfnamefont{E.~L.} \bibnamefont{Mehler}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Weinstein}},
+  \bibinfo{journal}{Journal of Computational Physics}
+  \textbf{\bibinfo{volume}{151}}, \bibinfo{pages}{358 } (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Berger et~al.}(1997)\citenamefont{Berger, Edholm, and
+  J{\"a}hnig}}]{berger97}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Berger}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Edholm}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{J{\"a}hnig}},
+  \bibinfo{journal}{Biophys. J.} \textbf{\bibinfo{volume}{72}},
+  \bibinfo{pages}{2002 } (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{Bechinger and Seelig}(1991)}]{bechinger91}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Bechinger}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Chem. Phys. Lipids} \textbf{\bibinfo{volume}{58}},
+  \bibinfo{pages}{1 } (\bibinfo{year}{1991}).
+
+\bibitem[{\citenamefont{Ulrich and Watts}(1994)}]{ulrich94}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Ulrich}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Watts}},
+  \bibinfo{journal}{Biophys. J.} \textbf{\bibinfo{volume}{66}},
+  \bibinfo{pages}{1441 } (\bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Dvinskikh
+  et~al.}(2005{\natexlab{a}})\citenamefont{Dvinskikh, Castro, and
+  Sandstrom}}]{dvinskikh05b}
+\bibinfo{author}{\bibfnamefont{S.~V.} \bibnamefont{Dvinskikh}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Castro}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Sandstrom}},
+  \bibinfo{journal}{Phys. Chem. Chem. Phys.} \textbf{\bibinfo{volume}{7}},
+  \bibinfo{pages}{3255} (\bibinfo{year}{2005}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Brown and Seelig}(1978)}]{brown78}
+\bibinfo{author}{\bibfnamefont{M.~F.} \bibnamefont{Brown}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{17}},
+  \bibinfo{pages}{381} (\bibinfo{year}{1978}).
+
+\bibitem[{\citenamefont{Brown and Seelig}(1977)}]{brown77}
+\bibinfo{author}{\bibfnamefont{M.~F.} \bibnamefont{Brown}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{269}},
+  \bibinfo{pages}{721} (\bibinfo{year}{1977}).
+
+\bibitem[{\citenamefont{Akutsu and Seelig}(1981)}]{akutsu81}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Akutsu}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{20}},
+  \bibinfo{pages}{7366} (\bibinfo{year}{1981}).
+
+\bibitem[{\citenamefont{Altenbach and Seelig}(1984)}]{altenbach84}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Altenbach}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{23}},
+  \bibinfo{pages}{3913} (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{Roux and Bloom}(1990)}]{roux90}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Roux}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bloom}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{29}},
+  \bibinfo{pages}{7077} (\bibinfo{year}{1990}).
+
+\bibitem[{\citenamefont{Roux and Bloom}(1991)}]{roux91}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Roux}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bloom}},
+  \bibinfo{journal}{Biophysical Journal} \textbf{\bibinfo{volume}{60}},
+  \bibinfo{pages}{38 } (\bibinfo{year}{1991}).
+
+\bibitem[{\citenamefont{Gally et~al.}(1975)\citenamefont{Gally, Niederberger,
+  and Seelig}}]{gally75}
+\bibinfo{author}{\bibfnamefont{H.~U.} \bibnamefont{Gally}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Niederberger}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{14}},
+  \bibinfo{pages}{3647} (\bibinfo{year}{1975}).
+
+\bibitem[{\citenamefont{Scherer and Seelig}(1989)}]{scherer89}
+\bibinfo{author}{\bibfnamefont{P.~G.} \bibnamefont{Scherer}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{28}},
+  \bibinfo{pages}{7720} (\bibinfo{year}{1989}).
+
+\bibitem[{\citenamefont{Browning and Akutsu}(1982)}]{browning82}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Browning}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Akutsu}},
+  \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
+  \textbf{\bibinfo{volume}{684}}, \bibinfo{pages}{172 } (\bibinfo{year}{1982}).
+
+\bibitem[{\citenamefont{Kelusky and Smith}(1984)}]{kelusky84}
+\bibinfo{author}{\bibfnamefont{E.~C.} \bibnamefont{Kelusky}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.~C.} \bibnamefont{Smith}},
+  \bibinfo{journal}{Mol. Pharmacol.} \textbf{\bibinfo{volume}{26}},
+  \bibinfo{pages}{314} (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{Roux et~al.}(1989)\citenamefont{Roux, Neumann, Hodges,
+  Devaux, and Bloom}}]{roux89}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Roux}},
+  \bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Neumann}},
+  \bibinfo{author}{\bibfnamefont{R.~S.} \bibnamefont{Hodges}},
+  \bibinfo{author}{\bibfnamefont{P.~F.} \bibnamefont{Devaux}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bloom}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{28}},
+  \bibinfo{pages}{2313} (\bibinfo{year}{1989}).
+
+\bibitem[{\citenamefont{Kuchinka and Seelig}(1989)}]{kuchinka89}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Kuchinka}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{28}},
+  \bibinfo{pages}{4216} (\bibinfo{year}{1989}).
+
+\bibitem[{ion(2014)}]{ionpaper}
+ (\bibinfo{year}{2014}), \bibinfo{note}{manuscript in preparation based on
+  results in nmrlipids.blogspot.fi}.
+
+\bibitem[{\citenamefont{Gowers and Nielsen}(2009)}]{gowers09}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Gowers}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Nielsen}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{461}},
+  \bibinfo{pages}{879} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{{Samuli Ollila}}(2013)}]{ollila13}
+\bibinfo{author}{\bibfnamefont{O.~H.} \bibnamefont{{Samuli Ollila}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2013}),
+  \eprint{1309.2131}.
+
+\bibitem[{\citenamefont{Seelig}(1977)}]{seelig77c}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Quarterly Reviews of Biophysics}
+  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{353} (\bibinfo{year}{1977}).
+
+\bibitem[{\citenamefont{Hong et~al.}(1995{\natexlab{b}})\citenamefont{Hong,
+  Schmidt-Rohr, and Pines}}]{hong95a}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hong}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Schmidt-Rohr}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Pines}},
+  \bibinfo{journal}{Journal of the American Chemical Society}
+  \textbf{\bibinfo{volume}{117}}, \bibinfo{pages}{3310}
+  (\bibinfo{year}{1995}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Gross et~al.}(1997)\citenamefont{Gross, Warschawski,
+  and Griffin}}]{gross97}
+\bibinfo{author}{\bibfnamefont{J.~D.} \bibnamefont{Gross}},
+  \bibinfo{author}{\bibfnamefont{D.~E.} \bibnamefont{Warschawski}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~G.}
+  \bibnamefont{Griffin}}, \bibinfo{journal}{Journal of the American Chemical
+  Society} \textbf{\bibinfo{volume}{119}}, \bibinfo{pages}{796}
+  (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{Dvinskikh
+  et~al.}(2005{\natexlab{b}})\citenamefont{Dvinskikh, Castro, and
+  Sandstrom}}]{dvinskikh05a}
+\bibinfo{author}{\bibfnamefont{S.~V.} \bibnamefont{Dvinskikh}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Castro}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Sandstrom}},
+  \bibinfo{journal}{Phys. Chem. Chem. Phys.} \textbf{\bibinfo{volume}{7}},
+  \bibinfo{pages}{607} (\bibinfo{year}{2005}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Vogel and Feller}(2012)}]{vogel12}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Vogel}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Feller}},
+  \bibinfo{journal}{The Journal of Membrane Biology}
+  \textbf{\bibinfo{volume}{245}}, \bibinfo{pages}{23} (\bibinfo{year}{2012}),
+  ISSN \bibinfo{issn}{0022-2631}.
+
+\bibitem[{\citenamefont{Ollila et~al.}(2007)\citenamefont{Ollila, Hyv{\"o}nen,
+  and Vattulainen}}]{ollila07a}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Ollila}},
+  \bibinfo{author}{\bibfnamefont{M.~T.} \bibnamefont{Hyv{\"o}nen}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Vattulainen}},
+  \bibinfo{journal}{J. Phys. Chem. B} \textbf{\bibinfo{volume}{111}},
+  \bibinfo{pages}{3139} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Ferreira et~al.}(2015)\citenamefont{Ferreira, Ollila,
+  Pigliapochi, Dabkowska, and Topgaard}}]{ferreira15}
+\bibinfo{author}{\bibfnamefont{T.~M.} \bibnamefont{Ferreira}},
+  \bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Pigliapochi}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Dabkowska}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Topgaard}},
+  \emph{\bibinfo{title}{Model-free estimation of the effective correlation time
+  for c–h bondreorientation in amphiphilic bilayers: 1h–13c solid-state nmr
+  and md simulations}}, \bibinfo{howpublished}{Accepted to be published in The
+  Journal of Chemical Physics} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Hess et~al.}(2008)\citenamefont{Hess, Kutzner, van~der
+  Spoel, and Lindahl}}]{hess08}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Hess}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kutzner}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{van~der Spoel}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Lindahl}},
+  \bibinfo{journal}{J. Chem. Theory Comput.} \textbf{\bibinfo{volume}{4}},
+  \bibinfo{pages}{435} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Plimpton}(1995)}]{plimpton95}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Plimpton}},
+  \bibinfo{journal}{Journal of Computational Physics}
+  \textbf{\bibinfo{volume}{117}}, \bibinfo{pages}{1 } (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Ollila}(2014{\natexlab{a}})}]{bergerFILESpopc}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  (\bibinfo{year}{2014}{\natexlab{a}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13279}}.
+
+\bibitem[{\citenamefont{Marrink et~al.}(1998)\citenamefont{Marrink, Berger,
+  Tieleman, and J{\"a}hnig}}]{marrink98}
+\bibinfo{author}{\bibfnamefont{S.-J.} \bibnamefont{Marrink}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Berger}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Tieleman}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{J{\"a}hnig}},
+  \bibinfo{journal}{Biophysical Journal} \textbf{\bibinfo{volume}{74}},
+  \bibinfo{pages}{931 } (\bibinfo{year}{1998}).
+
+\bibitem[{\citenamefont{M{\"a}{\"a}tt{\"a}}(2015)}]{bergerDPPCfiles}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{M{\"a}{\"a}tt{\"a}}}
+  (\bibinfo{year}{2015}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13934}}.
+
+\bibitem[{\citenamefont{Gurtovenko et~al.}(2004)\citenamefont{Gurtovenko,
+  Patra, Karttunen, and Vattulainen}}]{gurtovenko04}
+\bibinfo{author}{\bibfnamefont{A.~A.} \bibnamefont{Gurtovenko}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Patra}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Karttunen}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Vattulainen}},
+  \bibinfo{journal}{Biophysical Journal} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{3461 } (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Miettinen}(2013)}]{dmpcFILES}
+\bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Miettinen}}
+  (\bibinfo{year}{2013}),
+  \urlprefix\url{http://dx.doi.org/10.6084/m9.figshare.829642}.
+
+\bibitem[{\citenamefont{Miettinen et~al.}(2009)\citenamefont{Miettinen,
+  Gurtovenko, Vattulainen, and Karttunen}}]{miettinen09}
+\bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Miettinen}},
+  \bibinfo{author}{\bibfnamefont{A.~A.} \bibnamefont{Gurtovenko}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Vattulainen}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Karttunen}},
+  \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \textbf{\bibinfo{volume}{113}}, \bibinfo{pages}{9226} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Samuli and
+  Miettinen}(2015{\natexlab{a}})}]{charmm36filesSHORT}
+\bibinfo{author}{\bibfnamefont{O.~O.~H.} \bibnamefont{Samuli}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Miettinen}}
+  (\bibinfo{year}{2015}{\natexlab{a}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13944}}.
+
+\bibitem[{\citenamefont{Javanainen}(2014{\natexlab{a}})}]{macrogFILES}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}}
+  (\bibinfo{year}{2014}{\natexlab{a}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13497}}.
+
+\bibitem[{\citenamefont{Ollila and Retegan}(2015)}]{GAFFlipidFILES}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Retegan}}
+  (\bibinfo{year}{2015}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13791}}.
+
+\bibitem[{\citenamefont{Dickson et~al.}(2014)\citenamefont{Dickson, Madej,
+  Skjevik, Betz, Teigen, Gould, and Walker}}]{dickson14}
+\bibinfo{author}{\bibfnamefont{C.~J.} \bibnamefont{Dickson}},
+  \bibinfo{author}{\bibfnamefont{B.~D.} \bibnamefont{Madej}},
+  \bibinfo{author}{\bibfnamefont{�.~A.} \bibnamefont{Skjevik}},
+  \bibinfo{author}{\bibfnamefont{R.~M.} \bibnamefont{Betz}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Teigen}},
+  \bibinfo{author}{\bibfnamefont{I.~R.} \bibnamefont{Gould}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.~C.} \bibnamefont{Walker}},
+  \bibinfo{journal}{Journal of Chemical Theory and Computation}
+  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{865} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Ollila and Retegan}(2014)}]{lipid14files}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Retegan}},
+  \emph{\bibinfo{title}{Md simulation trajectory and related files for popc
+  bilayer (lipid14, gromacs 4.5)}} (\bibinfo{year}{2014}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.12767}.
+
+\bibitem[{\citenamefont{Poger et~al.}(2010)\citenamefont{Poger, Van~Gunsteren,
+  and Mark}}]{poger10}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Poger}},
+  \bibinfo{author}{\bibfnamefont{W.~F.} \bibnamefont{Van~Gunsteren}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~E.} \bibnamefont{Mark}},
+  \bibinfo{journal}{Journal of Computational Chemistry}
+  \textbf{\bibinfo{volume}{31}}, \bibinfo{pages}{1117} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Fuchs}(2014{\natexlab{a}})}]{pogerFILES}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Fuchs}},
+  \emph{\bibinfo{title}{Temporary location for simulations files with poger et
+  al. model.}} (\bibinfo{year}{2014}{\natexlab{a}}),
+  \urlprefix\url{http://www.dsimb.inserm.fr/~fuchs/project_Samuli/Poger_DPPC/}.
+
+\bibitem[{\citenamefont{J{\"a}mbeck and
+  Lyubartsev}(2012{\natexlab{a}})}]{jambeck12}
+\bibinfo{author}{\bibfnamefont{J.~P.~M.} \bibnamefont{J{\"a}mbeck}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~P.}
+  \bibnamefont{Lyubartsev}}, \bibinfo{journal}{The Journal of Physical
+  Chemistry B} \textbf{\bibinfo{volume}{116}}, \bibinfo{pages}{3164}
+  (\bibinfo{year}{2012}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{M{\"a}{\"a}tt{\"a}}(2014)}]{slipidsFILES}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{M{\"a}{\"a}tt{\"a}}}
+  (\bibinfo{year}{2014}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13287}}.
+
+\bibitem[{\citenamefont{Kukol}(2009)}]{kukol09}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Kukol}},
+  \bibinfo{journal}{Journal of Chemical Theory and Computation}
+  \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{615} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Javanainen}(2014{\natexlab{b}})}]{kukolFILES}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}}
+  (\bibinfo{year}{2014}{\natexlab{b}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13393}}.
+
+\bibitem[{\citenamefont{Chiu et~al.}(2009)\citenamefont{Chiu, Pandit, Scott,
+  and Jakobsson}}]{chiu09}
+\bibinfo{author}{\bibfnamefont{S.-W.} \bibnamefont{Chiu}},
+  \bibinfo{author}{\bibfnamefont{S.~A.} \bibnamefont{Pandit}},
+  \bibinfo{author}{\bibfnamefont{H.~L.} \bibnamefont{Scott}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Jakobsson}},
+  \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \textbf{\bibinfo{volume}{113}}, \bibinfo{pages}{2748} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Rabinovich and Lyubartsev}(2014)}]{rabinovich14}
+\bibinfo{author}{\bibfnamefont{A.~L.} \bibnamefont{Rabinovich}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~P.}
+  \bibnamefont{Lyubartsev}}, \bibinfo{journal}{Journal of Physics: Conference
+  Series} \textbf{\bibinfo{volume}{510}}, \bibinfo{pages}{012022}
+  (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Ulmschneider and Ulmschneider}(2009)}]{Ulmschneider09}
+\bibinfo{author}{\bibfnamefont{J.~P.} \bibnamefont{Ulmschneider}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.~B.}
+  \bibnamefont{Ulmschneider}}, \bibinfo{journal}{Journal of Chemical Theory and
+  Computation} \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{1803}
+  (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Javanainen}(2014{\natexlab{c}})}]{ulmschneiderFILES}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}}
+  (\bibinfo{year}{2014}{\natexlab{c}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13392}}.
+
+\bibitem[{\citenamefont{Tj{\"o}rnhammar and Edholm}(2014)}]{tjornhammar14}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tj{\"o}rnhammar}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Edholm}},
+  \bibinfo{journal}{Journal of Chemical Theory and Computation}
+  \textbf{\bibinfo{volume}{0}}, \bibinfo{pages}{null} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Javanainen}(2014{\natexlab{d}})}]{tjornhammarfiles}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}},
+  \emph{\bibinfo{title}{Dppc @ 323k, new ff by tj{\"o}rnhammar and edholm}}
+  (\bibinfo{year}{2014}{\natexlab{d}}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.12743}.
+
+\bibitem[{\citenamefont{Henin et~al.}(2008)\citenamefont{Henin, Shinoda, and
+  Klein}}]{henin08}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Henin}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Shinoda}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Klein}},
+  \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{7008} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Lee et~al.}(2014)\citenamefont{Lee, Tran, Allsopp, Lim,
+  Henin, and Klauda}}]{lee14}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Lee}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Tran}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Allsopp}},
+  \bibinfo{author}{\bibfnamefont{J.~B.} \bibnamefont{Lim}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Henin}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~B.} \bibnamefont{Klauda}},
+  \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \textbf{\bibinfo{volume}{118}}, \bibinfo{pages}{547} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Botan}(2015)}]{charmmUAfiles}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Botan}} (\bibinfo{year}{2015}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13821}}.
+
+\bibitem[{\citenamefont{Ollila}(2015{\natexlab{a}})}]{bergerDEHYDfiles}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  (\bibinfo{year}{2015}{\natexlab{a}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13814}}.
+
+\bibitem[{\citenamefont{Samuli and
+  Miettinen}(2015{\natexlab{b}})}]{charmm36files15wPERl}
+\bibinfo{author}{\bibfnamefont{O.~O.~H.} \bibnamefont{Samuli}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Miettinen}}
+  (\bibinfo{year}{2015}{\natexlab{b}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13946}}.
+
+\bibitem[{\citenamefont{Samuli and
+  Miettinen}(2015{\natexlab{c}})}]{charmm36files7wPERl}
+\bibinfo{author}{\bibfnamefont{O.~O.~H.} \bibnamefont{Samuli}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Miettinen}}
+  (\bibinfo{year}{2015}{\natexlab{c}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13945}}.
+
+\bibitem[{\citenamefont{Javanainen}(2014{\natexlab{e}})}]{macrogdehydFILES}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}}
+  (\bibinfo{year}{2014}{\natexlab{e}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13498}}.
+
+\bibitem[{\citenamefont{Ollila}(2015{\natexlab{b}})}]{gaffDEHYDfiles}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  (\bibinfo{year}{2015}{\natexlab{b}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13853}}.
+
+\bibitem[{\citenamefont{H{\"o}ltje et~al.}(2001)\citenamefont{H{\"o}ltje,
+  F{\"o}rster, Brandt, Engels, von Rybinski, and H{\"o}ltje}}]{holtje01}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{H{\"o}ltje}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{F{\"o}rster}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Brandt}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Engels}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{von Rybinski}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{H.-D.}
+  \bibnamefont{H{\"o}ltje}}, \bibinfo{journal}{Biochim. Biophys. Acta -
+  Biomembranes} \textbf{\bibinfo{volume}{1511}}, \bibinfo{pages}{156 }
+  (\bibinfo{year}{2001}).
+
+\bibitem[{\citenamefont{Ollila}(2014{\natexlab{b}})}]{bergerFILESpopc7chol}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  (\bibinfo{year}{2014}{\natexlab{b}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13282}}.
+
+\bibitem[{\citenamefont{Ollila}(2014{\natexlab{c}})}]{bergerFILESpopc15chol}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  (\bibinfo{year}{2014}{\natexlab{c}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13281}}.
+
+\bibitem[{\citenamefont{Ollila}(2014{\natexlab{d}})}]{bergerFILESpopc34chol}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  (\bibinfo{year}{2014}{\natexlab{d}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13283}}.
+
+\bibitem[{\citenamefont{Ollila}(2014{\natexlab{e}})}]{bergerFILESpopc50chol}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  (\bibinfo{year}{2014}{\natexlab{e}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13285}}.
+
+\bibitem[{\citenamefont{Ollila}(2014{\natexlab{f}})}]{bergerFILESpopc60chol}
+\bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}}
+  (\bibinfo{year}{2014}{\natexlab{f}}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13286}}.
+
+\bibitem[{\citenamefont{Lim et~al.}(2012)\citenamefont{Lim, Rogaski, and
+  Klauda}}]{lim12}
+\bibinfo{author}{\bibfnamefont{J.~B.} \bibnamefont{Lim}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Rogaski}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~B.} \bibnamefont{Klauda}},
+  \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \textbf{\bibinfo{volume}{116}}, \bibinfo{pages}{203} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Javanainen}(2015)}]{macrogCHOLfiles}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}}
+  (\bibinfo{year}{2015}),
+  \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13877}}.
+
+\bibitem[{\citenamefont{Warschawski and Devaux}(2005)}]{warschawski05}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Warschawski}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Devaux}},
+  \bibinfo{journal}{European Biophysics Journal} \textbf{\bibinfo{volume}{34}},
+  \bibinfo{pages}{987} (\bibinfo{year}{2005}), ISSN \bibinfo{issn}{0175-7571}.
+
+\bibitem[{\citenamefont{Engel and Cowburn}(1981)}]{engel81}
+\bibinfo{author}{\bibfnamefont{A.~K.} \bibnamefont{Engel}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Cowburn}},
+  \bibinfo{journal}{FEBS Letters} \textbf{\bibinfo{volume}{126}},
+  \bibinfo{pages}{169 } (\bibinfo{year}{1981}).
+
+\bibitem[{\citenamefont{Mashl et~al.}(2001)\citenamefont{Mashl, Scott,
+  Subramaniam, and Jakobsson}}]{mashl01}
+\bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Mashl}},
+  \bibinfo{author}{\bibfnamefont{H.~L.} \bibnamefont{Scott}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Subramaniam}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Jakobsson}},
+  \bibinfo{journal}{Biophysical Journal} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{3005 } (\bibinfo{year}{2001}).
+
+\bibitem[{\citenamefont{Pertsin et~al.}(2005)\citenamefont{Pertsin, Platonov,
+  and Grunze}}]{pertsin05}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Pertsin}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Platonov}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Grunze}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{122}},
+  \bibinfo{pages}{244708} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Pertsin et~al.}(2007)\citenamefont{Pertsin, Platonov,
+  and Grunze}}]{pertsin07}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Pertsin}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Platonov}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Grunze}},
+  \bibinfo{journal}{Langmuir} \textbf{\bibinfo{volume}{23}},
+  \bibinfo{pages}{1388} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Eun and Berkowitz}(2009)}]{eun09}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Eun}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Berkowitz}},
+  \bibinfo{journal}{J. Phys. Chem. B} \textbf{\bibinfo{volume}{113}},
+  \bibinfo{pages}{13222} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Eun and Berkowitz}(2010)}]{eun10}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Eun}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Berkowitz}},
+  \bibinfo{journal}{J. Phys. Chem. B} \textbf{\bibinfo{volume}{114}},
+  \bibinfo{pages}{3013} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Schneck et~al.}(2012)\citenamefont{Schneck, Sedlmeier,
+  and Netz}}]{schneck12}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Schneck}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Sedlmeier}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~R.} \bibnamefont{Netz}},
+  \bibinfo{journal}{Proc. Natl. Acad. Sci. USA} \textbf{\bibinfo{volume}{109}},
+  \bibinfo{pages}{14405} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Israelachvili}(1985)}]{israelachvili}
+\bibinfo{author}{\bibfnamefont{J.~N.} \bibnamefont{Israelachvili}},
+  \emph{\bibinfo{title}{Intermolecular and {S}urface {F}orces}}
+  (\bibinfo{publisher}{Academic Press}, \bibinfo{address}{London},
+  \bibinfo{year}{1985}).
+
+\bibitem[{\citenamefont{Israelachvili and
+  Wennerstr\"om}(1996)}]{israelachvili96}
+\bibinfo{author}{\bibfnamefont{J.~N.} \bibnamefont{Israelachvili}}
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wennerstr\"om}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{379}}, \bibinfo{pages}{219
+  } (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Sparr and Wennerstr{\"o}m}(2011)}]{sparr11}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Sparr}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wennerstr{\"o}m}},
+  \bibinfo{journal}{Curr. Opin. Colloid Interf. Science}
+  \textbf{\bibinfo{volume}{16}}, \bibinfo{pages}{561 } (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Huang and Feigenson}(1999)}]{huang99}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Huang}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.~W.} \bibnamefont{Feigenson}},
+  \bibinfo{journal}{Biophys. J.} \textbf{\bibinfo{volume}{76}},
+  \bibinfo{pages}{2142 } (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Zhu et~al.}(2007)\citenamefont{Zhu, Cheng, and
+  Vaughn}}]{zhu07}
+\bibinfo{author}{\bibfnamefont{Q.}~\bibnamefont{Zhu}},
+  \bibinfo{author}{\bibfnamefont{K.~H.} \bibnamefont{Cheng}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~W.} \bibnamefont{Vaughn}},
+  \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \textbf{\bibinfo{volume}{111}}, \bibinfo{pages}{11021}
+  (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Rog et~al.}(2009)\citenamefont{Rog,
+  Pasenkiewicz-Gierula, Vattulainen, and Karttunen}}]{rog09}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Rog}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Pasenkiewicz-Gierula}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Vattulainen}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Karttunen}},
+  \bibinfo{journal}{Biochim. Biophys. Acta - Biomembranes}
+  \textbf{\bibinfo{volume}{1788}}, \bibinfo{pages}{97 } (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Alwarawrah et~al.}(2012)\citenamefont{Alwarawrah, Dai,
+  and Huang}}]{alwarawrah12}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Alwarawrah}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Dai}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Huang}}, \bibinfo{journal}{J.
+  Chem. Theor. Comput.} \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{749}
+  (\bibinfo{year}{2012}).
+
+\bibitem[{mar(2010)}]{marsh10}
+\bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
+  \textbf{\bibinfo{volume}{1798}}, \bibinfo{pages}{688 }
+  (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Simons and Vaz}(2004)}]{simons04}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Simons}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.~L.} \bibnamefont{Vaz}},
+  \bibinfo{journal}{Ann. Rev. Biophys. Biomol. Struct.}
+  \textbf{\bibinfo{volume}{33}}, \bibinfo{pages}{269} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Somerharju et~al.}(2009)\citenamefont{Somerharju,
+  Virtanen, Cheng, and Hermansson}}]{somerharju09}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Somerharju}},
+  \bibinfo{author}{\bibfnamefont{J.~A.} \bibnamefont{Virtanen}},
+  \bibinfo{author}{\bibfnamefont{K.~H.} \bibnamefont{Cheng}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hermansson}},
+  \bibinfo{journal}{Biochim. Biophys. Acta - Biomembranes}
+  \textbf{\bibinfo{volume}{1788}}, \bibinfo{pages}{12 } (\bibinfo{year}{2009}).
+
+\bibitem[{gho(1982)}]{ghosh82}
+\bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
+  \textbf{\bibinfo{volume}{691}}, \bibinfo{pages}{151 } (\bibinfo{year}{1982}).
+
+\bibitem[{\citenamefont{Ferreira et~al.}(2014)\citenamefont{Ferreira, Topgaard,
+  and Ollila}}]{ferreira14}
+\bibinfo{author}{\bibfnamefont{T.~M.} \bibnamefont{Ferreira}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Topgaard}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}},
+  \bibinfo{journal}{Langmuir} \textbf{\bibinfo{volume}{30}},
+  \bibinfo{pages}{461} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Tieleman et~al.}(1999)\citenamefont{Tieleman,
+  Berendsen, and Sansom}}]{tieleman99}
+\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Tieleman}},
+  \bibinfo{author}{\bibfnamefont{H.~J.} \bibnamefont{Berendsen}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.~S.}
+  \bibnamefont{Sansom}}, \bibinfo{journal}{Biophysical Journal}
+  \textbf{\bibinfo{volume}{76}}, \bibinfo{pages}{1757 } (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Bachar et~al.}(2004)\citenamefont{Bachar, Brunelle,
+  Tieleman, and Rauk}}]{bachar04}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bachar}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Brunelle}},
+  \bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Tieleman}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Rauk}},
+  \bibinfo{journal}{J. Phys. Chem. B} \textbf{\bibinfo{volume}{108}},
+  \bibinfo{pages}{7170} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Tieleman et~al.}(2006)\citenamefont{Tieleman,
+  MacCallum, Ash, Kandt, Xu, and Monticelli}}]{tieleman06}
+\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Tieleman}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{MacCallum}},
+  \bibinfo{author}{\bibfnamefont{W.~L.} \bibnamefont{Ash}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kandt}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Xu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Monticelli}},
+  \bibinfo{journal}{J. Phys. Condens. Matter} \textbf{\bibinfo{volume}{18}},
+  \bibinfo{pages}{S1221} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Hess et~al.}(1997)\citenamefont{Hess, Bekker,
+  Berendsen, and Fraaije}}]{hess97}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Hess}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Bekker}},
+  \bibinfo{author}{\bibfnamefont{H.~J.~C.} \bibnamefont{Berendsen}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.~G. E.~M.}
+  \bibnamefont{Fraaije}}, \bibinfo{journal}{J. Comput. Chem.}
+  \textbf{\bibinfo{volume}{18}}, \bibinfo{pages}{1463} (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{Hess}(2008)}]{hess07}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Hess}},
+  \bibinfo{journal}{Journal of Chemical Theory and Computation}
+  \textbf{\bibinfo{volume}{4}}, \bibinfo{pages}{116} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Darden et~al.}(1993)\citenamefont{Darden, York, and
+  Pedersen}}]{darden93}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Darden}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{York}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Pedersen}},
+  \bibinfo{journal}{The Journal of Chemical Physics}
+  \textbf{\bibinfo{volume}{98}} (\bibinfo{year}{1993}).
+
+\bibitem[{\citenamefont{Essman et~al.}(1995)\citenamefont{Essman, Perera,
+  Berkowitz, Larden, Lee, and Pedersen}}]{essman95}
+\bibinfo{author}{\bibfnamefont{U.~L.} \bibnamefont{Essman}},
+  \bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Perera}},
+  \bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Berkowitz}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Larden}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Lee}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~G.} \bibnamefont{Pedersen}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{103}},
+  \bibinfo{pages}{8577} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Bussi et~al.}(2007)\citenamefont{Bussi, Donadio, and
+  Parrinello}}]{bussi07}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Bussi}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Parrinello}},
+  \bibinfo{journal}{The Journal of Chemical Physics}
+  \textbf{\bibinfo{volume}{126}} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Berendsen et~al.}(1984)\citenamefont{Berendsen, Postma,
+  van Gunsteren, DiNola, and Haak}}]{berendsen84}
+\bibinfo{author}{\bibfnamefont{H.~J.~C.} \bibnamefont{Berendsen}},
+  \bibinfo{author}{\bibfnamefont{J.~P.~M.} \bibnamefont{Postma}},
+  \bibinfo{author}{\bibfnamefont{W.~F.} \bibnamefont{van Gunsteren}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{DiNola}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~R.} \bibnamefont{Haak}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{3684} (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{J{\"a}mbeck and
+  Lyubartsev}(2012{\natexlab{b}})}]{jambeck12b}
+\bibinfo{author}{\bibfnamefont{J.~P.~M.} \bibnamefont{J{\"a}mbeck}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~P.}
+  \bibnamefont{Lyubartsev}}, \bibinfo{journal}{Journal of Chemical Theory and
+  Computation} \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{2938}
+  (\bibinfo{year}{2012}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Jo et~al.}(2008)\citenamefont{Jo, Kim, Iyer, and
+  Im}}]{jo08}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Jo}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Kim}},
+  \bibinfo{author}{\bibfnamefont{V.~G.} \bibnamefont{Iyer}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Im}},
+  \bibinfo{journal}{Journal of Computational Chemistry}
+  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{1859} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Jorgensen et~al.}(1983)\citenamefont{Jorgensen,
+  Chandrasekhar, Madura, Impey, and Klein}}]{jorgensen83}
+\bibinfo{author}{\bibfnamefont{W.~L.} \bibnamefont{Jorgensen}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Chandrasekhar}},
+  \bibinfo{author}{\bibfnamefont{J.~D.} \bibnamefont{Madura}},
+  \bibinfo{author}{\bibfnamefont{R.~W.} \bibnamefont{Impey}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Klein}},
+  \bibinfo{journal}{The Journal of Chemical Physics}
+  \textbf{\bibinfo{volume}{79}} (\bibinfo{year}{1983}).
+
+\bibitem[{\citenamefont{Parrinello and Rahman}(1981)}]{parrinello81}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Parrinello}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Rahman}},
+  \bibinfo{journal}{J. Appl. Phys.} \textbf{\bibinfo{volume}{52}},
+  \bibinfo{pages}{7182} (\bibinfo{year}{1981}).
+
+\bibitem[{\citenamefont{Nose}(1984)}]{nose84}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Nose}}, \bibinfo{journal}{Mol.
+  Phys.} \textbf{\bibinfo{volume}{52}}, \bibinfo{pages}{255}
+  (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{Hoover}(1985)}]{hoover85}
+\bibinfo{author}{\bibfnamefont{W.~G.} \bibnamefont{Hoover}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{31}},
+  \bibinfo{pages}{1695} (\bibinfo{year}{1985}).
+
+\bibitem[{\citenamefont{Domański et~al.}(2010)\citenamefont{Domański,
+  Stansfeld, Sansom, and Beckstein}}]{domanski10}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Domański}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Stansfeld}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Sansom}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Beckstein}},
+  \bibinfo{journal}{The Journal of Membrane Biology}
+  \textbf{\bibinfo{volume}{236}}, \bibinfo{pages}{255} (\bibinfo{year}{2010}),
+  ISSN \bibinfo{issn}{0022-2631}.
+
+\bibitem[{\citenamefont{Sousa~da Silva and Vranken}(2012)}]{silva12}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Sousa~da Silva}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Vranken}},
+  \bibinfo{journal}{BMC Research Notes} \textbf{\bibinfo{volume}{5}},
+  \bibinfo{pages}{367} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Salomon-Ferrer
+  et~al.}(2013)\citenamefont{Salomon-Ferrer, Case, and Walker}}]{ferrer13}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Salomon-Ferrer}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Case}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.~C.} \bibnamefont{Walker}},
+  \bibinfo{journal}{Wiley Interdisciplinary Reviews: Computational Molecular
+  Science} \textbf{\bibinfo{volume}{3}}, \bibinfo{pages}{198}
+  (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Berendsen et~al.}(1981)\citenamefont{Berendsen, Postma,
+  van Gunsteren, and Hermans}}]{berendsen81}
+\bibinfo{author}{\bibfnamefont{H.~J.~C.} \bibnamefont{Berendsen}},
+  \bibinfo{author}{\bibfnamefont{J.~P.~M.} \bibnamefont{Postma}},
+  \bibinfo{author}{\bibfnamefont{W.~F.} \bibnamefont{van Gunsteren}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Hermans}},
+  \emph{\bibinfo{title}{Intermolecular Forces}} (\bibinfo{publisher}{Reidel},
+  \bibinfo{address}{Dordrecht}, \bibinfo{year}{1981}), chap.
+  \bibinfo{chapter}{Interaction models for water in relation to protein
+  hydration}, pp. \bibinfo{pages}{331--342}.
+
+\bibitem[{\citenamefont{Tironi et~al.}(1995)\citenamefont{Tironi, Sperb, Smith,
+  and van Gunsteren}}]{tironi95}
+\bibinfo{author}{\bibfnamefont{I.~G.} \bibnamefont{Tironi}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sperb}},
+  \bibinfo{author}{\bibfnamefont{P.~E.} \bibnamefont{Smith}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.~F.} \bibnamefont{van Gunsteren}},
+  \bibinfo{journal}{The Journal of Chemical Physics}
+  \textbf{\bibinfo{volume}{102}} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Fuchs}(2014{\natexlab{b}})}]{fuchs14}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Fuchs}},
+  \emph{\bibinfo{title}{Poger lipids with reaction field using different
+  gromacs versions}} (\bibinfo{year}{2014}{\natexlab{b}}),
+  \urlprefix\url{http://www.dsimb.inserm.fr/~fuchs/project_Samuli/Poger_DPPC/tests_gmx_versions/Comments_area_different_gmx_versions.pdf}.
+
+\bibitem[{\citenamefont{Miyamoto and Kollman}(1992)}]{miyamoto92}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Miyamoto}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.~A.} \bibnamefont{Kollman}},
+  \bibinfo{journal}{J. Comput. Chem} \textbf{\bibinfo{volume}{13}},
+  \bibinfo{pages}{952} (\bibinfo{year}{1992}).
+
+\bibitem[{\citenamefont{Jambeck and Lyubartsev}(2013)}]{jambeck13}
+\bibinfo{author}{\bibfnamefont{J.~P.~M.} \bibnamefont{Jambeck}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~P.}
+  \bibnamefont{Lyubartsev}}, \bibinfo{journal}{Phys. Chem. Chem. Phys.}
+  \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{4677} (\bibinfo{year}{2013}).
+
+\end{thebibliography}

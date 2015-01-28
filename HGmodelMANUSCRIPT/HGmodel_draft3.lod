@@ -1,0 +1,28 @@
+\contentsline {todos}{{1. }Based on the results and discussions with Olle Edholm and Peter Tieleman in the blog, it seems that the glycerol backbone dihedrals are not the same in the model used in the publication by Berger et al.\nobreakspace {}\cite {berger97} and in the model shared in the webpage of Peter Tieleman (http://wcm.ucalgary.ca/tieleman/downloads). In this work (as it is quite often done in other works as well) we currently refer to the model in the webpage as ''Berger'' model. This is misleading. We have to call it something else. One suggestion could be to call it ''BergerM'', because it was firt time used in Marrink et al. Biophys. J. 74,931-943 (1998). Any other suggestions?\\ COMMENT: Patrick Fuchs suggested ''Berger-T''. This is better. \\ COMMENT2: Current trial, based in blog discussion, is to use Berger-MOLECULE-YEAR [citation]. }{2}{}
+\contentsline {todos}{{2. }Should we write more about this?}{3}{}
+\contentsline {todos}{{3. } We should mention the sign issue and refer to the blog post: http://nmrlipids.blogspot.fi/2014/04/on-signs-of-order-parameters.html somewhere. Maybe we should change the name of this section II.B. to: "Analysis and terminology of order parameters from experiments and simulations" or similar, and also move the "forking" explanation here.}{3}{}
+\contentsline {todos}{{4. }This is temporarily linked to the blog. Currently I think that the posts (with comments included) to which we want to cite are put into the Figshare in pdf format as they are in when the publication is submitted. Figshare allows commenting to continue the discussion.}{3}{}
+\contentsline {todos}{{5. }Not included in the Fig. 2, to be removed?}{4}{}
+\contentsline {todos}{{6. }Permanent link in progress by Hubert Santuz}{4}{}
+\contentsline {todos}{{7. }Samuli, put to Zenodo}{4}{}
+\contentsline {todos}{{8. }Not included in the Fig. 2. Should we remove or include?}{4}{}
+\contentsline {todos}{{9. }Permanent link in progress by Hubert Santuz}{4}{}
+\contentsline {todos}{{10. }Permanent link in progress by Patrick Fuchs}{4}{}
+\contentsline {todos}{{11. }Samuli, put to Zenodo}{4}{}
+\contentsline {todos}{{12. }Alexander Luybartsev, let us know if you share the files.}{4}{}
+\contentsline {todos}{{13. }Alexander Luybartsev, let us know if you share the files.}{4}{}
+\contentsline {todos}{{20. }This kind of table should be done or not? DONE, see Fig.\nobreakspace {}4{}{}{}\hbox {}}{5}{}
+\contentsline {todos}{{14. }Hubert Santuz, these files are already in Gitbub, however to get doi citation it should be put to Zenodo}{6}{}
+\contentsline {todos}{{15. }Hubert Santuz, these files are already in Gitbub, however to get doi citation it should be put to Zenodo}{6}{}
+\contentsline {todos}{{16. }Hubert Santuz, these files are already in Gitbub, however to get doi citation it should be put to Zenodo}{6}{}
+\contentsline {todos}{{17. }Markus Miettinen suggested that we should consider making one more figure where only experimental data would be shown and that would be discussed in Section\nobreakspace {}III\tmspace +\thinmuskip {.1667em}A{}{}{}\hbox {}}{7}{}
+\contentsline {todos}{{18. }Markus has now made a new figure with signs included. I think that this is very good. I also think that we should try to get the interactive figure behind permalink (i.e. Zenodo or figshare) and cite that in the paper.}{7}{}
+\contentsline {todos}{{21. }This is temporarily linked to the blog. Currently I think that the posts (with comments included) to which we want to cite are put into the Figshare in pdf format as they are in when the publication is submitted. Figshare allows commenting to continue the discussion.}{7}{}
+\contentsline {todos}{{19. }Markus Miettinen suggested that we should consider ``spreading'' the values similarly to the figure\nobreakspace {}2{}{}{}\hbox {}}{8}{}
+\contentsline {todos}{{23. }It has been suggested that we should use direct quotations from original papers here for clarity.}{8}{}
+\contentsline {todos}{{22. }Several people think that this plot should be clarified.}{10}{}
+\contentsline {todos}{{24. }Markus Miettinen made the files.}{14}{}
+\contentsline {todos}{{25. }You have recent paper where you use POPC/chol simulations with this model: Kulig et al. BBA 1848 (2015) 422-432 http://dx.doi.org/10.1016/j.bbamem.2014.10.032. would this be a correct refence here?}{15}{}
+\contentsline {todos}{{26. }Permanent link in progress by Patrick Fuchs}{16}{}
+\contentsline {todos}{{27. }Should we emphasize more the excellent collection of simulation trajectories collected to Zenodo?}{17}{}
+\contentsline {todos}{{28. }Maybe we should mention that CHARMM is significanlty more computationally expensive than other all-atom models. This seems evident for a person who has ran CHARMM and other all-atom models with the same computer. However, there may be some people who have never used any other model than CHARMM. In this case it may be difficult to realize. Would anyone have a good bencmark about this? I have assumed that the reason for the slowness are the extra Lennart-Jones interactionsi in water, however, I have never looked into it. Would someone have some hard facts on this?}{17}{}
