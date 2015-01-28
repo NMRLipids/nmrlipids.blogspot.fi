@@ -216,8 +216,7 @@ Choline headgroup order parameters as function of ion concentration, and their r
 \todo{Should we write more about this?}
 
 This work has been done as an open collaboration by using \texttt{nmrlipids.blogspot.fi} as a communication platform.
-The approach is inspired by the Polymath project~\cite{gowers09}, however there are some essential differences. 
-The manuscript pointing out problems in the glycerol backbone and
+The approach is inspired by the Polymath project~\cite{gowers09}, however there are some essential differences. The manuscript pointing out problems in the glycerol backbone and
 headgroup structure in the most used molecular dynamics simulation model for lipid bilayers (Berger based models) was used as a starting point~\cite{ollila13}.
 After publishing the initial manuscript, the blog was opened for further contributions and discussion from anyone interested. 
 All the contributions were done publicly through the blog and the blog contributors were offered coauthorship. The final author list
@@ -229,8 +228,7 @@ and the Zenodo community \texttt{https://zenodo.org/collection/user-nmrlipids}.
 \subsection{Analysis}
 \todo{ We should mention the sign issue and refer to the blog post:
 http://nmrlipids.blogspot.fi/2014/04/on-signs-of-order-parameters.html somewhere.
-Maybe we should change the name of this section II.B. to: "Analysis and terminology of order parameters from experiments 
-and simulations" or similar, and also move the "forking" explanation here.}
+Maybe we should change the name of this section II.B. to: "Analysis and terminology of order parameters from experiments and simulations" or similar, and also move the "forking" explanation here.}
 The order parameter of a hydrocarbon C--H vector is defined as $S_{{\rm CH}}=\frac{3}{2}\langle \cos^2 \theta-1 \rangle$, where
 the angle brackets denote an ensemble average over the sampled conformations, and $\theta$ is the angle between the C--H bond and the membrane normal.
 The order parameters can be measured by detecting quadrupolar splitting with $^2$H NMR~\cite{seelig77c} or by detecting dipolar 
@@ -387,11 +385,11 @@ have been measured with several different implementations of $^{13}$C NMR experi
 The experimental absolute values of glycerol backbone and choline order parameters from various publications are shown in Fig.~\ref{HGorderparameters}.
 \begin{figure}[]
   \centering
-  \includegraphics[width=8.6cm]{../DATAreportediINblog/comparisonSorted.pdf}
+  \includegraphics[width=8.6cm]{comparison3.pdf}
 %\todo{DONE}\\
 %The data in this figure should be updated to be consistent with the systems listed in Table~\ref{systems}. At least, Tjornhammar et al and CHARMM-UA values are missing. Some results in the figure are outdated due to longer simulations reported etc.} \\
 \todo{Markus Miettinen suggested that we should consider making one more figure where only experimental data would be shown and that would be discussed in Section~\ref{experiments}} \\
-\todo{Markus has now made a new figure with signs included. I think that this is very good. I also think that we should try to get the interactive figure behind permalink (i.e. Zenodo or figshare) and cite that in the paper.}
+\todo{There has been some discussion in the blog that maybe we should include the signs and stereospecific labeling here as well, and that maybe this figure should be clarified. My view is that for the main conclusion, i.e. CHARMM36, GAFFlipid and MacRog are the best here, this format is good enough. However, if someone wants to improve this and/or collect all the data with the signs and/or stereospecific labeling it would be even better. There is also very interesting discussion about interactive figure.}
   \caption{\label{HGorderparameters}
   Order parameteres from simulations listed in Table~\ref{systems} and experiments for glycerol and choline groups.
   The experimental values were taken from the following publications: DMPC 303~K from \cite{gross97}, DMPC 314~K from \cite{dvinskikh05a}, DPPC 310K from \cite{gally75}, 
