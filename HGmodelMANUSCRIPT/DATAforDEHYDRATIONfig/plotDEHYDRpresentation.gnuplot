@@ -20,7 +20,7 @@ set ylabel "{/Symbol b}  S_{CH}"
 set yrange [-0.1:0.105]
 plot "./OrderParameterDEHYDsign.dat" using 1:2 title 'Berger (POPC T=298 K)' with linespoint linetype 1 pt 5,  \
      "./OrderParameterDEHYDsign.dat" using 1:3 notitle with linespoints  linetype 1 pt 5, \
-     "./OrderParameterDEHYDcharmmSIGN.dat" using 1:2 title 'CHARMM (DPPC T=323 K)' with linespoint linetype 1 pt 5 lc rgb 'green', \
+     "./OrderParameterDEHYDcharmmSIGN.dat" using 1:2 title 'CHARMM (POPC T=303 K)' with linespoint linetype 1 pt 5 lc rgb 'green', \
      "./OrderParameterDEHYDcharmmSIGN.dat" using 1:3 notitle with linespoints  linetype 1 pt 5 lc rgb 'green', \
      "./OrderParameterDEHYDgaffPOPC.dat" using 1:2 title 'GAFF (POPC T=303 K)' with linespoint linetype 1 pt 5 lc rgb 'brown', \
      "./OrderParameterDEHYDgaffPOPC.dat" using 1:3 notitle with linespoints  linetype 1 pt 5 lc rgb 'brown', \
