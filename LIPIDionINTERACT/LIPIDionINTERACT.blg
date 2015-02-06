@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: LIPIDionINTERACT.aux
+The style file: apsrev.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: LIPIDionINTERACTNotes.bib
+Warning--entry type for "Note1" isn't style-file defined
+--line 1 of file LIPIDionINTERACTNotes.bib
+Database file #2: refs.bib
+You're missing a field part---line 511 of file refs.bib
+ :    eid = 
+ :          ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 1293 of file refs.bib
+ :    eid = 
+ :          ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 1509 of file refs.bib
+ :    eid = 
+ :          ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 1533 of file refs.bib
+ :    eid = 
+ :          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1615 of file refs.bib
+ : 
+ : year={1975},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1867 of file refs.bib
+ : 
+ : year={2014},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2245 of file refs.bib
+ : @misc{ferreira15
+ :                 ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "??"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 53 entries,
+            3411 wiz_defined-function locations,
+            1480 strings with 20975 characters,
+and the built_in function-call counts, 39085 in all, are:
+= -- 2170
+> -- 1459
+< -- 195
++ -- 1215
+- -- 354
+* -- 5448
+:= -- 4124
+add.period$ -- 53
+call.type$ -- 53
+change.case$ -- 216
+chr.to.int$ -- 52
+cite$ -- 53
+duplicate$ -- 3515
+empty$ -- 3206
+format.name$ -- 884
+if$ -- 7336
+int.to.chr$ -- 2
+int.to.str$ -- 54
+missing$ -- 533
+newline$ -- 174
+num.names$ -- 156
+pop$ -- 951
+preamble$ -- 1
+purify$ -- 212
+quote$ -- 0
+skip$ -- 1431
+stack$ -- 0
+substring$ -- 1194
+swap$ -- 2848
+text.length$ -- 177
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 318
+warning$ -- 0
+while$ -- 150
+width$ -- 0
+write$ -- 551
+(There were 7 error messages)
