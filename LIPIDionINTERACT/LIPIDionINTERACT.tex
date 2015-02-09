@@ -27,26 +27,24 @@
 
 \title{Binding of cations to phospholipid bilayers}
 
-%\author{Patrick Fuchs}
-%\author{Matti Javanainen}
-%\author{Antti Lamberg}
-%\author{Alexander Lyubartsev}
-%\author{Markus S. Miettinen}
-%\author{Luca Monticelli}
-%\author{Jukka Määttä}
+\author{Andrea Catte}
+\thanks{University of East Anglia, Norwich, United Kingdom}
+\author{Matti Javanainen}
+\thanks{Tampere University of Technology, Tampere, Finland}
+\author{Markus S. Miettinen}
+\thanks{Fachbereich Physik, Freie Universit\"at Berlin, Berlin, Germany}
 %\setcounter{page}{1}
-\author{O. H. Samuli Ollila}
-\footnote{Author to whom 
-correspondence may be addressed. E-mail: samuli.ollila@aalto.fi.\\
-}
-\affiliation{
-  Helsinki Biophysics and Biomembrane Group,
-Department of Biomedical Engineering and Computational Science, Aalto University, Espoo, Finland
-}
-%\author{Marius Retegan}
-%\author{Hubert Santuz}
-%\author{Joona Tynkkynen}
-%\author{Alexander Vogel}
+\author{O. H. Samuli Ollila} 
+\thanks{{\bf Author to whom correspondence may be addressed. E-mail: samuli.ollila@aalto.fi.}}
+\thanks{Helsinki Biophysics and Biomembrane Group, Department of Biomedical Engineering and Computational Science, Aalto University, Espoo, Finland}
+%\footnote{Author to whom 
+%correspondence may be addressed. E-mail: samuli.ollila@aalto.fi.\\
+%}
+%\affiliation{
+%  Helsinki Biophysics and Biomembrane Group,
+%Department of Biomedical Engineering and Computational Science, Aalto University, Espoo, Finland
+%}
+
 
 
 \begin{abstract}
@@ -247,7 +245,7 @@ Orange, ionFF~\cite{??}\todoi{Samuli check the numbers}   &   POPC & 0 & ? & ? &
 Orange, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 250 (NaCl) & 72 & 2802 & 26 & 0  & 26 & 298 & 120 & 60 &?\todoi{Jukka Määttä and Luca Monticelli, please let us know if we can share some files through Zenodo. This is unpublished model.}  \\
 Orange, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 240 (CaCl$_2$)  & 72 & 2802 & 0 & 26  & 52 & 298 & 120 & 60 &? \todoi{Jukka Määttä and Luca Monticelli, please let us know if we can share some files. This is unpublished model.} \\
 Slipid\cite{jambeck12}   &   DPPC & 0 & 128 &3840 & 0 & 0  & 0 & 323 & 150 & 100 &~\cite{slipidsFILES}  \\
-Slipid\cite{jambeck12}, ionFF~\cite{??}\todoi{Andrea Catte, please check the numbers and let us know if you share some files through Zenodo}    &   DPPC & 150 (NaCl) & ? & ? & ? & ?  & ? & 323 & ? & ? &?  \\
+Slipid\cite{jambeck12}, ionFF~\cite{??}\todoi{Andrea Catte, please let us know if you share some files through Zenodo}    &   DPPC & 150 (NaCl) & 600 & 18000 & 49 & 0  & 49 & 323 & 100 & 40 &?  \\
 \end{tabular}
 \end{table*} 
 
@@ -540,7 +538,22 @@ Pressure was semi-isotropically coupled to the athmospheric pressure with the Be
 
 \subsubsection{Slipids}
 The simulation without ions is the same as in~\cite{botan15}.
-\todo{Andrea Catte, please deliver the details.}
+\todo{DONE}
+
+For the simulations with ions, the starting DPPC lipid bilayer, which was built with the online CHARMM-GUI
+(http://www.charmm-gui.org/), contained 600 lipids, 30 water molecules/lipid, Na+ and Cl- ions (150 mM NaCl). 
+The TIP3p water model was used to solvate the system. AA MD simulations of DPPC lipid bilayers were performed 
+at ten different temperatures (283, 298, 303, 308, 312, 313, 314, 318, 323, and 333 K) using the GROMACS software 
+package version 4.5.5 and the Stockholm lipids (Slipids) force field parameters for phospholipids. After energy 
+minimization and a short equilibration run of 50 ps (time step 1fs), 100 ns production runs were performed using 
+a time step of 2 fs with leap-frog integrator. All covalent bonds were constrained with the LINCS
+algorithm. Coordinates were written every 100 ps. PME with real space cut-off at 1.0 nm was used for Coulomb 
+interactions. Lennard-Jones (LJ) interactions were switched to zero between 1.0 nm and 1.4 nm. The neighbour 
+lists were updated every 10th step with a cut-off of 1.6 nm. Temperature was coupled separately for upper and 
+bottom leaflets of the lipid bilayer, and for water to one of the temperatures reported above with the Nosè-Hoover 
+thermostat using a time constant of 0.5 ps. Pressure was semi-isotropically coupled to the atmospheric pressure 
+with the Parrinello-Rahman barostat using a time constant of 10 ps.
+The last 40 ns of each simulation was employed for the analysis of DPPC choline and glycerol backbone order parameters.
 
 \subsection{analysis}
 The order parameters were calculated from simulation trajectories directly applying the equation
