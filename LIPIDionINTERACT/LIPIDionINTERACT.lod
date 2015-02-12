@@ -10,14 +10,14 @@
 \contentsline {todos}{{10. }Samuli put to Zenodo}{3}{}
 \contentsline {todos}{{11. }Appropriate reference for the ion model?}{3}{}
 \contentsline {todos}{{12. }Samuli put to Zenodo}{3}{}
-\contentsline {todos}{{13. }Is this the same as in the first manuscript for full hydration?}{3}{}
-\contentsline {todos}{{14. }Matti Javanainen, please check the numbers and let us know if you share some files through Zenodo}{3}{}
+\contentsline {todos}{{13. }DONE}{3}{}
+\contentsline {todos}{{14. }DONE}{3}{}
 \contentsline {todos}{{15. }Appropriate reference for the ion model?}{3}{}
-\contentsline {todos}{{16. }Matti Javanainen, please check the numbers and let us know if you share some files through Zenodo}{3}{}
+\contentsline {todos}{{16. }DONE}{3}{}
 \contentsline {todos}{{17. }Appropriate reference for the ion model?}{3}{}
-\contentsline {todos}{{18. }Matti Javanainen, please check the numbers and let us know if you share some files through Zenodo}{3}{}
+\contentsline {todos}{{18. }DONE}{3}{}
 \contentsline {todos}{{19. }Appropriate reference for the ion model?}{3}{}
-\contentsline {todos}{{20. }Matti Javanainen, please check the numbers and let us know if you share some files through Zenodo}{3}{}
+\contentsline {todos}{{20. }DONE}{3}{}
 \contentsline {todos}{{21. }Appropriate reference for the ion model?}{3}{}
 \contentsline {todos}{{22. }Samuli check the numbers}{3}{}
 \contentsline {todos}{{23. }Jukka Määttä and Luca Monticelli, please let us know if we can share some files. This is unpublished model.}{3}{}
@@ -27,16 +27,16 @@
 \contentsline {todos}{{27. }Jukka Määttä and Luca Monticelli, please let us know if we can share some files. This is unpublished model.}{3}{}
 \contentsline {todos}{{28. }Andrea Catte, please let us know if you share some files through Zenodo}{3}{}
 \contentsline {todos}{{32. }The discussion about simulation results with CaCl$_2$ to be written once we have all the results.}{3}{}
+\contentsline {todos}{{34. }The discussion should be finished when we have CHARMM results with CaCl$_2$.}{3}{}
+\contentsline {todos}{{35. }The $^1$H NMR experiments suggest that the N-$\beta $-$\alpha $-O dihedral is only in gaughe conformation in the absense of ions, but in the presense of multivalent ions there would be also anti conformations present [Hauser et al. BBA {\bf 508}, 450 (1978), Hauser et al. Chem. Phys. Lipids {\bf 29}, 103 (1981)]. I think that we should check if this happens in simulations.}{4}{}
 \contentsline {todos}{{29. }I think that we have to run Orange simulation with higher NaCl concentration. I will do it.}{4}{}
 \contentsline {todos}{{30. }I think that we have to run CHARMM36 with CaCl$_2$. If anyone happen to have the data and is willing to share, let us know. If not, then I will do it.}{4}{}
 \contentsline {todos}{{31. } I think that it would be very interesting to test the modified CHARMM ions: Venable et al. dx.doi.org/10.1021/jp401512z, J. Phys. Chem. B 2013, 117, 10183−10192. According to the paper, these parameters improve the ion binding to the charged lipid bilayers. Even though I think that testing this would be highly relevant, I do not have time to do it now.}{4}{}
-\contentsline {todos}{{33. }This figure is in progress, however, the main point can be seen. \\ - I think that we should use number densities instead of mass densities to make the difference between Na and Ca distributions more clear. Now the difference comparison is little bit distracted due to the different mass of the atoms. \\ - The lipid density from MacRog simulation is missing. Maybe Matti Javanainen could provide this? If the data will be uploaded to Zenodo, it also trivial to calculate it with script. \\ - It seems that relative integrated (total) ion density in different models do not correspond the reported relative concentrations. For example, total Na density seems bigger in Berger than in MacRog even though there is only minot difference in concentration, and into the wrong direction. \\ - I think that CHARMM36 simulation with CaCl$_2$ should be done \\ - Figure editing will be finished (centering of the graphs, labels, etc.) will be done once the above issues have been sorted out. }{4}{}
-\contentsline {todos}{{34. }The discussion should be finished when we have CHARMM results with CaCl$_2$.}{5}{}
-\contentsline {todos}{{35. }The $^1$H NMR experiments suggest that the N-$\beta $-$\alpha $-O dihedral is only in gaughe conformation in the absense of ions, but in the presense of multivalent ions there would be also anti conformations present [Hauser et al. BBA {\bf 508}, 450 (1978), Hauser et al. Chem. Phys. Lipids {\bf 29}, 103 (1981)]. I think that we should check if this happens in simulations.}{5}{}
-\contentsline {todos}{{36. }In the Orange simulation only lipid model is changed, respect to Berger, and Jukka tested the effect of 0.7 charge scaling for Na ion (suggested by Leontyev et al.\nobreakspace {}\cite {leontyev11} to compensate to the lack of electronic polarizability in the model). I think we should discuss these things in supplementary material. Even though we cannot be fully conclusive, there is some essential information also in these results.}{5}{}
+\contentsline {todos}{{36. }In the Orange simulation only lipid model is changed, respect to Berger, and Jukka tested the effect of 0.7 charge scaling for Na ion (suggested by Leontyev et al.\nobreakspace {}\cite {leontyev11} to compensate to the lack of electronic polarizability in the model). I think we should discuss these things in supplementary material. Even though we cannot be fully conclusive, there is some essential information also in these results.}{4}{}
+\contentsline {todos}{{33. }This figure is in progress, however, the main point can be seen. \\ - I think that we should use number densities instead of mass densities to make the difference between Na and Ca distributions more clear. Now the difference comparison is little bit distracted due to the different mass of the atoms. \\ - The lipid density from MacRog simulation is missing. Maybe Matti Javanainen could provide this? If the data will be uploaded to Zenodo, it also trivial to calculate it with script. \\ - It seems that relative integrated (total) ion density in different models do not correspond the reported relative concentrations. For example, total Na density seems bigger in Berger than in MacRog even though there is only minot difference in concentration, and into the wrong direction. \\ - I think that CHARMM36 simulation with CaCl$_2$ should be done \\ - Figure editing will be finished (centering of the graphs, labels, etc.) will be done once the above issues have been sorted out. }{5}{}
 \contentsline {todos}{{37. }Final conclusions about the structural response to be written once we have all the results}{5}{}
 \contentsline {todos}{{38. }Samuli, finalize and check the methods.}{7}{}
 \contentsline {todos}{{39. }Samuli, finalize and check the methods.}{7}{}
-\contentsline {todos}{{40. }Matti Javanainen, please deliver the details.}{7}{}
+\contentsline {todos}{{40. }DONE}{7}{}
 \contentsline {todos}{{41. }Jukka Maatta and Luca Monticelli, please deliver as much details as you can.}{7}{}
 \contentsline {todos}{{42. }DONE}{7}{}
