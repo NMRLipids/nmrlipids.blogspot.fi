@@ -1,4 +1,4 @@
-\begin{thebibliography}{152}
+\begin{thebibliography}{158}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -611,6 +611,12 @@
   (\bibinfo{year}{2015}{\natexlab{a}}),
   \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13944}}.
 
+\bibitem[{\citenamefont{Santuz}(2015{\natexlab{a}})}]{charmm36files}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Santuz}},
+  \emph{\bibinfo{title}{{MD simulation trajectory and related files for POPC
+  bilayer (CHARMM36, Gromacs 4.5)}}} (\bibinfo{year}{2015}{\natexlab{a}}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.14066}.
+
 \bibitem[{\citenamefont{Javanainen}(2014{\natexlab{a}})}]{macrogFILES}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}}
   (\bibinfo{year}{2014}{\natexlab{a}}),
@@ -649,11 +655,19 @@
   \bibinfo{journal}{Journal of Computational Chemistry}
   \textbf{\bibinfo{volume}{31}}, \bibinfo{pages}{1117} (\bibinfo{year}{2010}).
 
-\bibitem[{\citenamefont{Fuchs}(2014{\natexlab{a}})}]{pogerFILES}
-\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Fuchs}},
-  \emph{\bibinfo{title}{Temporary location for simulations files with poger et
-  al. model.}} (\bibinfo{year}{2014}{\natexlab{a}}),
-  \urlprefix\url{http://www.dsimb.inserm.fr/~fuchs/project_Samuli/Poger_DPPC/}.
+\bibitem[{\citenamefont{Fuchs}(2015{\natexlab{a}})}]{pogerFILESpme1}
+\bibinfo{author}{\bibfnamefont{P.~F.} \bibnamefont{Fuchs}},
+  \emph{\bibinfo{title}{{MD simulation trajectory and related files for DPPC
+  bilayer in full hydration (Poger GROMOS53A6\_L, Gromacs 4.0.7, PME, traj
+  1)}}} (\bibinfo{year}{2015}{\natexlab{a}}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.14594}.
+
+\bibitem[{\citenamefont{Fuchs}(2015{\natexlab{b}})}]{pogerFILESpme2}
+\bibinfo{author}{\bibfnamefont{P.~F.} \bibnamefont{Fuchs}},
+  \emph{\bibinfo{title}{{MD simulation trajectory and related files for DPPC
+  bilayer in full hydration (Poger GROMOS53A6\_L, Gromacs 4.0.7, PME, traj
+  2)}}} (\bibinfo{year}{2015}{\natexlab{b}}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.14595}.
 
 \bibitem[{\citenamefont{J{\"a}mbeck and
   Lyubartsev}(2012{\natexlab{a}})}]{jambeck12}
@@ -667,6 +681,12 @@
 \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{M{\"a}{\"a}tt{\"a}}}
   (\bibinfo{year}{2014}),
   \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13287}}.
+
+\bibitem[{\citenamefont{Javanainen}(2015{\natexlab{a}})}]{slipidsFILESpopc}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}},
+  \emph{\bibinfo{title}{Popc @ 310k, slipids force field.}}
+  (\bibinfo{year}{2015}{\natexlab{a}}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.13887}.
 
 \bibitem[{\citenamefont{Kukol}(2009)}]{kukol09}
 \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Kukol}},
@@ -710,7 +730,7 @@
 \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tj{\"o}rnhammar}}
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Edholm}},
   \bibinfo{journal}{Journal of Chemical Theory and Computation}
-  \textbf{\bibinfo{volume}{0}}, \bibinfo{pages}{null} (\bibinfo{year}{2014}).
+  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{5706} (\bibinfo{year}{2014}).
 
 \bibitem[{\citenamefont{Javanainen}(2014{\natexlab{d}})}]{tjornhammarfiles}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}},
@@ -815,9 +835,21 @@
   \bibinfo{journal}{The Journal of Physical Chemistry B}
   \textbf{\bibinfo{volume}{116}}, \bibinfo{pages}{203} (\bibinfo{year}{2012}).
 
-\bibitem[{\citenamefont{Javanainen}(2015)}]{macrogCHOLfiles}
+\bibitem[{\citenamefont{Santuz}(2015{\natexlab{b}})}]{charmm36files20perCHOL}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Santuz}},
+  \emph{\bibinfo{title}{{MD simulation trajectory for POPC/20\% Chol bilayer
+  (CHARMM36, Gromacs 4.5)}}} (\bibinfo{year}{2015}{\natexlab{b}}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.14067}.
+
+\bibitem[{\citenamefont{Santuz}(2015{\natexlab{c}})}]{charmm36files50perCHOL}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Santuz}},
+  \emph{\bibinfo{title}{{MD simulation trajectory for POPC/50\% Chol bilayer
+  (CHARMM36, Gromacs 4.5)}}} (\bibinfo{year}{2015}{\natexlab{c}}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.14068}.
+
+\bibitem[{\citenamefont{Javanainen}(2015{\natexlab{b}})}]{macrogCHOLfiles}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}}
-  (\bibinfo{year}{2015}),
+  (\bibinfo{year}{2015}{\natexlab{b}}),
   \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13877}}.
 
 \bibitem[{\citenamefont{Warschawski and Devaux}(2005)}]{warschawski05}
@@ -1121,6 +1153,20 @@
   \bibinfo{chapter}{Interaction models for water in relation to protein
   hydration}, pp. \bibinfo{pages}{331--342}.
 
+\bibitem[{\citenamefont{Fuchs}(2015{\natexlab{c}})}]{pogerFILESrf1}
+\bibinfo{author}{\bibfnamefont{P.~F.} \bibnamefont{Fuchs}},
+  \emph{\bibinfo{title}{{MD simulation trajectory and related files for DPPC
+  bilayer in full hydration (Poger GROMOS53A6\_L, Gromacs 4.0.7, Reaction
+  Field, traj 1)}}} (\bibinfo{year}{2015}{\natexlab{c}}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.14592}.
+
+\bibitem[{\citenamefont{Fuchs}(2015{\natexlab{d}})}]{pogerFILESrf2}
+\bibinfo{author}{\bibfnamefont{P.~F.} \bibnamefont{Fuchs}},
+  \emph{\bibinfo{title}{{MD simulation trajectory and related files for DPPC
+  bilayer in full hydration (Poger GROMOS53A6\_L, Gromacs 4.0.7, Reaction
+  Field, traj 2)}}} (\bibinfo{year}{2015}{\natexlab{d}}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.14591}.
+
 \bibitem[{\citenamefont{Tironi et~al.}(1995)\citenamefont{Tironi, Sperb, Smith,
   and van Gunsteren}}]{tironi95}
 \bibinfo{author}{\bibfnamefont{I.~G.} \bibnamefont{Tironi}},
@@ -1129,12 +1175,6 @@
   \bibinfo{author}{\bibfnamefont{W.~F.} \bibnamefont{van Gunsteren}},
   \bibinfo{journal}{The Journal of Chemical Physics}
   \textbf{\bibinfo{volume}{102}} (\bibinfo{year}{1995}).
-
-\bibitem[{\citenamefont{Fuchs}(2014{\natexlab{b}})}]{fuchs14}
-\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Fuchs}},
-  \emph{\bibinfo{title}{Poger lipids with reaction field using different
-  gromacs versions}} (\bibinfo{year}{2014}{\natexlab{b}}),
-  \urlprefix\url{http://www.dsimb.inserm.fr/~fuchs/project_Samuli/Poger_DPPC/tests_gmx_versions/Comments_area_different_gmx_versions.pdf}.
 
 \bibitem[{\citenamefont{Miyamoto and Kollman}(1992)}]{miyamoto92}
 \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Miyamoto}} \bibnamefont{and}

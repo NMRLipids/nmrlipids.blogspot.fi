@@ -67,8 +67,8 @@ This is to ease my work to handle the input from large amount of contributors.
 \thanks{The author list is not completed.}
 \thanks{Institut Lumi\`ere Mati\`ere, UMR5306 Universit\'e Lyon 1-CNRS, Universit\'e de Lyon 69622 Villeurbanne, France}
 %
-\author{Andrea Catte}
-\thanks{University of East Anglia, Norwich, United Kingdom}
+%\author{Andrea Catte}
+%\thanks{University of East Anglia, Norwich, United Kingdom}
 \author{Fernando Favela}
 \author{Patrick Fuchs}
 \thanks{Institut Jacques Monod, CNRS, Universit\'e Paris Diderot, Sorbonne Paris Cit\'e, Paris, France}
@@ -87,8 +87,8 @@ This is to ease my work to handle the input from large amount of contributors.
 \author{Jukka M\"a\"att\"a}
 \thanks{Aalto University, Espoo, Finland}
 %\setcounter{page}{1}
-\author{Vasily S. Oganesyan}
-\thanks{University of East Anglia, Norwich, United Kingdom}
+%\author{Vasily S. Oganesyan}
+%\thanks{University of East Anglia, Norwich, United Kingdom}
 \author{O. H. Samuli Ollila} 
 \thanks{{\bf Author to whom correspondence may be addressed. E-mail: samuli.ollila@aalto.fi.}}
 \thanks{Helsinki Biophysics and Biomembrane Group, Department of Biomedical Engineering and Computational Science, Aalto University, Espoo, Finland}
@@ -108,12 +108,12 @@ This is to ease my work to handle the input from large amount of contributors.
 
 \begin{abstract}
 Phospholipids are essential building blocks of biological membranes.
-Despite of vast amount of accurate experimental data the atomistic resolution structures sampled by the glycerol backbone and choline headgroup
-in phoshatidylcholine bilayers are not known. Atomistic resolution molecular dynamics simulation model 
+Despite of vast amount of accurate experimental data, the atomistic resolution structures sampled by the glycerol backbone and choline headgroup
+in phoshatidylcholine bilayers are not known. Atomistic resolution molecular dynamics simulations model 
 would automatically resolve the structures giving an interpretation of experimental results, if the model
-reproduced the experimental data. In this work we compare the C--H bond vector order
-parameters for glycerol backbone and choline headgroup between 14 different atomistic resolution
-models and experiments in a fully hydrated lipid bilayer. The current models are not accurately enough to resolve the structure.
+reproduced the experimental data. In the present work we simulate phosphatidylcholine (PC) lipid bilayers with 13 different
+atomistic models, and we compare simulations with experiments (in fully hydrated conditions) in terms of C--H bond vector order
+parameters for the glycerol backbone and choline headgroups. None of the current models is not accurately enough to resolve the structure with experimental accuracy.
 However, closer inspection of three best performing models (CHARMM36, GAFFlipid and MacRog) suggest
 that improvements in the sampled dihedral angle distributions would potentilly lead to the model which
 would resolve the structure. Despite of the inaccuracy in the fully hydrated
@@ -181,14 +181,15 @@ in a phosphatidylcholine lipid bilayer. Then the available atomistic resolution 
 experimental data. The comparison reveals that the CHARMM36~\cite{klauda10}, GAFFlipid~\cite{dickson12} and MacRog models~\cite{maciejewski14}
 have the most realistic glycerol backbone and choline structures. We also compare the glycerol backbone and choline 
 structures between the most often used (Berger based) lipid model~\cite{berger97} 
-\todo{Based on the results and discussions with Olle Edholm and Peter Tieleman in the blog, it seems that 
-the glycerol backbone dihedrals are not the same in the model used in the publication by Berger et al.~\cite{berger97}
-and in the model shared in the webpage of Peter Tieleman (http://wcm.ucalgary.ca/tieleman/downloads).
-In this work (as it is quite often done in other works as well) we currently refer to the model in the webpage as ''Berger'' model.
-This is misleading. We have to call it something else. One suggestion could be to call it ''BergerM'', because it was firt time
-used in Marrink et al. Biophys. J. 74,931-943 (1998). Any other suggestions?\\
-COMMENT: Patrick Fuchs suggested ''Berger-T''. This is better. \\
-COMMENT2: Current trial, based in blog discussion, is to use Berger-MOLECULE-YEAR [citation].
+\todo{If there are no objections, we will leave the naming convention of different Berger versions as it is now.
+%Based on the results and discussions with Olle Edholm and Peter Tieleman in the blog, it seems that 
+%the glycerol backbone dihedrals are not the same in the model used in the publication by Berger et al.~\cite{berger97}
+%and in the model shared in the webpage of Peter Tieleman (http://wcm.ucalgary.ca/tieleman/downloads).
+%In this work (as it is quite often done in other works as well) we currently refer to the model in the webpage as ''Berger'' model.
+%This is misleading. We have to call it something else. One suggestion could be to call it ''BergerM'', because it was firt time
+%used in Marrink et al. Biophys. J. 74,931-943 (1998). Any other suggestions?\\
+%COMMENT: Patrick Fuchs suggested ''Berger-T''. This is better. \\
+%COMMENT2: Current trial, based in blog discussion, is to use Berger-MOLECULE-YEAR [citation].
 }
 and the best performing models, to demonstrate that by using the 
 order parameters we can distinguish the more reasonable structures from the less reasonable ones. However, none of the current models 
@@ -228,20 +229,25 @@ is based on the self-assesment of the authors' scientific contribution to the pr
 Large portion of the used simulation files and scripts are shared through the GitHub organization \url{https://github.com/NMRlipids}
 and the Zenodo community \url{https://zenodo.org/collection/user-nmrlipids}.
 
-\subsection{Analysis}
-\todo{ We should mention the sign issue and refer to the blog post:
-http://nmrlipids.blogspot.fi/2014/04/on-signs-of-order-parameters.html somewhere.
-Maybe we should change the name of this section II.B. to: "Analysis and terminology of order parameters from experiments 
-and simulations" or similar, and also move the "forking" explanation here.}
-The order parameter of a hydrocarbon C--H vector is defined as $S_{{\rm CH}}=\frac{3}{2}\langle \cos^2 \theta-1 \rangle$, where
-the angle brackets denote an ensemble average over the sampled conformations, and $\theta$ is the angle between the C--H bond and the membrane normal.
-The order parameters can be measured by detecting quadrupolar splitting with $^2$H NMR~\cite{seelig77c} or by detecting dipolar 
+\subsection{Order parameters from experiments}
+\todo{DONE
+%We should mention the sign issue and refer to the blog post:
+%http://nmrlipids.blogspot.fi/2014/04/on-signs-of-order-parameters.html somewhere.
+%Maybe we should change the name of this section II.B. to: "Analysis and terminology of order parameters from experiments 
+%and simulations" or similar, and also move the "forking" explanation here.
+}
+The order parameter of a hydrocarbon C--H vector is defined as 
+\begin{equation}\label{orderP}
+S_{{\rm CH}}=\frac{3}{2}\langle \cos^2 \theta-1 \rangle,
+\end{equation} 
+where the angle brackets denote an ensemble average over the sampled conformations, and $\theta$ is the angle between the C--H bond and the membrane normal.
+The absolute values of order parameters can be measured by detecting quadrupolar splitting with $^2$H NMR~\cite{seelig77c} or by detecting dipolar 
 splitting with $^{13}$C NMR~\cite{hong95a,gross97,dvinskikh05a,ferreira13}. The measurements are based on
 different physical interactions and also the connection between order parameters and quadrupolar or dipolar splitting
-are different. The order parameters from the measured quadrupolar splitting $\Delta \nu_Q$ ($^2$H NMR) are calculated using 
+are different. The absolute values of order parameters from the measured quadrupolar splitting $\Delta \nu_Q$ ($^2$H NMR) are calculated using 
 the equation $|S_{{\rm CD}}|=\frac{4}{3} \frac{e^2qQ}{h} \Delta \nu_Q$, where the value for the static quadrupole
 splitting constant is estimated from various experiments to be 170~kHz leading to a numerical relation $|S_{{\rm CD}}|=0.00784 \times \Delta \nu_Q$~\cite{seelig77c}. 
-The order parameters from the measured dipolar splitting $d_\mathrm{CH}$ ($^{13}$C NMR) are calculated using equation
+The absolute values of order parameters from the measured dipolar splitting $d_\mathrm{CH}$ ($^{13}$C NMR) are calculated using equation
 $|S_{{\rm CH}}|=\frac{4\pi\langle r_\mathrm{CH}^3 \rangle}{\hbar \mu_0 \gamma_h \gamma_c} d_\mathrm{CH}$, where
 values between 20.2--22.7 kHz are used for $\frac{4\pi\langle r_\mathrm{CH}^3 \rangle}{\hbar \mu_0 \gamma_h \gamma_c}$,
 depending on the original authors~\cite{hong95a,gross97,dvinskikh05a,ferreira13}.
@@ -249,14 +255,34 @@ It is important to note that the order parameters measured with different techni
 with each other (see Results and Discussion), indicating very high quantitative accuracy of the measurements.
 For a more detailed discussion see \url{http://nmrlipids.blogspot.fi/2014/02/accuracy-of-order-parameter-measurements.html}
 \todo{This is temporarily linked to the blog. Currently I think that the posts (with comments included) to which we want to cite are put into 
-the Figshare in pdf format as they are in when the publication is submitted. Figshare allows commenting to continue the discussion.}.
+the Figshare in pdf format as they are in when the publication is submitted. Figshare allows commenting to continue the discussion.
+COMMENT: There is also the option to put the most relevant blog posts as a supplementary material. The advantage of this would
+be that the posts would be peer reviewed as well.}.
 
-The order parameters from simulations were calculated directly using the definition.
+{\bf The absolute values of order parameters are accessible with both $^2$H NMR and $^{13}$C NMR techniques. 
+However, only $^{13}$C NMR techniques allow also the measurement of the sign of the order parameter~\cite{hong95a,hong95b,gross97}. 
+The measured sign is negative for almost all the carbons discussed in this work as only $\alpha$ is positive~\cite{hong95a,hong95b,gross97}. 
+For more detailed discussion about the sign measurements of the order parameters see \url{http://nmrlipids.blogspot.fi/2014/04/on-signs-of-order-parameters.html}
+
+For most CH$_2$ segments in fluid phosholipid bilayer the order parameters are equal for both hydrogens attached to the same carbon.
+However, in some cases (e.g. g$_1$, g$_3$ and  C$_2$ carbon in the \textit{sn}-2 chain) the order parameters are not equal and this 
+can be observed with both $^2$H NMR and $^{13}$C NMR techniques. In the present work we call the phenomena of unequal order parameters 
+for hydrogens attached to the same carbon as {\it forking} to avoid confusion with dipolar and quadrupolar splitting in NMR terminology. 
+Forking has been studied in detail with $^2$H NMR techniques by deuterating the R or S position in CH$_2$ segment, and
+the studies show that the forking arises from differently sampled orientations of the two C--H bonds, not from two 
+separate populations of lipid conformations~\cite{engel81,gally81}.
+}
+
+
+\subsection{Order parameters from simulations}
+The order parameters from simulations were calculated directly using the definition as in Eq.~\ref{orderP}.
 %$S_{{\rm CH}}=\frac{3}{2} \langle \cos^2 \theta-1 \rangle$. 
-For the united atom models the hydrogen locations were generated 
+For the united atom models the hydrogen positions were generated 
 in the trajectories post-simulationally using the positions of the heavy atoms and the known hydrocarbon geometries.
-The statistical errors were estimated for the best performing simulation
-models by calculating the error of the mean for the average over individual lipids in the system. 
+{\bf For the statistical error estimates, the time average of order parameters were first calculated separately
+for each lipid in the system. Then it was assumed that different lipids are statistically independent 
+entities (which should be the case in fluid phase) and the error of the mean for the average over individual 
+lipids in the system was calculated and used as error bar for the order parameters.}
 
 It has been recently pointed out that the sampling of individual dihedral angles might be very
 slow compared to the typical simulation timescales~\cite{vogel12}. On the other hand, another recent
@@ -280,11 +306,12 @@ details are given in the Supplementary Information (SI) or in the original publi
 data is used previously therein. Additionally, the files related to the simulations and the resulting trajectories are publicly
 available for some systems. The references pointing to simulation details and files are also listed in Tables~\ref{systems},~\ref{systemsDEHYD} and~\ref{systemsCHOL}.
 
-\begin{table*}[htb]
+\begin{table*}[]
 \centering
-\caption{Simulated single component fully hydrated lipid bilayers. The simulation file data sets marked with $^*$ also include a part of the trajectory.
+\caption{Simulated single component fully hydrated lipid bilayer systems. The simulation file data sets marked with $^*$ also include a part of the trajectory.
   If simulation data from previously published work has been directly used, the original publication is cited for simulation details. For other systems the simulation details
-  are given in the Supplementary Information. 
+  are given in the Supplementary Information. The abbreviations are 1-palmitoyl-2-oleoylphosphatidylcholine (POPC), dipalmitoylphosphatidylcholine (DPPC), 1,2-dimyristoyl-sn-glycero-3-phosphocholine (DMPC),
+1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC) and dilauroylphosphatidylcholine (DLPC).
 }\label{systems}
 \begin{tabular}{c c c c c c c c c}
 %\hline
@@ -295,24 +322,24 @@ Berger-POPC-07~\cite{ollila07a}          &   POPC & 128 & 7290  & 298  & 270 & 2
 \todoi{DONE} 
 Berger-DPPC-98~\cite{marrink98}          &   DPPC & 72 & 2864  & 323  & 140 & 100  & \cite{bergerDPPCfiles} & SI \\
 Berger-DMPC-04~\cite{gurtovenko04}          &   DMPC & 128 & 5097  & 323  & 130 & 100  & \cite{dmpcFILES} & \cite{miettinen09} \\
-CHARMM36\cite{klauda10}       & POPC   & 72  &  2242 & 303 & 30 & 20  & \cite{charmm36filesSHORT}$^*$ & SI \\
-CHARMM36\cite{klauda10}      & POPC   & 128 &  5120    & 303 & 150 & 100  & \cite{charmm36files}$^*$ \todoi{DONE}   & SI \\
-CHARMM36\cite{klauda10}       & DPPC   & 72  &  2189 & 323 & 30 & 25  & ?\todoi{Samuli, put to Zenodo}  & SI \\
+CHARMM36~\cite{klauda10}       & POPC   & 72  &  2242 & 303 & 30 & 20  & \cite{charmm36filesSHORT}$^*$ & SI \\
+CHARMM36~\cite{klauda10}      & POPC   & 128 &  5120    & 303 & 150 & 100  & \cite{charmm36files}$^*$ \todoi{DONE}   & SI \\
+CHARMM36~\cite{klauda10}       & DPPC   & 72  &  2189 & 323 & 30 & 25  & ?\todoi{Samuli, put to Zenodo}  & SI \\
 %CHARMM36\cite{klauda10}\todoi{Not included in the Fig. 2. Should we remove or include?}        & DOPC   & 128 &  5120    & 303 & 150 & 100  & ?\todoi{Permanent link in progress by Hubert Santuz}  & SI \\
 \todoi{DONE} \todoi{Permanent link for DOPC CHARMM36 simulation by Hubert Santuz is not required now. However, it would be probably useful in the future.}
-MacRog\cite{maciejewski14}  & POPC & 288  & 12600 & 310 & 100 & 80  & \cite{macrogFILES}$^*$ & SI  \\
-GAFFlipid\cite{dickson12}       & POPC & 126  & 3948  & 303 & 137 & 32  & \cite{GAFFlipidFILES}$^*$ & SI \\
-GAFFlipid\cite{dickson12}       & DPPC & 72  & 2197  & 323 & 90 & 50  & \cite{GAFFlipidFILESdppc}$^*$ & SI \\
-Lipid14\cite{dickson14}         & POPC  & 72 & 2234 & 303 & 100 & 50  & \cite{lipid14files}$^*$ & SI \\
-Poger\cite{poger10}             & DPPC  & 128 & 5841 & 323 & 2$\times$100 & 2$\times$50 & \cite{pogerFILESpme1,pogerFILESpme2}$^*$\todoi{DONE} & SI \\
-Slipid\cite{jambeck12}          & DPPC & 128 & 3840 & 323 & 150 & 100 & \cite{slipidsFILES}$^*$ & SI \\
-Slipid\cite{jambeck12}          & POPC & 128 & 5120 & 303 & 200 & 150 & \cite{slipidsFILESpopc}$^*$ & SI \\
-Kukol\cite{kukol09}          & POPC   & 512 & 20564 & 298 & 50 & 30  & \cite{kukolFILES}$^*$ & SI \\
-Chiu et al.\cite{chiu09} \todoi{Samuli, put to Zenodo}     & POPC  & 128 & 3552  & 298 & 56 & 50  & ? & SI \\
-H\"ogberg08\cite{rabinovich14}\todoi{Alexander Luybartsev, let us know if you share the files.}  & POPC   &  128 & 3840  & 303 & 100 & 80  & ? & \cite{rabinovich14}  \\
-H\"ogberg08\cite{hogberg08}\todoi{Alexander Luybartsev, let us know if you share the files.}  & DMPC   &  98 & 3840  & 303 & 75 & 50 & ? & \cite{hogberg08} \\
-Ulmschneiders\cite{Ulmschneider09}    & POPC  & 128 & 3328 & 310 & 100 & 50 & \cite{ulmschneiderFILES}$^*$ & SI \\
-Tj\"ornhammar et al.\cite{tjornhammar14}   & DPPC  & 144 & 7056 & 323 & 200 & 100 & \cite{tjornhammarfiles}$^*$ & \cite{tjornhammar14} \\
+MacRog~\cite{maciejewski14}  & POPC & 288  & 12600 & 310 & 100 & 80  & \cite{macrogFILES}$^*$ & SI  \\
+GAFFlipid~\cite{dickson12}       & POPC & 126  & 3948  & 303 & 137 & 32  & \cite{GAFFlipidFILES}$^*$ & SI \\
+GAFFlipid~\cite{dickson12}       & DPPC & 72  & 2197  & 323 & 90 & 50  & \cite{GAFFlipidFILESdppc}$^*$ & SI \\
+Lipid14 \cite{dickson14}         & POPC  & 72 & 2234 & 303 & 100 & 50  & \cite{lipid14files}$^*$ & SI \\
+Poger \cite{poger10}             & DPPC  & 128 & 5841 & 323 & 2$\times$100 & 2$\times$50 & \cite{pogerFILESpme1,pogerFILESpme2}$^*$\todoi{DONE} & SI \\
+Slipid \cite{jambeck12}          & DPPC & 128 & 3840 & 323 & 150 & 100 & \cite{slipidsFILES}$^*$ & SI \\
+Slipid \cite{jambeck12}          & POPC & 128 & 5120 & 303 & 200 & 150 & \cite{slipidsFILESpopc}$^*$ & SI \\
+Kukol \cite{kukol09}          & POPC   & 512 & 20564 & 298 & 50 & 30  & \cite{kukolFILES}$^*$ & SI \\
+Chiu \cite{chiu09} \todoi{Samuli, put to Zenodo}     & POPC  & 128 & 3552  & 298 & 56 & 50  & ? & SI \\
+H\"ogberg08 \cite{rabinovich14}\todoi{Alexander Luybartsev, let us know if you share the files.}  & POPC   &  128 & 3840  & 303 & 100 & 80  & ? & \cite{rabinovich14}  \\
+H\"ogberg08 \cite{hogberg08}\todoi{Alexander Luybartsev, let us know if you share the files.}  & DMPC   &  98 & 3840  & 303 & 75 & 50 & ? & \cite{hogberg08} \\
+Ulmschneiders \cite{Ulmschneider09}    & POPC  & 128 & 3328 & 310 & 100 & 50 & \cite{ulmschneiderFILES}$^*$ & SI \\
+Tj\"ornhammar14 \cite{tjornhammar14}   & DPPC  & 144 & 7056 & 323 & 200 & 100 & \cite{tjornhammarfiles}$^*$ & \cite{tjornhammar14} \\
 %\sout{OPLS-AA}\cite{rog09b}\todoi{We have this only with 150mM of NaCl delivered by Joona Tynkkynen. Options are to remove these results from this publicatio, run the simulations without ions (if not yet available), 
 %  or include the results with ions. In my understanding this is a proto version of MacRog so it could be left out as well. However, for historical reasons and 
 %to understand literature it might be useful to include also these results. COMMENT: Matti Javanainen suggested that we would remove these results. If there are no objections and the
@@ -384,17 +411,18 @@ MacRog\cite{maciejewski14}     & POPC   & 128 & 0  & 6400   & 310 & 400 & 200 & 
 \section{Results and Discussion}
 
 \subsection{Full hydration: Experimental order parameters for the glycerol backbone and headgroup}\label{experiments}
-The specific deuteration of $\alpha$-, $\beta$- and g$_3$- segments of dipalmitoylphosphatidylcholine (DPPC) has been successful, 
-allowing the order parameter measurements for these segments by $^2$H--NMR~\cite{gally75,brown77,brown78,akutsu81}.
-In addition, the order parameters for all glycerol backbone and choline headgroup segments in egg yolk lecithin~\cite{hong95a},
-1,2-dimyristoyl-sn-glycero-3-phosphocholine (DMPC)~\cite{hong95b,gross97,dvinskikh05a}, 
-1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC)~\cite{warschawski05} and POPC~\cite{warschawski05,ferreira13}
-have been measured with several different implementations of $^{13}$C NMR experiments.
-The experimental absolute values of glycerol backbone and choline order parameters from various publications are shown in Fig.~\ref{HGorderparameters}.
+The specific deuteration of $\alpha$-, $\beta$- and g$_3$- segments of DPPC has been successful, 
+allowing the absolute value order parameter measurements for these segments by $^2$H--NMR~\cite{gally75,brown77,brown78,akutsu81}.
+In addition, the absolute values of order parameters for all glycerol backbone and choline headgroup segments in egg yolk lecithin~\cite{hong95a},
+DMPC~\cite{hong95b,gross97,dvinskikh05a}, DOPC~\cite{warschawski05} and POPC~\cite{warschawski05,ferreira13}
+have been measured with several different implementations of $^{13}$C NMR experiments. In addition, the signs of order parameters in some systems
+are measured with $^{13}$C NMR tehcniques~\cite{hong95a,hong95b,gross97}. The experimental absolute values of glycerol backbone 
+and choline order parameters from various publications are shown in Fig.~\ref{HGorderparameters}.
 \begin{figure}[]
   \centering
   \includegraphics[width=8.6cm]{../DATAreportediINblog/comparisonSorted.pdf}
-\todo{Markus Miettinen suggested that we should consider making one more figure where only experimental data would be shown and that would be discussed in Section~\ref{experiments}} \\
+\todo{Markus Miettinen suggested that we should consider making one more figure where only experimental data would be shown and that would be discussed in Section~\ref{experiments}. \\
+COMMENT: I do not think that we need such figure anymore since this figure is more clear now.} \\
 \todo{I think that this figure is now very good. There is also the interactive version by Hubert Santuz now in https://plot.ly/~HubertSantuz/72/lipid-force-field-comparison/
 we should figure out which is the most practical way to put that behind permalink once it finalized (Zenodo, figshare or something else?) and then put a citation in the paper.}
   \caption{\label{HGorderparameters}
@@ -429,10 +457,7 @@ values of the order parameters of a well-performing force field to fall.
 In addition to the numerical values, an important feature of the glycerol backbone is the 
 inequality of order parameters for the two hydrogens attached to the same carbon in g$_1$ and g$_3$ segments,
 while the hydrogens in choline $\alpha$ and $\beta$ segments give equal values.
-Note that in this work we call the phenomena of unequal order parameters for hydrogens attached to the same carbon as ``forking'' to avoid 
-confusion with dipolar and quadrupolar splitting in NMR terminology. Forking is also observed experimentally for the C$_2$ carbon in the \textit{sn}-2
-chain of all phosholipids, and it is known to arise from differently sampled orientations of the two C--H bonds, not from two 
-separate populations of lipid conformations~\cite{engel81}. The forking in glycerol backbone g$_3$ segment is small ($\approx$ 0.02) 
+The forking in glycerol backbone g$_3$ segment is small ($\approx$ 0.02) 
 and some experiments only report the larger value or the average value~\cite{akutsu81,ferreira13}. 
 In contrast, forking is significant for the glycerol backbone g$_1$ segment, whose lower order parameter is close to zero and the
 larger one has an absolute value of approximately 0.13--0.15. Forking was studied in detail by Gally et al.~\cite{gally81}, who used E. Coli to 
@@ -441,11 +466,6 @@ extract. This experiment gave the lower order parameter when deuterium was in th
 Since the glycerol backbone order parameters are very similar irrespective of the headgroup chemistry (PC,PE and PG) or lipid 
 environment~\cite{gally81}, it is reasonable to assume that the stereospecifity measured for the PE lipids
 holds also for the PC lipids.
-
-In Fig.~\ref{HGorderparameters} we have shown the absolute values of order parameters as these are accessible
-with both $^2$H NMR and $^{13}$C NMR techniques. However, $^{13}$C NMR techniques allow also the measurement of 
-the sign of the order parameter~\cite{hong95a,hong95b,gross97}. The measured sign is negative for almost all the carbons 
-discussed in this work as only $\alpha$ is positive~\cite{hong95a,hong95b,gross97}. 
 
 By combining the experimental information of the sign~\cite{hong95a,hong95b,gross97} and the stereospecific
 measurements~\cite{gally81} with the accurate absolute value measurements from various techniques~\cite{gally75,akutsu81,gross97,dvinskikh05a,ferreira13},
