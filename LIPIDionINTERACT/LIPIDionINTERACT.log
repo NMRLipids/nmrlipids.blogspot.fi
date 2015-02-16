@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.18)  12 FEB 2015 16:12
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.18)  16 FEB 2015 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,7 +558,7 @@ Missing character: There is no ’ in font ptmb7t!
 [2 <./POPCstructure-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 351.
+               Default added (so using `tbp') on input line 352.
 
 Package epstopdf Info: Source file: <IONdensities.eps>
 (epstopdf)                    date: 2015-01-26 16:18:58
@@ -568,21 +568,21 @@ Package epstopdf Info: Source file: <IONdensities.eps>
 (epstopdf)                    size: 12031 bytes
 (epstopdf)             Command: <repstopdf --outfile=IONdensities-eps-converted
 -to.pdf IONdensities.eps>
-(epstopdf)             \includegraphics on input line 353.
+(epstopdf)             \includegraphics on input line 354.
 Package epstopdf Info: Output file is already uptodate.
 <IONdensities-eps-converted-to.pdf, id=23, 505.89pt x 867.24pt>
 File: IONdensities-eps-converted-to.pdf Graphic file (type pdf)
 
 <use IONdensities-eps-converted-to.pdf>
 Package pdftex.def Info: IONdensities-eps-converted-to.pdf used on input line 3
-53.
+54.
 (pdftex.def)             Requested size: 227.62204pt x 390.2147pt.
  [3]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 398.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 399.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 398.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 399.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -590,10 +590,10 @@ Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 [4 <./OrderParameterIONSnaclSIGN-eps-converted-to.pdf> <./OrderParameterIONScha
 nges-eps-converted-to.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 435.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 433.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 435.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 433.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -692,6 +692,23 @@ Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¤ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¤ in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[][] \OT1/ptm/m/n/10 29. The ion con-cen-tra-tions for, at least, Berger, CHARM
+M36 and Or-ange 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\OT1/ptm/m/n/10 has to be re-cal-cu-lated, see http://nmrlipids.blogspot.com/20
+15/02/the-first-draft-of-ion- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\OT1/ptm/m/n/10 lipid.html?showComment=1423771449743#c5884666173819273918  
+ []
+
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no ˆ in font ptmr7t!
 Missing character: There is no ’ in font ptmr7t!
@@ -737,13 +754,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--36
 tra-tion, and into the wrong di-rec-tion.  
  []
 
-
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 36--36
 []\OT1/ptm/m/n/10 - I think that CHARMM36 sim-u-la-tion with CaCl$[]$ should be
  done  
  []
 
-[8])
+)
 \tf@lod=\write4
 \openout4 = `LIPIDionINTERACT.lod'.
 
@@ -773,7 +790,7 @@ ic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier
 /ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on LIPIDionINTERACT.pdf (9 pages, 206993 bytes).
+Output written on LIPIDionINTERACT.pdf (9 pages, 207854 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
