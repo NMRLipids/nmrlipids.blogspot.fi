@@ -1,0 +1,37 @@
+# Added by Samuli Ollila directly to GitHub on 17 Feb 2015:
+#
+#
+# POPC. 126 lipids, 896 waters = 7 w/l.
+# 303K.
+# Simulated 130 ns, of which last 40 ns analyzed. 
+#
+# GAFFlipid force field:
+#
+#	 http://dx.doi.org/10.1039/C2SM26007G
+# 
+# Trajectory and input files available at:
+#
+#	http://dx.doi.org/10.5281/zenodo.13853
+#
+# SEM = standard error of mean, assuming each lipid to be an
+# independent measurement.
+#
+# 	S_CD		SEM
+# beta:
+1 0.0270094 0.00773105
+1 0.0157583 0.00649098
+
+#alpha
+2 0.0829167 0.00946899
+2 0.0814317 0.0101167
+
+#g3
+3 -0.233048 0.0127766
+3 -0.244583 0.0116971
+
+#g2
+4 -0.254563 0.0133726
+
+#g1
+5 -0.195513 0.0176243
+5 0.029464 0.0193566
