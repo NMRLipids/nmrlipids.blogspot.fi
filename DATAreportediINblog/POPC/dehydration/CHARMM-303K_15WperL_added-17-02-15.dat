@@ -1,0 +1,37 @@
+# Added by Samuli Ollila directly to GitHub on 17 Feb 2015:
+#
+#
+# POPC. 72 lipids, 1080 waters = 15 w/l.
+# 303K.
+# Simulated 59 ns, of which last 40 ns analyzed. 
+#
+# CHARMM36 force field:
+#
+#
+# 
+# Trajectory and input files available at:
+#
+#	http://dx.doi.org/10.5281/zenodo.13946
+#
+# SEM = standard error of mean, assuming each lipid to be an
+# independent measurement.
+#
+# 	S_CD		SEM
+# beta:
+1 -0.0735126 0.00586246
+1 -0.0743626 0.00639565
+
+#alpha
+2 0.0403368 0.00769391
+2 0.0495685 0.00765314
+
+#g3
+3 -0.232776 0.00971024
+3 -0.249669 0.00659896
+
+#g2
+4 -0.19611 0.0118346
+
+#g1
+5 -0.186082 0.012355
+5 -0.0656782 0.0122014
