@@ -518,6 +518,12 @@
   \bibinfo{journal}{Phys. Chem. Chem. Phys.} \textbf{\bibinfo{volume}{7}},
   \bibinfo{pages}{607} (\bibinfo{year}{2005}{\natexlab{b}}).
 
+\bibitem[{\citenamefont{Engel and Cowburn}(1981)}]{engel81}
+\bibinfo{author}{\bibfnamefont{A.~K.} \bibnamefont{Engel}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Cowburn}},
+  \bibinfo{journal}{FEBS Letters} \textbf{\bibinfo{volume}{126}},
+  \bibinfo{pages}{169 } (\bibinfo{year}{1981}).
+
 \bibitem[{\citenamefont{Vogel and Feller}(2012)}]{vogel12}
 \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Vogel}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Feller}},
@@ -681,6 +687,14 @@
 \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{M{\"a}{\"a}tt{\"a}}}
   (\bibinfo{year}{2014}),
   \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13287}}.
+
+\bibitem[{\citenamefont{J{\"a}mbeck and
+  Lyubartsev}(2012{\natexlab{b}})}]{jambeck12b}
+\bibinfo{author}{\bibfnamefont{J.~P.~M.} \bibnamefont{J{\"a}mbeck}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~P.}
+  \bibnamefont{Lyubartsev}}, \bibinfo{journal}{Journal of Chemical Theory and
+  Computation} \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{2938}
+  (\bibinfo{year}{2012}{\natexlab{b}}).
 
 \bibitem[{\citenamefont{Javanainen}(2015{\natexlab{a}})}]{slipidsFILESpopc}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}},
@@ -858,12 +872,6 @@
   \bibinfo{journal}{European Biophysics Journal} \textbf{\bibinfo{volume}{34}},
   \bibinfo{pages}{987} (\bibinfo{year}{2005}), ISSN \bibinfo{issn}{0175-7571}.
 
-\bibitem[{\citenamefont{Engel and Cowburn}(1981)}]{engel81}
-\bibinfo{author}{\bibfnamefont{A.~K.} \bibnamefont{Engel}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Cowburn}},
-  \bibinfo{journal}{FEBS Letters} \textbf{\bibinfo{volume}{126}},
-  \bibinfo{pages}{169 } (\bibinfo{year}{1981}).
-
 \bibitem[{\citenamefont{Mashl et~al.}(2001)\citenamefont{Mashl, Scott,
   Subramaniam, and Jakobsson}}]{mashl01}
 \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Mashl}},
@@ -963,8 +971,9 @@
   Chem. Theor. Comput.} \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{749}
   (\bibinfo{year}{2012}).
 
-\bibitem[{mar(2010)}]{marsh10}
-\bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
+\bibitem[{\citenamefont{Marsh}(2010)}]{marsh10}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Marsh}},
+  \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
   \textbf{\bibinfo{volume}{1798}}, \bibinfo{pages}{688 }
   (\bibinfo{year}{2010}).
 
@@ -983,8 +992,10 @@
   \bibinfo{journal}{Biochim. Biophys. Acta - Biomembranes}
   \textbf{\bibinfo{volume}{1788}}, \bibinfo{pages}{12 } (\bibinfo{year}{2009}).
 
-\bibitem[{gho(1982)}]{ghosh82}
-\bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
+\bibitem[{\citenamefont{Ghosh and Seelig}(1982)}]{ghosh82}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Ghosh}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
   \textbf{\bibinfo{volume}{691}}, \bibinfo{pages}{151 } (\bibinfo{year}{1982}).
 
 \bibitem[{\citenamefont{Ferreira et~al.}(2014)\citenamefont{Ferreira, Topgaard,
@@ -1073,14 +1084,6 @@
   \bibinfo{author}{\bibfnamefont{J.~R.} \bibnamefont{Haak}},
   \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{81}},
   \bibinfo{pages}{3684} (\bibinfo{year}{1984}).
-
-\bibitem[{\citenamefont{J{\"a}mbeck and
-  Lyubartsev}(2012{\natexlab{b}})}]{jambeck12b}
-\bibinfo{author}{\bibfnamefont{J.~P.~M.} \bibnamefont{J{\"a}mbeck}}
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~P.}
-  \bibnamefont{Lyubartsev}}, \bibinfo{journal}{Journal of Chemical Theory and
-  Computation} \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{2938}
-  (\bibinfo{year}{2012}{\natexlab{b}}).
 
 \bibitem[{\citenamefont{Jo et~al.}(2008)\citenamefont{Jo, Kim, Iyer, and
   Im}}]{jo08}

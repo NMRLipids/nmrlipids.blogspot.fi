@@ -5,28 +5,28 @@ The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: HGmodel_draft3Notes.bib
 Database file #2: refs.bib
-You're missing a field part---line 263 of file refs.bib
+You're missing a field part---line 259 of file refs.bib
  :    eid = 
  :          ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 1063 of file refs.bib
+You're missing a field part---line 1059 of file refs.bib
  :    eid = 
  :          ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 1279 of file refs.bib
+You're missing a field part---line 1275 of file refs.bib
  :    eid = 
  :          ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 1303 of file refs.bib
+You're missing a field part---line 1299 of file refs.bib
  :    eid = 
  :          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1385 of file refs.bib
+I was expecting a `,' or a `}'---line 1381 of file refs.bib
  : 
  : year={1975},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1637 of file refs.bib
+I was expecting a `,' or a `}'---line 1633 of file refs.bib
  : 
  : year={2014},
 (Error may have been on previous line)
@@ -44,51 +44,48 @@ Repeated entry---line 12879 of file refs.bib
  :                 ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "GAFFlipidFILESdppc"
-Warning--I didn't find a database entry for "XXX"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty author in marsh10
-Warning--empty author in ghosh82
 Warning--can't use both author and editor fields in berendsen81
 You've used 158 entries,
             3411 wiz_defined-function locations,
-            1963 strings with 37478 characters,
-and the built_in function-call counts, 102907 in all, are:
-= -- 5916
-> -- 3346
-< -- 503
-+ -- 2705
-- -- 818
-* -- 13817
-:= -- 11307
+            1963 strings with 37513 characters,
+and the built_in function-call counts, 103235 in all, are:
+= -- 5929
+> -- 3370
+< -- 508
++ -- 2717
+- -- 824
+* -- 13870
+:= -- 11351
 add.period$ -- 158
 call.type$ -- 158
 change.case$ -- 644
 chr.to.int$ -- 136
-cite$ -- 167
-duplicate$ -- 9452
-empty$ -- 8781
-format.name$ -- 2116
-if$ -- 19403
+cite$ -- 161
+duplicate$ -- 9484
+empty$ -- 8797
+format.name$ -- 2134
+if$ -- 19456
 int.to.chr$ -- 23
 int.to.str$ -- 159
-missing$ -- 1415
+missing$ -- 1420
 newline$ -- 489
-num.names$ -- 469
-pop$ -- 2701
+num.names$ -- 475
+pop$ -- 2705
 preamble$ -- 1
 purify$ -- 632
 quote$ -- 0
-skip$ -- 3729
+skip$ -- 3735
 stack$ -- 0
-substring$ -- 3248
-swap$ -- 7250
-text.length$ -- 418
+substring$ -- 3244
+swap$ -- 7284
+text.length$ -- 421
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 940
-warning$ -- 3
-while$ -- 432
+warning$ -- 1
+while$ -- 436
 width$ -- 0
-write$ -- 1571
+write$ -- 1573
 (There were 9 error messages)

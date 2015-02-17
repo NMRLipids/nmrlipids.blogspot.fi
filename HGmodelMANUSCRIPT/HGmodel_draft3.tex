@@ -229,7 +229,7 @@ is based on the self-assesment of the authors' scientific contribution to the pr
 Large portion of the used simulation files and scripts are shared through the GitHub organization \url{https://github.com/NMRlipids}
 and the Zenodo community \url{https://zenodo.org/collection/user-nmrlipids}.
 
-\subsection{Order parameters from experiments}
+\subsection{Order parameters from experiments}\label{expORDp}
 \todo{DONE
 %We should mention the sign issue and refer to the blog post:
 %http://nmrlipids.blogspot.fi/2014/04/on-signs-of-order-parameters.html somewhere.
@@ -333,7 +333,7 @@ GAFFlipid~\cite{dickson12}       & DPPC & 72  & 2197  & 323 & 90 & 50  & \cite{G
 Lipid14 \cite{dickson14}         & POPC  & 72 & 2234 & 303 & 100 & 50  & \cite{lipid14files}$^*$ & SI \\
 Poger \cite{poger10}             & DPPC  & 128 & 5841 & 323 & 2$\times$100 & 2$\times$50 & \cite{pogerFILESpme1,pogerFILESpme2}$^*$\todoi{DONE} & SI \\
 Slipid \cite{jambeck12}          & DPPC & 128 & 3840 & 323 & 150 & 100 & \cite{slipidsFILES}$^*$ & SI \\
-Slipid \cite{jambeck12}          & POPC & 128 & 5120 & 303 & 200 & 150 & \cite{slipidsFILESpopc}$^*$ & SI \\
+Slipid \cite{jambeck12b}          & POPC & 128 & 5120 & 303 & 200 & 150 & \cite{slipidsFILESpopc}$^*$ & SI \\
 Kukol \cite{kukol09}          & POPC   & 512 & 20564 & 298 & 50 & 30  & \cite{kukolFILES}$^*$ & SI \\
 Chiu \cite{chiu09} \todoi{Samuli, put to Zenodo}     & POPC  & 128 & 3552  & 298 & 56 & 50  & ? & SI \\
 H\"ogberg08 \cite{rabinovich14}\todoi{Alexander Luybartsev, let us know if you share the files.}  & POPC   &  128 & 3840  & 303 & 100 & 80  & ? & \cite{rabinovich14}  \\
@@ -411,13 +411,14 @@ MacRog\cite{maciejewski14}     & POPC   & 128 & 0  & 6400   & 310 & 400 & 200 & 
 \section{Results and Discussion}
 
 \subsection{Full hydration: Experimental order parameters for the glycerol backbone and headgroup}\label{experiments}
-The specific deuteration of $\alpha$-, $\beta$- and g$_3$- segments of DPPC has been successful, 
+{\bf The specific deuteration of $\alpha$-, $\beta$- and g$_3$- segments of DPPC has been successful, 
 allowing the absolute value order parameter measurements for these segments by $^2$H--NMR~\cite{gally75,brown77,brown78,akutsu81}.
 In addition, the absolute values of order parameters for all glycerol backbone and choline headgroup segments in egg yolk lecithin~\cite{hong95a},
 DMPC~\cite{hong95b,gross97,dvinskikh05a}, DOPC~\cite{warschawski05} and POPC~\cite{warschawski05,ferreira13}
 have been measured with several different implementations of $^{13}$C NMR experiments. In addition, the signs of order parameters in some systems
-are measured with $^{13}$C NMR tehcniques~\cite{hong95a,hong95b,gross97}. The experimental absolute values of glycerol backbone 
-and choline order parameters from various publications are shown in Fig.~\ref{HGorderparameters}.
+are measured with $^{13}$C NMR tehcniques~\cite{hong95a,hong95b,gross97}. The experimental values of glycerol backbone 
+and choline order parameters from various publications~\cite{gally75,akutsu81,gross97,dvinskikh05a,ferreira13} with the signs measured in~\cite{hong95a,hong95b,gross97} are shown in Fig.~\ref{HGorderparameters}.
+}
 \begin{figure}[]
   \centering
   \includegraphics[width=8.6cm]{../DATAreportediINblog/comparisonSorted.pdf}
@@ -454,9 +455,8 @@ values of the order parameters of a well-performing force field to fall.
 %Further, choline order parameters measured from mouse fibroblast L-M cell are similar to the ones in model
 %membranes~\cite{scherer87}.
 
-In addition to the numerical values, an important feature of the glycerol backbone is the 
-inequality of order parameters for the two hydrogens attached to the same carbon in g$_1$ and g$_3$ segments,
-while the hydrogens in choline $\alpha$ and $\beta$ segments give equal values.
+{\bf In addition to the numerical values, an important feature of the glycerol backbone is the 
+forking (see section~\ref{expORDp}) of the order parameters in g$_1$ and g$_3$ segments, in contrast to the choline segments $\alpha$ and $\beta$. }
 The forking in glycerol backbone g$_3$ segment is small ($\approx$ 0.02) 
 and some experiments only report the larger value or the average value~\cite{akutsu81,ferreira13}. 
 In contrast, forking is significant for the glycerol backbone g$_1$ segment, whose lower order parameter is close to zero and the
@@ -467,10 +467,9 @@ Since the glycerol backbone order parameters are very similar irrespective of th
 environment~\cite{gally81}, it is reasonable to assume that the stereospecifity measured for the PE lipids
 holds also for the PC lipids.
 
-By combining the experimental information of the sign~\cite{hong95a,hong95b,gross97} and the stereospecific
-measurements~\cite{gally81} with the accurate absolute value measurements from various techniques~\cite{gally75,akutsu81,gross97,dvinskikh05a,ferreira13},
-the most detailed experimentally available order parameter information for the glycerol backbone and choline segments of POPC is obtained.
-These data are shown in Fig.~\ref{HGorderparameters2}.
+{\bf By combining the absolute value measurements~\cite{ferreira13}, the sign measurements~\cite{hong95a,hong95b,gross97} and the stereospecific
+measurements~\cite{gally81} the most detailed experimentally available order parameter information for the glycerol backbone and choline 
+segments of POPC bilayer is collected and the data are shown in Fig.~\ref{HGorderparameters2}. }
 \begin{figure*}[]
   \centering
   \includegraphics[width=8.6cm]{HGorderparameters5.eps} \\
@@ -491,29 +490,37 @@ MacRog~\cite{maciejewski14} force fields perform better for the glycerol backbon
 However, none of the studies exploits the full potential of the available experimental data discussed in previous section, i.e. the quantitative accuracy, known signs and stereospecific labeling of
 the experimental order parameters.
 
-To get a general idea of the quality of the glycerol backbone and choline headgroup structures in different models, we calculated the absolute
-values of the order parameters for these parts from fourteen different lipid models (Table~\ref{systems}) and 
+To get a general idea of the quality of the glycerol backbone and choline headgroup structures in different models, we calculated 
+the order parameters for these parts from thirteen different lipid models (Table~\ref{systems}) and 
 plotted the results together with experimental values in Fig.~\ref{HGorderparameters}.
 Two criteria were used to judge the quality of the model: there must not be significant  {\bf forking} in the $\alpha$ and $\beta$ carbons,
-there must be only moderate forking in the g$_3$ carbon and there must be significant forking in the g$_1$ carbon, {\bf absolute values}
+there must be only moderate forking in the g$_3$ carbon and there must be significant forking in the g$_1$ carbon, the {\bf magnitude}
 should be preferably inside to the subjective sweet spots determined from experiments (blue shaded regions in Fig.~\ref{HGorderparameters}).
-None of the studied force fields fulfils these criteria. However, three force fields perform better than others, namely CHARMM36~\cite{klauda10}, MacRog~\cite{maciejewski14} and GAFFlipid~\cite{dickson12}.
 The results for each force field in respect to the above criteria are summarized in Figure~\ref{FullHydrationComparisonTable}.
-\todo{The table is now done, see Fig.~\ref{FullHydrationComparisonTable}. The text should be updated accordingly.}.
+\todo{DONE}.
 \begin{figure}[]
   \centering
   \includegraphics[width=8.6cm]{../DATAreportediINblog/comparisonTable.pdf}
   \caption{\label{FullHydrationComparisonTable}
-  Ranking of force fields based on data of Fig.~\ref{HGorderparameters}.
+  Ranking of force fields based on data of Fig.~\ref{HGorderparameters}. 
+  Markus, please describe the definition of M, F and $\Sigma$ here.
   } 
 \end{figure}
 
-
-
-
-The top three models (CHARMM36, MacRog and GAFFlipid) together with the most used lipid model (Berger based model) 
-were subjected to a more careful comparison including the signs and the sterospecific labeling in Fig.~\ref{HGorderparameters2}.
-The essential additional information given by this comparison is that the sign of the $\beta$ carbon order parameter is correct only in CHARMM36 model.
+{\bf
+None of the studied force fields fulfils these criteria completely, however CHARMM36 is pretty close. 
+This is not surprising since the dihedral potentials in this model are tuned to reproduce these parameters better against experiments~\cite{klauda10}.
+The next models in the list are CHARMM36-UA~\cite{henin08,lee14} and H\"ogberg08~\cite{hogberg08} which is also not surprising since
+these models are using CHARMM bonded potentials for glycerol backbone and choline. The fourth and the fifth models in the list, MacRog~\cite{maciejewski14} and
+GAFFlipid~\cite{dickson12}, have independently determined dihedral potentials. All the models based on Gromos potentials and Slipid perform less well.
+In the present work we subject the CHARMM36, MacRog, GAFFlipid and Berger-POPC-07 to a more careful comparison including the sterospecific labeling  
+(Fig.~\ref{HGorderparameters2}), and atomistic level structure and responses to the dehydration and cholesterol content in the following sections.
+These models are selected for more detailed studies since they are the best representatives of different dihedral potential parametrization techniques 
+(CHARMM36, MacRog, GAFFlipid), and the Berger based models are the most used lipid model in the literature.
+}
+%The top three models (CHARMM36, MacRog and GAFFlipid) together with the most used lipid model (Berger based model) 
+%were subjected to a more careful comparison including the signs and the sterospecific labeling in Fig.~\ref{HGorderparameters2}.
+%The essential additional information given by this comparison is that the sign of the $\beta$ carbon order parameter is correct only in CHARMM36 model.
 
 
 \subsection{Full hydration: Atomistic resolution structures in different models}
@@ -529,7 +536,7 @@ nonrealistic structural samping in molecular dynamics simulations. The demonstra
 the dihedral angles defined by the g$_3$-g$_2$-g$_1$-O(\textit{sn}-1) segments in the glycerol backbone and 
 the N-$\beta$-$\alpha$-O segments in the headgroup. These dihedrals were chosen for demonstration, because 
 significant differences between the models are observed around these segments in Fig.~\ref{HGorderparameters2}.
-We note that performing a similar comparison through all the dihedrals in all the 14 models would probably give highly useful
+We note that performing a similar comparison through all the dihedrals in all the 13 models would probably give highly useful
 information on how to improve the accuracy of the models yet this is beyond the scope of the current report. 
 
 The dihedral angle distributions for the  g$_3$-g$_2$-g$_1$-O(\textit{sn}-1) dihedral calculated from different models are
@@ -541,7 +548,7 @@ equally large to the gauche$^+$ fraction in GAFFlipid. From the results we concl
 dihedral angle for the g$_2$-g$_1$ bond explains the significant discrepancy to the experimental order parameters
 for the g$_1$ segment in the Berger-POPC-07 model (Fig.~\ref{HGorderparameters2}). 
 In conclusion, models preferring the anti conformation for this dihedral give more realistic order parameters and
-this in agreement with previous crystal structure and $^1$H NMR studies~\cite{hauser80,hauser81,hauser81b,hauser88,pascher92,marsh06}.
+this is in agreement with previous crystal structure and $^1$H NMR studies~\cite{hauser80,hauser81,hauser81b,hauser88,pascher92,marsh06}.
 \begin{figure}[]
   \centering
   \includegraphics[width=8.6cm]{g1-g2_Cdihs2.eps}
@@ -592,7 +599,7 @@ of anesthetics~\cite{castro08} and glycolipids~\cite{kapla12} for DMPC, and as a
 concentration for POPC~\cite{ferreira13}. Due to the high resolution in the NMR (especially $^2$H NMR) experiments,
 even very small order parameter changes resulting from the varying conditions can be measured (see
 \url{http://nmrlipids.blogspot.fi/2014/02/accuracy-of-order-parameter-measurements.html}
-for more discussion.
+for more discussion.)
 \todo{This is temporarily linked to the blog. Currently I think that the posts (with comments included) to which we want to cite are put into 
 the Figshare in pdf format as they are in when the publication is submitted. Figshare allows commenting to continue the discussion.}
 However, as already discussed above, it is not simple to deduce 
@@ -728,7 +735,7 @@ lipid bilayers containing various amounts of cholesterol. Our results have led t
 with each others. By combining the experimental results from various sources we concluded
 that the order parameters for each C--H bond are known with a quantitative accuracy of $\pm$0.02.
 
-- None of the tested models (14 different models) produces the order parameters with the experimental
+- None of the tested models (13 different models) produces the order parameters with the experimental
 accuracy for a fully hydrated phoshatidylcholine lipid bilayer. However, the CHARMM36, GAFFlipid and MacRog 
 models are relatively close. The structures of these models together with the most used lipid model (Berger based) 
 were subjected to more careful studies. The results revealed that the current models are not accurate
@@ -880,6 +887,10 @@ for electrostatics. Plain cut-off with 1~nm was used for Lennard-Jones interacti
 The neighbour lists with a cut-off of 1.0~nm were updated every 5 steps. 
 Pressure was semi-isotropically coupled to a pressure of 1~bar with the Berendsen method~\cite{berendsen84}.
 
+{\bf It should be noted that the area per molecule with these settings for the GAFFlipid model was 61.6~\AA$^2$,
+while the original publication reported 63.9~\AA$^2$~\cite{dickson12}. However, the same parameters and Amber to Gromacs
+conversion reproduced the area per molecule from original publication for the lipid14 model (see next section).}
+
 \subsubsection{Lipid14}
 %The used simulation files and part of the trajectroy are available~\cite{lipid14files}.
 The initial structure was taken directly from the Lipidbook~\cite{domanski10}.
@@ -894,8 +905,11 @@ for electrostatics. Plain cut-off with 1~nm was used for Lennard-Jones interacti
 was applied for both energy and pressure. The neighbor lists with a cut-off of 1.0~nm were updated every 5 steps. 
 Pressure was semi-isotropically coupled to a pressure of 1~bar with the Berendsen method~\cite{berendsen84}.
 
+{\bf The area per molecule with these settings was 65.4~\AA$^2$ which is in agreement with the value reported in the original publciation 65.6$\pm$0.5~\AA$^2$~\cite{dickson14}.}
+
 \subsubsection{Poger et al.}
-The Poger lipids are derived from GROMOS G53A6~\cite{poger10} and were initially coined 53A6-L (L for lipids). They are now part of GROMOS G54A7~\cite{poger12} and parametrized to work with the SPC water model~\cite{berendsen81}. The initial hydrated bilayer structure of 128 DPPC and 5841 water molecules as well as force field parameters were downloaded 
+The Poger lipids are derived from GROMOS G53A6~\cite{poger10} and were initially coined 53A6-L (L for lipids). They are now part of GROMOS G54A7~\cite{poger12} 
+and parametrized to work with the SPC water model~\cite{berendsen81}. The initial hydrated bilayer structure of 128 DPPC and 5841 water molecules as well as force field parameters were downloaded 
 from David Poger's web site (\url{http://compbio.chemistry.uq.edu.au/~david/}) on April 2012. 
 We noticed that the same files downloaded in October 2013 appear to lack two dihedral angles in the choline headgroup (only one dihedral of type gd\_29 allowing 
 the rotation of the 3 choline methyls) compared to the April 2012 version (3 dihedrals of type gd\_29 for the 3 choline methyls). This should not affect the 
@@ -933,7 +947,8 @@ a 1.4~nm for the LJ cut-off whereas a value of 1.0~nm was used in the original p
 \subsubsection{Slipids}
 %The used simulation files and part of the trajectroy are available~\cite{slipidsFILES}.
 
-Initial coordinates for a hydrated DPPC (at 323~K) and POPC (at 310~K) bilayers (30 and 40 waters/lipid, respectively) were taken directly from the Slipids home page \url{http://people.su.se/\~jjm/Stockholm\_Lipids/Downloads.html}.  The Slipids force field~\cite{jambeck12,XXX} ADD 2ND SLIPIDS PAPER! was used for the the all atom descriptions of DPPC and POPC, and
+Initial coordinates for a hydrated DPPC (at 323~K) and POPC (at 310~K) bilayers (30 and 40 waters/lipid, respectively) were taken directly from the 
+Slipids home page \url{http://people.su.se/\~jjm/Stockholm\_Lipids/Downloads.html}.  The Slipids force field~\cite{jambeck12,jambeck12b} was used for the the all atom descriptions of DPPC and POPC, and
 water was described with the TIP3P water model~\cite{jorgensen83}. Simulations were performed within the NPT ensemble using the GROMACS 4.6.X simulation
 package~\cite{hess08}. The Nos\'{e}--Hoover thermostat~\cite{nose84,hoover85} was used with reference temperatures of
 323~K (DPPC) and 310~K (POPC) and a relaxation time constant of 0.5~ps. Water and lipids were coupled separately to
