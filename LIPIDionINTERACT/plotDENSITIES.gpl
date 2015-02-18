@@ -20,21 +20,21 @@ set ylabel "Density"
 plot "../POPCmacrog/NaCl200mM/200.xvg" using 1:4 title 'Na' with lines linetype 1 
 #"../POPCmacrog/NaCl200mM/200.xvg" using 1:3 title 'Lipids' with lines linetype 1 ,  \
 
-set label at screen 0.37,screen 0.75 "Berger (190 mM)"
+set label at screen 0.37,screen 0.75 "Berger (340 mM)"
 #set yrange [0.01:0.16]
 plot  "../POPCberger/NaCl190mM/NAdens2.xvg" using 1:2 title 'Na' with lines linetype 1 , \
       "../POPCberger/CaCl190mM/CAdens.xvg" using 1:2 title 'Ca' with lines linetype 1  lc rgb 'green', \
       "../POPCberger/NaCl190mM/POPCdens2.xvg" using 1:($2/100) title 'POPC' with lines linetype 11 lc rgb 'black'
 
 
-set label at screen 0.37,screen 0.55 "CHARMM36 (280 mM)"
+set label at screen 0.37,screen 0.55 "CHARMM36 (690 mM)"
 #set ylabel "g_{3}  S_{CH}"
 #set yrange [-0.3:-0.1]
 plot  "../POPCcharmm/POPCnacl/26na/NAdens_20-70ns.xvg" using 1:2 title 'Na' with lines linetype 1 , \
 "../POPCcharmm/POPCnacl/26na/POPCdens_20-70ns.xvg" using 1:($2/100) notitle with lines linetype 11 lc rgb 'black'
     
 
-set label at screen 0.37,screen 0.35 "Orange (250 mM)"
+set label at screen 0.37,screen 0.35 "Orange (510 mM)"
 #set ylabel "g_{2}  S_{CH}"
 #set yrange [-0.3:-0.15]
 plot  "../POPCorange/NaCl250mM/NAdensity2.xvg" using 1:2 title 'Na' with lines linetype 1, \

@@ -226,31 +226,33 @@ however the measurements for POPC gave essentially the same results~\cite{altenb
 
 \begin{table*}[htb]
 \centering
-\caption{Simulated lipid bilayers with ions.
-}\label{IONsystems}
+\caption{Simulated lipid bilayers with ions. The ion concentrations are the concentration of ions in buffer to solute the lipid bilayers and calculated as [ion]=(N$_{\rm ion} \times$[water])/N$_{\rm w}$, 
+where [water]=55.5M. These correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.}\label{IONsystems}
 \begin{tabular}{c c c c c c c c c c c c}
 %\hline
 Force field & lipid & [Ion] mM & \footnote{The number of lipid molecules}N$_{\rm l}$   &  \footnote{The number of water molecules}N$_{\rm w}$   & \footnote{The number of Na$^+$ molecules}N$_{\rm Na}$  & \footnote{The number of Ca$^{2+}$ molecules}N$_{\rm Ca}$   &  \footnote{The number of Cl molecules}N$_{\rm Cl}$ & \footnote{Simulation temperature}T (K)  & \footnote{The total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time frames used in the analysis}t$_{{\rm anal}}$ (ns) & Files\\
 \hline
 Berger-POPC-07\cite{ollila07a}   &   POPC & 0          & 128 & 7290 & 0  & 0  & 0 & 298  & 270 & 240 & \cite{bergerFILESpopc}  \\
-Berger-POPC-07\cite{ollila07a}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 190 (NaCl) & 128 & 7202 & 44  & 0  & 44 &298  & 110 & 50 &?\todoi{Samuli put to Zenodo} \\
-Berger-POPC-07\cite{ollila07a}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 190 (CaCl$_2$) & 128 & 7157 & 0 & 44  & 88 &298 & 110 & 50 &?\todoi{Samuli put to Zenodo}  \\
+Berger-POPC-07\cite{ollila07a}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 340 (NaCl) & 128 & 7202 & 44  & 0  & 44 &298  & 110 & 50 &?\todoi{Samuli put to Zenodo} \\
+Berger-POPC-07\cite{ollila07a}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 340 (CaCl$_2$) & 128 & 7157 & 0 & 44  & 88 &298 & 110 & 50 &?\todoi{Samuli put to Zenodo}  \\
 \hline
 CHARMM36\cite{klauda10}   & POPC & 0           & 72 & 2242 & 0  & 0 & 0 & 303  & 30 & 20 & \cite{charmm36filesSHORT} \\
-CHARMM36\cite{klauda10}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   & POPC & 140 (NaCl)  & 72 & 2085 & 13  & 0 & 13 & 303  & 80 & 60 &?\todoi{Samuli put to Zenodo}\\
-CHARMM36\cite{klauda10}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   & POPC & 280 (NaCl)  & 72 & 2085 & 26  & 0 & 26 & 303  & 80 & 60 &?\todoi{Samuli put to Zenodo} \\
-CHARMM36\cite{klauda10}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}  & POPC & 570 (NaCl)  & 72 & 2085 & 52  & 0 & 52 & 303  & 80 & 60 &?\todoi{Samuli put to Zenodo} \\
-CHARMM36\cite{klauda10}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   & POPC & 85  (NaCl)  & 72 & 2085 & 78  & 0 & 78 & 303  & 73 & 60 &?\todoi{Samuli put to Zenodo} \\
+CHARMM36\cite{klauda10}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   & POPC & 350 (NaCl)  & 72 & 2085 & 13  & 0 & 13 & 303  & 80 & 60 &?\todoi{Samuli put to Zenodo}\\
+CHARMM36\cite{klauda10}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   & POPC & 690 (NaCl)  & 72 & 2085 & 26  & 0 & 26 & 303  & 80 & 60 &?\todoi{Samuli put to Zenodo} \\
+CHARMM36\cite{klauda10}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}  & POPC & 1380 (NaCl)  & 72 & 2085 & 52  & 0 & 52 & 303  & 80 & 60 &?\todoi{Samuli put to Zenodo} \\
+CHARMM36\cite{klauda10}, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   & POPC & 2080  (NaCl)  & 72 & 2085 & 78  & 0 & 78 & 303  & 73 & 60 &?\todoi{Samuli put to Zenodo} \\
 \hline
 MacRog\cite{maciejewski14}\todoi{DONE}  & POPC & 0 & 288 & 14400 & 0 & 0 & 0 & 310 & 90&40  &~\cite{macrogdehydFILES}  \\
 MacRog\cite{maciejewski14}\todoi{DONE} , ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}  & POPC & 100 (NaCl) & 288 & 14554 & 27 & 0 & 27 & 310 & 90&50  & \cite{macrogIONfiles} \\
-MacRog\cite{maciejewski14}\todoi{DONE} , ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}        & POPC &  200 (NaCl) & 288 & 14500 & 54 & 0 & 54 & 310 & 90&50  &\cite{macrogIONfiles}  \\
-MacRog\cite{maciejewski14}\todoi{DONE} , ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}        & POPC &   300 (NaCl) & 288 & 14446 & 81 & 0 & 81 & 310 & 90&50  & \cite{macrogIONfiles} \\
-MacRog\cite{maciejewski14}\todoi{DONE} , ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}        & POPC &   400 (NaCl) & 288 & 14392 & 108 & 0 & 108 & 310 & 90& 50  & \cite{macrogIONfiles}  \\
+MacRog\cite{maciejewski14}\todoi{DONE} , ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}        & POPC &  210 (NaCl) & 288 & 14500 & 54 & 0 & 54 & 310 & 90&50  &\cite{macrogIONfiles}  \\
+MacRog\cite{maciejewski14}\todoi{DONE} , ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}        & POPC &   310 (NaCl) & 288 & 14446 & 81 & 0 & 81 & 310 & 90&50  & \cite{macrogIONfiles} \\
+MacRog\cite{maciejewski14}\todoi{DONE} , ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}        & POPC &   420 (NaCl) & 288 & 14392 & 108 & 0 & 108 & 310 & 90& 50  & \cite{macrogIONfiles}  \\
 \hline
 Orange, ionFF~\cite{??}\todoi{Samuli check the numbers}   &   POPC & 0 & ? & ? & 0 & 0  & 0 & 298 & ? & ? &?\todoi{Jukka Määttä and Luca Monticelli, please let us know if we can share some files. This is unpublished model.}  \\
-Orange, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 250 (NaCl) & 72 & 2802 & 26 & 0  & 26 & 298 & 120 & 60 &?\todoi{Jukka Määttä and Luca Monticelli, please let us know if we can share some files through Zenodo. This is unpublished model.}  \\
-Orange, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 240 (CaCl$_2$)  & 72 & 2802 & 0 & 26  & 52 & 298 & 120 & 60 &? \todoi{Jukka Määttä and Luca Monticelli, please let us know if we can share some files. This is unpublished model.} \\
+Orange, ionFF~\cite{??}\ &   POPC & 140 (NaCl) & 72 & 2866 & 7 & 0  & 7 & 298 & running & ? &?  \\
+Orange, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 510 (NaCl) & 72 & 2802 & 26 & 0  & 26 & 298 & 120 & 60 &?\todoi{Jukka Määttä and Luca Monticelli, please let us know if we can share some files through Zenodo. This is unpublished model.}  \\
+Orange, ionFF~\cite{??}  &   POPC & 1000 (NaCl) & 72 & 2780 & 50 & 0  & 50 & 298 & running & ? &? \\
+Orange, ionFF~\cite{??}\todoi{Appropriate reference for the ion model?}   &   POPC & 510 (CaCl$_2$)  & 72 & 2802 & 0 & 26  & 52 & 298 & 120 & 60 &? \todoi{Jukka Määttä and Luca Monticelli, please let us know if we can share some files. This is unpublished model.} \\
 \hline
 Slipid\cite{jambeck12}   &   DPPC & 0 & 128 &3840 & 0 & 0  & 0 & 323 & 150 & 100 &~\cite{slipidsFILES}  \\
 Slipid\cite{jambeck12}, ionFF~\cite{??}\todoi{Andrea Catte, please let us know if you share some files through Zenodo}    &   DPPC & 150 (NaCl) & 600 & 18000 & 49 & 0  & 49 & 323 & 100 & 40 &?  \\
@@ -308,8 +310,8 @@ Na$^+$~\cite{akutsu81,altenbach84}.
     Regarding the actual electrometer concept this not relevant, however. 
     The experimental accuracy of order parameter changes is much higher than the accuracy of quantitative values due to high resolution of $^2$H NMR spectroscopy~\cite{??}. 
    }
-\todo{The ion concentrations for, at least, Berger, CHARMM36 and Orange has to be recalculated, see http://nmrlipids.blogspot.com/2015/02/the-first-draft-of-ion-lipid.html?showComment=1423771449743\#c5884666173819273918 \\
- I think that we have to run Orange simulation with higher NaCl concentration. I will do it.} \\
+\todo{I have already Orange simulations running with 1M and 140mM NaCl concentrations. I think I should still run CHARMM36 with 1M and maybe with close to 150mM. 
+Some of the simulations had accidentally over 1M concentration and those are not useful for this plot.} \\
 \todo{I think that we have to run CHARMM36 with CaCl$_2$. If anyone happen to have the data and is willing to share,
 let us know. If not, then I will do it.} \\
 \todo{ I think that it would be very interesting to test the modified CHARMM ions: Venable et al. dx.doi.org/10.1021/jp401512z, J. Phys. Chem. B 2013, 117, 10183−10192.
@@ -361,8 +363,9 @@ are shown in Fig.~\ref{IONdensCOMP} for lipids and cations from different simula
 Now the difference comparison is little bit distracted due to the different mass of the atoms. \\
 - The lipid density from MacRog simulation is missing. Maybe Matti Javanainen could provide this?
 If the data will be uploaded to Zenodo, it also trivial to calculate it with script. \\
-- It seems that relative integrated (total) ion density in different models do not correspond the reported relative concentrations.
-For example, total Na density seems bigger in Berger than in MacRog even though there is only minot difference in concentration, and into the wrong direction. \\
+- CONCENTRATION CALCULATION ISSUE FIXED, SEE http://nmrlipids.blogspot.com/2015/02/the-first-draft-of-ion-lipid.html?showComment=1423750867868\#c3435589938183508901. \\
+The systems are here now with quite different concentrations so comparison is not straigthforward. One option would be to run simulations of all
+systems with 150mM which would be close to physiological concentrations, and show the density distributions from those here. \\
 - I think that CHARMM36 simulation with CaCl$_2$ should be done \\
 - Figure editing will be finished (centering of the graphs, labels, etc.) will be done once the above issues have been sorted out.
  }
