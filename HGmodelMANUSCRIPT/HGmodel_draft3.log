@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.18)  17 FEB 2015 14:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.18)  20 FEB 2015 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -435,50 +435,53 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \openout3 = `HGmodel_draft3Notes.bib'.
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 123.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <9> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 123.
+
 
 Class revtex4-1 Warning: Assuming \noaffiliation for authors.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 139.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 139.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 139.
 
-Underfull \hbox (badness 2932) in paragraph at lines 133--133
+Underfull \hbox (badness 2932) in paragraph at lines 139--139
   [][]\OT1/ptm/b/n/8 Author to whom cor-re-spon-dence may be ad-dressed. E-mail
 :
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 137.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 143.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 139.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 193.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 199.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 207.
+               Default added (so using `tbp') on input line 213.
 
 Package epstopdf Info: Source file: <POPCstructure.eps>
 (epstopdf)                    date: 2015-01-23 12:11:12
@@ -488,122 +491,103 @@ Package epstopdf Info: Source file: <POPCstructure.eps>
 (epstopdf)                    size: 11539 bytes
 (epstopdf)             Command: <repstopdf --outfile=POPCstructure-eps-converte
 d-to.pdf POPCstructure.eps>
-(epstopdf)             \includegraphics on input line 209.
+(epstopdf)             \includegraphics on input line 215.
 Package epstopdf Info: Output file is already uptodate.
 <POPCstructure-eps-converted-to.pdf, id=11, 722.7pt x 542.025pt>
 File: POPCstructure-eps-converted-to.pdf Graphic file (type pdf)
 
 <use POPCstructure-eps-converted-to.pdf>
 Package pdftex.def Info: POPCstructure-eps-converted-to.pdf used on input line 
-209.
+215.
 (pdftex.def)             Requested size: 244.69386pt x 183.51689pt.
  [2 <./POPCstructure-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
-[]\OT1/ptm/m/n/10 Large por-tion of the used sim-u-la-tion files and
- []
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 237.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
-\OT1/ptm/m/n/10 scripts are shared through the GitHub or-ga-ni-za-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
-\OT1/pcr/m/n/10 https : / / github . com / NMRlipids$ \OT1/ptm/m/n/10 and the Z
-en-
- []
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 242--261
+Underfull \hbox (badness 1107) in paragraph at lines 253--272
 \OT1/ptm/m/n/10 the mea-sured quadrupo-lar split-ting $\OT1/cmr/m/n/10 ^^A\OML/
 cmm/m/it/10 ^^W[]$ \OT1/ptm/m/n/10 ($[]$H NMR) are
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 242--261
+Underfull \hbox (badness 1496) in paragraph at lines 253--272
 \OT1/ptm/m/n/10 the value for the static quadrupole split-ting con-stant is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--261
+Underfull \hbox (badness 10000) in paragraph at lines 253--272
 \OT1/ptm/m/n/10 see $\OT1/pcr/m/n/10 http : / / nmrlipids . blogspot . fi / 201
 4 / 02 /
  []
 
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 242--261
+Overfull \hbox (2.0pt too wide) in paragraph at lines 253--272
 \OT1/pcr/m/n/10 accuracy-[]of-[]order-[]parameter-[]measurements .
  []
 
-LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 265.
 
-Underfull \hbox (badness 1314) in paragraph at lines 262--266
+Underfull \hbox (badness 1314) in paragraph at lines 273--277
 \OT1/ptm/b/n/10 si-ble with both $[]$H NMR and $[]$C NMR tech-niques.
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 262--266
+Underfull \hbox (badness 2744) in paragraph at lines 273--277
 \OT1/ptm/b/n/10 How-ever, only $[]$C NMR tech-niques al-low also the
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 262--266
+Underfull \hbox (badness 1728) in paragraph at lines 273--277
 []\OT1/ptm/b/n/10 , []]. The mea-sured sign is neg-a-tive for al-most
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 262--266
+Underfull \hbox (badness 1478) in paragraph at lines 273--277
 \OT1/ptm/b/n/10 all the car-bons dis-cussed in this work as only $\OML/cmm/m/it
 /10 $ \OT1/ptm/b/n/10 is
  []
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 262--266
+Underfull \hbox (badness 1990) in paragraph at lines 273--277
 \OT1/ptm/b/n/10 pos-i-tive [[], [], []]. For more de-tailed dis-cus-sion
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 262--266
+Underfull \hbox (badness 2418) in paragraph at lines 273--277
 \OT1/ptm/b/n/10 about the sign mea-sure-ments of the or-der pa-ram-e-
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 262--266
+Underfull \hbox (badness 1983) in paragraph at lines 273--277
 \OT1/ptm/b/n/10 ters see $\OT1/pcr/b/n/10 http : / / nmrlipids . blogspot . fi 
 / 2014 /
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 268.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 279.
 [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 309.
-
-
-Package natbib Warning: Citation `GAFFlipidFILESdppc' on page 4 undefined on in
-put line 332.
+               Default added (so using `tbp') on input line 320.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 422.
+               Default added (so using `tbp') on input line 433.
 
 
 <../DATAreportediINblog/comparisonSorted.pdf, id=31, 284.06125pt x 597.23125pt>
 File: ../DATAreportediINblog/comparisonSorted.pdf Graphic file (type pdf)
 <use ../DATAreportediINblog/comparisonSorted.pdf>
 Package pdftex.def Info: ../DATAreportediINblog/comparisonSorted.pdf used on in
-put line 424.
+put line 435.
 (pdftex.def)             Requested size: 244.69386pt x 514.4837pt.
 
 
-LaTeX Warning: Float too large for page by 121.40813pt on input line 438.
+LaTeX Warning: Float too large for page by 121.40813pt on input line 449.
 
 [4 <../DATAreportediINblog/comparisonSorted.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 473.
+               Default added (so using `tbp') on input line 484.
 
 Package epstopdf Info: Source file: <HGorderparameters5.eps>
 (epstopdf)                    date: 2015-01-23 12:11:12
@@ -613,31 +597,35 @@ Package epstopdf Info: Source file: <HGorderparameters5.eps>
 (epstopdf)                    size: 10190 bytes
 (epstopdf)             Command: <repstopdf --outfile=HGorderparameters5-eps-con
 verted-to.pdf HGorderparameters5.eps>
-(epstopdf)             \includegraphics on input line 475.
+(epstopdf)             \includegraphics on input line 486.
 Package epstopdf Info: Output file is already uptodate.
 <HGorderparameters5-eps-converted-to.pdf, id=56, 505.89pt x 361.35pt>
 File: HGorderparameters5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use HGorderparameters5-eps-converted-to.pdf>
 Package pdftex.def Info: HGorderparameters5-eps-converted-to.pdf used on input 
-line 475.
+line 486.
 (pdftex.def)             Requested size: 244.69386pt x 174.78587pt.
-
+ [5]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 501.
+               Default added (so using `tbp') on input line 512.
 
-<../DATAreportediINblog/comparisonTable.pdf, id=57, 465.61061pt x 841.9934pt>
+<../DATAreportediINblog/comparisonTable.pdf, id=60, 465.61061pt x 841.9934pt>
 File: ../DATAreportediINblog/comparisonTable.pdf Graphic file (type pdf)
 
 <use ../DATAreportediINblog/comparisonTable.pdf>
 Package pdftex.def Info: ../DATAreportediINblog/comparisonTable.pdf used on inp
-ut line 503.
+ut line 514.
 (pdftex.def)             Requested size: 244.69386pt x 442.48997pt.
- [5] [6 <./HGorderparameters5-eps-converted-to.pdf>]
+ [6 <./HGorderparameters5-eps-converted-to.pdf>]
+Underfull \hbox (badness 1377) in paragraph at lines 522--535
+\OT1/ptm/b/n/10 model are tuned to re-pro-duce these pa-ram-e-ters bet-
+ []
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 552.
+               Default added (so using `tbp') on input line 563.
 
 Package epstopdf Info: Source file: <g1-g2_Cdihs2.eps>
 (epstopdf)                    date: 2015-02-16 16:15:40
@@ -647,33 +635,33 @@ Package epstopdf Info: Source file: <g1-g2_Cdihs2.eps>
 (epstopdf)                    size: 17425 bytes
 (epstopdf)             Command: <repstopdf --outfile=g1-g2_Cdihs2-eps-converted
 -to.pdf g1-g2_Cdihs2.eps>
-(epstopdf)             \includegraphics on input line 554.
+(epstopdf)             \includegraphics on input line 565.
 Package epstopdf Info: Output file is already uptodate.
 <g1-g2_Cdihs2-eps-converted-to.pdf, id=73, 656.4525pt x 473.77pt>
 File: g1-g2_Cdihs2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use g1-g2_Cdihs2-eps-converted-to.pdf>
 Package pdftex.def Info: g1-g2_Cdihs2-eps-converted-to.pdf used on input line 5
-54.
+65.
 (pdftex.def)             Requested size: 244.69386pt x 176.60063pt.
 
-Underfull \hbox (badness 1331) in paragraph at lines 542--559
+Underfull \hbox (badness 1331) in paragraph at lines 553--570
 \OT1/ptm/m/n/10 POPC-07 model, show-ing a max-i-mum in the gauche$[]$-
  []
 
 [7]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 559.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 570.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 559.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 570.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 576.
+               Default added (so using `tbp') on input line 587.
 
 Package epstopdf Info: Source file: <a-bDIHS2.eps>
 (epstopdf)                    date: 2015-02-16 16:16:31
@@ -683,118 +671,136 @@ Package epstopdf Info: Source file: <a-bDIHS2.eps>
 (epstopdf)                    size: 17918 bytes
 (epstopdf)             Command: <repstopdf --outfile=a-bDIHS2-eps-converted-to.
 pdf a-bDIHS2.eps>
-(epstopdf)             \includegraphics on input line 578.
+(epstopdf)             \includegraphics on input line 589.
 Package epstopdf Info: Output file is already uptodate.
 <a-bDIHS2-eps-converted-to.pdf, id=78, 659.46375pt x 451.6875pt>
 File: a-bDIHS2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use a-bDIHS2-eps-converted-to.pdf>
-Package pdftex.def Info: a-bDIHS2-eps-converted-to.pdf used on input line 578.
+Package pdftex.def Info: a-bDIHS2-eps-converted-to.pdf used on input line 589.
 (pdftex.def)             Requested size: 244.69386pt x 167.5973pt.
-
-Underfull \hbox (badness 1983) in paragraph at lines 595--611
+ [8 <../DATAreportediINblog/comparisonTable.pdf> <./g1-g2_Cdihs2-eps-converted-
+to.pdf> <./a-bDIHS2-eps-converted-to.pdf>]
+Underfull \hbox (badness 1983) in paragraph at lines 606--622
 \OT1/ptm/m/n/10 and gly-col-ipids [[]] for DMPC, and as a func-tion of
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 595--611
+Underfull \hbox (badness 2073) in paragraph at lines 606--622
 \OT1/ptm/m/n/10 choles-terol con-cen-tra-tion for POPC [[]]. Due to the
  []
 
 
-Underfull \hbox (badness 1838) in paragraph at lines 595--611
+Underfull \hbox (badness 1838) in paragraph at lines 606--622
 \OT1/ptm/m/n/10 high res-o-lu-tion in the NMR (es-pe-cially $[]$H NMR) ex-
  []
 
 
-Underfull \hbox (badness 6641) in paragraph at lines 595--611
+Underfull \hbox (badness 6641) in paragraph at lines 606--622
 \OT1/ptm/m/n/10 per-i-ments, even very small or-der pa-ram-e-ter changes
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 595--611
+Underfull \hbox (badness 1939) in paragraph at lines 606--622
 \OT1/ptm/m/n/10 re-sult-ing from the vary-ing con-di-tions can be mea-sured
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 595--611
+Underfull \hbox (badness 4660) in paragraph at lines 606--622
 \OT1/ptm/m/n/10 (see $\OT1/pcr/m/n/10 http : / / nmrlipids . blogspot . fi / 20
 14 / 02 /
  []
 
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 595--611
+Overfull \hbox (2.0pt too wide) in paragraph at lines 606--622
 \OT1/pcr/m/n/10 accuracy-[]of-[]order-[]parameter-[]measurements .
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 595--611
+Underfull \hbox (badness 1939) in paragraph at lines 606--622
 \OT1/ptm/m/n/10 sim-u-la-tions and ex-per-i-ments in dif-fer-ent con-di-tions c
 an
  []
 
-[8 <../DATAreportediINblog/comparisonTable.pdf> <./g1-g2_Cdihs2-eps-converted-t
-o.pdf> <./a-bDIHS2-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 625.
+               Default added (so using `tbp') on input line 636.
 
 <../DATAreportediINblog/dehydration.pdf, id=137, 284.06125pt x 597.23125pt>
 File: ../DATAreportediINblog/dehydration.pdf Graphic file (type pdf)
 
 <use ../DATAreportediINblog/dehydration.pdf>
 Package pdftex.def Info: ../DATAreportediINblog/dehydration.pdf used on input l
-ine 627.
+ine 638.
 (pdftex.def)             Requested size: 244.69386pt x 514.4837pt.
- [9 <../DATAreportediINblog/dehydration.pdf>]
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 657.
+               Default added (so using `tbp') on input line 668.
 
-<../DATAreportediINblog/dehydrationPN.pdf, id=156, 460.72125pt x 284.06125pt>
+<../DATAreportediINblog/dehydrationPN.pdf, id=138, 460.72125pt x 284.06125pt>
 File: ../DATAreportediINblog/dehydrationPN.pdf Graphic file (type pdf)
 
 <use ../DATAreportediINblog/dehydrationPN.pdf>
 Package pdftex.def Info: ../DATAreportediINblog/dehydrationPN.pdf used on input
- line 659.
+ line 670.
 (pdftex.def)             Requested size: 244.69386pt x 150.86813pt.
 
-Underfull \hbox (badness 1024) in paragraph at lines 672--685
+Underfull \hbox (badness 1024) in paragraph at lines 683--696
 []\OT1/ptm/m/n/10 Phospholipid--cholesterol in-ter-ac-tions have been widely
  []
 
+[9]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 698.
-
-
-<../DATAreportediINblog/cholesterolization.pdf, id=157, 284.06125pt x 597.23125
-pt>
-File: ../DATAreportediINblog/cholesterolization.pdf Graphic file (type pdf)
- <use ../DATAreportediINblog/cholesterolization.pdf>
-Package pdftex.def Info: ../DATAreportediINblog/cholesterolization.pdf used on 
-input line 700.
-(pdftex.def)             Requested size: 244.69386pt x 514.4837pt.
- [10 <../DATAreportediINblog/dehydrationPN.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 724.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 696.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 724.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 696.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-[11 <../DATAreportediINblog/cholesterolization.pdf>] (./HGmodel_draft3.bbl
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 709.
+
+
+<../DATAreportediINblog/cholesterolization.pdf, id=142, 284.06125pt x 597.23125
+pt>
+File: ../DATAreportediINblog/cholesterolization.pdf Graphic file (type pdf)
+ <use ../DATAreportediINblog/cholesterolization.pdf>
+Package pdftex.def Info: ../DATAreportediINblog/cholesterolization.pdf used on 
+input line 711.
+(pdftex.def)             Requested size: 244.69386pt x 514.4837pt.
+ [10 <../DATAreportediINblog/dehydration.pdf> <../DATAreportediINblog/dehydrati
+onPN.pdf
+
+pdfTeX warning: pdflatex (file ../DATAreportediINblog/dehydrationPN.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 727.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 727.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+[11 <../DATAreportediINblog/cholesterolization.pdf>]
+Underfull \hbox (badness 1484) in paragraph at lines 766--771
+\OT1/ptm/b/n/10 most ex-ten-sive pub-licly avail-able col-lec-tion of molec-
+ []
+
+(./HGmodel_draft3.bbl
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
+ [12]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¡ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¶ in font ptmr7t!
-
-[12]
 Missing character: There is no â in font ptmri7t!
 Missing character: There is no € in font ptmri7t!
 Missing character: There is no “ in font ptmri7t!
@@ -812,140 +818,174 @@ Underfull \hbox (badness 1048) in paragraph at lines 605--612
  []\OT1/ptm/m/n/9 M. S. Mi-et-ti-nen, A. A. Gur-tovenko, I. Vat-tulainen, and
  []
 
+
+Underfull \hbox (badness 2452) in paragraph at lines 627--632
+ \OT1/ptm/m/it/9 re-lated files for DPPC bi-layer (CHARMM36, Gro-macs
+ []
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 627--632
+ \OT1/ptm/m/it/9 4.5) \OT1/ptm/m/n/9 (2015), URL $\OT1/pcr/m/n/9 http : / / dx 
+. doi . org / 10 . 5281 /
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 645--650
+ []\OT1/ptm/m/n/9 O. Samuli and M. Rete-gan, \OT1/ptm/m/it/9 MD sim-u-la-tion t
+ra-jec-tory
+ []
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 645--650
+ \OT1/ptm/m/it/9 4.5) \OT1/ptm/m/n/9 (2015), URL $\OT1/pcr/m/n/9 http : / / dx 
+. doi . org / 10 . 5281 /
+ []
+
 Missing character: There is no Ã in font ptmr7t!
 
-Underfull \hbox (badness 1163) in paragraph at lines 650--655
+Underfull \hbox (badness 1163) in paragraph at lines 664--669
  []\OT1/ptm/m/n/9 O. H. S. Ollila and M. Rete-gan, \OT1/ptm/m/it/9 Md sim-u-la-
 tion tra-jec-
  []
 
 
-Underfull \hbox (badness 5681) in paragraph at lines 650--655
+Underfull \hbox (badness 5681) in paragraph at lines 664--669
  \OT1/ptm/m/it/9 4.5) \OT1/ptm/m/n/9 (2014), URL $\OT1/pcr/m/n/9 http : / / dx 
 . doi . org / 10 . 5281 /
  []
 
-
-Underfull \hbox (badness 4048) in paragraph at lines 687--690
+[13]
+Underfull \hbox (badness 4048) in paragraph at lines 701--704
  []\OT1/ptm/m/n/9 J. M[]a[]att[]a (2014), URL $\OT1/pcr/m/n/9 {http : / / dx . 
 doi . org / 10 .
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 775--777
+Underfull \hbox (badness 2799) in paragraph at lines 739--743
+ []\OT1/ptm/m/n/9 O. Samuli, \OT1/ptm/m/it/9 MD sim-u-la-tion tra-jec-tory and 
+re-lated files
+ []
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 739--743
+ \OT1/ptm/m/it/9 4.5) \OT1/ptm/m/n/9 (2015), URL $\OT1/pcr/m/n/9 http : / / dx 
+. doi . org / 10 . 5281 /
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 795--797
  []\OT1/ptm/m/n/9 A. Botan (2015), URL $\OT1/pcr/m/n/9 {http : / / dx . doi . o
 rg / 10 .
  []
 
-[13]
+[14]
 Missing character: There is no Å in font ptmr7t!
 Missing character: There is no „ in font ptmr7t!
-) [14]
+)
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 793.
-
-Overfull \hbox (4.03459pt too wide) in paragraph at lines 831--849
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 814.
+ [15]
+Overfull \hbox (4.03459pt too wide) in paragraph at lines 852--870
 \OT1/ptm/m/n/10 (http://people.su.se/$\OMS/cmsy/m/n/10 ^^X$\OT1/ptm/m/n/10 jjm/
 Stockholm[]Lipids/Downloads.html).
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 831--849
+Underfull \hbox (badness 2781) in paragraph at lines 852--870
 \OT1/ptm/m/n/10 site [[]]. They con-tained 100 POPC/24 choles-terol
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 831--849
+Underfull \hbox (badness 10000) in paragraph at lines 852--870
 \OT1/ptm/m/n/10 ram-e-ters ($\OT1/pcr/m/n/10 http : / / www . gromacs . org / @
 api / deki /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 831--849
+Underfull \hbox (badness 10000) in paragraph at lines 852--870
 \OT1/pcr/m/n/10 files / 184 / =charmm36 . ff \ \ \ _4 . 5 . 4 \ _ref . tgz$\OT1
 /ptm/m/n/10 )
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 831--849
+Underfull \hbox (badness 1596) in paragraph at lines 852--870
 \OT1/ptm/m/n/10 by Pig-got et al. [[]] were used. Choles-terol pa-ram-
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 831--849
+Underfull \hbox (badness 4024) in paragraph at lines 852--870
 \OT1/ptm/m/n/10 e-ters came from Lim et al. [[]] and were con-
  []
 
 
-Underfull \hbox (badness 3271) in paragraph at lines 831--849
+Underfull \hbox (badness 3271) in paragraph at lines 852--870
 \OT1/ptm/m/n/10 verted into GRO-MACS for-mat with the Py-Topol tool
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 878--882
+
+Underfull \hbox (badness 10000) in paragraph at lines 899--903
 []\OT1/ptm/m/n/10 The force field pa-ram-e-ters were gen-er-ated us-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 878--882
+Underfull \hbox (badness 10000) in paragraph at lines 899--903
 \OT1/ptm/m/n/10 ing files ob-tained from the Lipid-book web-site
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 878--882
+Underfull \hbox (badness 10000) in paragraph at lines 899--903
 \OT1/ptm/m/n/10 ($\OT1/pcr/m/n/10 http : / / lipidbook . bioch . ox . ac . uk /
  package /
  []
 
 [16]
-Underfull \hbox (badness 2245) in paragraph at lines 950--965
+Underfull \hbox (badness 2245) in paragraph at lines 971--986
 []\OT1/ptm/m/n/10 Initial co-or-di-nates for a hy-drated DPPC (at 323 K)
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 950--965
+Underfull \hbox (badness 1199) in paragraph at lines 971--986
 \OT1/ptm/m/n/10 re-spec-tively) were taken di-rectly from the Slipids home
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 950--965
+Underfull \hbox (badness 10000) in paragraph at lines 971--986
 \OT1/ptm/m/n/10 page $\OT1/pcr/m/n/10 http : / / people . su . se / \[]jjm / St
 ockholm \
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 950--965
+Underfull \hbox (badness 10000) in paragraph at lines 971--986
 \OT1/pcr/m/n/10 _Lipids / Downloads . html$\OT1/ptm/m/n/10 . The Slipids force
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 950--965
+Underfull \hbox (badness 1377) in paragraph at lines 971--986
 \OT1/ptm/m/n/10 elec-tro-static in-ter-ac-tions were cal-cu-lated us-ing the PM
 E
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 950--965
+Underfull \hbox (badness 1242) in paragraph at lines 971--986
 \OT1/ptm/m/n/10 wa-ter molecules were con-strained us-ing SET-TLE [[]].
  []
 
-
-Underfull \hbox (badness 3209) in paragraph at lines 1007--1010
+[17]
+Underfull \hbox (badness 3209) in paragraph at lines 1028--1031
 []\OT1/ptm/m/n/10 The gel phase DPPC bi-layer struc-ture de-liv-ered by
  []
 
-[17]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1027.
+               Default added (so using `tbp') on input line 1048.
 
-<dihsCHOLcharmm.pdf, id=207, 1228.59pt x 1011.78pt>
+<dihsCHOLcharmm.pdf, id=206, 1228.59pt x 1011.78pt>
 File: dihsCHOLcharmm.pdf Graphic file (type pdf)
  <use dihsCHOLcharmm.pdf>
-Package pdftex.def Info: dihsCHOLcharmm.pdf used on input line 1029.
+Package pdftex.def Info: dihsCHOLcharmm.pdf used on input line 1050.
 (pdftex.def)             Requested size: 489.38731pt x 403.02203pt.
 
-(./HGmodel_draft3.lod
+(./HGmodel_draft3.lod [18]
 Underfull \hbox (badness 10000) in paragraph at lines 5--5
 [][] \OT1/ptm/m/n/10 17. Markus Mi-et-ti-nen sug-gested that we should con-side
 r mak-ing one more fig-ure 
@@ -957,42 +997,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--5
 be dis-cussed in Sec-tion IIIA[].  
  []
 
-[18])
+[19 <./dihsCHOLcharmm.pdf>])
 \tf@lod=\write4
 \openout4 = `HGmodel_draft3.lod'.
 
-
-
-Package natbib Warning: There were undefined citations.
-
-[19 <./dihsCHOLcharmm.pdf>] (./HGmodel_draft3.aux) ) 
+ [20] (./HGmodel_draft3.aux) ) 
 Here is how much of TeX's memory you used:
- 6691 strings out of 493493
- 98506 string characters out of 3143797
- 200871 words of memory out of 3000000
- 9873 multiletter control sequences out of 15000+200000
- 30714 words of font info for 62 fonts, out of 3000000 for 9000
+ 6707 strings out of 493493
+ 98802 string characters out of 3143797
+ 198976 words of memory out of 3000000
+ 9888 multiletter control sequences out of 15000+200000
+ 31229 words of font info for 64 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,15n,39p,1072b,766s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texlive/texmf-d
-ist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on HGmodel_draft3.pdf (19 pages, 450397 bytes).
+ 38i,15n,39p,1072b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
+se/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
+r/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on HGmodel_draft3.pdf (20 pages, 453012 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
+ 303 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

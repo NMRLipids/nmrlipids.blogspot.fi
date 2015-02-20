@@ -5,87 +5,86 @@ The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: HGmodel_draft3Notes.bib
 Database file #2: refs.bib
-You're missing a field part---line 259 of file refs.bib
+You're missing a field part---line 317 of file refs.bib
  :    eid = 
  :          ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 1059 of file refs.bib
+You're missing a field part---line 1115 of file refs.bib
  :    eid = 
  :          ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 1275 of file refs.bib
+You're missing a field part---line 1331 of file refs.bib
  :    eid = 
  :          ,
 I'm skipping whatever remains of this entry
-You're missing a field part---line 1299 of file refs.bib
+You're missing a field part---line 1355 of file refs.bib
  :    eid = 
  :          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1381 of file refs.bib
+I was expecting a `,' or a `}'---line 1437 of file refs.bib
  : 
  : year={1975},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1633 of file refs.bib
+I was expecting a `,' or a `}'---line 1689 of file refs.bib
  : 
  : year={2014},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1917 of file refs.bib
+Repeated entry---line 1973 of file refs.bib
  : @article{lim12
  :               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2411 of file refs.bib
+Repeated entry---line 2467 of file refs.bib
  : @article {hogberg08
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 12879 of file refs.bib
+Repeated entry---line 12935 of file refs.bib
  : @article{marsh06
  :                 ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "GAFFlipidFILESdppc"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--can't use both author and editor fields in berendsen81
-You've used 158 entries,
+You've used 161 entries,
             3411 wiz_defined-function locations,
-            1963 strings with 37513 characters,
-and the built_in function-call counts, 103235 in all, are:
-= -- 5929
-> -- 3370
-< -- 508
-+ -- 2717
-- -- 824
-* -- 13870
-:= -- 11351
-add.period$ -- 158
-call.type$ -- 158
-change.case$ -- 644
-chr.to.int$ -- 136
-cite$ -- 161
-duplicate$ -- 9484
-empty$ -- 8797
-format.name$ -- 2134
-if$ -- 19456
+            1976 strings with 38031 characters,
+and the built_in function-call counts, 104685 in all, are:
+= -- 6021
+> -- 3411
+< -- 516
++ -- 2745
+- -- 834
+* -- 14058
+:= -- 11528
+add.period$ -- 161
+call.type$ -- 161
+change.case$ -- 659
+chr.to.int$ -- 139
+cite$ -- 164
+duplicate$ -- 9621
+empty$ -- 8920
+format.name$ -- 2165
+if$ -- 19721
 int.to.chr$ -- 23
-int.to.str$ -- 159
-missing$ -- 1420
-newline$ -- 489
-num.names$ -- 475
-pop$ -- 2705
+int.to.str$ -- 162
+missing$ -- 1437
+newline$ -- 498
+num.names$ -- 484
+pop$ -- 2743
 preamble$ -- 1
-purify$ -- 632
+purify$ -- 644
 quote$ -- 0
-skip$ -- 3735
+skip$ -- 3785
 stack$ -- 0
-substring$ -- 3244
-swap$ -- 7284
-text.length$ -- 421
+substring$ -- 3277
+swap$ -- 7377
+text.length$ -- 426
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 940
+type$ -- 958
 warning$ -- 1
-while$ -- 436
+while$ -- 442
 width$ -- 0
-write$ -- 1573
+write$ -- 1603
 (There were 9 error messages)

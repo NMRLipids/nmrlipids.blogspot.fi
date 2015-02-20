@@ -120,11 +120,17 @@ would resolve the structure. Despite of the inaccuracy in the fully hydrated
 structures, the response to dehydration, i.e. the tilting of the P--N vector more parallel to membrane normal, 
 is qualitatively correct in all models. The CHARMM36 and MacRog models describe the interactions
 between lipids and cholesterol better than the Berger/H\"oltje model.
-This work has been, and continues to be, progressed and discussed through the blog: \url{nmrlipids.blogspot.fi}. 
-Everyone is invited to join the discussion and make contributions through the blog. 
-The manuscript will be eventually submitted to an appropriate scientific journal. 
-Everyone who has contributed to the work through the blog will be offered 
-coauthorship. For more details see: \url{nmrlipids.blogspot.fi}. 
+{\bf This work has been done as an open collaboration by using the \url{nmrlipids.blogspot.fi} as an
+communication platform. All the scientific contributions have been done through the blog and
+are publicly available. In addition, almost all simulation trajectories and files are made available
+in the Zenodo community \url{https://zenodo.org/collection/user-nmrlipids} which has became the most extensive
+publicly available collection of molecular dynamics simulation trajectories of lipid bilayers.
+}
+%This work has been, and continues to be, progressed and discussed through the blog: \url{nmrlipids.blogspot.fi}. 
+%Everyone is invited to join the discussion and make contributions through the blog. 
+%The manuscript will be eventually submitted to an appropriate scientific journal. 
+%Everyone who has contributed to the work through the blog will be offered 
+%coauthorship. For more details see: \url{nmrlipids.blogspot.fi}. 
 
 
 \end{abstract}
@@ -220,14 +226,19 @@ Choline headgroup order parameters as function of ion concentration, and their r
 
 This work has been done as an open collaboration by using \url{nmrlipids.blogspot.fi} as a communication platform.
 The approach is inspired by the Polymath project~\cite{gowers09}, however there are some essential differences. 
-The manuscript pointing out problems in the glycerol backbone and
-headgroup structure in the most used molecular dynamics simulation model for lipid bilayers (Berger based models) was used as a starting point~\cite{ollila13}.
-After publishing the initial manuscript, the blog was opened for further contributions and discussion from anyone interested. 
-All the contributions were done publicly through the blog and the blog contributors were offered coauthorship. The final author list
-is based on the self-assesment of the authors' scientific contribution to the project.
+{\bf The present approach was started by publishing a manuscript~\cite{ollila13} discussing the glycerol backbone and choline structures 
+in a Berger based model (the most used molecular dynamics simulation model for lipid bilayers).
+After publishing the initial manuscript, the open invitation for further contributions and discussion through the blog was presented.
+All the scientific contributions are done publicly through the blog and all contributors were offered coauthorship. 
+The acception of authorship is based on the self-assesment of the authors' scientific contribution to the project.
+The contributions from each author are summarized in ?? (the location depends on the journal probably).
 
-Large portion of the used simulation files and scripts are shared through the GitHub organization \url{https://github.com/NMRlipids}
-and the Zenodo community \url{https://zenodo.org/collection/user-nmrlipids}.
+Almost all simulation data, including running parameters for reprocution and trajectories for further analysis, are collected
+to the nmrlipids community in Zenodo file repository \url{https://zenodo.org/collection/user-nmrlipids}.
+Thus, besides the main topic of this manuscript we present the most extensive available collection of simulations trajectories
+for lipid bilayers, which opens up numerous possiblities for different analyses with much less effort than previously required.
+Furher information, e.g. scripts, figures and manuscript text files, are available in the GitHub organization \url{https://github.com/NMRlipids}.
+}
 
 \subsection{Order parameters from experiments}\label{expORDp}
 \todo{DONE
@@ -324,7 +335,7 @@ Berger-DPPC-98~\cite{marrink98}          &   DPPC & 72 & 2864  & 323  & 140 & 10
 Berger-DMPC-04~\cite{gurtovenko04}          &   DMPC & 128 & 5097  & 323  & 130 & 100  & \cite{dmpcFILES} & \cite{miettinen09} \\
 CHARMM36~\cite{klauda10}       & POPC   & 72  &  2242 & 303 & 30 & 20  & \cite{charmm36filesSHORT}$^*$ & SI \\
 CHARMM36~\cite{klauda10}      & POPC   & 128 &  5120    & 303 & 150 & 100  & \cite{charmm36files}$^*$ \todoi{DONE}   & SI \\
-CHARMM36~\cite{klauda10}       & DPPC   & 72  &  2189 & 323 & 30 & 25  & ?\todoi{Samuli, put to Zenodo}  & SI \\
+CHARMM36~\cite{klauda10}       & DPPC   & 72  &  2189 & 323 & 30 & 25  & \cite{charmmFILESdppc}$^*$\todoi{DONE}  & SI \\
 %CHARMM36\cite{klauda10}\todoi{Not included in the Fig. 2. Should we remove or include?}        & DOPC   & 128 &  5120    & 303 & 150 & 100  & ?\todoi{Permanent link in progress by Hubert Santuz}  & SI \\
 \todoi{DONE} \todoi{Permanent link for DOPC CHARMM36 simulation by Hubert Santuz is not required now. However, it would be probably useful in the future.}
 MacRog~\cite{maciejewski14}  & POPC & 288  & 12600 & 310 & 100 & 80  & \cite{macrogFILES}$^*$ & SI  \\
@@ -335,7 +346,7 @@ Poger \cite{poger10}             & DPPC  & 128 & 5841 & 323 & 2$\times$100 & 2$\
 Slipid \cite{jambeck12}          & DPPC & 128 & 3840 & 323 & 150 & 100 & \cite{slipidsFILES}$^*$ & SI \\
 Slipid \cite{jambeck12b}          & POPC & 128 & 5120 & 303 & 200 & 150 & \cite{slipidsFILESpopc}$^*$ & SI \\
 Kukol \cite{kukol09}          & POPC   & 512 & 20564 & 298 & 50 & 30  & \cite{kukolFILES}$^*$ & SI \\
-Chiu \cite{chiu09} \todoi{Samuli, put to Zenodo}     & POPC  & 128 & 3552  & 298 & 56 & 50  & ? & SI \\
+Chiu \cite{chiu09} \todoi{DONE}     & POPC  & 128 & 3552  & 298 & 56 & 50  & \cite{chiuFILES}$^*$ & SI \\
 H\"ogberg08 \cite{rabinovich14}\todoi{Alexander Luybartsev, let us know if you share the files.}  & POPC   &  128 & 3840  & 303 & 100 & 80  & ? & \cite{rabinovich14}  \\
 H\"ogberg08 \cite{hogberg08}\todoi{Alexander Luybartsev, let us know if you share the files.}  & DMPC   &  98 & 3840  & 303 & 75 & 50 & ? & \cite{hogberg08} \\
 Ulmschneiders \cite{Ulmschneider09}    & POPC  & 128 & 3328 & 310 & 100 & 50 & \cite{ulmschneiderFILES}$^*$ & SI \\
@@ -752,15 +763,25 @@ that the correct qualitative response does not necessarily indicate correct ener
 - The response of glycerol backbone and choline headgroup to the cholesterol content is described more
 realistically in CHARMM36 and MacRog models than in the Berger based model.
 
-In general, we conclude that the atomistic resolution classical molecular dynamics simulations 
-is extremely convenient tool to give structural interpretation for the high resolution NMR data~\cite{ferreira14}. 
-However, in the case of phoshatidylcholine glycerol backbone and choline headgroup further model development is still required.
+- {\bf Besides the main conclusions, we have created the most extensive
+publicly available collection of molecular dynamics simulation trajectories of lipid bilayers
+into the Zenodo community \url{https://zenodo.org/collection/user-nmrlipids}. 
+This collection opens up numerous possiblities for different analyses with
+much less effort than previously required.
 
-This work has been, and continues to be, progressed and discussed through a blog at \url{nmrlipids.blogspot.fi}. 
-Everyone is invited to join the discussion and make contributions through the blog. 
-The manuscript will be eventually submitted to an appropriate scientific journal. 
-Everyone who has contributed to the work through the blog will be offered 
-coauthorship. For more details, see \url{nmrlipids.blogspot.fi}. 
+In general, we conclude that to fully utilize the potential of atomistic resolution classical molecular dynamics simulations
+in the structural interpretation of the high resolution NMR data~\cite{ferreira14} for lipid bialyers one has to  
+improve the phoshatidylcholine glycerol backbone and choline headgroup parameters.
+
+This work has been done as an open collaboration by using the \url{nmrlipids.blogspot.fi} as an communication
+platform. All the scientific contributions have been done through the blog and are publicly
+available. }
+
+%This work has been, and continues to be, progressed and discussed through a blog at \url{nmrlipids.blogspot.fi}. 
+%Everyone is invited to join the discussion and make contributions through the blog. 
+%The manuscript will be eventually submitted to an appropriate scientific journal. 
+%Everyone who has contributed to the work through the blog will be offered 
+%coauthorship. For more details, see \url{nmrlipids.blogspot.fi}. 
 
 
 
@@ -1032,7 +1053,7 @@ Simulations were carried out by using the LAMMPS package~\cite{plimpton95}. %( h
 \end{figure*}
 
 \subsection{General issues to think of about the manuscript}
-\todo{Should we emphasize more the excellent collection of simulation trajectories collected to Zenodo?} \\
+\todo{DONE}\\
 \todo{Maybe we should mention that CHARMM is significanlty more computationally expensive than other all-atom models.
 This seems evident for a person who has ran CHARMM and other all-atom models with the same computer. However, there
 may be some people who have never used any other model than CHARMM. In this case it may be difficult to realize.

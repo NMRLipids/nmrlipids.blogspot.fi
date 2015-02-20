@@ -1,4 +1,4 @@
-\begin{thebibliography}{158}
+\begin{thebibliography}{161}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -484,7 +484,7 @@
 \bibitem[{\citenamefont{{Samuli Ollila}}(2013)}]{ollila13}
 \bibinfo{author}{\bibfnamefont{O.~H.} \bibnamefont{{Samuli Ollila}}},
   \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2013}),
-  \eprint{1309.2131}.
+  \eprint{1309.2131v1}.
 
 \bibitem[{\citenamefont{Seelig}(1977)}]{seelig77c}
 \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
@@ -623,6 +623,13 @@
   bilayer (CHARMM36, Gromacs 4.5)}}} (\bibinfo{year}{2015}{\natexlab{a}}),
   \urlprefix\url{http://dx.doi.org/10.5281/zenodo.14066}.
 
+\bibitem[{\citenamefont{Samuli and Markus}(2015)}]{charmmFILESdppc}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Samuli}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Markus}},
+  \emph{\bibinfo{title}{{MD simulation trajectory and related files for DPPC
+  bilayer (CHARMM36, Gromacs 4.5)}}} (\bibinfo{year}{2015}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.15549}.
+
 \bibitem[{\citenamefont{Javanainen}(2014{\natexlab{a}})}]{macrogFILES}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}}
   (\bibinfo{year}{2014}{\natexlab{a}}),
@@ -633,6 +640,13 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Retegan}}
   (\bibinfo{year}{2015}),
   \urlprefix\url{{http://dx.doi.org/10.5281/zenodo.13791}}.
+
+\bibitem[{\citenamefont{Samuli and Retegan}(2015)}]{GAFFlipidFILESdppc}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Samuli}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Retegan}},
+  \emph{\bibinfo{title}{{MD simulation trajectory and related files for DPPC
+  bilayer (GAFFlipid, Gromacs 4.5)}}} (\bibinfo{year}{2015}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.15550}.
 
 \bibitem[{\citenamefont{Dickson et~al.}(2014)\citenamefont{Dickson, Madej,
   Skjevik, Betz, Teigen, Gould, and Walker}}]{dickson14}
@@ -720,6 +734,12 @@
   \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Jakobsson}},
   \bibinfo{journal}{The Journal of Physical Chemistry B}
   \textbf{\bibinfo{volume}{113}}, \bibinfo{pages}{2748} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Samuli}(2015)}]{chiuFILES}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Samuli}},
+  \emph{\bibinfo{title}{{MD simulation trajectory and related files for POPC
+  bilayer (Chiu et al. Gromos version, Gromacs 4.5)}}} (\bibinfo{year}{2015}),
+  \urlprefix\url{http://dx.doi.org/10.5281/zenodo.15548}.
 
 \bibitem[{\citenamefont{Rabinovich and Lyubartsev}(2014)}]{rabinovich14}
 \bibinfo{author}{\bibfnamefont{A.~L.} \bibnamefont{Rabinovich}}

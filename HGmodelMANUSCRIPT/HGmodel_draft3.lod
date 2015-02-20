@@ -6,23 +6,23 @@
 \contentsline {todos}{{18. }I think that this figure is now very good. There is also the interactive version by Hubert Santuz now in https://plot.ly/\nobreakspace {}HubertSantuz/72/lipid-force-field-comparison/ we should figure out which is the most practical way to put that behind permalink once it finalized (Zenodo, figshare or something else?) and then put a citation in the paper.}{4}{}
 \contentsline {todos}{{5. }DONE}{5}{}
 \contentsline {todos}{{6. }DONE}{5}{}
-\contentsline {todos}{{7. }Samuli, put to Zenodo}{5}{}
+\contentsline {todos}{{7. }DONE}{5}{}
 \contentsline {todos}{{8. }DONE}{5}{}
 \contentsline {todos}{{9. }Permanent link for DOPC CHARMM36 simulation by Hubert Santuz is not required now. However, it would be probably useful in the future.}{5}{}
 \contentsline {todos}{{10. }DONE}{5}{}
-\contentsline {todos}{{11. }Samuli, put to Zenodo}{5}{}
+\contentsline {todos}{{11. }DONE}{5}{}
 \contentsline {todos}{{12. }Alexander Luybartsev, let us know if you share the files.}{5}{}
 \contentsline {todos}{{13. }Alexander Luybartsev, let us know if you share the files.}{5}{}
 \contentsline {todos}{{19. }Markus Miettinen suggested that we should consider ``spreading'' the values similarly to the figure\nobreakspace {}2{}{}{}\hbox {}}{6}{}
-\contentsline {todos}{{20. }DONE}{6}{}
 \contentsline {todos}{{14. }DONE}{7}{}
 \contentsline {todos}{{15. }DONE}{7}{}
 \contentsline {todos}{{16. }DONE}{7}{}
+\contentsline {todos}{{20. }DONE}{7}{}
 \contentsline {todos}{{21. }This is temporarily linked to the blog. Currently I think that the posts (with comments included) to which we want to cite are put into the Figshare in pdf format as they are in when the publication is submitted. Figshare allows commenting to continue the discussion.}{9}{}
-\contentsline {todos}{{22. }Figure has been modified to elucidate changes. The text should be updated accordingly. The same applies to the cholesterol figure.}{9}{}
-\contentsline {todos}{{23. }It has been suggested that we should use direct quotations from original papers here for clarity.}{10}{}
+\contentsline {todos}{{23. }It has been suggested that we should use direct quotations from original papers here for clarity.}{9}{}
+\contentsline {todos}{{22. }Figure has been modified to elucidate changes. The text should be updated accordingly. The same applies to the cholesterol figure.}{10}{}
 \contentsline {todos}{{24. }Markus Miettinen made the files.}{15}{}
-\contentsline {todos}{{25. }You have recent paper where you use POPC/chol simulations with this model: Kulig et al. BBA 1848 (2015) 422-432 http://dx.doi.org/10.1016/j.bbamem.2014.10.032. would this be a correct refence here?}{15}{}
+\contentsline {todos}{{25. }You have recent paper where you use POPC/chol simulations with this model: Kulig et al. BBA 1848 (2015) 422-432 http://dx.doi.org/10.1016/j.bbamem.2014.10.032. would this be a correct refence here?}{16}{}
 \contentsline {todos}{{26. }DONE}{17}{}
-\contentsline {todos}{{27. }Should we emphasize more the excellent collection of simulation trajectories collected to Zenodo?}{18}{}
+\contentsline {todos}{{27. }DONE}{18}{}
 \contentsline {todos}{{28. }Maybe we should mention that CHARMM is significanlty more computationally expensive than other all-atom models. This seems evident for a person who has ran CHARMM and other all-atom models with the same computer. However, there may be some people who have never used any other model than CHARMM. In this case it may be difficult to realize. Would anyone have a good bencmark about this? I have assumed that the reason for the slowness are the extra Lennart-Jones interactionsi in water, however, I have never looked into it. Would someone have some hard facts on this?}{18}{}
