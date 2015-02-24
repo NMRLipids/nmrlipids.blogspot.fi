@@ -1,0 +1,14 @@
+# From Akutsu and Seelig Biochemistry 20, 7366-7373 (1981)
+# 
+#
+#
+#
+# Absolute values of quadrupolar splittings (kHz) values directly from the Table I in the publication, T=323K 
+# g3 value from text (average over two values with small forking)
+#
+# [CaCl](mM)  beta   alpha   
+0           4.81    5.95     
+10          -       4.85     
+100         -       3.33     
+350         7.07    1.62     
+1000        7.49    -0.33    

@@ -29,13 +29,13 @@
 \contentsline {todos}{{32. }The discussion about simulation results with CaCl$_2$ to be written once we have all the results.}{3}{}
 \contentsline {todos}{{34. }The discussion should be finished when we have CHARMM results with CaCl$_2$.}{4}{}
 \contentsline {todos}{{35. }The $^1$H NMR experiments suggest that the N-$\beta $-$\alpha $-O dihedral is only in gaughe conformation in the absense of ions, but in the presense of multivalent ions there would be also anti conformations present [Hauser et al. BBA {\bf 508}, 450 (1978), Hauser et al. Chem. Phys. Lipids {\bf 29}, 103 (1981)]. I think that we should check if this happens in simulations.}{4}{}
-\contentsline {todos}{{29. }I have already Orange simulations running with 1M and 140mM NaCl concentrations. I think I should still run CHARMM36 with 1M and maybe with close to 150mM. Some of the simulations had accidentally over 1M concentration and those are not useful for this plot.}{4}{}
-\contentsline {todos}{{30. }I think that we have to run CHARMM36 with CaCl$_2$. If anyone happen to have the data and is willing to share, let us know. If not, then I will do it.}{4}{}
-\contentsline {todos}{{31. } I think that it would be very interesting to test the modified CHARMM ions: Venable et al. dx.doi.org/10.1021/jp401512z, J. Phys. Chem. B 2013, 117, 10183−10192. According to the paper, these parameters improve the ion binding to the charged lipid bilayers. Even though I think that testing this would be highly relevant, I do not have time to do it now.}{4}{}
 \contentsline {todos}{{36. }In the Orange simulation only lipid model is changed, respect to Berger, and Jukka tested the effect of 0.7 charge scaling for Na ion (suggested by Leontyev et al.\nobreakspace {}\cite {leontyev11} to compensate to the lack of electronic polarizability in the model). I think we should discuss these things in supplementary material. Even though we cannot be fully conclusive, there is some essential information also in these results.}{4}{}
+\contentsline {todos}{{29. }I have already Orange simulations running with 1M and 140mM NaCl concentrations. I think I should still run CHARMM36 with 1M and maybe with close to 150mM. Some of the simulations had accidentally over 1M concentration and those are not useful for this plot.}{5}{}
+\contentsline {todos}{{30. }I think that we have to run CHARMM36 with CaCl$_2$. If anyone happen to have the data and is willing to share, let us know. If not, then I will do it.}{5}{}
+\contentsline {todos}{{31. } I think that it would be very interesting to test the modified CHARMM ions: Venable et al. dx.doi.org/10.1021/jp401512z, J. Phys. Chem. B 2013, 117, 10183−10192. According to the paper, these parameters improve the ion binding to the charged lipid bilayers. Even though I think that testing this would be highly relevant, I do not have time to do it now.}{5}{}
 \contentsline {todos}{{37. }Final conclusions about the structural response to be written once we have all the results}{5}{}
-\contentsline {todos}{{38. }Samuli, finalize and check the methods.}{6}{}
-\contentsline {todos}{{39. }Samuli, finalize and check the methods.}{6}{}
+\contentsline {todos}{{38. }Samuli, finalize and check the methods.}{7}{}
+\contentsline {todos}{{39. }Samuli, finalize and check the methods.}{7}{}
 \contentsline {todos}{{40. }DONE}{7}{}
 \contentsline {todos}{{41. }Jukka Maatta and Luca Monticelli, please deliver as much details as you can.}{7}{}
 \contentsline {todos}{{42. }DONE}{7}{}

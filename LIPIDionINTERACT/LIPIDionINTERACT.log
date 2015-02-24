@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.18)  18 FEB 2015 17:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.18)  24 FEB 2015 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,12 +460,12 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 215.
 
 Package epstopdf Info: Source file: <OrderParameterIONSnaclSIGN.eps>
-(epstopdf)                    date: 2015-02-18 13:22:11
-(epstopdf)                    size: 33037 bytes
+(epstopdf)                    date: 2015-02-24 09:51:55
+(epstopdf)                    size: 34553 bytes
 (epstopdf)             Output file: <OrderParameterIONSnaclSIGN-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2015-02-18 13:22:59
-(epstopdf)                    size: 11592 bytes
+(epstopdf)                    date: 2015-02-24 12:58:45
+(epstopdf)                    size: 11625 bytes
 (epstopdf)             Command: <repstopdf --outfile=OrderParameterIONSnaclSIGN
 -eps-converted-to.pdf OrderParameterIONSnaclSIGN.eps>
 (epstopdf)             \includegraphics on input line 217.
@@ -479,45 +479,35 @@ n input line 217.
 (pdftex.def)             Requested size: 227.62204pt x 390.2147pt.
 
 
-Package natbib Warning: Citation `??' on page 2 undefined on input line 236.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 227.
+
+Package epstopdf Info: Source file: <OrderParameterIONSCaCl.eps>
+(epstopdf)                    date: 2015-02-24 13:06:23
+(epstopdf)                    size: 30161 bytes
+(epstopdf)             Output file: <OrderParameterIONSCaCl-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2015-02-24 13:10:39
+(epstopdf)                    size: 11551 bytes
+(epstopdf)             Command: <repstopdf --outfile=OrderParameterIONSCaCl-eps
+-converted-to.pdf OrderParameterIONSCaCl.eps>
+(epstopdf)             \includegraphics on input line 229.
+Package epstopdf Info: Output file is already uptodate.
+<OrderParameterIONSCaCl-eps-converted-to.pdf, id=14, 505.89pt x 867.24pt>
+File: OrderParameterIONSCaCl-eps-converted-to.pdf Graphic file (type pdf)
+
+<use OrderParameterIONSCaCl-eps-converted-to.pdf>
+Package pdftex.def Info: OrderParameterIONSCaCl-eps-converted-to.pdf used on in
+put line 229.
+(pdftex.def)             Requested size: 227.62204pt x 390.2147pt.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 250.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 237.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 240.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 241.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 242.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 243.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 246.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 247.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 248.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 249.
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 250.
 
 Package natbib Warning: Citation `??' on page 2 undefined on input line 251.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 252.
-
-
-Package natbib Warning: Citation `??' on page 2 undefined on input line 253.
 
 
 Package natbib Warning: Citation `??' on page 2 undefined on input line 254.
@@ -526,37 +516,70 @@ Package natbib Warning: Citation `??' on page 2 undefined on input line 254.
 Package natbib Warning: Citation `??' on page 2 undefined on input line 255.
 
 
-Package natbib Warning: Citation `??' on page 2 undefined on input line 258.
+Package natbib Warning: Citation `??' on page 2 undefined on input line 256.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 257.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 260.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 261.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 262.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 263.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 265.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 266.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 267.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 268.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 269.
+
+
+Package natbib Warning: Citation `??' on page 2 undefined on input line 272.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 302.
+               Default added (so using `tbp') on input line 316.
 
 Package epstopdf Info: Source file: <OrderParameterIONSchanges.eps>
-(epstopdf)                    date: 2015-02-18 13:08:35
-(epstopdf)                    size: 33796 bytes
+(epstopdf)                    date: 2015-02-24 12:14:45
+(epstopdf)                    size: 35161 bytes
 (epstopdf)             Output file: <OrderParameterIONSchanges-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2015-02-18 13:22:59
-(epstopdf)                    size: 11916 bytes
+(epstopdf)                    date: 2015-02-24 12:58:46
+(epstopdf)                    size: 13065 bytes
 (epstopdf)             Command: <repstopdf --outfile=OrderParameterIONSchanges-
 eps-converted-to.pdf OrderParameterIONSchanges.eps>
-(epstopdf)             \includegraphics on input line 304.
+(epstopdf)             \includegraphics on input line 318.
 Package epstopdf Info: Output file is already uptodate.
 
-<OrderParameterIONSchanges-eps-converted-to.pdf, id=14, 707.64375pt x 614.295pt
+<OrderParameterIONSchanges-eps-converted-to.pdf, id=15, 707.64375pt x 614.295pt
 >
 File: OrderParameterIONSchanges-eps-converted-to.pdf Graphic file (type pdf)
  <use OrderParameterIONSchanges-eps-converted-to.pdf>
 Package pdftex.def Info: OrderParameterIONSchanges-eps-converted-to.pdf used on
- input line 304.
+ input line 318.
 (pdftex.def)             Requested size: 227.62204pt x 197.59073pt.
 
 
-Package natbib Warning: Citation `??' on page 2 undefined on input line 312.
+Package natbib Warning: Citation `??' on page 2 undefined on input line 326.
 
 
-Package natbib Warning: Citation `??' on page 2 undefined on input line 312.
+Package natbib Warning: Citation `??' on page 2 undefined on input line 326.
 
 Missing character: There is no â in font ptmb7t!
 Missing character: There is no ˆ in font ptmb7t!
@@ -564,7 +587,7 @@ Missing character: There is no ’ in font ptmb7t!
 [2 <./POPCstructure-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 354.
+               Default added (so using `tbp') on input line 368.
 
 Package epstopdf Info: Source file: <IONdensities.eps>
 (epstopdf)                    date: 2015-02-18 13:52:15
@@ -574,32 +597,32 @@ Package epstopdf Info: Source file: <IONdensities.eps>
 (epstopdf)                    size: 12037 bytes
 (epstopdf)             Command: <repstopdf --outfile=IONdensities-eps-converted
 -to.pdf IONdensities.eps>
-(epstopdf)             \includegraphics on input line 356.
+(epstopdf)             \includegraphics on input line 370.
 Package epstopdf Info: Output file is already uptodate.
-<IONdensities-eps-converted-to.pdf, id=23, 505.89pt x 867.24pt>
+<IONdensities-eps-converted-to.pdf, id=24, 505.89pt x 867.24pt>
 File: IONdensities-eps-converted-to.pdf Graphic file (type pdf)
 
 <use IONdensities-eps-converted-to.pdf>
 Package pdftex.def Info: IONdensities-eps-converted-to.pdf used on input line 3
-56.
+70.
 (pdftex.def)             Requested size: 227.62204pt x 390.2147pt.
  [3]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 402.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 416.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 402.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 416.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-[4 <./OrderParameterIONSnaclSIGN-eps-converted-to.pdf> <./OrderParameterIONScha
-nges-eps-converted-to.pdf>]
+[4 <./OrderParameterIONSnaclSIGN-eps-converted-to.pdf> <./OrderParameterIONSCaC
+l-eps-converted-to.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 433.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 447.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 433.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 447.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -609,8 +632,17 @@ Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¤ in font ptmr7t!
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 141.
+ [5 <./OrderParameterIONSchanges-eps-converted-to.pdf>]
 
+LaTeX Warning: A float is stuck (cannot be placed) on input line 123.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 123.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 141.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -654,16 +686,6 @@ Underfull \hbox (badness 1642) in paragraph at lines 332--339
  []\OT1/ptm/m/n/9 A. Ma-ciejew-ski, M. Pasenkiewicz-Gierula, O. Cra-mar-iuc,
  []
 
-[5]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 351.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 351.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
 
 Underfull \hbox (badness 7504) in paragraph at lines 359--362
  []\OT1/ptm/m/n/9 J. M[]a[]att[]a (2014), URL $\OT1/pcr/m/n/9 {http : / / dx . 
@@ -687,34 +709,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--383
 
 ) [6]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 551.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 502.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 551.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 502.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¨ in font ptmr7t!
-(./LIPIDionINTERACT.lod
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¤ in font ptmr7t!
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¤ in font ptmr7t!
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¤ in font ptmr7t!
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¤ in font ptmr7t!
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¤ in font ptmr7t!
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¤ in font ptmr7t!
- [7]
+(./LIPIDionINTERACT.lod [7]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 26.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1.
 
 [8 <./IONdensities-eps-converted-to.pdf>]
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¤ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¤ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¤ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¤ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¤ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¤ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¤ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
@@ -725,7 +746,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no ˆ in font ptmr7t!
 Missing character: There is no ’ in font ptmr7t!
 
-Underfull \hbox (badness 2653) in paragraph at lines 34--34
+Underfull \hbox (badness 2653) in paragraph at lines 35--35
 [][] \OT1/ptm/m/n/10 31.  I think that it would be very in-ter-est-ing to test 
 the mod-i-fied CHARMM ions: Ven-able et al. 
  []
@@ -736,7 +757,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 can be seen.  
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
 []\OT1/ptm/m/n/10 - The lipid den-sity from MacRog sim-u-la-tion is miss-ing. M
 aybe Matti Ja-vanainen could pro- 
@@ -786,32 +807,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 
 Package natbib Warning: There were undefined citations.
 
-[9] (./LIPIDionINTERACT.aux) ) 
+[10] (./LIPIDionINTERACT.aux) ) 
 Here is how much of TeX's memory you used:
- 6003 strings out of 493493
- 86601 string characters out of 3143797
- 184520 words of memory out of 3000000
- 9210 multiletter control sequences out of 15000+200000
+ 6009 strings out of 493493
+ 86828 string characters out of 3143797
+ 186757 words of memory out of 3000000
+ 9215 multiletter control sequences out of 15000+200000
  26813 words of font info for 54 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,15n,43p,1228b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
-se/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier
-/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on LIPIDionINTERACT.pdf (9 pages, 209168 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/b
+ase/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
+r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on LIPIDionINTERACT.pdf (10 pages, 218454 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 130 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
