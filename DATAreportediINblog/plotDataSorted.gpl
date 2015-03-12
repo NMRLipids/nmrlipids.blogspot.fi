@@ -9,7 +9,7 @@ set tmargin at screen 0.995
 set ylabel "S_{CH}" font "Arial,20" offset 2,-2.3
 
 set bmargin at screen 0.23 #0.31
-set key l at screen 0.02,0.21 Left reverse samplen 2 width 2 maxrows 15 #12
+set key l at screen -0.01,0.21 Left reverse samplen 2 width -2 maxrows 15 #12
 #set key below horizontal left Left reverse samplen 1 maxcols 2 maxrows 6
 
 set lmargin at screen 0.122 #0.157
@@ -92,9 +92,9 @@ plot [0.5:5.5][0.171045:-0.3211] \
   "./sortedForPlot/DMPC/BERGER-323K_blogged-24-10-13.dat" u ($1):($2) w p lt 21 pt 9 ps 1.1*r \
   t "  &{M}@{\"}&{DPC}323K  Berger", \
   "./sortedForPlot/DMPC/HONILY-303K_blogged-15-10-13.dat" u ($1):($2) w p lt 28 pt 8 ps 1.1*r \
-  t "  &{M}@{\"}&{DPC}303K  HoNiLy", \
+  t "  &{M}@{\"}&{DPC}303K  Högberg08", \
   "./sortedForPlot/DLPC/CHARMM36UA-323K_blogged-24-10-14.dat" u ($1):($2)  w p lt 231 pt 10 ps 1.1*r  \
-  t "@{DLPC}{&{DMPC}}  323K  C36UA", \
+  t "@{DLPC}{&{DMPC}}  323K  CHARMM36-UA", \
   "./DPPC/EXP-Gally1975.dat" u ($1):($2) w l ls 16 lc rgb "#5F5F5F" lw 6.5 \
   t "D@{PPC}{&{MPC}}  322K  ^{_{^2}}H-NMR", \
   "./DPPC/EXP-Akutsu1981.dat" u ($1):($2) w l ls 16 lw 3 \
@@ -102,13 +102,13 @@ plot [0.5:5.5][0.171045:-0.3211] \
   "./sortedForPlot/DPPC/BERGER-323K_blogged-13-01-15.dat"  u ($1):($2) w p lt 21 pt 5 ps r \
   t "  &{M}@{\"}&{DPC}323K  Berger", \
   "./sortedForPlot/DPPC/TJORNHAMMAR-323K_blogged-14-11-14.dat" u ($1):($2) w p lt 32 pt 4 ps r \
-  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  TjoEdh", \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  Tjörnhammar14", \
   "./sortedForPlot/DPPC/POGER-323K_joint.dat"   u ($1):($2):($3):($4) w ye lt 25 pt 4 ps r \
   t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  Poger", \
   "./sortedForPlot/DPPC/CHARMM36-323K_joint.dat"     u ($1):((130*$2+25*$3)/155):($2):($3) w ye lt 23 pt 5 ps r \
   t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  CHARMM36", \
   "./sortedForPlot/DPPC/SLIPIDS-323K_blogged-11-12-14.dat" u ($1):($2) w p lt 22 pt 4 ps r \
-  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  Slipids", \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  Slipid", \
   "./sortedForPlot/DPPC/GAFF-323K_joint.dat"        u ($1):($2):($3):($4) w ye lt 24 pt 5 ps r \
   t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  GAFFlipid", \
   "./POPC/EXP-Bechinger1991.dat" u ($1+dxl):($2) w l ls 4 lc rgb "#5F5F5F" lw 6.5 \
@@ -122,15 +122,15 @@ plot [0.5:5.5][0.171045:-0.3211] \
   "./sortedForPlot/POPC/KUKOL-298K_blogged-20-09-14.dat" u ($1):($2) w p lt 26 pt 6 ps r \
   t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{298K}  Kukol", \
   "./sortedForPlot/POPC/ULMSCHNEIDER-310K_blogged-26-03-14.dat" u ($1):($2) w p lt 31 pt 6 ps r \
-  t "  &{M}@{\"}&{DPC}{310K}  UlmUlm", \
+  t "  &{M}@{\"}&{DPC}{310K}  Ulmschneiders", \
   "./sortedForPlot/POPC/CHARMM36-303K_joint.dat" u ($1):($2):($3):($4) w ye lt 23 pt 7 ps r \
   t "  &{M}@{\"}&{DPC}{303K}  CHARMM36",\
   "./sortedForPlot/POPC/SLIPIDS-310K_blogged-12-01-15.dat" u ($1):($2) w p lt 22 pt 6 ps r \
-  t "  &{M}@{\"}&{DPC}{310K}  Slipids",\
+  t "  &{M}@{\"}&{DPC}{310K}  Slipid",\
   "./sortedForPlot/POPC/HONILY-303K_blogged-15-10-13.dat" u ($1):($2) w p lt 28 pt 6 ps r \
-  t "  &{M}@{\"}&{DPC}{303K}  HoNiLy", \
+  t "  &{M}@{\"}&{DPC}{303K}  Högberg08", \
   "./sortedForPlot/POPC/GAFF-303K_blogged-12-11-14.dat"        u ($1):($2) w p lt 24 pt 7 ps r \
-  t "  &{M}@{\"}&{DPC}{303K}  GAFFlipid", \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{303K}  GAFFlipid", \
   "./sortedForPlot/POPC/AMBERLIPID14-303K_blogged-26-03-14.dat" u ($1):($2) w p lt 241 pt 6 ps r \
   t "  &{M}@{\"}&{DPC}{298K}  Lipid14",\
   "./sortedForPlot/POPC/MACROG-310K_joint.dat" u ($1):($2):($6):($7) w ye lt 30 pt 7 ps r \
