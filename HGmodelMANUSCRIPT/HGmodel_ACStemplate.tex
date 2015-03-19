@@ -89,7 +89,7 @@
 {Universit\'e Paris Diderot, Sorbonne Paris Cit\'e, Paris, France}
 \author{Matti Javanainen}
 \affiliation[Tampere University of Technology]
-{Tampere University of Technology}
+{Department of Physics, Tampere University of Technology, Tampere, Finland}
 \author{Waldemar Kulig}
 \affiliation[Tampere University of Technology]
 {Department of Physics, Tampere University of Technology, Tampere, Finland}
@@ -114,7 +114,7 @@
 {Max Planck Institute for Chemical Energy Conversion, Mulheim an der Ruhr, Germany}
 \author{Tomasz Rog}
 \affiliation[Tampere University of Technology]
-{Tampere University of Technology, Tampere, Finland}
+{Department of Physics, Tampere University of Technology, Tampere, Finland}
 \author{Hubert Santuz}
 \affiliation[INSERM]
 {INSERM, U1134, DSIMB; Institut National de la Transfusion Sanguine (INTS); Laboratoire d'Excellence GR-Ex, Paris, France}
@@ -122,7 +122,7 @@
 {Universit\'e Paris Diderot, Sorbonne Paris Cit\'e, Paris, France}
 \author{Joona Tynkkynen}
 \affiliation[Tampere University of Technology]
-{Tampere University of Technology, Tampere, Finland}
+{Department of Physics, Tampere University of Technology, Tampere, Finland}
 
 
 
@@ -409,8 +409,8 @@ GAFFlipid~\cite{dickson12}       & POPC & 126  & 3948  & 303 & 137 & 32  & [\cit
 GAFFlipid~\cite{dickson12}       & DPPC & 72  & 2197  & 323 & 90 & 50  & [\citenum{GAFFlipidFILESdppc}]$^*$ & SI \\
 Lipid14 \cite{dickson14}         & POPC  & 72 & 2234 & 303 & 100 & 50  & [\citenum{lipid14files}]$^*$ & SI \\
 Poger \cite{poger10}             & DPPC  & 128 & 5841 & 323 & 2$\times$100 & 2$\times$50 & [\citenum{pogerFILESpme1,pogerFILESpme2}]$^*$ & SI \\
-Slipid \cite{jambeck12}          & DPPC & 128 & 3840 & 323 & 150 & 100 & [\citenum{slipidsFILES}]$^*$ & SI \\
-Slipid \cite{jambeck12b}          & POPC & 128 & 5120 & 303 & 200 & 150 & [\citenum{slipidsFILESpopc}]$^*$ & SI \\
+Slipids \cite{jambeck12}          & DPPC & 128 & 3840 & 323 & 150 & 100 & [\citenum{slipidsFILES}]$^*$ & SI \\
+Slipids \cite{jambeck12b}          & POPC & 128 & 5120 & 303 & 200 & 150 & [\citenum{slipidsFILESpopc}]$^*$ & SI \\
 Kukol \cite{kukol09}          & POPC   & 512 & 20564 & 298 & 50 & 30  & [\citenum{kukolFILES}]$^*$ & SI \\
 Chiu \cite{chiu09}      & POPC  & 128 & 3552  & 298 & 56 & 50  & [\citenum{chiuFILES}]$^*$ & SI \\
 H\"ogberg08 \cite{rabinovich14}  & POPC   &  128 & 3840  & 303 & 100 & 80  & - & [\citenum{rabinovich14}]  \\
@@ -605,7 +605,7 @@ None of the studied force fields fulfils these criteria completely, however CHAR
 This is not surprising since the dihedral potentials in this model are tuned to reproduce these parameters better against experiments~\cite{klauda10}.
 The next models in the list are CHARMM36-UA~\cite{henin08,lee14} and H\"ogberg08~\cite{hogberg08} which is also not surprising since
 these models are using CHARMM bonded potentials for glycerol backbone and choline. The fourth and the fifth models in the list, MacRog~\cite{maciejewski14} and
-GAFFlipid~\cite{dickson12}, have independently determined dihedral potentials. All the models based on Gromos potentials and Slipid perform less well.
+GAFFlipid~\cite{dickson12}, have independently determined dihedral potentials. All the models based on Gromos potentials and Slipids perform less well.
 In the present work we subject the CHARMM36, MacRog, GAFFlipid and Berger-POPC-07 to a more careful comparison including the sterospecific labeling  
 (Fig.~\ref{HGorderparameters2}), and atomistic level structure and responses to the dehydration and cholesterol content in the following sections.
 These models are selected for more detailed studies since they are the best representatives of different dihedral potential parametrization techniques 
@@ -919,6 +919,9 @@ MSM acknowledges financial support from the Volkswagen Foundation (86110).
 
 WK acknowledges CSC -- IT Centre for Science (Espoo, Finland) is acknowledged for excellent computational resources (project number tty3995).
 
+MJ and JT acknowledge and CSC - IT Center for Science for computational resources (project number tty3979).
+MJ also acknowledges the Finnish Doctoral Programme in Computational Sciences (FICS) for funding.
+
 \end{acknowledgement}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1165,7 +1168,7 @@ Simulations were carried out by using the LAMMPS package~\cite{plimpton95}. %( h
 {\it Alexandru Botan} \\
 {\it Fernando Favela}  \\
 {\it Patrick Fuchs} \\
-{\it Matti Javanainen} \\
+{\it Matti Javanainen} prepared and performed simulations with multiple lipid models and analyzed the results. Supervised the work of JT.\\
 {\it Waldemar Kulig} prepared the MD simulations with cholesterol for the MacRog FF \\
 {\it Antti Lamberg}  \\
 {\it Markus S. Miettinen}  \\
@@ -1175,7 +1178,7 @@ Simulations were carried out by using the LAMMPS package~\cite{plimpton95}. %( h
 {\it Marius Retegan}  \\
 {\it Tomasz Rog}  \\
 {\it Hubert Santuz}  \\
-{\it Joona Tynkkynen}  \\
+{\it Joona Tynkkynen} prepared and performed the dehydration simulations with the MacRog FF.\\
 
 %\subsection{General issues to think of about the manuscript}
 %\todo{Maybe we should mention that CHARMM is significanlty more computationally expensive than other all-atom models.
