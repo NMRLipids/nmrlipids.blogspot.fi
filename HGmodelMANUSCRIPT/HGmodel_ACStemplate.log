@@ -1,0 +1,1636 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.18)  18 MAR 2015 10:03
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**HGmodel_ACStemplate.tex
+(./HGmodel_ACStemplate.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
+hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
+ czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
+n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
+reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
+ sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
+n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
+speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
+lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
+celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/achemso/achemso.cls
+Document Class: achemso 2012/05/08 v3.7a Submission to ACS journals
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+\XKV@depth=\count87
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex)))
+\acs@bib@file=\write3
+
+(/usr/share/texlive/texmf-dist/tex/latex/mciteplus/mciteplus.sty
+Package: mciteplus 2008/09/30 v1.1 enhanced mcite
+\@mcitetmptoksA=\toks16
+\@mcitetmpdima=\dimen103
+\@mcitetmpdimb=\dimen104
+\@mcitetmpcnta=\count88
+\@mcitetmpcntb=\count89
+\c@mcitebibitemcount=\count90
+\c@mcitesubitemcount=\count91
+)
+\c@bibnote=\count92
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count93
+\Gm@cntv=\count94
+\c@Gm@tempcnt=\count95
+\Gm@bindingoffset=\dimen105
+\Gm@wd@mp=\dimen106
+\Gm@odd@mp=\dimen107
+\Gm@even@mp=\dimen108
+\Gm@layoutwidth=\dimen109
+\Gm@layoutheight=\dimen110
+\Gm@layouthoffset=\dimen111
+\Gm@layoutvoffset=\dimen112
+\Gm@dimlist=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@indent=\dimen116
+\caption@parindent=\dimen117
+\caption@hangindent=\dimen118
+)
+\c@ContinuedFloat=\count96
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count97
+\float@exts=\toks18
+\float@box=\box26
+\@float@everytoks=\toks19
+\@floatcapt=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count98
+))
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+\acs@author@cnt=\count99
+\acs@affil@cnt=\count100
+\acs@affil@alt@cnt=\count101
+\acs@footnote@cnt=\count102
+\acs@affil@marker@cnt=\count103
+\acs@space@pre@title=\skip43
+\acs@space@post@title=\skip44
+\acs@space@post@author=\skip45
+\acs@space@post@address=\skip46
+\acs@space@post@email=\skip47
+\acs@maketitle@width=\skip48
+\@float@every@scheme=\toks20
+\c@scheme=\count104
+\@float@every@chart=\toks21
+\c@chart=\count105
+\@float@every@graph=\toks22
+\c@graph=\count106
+\@float@every@table=\toks23
+\acs@collect@toks=\toks24
+\acs@collect@empty@toks=\toks25
+\acs@tocentry@height=\skip49
+\acs@tocentry@width=\skip50
+
+(/usr/share/texlive/texmf-dist/tex/latex/achemso/config/jacsat.cfg
+File: jacsat.cfg 2012/05/08 v3.7a achemso configuration: J. Am. Chem. Soc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/achemso/natmove.sty
+Package: natmove 2010/01/15 v1.1a Automatic citation moving with natbib
+))
+(/usr/share/texlive/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2011/06/03 v3.11 for typesetting chemical formulae
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count108
+\calc@Bcount=\count109
+\calc@Adimen=\dimen121
+\calc@Bdimen=\dimen122
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count110
+\calc@Cskip=\skip55
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/twoopt.sty
+Package: twoopt 2008/08/11 v1.5 Definitions with two optional arguments (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip56
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks26
+\ex@=\dimen123
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen124
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count111
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count112
+\leftroot@=\count113
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count114
+\DOTSCASE@=\count115
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen125
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count116
+\c@MaxMatrixCols=\count117
+\dotsspace@=\muskip11
+\c@parentequation=\count118
+\dspbrk@lvl=\count119
+\tag@help=\toks27
+\row@=\count120
+\column@=\count121
+\maxfields@=\count122
+\andhelp@=\toks28
+\eqnshift@=\dimen126
+\alignsep@=\dimen127
+\tagshift@=\dimen128
+\tagwidth@=\dimen129
+\totwidth@=\dimen130
+\lineht@=\dimen131
+\@envbody=\toks29
+\multlinegap=\skip57
+\multlinetaggap=\skip58
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+\tok@mhchem@ce@iii=\toks31
+\mhchem@arrowminlength=\skip59
+\mhchem@arrows@box=\box30
+\mhchem@arrowlength@pgf=\skip60
+\mhchem@arrowminlength@pgf=\skip61
+\mhchem@bondwidth=\skip62
+\mhchem@bondheight=\skip63
+\mhchem@smallbondwidth@tmpA=\skip64
+\mhchem@smallbondwidth@tmpB=\skip65
+\mhchem@smallbondwidth=\skip66
+\mhchem@cf@result=\toks32
+\mhchem@cf@element=\toks33
+\mhchem@cf@amount=\toks34
+\mhchem@cf@sup=\toks35
+\mhchem@cf@presub=\toks36
+\mhchem@cf@presup=\toks37
+\mhchem@cf@replaceMath@result=\toks38
+\mhchem@cf@replaceMathMinusDot@result=\toks39
+\mhchem@prepostscript@tmp@i=\skip67
+\mhchem@prepostscript@tmp@ii=\skip68
+\mhchem@mathbox@tmp@i=\skip69
+\mhchem@mathbox@tmp@ii=\skip70
+\mhchem@minispace@tmp=\skip71
+\mhchem@option@minussidebearingleft=\skip72
+\mhchem@option@minussidebearingright=\skip73
+) (./easy-todo.sty
+Package: easy-todo 2014/01/01
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2010/10/13 v2.3e parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 43.
+\cftparskip=\skip74
+\cftbeforetoctitleskip=\skip75
+\cftaftertoctitleskip=\skip76
+\cftbeforepartskip=\skip77
+\cftpartnumwidth=\skip78
+\cftpartindent=\skip79
+\cftbeforesecskip=\skip80
+\cftsecindent=\skip81
+\cftsecnumwidth=\skip82
+\cftbeforesubsecskip=\skip83
+\cftsubsecindent=\skip84
+\cftsubsecnumwidth=\skip85
+\cftbeforesubsubsecskip=\skip86
+\cftsubsubsecindent=\skip87
+\cftsubsubsecnumwidth=\skip88
+\cftbeforeparaskip=\skip89
+\cftparaindent=\skip90
+\cftparanumwidth=\skip91
+\cftbeforesubparaskip=\skip92
+\cftsubparaindent=\skip93
+\cftsubparanumwidth=\skip94
+\cftbeforeloftitleskip=\skip95
+\cftafterloftitleskip=\skip96
+\cftbeforefigskip=\skip97
+\cftfigindent=\skip98
+\cftfignumwidth=\skip99
+\c@lofdepth=\count123
+\c@lotdepth=\count124
+\cftbeforelottitleskip=\skip100
+\cftafterlottitleskip=\skip101
+\cftbeforetabskip=\skip102
+\cfttabindent=\skip103
+\cfttabnumwidth=\skip104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
+)
+\c@todos=\count125
+\cftbeforetodosskip=\skip105
+\cfttodosindent=\skip106
+\cfttodosnumwidth=\skip107
+\c@loddepth=\count126
+\cftbeforelodtitleskip=\skip108
+\cftafterlodtitleskip=\skip109
+)
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count127
+\rotFPtop=\skip110
+\rotFPbot=\skip111
+\rot@float@box=\box31
+\rot@mess@toks=\toks40
+)
+(./HGmodel_ACStemplate.aux)
+\openout1 = `HGmodel_ACStemplate.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 149.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+\openout3 = `acs-HGmodel_ACStemplate.bib'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.2698pt, 469.75539pt, 72.2698pt)
+* v-part:(T,H,B)=(72.2698pt, 650.43037pt, 72.2698pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75539pt
+* \textheight=650.43037pt
+* \oddsidemargin=-0.00018pt
+* \evensidemargin=-0.00018pt
+* \topmargin=-37.00018pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count128
+\scratchdimen=\dimen132
+\scratchbox=\box32
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen133
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
+\everyMPtoPDFconversion=\toks42
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 149.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 149.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 149.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 14
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 14
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 14
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 14
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 149.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 149.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Calculating math sizes for size <7.4> on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.47603> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.44003> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   $
+l.149 \begin{document}
+                      
+? 
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 181.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 203.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [2]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 215.
+
+Overfull \hbox (69.37627pt too wide) in paragraph at lines 217--235
+\T1/ptm/m/n/12 erol back-bone to a hy-drophilic head-group. See Fig. 1[] for th
+e struc-ture of 1-palmitoyl-2-oleoylphosphatidylcholine
+ []
+
+[3] [4]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 274.
+
+Package epstopdf Info: Source file: <POPCstructure.eps>
+(epstopdf)                    date: 2015-01-23 12:11:12
+(epstopdf)                    size: 794141 bytes
+(epstopdf)             Output file: <POPCstructure-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-23 12:11:17
+(epstopdf)                    size: 11539 bytes
+(epstopdf)             Command: <repstopdf --outfile=POPCstructure-eps-converte
+d-to.pdf POPCstructure.eps>
+(epstopdf)             \includegraphics on input line 276.
+Package epstopdf Info: Output file is already uptodate.
+<POPCstructure-eps-converted-to.pdf, id=24, 722.7pt x 542.025pt>
+File: POPCstructure-eps-converted-to.pdf Graphic file (type pdf)
+
+<use POPCstructure-eps-converted-to.pdf>
+Package pdftex.def Info: POPCstructure-eps-converted-to.pdf used on input line 
+276.
+(pdftex.def)             Requested size: 244.69386pt x 183.51689pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 285.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 291.
+ [5 <./POPCstructure-eps-converted-to.pdf>]
+Overfull \hbox (0.24442pt too wide) in paragraph at lines 314--330
+\T1/pcr/m/n/12 blogspot . fi / 2014 / 02 / accuracy-[]of-[]order-[]parameter-[]
+measurements . html$
+ []
+
+[6]
+Overfull \hbox (79.97145pt too wide) in paragraph at lines 331--336
+\T1/ptm/m/n/12 pa-ram-e-ters see $\T1/pcr/m/n/12 http : / / nmrlipids . blogspo
+t . fi / 2014 / 04 / on-[]signs-[]of-[]order-[]parameters .
+ []
+
+
+Overfull \hbox (4.1554pt too wide) in paragraph at lines 348--356
+\T1/ptm/m/n/12 the united atom mod-els the hy-dro-gen po-si-tions were gen-er-a
+ted in the tra-jec-to-ries post-simulationally
+ []
+
+[7]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 380.
+
+
+Overfull \hbox (38.94244pt too wide) in paragraph at lines 394--422
+ [][] 
+ []
+
+
+Overfull \hbox (50.87799pt too wide) in paragraph at lines 436--454
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 456.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 501.
+
+
+<../DATAreportediINblog/comparisonSorted.pdf, id=40, 284.06125pt x 597.23125pt>
+File: ../DATAreportediINblog/comparisonSorted.pdf Graphic file (type pdf)
+<use ../DATAreportediINblog/comparisonSorted.pdf>
+Package pdftex.def Info: ../DATAreportediINblog/comparisonSorted.pdf used on in
+put line 503.
+(pdftex.def)             Requested size: 244.69386pt x 514.4837pt.
+
+
+LaTeX Warning: Float too large for page by 20.67729pt on input line 522.
+
+[8] [9]
+Overfull \hbox (93.84438pt too wide) in paragraph at lines 524--537
+\T1/pcr/m/n/12 http : / / nmrlipids . blogspot . fi / 2014 / 02 / accuracy-[]of
+-[]order-[]parameter-[]measurements .
+ []
+
+[10] [11] [12 <../DATAreportediINblog/comparisonSorted.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 559.
+
+Package epstopdf Info: Source file: <HGorderparameters5.eps>
+(epstopdf)                    date: 2015-01-23 12:11:12
+(epstopdf)                    size: 23478 bytes
+(epstopdf)             Output file: <HGorderparameters5-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-01-23 12:11:18
+(epstopdf)                    size: 10190 bytes
+(epstopdf)             Command: <repstopdf --outfile=HGorderparameters5-eps-con
+verted-to.pdf HGorderparameters5.eps>
+(epstopdf)             \includegraphics on input line 561.
+Package epstopdf Info: Output file is already uptodate.
+<HGorderparameters5-eps-converted-to.pdf, id=77, 505.89pt x 361.35pt>
+File: HGorderparameters5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use HGorderparameters5-eps-converted-to.pdf>
+Package pdftex.def Info: HGorderparameters5-eps-converted-to.pdf used on input 
+line 561.
+(pdftex.def)             Requested size: 244.69386pt x 174.78587pt.
+ [13]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 586.
+
+
+<../DATAreportediINblog/comparisonTable.pdf, id=82, 467.08582pt x 843.21922pt>
+File: ../DATAreportediINblog/comparisonTable.pdf Graphic file (type pdf)
+
+<use ../DATAreportediINblog/comparisonTable.pdf>
+Package pdftex.def Info: ../DATAreportediINblog/comparisonTable.pdf used on inp
+ut line 588.
+(pdftex.def)             Requested size: 244.69386pt x 441.7446pt.
+ [14 <./HGorderparameters5-eps-converted-to.pdf>] [15] [16 <../DATAreportediINb
+log/comparisonTable.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 641.
+
+Package epstopdf Info: Source file: <g1-g2_Cdihs2.eps>
+(epstopdf)                    date: 2015-02-16 16:15:40
+(epstopdf)                    size: 42932 bytes
+(epstopdf)             Output file: <g1-g2_Cdihs2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-16 16:15:46
+(epstopdf)                    size: 17425 bytes
+(epstopdf)             Command: <repstopdf --outfile=g1-g2_Cdihs2-eps-converted
+-to.pdf g1-g2_Cdihs2.eps>
+(epstopdf)             \includegraphics on input line 643.
+Package epstopdf Info: Output file is already uptodate.
+<g1-g2_Cdihs2-eps-converted-to.pdf, id=140, 656.4525pt x 473.77pt>
+File: g1-g2_Cdihs2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use g1-g2_Cdihs2-eps-converted-to.pdf>
+Package pdftex.def Info: g1-g2_Cdihs2-eps-converted-to.pdf used on input line 6
+43.
+(pdftex.def)             Requested size: 244.69386pt x 176.60063pt.
+ [17 <./g1-g2_Cdihs2-eps-converted-to.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 665.
+
+Package epstopdf Info: Source file: <a-bDIHS2.eps>
+(epstopdf)                    date: 2015-02-16 16:16:31
+(epstopdf)                    size: 42593 bytes
+(epstopdf)             Output file: <a-bDIHS2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-16 16:16:36
+(epstopdf)                    size: 17918 bytes
+(epstopdf)             Command: <repstopdf --outfile=a-bDIHS2-eps-converted-to.
+pdf a-bDIHS2.eps>
+(epstopdf)             \includegraphics on input line 667.
+Package epstopdf Info: Output file is already uptodate.
+<a-bDIHS2-eps-converted-to.pdf, id=149, 659.46375pt x 451.6875pt>
+File: a-bDIHS2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use a-bDIHS2-eps-converted-to.pdf>
+Package pdftex.def Info: a-bDIHS2-eps-converted-to.pdf used on input line 667.
+(pdftex.def)             Requested size: 244.69386pt x 167.5973pt.
+
+Overfull \hbox (163.70761pt too wide) in paragraph at lines 684--699
+\T1/ptm/m/n/12 mea-sured (see $\T1/pcr/m/n/12 http : / / nmrlipids . blogspot .
+ fi / 2014 / 02 / accuracy-[]of-[]order-[]parameter-[]measurements .
+ []
+
+[18 <./a-bDIHS2-eps-converted-to.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 712.
+
+<../DATAreportediINblog/dehydration.pdf, id=163, 284.06125pt x 597.23125pt>
+File: ../DATAreportediINblog/dehydration.pdf Graphic file (type pdf)
+
+<use ../DATAreportediINblog/dehydration.pdf>
+Package pdftex.def Info: ../DATAreportediINblog/dehydration.pdf used on input l
+ine 714.
+(pdftex.def)             Requested size: 244.69386pt x 514.4837pt.
+ [19] [20 <../DATAreportediINblog/dehydration.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 753.
+
+<../DATAreportediINblog/dehydrationPN.pdf, id=186, 460.72125pt x 284.06125pt>
+File: ../DATAreportediINblog/dehydrationPN.pdf Graphic file (type pdf)
+
+<use ../DATAreportediINblog/dehydrationPN.pdf>
+Package pdftex.def Info: ../DATAreportediINblog/dehydrationPN.pdf used on input
+ line 755.
+(pdftex.def)             Requested size: 244.69386pt x 150.86813pt.
+ [21]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 796.
+
+
+<../DATAreportediINblog/cholesterolization.pdf, id=190, 284.06125pt x 597.23125
+pt>
+File: ../DATAreportediINblog/cholesterolization.pdf Graphic file (type pdf)
+ <use ../DATAreportediINblog/cholesterolization.pdf>
+Package pdftex.def Info: ../DATAreportediINblog/cholesterolization.pdf used on 
+input line 798.
+(pdftex.def)             Requested size: 244.69386pt x 514.4837pt.
+ [22 <../DATAreportediINblog/dehydrationPN.pdf>]
+Overfull \hbox (0.41295pt too wide) in paragraph at lines 810--822
+\T1/ptm/m/n/12 Berger-POPC-07/Höltje-CHOL-13 model,$[]$ and our re-sults from C
+HARMM36 and MacRog force
+ []
+
+[23] [24 <../DATAreportediINblog/cholesterolization.pdf>] [25]
+(./HGmodel_ACStemplate.bbl [26] [27] [28] [29]
+Underfull \hbox (badness 1097) in paragraph at lines 446--454
+\T1/ptm/m/n/12 ing of cations to phos-pho-lipid bi-lay-ers. 2015; $\T1/pcr/m/n/
+12 https : / / www . dropbox . com / s /
+ []
+
+[30]
+
+! Package mciteplus Error: Entry Status for cite key `bergerFILESpopc' under tr
+acking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.537 \bibitem[Ollila(2014)]{bergerFILESpopc}
+                                             
+? 
+
+! Package mciteplus Error: Entry Status for cite key `bergerDPPCfiles' under tr
+acking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.553 ...{\"a}{\"a}tt{\"a}(2015)]{bergerDPPCfiles}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `dmpcFILES' under tracking
+ ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.568 \bibitem[Miettinen(2013)]{dmpcFILES}
+                                          
+? 
+
+! Package mciteplus Error: Entry Status for cite key `miettinen09' under tracki
+ng ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.577   Karttunen]{miettinen09}
+                               
+? 
+
+! Package mciteplus Error: Entry Status for cite key `charmm36filesSHORT' under
+ tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.584 ...amuli, and Miettinen]{charmm36filesSHORT}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `charmm36files' under trac
+king ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.592 \bibitem[Santuz(2015)]{charmm36files}
+                                           
+? 
+[31]
+
+! Package mciteplus Error: Entry Status for cite key `charmmFILESdppc' under tr
+acking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.600 ...2015)Samuli, and Markus]{charmmFILESdppc}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `macrogFILES' under tracki
+ng ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.608 \bibitem[Javanainen(2014)]{macrogFILES}
+                                             
+? 
+
+Underfull \hbox (badness 1694) in paragraph at lines 601--608
+\T1/ptm/m/n/12 (CHARMM36, Gro-macs 4.5). 2015; $\T1/pcr/m/n/12 http : / / dx . 
+doi . org / 10 . 5281 / zenodo .
+ []
+
+
+! Package mciteplus Error: Entry Status for cite key `GAFFlipidFILES' under tra
+cking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.615 ...2015)Ollila, and Retegan]{GAFFlipidFILES}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `GAFFlipidFILESdppc' under
+ tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.623 ...)Samuli, and Retegan]{GAFFlipidFILESdppc}
+                                                  
+? 
+
+Underfull \hbox (badness 1147) in paragraph at lines 624--632
+[]\T1/ptm/m/n/12 Samuli, O.; Rete-gan, M. MD sim-u-la-tion tra-jec-tory and re-
+lated files for DPPC bi-
+ []
+
+
+! Package mciteplus Error: Entry Status for cite key `lipid14files' under track
+ing ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.640 ...n(2014)Ollila, and Retegan]{lipid14files}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `pogerFILESpme1' under tra
+cking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.655 \bibitem[Fuchs(2015)]{pogerFILESpme1}
+                                           
+? 
+
+! Package mciteplus Error: Entry Status for cite key `pogerFILESpme2' under tra
+cking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.663 \bibitem[Fuchs(2015)]{pogerFILESpme2}
+                                           
+? 
+[32]
+
+! Package mciteplus Error: Entry Status for cite key `slipidsFILES' under track
+ing ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.679 ...m[M{\"a}{\"a}tt{\"a}(2014)]{slipidsFILES}
+                                                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--687
+[]\T1/ptm/m/n/12 Määttä, J. DPPC_Slipids. 2014; $\T1/pcr/m/n/12 {http : / / dx 
+. doi . org / 10 . 5281 / zenodo .
+ []
+
+
+! Package mciteplus Error: Entry Status for cite key `slipidsFILESpopc' under t
+racking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.694 \bibitem[Javanainen(2015)]{slipidsFILESpopc}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `kukolFILES' under trackin
+g ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.708 \bibitem[Javanainen(2014)]{kukolFILES}
+                                            
+? 
+
+! Package mciteplus Error: Entry Status for cite key `chiuFILES' under tracking
+ ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.722 \bibitem[Samuli(2015)]{chiuFILES}
+                                       
+? 
+
+! Package mciteplus Error: Entry Status for cite key `ulmschneiderFILES' under 
+tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.746 ...item[Javanainen(2014)]{ulmschneiderFILES}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `tjornhammarfiles' under t
+racking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.761 \bibitem[Javanainen(2014)]{tjornhammarfiles}
+                                                  
+? 
+[33]
+
+! Package mciteplus Error: Entry Status for cite key `charmmUAfiles' under trac
+king ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.782 \bibitem[Botan(2015)]{charmmUAfiles}
+                                          
+? 
+
+! Package mciteplus Error: Entry Status for cite key `bergerDEHYDfiles' under t
+racking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.789 \bibitem[Ollila(2015)]{bergerDEHYDfiles}
+                                              
+? 
+
+! Package mciteplus Error: Entry Status for cite key `charmm36files15wPERl' und
+er tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.797 ...uli, and Miettinen]{charmm36files15wPERl}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `charmm36files7wPERl' unde
+r tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.805 ...muli, and Miettinen]{charmm36files7wPERl}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `macrogdehydFILES' under t
+racking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.813 \bibitem[Javanainen(2014)]{macrogdehydFILES}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `gaffDEHYDfiles' under tra
+cking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.820 \bibitem[Ollila(2015)]{gaffDEHYDfiles}
+                                            
+? 
+
+! Package mciteplus Error: Entry Status for cite key `bergerFILESpopc7chol' und
+er tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.837 \bibitem[Ollila(2014)]{bergerFILESpopc7chol}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `bergerFILESpopc15chol' un
+der tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.846 ...item[Ollila(2014)]{bergerFILESpopc15chol}
+                                                  
+? 
+[34]
+
+! Package mciteplus Error: Entry Status for cite key `bergerFILESpopc34chol' un
+der tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.855 ...item[Ollila(2014)]{bergerFILESpopc34chol}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `bergerFILESpopc50chol' un
+der tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.864 ...item[Ollila(2014)]{bergerFILESpopc50chol}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `bergerFILESpopc60chol' un
+der tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.873 ...item[Ollila(2014)]{bergerFILESpopc60chol}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `charmm36files20perCHOL' u
+nder tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.889 ...tem[Santuz(2015)]{charmm36files20perCHOL}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `charmm36files50perCHOL' u
+nder tracking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.896 ...tem[Santuz(2015)]{charmm36files50perCHOL}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `macrogCHOLfiles' under tr
+acking ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.903 \bibitem[Javanainen(2015)]{macrogCHOLfiles}
+                                                 
+? 
+[35]
+
+! Package mciteplus Error: Entry Status for cite key `tieleman99' under trackin
+g ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1047 ...eman, Berendsen, and Sansom]{tieleman99}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `bachar04' under tracking 
+ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1054 ... Brunelle, Tieleman, and Rauk]{bachar04}
+                                                  
+? 
+[36]
+
+! Package mciteplus Error: Entry Status for cite key `tieleman06' under trackin
+g ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1062   Monticelli]{tieleman06}
+                                
+? 
+
+! Package mciteplus Error: Entry Status for cite key `hess97' under tracking ID
+ `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1070 ... Bekker, Berendsen, and Fraaije]{hess97}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `hess07' under tracking ID
+ `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1077 \bibitem[Hess(2008)]{hess07}
+                                   
+? 
+
+! Package mciteplus Error: Entry Status for cite key `darden93' under tracking 
+ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1083 ...93)Darden, York, and Pedersen]{darden93}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `essman95' under tracking 
+ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1091   Pedersen]{essman95}
+                            
+? 
+
+! Package mciteplus Error: Entry Status for cite key `bussi07' under tracking I
+D `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1099 ...Bussi, Donadio, and Parrinello]{bussi07}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `berendsen84' under tracki
+ng ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1107   Haak]{berendsen84}
+                           
+? 
+
+! Package mciteplus Error: Entry Status for cite key `jo08' under tracking ID `
+main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1114 ...et~al.(2008)Jo, Kim, Iyer, and Im]{jo08}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `jorgensen83' under tracki
+ng ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1122   Klein]{jorgensen83}
+                            
+? 
+
+! Package mciteplus Error: Entry Status for cite key `salari15' under tracking 
+ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1129 \bibitem[Salari(2015)]{salari15}
+                                       
+? 
+
+! Package mciteplus Error: Entry Status for cite key `parrinello81' under track
+ing ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1136 ...81)Parrinello, and Rahman]{parrinello81}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `kulig15' under tracking I
+D `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1144 ...of, Vattulainen, and Jungwirth]{kulig15}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `nose84' under tracking ID
+ `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1152 \bibitem[Nose(1984)]{nose84}
+                                   
+? 
+
+! Package mciteplus Error: Entry Status for cite key `hoover85' under tracking 
+ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1158 \bibitem[Hoover(1985)]{hoover85}
+                                       
+? 
+[37]
+
+! Package mciteplus Error: Entry Status for cite key `domanski10' under trackin
+g ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1165   Beckstein]{domanski10}
+                               
+? 
+
+! Package mciteplus Error: Entry Status for cite key `silva12' under tracking I
+D `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1172 ...12)Sousa~da Silva, and Vranken]{silva12}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `ferrer13' under tracking 
+ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1179 ...omon-Ferrer, Case, and Walker]{ferrer13}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `berendsen81' under tracki
+ng ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1188   Hermans]{berendsen81}
+                              
+? 
+
+! Package mciteplus Error: Entry Status for cite key `pogerFILESrf1' under trac
+king ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1197 \bibitem[Fuchs(2015)]{pogerFILESrf1}
+                                           
+? 
+
+! Package mciteplus Error: Entry Status for cite key `pogerFILESrf2' under trac
+king ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1205 \bibitem[Fuchs(2015)]{pogerFILESrf2}
+                                           
+? 
+
+! Package mciteplus Error: Entry Status for cite key `tironi95' under tracking 
+ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1213 ...erb, Smith, and van Gunsteren]{tironi95}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `miyamoto92' under trackin
+g ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1220 ...(1992)Miyamoto, and Kollman]{miyamoto92}
+                                                  
+? 
+
+! Package mciteplus Error: Entry Status for cite key `jambeck13' under tracking
+ ID `main' is undefined, treating it as a head entry.
+
+See the mciteplus package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1227 ...2013)Jambeck, and Lyubartsev]{jambeck13}
+                                                  
+? 
+) [38] [39] [40]
+Overfull \hbox (3.98021pt too wide) in paragraph at lines 1035--1039
+\T1/ptm/m/n/12 ($\T1/pcr/m/n/12 http : / / lipidbook . bioch . ox . ac . uk / p
+ackage / show / id / 150 . html$\T1/ptm/m/n/12 ).$[]$ The con-
+ []
+
+[41] [42] [43]
+Overfull \hbox (3.60103pt too wide) in paragraph at lines 1098--1112
+\T1/pcr/m/n/12 se / \~jjm / Stockholm \ _Lipids / Downloads . html$\T1/ptm/m/n/
+12 . The Slipids force field$[]$ was used
+ []
+
+[44]
+Overfull \hbox (0.75818pt too wide) in paragraph at lines 1114--1121
+\T1/ptm/m/n/12 A bi-layer patch with 512 POPC lipids was con-structed and hy-dr
+ated with $\OMS/ztmcm/m/n/12 ^^X$\T1/ptm/m/n/12 40 SPC wa-ter molecules
+ []
+
+[45] [46]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 1156.
+
+<dihsCHOLcharmm.pdf, id=293, 1228.59pt x 1011.78pt>
+File: dihsCHOLcharmm.pdf Graphic file (type pdf)
+ <use dihsCHOLcharmm.pdf>
+Package pdftex.def Info: dihsCHOLcharmm.pdf used on input line 1158.
+(pdftex.def)             Requested size: 489.38731pt x 403.02203pt.
+
+Overfull \hbox (19.63193pt too wide) in paragraph at lines 1158--1160
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1179
+
+ []
+
+[47] [48 <./dihsCHOLcharmm.pdf>] [49]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 1188.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 1188.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 7.19995pt on input line 1188.
+
+Underfull \vbox (badness 10000) detected at line 1188
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1188.
+[50] (./HGmodel_ACStemplate.aux) ) 
+Here is how much of TeX's memory you used:
+ 7091 strings out of 493493
+ 111176 string characters out of 3143797
+ 212511 words of memory out of 3000000
+ 10195 multiletter control sequences out of 15000+200000
+ 108341 words of font info for 169 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 60i,14n,94p,1020b,1012s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvip
+s/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol
+/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on HGmodel_ACStemplate.pdf (50 pages, 426468 bytes).
+PDF statistics:
+ 388 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+
