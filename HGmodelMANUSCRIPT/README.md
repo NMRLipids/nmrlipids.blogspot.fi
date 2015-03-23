@@ -8,7 +8,8 @@
 
 ## Files
 
-* `HGmodel_ACStemplate.tex` corresponds to the JACS submission version.
+* `HGmodel_ACStemplate.tex` is to the JACS submission version.
+* `coverLETTER.tex` is the cover letter for JACS submission.
 
 ## Generate the pdf
 
@@ -20,3 +21,11 @@
 ### Compilation
 
 Just run the Makefile: `make`
+
+
+## How to contribute?
+
+1. Fork this repository
+2. Add your contribution by modifying the files (either `HGmodel_ACStemplate.tex` or `coverLETTER.tex`)
+3. Commit your modifications
+4. Make a pull-request
