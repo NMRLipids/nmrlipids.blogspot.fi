@@ -1,1 +1,0 @@
-http://mirrors.ctan.org/macros/latex/contrib/easy-todo/easy-todo.sty
