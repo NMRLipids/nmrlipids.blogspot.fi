@@ -1,0 +1,26 @@
+set term pdfcairo enhanced rounded color dashed dashlength 1 size 16.2cm, 10cm
+set out "dehydrationPN.pdf"
+
+w=10   # linewidth simulation
+r=2 # point radius simulation
+
+set style line 11 lt 2 pt 7 ps r lw w lc rgb "#D70039" # for Berger
+set style line 12 lt 1 pt 7 ps r lw w lc rgb "#0088BF" # for CHARMM36
+set style line 13 lt 2 pt 7 ps r lw w lc rgb "#FFD300" # for GAFF
+set style line 14 lt 1 pt 7 ps r lw w lc rgb "#00A368" # for MacRog
+
+set key l at screen 0.12,0.57 Left reverse samplen 5 spacing 2 width 2 maxrows 4 font ",14"
+set xlabel "n_{w/l}" font ",14"
+set ylabel "deviation of P-N vector from membrane normal (degrees)"
+
+plot [60:0][67:83] \
+     "./POPC/dehydration/PN-vector/Berger-298K.dat" u ($1):($2) w lp ls 11 \
+     t " POPC 298K Berger", \
+     "./POPC/dehydration/PN-vector/MacRog-310K.dat" u ($1):($2) w lp ls 14 \
+     t " &{PO}@{\"}&{PC} 310K MacRog", \
+     "./POPC/dehydration/PN-vector/CHARMM36-303K.dat" u ($1):($2) w lp ls 12 \
+     t " &{PO}@{\"}&{PC} 303K CHARMM36", \
+     "./POPC/dehydration/PN-vector/GAFF-303K.dat" u ($1):($2) w lp ls 13 \
+     t " &{PO}@{\"}&{PC} &{30}@{\"}&{3K} GAFF"
+
+					
