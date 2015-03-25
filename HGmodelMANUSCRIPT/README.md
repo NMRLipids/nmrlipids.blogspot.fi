@@ -10,12 +10,17 @@
 
 * `HGmodel_ACStemplate.tex` is to the JACS submission version.
 * `coverLETTER.tex` is the cover letter for JACS submission.
+* `refs.bib` is the bibliography file.
+
+
+* `OLDversions` folder contains old versions of the manuscript and the related figures.
 
 ## Generate the pdf
 
 ### Dependencies for compiling tex 
 * **mhchem.sty** (package `texlive-science` in Debian)
 * **achemso.sty** (package `texlive-latex-extra` in Debian)
+* **easy-toto.sty** already present in the folder. Downloaded from here: [http://mirrors.ctan.org/macros/latex/contrib/easy-todo/easy-todo.sty](http://mirrors.ctan.org/macros/latex/contrib/easy-todo/easy-todo.sty)
 
 
 ### Compilation
