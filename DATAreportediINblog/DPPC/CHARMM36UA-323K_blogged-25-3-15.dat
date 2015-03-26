@@ -1,0 +1,40 @@
+# Posted by Claire Loison in nmrlipids.blogspot.fi on 25 Mar 2015.
+#
+# 
+#
+#    http://nmrlipids.blogspot.com/p/to-do-list.html
+#
+# Simulated using NAMD.
+#
+# DPPC.
+# 72 lipids, 2189 waters = 30 w/l.
+# 323K. (liquid phase) 
+#
+# Total simulation 80 ns, last 50 ns analyzed.
+#
+# CHARMM36 United Atom force field:
+#
+#    http://dx.doi.org/10.1021/jp410344g [*]
+#
+# 
+# 
+# 
+
+#beta
+1 -0.067
+1 -0.062
+
+#alpha
+2 0.036
+2 0.033
+
+#g3
+3 -0.239
+3 -0.258
+
+#g2 
+4 -0.195
+
+#g1
+5 -0.172
+5 -0.047
