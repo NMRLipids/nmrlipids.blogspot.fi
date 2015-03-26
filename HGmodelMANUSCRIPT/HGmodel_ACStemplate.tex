@@ -96,6 +96,8 @@
 \author{Antti Lamberg}
 \affiliation[Kyoto University]
 {Department of Chemical Engineering, Kyoto University, Kyoto, Japan}
+\author{Claire Loison}
+\affiliation[Lyon CNRS]{Institut Lumi\`ere Mati\`ere, UMR5306 Universit\'e Lyon 1-CNRS, Universit\'e de Lyon 69622 Villeurbanne, France}
 \author{Markus S. Miettinen}
 \affiliation[Freie Universitat Berlin] 
 {Fachbereich Physik, Freie Universitat Berlin, Berlin, Germany}
@@ -417,7 +419,8 @@ H\"ogberg08 \cite{rabinovich14}  & POPC   &  128 & 3840  & 303 & 100 & 80  & - &
 H\"ogberg08 \cite{hogberg08}  & DMPC   &  98 & 3840  & 303 & 75 & 50 & - & [\citenum{hogberg08}] \\
 Ulmschneiders \cite{Ulmschneider09}    & POPC  & 128 & 3328 & 310 & 100 & 50 & [\citenum{ulmschneiderFILES}]$^*$ & SI \\
 Tj\"ornhammar14 \cite{tjornhammar14}   & DPPC  & 144 & 7056 & 323 & 200 & 100 & [\citenum{tjornhammarfiles}]$^*$ & [\citenum{tjornhammar14}] \\
-CHARMM36-UA~\cite{henin08,lee14}     & DLPC   & 128  & 3840  & 323 & 30 & 20 & [\citenum{charmmUAfiles}] & SI \\
+CHARMM36-UA~\cite{lee14}     & DPPC   & 72  & 2189  & 323 & 80 & 50 & ? & SI \\
+CHARMMXX-UA~\cite{henin08,lee14}     & DLPC   & 128  & 3840  & 323 & 30 & 20 & [\citenum{charmmUAfiles}] & SI \\
 \end{tabular}
 \end{table} 
 
@@ -936,6 +939,13 @@ MJ and JT acknowledge and CSC - IT Center for Science for computational resource
 MJ also acknowledges the Finnish Doctoral Programme in Computational Sciences (FICS) for funding.
 JT, MJ, TR and WK acknowledge the funding from the Academy of Finland (Centre of Excellence program) 
 and the European Research Council (Advanced Grant project CROWDED-PRO-LIPIDS).
+
+CL and AB acknowledges financial support from the French National Research Agency
+(ANR: “Biolubrication by phospholipid membranes” Bioub2012) and
+computing time allocation from P{\^o}le Scientifique de Mod{\'e}lisation Num{\'e}rique from the ENS Lyon (PSMN),
+and Centre Informatique National de l'Enseignement Sup{\'e}rieur (CINES, Montpelier, France)
+(Project c2015096850).
+
 \end{acknowledgement}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1179,12 +1189,13 @@ Simulations were carried out by using the LAMMPS package~\cite{plimpton95}. %( h
 
 \subsection{Author Contributions}
 \todo{Please write a text summarizing your contribution} \\
-{\it Alexandru Botan} \\
+{\it Alexandru Botan} provided simulation results for charmm36-UA\\
 {\it Fernando Favela}  \\
 {\it Patrick F. J. Fuchs} Ran and analyzed the Poger simulations. Provided scientific information which significantly advanced the project (signs and forking of order parameters). \\
 {\it Matti Javanainen} prepared and performed simulations with multiple lipid models and analyzed the results. Supervised the work of JT.\\
 {\it Waldemar Kulig} prepared the MD simulations with cholesterol for the MacRog FF \\
 {\it Antti Lamberg}  \\
+{\it Claire Loison} provided simulation results for charmm36-UA \\
 {\it Markus S. Miettinen}  \\
 {\it Luca Monticelli}  \\
 {\it Jukka M{\"a}{\"a}tt{\"a}}  prepared and performed simulations with Berger and Slipids models and analyzed the results.\\
