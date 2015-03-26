@@ -59,7 +59,9 @@ plot [-5:65][-0.07:0.01]\
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::0::1 w lp ls 11 \
     t " {&{PO}}{@{\"}}&{PC} 298K Berger", \
     "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::0::1 w lp ls 12 \
-    t " &{PO}@{\"}&{PC} 303K CHARMM36"
+    t " &{PO}@{\"}&{PC} 303K CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::0::1 w lp ls 12 \
+    t " &{PO}@{\"}&{PC} 298K CHARMM36"
 #    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::0::1 w lp ls 13 \
 #    t " {&{PO}}{@{\"}}&{PC} &{30}@{\"}&{3K} GAFF"
 unset key
@@ -80,7 +82,8 @@ plot [-5:65][0.01:0.11] \
     "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::2::2 w lp ls 2 t "Ferreira", \
     "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::2::3 w lp ls 14 t "MacRog", \
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::2::3 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::2::3 w lp ls 12 t "CHARMM36"
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::2::3 w lp ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::2::3 w lp ls 12 t "CHARMM36"
 #    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::2::3 w lp ls 13 t "GAFF"
 
 # Carbon: g3 ######################################
@@ -99,7 +102,8 @@ plot [-5:65][-0.25:-0.07]\
     "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::3::3 w lp ls 2 t "Ferreira", \
     "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::4::5 w lp ls 14 t "MacRog", \
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::4::5 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::4::5 w lp ls 12 t "CHARMM36"
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::4::5 w lp ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::4::5 w lp ls 12 t "CHARMM36"
 #    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::4::5 w lp ls 13 t "GAFF"
 
 
@@ -118,7 +122,8 @@ plot [-5:65][-0.25:-0.15] \
     "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::4::4 w lp ls 2 t "Ferreira", \
     "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::6::6 w lp ls 14 t "MacRog", \
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::6::6 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::6::6 w lp ls 12 t "CHARMM36"
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::6::6 w lp ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::6::6 w lp ls 12 t "CHARMM36"
 #    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::6::6 w lp ls 13 t "GAFF"
 
 # Carbon: g1 ######################################
@@ -137,7 +142,8 @@ plot [-5:65][-0.21:-0.09] \
     "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::5::5 w lp ls 2 t "Ferreira", \
     "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::7::7 w lp ls 14 t "MacRog", \
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::7::7 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::7::7 w lp ls 12 t "CHARMM36"
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::7::7 w lp ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::7::7 w lp ls 12 t "CHARMM36"
 #    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::7::7 w lp ls 13 t "GAFF"
 # S:
 set label 100 "g_{1S}"
@@ -156,6 +162,7 @@ plot [-5:65][-0.09:0.05] \
     "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::6::6 w lp ls 2 t "Ferreira", \
     "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::8::8 w lp ls 14 t "MacRog", \
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::8::8 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::8::8 w lp ls 12 t "CHARMM36"
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::8::8 w lp ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::8::8 w lp ls 12 t "CHARMM36"
 #    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::8::8 w lp ls 13 t "GAFF"
 unset multiplot
