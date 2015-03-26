@@ -1,0 +1,36 @@
+# 31.3 w/l from "GAFF-303K_blogged-12-11-14.dat"
+
+# 7 w/l from https://github.com/NMRLipids/nmrlipids.blogspot.fi/blob/master/HGmodelMANUSCRIPT/DATAforDEHYDRATIONfig/OrderParameterDEHYDgaffPOPCsignWRONGISOMER.dat
+
+# 	S_CD		SEM
+# beta:
+31.3	0.00712289 	0.00450635
+7  	-0.00141544	
+
+31.3	-0.00274647 	0.0041549
+7	0.0213605
+
+# alpha:
+31.3	0.0598987 	0.00558857
+7	0.0955012
+
+31.3	0.0608429	0.00537729
+7	0.0519893
+
+# g3:
+31.3	-0.241625 	0.0079977
+7	-0.264756
+
+31.3	-0.238285 	0.00963235
+7	-0.257289
+
+# g2:
+31.3	-0.243074 	0.0108463
+7	-0.291778
+
+# g1:
+31.3	-0.167836 	0.0156159
+7	-0.21231
+
+31.3	0.0732742 	0.0145822
+7	0.0521743
