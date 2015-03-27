@@ -1,5 +1,5 @@
 set term pdfcairo enhanced rounded color dashed dashlength 1 size 16.2cm, 10cm
-set out "dehydrationPN.pdf"
+set out OUTPUTFILE
 
 w=10   # linewidth simulation
 r=2 # point radius simulation
@@ -14,13 +14,13 @@ set xlabel "n_{w/l}" font ",14"
 set ylabel "deviation of P-N vector from membrane normal (degrees)"
 
 plot [60:0][67:83] \
-     "./POPC/dehydration/PN-vector/Berger-298K.dat" u ($1):($2) w lp ls 11 \
+     DATA_BERGER u ($1):($2) w lp ls 11 \
      t " POPC 298K Berger", \
-     "./POPC/dehydration/PN-vector/MacRog-310K.dat" u ($1):($2) w lp ls 14 \
+     DATA_MACROG u ($1):($2) w lp ls 14 \
      t " &{PO}@{\"}&{PC} 310K MacRog", \
-     "./POPC/dehydration/PN-vector/CHARMM36-303K.dat" u ($1):($2) w lp ls 12 \
+     DATA_CHARMM36 u ($1):($2) w lp ls 12 \
      t " &{PO}@{\"}&{PC} 303K CHARMM36", \
-     "./POPC/dehydration/PN-vector/GAFF-303K.dat" u ($1):($2) w lp ls 13 \
+     DATA_GAFF u ($1):($2) w lp ls 13 \
      t " &{PO}@{\"}&{PC} &{30}@{\"}&{3K} GAFF"
 
 					
