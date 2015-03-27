@@ -1,34 +1,52 @@
 #
-# Global Makefile to generate Figures from the data files in "DATAreportediINblog"
-# 
+# Global Makefile to generate Figures from the data files in "DATAreportediINblog".
+#
+# For each figure, a serie of variables can be set (mainly for the location of the script
+# and for the path of the data files). The rule to generate the figure is below those.
+# At the beginning of the Makefile, the output filename can be also changed.
+#
 
 
-#Define figure filenames
-dehydrationPN = test.pdf
-fig = youhou.txt
+######################
+## Figure filenames ##
+######################
+dehydrationPN = dehydrationPN.pdf
 
-TARGETS = $(dehydrationPN) $(fig)
+
+
+# Generate TARGETs from all filenames
+TARGETS = $(dehydrationPN)
 
 all: $(TARGETS)
 
-#---------------------------------------------
-# Figure regarding the angle of the P-N vector
-#---------------------------------------------
-include incfiles/dehydrationPN.inc
-$(dehydrationPN): $(SCRIPT) $(DATA_FILES)
-	gnuplot -e	"	OUTPUTFILE='$@'; \
-					DATA_BERGER='$(DATA_BERGER)'; \
-					DATA_MACROG='$(DATA_MACROG)'; \
-					DATA_CHARMM36='$(DATA_CHARMM36)'; \
-					DATA_GAFF='$(DATA_GAFF)' \
-				" \
-			$(SCRIPT)
 
 
-include incfiles/test.inc
-$(fig): $(SCRIPT) 
-	echo "$(SCRIPT)"
-	touch $@
+#----------------------------------------------#
+# Figure regarding the angle of the P-N vector #
+#----------------------------------------------#
+
+# Variables 
+# =========
+SCRIPT = scripts/plotDehydrationPNvector.gpl
+DATA_BERGER = ../DATAreportediINblog/POPC/dehydration/PN-vector/Berger-298K.dat
+DATA_MACROG = ../DATAreportediINblog/POPC/dehydration/PN-vector/MacRog-310K.dat
+DATA_CHARMM36 = ../DATAreportediINblog/POPC/dehydration/PN-vector/CHARMM36-303K.dat
+DATA_GAFF = ../DATAreportediINblog/POPC/dehydration/PN-vector/GAFF-303K.dat
+
+# Rule
+# ====
+$(dehydrationPN): $(SCRIPT) $(DATA_BERGER) $(DATA_MACROG) $(DATA_CHARMM36) $(DATA_GAFF)
+	gnuplot -e "OUTPUTFILE='$@'" -e "DATA_BERGER='$(DATA_BERGER)'" \
+	        -e "DATA_MACROG='$(DATA_MACROG)'" -e "DATA_CHARMM36='$(DATA_CHARMM36)'" \
+	        -e "DATA_GAFF='$(DATA_GAFF)'" \
+	        $(SCRIPT)
+
+#------------#
+# end Figure #
+#------------#
+
+
+
 
 clean:
 	rm $(TARGETS)
