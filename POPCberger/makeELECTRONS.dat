@@ -1,2 +1,0 @@
-grep " 1PLA" endCONF.gro | awk '{print $2}' > tmp1.dat
-cat tmp1.dat | awk '{if($0~"C") print $1" =8"; if($0~"H") print $1" =1"; if($0~"O") print $1" =8"; if($0~"P") print $1" =15"; if($0~"N") print $1" =7"}'
