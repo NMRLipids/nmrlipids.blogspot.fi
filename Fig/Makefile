@@ -3,6 +3,8 @@
 #
 # For each figure, a serie of variables can be set (mainly for the location of the script
 # and for the path of the data files). The rule to generate the figure is below those.
+# The idea is to only re-generate the output when the dependencies (script or data) are changed.
+#
 # At the beginning of the Makefile, the output filename can be also changed.
 #
 
