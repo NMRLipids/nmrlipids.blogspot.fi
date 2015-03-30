@@ -1,0 +1,31 @@
+# PN-vector angles reported by Matej Kanduc March 24, 2015 at 5:38 PM 
+#
+#http://nmrlipids.blogspot.fi/p/the-project-has-been-success-by-this-far.html
+#
+#calculated from data in
+#
+#http://dx.doi.org/10.5281/zenodo.16295
+#http://dx.doi.org/10.5281/zenodo.16294
+#http://dx.doi.org/10.5281/zenodo.16293
+#http://dx.doi.org/10.5281/zenodo.16292
+#http://dx.doi.org/10.5281/zenodo.16291
+#http://dx.doi.org/10.5281/zenodo.16289
+#http://dx.doi.org/10.5281/zenodo.16287
+#
+#Contains additional points from similar trajectories which are not shared
+#
+# n_w/l   PN angle (degrees)
+28 75.57771684011664
+26 75.16919793218835
+24 75.57771684011664
+22 75.94440982900036
+20 75.92435630617078
+18 76.24349379805865
+16 76.55403692301955
+14 76.97172315566992
+12 78.70320161255526
+10 82.44862671932546
+8 92.77046139860725
+6 93.55713245132188
+4 99.90951552593731
+2 101.32013761754939

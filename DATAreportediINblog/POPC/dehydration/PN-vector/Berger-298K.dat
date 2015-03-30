@@ -1,4 +1,11 @@
-# extracted from the plot in arXiv v2 of manuscript!
-
-57	77.36540
-7	81.62618
+# PN-vector angles calculated from data in
+#
+#http://dx.doi.org/10.5281/zenodo.13279
+#
+#with the script in
+#
+#https://github.com/NMRLipids/nmrlipids.blogspot.fi/blob/master/POPCberger/PNvectorANGLE.sh
+#
+# n_w/l   PN angle (degrees)
+57 77.3613
+7 81.6315
