@@ -31,6 +31,7 @@ all: $(TARGETS)
 # =========
 SCRIPT = scripts/plotDehydrationPNvector.gpl
 DATA_BERGER = ../DATAreportediINblog/POPC/dehydration/PN-vector/Berger-298K.dat
+DATA_BERGER_DLPC = ../DATAreportediINblog/DLPC/dehydration/PN-vector/Berger-300K.dat
 DATA_MACROG = ../DATAreportediINblog/POPC/dehydration/PN-vector/MacRog-310K.dat
 DATA_CHARMM36 = ../DATAreportediINblog/POPC/dehydration/PN-vector/CHARMM36-303K.dat
 DATA_GAFF = ../DATAreportediINblog/POPC/dehydration/PN-vector/GAFF-303K.dat
@@ -38,7 +39,7 @@ DATA_GAFF = ../DATAreportediINblog/POPC/dehydration/PN-vector/GAFF-303K.dat
 # Rule
 # ====
 $(dehydrationPN): $(SCRIPT) $(DATA_BERGER) $(DATA_MACROG) $(DATA_CHARMM36) $(DATA_GAFF)
-	gnuplot -e "OUTPUTFILE='$@'" -e "DATA_BERGER='$(DATA_BERGER)'" \
+	gnuplot -e "OUTPUTFILE='$@'" -e "DATA_BERGER='$(DATA_BERGER)'" -e "DATA_BERGER_DLPC='$(DATA_BERGER_DLPC)'" \
 	        -e "DATA_MACROG='$(DATA_MACROG)'" -e "DATA_CHARMM36='$(DATA_CHARMM36)'" \
 	        -e "DATA_GAFF='$(DATA_GAFF)'" \
 	        $(SCRIPT)
