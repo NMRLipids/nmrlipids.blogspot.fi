@@ -5,7 +5,7 @@ Due to size limitations of GitHub and binary format, the trajectory files of thi
 
 ### Organization
 
-This folder is divided according to the forcefield (charmm36, Berger, ...) and sub-divided according to the type of lipid (POPC, DLPC, DPPC, ...) and the condition (pure lipids, cholesterol content, ions dehydration).
+This folder is divided according to the forcefield (charmm36, Berger, ...) and sub-divided according to the type of lipid (POPC, DLPC, DPPC, ...) and the condition (pure lipids, cholesterol content, ions, dehydration).
 
 ### Documentation
 
