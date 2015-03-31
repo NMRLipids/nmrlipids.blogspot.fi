@@ -1,7 +1,7 @@
 ; Include forcefield parameters
-#include "./charmm36.ff/forcefield.itp"
-#include "POPC.itp"
-#include "./charmm36.ff/tip3p.itp"
+#include "../charmm36.ff/forcefield.itp"
+#include "../POPC.itp"
+#include "../charmm36.ff/tip3p.itp"
 
 [ system ]
 72 POPC in water
