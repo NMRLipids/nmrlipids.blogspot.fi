@@ -1,0 +1,1 @@
+/home/ollilas1/gromacs/gromacs402/bin/grompp -f TI.mdp -c init2_TI5.gro -p system.top -o topol402.tpr -v

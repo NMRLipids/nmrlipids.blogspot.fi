@@ -1,4 +1,4 @@
-set term pdfcairo enhanced rounded color dashed dashlength 1 size 10cm, 21cm #16.2cm
+set term pdfcairo enhanced rounded color dashed dashlength 1 size 10cm, 22cm #16.2cm
 set out "dehydration.pdf"
 
 set multiplot layout 7,1 tit " "
@@ -38,7 +38,7 @@ set ytics -2,0.02,2
 
 # Carbon: beta ####################################
 set label 100 "{/Symbol b}" at graph 0.05,0.85 font ",18"
-set key l at screen 0.02,0.07 Left reverse samplen 2 width 2 maxrows 4 font ",14"
+set key l at screen 0.02,0.07 Left reverse samplen 2 width 2 maxrows 5 font ",14"
 # offsets:
 d_MR=-0.04 # MacRog
 set label 141 sprintf("S_{CH} %+g",d_MR) # MacRog
@@ -48,23 +48,25 @@ d_CH=0.04 # CHARMM36
 set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
 d_GA=-0.04 # GAFF
 set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [60:0][-0.05:0.04]\
+plot [60:0][-0.06:0.03]\
     "./DOPC/dehydration/EXP-Ulrich1994.dat" u ($1):($2) every :::0::0 w lp ls 1 \
     t "@{DOPC}&{DMPC} 303K ^{_{^{2}}}H-NMR", \
     "./DMPC/dehydration/EXP-Dvinskikh2005b_COUPLINGS.dat" u ($1):($2) every :::0::0 w lp ls 2 \
     t "DMPC 314K ^{_{^{13}}}C-NMR", \
     "./POPC/dehydration/EXP-Bechinger1991.dat" u ((mPOPC*$1/100)/(mH2O*(1-$1/100))):($2) every :::0::0 w lp ls 3 \
     t "@{POPC}&{DMPC} 296K ^{_{^{2}}}H-NMR", \
-    x w p ls 1 ps 0 lc rgb "#FFFFFF" t " ", \
     "./POPC/dehydration/MACROG-310K_blogged-29-12-14.dat" u ($1):($2+d_MR) ev :::0::1 w lp ls 14 \
     t " POPC 310K MacRog", \
     "./POPC/dehydration/BERGER-298K.dat" u ($1):($2+d_Be) ev :::0::1 w lp ls 11 \
-    t " {&{PO}}{@{\"}}&{PC} 298K Berger", \
+    t " POPC 298K Berger", \
+    "./DLPC/dehydration/BERGER-300K.dat" u ($1):($2+d_Be) ev :::0::1 w lp ls 11 \
+    t " DLPC 300K Berger", \
     "./POPC/dehydration/CHARMM36-303K.dat" u ($1):($2+d_CH) ev :::0::1 w lp ls 12 \
-    t " &{PO}@{\"}&{PC} 303K CHARMM36", \
+    t " POPC 303K CHARMM36", \
     "./POPC/dehydration/GAFF-303K.dat" u ($1):($2+d_GA) ev :::0::1 w lp ls 13 \
     t " {&{PO}}{@{\"}}&{PC} &{30}@{\"}&{3K} GAFF"
 unset key
+#    x w p ls 1 ps 0 lc rgb "#FFFFFF" t " ", \
 
 # Carbon: alpha ###################################
 set label 100 "{/Symbol a}"
@@ -78,12 +80,13 @@ d_CH=0.01 # CHARMM36
 set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
 d_GA=-0.01 # GAFF
 set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [60:0][0.03:0.13] \
+plot [60:0][0.018:0.118] \
     "./DOPC/dehydration/EXP-Ulrich1994.dat" u ($1):($2) every :::1::1 w lp ls 1 t "Ulrich", \
     "./DMPC/dehydration/EXP-Dvinskikh2005b_COUPLINGS.dat" u ($1):($2) every :::1::1 w lp ls 2 t "Dvinskikh", \
     "./POPC/dehydration/EXP-Bechinger1991.dat" u ((mPOPC*$1/100)/(mH2O*(1-$1/100))):($2) every :::1::1 w lp ls 3 t "Bechinger", \
     "./POPC/dehydration/MACROG-310K_blogged-29-12-14.dat" u ($1):($2+d_MR) ev :::2::3 w lp ls 14 t "MacRog", \
     "./POPC/dehydration/BERGER-298K.dat" u ($1):($2+d_Be) ev :::2::3 w lp ls 11 t "Berger", \
+    "./DLPC/dehydration/BERGER-300K.dat" u ($1):($2+d_Be) ev :::2::3 w lp ls 11 t "Berger", \
     "./POPC/dehydration/CHARMM36-303K.dat" u ($1):($2+d_CH) ev :::2::3 w lp ls 12 t "CHARMM36", \
     "./POPC/dehydration/GAFF-303K.dat" u ($1):($2+d_GA) ev :::2::3 w lp ls 13 t "GAFF"
 
@@ -103,6 +106,7 @@ plot [60:0][-0.25:-0.07]\
     "./DMPC/dehydration/EXP-Dvinskikh2005b_COUPLINGS.dat" u ($1):($2) every :::2::2 w lp ls 2 t "Dvinskikh", \
     "./POPC/dehydration/MACROG-310K_blogged-29-12-14.dat" u ($1):($2+d_MR) ev :::4::5 w lp ls 14 t "MacRog", \
     "./POPC/dehydration/BERGER-298K.dat" u ($1):($2+d_Be) ev :::4::5 w lp ls 11 t "Berger", \
+    "./DLPC/dehydration/BERGER-300K.dat" u ($1):($2+d_Be) ev :::4::5 w lp ls 11 t "Berger", \
     "./POPC/dehydration/CHARMM36-303K.dat" u ($1):($2+d_CH) ev :::4::5 w lp ls 12 t "CHARMM36", \
     "./POPC/dehydration/GAFF-303K.dat" u ($1):($2+d_GA) ev :::4::5 w lp ls 13 t "GAFF"
 
@@ -118,10 +122,11 @@ d_CH=0.02 # CHARMM36
 set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
 d_GA=0.06 # GAFF
 set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [60:0][-0.25:-0.15] \
+plot [60:0][-0.213:-0.15] \
     "./DMPC/dehydration/EXP-Dvinskikh2005b_COUPLINGS.dat" u ($1):($2) every :::3::3 w lp ls 2 t "Dvinskikh", \
     "./POPC/dehydration/MACROG-310K_blogged-29-12-14.dat" u ($1):($2+d_MR) ev :::6::6 w lp ls 14 t "MacRog", \
     "./POPC/dehydration/BERGER-298K.dat" u ($1):($2+d_Be) ev :::6::6 w lp ls 11 t "Berger", \
+    "./DLPC/dehydration/BERGER-300K.dat" u ($1):($2+d_Be) ev :::6::6 w lp ls 11 t "Berger", \
     "./POPC/dehydration/CHARMM36-303K.dat" u ($1):($2+d_CH) ev :::6::6 w lp ls 12 t "CHARMM36", \
     "./POPC/dehydration/GAFF-303K.dat" u ($1):($2+d_GA) ev :::6::6 w lp ls 13 t "GAFF"
 
@@ -141,6 +146,7 @@ plot [60:0][-0.19:-0.11] \
     "./DMPC/dehydration/EXP-Dvinskikh2005b_COUPLINGS.dat" u ($1):($3) every :::4::4 w lp ls 2 t "Dvinskikh", \
     "./POPC/dehydration/MACROG-310K_blogged-29-12-14.dat" u ($1):($2+d_MR) ev :::7::7 w lp ls 14 t "MacRog", \
     "./POPC/dehydration/BERGER-298K.dat" u ($1):($2+d_Be) ev :::7::7 w lp ls 11 t "Berger", \
+    "./DLPC/dehydration/BERGER-300K.dat" u ($1):($2+d_Be) ev :::7::7 w lp ls 11 t "Berger", \
     "./POPC/dehydration/CHARMM36-303K.dat" u ($1):($2+d_CH) ev :::7::7 w lp ls 12 t "CHARMM36", \
     "./POPC/dehydration/GAFF-303K.dat" u ($1):($2+d_GA) ev :::7::7 w lp ls 13 t "GAFF"
 # S:
@@ -156,10 +162,11 @@ d_CH=0.03 # CHARMM36
 set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
 d_GA=-0.08 # GAFF
 set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [60:0][-0.04:0.01] \
+plot [60:0][-0.051:0.01] \
     "./DMPC/dehydration/EXP-Dvinskikh2005b_COUPLINGS.dat" u ($1):($2) every :::4::4 w lp ls 2 t "Dvinskikh", \
     "./POPC/dehydration/MACROG-310K_blogged-29-12-14.dat" u ($1):($2+d_MR) ev :::8::8 w lp ls 14 t "MacRog", \
     "./POPC/dehydration/BERGER-298K.dat" u ($1):($2+d_Be) ev :::8::8 w lp ls 11 t "Berger", \
+    "./DLPC/dehydration/BERGER-300K.dat" u ($1):($2+d_Be) ev :::8::8 w lp ls 11 t "Berger", \
     "./POPC/dehydration/CHARMM36-303K.dat" u ($1):($2+d_CH) ev :::8::8 w lp ls 12 t "CHARMM36", \
     "./POPC/dehydration/GAFF-303K.dat" u ($1):($2+d_GA) ev :::8::8 w lp ls 13 t "GAFF"
 unset multiplot
