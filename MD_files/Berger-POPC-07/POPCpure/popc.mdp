@@ -1,0 +1,43 @@
+;
+;	MD-simulation of 2:1:1 DSPC: SM: CHOL system 256 Lipids
+;	with Berensen
+;	9.5.2007 Samuli Ollila
+;	Input file
+;
+title               =  SDPC:SM:CHOL raft
+cpp                 =  /lib/cpp
+
+constraints         =  all-bonds
+integrator          =  md
+dt                  =  0.002	   ; ps !
+nsteps              =  30000000     ;
+nstcomm             =  1
+nstxout             =  5000      ;10 ps
+nstvout             =  5000     ;10 ps   
+nstfout             =  5000
+nstlog              =  250       ;0.5ps 
+nstenergy           =  250       ;0.5ps 
+nstlist             =  10
+ns_type             =  grid
+coulombtype         =  PME
+rlist               =  1.0
+rcoulomb            =  1.0
+rvdw                =  1.0
+optimize_fft        =  yes
+; nose-hoover temperature coupling is on in two groups
+Tcoupl              =  v-rescale
+tc-grps             =  PLA   SOL 
+tau_t               =  0.1  0.1 
+ref_t               =  298  298 
+; Energy monitoring
+energygrps	    =  PLA SOL 
+; Parinello-Rahman pressure coupling is on in two groups
+Pcoupl              =  Parrinello-Rahman
+Pcoupltype          =  semiisotropic
+tau_p               =  1.0          1.0    
+compressibility     =  4.5e-5     4.5e-5 
+ref_p               =  1.0          1.0 
+; Generate velocites is on at 300 K.
+gen_vel             =  no
+gen_temp            =  298.0
+gen_seed            =  173529

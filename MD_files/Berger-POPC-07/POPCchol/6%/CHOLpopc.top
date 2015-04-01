@@ -1,0 +1,16 @@
+#include "../../berger_POPC_07.ff/ffgmx.itp"
+#include "../../berger_POPC_07.ff/lipid.itp"
+
+#include "../../berger_POPC_07.ff/cholesterol_new.itp"
+#include "../../berger_POPC_07.ff/popc.itp"
+
+#include "spc.itp"
+
+[ system ]
+120 POPC + 8 CHOL
+
+[ molecules ]
+PLA     120
+CHOL    8
+SOL     7290
+
