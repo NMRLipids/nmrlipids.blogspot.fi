@@ -22,3 +22,4 @@
 *.out
 *.synctex.gz 
 acs-HGmodel_ACStemplate.bib
+../DLPCberger/dehydration/*waterPERpc/OrderParameters_*.dat
