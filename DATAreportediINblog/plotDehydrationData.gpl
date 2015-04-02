@@ -33,7 +33,7 @@ set style line 11 lt 2 pt 7 ps r lw w lc rgb "#D70039" # for Berger
 set style line 12 lt 1 pt 7 ps r lw w lc rgb "#0088BF" # for CHARMM36
 set style line 13 lt 2 pt 7 ps r lw w lc rgb "#FFD300" # for GAFF
 set style line 14 lt 1 pt 7 ps r lw w lc rgb "#00A368" # for MacRog
-set style line 15 lt 2 pt 11 ps r lw w lc rgb "#D70039" # for Berger DLPC
+set style line 15 lt 1 pt 11 ps r lw w lc rgb "#D70039" # for Berger DLPC
 
 set ytics -2,0.02,2
 
