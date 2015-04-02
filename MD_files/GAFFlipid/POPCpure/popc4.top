@@ -1,0 +1,11 @@
+#include "../gafflipid.ff/POPC.itp"
+#include "../gafflipid.ff/tip3pGAFF.itp"
+
+[ system ]
+128 POPC in water
+
+[molecules]
+POPC 126
+SOL 3948
+  
+
