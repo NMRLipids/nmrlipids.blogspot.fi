@@ -33,6 +33,9 @@ A README inside each relevant folder indicates:
 | Charmm36              | POPC  | 72   | Dehydration (7 w/l)                     | charmm36/POPCdehydration/       | [Zenodo](http://dx.doi.org/10.5281/zenodo.13945) |
 | Charmm36              | POPC  | 100  | Cholesterol (20%)                       | charmm36/POPCchol/              | [Zenodo](http://dx.doi.org/10.5281/zenodo.14067) |
 | Charmm36              | POPC  | 80   | Cholesterol (50%)                       | charmm36/POPCchol/              | [Zenodo](http://dx.doi.org/10.5281/zenodo.14068) |
+| GAFFlipid             | DPPC  | 72   | -                                       | GAFFlipid/DPPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.15550) |
+| GAFFlipid             | POPC  | 126  | -                                       | GAFFlipid/POPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.13791) |
+| GAFFlipid             | POPC  | 126  | Dehydration (7 w/l)                     | GAFFlipid/POPCdehydration/      | [Zenodo](http://dx.doi.org/10.5281/zenodo.13853) |
 | MacRog                | POPC  | 288  |  -                                      | MacRog/POPCpure/                | [Zenodo](http://dx.doi.org/10.5281/zenodo.13497) |
 | MacRog                | POPC  | 128  | Cholesterol (0, 10, 40, 50, 60 %)       | MacRog/POPCchol/                | [Zenodo](http://dx.doi.org/10.5281/zenodo.13877) |
 | MacRog                | POPC  | 288  | Dehydration (5, 10, 15, 20, 25, 50 w/l) | MacRog/POPCdehydration/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.13498) |

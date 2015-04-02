@@ -1,0 +1,11 @@
+#include "../gafflipid.ff/dppc.itp"
+#include "../gafflipid.ff/tip3pGAFF.itp"
+
+[ system ]
+72 DOPC in water
+
+[molecules]
+DPP 72
+SOL 2197
+  
+
