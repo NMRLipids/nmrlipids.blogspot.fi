@@ -1,0 +1,25 @@
+#include "../../berger_POPC_07.ff/ffgmx.itp"
+#include "../../berger_POPC_07.ff/lipid.itp"
+
+#include "../../berger_POPC_07.ff/cholesterol_new.itp"
+#include "../../berger_POPC_07.ff/popc.itp"
+
+#include "spc.itp"
+
+[ system ]
+2:1:1 sdpc:SM:CHOL system 256 lipids
+
+[ molecules ]
+PLA     20
+CHOL    12
+SOL     1746
+PLA     22
+CHOL    17
+SOL     1692
+PLA     20
+CHOL    7
+SOL     1684
+PLA     22
+CHOL    8
+SOL     1672
+

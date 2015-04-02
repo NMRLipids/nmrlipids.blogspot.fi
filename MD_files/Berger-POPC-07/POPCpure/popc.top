@@ -1,0 +1,13 @@
+#include "../berger_POPC_07.ff/ffgmx.itp"
+#include "../berger_POPC_07.ff/lipid.itp"
+
+#include "../berger_POPC_07.ff/popc.itp"
+
+#include "spc.itp"
+
+[ system ]
+128 POPC
+
+[ molecules ]
+PLA     128
+SOL    	7290

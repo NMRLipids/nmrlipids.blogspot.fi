@@ -10,7 +10,7 @@ Cholesterol parameters came from Lim *et al.* [2] and converted into Gromacs fil
 SPE calculation was done to assess the conversion.
 
 
-### How to run
+### How to run (Gromacs 4.5.X)
 
 20%:
 ```

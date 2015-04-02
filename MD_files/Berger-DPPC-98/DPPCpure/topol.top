@@ -1,0 +1,19 @@
+; Include forcefield parameters
+#include "ffgmx.itp"
+#include "lipid.itp"
+
+; Include chain topologies
+#include "dppc.itp"
+
+; include water
+#include "spc.itp"
+
+[ system ]
+; Name
+72 DPPC
+
+[ molecules ]
+; Compound        #mols
+DPPC               72
+SOL               2880
+
