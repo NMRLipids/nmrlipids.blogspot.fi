@@ -2,7 +2,7 @@
 
 72 molecules of DPPC at full hydration without ions.
 
-### How to run
+### How to run (Gromacs 4.6.6)
 
 ```
 grompp -f md.mdp -c md.gro -p topol.top -o md.tpr  >& grompp.log

@@ -2,7 +2,7 @@
 
 128 molecules of POPC at full hydration without ions.
 
-### How to run
+### How to run (Gromacs 4.5)
 
 ```
 grompp -f popc.mdp -c endCONF.gro -p popc.top -o md.tpr  >& grompp.log
