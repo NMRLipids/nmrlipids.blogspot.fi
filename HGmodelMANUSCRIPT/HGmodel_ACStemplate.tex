@@ -197,7 +197,7 @@ We show that this comparison can be used to judge the atomistic resolution struc
 thus allowing the usage of molecular dynamics simulations to interpret the structures of biomolecules in 
 biologically relevant conditions from NMR experiments. Further, we review previous experimental
 data for dehydrated lipid bilayers and cholesterol containing bilayers, and interpretate it with simulations.
-The interpretation reveals that the increased choline order parameters indicate P--N vector tilting more parallel to membrane,
+The interpretation suggest that the increased choline order parameters indicate P--N vector tilting more parallel to membrane,
 and that cholesterol induces only minor changes to the glycerol backbone structure.
 %None of the current models is not accurately enough to resolve the structure with experimental accuracy.
 %However, closer inspection of three best performing models (CHARMM36, GAFFlipid and MacRog) suggest
@@ -757,10 +757,13 @@ MacRog and GAFFlipid models (having the most realistic atomistic resolution stru
 (which is the most used lipid model). 
 To elucidate changes the simulation results are shifted to match better with experiments with full hydration.
 The magnitude of shifting is written in the y-axis label.
-The choline order parameters increase with dehydration in all
-models, in qualitative agreement with experiments. 
-The measured decrease in both g$_3$ and g$_2$ order parameters with dehydration is reproduced only in CHARMM36.
-\todo{This sentence must be rewritten after the up-to-date results for GAFFlipid are in the figure.}
+The choline order parameter increase with dehydration is seen in all
+models despite of some additional fluctuations. Thus the choline order parameter response to dehydration can be
+intepreted to be in qualitative agreement with experiments.
+The situation is significantly more complicated for the glycerol backbone segments 
+and none of the models can be interpreted to qualitatively agree with experiments
+for all the segmets.
+\todo{DONE}
 
 The qualitative agreement with experiments in all simulation models for the $\alpha$ and $\beta$ order parameters  
 as a function of hydration indicates that the structural response of the choline headgroup to dehydration is somewhat realistic
@@ -769,8 +772,13 @@ The most likely explanation is that the choline group
 orients more parallel to the membrane plane with dehydration due to restricted interlamellar space. 
 Indeed, the P--N (phoshate phosphorus to choline nitrogen) vector angle with membrane normal shows an increase for
 all models as a function of dehydration in Fig.~\ref{PNangle}.
+However, the amount of increase depends on the model. Especially the DLPC simulations with Berger model
+predict significantly stronger P--N vector tilt compared with the other models. The Berger model
+has also generally larger P--N vector angles and its choline order parameters are more off from
+experiments than other models. Thus the relatively modest tilting with dehydration
+predicted by MacRog, CHARMM36 and GAFFlipid is probably more realistic.
 
-It should be noted, however, that free energy landscape is not correct in the models which
+It should be also noted that the free energy landscape is not correct in the models which
 are not able to reproduce the experimental order parameters. Thus the energetical response
 to the dehydration may not be correct even though the order parameter response is qualitatively correct.
 This issue may have some influence on the dehydration energetic calculations made with the Berger model~\cite{eun09,schneck12}.
@@ -785,8 +793,9 @@ This issue may have some influence on the dehydration energetic calculations mad
 \end{figure}
 
 The response of the glycerol backbone to dehydration seems to be more subtle than that of the choline headgroup 
-as CHARMM36 is the only model that reproduces the decrease in g$_2$ and g$_3$ segments.
-\todo{This sentence must be rewritten after the up-to-date results for GAFFlipid are in the figure.}
+and none of the models reproduced the experimental results with the accuracy allowing
+the structural interpretation.
+\todo{DONE}
 
 
 \subsubsection{Cholesterol-containing phospholipid bilayer}
@@ -883,7 +892,7 @@ This approach can be extended from lipids also, for example, to membrane protein
 %structure.
 
 - The review of previous experimental results revealed that the 
-choline order parameters are increasing when the bilayer is dehydrated. Our simulations show that
+choline order parameters are increasing when the bilayer is dehydrated. Our simulations suggest that
 this can be explained by P--N vector tilting more parallel to the membrane. 
 These results strongly supports and complements the idea that the charge induced choline tilting and 
 partition can be measured by using the order parameter changes~\cite{ionpaper,scherer89}.
