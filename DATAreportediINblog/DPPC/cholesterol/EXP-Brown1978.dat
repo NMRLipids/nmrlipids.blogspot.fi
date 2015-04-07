@@ -1,0 +1,26 @@
+#DPPC order parameters as a function of cholesterol from 
+#Brown and Seelig Biochemistry, 1978, 17 (2), pp 381–384 (Fig. 2)
+#
+#Orderparameters calculated from quadroupole splittings (brownDATA*.dat)
+#by using QStoOP.sh
+#
+# t=58 celcius
+#
+#beta
+0.161224 -0.0347821
+25.1512 -0.029669
+50.161 -0.0191703
+
+#alpha
+0.119602 0.0460989
+6.40934 0.0450934
+12.6362 0.0455194
+25.0938 0.0452807
+50.1785 0.0457582
+
+#alpha
+0.119602 0.0460989
+6.40934 0.0450934
+12.6439 0.0434061
+25.1625 0.0422812
+50.077 0.0420083
