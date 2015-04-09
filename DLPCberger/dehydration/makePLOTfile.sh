@@ -9,6 +9,8 @@ echo '#
 #http://dx.doi.org/10.5281/zenodo.16289
 #http://dx.doi.org/10.5281/zenodo.16287
 #
+#20-80ns of the trajectories is used in the analysis
+#
 #Analysis done with scripts
 #*waterPERpc/downloadFILES.sh
 #make402tpr.sh
