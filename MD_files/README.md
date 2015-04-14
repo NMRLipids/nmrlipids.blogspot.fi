@@ -45,3 +45,4 @@ A README inside each relevant folder indicates:
 | Poger                 | DPPC  | 128  |  Simulation  2                          | Poger/POPCpure2/                | [Zenodo](http://dx.doi.org/10.5281/zenodo.14595) |
 | Slipids               | DPPC  | 128  | -                                       | Slipids/DPPCpure/               | [Zenodo](http://dx.doi.org/10.5281/zenodo.13287) |
 | Slipids               | POPC  | 128  | -                                       | Slipids/POPCpure/               | [Zenodo](http://dx.doi.org/10.5281/zenodo.13887) |
+| Kukol                 | POPC  | 512  | -                                       | Kukol/POPCpure/                 | [Zenodo](http://dx.doi.org/10.5281/zenodo.13393) |
