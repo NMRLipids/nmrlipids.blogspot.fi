@@ -323,29 +323,31 @@ S_{{\rm CH}}=\frac{1}{2}\langle 3 \cos^2 \theta-1 \rangle,
 \end{equation} 
 where the angle brackets denote an ensemble average over the sampled conformations, and $\theta$ is the angle between the C--H bond and the membrane normal.
 The absolute values of order parameters can be measured by detecting quadrupolar splitting with $^2$H NMR~\cite{seelig77c} or by detecting dipolar 
-splitting with $^{13}$C NMR~\cite{hong95a,gross97,dvinskikh05a,ferreira13}. The measurements are based on
+splitting with $^1$H-$^{13}$C NMR~\cite{hong95a,gross97,dvinskikh05a,ferreira13}. The measurements are based on
 different physical interactions and also the connection between order parameters and quadrupolar or dipolar splitting
 are different. The absolute values of order parameters from the measured quadrupolar splitting $\Delta \nu_Q$ ($^2$H NMR) are calculated using 
 the equation $|S_{{\rm CD}}|=\frac{4}{3} \frac{e^2qQ}{h} \Delta \nu_Q$, where the value for the static quadrupole
 splitting constant is estimated from various experiments to be 170~kHz leading to a numerical relation $|S_{{\rm CD}}|=0.00784 \times \Delta \nu_Q$~\cite{seelig77c}. 
-The absolute values of order parameters from the measured dipolar splitting $d_\mathrm{CH}$ ($^{13}$C NMR) are calculated using equation
+The absolute values of order parameters from the effective dipolar coupling $d_\mathrm{CH}$ ($^1$H-$^{13}$C NMR) are calculated using equation
 $|S_{{\rm CH}}|=\frac{4\pi\langle r_\mathrm{CH}^3 \rangle}{\hbar \mu_0 \gamma_h \gamma_c} d_\mathrm{CH}$, where
 values between 20.2--22.7 kHz are used for $\frac{4\pi\langle r_\mathrm{CH}^3 \rangle}{\hbar \mu_0 \gamma_h \gamma_c}$,
 depending on the original authors~\cite{hong95a,gross97,dvinskikh05a,ferreira13}.
+The effective dipolar coupling $d_\mathrm{CH}$ is related to the measured dipolar splitting $\Delta \nu_{CH}$ 
+through scaling factor which depends on the pulse sequence used in the $^1$H-$^{13}$C NMR experiment~\cite{hong95a,gross97,dvinskikh05a,ferreira13}.
 It is important to note that the order parameters measured with different techniques based on different physical interactions are in good agreement
 with each other (see Results and Discussion), indicating very high quantitative accuracy of the measurements.
 For a more detailed discussion see \url{http://nmrlipids.blogspot.fi/2014/02/accuracy-of-order-parameter-measurements.html}
 \todo{Citation to the blog will be added when available.}
 
-The absolute values of order parameters are accessible with both $^2$H NMR and $^{13}$C NMR techniques. 
-However, only $^{13}$C NMR techniques allow also the measurement of the sign of the order parameter~\cite{hong95a,hong95b,gross97}. 
+The absolute values of order parameters are accessible with both $^2$H NMR and $^1$H-$^{13}$C NMR techniques. 
+However, only $^1$H-$^{13}$C NMR techniques allow also the measurement of the sign of the order parameter~\cite{hong95a,hong95b,gross97}. 
 The measured sign is negative for almost all the carbons discussed in this work as only $\alpha$ is positive~\cite{hong95a,hong95b,gross97}. 
 For more detailed discussion about the sign measurements of the order parameters see \url{http://nmrlipids.blogspot.fi/2014/04/on-signs-of-order-parameters.html}
 \todo{Citation to the blog will be added when available.}
 
 For most CH$_2$ segments in fluid phosholipid bilayer the order parameters are equal for both hydrogens attached to the same carbon.
 However, in some cases (e.g. g$_1$, g$_3$ and  C$_2$ carbon in the \textit{sn}-2 chain) the order parameters are not equal and this 
-can be observed with both $^2$H NMR and $^{13}$C NMR techniques. In the present work we call the phenomena of unequal order parameters 
+can be observed with both $^2$H NMR and $^1$H-$^{13}$C NMR techniques. In the present work we call the phenomena of unequal order parameters 
 for hydrogens attached to the same carbon as {\it forking} to avoid confusion with dipolar and quadrupolar splitting in NMR terminology. 
 Forking has been studied in detail with $^2$H NMR techniques by deuterating the R or S position in CH$_2$ segment, and
 the studies show that the forking arises from differently sampled orientations of the two C--H bonds, not from two 
@@ -517,11 +519,11 @@ MacRog\cite{maciejewski14}     & POPC   & 128 & 0 & 0\% & 6400  & 310 & 400 & 20
 
 \subsection{Full hydration: Experimental order parameters for the glycerol backbone and headgroup}\label{experiments}
 The specific deuteration of $\alpha$-, $\beta$- and g$_3$- segments of DPPC has been successful, 
-allowing the absolute value order parameter measurements for these segments by $^2$H--NMR~\cite{gally75,brown77,brown78,akutsu81}.
+allowing the absolute value order parameter measurements for these segments by $^2$H NMR~\cite{gally75,brown77,brown78,akutsu81}.
 In addition, the absolute values of order parameters for all glycerol backbone and choline headgroup segments in egg yolk lecithin~\cite{hong95a},
 DMPC~\cite{hong95b,gross97,dvinskikh05a}, DOPC~\cite{warschawski05} and POPC~\cite{warschawski05,ferreira13}
-have been measured with several different implementations of $^{13}$C NMR experiments. In addition, the signs of order parameters in some systems
-are measured with $^{13}$C NMR techniques~\cite{hong95a,hong95b,gross97}. The experimental values of glycerol backbone 
+have been measured with several different implementations of $^1$H-$^{13}$C NMR experiments. In addition, the signs of order parameters in some systems
+are measured with $^1$H-$^{13}$C NMR techniques~\cite{hong95a,hong95b,gross97}. The experimental values of glycerol backbone 
 and choline order parameters from various publications~\cite{gally75,akutsu81,gross97,dvinskikh05a,ferreira13} with the signs measured in~\cite{hong95a,hong95b,gross97} are shown in Fig.~\ref{HGorderparameters}.
 \begin{figure}[]
 %  \centering
@@ -549,7 +551,7 @@ the ends of the bars mark the extreme values from the sets, and the dot marks th
 In general there is a good agreement between the order parameters measured with different experimental NMR techniques: Almost all the 
 reported values are within a variation of $\pm$0.02 (which is also the error estimate given by Gross et al.~\cite{gross97}) 
 for all fully hydrated PC bilayer, regardless of the variation in their acyl chain composition and temperature.
-Exceptions are the somewhat lower order parameters sometimes reported from measurements using $^{13}$C--NMR~\cite{hong95a,hong95b,warschawski05}.
+Exceptions are the somewhat lower order parameters sometimes reported from measurements using $^1$H-$^{13}$C NMR~\cite{hong95a,hong95b,warschawski05}.
 These experiments are not shown in Fig.~\ref{HGorderparameters} as the reported error bars are either relatively large~\cite{hong95a,hong95b}, 
 or the spectral resolution is quite low and the numerical lineshape simulations have not been used in the analysis~\cite{warschawski05}.
 Due to this end, it is highly likely that these reported lower order parameters are due to lower experimental 
@@ -708,7 +710,7 @@ for future studies.
 \subsection{Response to dehydration and cholesterol content}
 In addition to pure phosphatidylcholine bilayers at full hydration, the choline headgroup order parameters
 have been measured under various different conditions~\cite{gally75,brown77,brown78,akutsu81,altenbach84,scherer89,bechinger91,ulrich94,dvinskikh05b,castro08,kapla12,ferreira13}.
-Also the order parameters for the glycerol backbone have been measured with $^{13}$C NMR in dehydrated conditions~\cite{dvinskikh05b}, and as a function 
+Also the order parameters for the glycerol backbone have been measured with $^1$H-$^{13}$C NMR in dehydrated conditions~\cite{dvinskikh05b}, and as a function 
 of anesthetics~\cite{castro08} and glycolipids~\cite{kapla12} for DMPC, and as a function of cholesterol 
 concentration for POPC~\cite{ferreira13}. Due to the high resolution in the NMR (especially $^2$H NMR) experiments,
 even very small order parameter changes resulting from the varying conditions can be measured (see
@@ -740,7 +742,7 @@ Slight decrease for the glycerol backbone order parameters were observed with de
   \todo{DONE} \\
   \caption{\label{ordPhydr}
     The effect of dehydration on glycerol and choline order parameters in experiments.
-    The magnitudes of order parameters are measured for DMPC ($^{13}$C NMR) at 314~K~\cite{dvinskikh05b}, 
+    The magnitudes of order parameters are measured for DMPC ($^1$H-$^{13}$C NMR) at 314~K~\cite{dvinskikh05b}, 
     for POPC ($^2$H NMR) at 296~K~\cite{bechinger91} and for DOPC ($^2$H NMR) at 303~K~\cite{ulrich94}. 
     The signs are based on the measurements by Hong et al.~\cite{hong95a,hong95b} 
     and Gross et al.~\cite{gross97}.
@@ -817,14 +819,14 @@ interactions between the glycerol backbone and cholesterol~\cite{rog09}. However
 in the above mentioned studies, the glycerol backbone and choline headgroup behaviour
 as a function of cholesterol content has not been compared to experiments. 
 
-The choline headgroup and glycerol backbone order parameters for POPC measured by $^{13}$C NMR~\cite{ferreira13} and DPPC choline order parameters 
+The choline headgroup and glycerol backbone order parameters for POPC measured by $^1$H-$^{13}$C NMR~\cite{ferreira13} and DPPC choline order parameters 
 measured by $^{2}$H NMR~\cite{brown78} are shown in Fig.~\ref{ordPchol} as a function of cholesterol content.
 The agreement between different experimental results is again very good, showing only very modest changes in 
 the choline order parameters as a function of cholesterol content. It should be noted, however, that very small
 changes are measurable with high resolution $^{2}$H NMR experiments
 and cholesterol causes a measurable increase in the $\beta$ order parameter and a forking in the $\alpha$ order
 parameter~\cite{brown78}. These effects are, however, so small that they are barely visible in the scale used in Fig.~\ref{ordPchol}.
-Further, the effects of cholesterol on the glycerol backbone order parameters for POPC from $^{13}$C NMR experiment~\cite{ferreira13} 
+Further, the effects of cholesterol on the glycerol backbone order parameters for POPC from $^1$H-$^{13}$C NMR experiment~\cite{ferreira13} 
 are in good agreement with the results for the phosphatidylethanolamine (PE) measured by $^{2}$H NMR~\cite{ghosh82}.
 These results further support the idea that the glycerol backbone structural behaviour is independent of the
 headgroup composition~\cite{gally81} and that the headgroup stucture is independent of the acyl chain region content unless
