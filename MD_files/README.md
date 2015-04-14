@@ -46,3 +46,4 @@ A README inside each relevant folder indicates:
 | Slipids               | DPPC  | 128  | -                                       | Slipids/DPPCpure/               | [Zenodo](http://dx.doi.org/10.5281/zenodo.13287) |
 | Slipids               | POPC  | 128  | -                                       | Slipids/POPCpure/               | [Zenodo](http://dx.doi.org/10.5281/zenodo.13887) |
 | Kukol                 | POPC  | 512  | -                                       | Kukol/POPCpure/                 | [Zenodo](http://dx.doi.org/10.5281/zenodo.13393) |
+| Chiu                  | POPC  | 128  | -                                       | Chiu/POPCpure/                  | [Zenodo](http://dx.doi.org/10.5281/zenodo.15548) |
