@@ -1,0 +1,12 @@
+#include "./forcefield.ff/forcefield.itp"
+#include "DPPC.itp"
+#include "TIP3p.itp"
+
+[ system ]
+; Name
+DMPC - 128 lipids & 30 H2O/lipid
+
+[ molecules ]
+; Compound	#mols
+DPPC		128
+TIP3p		3840
