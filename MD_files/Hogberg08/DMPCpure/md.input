@@ -1,0 +1,42 @@
+#
+#
+Main_filename dmpc_NewMod
+Verbose_level 5
+Path_DB .
+Read_restart yes
+Dump_restart 50000
+Check_only no
+
+#
+Molecule_types 2
+dmpc_2008   98
+H2O       2700
+#
+Density 1.0
+Change_V no
+Nose_thermostat 303. 30.
+Barostate_NH 1. 1000.
+Barostate_anisotropic yes
+PBC rect
+COM_check yes 0
+#
+Time_step 2.
+Number_steps 5000000
+Double_timestep 8
+R_cutoff 13.
+R_short 5.
+Neighbour_list 10
+Electrostatics Ewald 2.6 8.
+#
+Startup xmol
+#
+Output 1
+Serie_avegare 20000
+Average_from 1
+Average_int no
+Dump_XMOL yes
+
+Trajectory bincrd 1000. 100 all
+#
+End
+

@@ -47,3 +47,5 @@ A README inside each relevant folder indicates:
 | Slipids               | POPC  | 128  | -                                       | Slipids/POPCpure/               | [Zenodo](http://dx.doi.org/10.5281/zenodo.13887) |
 | Kukol                 | POPC  | 512  | -                                       | Kukol/POPCpure/                 | [Zenodo](http://dx.doi.org/10.5281/zenodo.13393) |
 | Chiu                  | POPC  | 128  | -                                       | Chiu/POPCpure/                  | [Zenodo](http://dx.doi.org/10.5281/zenodo.15548) |
+| Hogberg08             | DMPC  | 98   | -                                       | Hogberg08/DMPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.16195) |
+| Hogberg08             | POPC  | 128  | -                                       | Hogberg08/POPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.16724) |

@@ -1,0 +1,51 @@
+#
+#  Example of input file for simulation of 128 lipids in 3840 water 
+#  
+#
+Main_filename 160181_pc_mem
+Verbose_level 5
+Path_DB    .
+Read_restart yes
+Dump_restart 80000
+Check_only no
+
+#
+Molecule_types 2
+160181_pc  128
+H2O       3840
+#
+Box  64.  64.  69.5
+#Density 1.
+Change_V no
+Change_T no
+#Velocity_scaling 303. 30.
+Nose_thermostat 303. 30.
+Barostate_NH 1. 1000.
+Barostate_anisotropic XY
+PBC rect
+COM_check yes 0
+#
+Time_step 2.5
+Number_steps 800000
+#Constrain  0.0001  1  
+Double_timestep 10
+R_cutoff 14.
+R_short 5.
+Neighbour_list 20
+Electrostatics Ewald 2.6 7.
+#Cut_forces 0.15
+#
+Startup xmol
+#
+Output 1
+Serie_avegare 40000
+Average_from 33
+Average_int yes
+Dump_XMOL yes
+Zero_CPU yes
+
+Trajectory bincrd  1000.  200  all
+#
+End
+
+
