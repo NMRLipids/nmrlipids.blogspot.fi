@@ -40,3 +40,5 @@ A README inside each relevant folder indicates:
 | MacRog                | POPC  | 128  | Cholesterol (0, 10, 40, 50, 60 %)       | MacRog/POPCchol/                | [Zenodo](http://dx.doi.org/10.5281/zenodo.13877) |
 | MacRog                | POPC  | 288  | Dehydration (5, 10, 15, 20, 25, 50 w/l) | MacRog/POPCdehydration/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.13498) |
 | MacRog                | POPC  | 288  | NaCl (100, 200, 300, 400 mM)            | MacRog/POPCnacl/                | [Zenodo](http://dx.doi.org/10.5281/zenodo.14976) |
+| Lipid14               | POPC  | 72   | -                                       | Lipid14/POPCpure/               | [Zenodo](http://dx.doi.org/10.5281/zenodo.12767) |
+
