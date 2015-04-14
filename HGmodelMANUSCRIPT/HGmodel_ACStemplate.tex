@@ -380,7 +380,7 @@ is not enough for the convergence of the order parameters, then the simulation m
 \subsection{Simulated systems}
 All simulations are ran with a standard setup for a planar lipid bilayer in zero tension and constant temperature
 with periodic boundary conditions in all directions by using the GROMACS software package~\cite{hess08} 
-(version numbers 4.5.X--4.6.X) or LAMMPS~\cite{plimpton95}.
+(version numbers 4.5.X--4.6.X), LAMMPS~\cite{plimpton95} or MDynaMix~\cite{Lyubartsev00}.
 The number of molecules, simulation temperatures and the length of simulations of all the simulated systems 
 are listed in Tables~\ref{systems},~\ref{systemsDEHYD} and~\ref{systemsCHOL}. Full simulation
 details are given in the Supplementary Information (SI) or in the original publications in case the
@@ -424,8 +424,8 @@ Slipids \cite{jambeck12}          & DPPC & 128 & 3840 & 323 & 150 & 100 & [\cite
 Slipids \cite{jambeck12b}          & POPC & 128 & 5120 & 303 & 200 & 150 & [\citenum{slipidsFILESpopc}]$^*$ & SI \\
 Kukol \cite{kukol09}          & POPC   & 512 & 20564 & 298 & 50 & 30  & [\citenum{kukolFILES}]$^*$ & SI \\
 Chiu \cite{chiu09}      & POPC  & 128 & 3552  & 298 & 56 & 50  & [\citenum{chiuFILES}]$^*$ & SI \\
-H\"ogberg08 \cite{rabinovich14}  & POPC   &  128 & 3840  & 303 & 100 & 80  & - & [\citenum{rabinovich14}]  \\
-H\"ogberg08 \cite{hogberg08}  & DMPC   &  98 & 3840  & 303 & 75 & 50 & - & [\citenum{hogberg08}] \\
+H\"ogberg08 \cite{rabinovich14}  & POPC   &  128 & 3840  & 303 & 100 & 80  &  [\citenum{hogbergPOPCfiles}]$^*$ & [\citenum{rabinovich14}]  \\
+H\"ogberg08 \cite{hogberg08}  & DMPC   &  98 & 3840  & 303 & 75 & 50 &  [\citenum{hogbergDMPCfiles}]$^*$ & [\citenum{hogberg08}] \\
 Ulmschneiders \cite{Ulmschneider09}    & POPC  & 128 & 3328 & 310 & 100 & 50 & [\citenum{ulmschneiderFILES}]$^*$ & SI \\
 Tj\"ornhammar14 \cite{tjornhammar14}   & DPPC  & 144 & 7056 & 323 & 200 & 100 & [\citenum{tjornhammarfiles}]$^*$ & [\citenum{tjornhammar14}] \\
 CHARMM36-UA~\cite{lee14}     & DPPC   & 72  & 2189  & 323 & 80 & 50 & ? & SI \\
@@ -1235,7 +1235,7 @@ with popc and cholesterol for the CHARMM36 All-Atom FF. \\
 {\it Jukka M{\"a}{\"a}tt{\"a}}  prepared and performed simulations with Berger and Slipids models and analyzed the results.\\
 {\it O. H. Samuli Ollila} Designed and managed the work. Ran and analyzed several simulations. Wrote the manuscript.  \\
 {\it Marius Retegan} Prepared and validated the GROMACS compatible parameter files for GAFFlipid and Lipid14 force fields.\\
-{\it Tomasz Rog}  \\
+{\it Tomasz Rog} Provided the topologies for the MacRog model and also the full hydration simulation data with this model. \\
 {\it Hubert Santuz} prepared and performed the cholesterol simulations with CHARMM36 and analyzed the results. \\
 {\it Joona Tynkkynen} prepared and performed the dehydration simulations with the MacRog FF.\\
 
