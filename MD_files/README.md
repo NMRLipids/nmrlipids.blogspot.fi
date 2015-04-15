@@ -40,3 +40,12 @@ A README inside each relevant folder indicates:
 | MacRog                | POPC  | 128  | Cholesterol (0, 10, 40, 50, 60 %)       | MacRog/POPCchol/                | [Zenodo](http://dx.doi.org/10.5281/zenodo.13877) |
 | MacRog                | POPC  | 288  | Dehydration (5, 10, 15, 20, 25, 50 w/l) | MacRog/POPCdehydration/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.13498) |
 | MacRog                | POPC  | 288  | NaCl (100, 200, 300, 400 mM)            | MacRog/POPCnacl/                | [Zenodo](http://dx.doi.org/10.5281/zenodo.14976) |
+| Lipid14               | POPC  | 72   | -                                       | Lipid14/POPCpure/               | [Zenodo](http://dx.doi.org/10.5281/zenodo.12767) |
+| Poger                 | DPPC  | 128  |  Simulation  1                          | Poger/POPCpure1/                | [Zenodo](http://dx.doi.org/10.5281/zenodo.14594) |
+| Poger                 | DPPC  | 128  |  Simulation  2                          | Poger/POPCpure2/                | [Zenodo](http://dx.doi.org/10.5281/zenodo.14595) |
+| Slipids               | DPPC  | 128  | -                                       | Slipids/DPPCpure/               | [Zenodo](http://dx.doi.org/10.5281/zenodo.13287) |
+| Slipids               | POPC  | 128  | -                                       | Slipids/POPCpure/               | [Zenodo](http://dx.doi.org/10.5281/zenodo.13887) |
+| Kukol                 | POPC  | 512  | -                                       | Kukol/POPCpure/                 | [Zenodo](http://dx.doi.org/10.5281/zenodo.13393) |
+| Chiu                  | POPC  | 128  | -                                       | Chiu/POPCpure/                  | [Zenodo](http://dx.doi.org/10.5281/zenodo.15548) |
+| Hogberg08             | DMPC  | 98   | -                                       | Hogberg08/DMPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.16195) |
+| Hogberg08             | POPC  | 128  | -                                       | Hogberg08/POPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.16724) |

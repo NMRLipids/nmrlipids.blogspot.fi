@@ -1,0 +1,21 @@
+; Topology for a DPPC bilayer with water
+; Parameters from Poger D, van Gunsteren WF & Mark AE (2009) J Comput Chem (DOI: 10.1002/jcc.21396)
+
+; Forcefield files
+#include "ffG53a6.itp"
+#include "./lipids_vdw.itp"
+
+; Parameter set for DPPC
+#include "./dppc.itp"
+
+; Include water topology
+#include "spc.itp"
+
+[ system ]
+; Name
+128 DPPC, hydrated
+
+[ molecules ]
+; name     number
+DPPC          128
+SOL          5841 

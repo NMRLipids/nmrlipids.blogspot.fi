@@ -1,0 +1,12 @@
+#include "ffG53a6.itp"
+
+#include "../kukol.ff/popcGromacs4_53a6.itp"
+#include "spc.itp"
+#include "ions.itp"
+
+[ system ]
+POPC bilayer
+
+[ molecules ]
+POPC                512
+SOL         	  20564

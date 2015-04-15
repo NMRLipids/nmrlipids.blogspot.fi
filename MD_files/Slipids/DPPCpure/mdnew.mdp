@@ -1,0 +1,50 @@
+integrator               = md			; MD integrator
+tinit                    = 0
+dt                       = 0.002		; 2 fs timestep
+nsteps                   = 125000000		; Number of steps
+pbc			 = xyz			; Periodic boundary conditions in xyz
+comm-mode                = linear			
+nstcomm                  = 1
+comm-grps                =              	; Remove COM for monolayers separately
+
+; OUTPUT CONTROL OPTIONS
+nstxout                  = 0			; Do not want .trr-files
+nstxtcout                = 1000			; But do want .xtc-files
+nstvout                  = 0			; No velocities in output
+nstfout                  = 0			; No forces in output
+nstlist			 = 10			; Update neighbor list between cut-offs
+ns_type			 = grid			; Fastest option
+nstenergy		 = 100			; .edr-file output
+energygrps		 = DPPC SOL		; Energy groups
+cutoff-scheme            = group
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+coulombtype              = pme			; Particle mesh Ewald, do not change
+rcoulomb                 = 1.0			; Real-space cut-off
+						; This is different from the paper but
+						; since PME is used this will only speed
+						; things up!
+rlist			 = 1.0			; Short-range neighbor list
+rlistlong		 = 1.6			; Long-range neighbor list 
+rvdw                     = 1.4			; Slightly different from the original papers but we used this in our recent work, 
+						; DOI: 10.1039/C3CP44472D. Unofficial tests have shown that the bilayers still 
+						; behaves properly when using as short values as 1.0, but please verify this 
+						; before using such a short cut-off. rlistlong can then be removed.
+DispCorr                 = EnerPres		; Dispersion corrections to both the potential and pressure
+table-extension          = 1
+fourierspacing		 = 0.12			; PME grid
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS 
+tcoupl                   = nose-hoover		; Thermostat, v-rescale is also fine
+tc-grps                  = DPPC SOL		; Couple lipids and SOL seperatly
+tau-t                    = 0.5 0.5		; Time constant for temperature coupling
+ref-t                    = 323 323		; Desired temperature (K)
+Pcoupl                   = parrinello-rahman	; Barostat
+Pcoupltype               = semiisotropic	; Pressure in xy and z couple separately
+ref-p                    = 1.013 1.013		; Desired pressure (bar)
+tau-p                    = 10.0 10.0		; Time constant for pressure coupling
+compressibility          = 4.5e-5 4.5e-5	; Same as for water
+
+; CONSTRAINTS
+constraints              = all-bonds		; Constrain all bonds
+constraint-algorithm     = Lincs		; With Lincs

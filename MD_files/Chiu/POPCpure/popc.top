@@ -1,0 +1,11 @@
+#include "../chiu.ff/ffG43A1-S3.itp"
+#include "../chiu.ff/lipids_43A1-S3.itp"
+#include "spce.itp"
+
+[ system ]
+128 POPC in water
+
+[molecules]
+POPC 128 
+SOL 3552  
+

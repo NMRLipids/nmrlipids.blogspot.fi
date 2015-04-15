@@ -1,0 +1,46 @@
+;
+title               =  128 POPC in SPCE water
+cpp                 =  /lib/cpp
+constraints         =  all-bonds
+integrator          =  md
+dt                  =  0.002
+;tinit               =  68000.0
+nsteps              =  25000000
+nstcomm             =  500
+nstxout             =  5000
+nstvout             =  5000
+;nstxtcout = 250
+;xtc_precision = 10000
+nstfout             =  0
+nstlog              =  10000
+nstenergy           =  1000
+nstlist             =  5 
+ns_type             =  grid
+coulombtype         = pme
+rlist               =  1.0
+rcoulomb            =  1.0
+rvdw                =  1.6
+;fourierspacing = 0.15
+;pme_order = 6
+;ewald_rtol = 1.E-5
+optimize_fft = yes
+	; Berendsen temperature coupling is on in two groups
+	;Tcoupl              =  berendsen
+	Tcoupl              =  v-rescale
+	tc-grps		    =  POPC 	SOL
+	tau_t               =  0.2 	0.2  
+	ref_t               =  298.0    298.0
+	; Energy monitoring
+	energygrps          =      
+	; Isotropic pressure coupling is now on
+	;Pcoupl              =  berendsen
+	Pcoupl              =  Parrinello-Rahman
+	Pcoupltype          =  semiisotropic   
+	tau_p               =  1.0 1.0 
+	compressibility     =  4.5e-5 4.5e-5 
+	ref_p               =  1.01325 1.01325 
+	; Generate velocites is off at 300 K.
+	gen_vel             =  no    
+	gen_temp            =  303.0 
+	gen_seed            =  482311
+	pbc = xyz

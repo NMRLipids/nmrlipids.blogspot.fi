@@ -1,0 +1,40 @@
+constraints            = all-bonds
+integrator             = md
+dt                     = 0.002
+tinit                  = 0
+nsteps                 = 50000000; 100 ns
+nstcomm                = 1
+nstlog                 = 5000
+nstenergy              = 500
+nstxout                = 500000
+nstvout                = 500000
+nstfout                = 0
+nstxtcout              = 25000
+xtc_precision          = 1000
+; neighbor list
+nstlist                = 5
+; long range interactions
+coulombtype            = PME
+rlist                  = 1.0
+rcoulomb               = 1.0
+rvdw                   = 1.4
+fourierspacing         = 0.12
+pme_order              = 4
+; Berendsen temperature coupling is on in two groups
+Tcoupl                 = v-rescale
+tau_t                  = 0.1	0.1   
+tc-grps                = DPPC	SOL
+ref_t                  = 323	323   
+; Energy monitoring
+energygrps             = DPPC SOL
+; pressure coupling is on
+Pcoupl                 = Parrinello-Rahman
+pcoupltype             = semiisotropic
+tau_p                  = 4.0    4.0     
+compressibility        = 4.5e-5 4.5e-5  
+ref_p                  = 1.0    1.0     
+;generate velocites is on at 300K
+gen_vel                = yes
+gen_temp               = 323.0
+gen_seed               = 6432
+
