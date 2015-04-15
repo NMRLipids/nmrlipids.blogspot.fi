@@ -498,14 +498,14 @@ Berger-POPC-07~\cite{ollila07a}&   POPC &128 & 0 &0\% & 7290  & 298  & 270 & 240
                                &   POPC &64 & 64 & 50\% & 10314  & 298  & 100 & 80 & [\citenum{bergerFILESpopc50chol}]$^*$ & [\citenum{ferreira13}] \\
                                &   POPC &50 & 78 & 61\% & 5782   & 298  & 100 & 80 & [\citenum{bergerFILESpopc60chol}]$^*$ & [\citenum{ferreira13}] \\
 CHARMM36\cite{klauda10,lim12}   & POPC   & 128& 0& 0\% & 5120  & 303  & 150 & 100 & [\citenum{charmm36files}]$^*$  & SI  \\
-                                & POPC   & 512& 0& 0\% & ?  & 298  & 170 & 100 & ?  & ?  \\
-                                & POPC   & ?& ?& 10\% & ?  & 298  & 170 & 100 & ?  & ?  \\
-                                & POPC   & ?& ?& 15\% & ?  & 298  & 170 & 100 & ?  & ?  \\
+                                & POPC   & 512& 0& 0\% & 23943  & 298  & 170 & 100 & [\citenum{charmmPOPC512files}]$^*$  & SI  \\
+                                & POPC   & 460& 52& 10\% & 23569  & 298  & 170 & 100 & [\citenum{charmmPOPC512files}]$^*$  & SI  \\
+                                & POPC   & 436& 76& 15\% & 23331  & 298  & 170 & 100 & [\citenum{charmmPOPC512files}]$^*$  & SI  \\
                                 & POPC   & 100 & 24 & 19\%  &  4960   & 303 & 200 & 100 & [\citenum{charmm36files20perCHOL}]$^*$ & SI \\
-                                & POPC   & ?& ?& 20\% & ?  & 298  & 170 & 100 & ?  & ?  \\
-                                & POPC   & ?& ?& 25\% & ?  & 298  & 170 & 100 & ?  & ?  \\
-                                & POPC   & ?& ?& 35\% & ?  & 298  & 170 & 100 & ?  & ?  \\
-                                & POPC   & 256& 256& 50\% & ?  & 298  & 170 & 100 & ?  & ?  \\
+                                & POPC   & 410& 102& 20\% & 20972  & 298  & 170 & 100 & [\citenum{charmmPOPC512files}]$^*$  & SI  \\
+                                & POPC   & 384& 128& 25\% & 22327  & 298  & 170 & 100 & [\citenum{charmmPOPC512files}]$^*$  & SI  \\
+                                & POPC   & 332& 180& 35\% & 21340  & 298  & 170 & 100 & [\citenum{charmmPOPC512files}]$^*$  & SI  \\
+                                & POPC   & 256& 256& 50\% & 20334  & 298  & 170 & 100 & [\citenum{charmmPOPC512files}]$^*$  & SI  \\
                                & POPC   & 80 & 80 &50\%  &  4496    & 303 & 200 & 100 & [\citenum{charmm36files50perCHOL}]$^*$ & SI \\
 MacRog\cite{maciejewski14}     & POPC   & 128 & 0 & 0\% & 6400  & 310 & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$ & SI \\ 
                           & POPC   & 114  & 14 & 11\% & 6400  & 310  & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$ & SI    \\
@@ -1033,7 +1033,7 @@ Pressure was semi-isotropically coupled to the atmospheric pressure with the Ber
 
 \subsubsection{CHARMM36}
 
-{\it DPPC}
+{\it DPPC and POPC with 72 lipids}
 \todo{Markus Miettinen, please describe how you made the files.}
 
 Timestep of 1~fs was used with the leapfrog integrator. Covalent bonds with hydrogens were constrained with LINCS algorithm~\cite{hess97,hess07}. 
@@ -1043,8 +1043,8 @@ The neighbour lists with a cut-off of 1.4~nm were updated every 5 steps. Tempera
 for lipids and water to 303~K using the velocity-rescale method~\cite{bussi07} with coupling constant of 0.2~ps.
 Pressure was semi-isotropically coupled to the atmospheric pressure with the Berendsen method~\cite{berendsen84}.
 
-{\it POPC}
-The starting structures for the pure POPC and DOPC simulations was taken from the Slipids~\cite{jambeck12b} website (http://people.su.se/$\sim$jjm/Stockholm\_Lipids/Downloads.html).
+{\it POPC with 128 lipids}
+The starting structures for the pure POPC simulations was taken from the Slipids~\cite{jambeck12b} website (http://people.su.se/$\sim$jjm/Stockholm\_Lipids/Downloads.html).
 The starting structures for mixed POPC/Cholesterol simulations were constructed with the CHARMM-GUI website~\cite{jo08}. 
 They contained 100 POPC/24 cholesterol molecules and 80 POPC/80 cholesterol molecules for
 the simulations of 20\% cholesterol and 50\% cholesterol respectively. The TIP3P water model~\cite{jorgensen83} was used to
@@ -1062,6 +1062,23 @@ at 1~bar using the Parrinello--Rahman algorithm~\cite{parrinello81} with a time 
 was updated every 10 steps. Lennard-Jones interactions were switched to zero
 between 0.8~nm and 1.2~nm. PME~\cite{darden93,essman95} with real space cut-off of 1.2~nm was used for electrostatics.
 
+{\it POPC with 512 lipids}
+POPC The starting structures for simulations were constructed with
+the CHARMM-GUI website~\cite{jo08}. 512 POPC lipids (256 per leafleat) were 
+used for the initial 0\% concentration and they were subsequently 
+substituted by cholesterol molecules to fulfil the desired concentration.
+The TIP3P~\cite{jorgensen83} water model was used to solvate the system. 
+The publicly available port of the CHARMM36 forcefield parameters (\url{mackerell.umaryland.edu/CHARMM_ff_params.html}) 
+was used for both POPC and cholesterol. 
+Simulations were performed for 170 ns and the last 100 ns was used for the calculations.
+Timestep of 1 fs was used with the leapfrog integrator. Covalent bonds with hydrogen 
+were constrained with LINCS algorithm. Coordinates were written every 10 ps.
+PME with real space cut-off of 1.2 nm was used for electrostatics. Lennard-Jones 
+interactions were switched to zero between 0.8 nm and 1.2 nm. The neighbour lists with a
+cut-off of 1.2 nm were updated every 5 steps. Temperature was coupled separately for cholesterol, lipids
+and water to 298 K using the velocity-rescale method with coupling constant of 0.2 ps.
+Pressure was semi-isotropically coupled to the atmospheric pressure with the Berendsen
+method.
 
 \subsubsection{MacRog}
 The lipid force field parameters were obtained from the developers and they correspond to the published DPPC parameters~\cite{maciejewski14} with the inclusion of the 
