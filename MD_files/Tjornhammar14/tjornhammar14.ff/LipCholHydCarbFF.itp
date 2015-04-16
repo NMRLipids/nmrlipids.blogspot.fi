@@ -1,0 +1,1288 @@
+;; THE BELOW FORCEFIELD HAS BEEN DERIVED
+;; BY RICHARD TJOERNHAMMAR (richardt@kth.se)
+;; IT CONTAINS N-ALKANES, WATER AND TWO PHOSPHOLIPIDS
+;; IT IS BASED ON THE FORMER BERGER FORCEFIELD
+;;                 ::::NOTE::::
+;; THE ELCTROSTATICS SHOULD BE CALCULATED WITH PME (1.0NM) 
+;; THE VDW INTERACTIONS USING A CUTOFF (2.0NM)  WITH
+;; DISPERSION CORRECTIONS TO BOTH PRESSURE AND ENERGY
+
+;; PUT CHARGE DEFININTIONS HERE
+#define qCN  0.10
+#define qNT  0.50
+#define qCA  0
+#define qCB  0.30
+#define qOA -0.50
+#define qP   1.35
+#define qOO -0.80
+#define qCC  0.15
+#define qCD  0.50
+#define qCE  0.30  
+#define qOE -0.40  
+#define qCO  0.75  
+#define qOC -0.75    
+; n-alkane chain carbons in lipid
+#define qqC  0
+#define qpC  0
+#define qmC  0
+
+[ defaults ]
+; nbfunc	comb-rule	gen-pairs	fudgeLJ	fudgeQQ
+  1		1		no		 1.0	 1.0
+#define _FF_GROMACS
+#define _FF_GROMACS1
+
+[ atomtypes ]
+#ifdef HEAVY_H
+ OWT4     9.95140       0.000       A   3.07980e-03   3.06010e-06
+   HW     4.03200       0.000       A   0.00000E+00   0.00000E+00
+#else
+ OWT4    15.99940       0.000       A   3.07980e-03   3.06010e-06
+   HW     1.00800       0.000       A   0.00000E+00   0.00000E+00
+#endif
+   IW     0             0.000       D   0.0           0.0
+  LNL    14.00670       0.000       A   0.33514E-02   0.39494E-05
+  LO2    15.99940       0.000       A   0.23621E-02   0.15887E-05
+  LOS    15.99940       0.000       A   0.20733E-02   0.15114E-05
+   LP    30.97380       0.000       A   0.91516E-02   0.25045E-04
+   LC    12.01100       0.000       A   0.48722E-02   0.13549E-04
+ LC3N    15.03500       0.000       A   0.93477E-02   0.36047E-04
+  LC2    14.02700       0.000       A   0.70067E-02   0.24845E-04
+ LC2O    14.02700       0.000       A   0.59496E-02   0.17914E-04
+ LCH1    13.01900       0.000       A   0.47792E-02   0.16818e-04
+ LCH2    14.02700       0.000       A   0.71473E-02   0.32350E-04
+ LCH3    15.03500       0.000       A   0.99903E-02   0.29125E-04
+  CH1    13.01900       0.000       A   0.12496E-01   0.71747E-04
+  CH2    14.02700       0.000       A   0.90975E-02   0.35333E-04
+  CH3    15.03500       0.000       A   0.88765E-02   0.26150E-04
+ CR51    13.01900       0.000       A   0.55132E-02   0.15120E-04
+ CR61    13.01900       0.000       A   0.55132E-02   0.15120E-04
+   CB    12.01100       0.000       A   0.23402E-02   0.33740E-05
+    H     1.00800       0.000       A   0.00000E+00   0.00000E+00
+   HO     1.00800       0.000       A   0.00000E+00   0.00000E+00
+   OA    15.99940       0.000       A   0.22617E-02   0.15062E-05
+
+[ pairtypes ]
+  ; i    j func         cs6          cs12
+  LO2  LNL    1 3.51700e-04    3.13110e-07
+  LOS  LNL    1 3.29499e-04    3.05397e-07
+  LOS  LO2    1 2.76624e-04    1.93696e-07
+  LOS  LOS    1 0.25916e-03   0.188925E-06
+   LP  LNL    1 6.92264e-04    1.24319e-06
+   LP  LO2    1 5.81176e-04    7.88481e-07
+   LP  LOS    1 5.44490e-04    7.69060e-07
+   LC  LNL    1 5.05110e-04    9.14385e-07
+   LC  LO2    1 4.24055e-04    5.79942e-07
+   LC  LOS    1 3.97286e-04    5.65657e-07
+   LC   LP    1 8.34682e-04    2.30263e-06
+ LCH1  LNL    1 4.58962e-04    8.64537e-07
+ LCH1  LO2    1 3.85312e-04    5.48326e-07
+ LCH1  LOS    1 3.60989e-04    5.34820e-07
+ LCH1   LP    1 7.58424e-04    2.17710e-06
+ LCH1   LC    1 5.53383e-04    1.60130e-06
+ LCH2  LNL    1 5.54027e-04    1.18105e-06
+ LCH2  LO2    1 4.65122e-04    7.49072e-07
+ LCH2  LOS    1 4.35762e-04    7.30621e-07
+ LCH2   LP    1 9.15517e-04    2.97415e-06
+ LCH2   LC    1 6.68006e-04    2.18754e-06
+ LCH2 LCH1    1 6.06976e-04    2.06829e-06
+ LCH3  LNL    1 6.78542e-04    1.44648e-06
+ LCH3  LO2    1 5.69656e-04    9.17422e-07
+ LCH3  LOS    1 5.33697e-04    8.94825e-07
+ LCH3   LP    1 1.12128e-03    3.64258e-06
+ LCH3   LC    1 8.18137e-04    2.67918e-06
+ LCH3 LCH1    1 7.43391e-04    2.53312e-06
+ LC3N  LNL    1 6.99641e-04    1.49145e-06
+ LC3N  LO2    1 5.87370e-04    9.45944e-07
+ LC3N  LOS    1 5.50292e-04    9.22644e-07
+ LC3N   LP    1 1.15614e-03    3.75582e-06
+ LC3N   LC    1 8.43577e-04    2.76247e-06
+ LC3N LCH1    1 7.66506e-04    2.61188e-06
+ LC3N LCH2    1 9.25274e-04    3.56810e-06
+ LC3N LCH3    1 1.13322e-03    4.37001e-06
+  LC2  LNL    1 6.05731e-04    1.23821e-06
+  LC2  LO2    1 5.08529e-04    7.85327e-07
+  LC2  LOS    1 4.76429e-04    7.65983e-07
+  LC2   LP    1 1.00096e-03    3.11810e-06
+  LC2   LC    1 7.30347e-04    2.29342e-06
+  LC2 LCH1    1 6.63621e-04    2.16839e-06
+  LC2 LCH2    1 8.01078e-04    2.96225e-06
+  LC2 LCH3    1 9.81116e-04    3.62800e-06
+  LC2 LC3N    1 1.01162e-03    3.74080e-06
+ LC2O  LNL    1 5.58171e-04    1.05141e-06
+ LC2O  LO2    1 4.68601e-04    6.66849e-07
+ LC2O  LOS    1 4.39021e-04    6.50423e-07
+ LC2O   LP    1 9.22364e-04    2.64769e-06
+ LC2O   LC    1 6.73002e-04    1.94742e-06
+ LC2O LCH1    1 6.11515e-04    1.84126e-06
+ LC2O LCH2    1 7.38180e-04    2.51535e-06
+ LC2O LCH3    1 9.04082e-04    3.08067e-06
+ LC2O LC3N    1 9.32194e-04    3.17644e-06
+ LC2O  LC2    1 8.07069e-04    2.63710e-06
+   OA   OA    1 0.22617E-02   0.74158E-06
+   OA  CH1    1 0.25662E-02   0.16646E-05
+   OA  CH2    1 0.32685E-02   0.22969E-05
+   OA  CH3    1 0.39368E-02   0.29910E-05
+   OA CR51    1 0.35361E-02   0.24854E-05
+   OA CR61    1 0.35361E-02   0.24854E-05
+   OA   CB    1 0.23006E-02   0.15818E-05
+   OA    H    1 0.00000E+00   0.00000E+00
+   OA   HO    1 0.00000E+00   0.00000E+00
+   OA   HW    1 0.00000E+00   0.00000E+00
+  CH1  CH1    1 0.29117E-02   0.37364E-05
+  CH1  CH2    1 0.37086E-02   0.51559E-05
+  CH1  CH3    1 0.44668E-02   0.67137E-05
+  CH1 CR51    1 0.40121E-02   0.55789E-05
+  CH1 CR61    1 0.40121E-02   0.55789E-05
+  CH1   CB    1 0.26103E-02   0.35506E-05
+  CH1    H    1 0.00000E+00   0.00000E+00
+  CH1   HO    1 0.00000E+00   0.00000E+00
+  CH1   HW    1 0.00000E+00   0.00000E+00
+  CH2  CH2    1 0.47236E-02   0.71145E-05
+  CH2  CH3    1 0.56894E-02   0.92642E-05
+  CH2 CR51    1 0.51102E-02   0.76983E-05
+  CH2 CR61    1 0.51102E-02   0.76983E-05
+  CH2   CB    1 0.33248E-02   0.48994E-05
+  CH2    H    1 0.00000E+00   0.00000E+00
+  CH2   HO    1 0.00000E+00   0.00000E+00
+  CH2   HW    1 0.00000E+00   0.00000E+00
+  CH3  CH3    1 0.68526E-02   0.12063E-04
+  CH3 CR51    1 0.61550E-02   0.10024E-04
+  CH3 CR61    1 0.61550E-02   0.10024E-04
+  CH3   CB    1 0.40046E-02   0.63798E-05
+  CH3    H    1 0.00000E+00   0.00000E+00
+  CH3   HO    1 0.00000E+00   0.00000E+00
+  CH3   HW    1 0.00000E+00   0.00000E+00
+ CR51 CR51    1 0.55284E-02   0.83300E-05
+ CR51 CR61    1 0.55284E-02   0.83300E-05
+ CR51   CB    1 0.35969E-02   0.53015E-05
+ CR51    H    1 0.00000E+00   0.00000E+00
+ CR51   HO    1 0.00000E+00   0.00000E+00
+ CR51   HW    1 0.00000E+00   0.00000E+00
+ CR61 CR61    1 0.55284E-02   0.83300E-05
+ CR61   CB    1 0.35969E-02   0.53015E-05
+ CR61    H    1 0.00000E+00   0.00000E+00
+ CR61   HO    1 0.00000E+00   0.00000E+00
+ CR61   HW    1 0.00000E+00   0.00000E+00
+   CB   CB    1 0.23402E-02   0.33740E-05
+   CB    H    1 0.00000E+00   0.00000E+00
+   CB   HO    1 0.00000E+00   0.00000E+00
+   CB   HW    1 0.00000E+00   0.00000E+00
+    H    H    1 0.00000E+00   0.00000E+00
+    H   HO    1 0.00000E+00   0.00000E+00
+    H   HW    1 0.00000E+00   0.00000E+00
+   HO   HO    1 0.00000E+00   0.00000E+00
+   HO   HW    1 0.00000E+00   0.00000E+00
+   HW   HW    1 0.00000E+00   0.00000E+00
+
+
+[ bondtypes ]
+  ; i    j func        b0          kb
+  LNL LC3N    1    0.147      376560.  
+  LNL  LC2    1    0.147      376560.  
+  LC2 LC2O    1    0.153      334720.  
+  LOS LC2O    1    0.143      251040.  
+  LOS   LP    1    0.161      251040. 
+  LO2   LP    1    0.148      376560.
+  LO2   LC    1    0.123      502080.  
+ LCH1 LC2O    1    0.153      334720.  
+  LOS LCH1    1    0.143      251040. 
+  LOS   LC    1    0.136      251040.   
+   LC LCH2    1    0.153      334720.  
+ LCH2 LCH3    1    0.1540     137330
+ LCH2 LCH2    1    0.1540     137330
+ LCH3 LCH3    1    0.1540     137330
+ LCH1 LCH2    1    0.153      334720.
+ LCH1 LCH1    1    0.139      418400.
+  CH1   OA    1   0.14300     334720.   ; CHOLESTEROL SECTION
+  CH1  CH1    1   0.15300     334720.
+  CH2  CH1    1   0.15300     334720.
+  CH2  CH2    1   0.15300     334720.
+  CH3  CH1    1   0.15300     334720.
+  CH3  CH2    1   0.15300     334720.
+ CR61  CH2    1   0.13900     418400.
+ CR61 CR61    1   0.13900     418400.
+   CB   OA    1   0.13600     376560.
+   CB  CH2    1   0.15300     334720.
+   CB  CH3    1   0.15300     334720.
+   CB CR51    1   0.13300     418400.
+   CB CR61    1   0.13900     418400.
+   CB   CB    1   0.13900     418400.
+   HO   OA    1   0.10000     313800.
+ CR51 CR51    1   0.13300     418400.
+
+
+
+[ angletypes ]
+  ; i    j    k func       th0         cth
+ LC3N  LNL LC3N    1   109.5       460.24
+ LC3N  LNL  LC2    1   109.5       460.24
+  LNL  LC2 LC2O    1   109.5       460.24
+  LC2 LC2O  LOS    1   109.5       460.24
+ LC2O  LOS   LP    1   120.0       397.48
+  LOS   LP  LO2    1   109.6       397.48   
+  LOS   LP  LOS    1   103.0       397.48
+  LO2   LP  LO2    1   120.0       585.76
+  LOS LC2O LCH1    1   111.0       460.24
+ LC2O LCH1  LOS    1   109.5       460.24
+ LC2O LCH1 LC2O    1   109.5       460.24
+ LCH1  LOS   LC    1   120.0       418.40
+ LC2O  LOS   LC    1   120.0       418.40
+  LOS   LC  LO2    1   124.0       502.08
+  LOS   LC LCH2    1   115.0       502.08
+  LO2   LC LCH2    1   121.0       502.08
+   LC LCH2 LCH2    1   111.0       460.24
+ LCH2 LCH2 LCH2    1   111.0       530.00  
+ LCH2 LCH2 LCH3    1   111.0       530.00 
+ LCH2 LCH2 LCH1    1   111.0       460.24
+ LCH1 LCH2 LCH1    1   111.0       460.24
+ LCH2 LCH1 LCH1    1   120.0       502.08
+   HO   OA  CH1    1   109.500     397.480 ; CHOLESTEROL SECTION
+   HO   OA  CH2    1   109.500     397.480
+   HO   OA   CB    1   109.500     397.480
+  CH1  CH1   OA    1   109.500     460.240
+  CH1  CH1  CH1    1   111.000     460.240
+  CH2  CH1   OA    1   109.500     460.240
+  CH2  CH1  CH1    1   111.000     460.240
+  CH2  CH1  CH2    1   109.500     460.240
+  CH3  CH1   OA    1   111.000     460.240
+  CH3  CH1  CH1    1   111.000     460.240
+  CH3  CH1  CH2    1   111.000     460.240
+  CH3  CH1  CH3    1   111.000     460.240
+  CH1  CH2   OA    1   109.500     460.240
+  CH1  CH2  CH1    1   109.500     460.240
+  CH2  CH2   OA    1   109.500     460.240
+  CH2  CH2  CH1    1   111.000     460.240
+  CH2  CH2  CH2    1   111.000     460.240
+  CH3  CH2   OA    1   111.000     460.240
+  CH3  CH2  CH2    1   111.000     460.240
+  CH3  CH2  CH1    1   111.000     460.240
+   CB  CH2  CH1    1   111.000     460.240
+   CB  CH2  CH2    1   111.000     460.240
+ CR61 CR61 CR61    1   120.000     418.400
+   CB CR61  CH2    1   126.000     418.400
+   CB CR61 CR61    1   120.000     418.400
+   CB CR61   CB    1   120.000     418.400
+ CR51   CB  CH2    1   126.000     418.400
+ CR61   CB   OA    1   120.000     418.400
+ CR61   CB  CH2    1   120.000     418.400
+ CR61   CB  CH3    1   120.000     418.400
+ CR61   CB CR61    1   120.000     418.400
+   CB   CB  CH2    1   126.000     418.400
+   CB   CB  CH3    1   120.000     418.400
+   CB   CB CR51    1   108.000     418.400
+   CB   CB CR61    1   120.000     418.400
+   CB   CB   CB    1   120.000     418.400
+   CB CR51 CR51    1   108.000     418.400
+
+[ dihedraltypes ]
+  ; j    k func      phi0          cp   mult
+  LNL  LC2    1     0.0        3.7656      3
+  LC2 LC2O    1     0.0        5.8576      3 
+  LOS LC2O    1     0.0        3.7656      3
+  LOS   LP    1     0.0        1.046       3 
+ LCH1 LC2O    1     0.0        2.092       2
+  LOS LCH1    1     0.0        3.7656      3
+  LOS   LC    1   180.0       16.736       2
+   LC LCH2    1     0.0        0.4184      6
+ LCH2 LCH2    1     0.0        5.8576      3 
+  CH1   OA    2    35.264     334.720        ; CHOLESTEROL
+  CH1  CH1    2    35.264     334.720
+  CH2  CH1    2    35.264     334.720
+  CH3  CH1    2    35.264     334.720
+ CR51 CR51    2     0.000     167.360
+ CR61 CR61    2     0.000     167.360
+   CB   OA    2     0.000     167.360
+   CB  CH2    2     0.000     167.360
+   CB  CH3    2     0.000     167.360
+   CB CR51    2     0.000     167.360
+   CB CR61    2     0.000     167.360
+   CB   CB    2     0.000     167.360
+  CH1   OA    2    35.264     334.720
+  CH1   OA    1     0.000       1.255      3
+  CH1  CH1    1     0.000       5.858      3
+  CH2   OA    1     0.000       1.255      3
+  CH2  CH1    1     0.000       5.858      3
+  CH2  CH2    1     0.000       5.858      3
+   CB   OA    1   180.000       7.113      2
+   CB  CH2    1     0.000       0.418      6
+   CB CR61    1   180.000      41.840      2
+
+
+[ dihedraltypes ]
+  LCH2 LCH2  3    7.64500   15.95500    1.10000  -24.70000    0.00000    0.00000
+   CH2  CH2  3    7.64500   15.95500    1.10000  -24.70000    0.00000    0.00000
+
+[moleculetype]
+;Name       nrexcl
+DPPC          3
+
+[atoms]
+;   nr    type   resnr  residu    atom    cgnr       charge   
+     1     LC3N       1    DPPC     CN1       1	  qCN 
+     2	   LC3N       1    DPPC     CN2       1   qCN
+     3     LC3N       1    DPPC     CN3       1   qCN
+     4      LNL       1    DPPC     NTM       1   qNT 
+     5      LC2       1    DPPC      CA       2   qCA 
+     6     LC2O       1    DPPC      CB       2   qCB 
+     7      LOS       1    DPPC      OA       2   qOA  
+     8       LP       1    DPPC       P       3   qP
+     9      LO2       1    DPPC      OB       3   qOO
+    10      LO2       1    DPPC      OC       3   qOO
+    11      LOS       1    DPPC      OD       3   qOA 
+    12     LC2O       1    DPPC      CC       4	  qCC   
+    13     LCH1       1    DPPC      CD       4   qCD    
+    14      LOS       1    DPPC      OE       4   qOE    
+    15       LC       1    DPPC     C1A       5   qCO   
+    16      LO2       1    DPPC      OF       5   qOC     
+    17     LCH2       1    DPPC     C1B       6   qqC
+    18     LCH2       1    DPPC     C1C       7   0   
+    19     LCH2       1    DPPC     C1D       8   0
+    20     LCH2       1    DPPC     C1E       9   0
+    21     LCH2       1    DPPC     C1F      10   0
+    22     LCH2       1    DPPC     C1G      11   0
+    23     LCH2       1    DPPC     C1H      12   0
+    24     LCH2       1    DPPC     C1I      13   0
+    25     LCH2       1    DPPC     C1J      14   0
+    26     LCH2       1    DPPC     C1K      15   0
+    27     LCH2       1    DPPC     C1L      16   0
+    28     LCH2       1    DPPC     C1M      17   0
+    29     LCH2       1    DPPC     C1N      18   0
+    30     LCH2       1    DPPC     C1O      19   qpC
+    31     LCH3       1    DPPC     C1P      20   qmC
+    32     LC2O       1    DPPC      CE      21   qCE  
+    33      LOS       1    DPPC      OG      21   qOE   
+    34       LC       1    DPPC     C2A      21   qCO 
+    35      LO2       1    DPPC      OH      21	  qOC 
+    36     LCH2       1    DPPC     C2B      22   qqC
+    37     LCH2       1    DPPC     C2C      23   0  
+    38     LCH2       1    DPPC     C2D      24   0
+    39     LCH2       1    DPPC     C2E      25   0
+    40     LCH2       1    DPPC     C2F      26   0
+    41     LCH2       1    DPPC     C2G      27   0
+    42     LCH2       1    DPPC     C2H      28   0
+    43     LCH2       1    DPPC     C2I      29   0
+    44     LCH2       1    DPPC     C2J      30   0
+    45     LCH2       1    DPPC     C2K      31   0
+    46     LCH2       1    DPPC     C2L      32   0
+    47     LCH2       1    DPPC     C2M      33   0
+    48     LCH2       1    DPPC     C2N      34   0
+    49     LCH2       1    DPPC     C2O      35   qpC
+    50     LCH3       1    DPPC     C2P      36   qmC
+
+
+[bonds]
+;  ai    aj funct        
+    1    4     1   
+    2    4     1 
+    3    4     1  
+    4    5     1
+    5    6     1  
+    6    7     1   
+    7    8     1    
+    8    9     1 
+    8   10     1     
+    8   11     1   
+   11   12     1   
+   12   13     1    
+   13   14     1  
+   13   32     1    
+   14   15     1    
+   15   16     1
+   15   17     1  
+   17   18     1    
+   18   19     1   
+   19   20     1
+   20   21     1   
+   21   22     1    
+   22   23     1    
+   23   24     1
+   24   25     1    
+   25   26     1   
+   26   27     1    
+   27   28     1
+   28   29     1   
+   29   30     1   
+   30   31     1   
+   32   33     1
+   33   34     1  
+   34   35     1   
+   34   36     1
+   36   37     1
+   37   38     1  
+   38   39     1
+   39   40     1    
+   40   41     1      
+   41   42     1    
+   42   43     1
+   43   44     1    
+   44   45     1   
+   45   46     1   
+   46   47     1
+   47   48     1    
+   48   49     1    
+   49   50     1    
+
+
+[ pairs ]
+;  ai    aj   funct           c0           c1           c2           c3
+    1     6     1
+    2     6     1
+    3     6     1
+    4     7     1
+    5     8     1
+    6     9     1
+    6    10     1
+    6    11     1
+    7    12     1
+    8    13     1
+    9    12     1
+   10    12     1
+   11    14     1
+   11    32     1
+   12    15     1
+   12    33     1
+   13    16     1
+   13    17     1
+   13    34     1
+   14    18     1
+   14    33     1
+   15    19     1
+   15    32     1
+   16    18     1
+   32    35     1
+   32    36     1
+   33    37     1
+   34    38     1
+   35    37     1
+
+[ angles ]
+;  ai    aj    ak funct           c0           c1         
+    1    4    2    1    
+    1    4    3    1     
+    1    4    5    1   
+    2    4    3    1     
+    2    4    5    1      
+    3    4    5    1    
+    4    5    6    1    
+    5    6    7    1    
+    6    7    8    1     
+    7    8    9    1    
+    7    8   10    1    
+    7    8   11    1     
+    8   11   12    1     
+    9    8   10    1  
+    9    8   11    1    
+   10    8   11    1    
+   11   12   13    1   
+   12   13   14    1                  
+   12   13   32    1                     
+   13   14   15    1     
+   13   32   33    1                    
+   14   13   32    1                       
+   14   15   16    1    
+   14   15   17    1                     
+   15   17   18    1    
+   16   15   17    1    
+   17   18   19    1
+   18   19   20    1    
+   19   20   21    1    
+   20   21   22    1
+   21   22   23    1    
+   22   23   24    1   
+   23   24   25    1
+   24   25   26    1    
+   25   26   27    1    
+   26   27   28    1
+   27   28   29    1
+   28   29   30    1
+   29   30   31    1
+   32   33   34    1    
+   33   34   35    1    
+   33   34   36    1   
+   34   36   37    1
+   35   34   36    1    
+   36   37   38    1
+   37   38   39    1   
+   38   39   40    1    
+   39   40   41    1
+   40   41   42    1    
+   41   42   43    1    
+   42   43   44    1
+   43   44   45    1    
+   44   45   46    1     
+   45   46   47    1     
+   46   47   48    1     
+   47   48   49    1     
+   48   49   50    1     
+
+[ dihedrals ]
+;  ai   aj   ak   al funct    (func=2 is improper dihedral)
+   13   14   32   12   2        35.264        334.72    
+   15   14   17   16   2         0.0          167.36
+   34   33   36   35   2         0.0          167.36
+
+[ dihedrals ]
+;  ai    aj    ak    al funct    (func=1 is normal dihedrals, 3=R-B)
+    1    4    5    6   1
+    4    5    6    7   1   
+    5    6    7    8   1     
+    6    7    8   11   1 
+    7    8   11   12   1      
+    8   11   12   13   1 
+   11   12   13   32   1   0.000      5.92       3            
+   12   13   14   15   1 
+   12   13   32   33   1   0.000      5.92       3           
+   13   14   15   17   1    
+   14   15   17   18   1
+   15   17   18   19   1
+   14   13   32   33   1
+   13   32   33   34   1 
+   32   33   34   36   1
+   33   34   36   37   1    
+   34   36   37   38   1
+   17   18   19   20   3    
+   18   19   20   21   3
+   19   20   21   22   3    
+   20   21   22   23   3
+   21   22   23   24   3    
+   22   23   24   25   3
+   23   24   25   26   3    
+   24   25   26   27   3
+   25   26   27   28   3    
+   26   27   28   29   3
+   27   28   29   30   3
+   28   29   30   31   3
+   36   37   38   39   3
+   37   38   39   40   3
+   38   39   40   41   3    
+   39   40   41   42   3
+   40   41   42   43   3    
+   41   42   43   44   3
+   42   43   44   45   3    
+   43   44   45   46   3
+   44   45   46   47   3
+   45   46   47   48   3
+   46   47   48   49   3
+   47   48   49   50   3
+
+
+[moleculetype]
+;Name       nrexcl
+DMPC          3
+
+[atoms]
+;   nr    type   resnr  residu    atom    cgnr       charge   
+     1     LC3N       1    DMPC     CN1       1	  qCN 
+     2	   LC3N       1    DMPC     CN2       1   qCN
+     3     LC3N       1    DMPC     CN3       1   qCN 
+     4      LNL       1    DMPC     NTM       1   qNT 
+     5      LC2       1    DMPC      CA       2   qCA 
+     6     LC2O       1    DMPC      CB       2   qCB 
+     7      LOS       1    DMPC      OA       2   qOA  
+     8       LP       1    DMPC       P       3   qP
+     9      LO2       1    DMPC      OB       3   qOO
+    10      LO2       1    DMPC      OC       3   qOO
+    11      LOS       1    DMPC      OD       3   qOA 
+    12     LC2O       1    DMPC      CC       4	  qCC   
+    13     LCH1       1    DMPC      CD       4   qCD 
+    14      LOS       1    DMPC      OE       4   qOE 
+    15       LC       1    DMPC     C1A       5   qCO
+    16      LO2       1    DMPC      OF       5   qOC  
+    17     LCH2       1    DMPC     C1B       6   qqC
+    18     LCH2       1    DMPC     C1C       7   0
+    19     LCH2       1    DMPC     C1D       8   0
+    20     LCH2       1    DMPC     C1E       9   0
+    21     LCH2       1    DMPC     C1F      10   0
+    22     LCH2       1    DMPC     C1G      11   0
+    23     LCH2       1    DMPC     C1H      12   0
+    24     LCH2       1    DMPC     C1I      13   0
+    25     LCH2       1    DMPC     C1J      14   0
+    26     LCH2       1    DMPC     C1K      15   0
+    27     LCH2       1    DMPC     C1L      16   0
+    28     LCH2       1    DMPC     C1M      17   qpC
+    29     LCH3       1    DMPC     C1N      18   qmC
+    30     LC2O       1    DMPC      CE      21   qCE 
+    31      LOS       1    DMPC      OG      21   qOE 
+    32       LC       1    DMPC     C2A      21   qCO
+    33      LO2       1    DMPC      OH      21	  qOC
+    34     LCH2       1    DMPC     C2B      22   qqC
+    35     LCH2       1    DMPC     C2C      23   0
+    36     LCH2       1    DMPC     C2D      24   0
+    37     LCH2       1    DMPC     C2E      25   0
+    38     LCH2       1    DMPC     C2F      26   0
+    39     LCH2       1    DMPC     C2G      27   0
+    40     LCH2       1    DMPC     C2H      28   0
+    41     LCH2       1    DMPC     C2I      29   0
+    42     LCH2       1    DMPC     C2J      30   0
+    43     LCH2       1    DMPC     C2K      31   0
+    44     LCH2       1    DMPC     C2L      32   0
+    45     LCH2       1    DMPC     C2M      33   qpC
+    46     LCH3       1    DMPC     C2N      34   qmC
+
+
+[bonds]
+;  ai    aj funct        
+    1    4     1   
+    2    4     1 
+    3    4     1  
+    4    5     1
+    5    6     1  
+    6    7     1   
+    7    8     1    
+    8    9     1 
+    8   10     1     
+    8   11     1   
+   11   12     1   
+   12   13     1    
+   13   14     1  
+   13   30     1    
+   14   15     1    
+   15   16     1
+   15   17     1  
+   17   18     1    
+   18   19     1   
+   19   20     1
+   20   21     1   
+   21   22     1    
+   22   23     1    
+   23   24     1
+   24   25     1    
+   25   26     1   
+   26   27     1    
+   27   28     1
+   28   29     1   
+   30   31     1
+   31   32     1  
+   32   33     1
+   32   34     1
+   34   35     1
+   35   36     1  
+   36   37     1
+   37   38     1    
+   38   39     1      
+   39   40     1    
+   40   41     1
+   41   42     1    
+   42   43     1   
+   43   44     1   
+   44   45     1
+   45   46     1
+
+[ pairs ]
+;  ai    aj   funct           c0           c1           c2           c3
+    1     6     1
+    2     6     1
+    3     6     1
+    4     7     1
+    5     8     1
+    6     9     1
+    6    10     1
+    6    11     1
+    7    12     1
+    8    13     1
+    9    12     1
+   10    12     1
+   11    14     1
+   11    30     1
+   12    15     1
+   12    31     1
+   13    16     1
+   13    17     1
+   13    32     1
+   14    18     1
+   14    31     1
+   15    19     1
+   15    30     1
+   16    18     1
+   30    33     1
+   30    34     1
+   31    35     1
+   32    36     1
+   33    35     1
+
+[ angles ]
+;  ai    aj    ak funct           c0           c1         
+    1    4    2    1    
+    1    4    3    1     
+    1    4    5    1   
+    2    4    3    1     
+    2    4    5    1      
+    3    4    5    1    
+    4    5    6    1    
+    5    6    7    1    
+    6    7    8    1     
+    7    8    9    1    
+    7    8   10    1    
+    7    8   11    1     
+    8   11   12    1     
+    9    8   10    1  
+    9    8   11    1    
+   10    8   11    1    
+   11   12   13    1   
+   12   13   14    1                  
+   12   13   30    1                     
+   13   14   15    1     
+   13   30   31    1                    
+   14   13   30    1                       
+   14   15   16    1    
+   14   15   17    1                     
+   15   17   18    1    
+   16   15   17    1    
+   17   18   19    1
+   18   19   20    1    
+   19   20   21    1    
+   20   21   22    1
+   21   22   23    1    
+   22   23   24    1   
+   23   24   25    1
+   24   25   26    1    
+   25   26   27    1    
+   26   27   28    1
+   27   28   29    1
+   30   31   32    1    
+   31   32   33    1    
+   31   32   34    1   
+   32   34   35    1
+   33   32   34    1    
+   34   35   36    1
+   35   36   37    1   
+   36   37   38    1    
+   37   38   39    1
+   38   39   40    1    
+   39   40   41    1    
+   40   41   42    1
+   41   42   43    1    
+   42   43   44    1     
+   43   44   45    1     
+   44   45   46    1  
+
+[ dihedrals ]
+;  ai   aj   ak   al funct    (func=2 is improper dihedral)
+   13   14   30   12   2        35.264        334.72    
+   15   14   17   16   2         0.0          167.36
+   32   31   34   33   2         0.0          167.36
+
+[ dihedrals ]
+;  ai    aj    ak    al funct    (func=1 is normal dihedrals, 3=R-B)
+    1    4    5    6   1
+    4    5    6    7   1   
+    5    6    7    8   1     
+    6    7    8   11   1 
+    7    8   11   12   1      
+    8   11   12   13   1 
+   11   12   13   32   1   0.000      5.92       3    
+   12   13   14   15   1 
+   12   13   32   33   1   0.000      5.92       3     
+   13   14   15   17   1    
+   14   15   17   18   1
+   15   17   18   19   1
+   14   13   30   31   1 
+   13   30   31   32   1 
+   30   31   32   34   1
+   31   32   34   35   1    
+   32   34   35   36   1
+   17   18   19   20   3    
+   18   19   20   21   3
+   19   20   21   22   3    
+   20   21   22   23   3
+   21   22   23   24   3    
+   22   23   24   25   3
+   23   24   25   26   3    
+   24   25   26   27   3
+   25   26   27   28   3    
+   26   27   28   29   3
+   34   35   36   37   3
+   35   36   37   38   3
+   36   37   38   39   3    
+   37   38   39   40   3
+   38   39   40   41   3    
+   39   40   41   42   3
+   40   41   42   43   3    
+   41   42   43   44   3
+   42   43   44   45   3
+   43   44   45   46   3
+
+
+
+
+;; HIGHER N-ALKANES
+
+[ moleculetype ]
+; Name  nrexcl
+PEND     3
+
+[ atoms ]
+; nr    type    resnr   residu  atom    cgnr    charge
+1       LCH3    1      PEND     C1      1       0.0
+2       LCH2    1      PEND     C2      2       0.0
+3       LCH2    1      PEND     C3      3       0.0
+4       LCH2    1      PEND     C4      4       0.0
+5       LCH2    1      PEND     C5      5       0.0
+6       LCH2    1      PEND     C6      6       0.0
+7       LCH2    1      PEND     C7      7       0.0
+8       LCH2    1      PEND     C8      8       0.0
+9       LCH2    1      PEND     C9      9       0.0
+10      LCH2    1      PEND    C10     10       0.0
+11      LCH2    1      PEND    C11     11       0.0
+12      LCH2    1      PEND    C12     12       0.0
+13      LCH2    1      PEND    C13     13       0.0
+14      LCH2    1      PEND    C14     14       0.0
+15      LCH3    1      PEND    C15     15       0.0
+
+
+[ bonds ]
+; i     j
+1       2
+2       3
+3       4
+4       5
+5       6
+6       7
+7       8
+8       9
+9       10
+10      11
+11      12
+12      13
+13      14
+14      15
+
+[ angles ]
+; i     j       k
+1       2       3
+2       3       4
+3       4       5
+4       5       6
+5       6       7
+6       7       8
+7       8       9
+8       9       10
+9       10      11
+10      11      12
+11      12      13
+12      13      14
+13      14      15
+
+
+[ dihedrals ]
+; i     j       k       l       type
+1       2       3       4       3
+2       3       4       5       3
+3       4       5       6       3
+4       5       6       7       3
+5       6       7       8       3
+6       7       8       9       3
+7       8       9       10      3
+8       9       10      11      3
+9       10      11      12      3
+10      11      12      13      3
+11      12      13      14      3
+12      13      14      15      3
+
+
+[ moleculetype ]
+; Name  nrexcl
+TETD     3
+
+[ atoms ]
+; nr    type    resnr   residu  atom    cgnr    charge
+1       LCH3    1      TETD     C1      1       0.0
+2       LCH2    1      TETD     C2      2       0.0
+3       LCH2    1      TETD     C3      3       0.0
+4       LCH2    1      TETD     C4      4       0.0
+5       LCH2    1      TETD     C5      5       0.0
+6       LCH2    1      TETD     C6      6       0.0
+7       LCH2    1      TETD     C7      7       0.0
+8       LCH2    1      TETD     C8      8       0.0
+9       LCH2    1      TETD     C9      9       0.0
+10      LCH2    1      TETD    C10     10       0.0
+11      LCH2    1      TETD    C11     11       0.0
+12      LCH2    1      TETD    C12     12       0.0
+13      LCH2    1      TETD    C13     13       0.0
+14      LCH3    1      TETD    C14     14       0.0
+
+
+[ bonds ]
+; i     j
+1       2
+2       3
+3       4
+4       5
+5       6
+6       7
+7       8
+8       9
+9       10
+10      11
+11      12
+12      13
+13      14
+
+
+[ angles ]
+; i     j       k
+1       2       3
+2       3       4
+3       4       5
+4       5       6
+5       6       7
+6       7       8
+7       8       9
+8       9       10
+9       10      11
+10      11      12
+11      12      13
+12      13      14
+
+
+[ dihedrals ]
+; i     j       k       l       type
+1       2       3       4       3
+2       3       4       5       3
+3       4       5       6       3
+4       5       6       7       3
+5       6       7       8       3
+6       7       8       9       3
+7       8       9       10      3
+8       9       10      11      3
+9       10      11      12      3
+10      11      12      13      3
+11      12      13      14      3
+
+[ moleculetype ]
+; Name  nrexcl
+TRID     3
+
+[ atoms ]
+; nr    type    resnr   residu  atom    cgnr    charge
+1       LCH3    1      TRID     C1      1       0.0
+2       LCH2    1      TRID     C2      2       0.0
+3       LCH2    1      TRID     C3      3       0.0
+4       LCH2    1      TRID     C4      4       0.0
+5       LCH2    1      TRID     C5      5       0.0
+6       LCH2    1      TRID     C6      6       0.0
+7       LCH2    1      TRID     C7      7       0.0
+8       LCH2    1      TRID     C8      8       0.0
+9       LCH2    1      TRID     C9      9       0.0
+10      LCH2    1      TRID    C10     10       0.0
+11      LCH2    1      TRID    C11     11       0.0
+12      LCH2    1      TRID    C12     12       0.0
+13      LCH3    1      TRID    C13     13       0.0
+
+
+[ bonds ]
+; i     j
+1       2
+2       3
+3       4
+4       5
+5       6
+6       7
+7       8
+8       9
+9       10
+10      11
+11      12
+12      13
+
+
+[ angles ]
+; i     j       k
+1       2       3
+2       3       4
+3       4       5
+4       5       6
+5       6       7
+6       7       8
+7       8       9
+8       9       10
+9       10      11
+10      11      12
+11      12      13
+
+
+[ dihedrals ]
+; i     j       k       l       type
+1       2       3       4       3
+2       3       4       5       3
+3       4       5       6       3
+4       5       6       7       3
+5       6       7       8       3
+6       7       8       9       3
+7       8       9       10      3
+8       9       10      11      3
+9       10      11      12      3
+10      11      12      13      3
+
+[ moleculetype ]
+; Name  nrexcl
+DODE     3
+
+[ atoms ]
+; nr    type    resnr   residu  atom    cgnr    charge
+1       LCH3    1      DODE     C1      1       0.0
+2       LCH2    1      DODE     C2      2       0.0
+3       LCH2    1      DODE     C3      3       0.0
+4       LCH2    1      DODE     C4      4       0.0
+5       LCH2    1      DODE     C5      5       0.0
+6       LCH2    1      DODE     C6      6       0.0
+7       LCH2    1      DODE     C7      7       0.0
+8       LCH2    1      DODE     C8      8       0.0
+9       LCH2    1      DODE     C9      9       0.0
+10      LCH2    1      DODE    C10     10       0.0
+11      LCH2    1      DODE    C11     11       0.0
+12      LCH3    1      DODE    C12     12       0.0
+
+
+[ bonds ]
+; i     j
+1       2
+2       3
+3       4
+4       5
+5       6
+6       7
+7       8
+8       9
+9       10
+10      11
+11      12
+
+
+[ angles ]
+; i     j       k
+1       2       3
+2       3       4
+3       4       5
+4       5       6
+5       6       7
+6       7       8
+7       8       9
+8       9       10
+9       10      11
+10      11      12
+
+
+[ dihedrals ]
+; i     j       k       l       type
+1       2       3       4       3
+2       3       4       5       3
+3       4       5       6       3
+4       5       6       7       3
+5       6       7       8       3
+6       7       8       9       3
+7       8       9       10      3
+8       9       10      11      3
+9       10      11      12      3
+
+
+[ moleculetype ]
+; Name  nrexcl
+UNED     3
+
+[ atoms ]
+; nr    type    resnr   residu  atom    cgnr    charge
+1       LCH3    1      UNED     C1      1       0.0
+2       LCH2    1      UNED     C2      2       0.0
+3       LCH2    1      UNED     C3      3       0.0
+4       LCH2    1      UNED     C4      4       0.0
+5       LCH2    1      UNED     C5      5       0.0
+6       LCH2    1      UNED     C6      6       0.0
+7       LCH2    1      UNED     C7      7       0.0
+8       LCH2    1      UNED     C8      8       0.0
+9       LCH2    1      UNED     C9      9       0.0
+10      LCH2    1      UNED    C10     10       0.0
+11      LCH3    1      UNED    C11     11       0.0
+
+
+[ bonds ]
+; i     j
+1       2
+2       3
+3       4
+4       5
+5       6
+6       7
+7       8
+8       9
+9       10
+10      11
+
+
+[ angles ]
+; i     j       k
+1       2       3
+2       3       4
+3       4       5
+4       5       6
+5       6       7
+6       7       8
+7       8       9
+8       9       10
+9       10      11
+
+
+[ dihedrals ]
+; i     j       k       l       type
+1       2       3       4       3
+2       3       4       5       3
+3       4       5       6       3
+4       5       6       7       3
+5       6       7       8       3
+6       7       8       9       3
+7       8       9       10      3
+8       9       10      11      3
+
+
+
+[ moleculetype ]
+; Name  nrexcl
+DECA     3
+
+[ atoms ]
+; nr    type    resnr   residu  atom    cgnr    charge
+1       LCH3    1      DECA     C1      1       0.0
+2       LCH2    1      DECA     C2      2       0.0
+3       LCH2    1      DECA     C3      3       0.0
+4       LCH2    1      DECA     C4      4       0.0
+5       LCH2    1      DECA     C5      5       0.0
+6       LCH2    1      DECA     C6      6       0.0
+7       LCH2    1      DECA     C7      7       0.0
+8       LCH2    1      DECA     C8      8       0.0
+9       LCH2    1      DECA     C9      9       0.0
+10      LCH3    1      DECA    C10     10       0.0
+
+
+[ bonds ]
+; i     j
+1       2
+2       3
+3       4
+4       5
+5       6
+6       7
+7       8
+8       9
+9       10
+
+
+[ angles ]
+; i     j       k
+1       2       3
+2       3       4
+3       4       5
+4       5       6
+5       6       7
+6       7       8
+7       8       9
+8       9       10
+
+
+[ dihedrals ]
+; i     j       k       l       type
+1       2       3       4       3
+2       3       4       5       3
+3       4       5       6       3
+4       5       6       7       3
+5       6       7       8       3
+6       7       8       9       3
+7       8       9       10      3
+
+
+;; LOWER N-ALKANES
+
+[ moleculetype ]
+; Name	nrexcl
+HEP	3
+
+[ atoms ] 
+; nr    type   	resnr  	residu  atom  	cgnr	charge
+1	LCH3	1       HEP	C1	1	0.0
+2	LCH2	1	HEP	C2	2	0.0
+3	LCH2	1	HEP	C3	3	0.0
+4	LCH2	1	HEP	C4	4	0.0
+5	LCH2	1	HEP	C5	5	0.0
+6	LCH2	1	HEP	C6	6	0.0
+7       LCH3    1       HEP     C7      7       0.0
+
+[ bonds ]
+; i	j
+1	2
+2	3
+3	4
+4	5
+5	6
+6       7
+
+[ angles ]
+; i	j	k
+1	2	3
+2	3	4
+3	4	5
+4	5	6
+5       6       7
+
+[ dihedrals ]
+; i	j	k 	l	type
+1 	2	3	4	3
+2	3	4	5	3
+3	4	5	6	3
+4       5       6       7       3
+
+[ moleculetype ]
+; Name  nrexcl
+ETHA     3
+
+[ atoms ]
+; nr    type    resnr   residu  atom    cgnr    charge
+1       LCH3    1       ETHA     C1      1       0.0
+2       LCH3    1       ETHA     C2      2       0.0
+
+[ bonds ]
+; i     j
+1       2
+
+
+
+; BELOW IS THE TIP4P2005 FROM CATALAN.QUIM.UCM.ES
+[moleculetype]
+; name nrexcl
+water  1
+
+[atoms]
+; nr type resnr residu atom cgnr charge
+1     OWT4 1     water  OW1  1     0        15.994 
+2     HW   1     water  HW2  1     0.5564    1.008
+3     HW   1     water  HW3  1     0.5564    1.008
+4     IW   1     water  MW4  1    -1.1128    0.0
+
+[constraints]
+;i j funct doh  dhh
+1       2       1       0.09572
+1       3       1       0.09572
+2       3       1       0.15139
+
+[exclusions]
+1       2       3       4
+2       1       3       4
+3       1       2       4
+4       1       2       3
+
+; The position of the dummy is computed as follows:
+;
+;		O
+;  	      
+;	    	D
+;	  
+;	H		H
+;
+; const = distance (OD) / [ cos (angle(DOH)) 	* distance (OH) ]
+;	  0.01546 nm	/ [ cos (52.26 deg)	* 0.09572 nm	]
+
+; Dummy pos x4 = x1 + a*(x2-x1) + b*(x3-x1)
+
+[dummies3]
+; Dummy from			funct	a		b
+4       1       2       3       1       0.13193828      0.13193828 
+
