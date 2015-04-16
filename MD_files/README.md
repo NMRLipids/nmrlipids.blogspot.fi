@@ -27,6 +27,13 @@ A README inside each relevant folder indicates:
 | Berger-POPC-07/Höltje | POPC  |  84  | Cholesterol (34%)                       | Berger-POPC-O7/POPCchol/        | [Zenodo](http://dx.doi.org/10.5281/zenodo.13283) |
 | Berger-POPC-07/Höltje | POPC  |  64  | Cholesterol (50%)                       | Berger-POPC-O7/POPCchol/        | [Zenodo](http://dx.doi.org/10.5281/zenodo.13285) |
 | Berger-POPC-07/Höltje | POPC  |  50  | Cholesterol (61%)                       | Berger-POPC-O7/POPCchol/        | [Zenodo](http://dx.doi.org/10.5281/zenodo.13286) |
+| Berger-DLPC-13        | DLPC  | 72   | Dehydration (4 w/l)                     | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16295) |
+| Berger-DLPC-13        | DLPC  | 72   | Dehydration (8 w/l)                     | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16294) |
+| Berger-DLPC-13        | DLPC  | 72   | Dehydration (12 w/l)                    | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16293) |
+| Berger-DLPC-13        | DLPC  | 72   | Dehydration (16 w/l)                    | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16292) |
+| Berger-DLPC-13        | DLPC  | 72   | Dehydration (20 w/l)                    | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16291) |
+| Berger-DLPC-13        | DLPC  | 72   | Dehydration (24 w/l)                    | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16289) |
+| Berger-DLPC-13        | DLPC  | 72   | Dehydration (28 w/l)                    | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16287) |
 | Charmm36              | POPC  | 72   |    -                                    | charmm36/POPCpure/              | [Zenodo](http://dx.doi.org/10.5281/zenodo.13944) |
 | Charmm36              | POPC  | 72   | NaCl (13, 26, 52, 78)                   | charmm36/POPCnacl/              | -                                                |
 | Charmm36              | POPC  | 72   | Dehydration (15 w/l)                    | charmm36/POPCdehydration/       | [Zenodo](http://dx.doi.org/10.5281/zenodo.13946) |
