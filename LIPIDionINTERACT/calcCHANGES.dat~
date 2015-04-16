@@ -1,1 +1,0 @@
-cat BERGERnaclCONS.dat | awk '{if(NR==1){a=$2;b=$3;c=$4;d=$5;e=$6;f=$7;g=$8;h=$9;}print $2-a" "$3-b" "$4-c" "$5-d" "$6-e" "$7-f" "$8-g" "$9-h}' > BERGERnaclCONSchange.dat
