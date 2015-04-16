@@ -49,3 +49,5 @@ A README inside each relevant folder indicates:
 | Chiu                  | POPC  | 128  | -                                       | Chiu/POPCpure/                  | [Zenodo](http://dx.doi.org/10.5281/zenodo.15548) |
 | Hogberg08             | DMPC  | 98   | -                                       | Hogberg08/DMPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.16195) |
 | Hogberg08             | POPC  | 128  | -                                       | Hogberg08/POPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.16724) |
+| Ulmschneiders         | POPC  | 128  | -                                       | Ulmschneiders/POPCpure/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.13392) |
+

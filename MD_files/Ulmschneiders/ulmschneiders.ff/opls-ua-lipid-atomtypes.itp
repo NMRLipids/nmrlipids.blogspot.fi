@@ -1,0 +1,20 @@
+; ADD THESE ATOMTYPES TO: ffoplsaanb.itp
+ opls_4030  N3     7    14.007      -0.500       A    0.32500      0.711280      ; ULMSCHNEIDER - OPLS-UA 103 mod. Q
+ opls_4031  C3     6    15.024       0.400       A    0.39600      0.606680      ; ULMSCHNEIDER - OPLS-UA 107 mod. Q
+ opls_4032  C2     6    14.016       0.300       A    0.39060      0.493712      ; ULMSCHNEIDER - Essex et al. 1994 (mod. OPLS-UA 71) mod. Q
+ opls_4000  P      15   30.970       1.600       A    0.37400      0.836800      ; ULMSCHNEIDER - OPLS-UA 254 mod. Q
+ opls_4001  O2     8    15.999      -0.800       A    0.29600      0.878640      ; ULMSCHNEIDER - OPLS-UA 255 mod. Q
+ opls_4002  OS     8    15.999      -0.750       A    0.30000      0.711280      ; ULMSCHNEIDER - OPLS-UA 256 mod. Q
+ opls_4003  C3     6    15.024       0.200       A    0.38000      0.711280      ; ULMSCHNEIDER - OPLS-UA 257
+ opls_4004  C2     6    14.016       0.250       A    0.38000      0.493712      ; ULMSCHNEIDER - Essex et al. 1994 (mod. OPLS-UA 257) mod. Q
+ opls_4010  C      6    12.000       0.800       A    0.37500      0.439320      ; ULMSCHNEIDER - OPLS-UA 58 (ester C-) mod. Q
+ opls_4011  O      8    15.999      -0.600       A    0.29600      0.878640      ; ULMSCHNEIDER - OPLS-UA 59 (ester O=) mod. Q
+ opls_4012  CH     6    13.008       0.250       A    0.38000      0.334720      ; ULMSCHNEIDER - OPLS-UA 60 (ester CH)
+ opls_4013  C2     6    14.016       0.250       A    0.38000      0.493712      ; ULMSCHNEIDER - OPLS-UA 61 (ester C2) mod. Q
+ opls_4015  OS     8    15.999      -0.500       A    0.30000      0.711280      ; ULMSCHNEIDER - OPLS-UA 62 (ester -OS-)
+ opls_4018  C2     6    14.016       0.050       A    0.39600      0.380744      ; ULMSCHNEIDER - Berger et al. 1997 (ester -C2-)
+ opls_4100  C3     6    15.024       0.000       A    0.39600      0.569024      ; ULMSCHNEIDER - Berger et al. 1997
+ opls_4101  C2     6    14.016       0.000       A    0.39600      0.380744      ; ULMSCHNEIDER - Berger et al. 1997
+ opls_4110  C3     6    15.024       0.000       A    0.39550      0.644336      ; ULMSCHNEIDER - New UA pentadecane CH3
+ opls_4111  C2     6    14.016       0.000       A    0.39550      0.430952      ; ULMSCHNEIDER - New UA pentadecane CH2
+ opls_4121  C1     6    13.008       0.000       A    0.38000      0.481160      ; ULMSCHNEIDER - OPLS-UA 74 (CH - Alkene)

@@ -1,0 +1,13 @@
+; 128 POPC bilayer, OPLS-UA, MBU 1.1.2010
+#include "../ulmschneiders.ff/forcefield.itp"
+#include "../ulmschneiders.ff/popc_opls.itp"
+#include "tip3p.itp"
+
+[ system ]
+; Name
+128-POPC
+
+[ molecules ]
+; Name      Number
+POPC         128
+SOL          3328
