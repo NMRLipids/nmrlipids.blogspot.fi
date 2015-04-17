@@ -1,0 +1,11 @@
+#include "ffgmx.itp"
+#include "../../berger_DLPC_13.ff/lipid.itp"
+#include "../../berger_DLPC_13.ff/dlpc.itp"
+#include "spce.itp"
+
+[ system ]
+TI of DLPC 
+
+[ molecules ]
+DPP          72
+SOL	     1152

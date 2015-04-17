@@ -1,0 +1,41 @@
+integrator          =  md
+nsteps              =  50000000 ;
+dt                  =  0.002
+
+nstlog              =  50000
+nstenergy           =  5000
+nstxtcout           =  5000
+nstxout             =  0
+nstvout             =  0
+nstfout		    =  0
+
+pbc                 =  xyz
+ns_type             =  grid
+comm_mode           =  linear 
+nstlist             =  10
+rlist               =  1.0
+
+vdwtype             =  cut-off
+rvdw                =  1.0
+coulombtype         =  pme
+rcoulomb            =  1.0
+
+fourierspacing      =  0.1
+pme_order           =  6
+ewald_rtol          =  1e-5
+
+Tcoupl              =  berendsen
+ref_t               =  310
+tau_t               =  0.1
+tc-grps		    =  system
+
+Pcoupl              =  berendsen
+Pcoupltype          =  semiisotropic
+ref_p               =  1.0  1.0  
+tau_p               =  1.0  1.0  
+compressibility     =  4.6E-5  4.6E-5  
+
+gen_vel		     =  yes
+gen_seed             =  191249
+constraint_algorithm =  lincs
+constraints          =  h-bonds

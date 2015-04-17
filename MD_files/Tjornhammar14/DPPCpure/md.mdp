@@ -1,0 +1,48 @@
+title               =  128 DPPC in TIP4P2005 water
+cpp                 =  cpp
+constraints         =  all-bonds
+unconstrained-start =  no
+integrator          =  md
+dt                  =  0.004
+tinit               =  0.0
+nsteps              =  1000000000
+nstcomm             =  100
+nstxout             =  0
+nstvout             =  0
+nstxtcout           =  5000
+xtc_precision       =  1000
+nstfout             =  0
+nstlog              =  10000
+nstenergy           =  500
+nstlist             =  10 
+ns_type             =  grid
+coulombtype         =  pme
+rlist               =  1.0
+rcoulomb            =  1.0
+rvdw                =  2.0
+DispCorr            = EnerPres
+
+; Berendsen temperature coupling is on in two groups
+Tcoupl              =  berendsen
+;Tcoupl              =  nose-hoover
+tc-grps		    =  DPPC  	water
+tau_t               =  0.1   	0.1  
+ref_t               =  293.0    293.0
+; Energy monitoring
+energygrps          =  DPPC   water    
+; Isotropic pressure coupling is now on
+Pcoupl              =  berendsen
+;Pcoupl             =  Parrinello-Rahman
+Pcoupltype          =  semiisotropic   
+tau_p               =  50.00 50.00 ; 5.00 0.00 0.00 0.00 
+;compressibility     =  9e-5 9e-5 4.5e-5 0e-5 0e-5 0e-5 
+compressibility     =  9e-5 4.5e-5
+ref_p               =  1.01325 1.01325 ; 1.01325 0 0 0
+; Generate velocites is off at 300 K.
+gen_vel             =  yes  
+gen_temp            =  283.0 
+gen_seed            =  712349
+pbc                 = xyz
+
+;constraint_algorithm = shake
+

@@ -1,0 +1,10 @@
+#include "../tjornhammar14.ff/LipCholHydCarbFF.itp"
+
+[ system ]
+; Name
+DPPC membrane
+
+[ molecules ]
+; Compound      #mols
+DPPC	          144
+water            7056
