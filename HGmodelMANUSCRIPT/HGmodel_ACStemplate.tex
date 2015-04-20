@@ -1040,9 +1040,19 @@ Pressure was semi-isotropically coupled to the atmospheric pressure with the Ber
 
 \subsubsection{CHARMM36}
 
-{\it DPPC and POPC with 72 lipids}
-\todo{Markus Miettinen, please describe how you made the files.}
-
+{\it DPPC and POPC with 72 lipids.}
+%
+The starting structures in PDB format were downloaded from the
+NIH/NHLBI Laboratory of Computational Biology Membrane Biophysics Section
+website (\url{http://www.lobos.nih.gov/mbs/coords.shtml}),
+which refers to these as the final structures (for DPPC after 40~ns, POPC after 35~ns)
+of the NPT lipid bilayer trajectories used in the original CHARMM36 publication~\cite{klauda10}.
+The TIP3P~\cite{jorgensen83} water model was used to solvate the system.
+%
+The publicly available CHARMM36 parameters in Gromacs format
+(September 2013 update: {\tt charmm36\_gmx\_format\_sep13.tgz})
+from the MacKerell Lab website
+(\url{http://mackerell.umaryland.edu/CHARMM_ff_params.html}) were used.
 Timestep of 1~fs was used with the leapfrog integrator. Covalent bonds with hydrogens were constrained with LINCS algorithm~\cite{hess97,hess07}. 
 Coordinates were written every 5~ps. PME~\cite{darden93,essman95} with real space cut-off of 1.4~nm was used 
 for electrostatics. Lennard-Jones interactions were switched to zero between 0.8~nm and 1.2~nm.
@@ -1050,13 +1060,21 @@ The neighbour lists with a cut-off of 1.4~nm were updated every 5 steps. Tempera
 for lipids and water to 303~K using the velocity-rescale method~\cite{bussi07} with coupling constant of 0.2~ps.
 Pressure was semi-isotropically coupled to the atmospheric pressure with the Berendsen method~\cite{berendsen84}.
 
+<<<<<<< HEAD
 {\it POPC with 128 lipids}
 The starting structures for the pure POPC simulations was taken from the Slipids~\cite{jambeck12b} website (\url{http://mmkluster.fos.su.se/slipids/Downloads.html}).
+=======
+{\it POPC with 128 lipids.}
+%
+The starting structures for the pure POPC simulations was taken from the Slipids~\cite{jambeck12b} website
+(\url{http://people.su.se/$\sim$jjm/Stockholm\_Lipids/Downloads.html}).
+>>>>>>> a8be0b8b9d44eca28d3d44ab83f6959b7b9d4087
 The starting structures for mixed POPC/Cholesterol simulations were constructed with the CHARMM-GUI website~\cite{jo08}. 
 They contained 100 POPC/24 cholesterol molecules and 80 POPC/80 cholesterol molecules for
 the simulations of 20\% cholesterol and 50\% cholesterol respectively. The TIP3P water model~\cite{jorgensen83} was used to
 solvate the system.
-The publicly available CHARMM36 forcefield parameters (\url{http://www.gromacs.org/@api/deki/files/184/=charmm36.ff\\\_4.5.4\_ref.tgz}) 
+The publicly available CHARMM36 forcefield parameters
+(\url{http://www.gromacs.org/@api/deki/files/184/=charmm36.ff\\\_4.5.4\_ref.tgz}) 
 by Piggot et al. \cite{piggot12} were used. Cholesterol parameters came
 from Lim et al. \cite{lim12} and were converted into GROMACS format with the PyTopol tool~\cite{salari15}.  
 Single point energy calculation was done to assess the conversion. 
@@ -1069,7 +1087,8 @@ at 1~bar using the Parrinello--Rahman algorithm~\cite{parrinello81} with a time 
 was updated every 10 steps. Lennard-Jones interactions were switched to zero
 between 0.8~nm and 1.2~nm. PME~\cite{darden93,essman95} with real space cut-off of 1.2~nm was used for electrostatics.
 
-{\it POPC with 512 lipids}
+{\it POPC with 512 lipids.}
+%
 POPC The starting structures for simulations were constructed with
 the CHARMM-GUI website~\cite{jo08}. 512 POPC lipids (256 per leafleat) were 
 used for the initial 0\% concentration and they were subsequently 

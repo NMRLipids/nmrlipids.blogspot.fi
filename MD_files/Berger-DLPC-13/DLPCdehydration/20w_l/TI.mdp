@@ -1,0 +1,80 @@
+
+; Running
+integrator               = md 
+nsteps                   = 40000000
+dt                       = 0.002
+
+; Linear: Remove center of mass translation
+comm_mode		 = linear
+
+comm_grps: group(s) for center of mass motion removal, default is the whole system
+comm_grps		 = DPP SOL
+
+
+; frequency to write coordinates to output trajectory file, the last coordinates are always written
+nstxout                  = 10000000
+
+; frequency to write velocities to output trajectory, the last velocities are always written 
+nstvout                  = 10000000
+
+; frequency to write forces to output trajectory. 
+nstfout                  = 10000000
+
+; frequency to write coordinates to xtc trajectory 
+nstxtcout                = 100
+
+; frequency to write energies to log file, the last energies are always written 
+nstlog                   = 500000
+
+; frequency to write energies to energy file, the last energies are always written, should be a multiple of nstcalcenergy.
+nstenergy                = 100
+
+; hbonds: Convert the bonds with H-atoms to constraints. 
+ constraints              = hbonds 
+
+ns_type                  = grid
+nstlist                  = 10
+
+; PME: Fast Particle-Mesh Ewald electrostatics.
+coulombtype              = pme
+
+; Grid dimensions are controlled with fourierspacing and the interpolation order with pme_order.
+pme_order                = 4
+
+; distance for the Coulomb cut-off
+rcoulomb                 = 0.9
+
+; cut-off distance for the short-range neighbor list
+rlist                    = 0.9
+
+; distance for the LJ or Buckingham cut-off
+rvdw                     = 0.9
+
+; group(s) to write to energy file 
+energygrps               = DPP SOL 
+
+; Temperature coupling with a Berendsen-thermostat to a bath with temperature ref_t [K], with time constant tau_t [ps].  Several groups can be coupled separately, these are specified in the tc_grps field separated by spaces
+tcoupl                   = berendsen
+tc_grps                  = system
+tau_t                    = 1.0
+ref_t                    = 300
+
+; berendsen - Exponential relaxation pressure coupling with time constant tau_p [ps]
+ pcoupl		 = berendsen
+
+; isotropic - Isotropic pressure coupling with time constant tau_p [ps]. The compressibility and reference pressure are set with compressibility [bar-1] and ref_p [bar]
+
+Pcoupltype               = semiisotropic
+tau_p			 = 1.0 1.0
+ref_p			 = 1.0 1.0
+compressibility		 = 4.5e-5 4.5e-5
+refcoord_scaling	 = all
+
+; Generate velocities in grompp according to a Maxwell distribution at temperature gen_temp [K], with random seed gen_seed. 
+gen_vel                  = yes
+gen_seed                 = 24
+
+
+pbc                      = xyz
+
+; Thermodynamic integration
