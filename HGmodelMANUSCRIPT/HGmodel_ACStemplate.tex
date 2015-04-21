@@ -315,7 +315,7 @@ Almost all simulation data, including running parameters for reprocution and tra
 to the nmrlipids community in Zenodo file repository \url{https://zenodo.org/collection/user-nmrlipids}.
 Thus, besides the main topic of this manuscript we present the most extensive available collection of simulations trajectories
 for lipid bilayers, which opens up numerous possiblities for different analyses with much less effort than previously required.
-Furher information, e.g. scripts, figures and manuscript text files, are available in the GitHub 
+Further information, e.g. scripts, figures and manuscript text files, are available in the GitHub 
 organization \url{https://github.com/NMRlipids} \todo{Doi will be assigned to the GitHub repository before submission}.
 
 
@@ -431,8 +431,8 @@ H\"ogberg08 \cite{rabinovich14}  & POPC   &  128 & 3840  & 303 & 100 & 80  &  [\
 H\"ogberg08 \cite{hogberg08}  & DMPC   &  98 & 3840  & 303 & 75 & 50 &  [\citenum{hogbergDMPCfiles}]$^*$ & [\citenum{hogberg08}] \\
 Ulmschneiders \cite{Ulmschneider09}    & POPC  & 128 & 3328 & 310 & 100 & 50 & [\citenum{ulmschneiderFILES}]$^*$ & SI \\
 Tj\"ornhammar14 \cite{tjornhammar14}   & DPPC  & 144 & 7056 & 323 & 200 & 100 & [\citenum{tjornhammarfiles}]$^*$ & [\citenum{tjornhammar14}] \\
-CHARMM36-UA~\cite{lee14}     & DPPC   & 72  & 2189  & 323 & 80 & 50 & ? & SI \\
-CHARMMXX-UA~\cite{henin08,lee14}     & DLPC   & 128  & 3840  & 323 & 30 & 20 & [\citenum{charmmUAfiles}] & SI \\
+Lee-CHARMM36-UA~\cite{henin08,lee14}     & DPPC   & 72  & 2189  & 323 & 70 & 50 & ? & SI \\
+Botan-CHARMM36-UA   & DLPC   & 128  & 3840  & 323 & 30 & 20 & [\citenum{charmmUAfiles}] & SI \\
 \end{tabular}
 \end{table} 
 
@@ -1238,10 +1238,49 @@ The gel phase DPPC bilayer structure delivered by Tj\"ornhammar  and Edholm~\cit
 ordered gel configuration. This was followed by a 200~ns simulation at 323~K, i.e. in the fluid phase. The last 100~ns of this simulation was used for analysis. 
 The same mdp file as in the Supplementary Information section of the original paper ~\cite{tjornhammar14} was used except for the simulation temperature.
 
-\subsubsection{CHARMM36-UA}
-A hydrated bilayer consisting of 128 DLPC lipids and 3840 water molecules is modeled by the force field of Lee and co-workers~\cite{lee14}.
-This force field is a combination of the all-atom CHARMM36 force-field~\cite{klauda10} and the united-atom Berger model~\cite{berger97}. 
-The non-bonded interactions are calculated using an atom-based switching function with short and long cut-offs of 0.8 and 1.2~nm~\cite{lee14}. 
+\subsubsection{Lee-CHARMM36-UA}
+A hydrated bilayer consisting of 72 DLPC lipids and 2189 water molecules
+ is constructed using the model by Lee et al. ~\cite{lee14}. This model describes 
+ the important all-atom CHARMM36 character of the lipid headgroup but 
+reduces the details of the lipid chains into a united-atom model.
+The initial  equilibrated structure was downloaded from the web page of J. Klauda, 
+Department of Chemical and Biomolecular Engineering University of Maryland.
+ The parameter files are taken from the Supplementary Material of Ref. \citenum{lee14}.  
+This bilayer was equilibrated for 20~ns and the production run was 50~ns long,  with data was saved every 20~ps. 
+ The equations of motion were integrated using the multiple time step Verlet r-RESPA algorithm with
+a time step of 2 fs, and a calculation of the electrostatic forces only every two timesteps.
+ Covalent bonds between heavy and hydrogen atoms were constrained 
+using SHAKE/RATTLE algorithm~\cite{miyamoto92}.
+
+The temperature was kept at 323~K with a Langevin thermostat
+with a damping coefficient of 5~ps.  The modified NAMD version of the
+Nose-Hoover barostat with Langevin dynamics (piston period of
+0.1 ps and piston decay time of 0.05 ps)  was used semi-isotropically 
+to reach the averaged target pressure of 1~bar and an averaged zero surface tension.
+PME~\cite{darden93,essman95} was employed for long range electrostatics. 
+A cut-off of 1.2~nm was employed for  the Lennard-Jones interactions, with 
+a force-based switching function  for distances beyond 1~nm.
+A neighbour list with a radius of 1.4~nm was updated every 10~timesteps. 
+
+NAMD was developed by the Theoretical and Computational Biophysics Group in the
+ Beckman Institute for Advanced Science and Technology at the University
+ of Illinois at Urbana-Champaign\cite{namd}.
+
+\subsubsection{Botan-CHARMM36-UA}
+This model is similar to the Lee-CHARMM36-UA model with a few  differences.
+A hydrated bilayer consisting of 128 DLPC lipids and 3840 water
+molecules is described by a model derived from the CHARMM27-UA model by H\'enin et al.~\cite{henin08}.
+
+The distribution into all-atom  (AA) and united-atom (UA) parts within the lipids is the same
+as in the original CHARMM27-UA model by H\'enin et al.~\cite{henin08}.  
+This distribution differs from the one by Lee-C36-UA because  in Botan's model, C22 and C32  a
+nd their hydrogens are merged into  united atoms, whereas in Lee's model their hydrogens are described explicitely.
+The  united-atom Berger model ~\cite{berger97} was used for the tails and the UA-AA interactions as in Ref. ~\citenum{henin08}. 
+The difference between this model and the original oneby H\'enin~\cite{henin08} is the replacement of the 
+AA parameters for the heads by  the parameters of the all-atom
+ CHARMM36 force-field~\cite{klauda10}. Contrarily to the model by Lee et al.~\cite{lee14}, no reparametrization was done.
+
+The non-bonded interactions are calculated using an atom-based switching function with short and long cut-offs of 0.8 and 1.2~nm. 
 Long range electrostatic interactions are implemented using the particle-particle particle-mesh solver with a relative accuracy of $10^{-4}$. The system 
 is first equilibrated for 30~ns in the NP$\gamma$T ensemble (Nos\'{e}--Hoover~\cite{nose84,hoover85} style thermostat and barostat with anisotropic pressure coupling) 
 at 323~K and 1~bar with timestep of 1~fs. The following 20~ns of dynamics are taken for calculation of configurational averages. 
