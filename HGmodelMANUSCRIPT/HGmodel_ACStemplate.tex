@@ -383,7 +383,7 @@ is not enough for the convergence of the order parameters, then the simulation m
 \subsection{Simulated systems}
 All simulations are ran with a standard setup for a planar lipid bilayer in zero tension and constant temperature
 with periodic boundary conditions in all directions by using the GROMACS software package~\cite{hess08} 
-(version numbers 4.5.X--4.6.X), LAMMPS~\cite{plimpton95} or MDynaMix~\cite{Lyubartsev00}.
+(version numbers 4.5.X--4.6.X), LAMMPS~\cite{plimpton95}, MDynaMix~\cite{Lyubartsev00} or NAMD~\cite{phillips05}.
 The number of molecules, simulation temperatures and the length of simulations of all the simulated systems 
 are listed in Tables~\ref{systems},~\ref{systemsDEHYD} and~\ref{systemsCHOL}. Full simulation
 details are given in the Supplementary Information (SI) or in the original publications in case the
@@ -431,8 +431,8 @@ H\"ogberg08 \cite{rabinovich14}  & POPC   &  128 & 3840  & 303 & 100 & 80  &  [\
 H\"ogberg08 \cite{hogberg08}  & DMPC   &  98 & 3840  & 303 & 75 & 50 &  [\citenum{hogbergDMPCfiles}]$^*$ & [\citenum{hogberg08}] \\
 Ulmschneiders \cite{Ulmschneider09}    & POPC  & 128 & 3328 & 310 & 100 & 50 & [\citenum{ulmschneiderFILES}]$^*$ & SI \\
 Tj\"ornhammar14 \cite{tjornhammar14}   & DPPC  & 144 & 7056 & 323 & 200 & 100 & [\citenum{tjornhammarfiles}]$^*$ & [\citenum{tjornhammar14}] \\
-Lee-CHARMM36-UA~\cite{henin08,lee14}     & DPPC   & 72  & 2189  & 323 & 70 & 50 & ? & SI \\
-Botan-CHARMM36-UA   & DLPC   & 128  & 3840  & 323 & 30 & 20 & [\citenum{charmmUAfiles}] & SI \\
+Lee-CHARMM36-UA~\cite{lee14}     & DPPC   & 72  & 2189  & 323 & 70 & 50 & ? & SI \\
+Botan-CHARMM36-UA~\cite{henin08}   & DLPC   & 128  & 3840  & 323 & 30 & 20 & [\citenum{charmmUAfiles}] & SI \\
 \end{tabular}
 \end{table} 
 
@@ -1264,7 +1264,7 @@ A neighbour list with a radius of 1.4~nm was updated every 10~timesteps.
 
 NAMD was developed by the Theoretical and Computational Biophysics Group in the
  Beckman Institute for Advanced Science and Technology at the University
- of Illinois at Urbana-Champaign\cite{namd}.
+ of Illinois at Urbana-Champaign\cite{phillips05}.
 
 \subsubsection{Botan-CHARMM36-UA}
 This model is similar to the Lee-CHARMM36-UA model with a few  differences.
@@ -1273,10 +1273,10 @@ molecules is described by a model derived from the CHARMM27-UA model by H\'enin 
 
 The distribution into all-atom  (AA) and united-atom (UA) parts within the lipids is the same
 as in the original CHARMM27-UA model by H\'enin et al.~\cite{henin08}.  
-This distribution differs from the one by Lee-C36-UA because  in Botan's model, C22 and C32  a
-nd their hydrogens are merged into  united atoms, whereas in Lee's model their hydrogens are described explicitely.
+This distribution differs from the one by Lee-C36-UA because  in Botan's model, C22 and C32 and 
+their hydrogens are merged into  united atoms, whereas in Lee's model their hydrogens are described explicitely.
 The  united-atom Berger model ~\cite{berger97} was used for the tails and the UA-AA interactions as in Ref. ~\citenum{henin08}. 
-The difference between this model and the original oneby H\'enin~\cite{henin08} is the replacement of the 
+The difference between this model and the original one by H\'enin~\cite{henin08} is the replacement of the 
 AA parameters for the heads by  the parameters of the all-atom
  CHARMM36 force-field~\cite{klauda10}. Contrarily to the model by Lee et al.~\cite{lee14}, no reparametrization was done.
 
