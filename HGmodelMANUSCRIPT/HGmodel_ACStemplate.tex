@@ -411,8 +411,8 @@ Force field & lipid  & $^a$N$_{\rm l}$   &  $^b$N$_{\rm w}$ &  $^c$T (K)  &  $^d
 \hline
 Berger-POPC-07~\cite{ollila07a}          &   POPC & 128 & 7290  & 298  & 270 & 240 & [\citenum{bergerFILESpopc}]$^*$ & [\citenum{ferreira15}] \\
 %\sout {Berger-POPC-07~\cite{ollila07a}}\todoi{Not included in the Fig. 2, to be removed?}          &   POPC & 128 & 7290  & 323  & 56 & 56  & ? & SI \\
-Berger-DPPC-98~\cite{marrink98}          &   DPPC & 72 & 2864  & 323  & 140 & 100  & [\citenum{bergerDPPCfiles}] & SI \\
-Berger-DMPC-04~\cite{gurtovenko04}          &   DMPC & 128 & 5097  & 323  & 130 & 100  & [\citenum{dmpcFILES}] & [\citenum{miettinen09}] \\
+Berger-DPPC-98~\cite{marrink98}          &   DPPC & 72 & 2864  & 323  & 140 & 100  & [\citenum{bergerDPPCfiles}]$^*$ & SI \\
+Berger-DMPC-04~\cite{gurtovenko04}          &   DMPC & 128 & 5097  & 323  & 130 & 100  & [\citenum{dmpcFILES}]$^*$ & [\citenum{miettinen09}] \\
 CHARMM36~\cite{klauda10}       & POPC   & 72  &  2242 & 303 & 30 & 20  & [\citenum{charmm36filesSHORT}]$^*$ & SI \\
 CHARMM36~\cite{klauda10}      & POPC   & 128 &  5120    & 303 & 150 & 100  & [\citenum{charmm36files}]$^*$   & SI \\
 CHARMM36~\cite{klauda10}       & DPPC   & 72  &  2189 & 323 & 30 & 25  & [\citenum{charmmFILESdppc}]$^*$  & SI \\
@@ -431,7 +431,7 @@ H\"ogberg08 \cite{rabinovich14}  & POPC   &  128 & 3840  & 303 & 100 & 80  &  [\
 H\"ogberg08 \cite{hogberg08}  & DMPC   &  98 & 3840  & 303 & 75 & 50 &  [\citenum{hogbergDMPCfiles}]$^*$ & [\citenum{hogberg08}] \\
 Ulmschneiders \cite{Ulmschneider09}    & POPC  & 128 & 3328 & 310 & 100 & 50 & [\citenum{ulmschneiderFILES}]$^*$ & SI \\
 Tj\"ornhammar14 \cite{tjornhammar14}   & DPPC  & 144 & 7056 & 323 & 200 & 100 & [\citenum{tjornhammarfiles}]$^*$ & [\citenum{tjornhammar14}] \\
-Lee-CHARMM36-UA~\cite{lee14}     & DPPC   & 72  & 2189  & 323 & 70 & 50 & ? & SI \\
+Lee-CHARMM36-UA~\cite{lee14}     & DPPC   & 72  & 2189  & 323 & 70 & 50 & [\citenum{charmmUAfilesLEE}]$^*$ & SI \\
 Botan-CHARMM36-UA~\cite{henin08}   & DLPC   & 128  & 3840  & 323 & 30 & 20 & [\citenum{charmmUAfiles}] & SI \\
 \end{tabular}
 \end{table} 
@@ -1304,9 +1304,9 @@ with popc and cholesterol for the CHARMM36 All-Atom FF. \\
 {\it Matti Javanainen} prepared and performed simulations with multiple lipid models and analyzed the results. Supervised the work of JT.\\
 {\it Matej Kanduc} provided simulation results for the Berger DLPC model \\
 {\it Waldemar Kulig} prepared the MD simulations with cholesterol for the MacRog FF \\
-{\it Antti Lamberg}  \\
-{\it Claire Loison} provided simulation results for charmm36-UA \\
-{\it Alexander Lyubartsev} \\
+{\it Antti Lamberg} Prepared and performed simulations with Berger and its variants to show the importance of the signs and stereospecific labeling of the order parameters. \\
+{\it Claire Loison} provided simulation results for charmm36-UA. \\
+{\it Alexander Lyubartsev} provided simulation results for Högberg08 force field.\\
 {\it Markus S. Miettinen}  \\
 {\it Luca Monticelli} Critical discussions in all phases of the project. Collaboration with Jukka  M{\"a}{\"a}tt{\"a}. \\
 {\it Jukka M{\"a}{\"a}tt{\"a}}  prepared and performed simulations with Berger and Slipids models and analyzed the results.\\
