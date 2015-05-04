@@ -1,0 +1,35 @@
+# Calculated by Samuli Ollila from the data in 
+#
+#    http://dx.doi.org/10.5281/zenodo.15548
+#
+# with the correct version of the script
+#
+# POPC. 128 lipids, 3552 waters = 27.75 w/l
+# 298K.
+# 56ns, last 50ns analyzed.
+#
+# Chiu (JPCB 113, 2748–2763 (2009)) forcefield:
+#
+# 	http://dx.doi.org/10.1021/jp807056c
+
+
+#
+# (S_CH)  --- error bar
+# beta:
+1 0.0455487 0.00947695 
+1 0.0615308 0.00978869 
+
+# alpha:
+2 0.0574181 0.0118811 
+2 0.132177 0.0149186 
+
+# g3:
+3 -0.152285 0.014993 
+3 -0.218622 0.0112454 
+
+# g2:
+4 -0.168469 0.0149987 
+
+# g1:
+5 0.117386 0.0208625 
+5 -0.0493755 0.0158402 
