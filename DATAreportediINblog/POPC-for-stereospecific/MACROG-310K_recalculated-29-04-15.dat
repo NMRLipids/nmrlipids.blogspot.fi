@@ -1,0 +1,30 @@
+# Calculated by Samuli Ollila from the data without cholesterol in
+#
+# 	http://dx.doi.org/10.5281/zenodo.13877
+#
+# The results correspond MACROG-310K_blogged-18-09-14.dat
+# but this one includes error bars.
+#
+# Stereospecifities (S/R) determined by Samuli Ollila.
+#
+# S_CH     error bar
+#
+#beta
+1 0.0131549 0.0039345
+1 0.039608 0.00517222
+
+#alpha
+2 0.0569352 0.00470965
+2 0.0432352 0.00373771
+
+#g3
+4 -0.23531 0.00419093  #(S) 
+3 -0.125419 0.00551991 #(R)
+
+#g2
+5 -0.199084 0.00472816
+
+#g1
+6 -0.161195 0.00529538 #(R)
+7 0.0186343 0.00621717 #(S)
+

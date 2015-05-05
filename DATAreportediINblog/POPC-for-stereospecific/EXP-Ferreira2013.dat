@@ -1,0 +1,32 @@
+# From Ferreira et al. PCCP 15, 1976 (2013)
+#
+#   http://dx.doi.org/10.1039/C2CP42738A
+#
+# Signs determined as described in:
+#
+#	http://arxiv.org/abs/1309.2131v2
+#
+# POPC. 300K. 13C-NMR.
+#
+
+#C----S_CH------errorBar 
+# beta:
+1 -0.04478707	0.02
+
+# alpha:
+2  0.05589248	0.02
+
+# g3R:
+3 -0.23134863 	0.02
+
+# g3S:
+4 -0.23134863 	0.02
+
+# g2:
+5 -0.20691616 	0.02
+
+# g1R:
+6 -0.14991575 	0.02
+
+# g1S:
+7 -0.00000000 	0.02

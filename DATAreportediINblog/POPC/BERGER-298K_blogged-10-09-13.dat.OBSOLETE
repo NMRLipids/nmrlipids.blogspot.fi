@@ -1,0 +1,44 @@
+# Posted by Samuli Ollila in nmrlipids.blogspot.fi (as a part of
+# the initial version of the manuscript) on 10 Sep 2013,  (*)
+#
+# First used in Fig. 2 of the arXiv preprint (version 1):
+#
+#	http://arxiv.org/abs/1309.2131
+#
+# POPC. Berger forcefield. 298K.
+# 128 lipids, 7290 waters = 57.0 w/l
+#
+# Last 240 ns of total 270 ns analyzed. [Samuli Ollila confirmed
+# this on skype chat on 18.1.2015. --Markus Miettinen] End of
+# this trajectory available also on Zenodo:
+#
+# 	https://zenodo.org/record/13279
+#
+# (*) Note. Originally a bug in the analysis script caused just
+#     the first 75 lipids to be analyzed. These data are in the
+#     third column below.
+#
+#     On 10 April 2014 Samuli Ollila provided the results for the
+#     fixed script, which takes into account all the 128 lipids.
+#     These data are in the second column of below.
+
+#- 128 lipids -- 75 lipids
+#-  (S_CH)    --  (|S_CH|)
+# beta:
+1 0.0308759      0.031048
+1 0.0571907      0.0633539
+
+# alpha:
+2 0.0889067      0.0915405
+2 0.142965       0.144348
+
+# g3:
+3 -0.176554      0.182288
+3 -0.261365      0.266575
+
+# g2:
+4 -0.18566       0.187212
+
+# g1:
+5 0.171045       0.171714
+5 0.0819486      0.0832471

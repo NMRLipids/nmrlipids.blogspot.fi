@@ -1,0 +1,74 @@
+set term pdfcairo enhanced rounded color dashed dashlength 1 size 10cm, 21cm #16.2cm
+set out "stereospecificOPs.pdf"
+
+# write name of the blog on the plot:
+# set label 1 right at screen 0.982,0.995 "nmrlipids.blogspot.fi" font ",9" tc rgb "gray"
+# set tmargin at screen 0.987
+
+set tmargin at screen 0.99
+set ylabel "S_{CH}" font "Arial,20" offset 2,-2.3
+
+set bmargin at screen 0.06
+set key l at screen 0.01,0.045 Left reverse samplen 2 width -2 maxrows 2
+
+set lmargin at screen 0.122 #0.157
+set rmargin at screen 0.99
+
+#set key left reverse Left at 0.5,0.375 samplen 3 
+set xtics ("{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3R}" 3, "g_{3S}" 4, "g_2" 5, "g_{1R}" 6, "g_{1S}" 7) \
+    offset 0,37.5 scale 0 font "Arial,25"
+#58.5
+set ytics 0.1 out nomirror
+set mytics 2
+dx = 0.05
+r = 0.7 #-- point radius
+w = 6 #-- line thickness
+dxl = 0.021
+set bars small # no tics in the ends of error bars
+
+
+# column dividers:
+set arrow 1 from 1.5, graph 0 to 1.5, graph 1 nohead lw 0.5
+set arrow 2 from 2.5, graph 0 to 2.5, graph 1 nohead lw 0.5
+set arrow 3 from 3.5, graph 0 to 3.5, graph 1 nohead lw 0.5
+set arrow 4 from 4.5, graph 0 to 4.5, graph 1 nohead lw 0.5
+set arrow 5 from 5.5, graph 0 to 5.5, graph 1 nohead lw 0.5
+set arrow 6 from 6.5, graph 0 to 6.5, graph 1 nohead lw 0.5
+
+# Line- and point point type for experimental data:
+set linetype 101 lt 1 lw w lc 16
+
+# Line- and point types for different force fields:
+# GROMOS-family:
+set linetype 21  lt 1 lw w lc rgb "#D70039" # for Berger
+# CHARMM-family:
+set linetype 23  lt 1 lw w lc rgb "#0088BF" # for CHARMM36
+# AMBER-family:
+set linetype 24  lt 1 lw w lc rgb "#FFD300" # for GAFF
+# OPLS-family:
+set linetype 30  lt 1 lw w lc rgb "#00A368" # for MacRog
+
+plot [0.5:7.5][0.152659:-0.26] \
+  "./POPC-for-stereospecific/BERGER-298K_recalculated-22-04-15.dat" u ($1-0.4):($2):($3) w ye lt 21 pt 7 ps r \
+  t "{298K}  Berger", \
+  "./POPC-for-stereospecific/MACROG-310K_recalculated-29-04-15.dat" u ($1-0.2):($2):($3) w ye lt 30 pt 7 ps r \
+  t "{310K}  MacRog", \
+  "./POPC-for-stereospecific/EXP-Ferreira2013.dat" u ($1):($2):($3) w ye lt 101 pt 7 ps 1.5*r \
+  t "300K  ^{_{^{13}}}C-NMR", \
+  x w p ls 1 ps 0 t " ", \
+  "./POPC-for-stereospecific/GAFF-303K_blogged-12-11-14.dat" u ($1+0.2):($2):($3) w ye lt 24 pt 7 ps r \
+  t "{303K}  GAFFlipid", \
+  "./POPC-for-stereospecific/CHARMM36-303K_blogged-01-12-14.dat" u ($1+0.4):($2):($3) w ye lt 23 pt 7 ps r \
+  t "@{\\ \\  \"}&{303K}  CHARMM36"
+
+
+
+
+
+
+
+#, \
+
+#  x w p ls 1 ps 0 t " ", \
+#  x w p ls 1 ps 0 t " "
+

@@ -1,0 +1,32 @@
+# Order parameters calculated from the Berger POPC trajectory by Samuli Ollila 
+# 
+#
+# POPC. Berger forcefield. 298K.
+# 128 lipids, 7290 waters = 57.0 w/l
+#
+# Last 240 ns of total 270 ns analyzed. 
+# The end of the trajectory available in Zenodo:
+#
+#          http://dx.doi.org/10.5281/zenodo.13279
+#
+# 
+#  (S_CH)    --  error estimate
+# beta:
+1 0.0284171 0.000216035
+1 0.0541737 0.000402495
+
+# alpha:
+2 0.081043 0.000588776
+2 0.130752 0.00091446
+
+# g3:
+3 -0.159623 0.00155831     #(R)
+4 -0.234955 0.00296874     #(S) 
+
+# g2:
+5 -0.168462 0.00167646
+
+# g1:
+6 0.152659 0.0010512       #(R)
+7 0.0752981 0.000549603    #(S)
+

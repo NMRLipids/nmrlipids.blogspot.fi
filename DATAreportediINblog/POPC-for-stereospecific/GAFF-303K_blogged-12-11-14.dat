@@ -1,0 +1,39 @@
+# Submitted by Samuli Ollila to nmrlipid.blogspot.fi on 12 Nov 2014:
+#
+#	http://nmrlipids.blogspot.com/2014/09/about-glycerol-conformations.html?showComment=1415789202112#c8104148599916969507
+#
+# POPC. 126 lipids, 3948 waters = 31.3 w/l.
+# 303K.
+# Simulated 137 ns, of which last 32 ns analyzed. 
+#
+# GAFFlipid force field:
+#
+#	 http://dx.doi.org/10.1039/C2SM26007G
+# 
+# Trajectory and input files available at:
+#
+#	http://dx.doi.org/10.5281/zenodo.12652
+#	https://github.com/NMRLipids/nmrlipids.blogspot.fi/tree/master/POPCgaff
+#
+# SEM = standard error of mean, assuming each lipid to be an
+# independent measurement.
+#
+# 	S_CD		SEM
+# beta:
+0.95	0.00712289 	0.00450635
+1.05	-0.00274647 	0.0041549
+
+# alpha:
+2.05	0.0598987 	0.00558857
+1.95	0.0608429	0.00537729
+
+# g3:
+4	-0.241625 	0.0079977     #(S)
+3	-0.238285 	0.00963235    #(R)
+
+# g2:
+5	-0.243074 	0.0108463
+
+# g1:
+6	-0.167836 	0.0156159     #(R)
+7	0.0732742 	0.0145822     #(S)
