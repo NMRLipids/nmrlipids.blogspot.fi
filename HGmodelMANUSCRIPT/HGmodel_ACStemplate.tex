@@ -387,50 +387,64 @@ data is used previously therein. Additionally, the files related to the simulati
 available for almost all systems in the Zenodo collection \url{https://zenodo.org/collection/user-nmrlipids}. 
 The references pointing to simulation details and files are also listed in Tables~\ref{systems},~\ref{systemsDEHYD} and~\ref{systemsCHOL}.
 
-\begin{table}[]
+\begin{sidewaystable}[]
 \centering
-\caption{Simulated single component fully hydrated lipid bilayer systems. The simulation file data sets marked with $^*$ also include a part of the trajectory.
-  If simulation data from previously published work has been directly used, the original publication is cited for simulation details. For other systems the simulation details
-  are given in the Supplementary Information. The abbreviations are 1-palmitoyl-2-oleoylphosphatidylcholine (POPC), dipalmitoylphosphatidylcholine (DPPC), 1,2-dimyristoyl-sn-glycero-3-phosphocholine (DMPC),
-1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC) and dilauroylphosphatidylcholine (DLPC).
-$^a$ The number of lipid molecules
-$^b$ The number of water molecules
-$^c$ Simulation temperature
-$^d$ The total simulation time
-$^e$ Time frames used in the analysis
-$^f$ Reference link for the downloadable simulation files
-$^g$ Reference for the full simulation details
+\caption{Fully hydrated single component lipid bilayer systems simulated for Fig.~\ref{HGorderparameters}:
+  1,2-dimyristoyl-sn-glycero-3-phosphocholine (DMPC),
+  %1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC),
+  dilauroylphosphatidylcholine (DLPC),
+  dipalmitoylphosphatidylcholine (DPPC), and
+  1-palmitoyl-2-oleoylphosphatidylcholine (POPC).
+The {\bf bolded} systems were used also for Fig.~\ref{HGorderparameters2}.
+$^a$ Number of lipid molecules.
+$^b$ Number of water molecules.
+$^c$ Temperature.
+$^d$ Total simulation time.
+$^e$ Time used for analysis.
+$^f$ Reference link for the downloadable simulation files;
+     the data sets marked with $^*$ also include a part of the trajectory.
+$^g$ Reference for the full simulation details;
+     the original publication is cited if simulation data from previously published work has been directly used,
+     for other systems the simulation details are given in the Supplementary Information.
 }\label{systems}
-\begin{tabular}{c c c c c c c c c}
+\begin{tabular}{l l r r r r r c c c}
 %\hline
-Force field & lipid  & $^a$N$_{\rm l}$   &  $^b$N$_{\rm w}$ &  $^c$T (K)  &  $^d$t$_{{\rm sim}}$(ns) &  $^e$t$_{{\rm anal}}$ (ns) &  $^f$Files  &  $^g$Details\\
+Force field & lipid & $^a$N$_{\rm l}$   &  $^b$N$_{\rm w}$ &  $^c$T (K)  &  $^d$t$_{{\rm sim}}$(ns) &  $^e$t$_{{\rm anal}}$ (ns) &  $^f$Files  &  $^g$Details & Notes\\
 \hline
-Berger-POPC-07~\cite{ollila07a}          &   POPC & 128 & 7290  & 298  & 270 & 240 & [\citenum{bergerFILESpopc}]$^*$ & [\citenum{ferreira15}] \\
+Berger-DMPC-04~\cite{gurtovenko04} & DMPC & 128 & 5097 & 323 & 130 & 100 & [\citenum{dmpcFILES}]$^*$       & [\citenum{miettinen09}] \\
+Berger-DPPC-98~\cite{marrink98}    & DPPC &  72 & 2864 & 323 & 140 & 100 & [\citenum{bergerDPPCfiles}]$^*$ & SI \\
+{\bf
+Berger-POPC-07}~\cite{ollila07a}   & POPC & 128 & 7290 & 298 & 270 & 240 & [\citenum{bergerFILESpopc}]$^*$ & [\citenum{ferreira15}] \\
 %\sout {Berger-POPC-07~\cite{ollila07a}}\todoi{Not included in the Fig. 2, to be removed?}          &   POPC & 128 & 7290  & 323  & 56 & 56  & ? & SI \\
-Berger-DPPC-98~\cite{marrink98}          &   DPPC & 72 & 2864  & 323  & 140 & 100  & [\citenum{bergerDPPCfiles}]$^*$ & SI \\
-Berger-DMPC-04~\cite{gurtovenko04}          &   DMPC & 128 & 5097  & 323  & 130 & 100  & [\citenum{dmpcFILES}]$^*$ & [\citenum{miettinen09}] \\
-CHARMM36~\cite{klauda10}       & POPC   & 72  &  2242 & 303 & 30 & 20  & [\citenum{charmm36filesSHORT}]$^*$ & SI \\
-CHARMM36~\cite{klauda10}      & POPC   & 128 &  5120    & 303 & 150 & 100  & [\citenum{charmm36files}]$^*$   & SI \\
-CHARMM36~\cite{klauda10}       & DPPC   & 72  &  2189 & 323 & 30 & 25  & [\citenum{charmmFILESdppc}]$^*$  & SI \\
+CHARMM36~\cite{klauda10}  & DPPC &  72 & 2189 & 323 &  30 &  25 & [\citenum{charmmFILESdppc}]$^*$    & SI \\
+CHARMM36~\cite{klauda10}  & DPPC &  72 & 2189 & 323 &  ? &  130? & [?]$^*$    & ? & Magnitudes from Fig.~S4 of Klauda et al.~\cite{klauda10}, signs matched to our simulations. \\
+CHARMM36~\cite{klauda10}  & POPC &  72 & 2242 & 303 &  30 &  20 & [\citenum{charmm36filesSHORT}]$^*$ & SI \\
+{\bf
+CHARMM36}~\cite{klauda10} & POPC & 128 & 5120 & 303 & 200 & 100 & [\citenum{charmm36files}]$^*$      & SI \\
 %CHARMM36\cite{klauda10}\todoi{Not included in the Fig. 2. Should we remove or include?}        & DOPC   & 128 &  5120    & 303 & 150 & 100  & ?\todoi{Permanent link in progress by Hubert Santuz}  & SI \\
 %\todoi{Permanent link for DOPC CHARMM36 simulation by Hubert Santuz is not required now. However, it would be probably useful in the future.}
-MacRog~\cite{maciejewski14}  & POPC & 288  & 12600 & 310 & 100 & 80  & [\citenum{macrogFILES}]$^*$ & SI  \\
-GAFFlipid~\cite{dickson12}       & POPC & 126  & 3948  & 303 & 137 & 32  & [\citenum{GAFFlipidFILES}]$^*$ & SI \\
-GAFFlipid~\cite{dickson12}       & DPPC & 72  & 2197  & 323 & 90 & 50  & [\citenum{GAFFlipidFILESdppc}]$^*$ & SI \\
+MacRog~\cite{maciejewski14}  & POPC & 288 & 12600 & 310 & 100 &  80 & [\citenum{macrogFILES}]$^*$      & SI  \\
+{\bf
+MacRog}~\cite{maciejewski14} & POPC & 128 &  6400 & 310 & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$  & SI  \\
+MacRog~\cite{maciejewski14}  & POPC & 288 & 14400 & 310 &  90 &  40 & [\citenum{macrogdehydFILES}]$^*$ & SI  \\
+GAFFlipid~\cite{dickson12}   & DPPC &  72 & 2197 & 323 &  90 & 50 & [\citenum{GAFFlipidFILESdppc}]$^*$ & SI \\
+GAFFlipid~\cite{dickson12}   & DPPC &  ? & ? & 323 & ? &  250? & [?]$^*$    & ? & Magnitudes from Fig.~9 of Dickson et al.~\cite{dickson12}, signs matched to our simulations. \\
+{\bf
+GAFFlipid}~\cite{dickson12}  & POPC & 126 & 3948 & 303 & 137 & 32 & [\citenum{GAFFlipidFILES}]$^*$ & SI \\
 Lipid14 \cite{dickson14}         & POPC  & 72 & 2234 & 303 & 100 & 50  & [\citenum{lipid14files}]$^*$ & SI \\
 Poger \cite{poger10}             & DPPC  & 128 & 5841 & 323 & 2$\times$100 & 2$\times$50 & [\citenum{pogerFILESpme1,pogerFILESpme2}]$^*$ & SI \\
 Slipids \cite{jambeck12}          & DPPC & 128 & 3840 & 323 & 150 & 100 & [\citenum{slipidsFILES}]$^*$ & SI \\
 Slipids \cite{jambeck12b}          & POPC & 128 & 5120 & 303 & 200 & 150 & [\citenum{slipidsFILESpopc}]$^*$ & SI \\
 Kukol \cite{kukol09}          & POPC   & 512 & 20564 & 298 & 50 & 30  & [\citenum{kukolFILES}]$^*$ & SI \\
 Chiu \cite{chiu09}      & POPC  & 128 & 3552  & 298 & 56 & 50  & [\citenum{chiuFILES}]$^*$ & SI \\
-H\"ogberg08 \cite{rabinovich14}  & POPC   &  128 & 3840  & 303 & 100 & 80  &  [\citenum{hogbergPOPCfiles}]$^*$ & [\citenum{rabinovich14}]  \\
-H\"ogberg08 \cite{hogberg08}  & DMPC   &  98 & 3840  & 303 & 75 & 50 &  [\citenum{hogbergDMPCfiles}]$^*$ & [\citenum{hogberg08}] \\
+H\"ogberg08 \cite{hogberg08}    & DMPC &  98 & 3840 & 303 &  75 & 50 &  [\citenum{hogbergDMPCfiles}]$^*$ & [\citenum{hogberg08}] \\
+H\"ogberg08 \cite{rabinovich14} & POPC & 128 & 3840 & 303 & 100 & 80 &  [\citenum{hogbergPOPCfiles}]$^*$ & [\citenum{rabinovich14}]  \\
 Ulmschneiders \cite{Ulmschneider09}    & POPC  & 128 & 3328 & 310 & 100 & 50 & [\citenum{ulmschneiderFILES}]$^*$ & SI \\
 Tj\"ornhammar14 \cite{tjornhammar14}   & DPPC  & 144 & 7056 & 323 & 200 & 100 & [\citenum{tjornhammarfiles}]$^*$ & [\citenum{tjornhammar14}] \\
-Lee-CHARMM36-UA~\cite{lee14}     & DPPC   & 72  & 2189  & 323 & 70 & 50 & [\citenum{charmmUAfilesLEE}]$^*$ & SI \\
-Botan-CHARMM36-UA~\cite{henin08}   & DLPC   & 128  & 3840  & 323 & 30 & 20 & [\citenum{charmmUAfiles}] & SI \\
+Botan-CHARMM36-UA~\cite{henin08} & DLPC & 128 & 3840 & 323 & 30 & 20 & [\citenum{charmmUAfiles}]        & SI \\
+Lee-CHARMM36-UA~\cite{lee14}     & DPPC &  72 & 2189 & 323 & 70 & 50 & [\citenum{charmmUAfilesLEE}]$^*$ & SI \\
 \end{tabular}
-\end{table} 
+\end{sidewaystable} 
 
 \begin{table}[htb]
 \centering
@@ -583,13 +597,18 @@ segments of POPC bilayer is collected by taking the absolute values from~\cite{f
 and the stereospecific labeling from~\cite{gally81}, and shown in Fig.~\ref{HGorderparameters2}.
 \begin{figure*}[]
   \centering
-  \includegraphics[width=8.6cm]{../Fig/HGorderparameters5.pdf} \\
-  \todo{This figure should be updated similar to Fig.~\ref{HGorderparameters}} \\
+  \includegraphics[width=8.6cm]{../DATAreportediINblog/stereospecificOPs.pdf} \\
+  \todo{This figure should be updated similar to Fig.~\ref{HGorderparameters}. DONE.} \\
   \caption{\label{HGorderparameters2}
-  Order parameteres from simulations with Berger-POPC-07, CHARMM36, GAFFlipid and MacRog force fields together with experimental values for POPC glycerol and choline groups.
-  The magnitudes for experimental order parameters are taken from Ferreira et al.~\cite{ferreira13}, the signs are based on the measurements by Hong et al.~\cite{hong95a,hong95b} 
-  and Gross et al.~\cite{gross97}, and the R/S labeling is based in the measurements by Gally et al.~\cite{gally81}.
-} 
+  Order parameteres for POPC glycerol and choline groups
+  from simulations with Berger-POPC-07, MacRog, GAFFlipid, and CHARMM36 force fields
+  (the {\bf bolded} systems in Table~\ref{systems})
+  together with experimental values.
+  The error bars of simulation data are standard errors of mean (see Methods for details).
+  The magnitudes for experimental order parameters are taken from Ferreira et al.~\cite{ferreira13},
+  the signs are based on the measurements by Hong et al.~\cite{hong95a,hong95b} 
+  and Gross et al.~\cite{gross97}, and the R/S labeling is based on the measurements by Gally et al.~\cite{gally81}.
+}
 \end{figure*}
 
 \subsection{Full hydration: Comparison between simulation models and experiments}
