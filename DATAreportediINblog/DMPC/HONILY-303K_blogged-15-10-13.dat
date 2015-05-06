@@ -6,6 +6,10 @@
 #
 #	http://nmrlipids.blogspot.fi/2014/11/new-version-of-manuscript.html
 #
+# Splitting of alfa and beta:
+#
+# 	http://nmrlipids.blogspot.com/2013/10/welcome-if-you-are-new-here-reading.html?showComment=1421938874572#c8015712091204998067
+#
 # DMPC. 98 lipids, 2700 waters = 27.6 w/l.
 # 303K. 
 #
@@ -22,10 +26,12 @@
 # Results first published in the above article.
 
 #beta:
-1 -0.046 # average of the two (splitting was within 0.002)
+1 -0.046
+1 -0.048
 
 #alpha:
-2  0.088 # average of the two (splitting was within 0.002)
+2 0.092
+2 0.087
 
 # g3:
 3 -0.206 # g3s
