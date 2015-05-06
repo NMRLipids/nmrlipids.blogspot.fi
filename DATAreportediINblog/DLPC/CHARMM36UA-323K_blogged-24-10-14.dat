@@ -15,13 +15,12 @@
 #
 # Total simulation 50 ns, last 20 ns analyzed.
 #
-# CHARMM36 United Atom force field:
-#
-#    http://dx.doi.org/10.1021/jp410344g [*]
-#
-# as described by Alexandru Botan: "We took [CHARMM27 United Atom] FF
-# from [http://dx.doi.org/10.1021/jp800687p] and replaced CHARMM27 by
-# CHARMM36. This corresponds to the paper you cited [*]".
+# CHARMM36 United Atom force field developed by Alexandru Botan and Claire Loison,
+# as described by Claire Loison on March 25th 2015: "The model UA-AA we have used
+# here is actually different both from the UA-charmm27 by Henin et al (2008)
+# [http://dx.doi.org/10.1021/jp800687p] and from the UA-charmm36 by Lee et al (2014)
+# [http://dx.doi.org/10.1021/jp410344g]. We have taken the topology by Henin et al.,
+# and used the charmm 36 parameters for the heads."
 
 # beta:
 1 -0.06525

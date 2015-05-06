@@ -23,6 +23,7 @@ do
 	| sed 's/"//g' \
 	| xargs grep ^$op \
 	| sed 's/:/ /' \
+	| sed 's/+/ /' \
 	| awk '{print $3,$1}' \
 	| sort -n \
 	> foo.bar
@@ -42,7 +43,7 @@ do
 	then
 	    # Remove currently largest from the list:
 	    pos=`echo $pos | awk '{print $1+1}'`
-	    posX=`echo $pos $dx $op | awk '{print ($3+0.5-1)+$1*$2}'`
+	    posX=`echo $pos $dx $op | awk '{print ($3+0.5-1-$2)+$1*$2}'`
 	    out=`tail -n 1 bar.foo | awk '{print $2}'` # file to remove from list
 	    value=`tail -n 1 foo.bar | awk '{print $1}'`
 	    grep -v $out bar.foo > foo.bar
@@ -54,19 +55,13 @@ done
 rm foo.bar bar.foo
 
 # Some more edits to show also points that fall outside the y-borders of the plot
-# (currently set as: [0.171045:-0.3211]):
+# (currently set as: [0.153471:-0.3211]):
 echo
 echo 'Dragging outliers in...'
 # Kukol's larger g3:
-echo 'Kukol g3: 0.2792 -> 0.171045'
+echo 'Kukol g3: 0.2792 -> 0.153471'
 cat ./sortedForPlot/POPC/KUKOL-298K_blogged-20-09-14.dat \
-    | sed 's/0.2792/0.171045/' \
+    | sed 's/0.2792/0.153471/' \
     > foo.bar
 mv foo.bar ./sortedForPlot/POPC/KUKOL-298K_blogged-20-09-14.dat
 
-# Chiu's g2:
-echo 'Chiu g2: 0.424207 -> 0.171045'
-cat ./sortedForPlot/POPC/CHIU-298K_blogged-08-10-13.dat \
-    | sed 's/0.424207/0.171045/' \
-    > foo.bar
-mv foo.bar ./sortedForPlot/POPC/CHIU-298K_blogged-08-10-13.dat
