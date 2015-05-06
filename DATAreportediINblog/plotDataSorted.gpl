@@ -8,8 +8,8 @@ set out "comparisonSorted.pdf"
 set tmargin at screen 0.995
 set ylabel "S_{CH}" font "Arial,20" offset 2,-2.3
 
-set bmargin at screen 0.23 #0.31
-set key l at screen -0.01,0.21 Left reverse samplen 2 width -2 maxrows 15 #12
+set bmargin at screen 0.24 #0.31
+set key l at screen -0.01,0.225 Left reverse samplen 2 width -2 maxrows 14 #12
 #set key below horizontal left Left reverse samplen 1 maxcols 2 maxrows 6
 
 set lmargin at screen 0.122 #0.157
@@ -76,7 +76,7 @@ set arrow 261 from 2.5485, graph 0 to 2.5485, graph -0.02 lt 26 lw 3 # Kukol g3
 set label 262 at 2.67, graph 0.008 rotate by 30 "0.28" font ",9" tc rgb "#FF8300" # Kukol g3
 
 # Explanations for superscripts:
-set label 2 at screen 0.54,0.01 \
+set label 2 at screen 0.54,0.015 \
   "^{_{(1)}} DROSS, ^{_{(2)}} APM-CP, ^{_{(3)}} R-PDLF" font ",10"
 
 # DROSS = Dipolar Recoupling On-axis with Scaling and Shape preservation
@@ -136,14 +136,13 @@ plot [0.5:5.5][0.153471:-0.3211] \
   "./sortedForPlot/POPC/AMBERLIPID14-303K_blogged-26-03-14.dat" u ($1):($2) w p lt 241 pt 6 ps r \
   t "  &{M}@{\"}&{DPC}{298K}  Lipid14",\
   "./sortedForPlot/POPC/MACROG-310K_joint.dat" u ($1):($2):($6):($7) w ye lt 30 pt 7 ps r \
-  t "  &{M}@{\"}&{DPC}{310K}  MacRog"
+  t "  &{M}@{\"}&{DPC}{310K}  MacRog" , \
+  x w p ls 0 ps 0 lc rgb "white" t " "
 
 
 
 
 
-#, \
-#  x w p ls 1 ps 0 t " ", \
 #  x w p ls 1 ps 0 t " ", \
 #  x w p ls 1 ps 0 t " "
 
