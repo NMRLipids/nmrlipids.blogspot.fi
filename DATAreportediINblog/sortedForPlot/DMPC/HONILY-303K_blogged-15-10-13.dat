@@ -1,5 +1,7 @@
-0.785715 -0.046 # average of the two (splitting was within 0.002)
-2.02381  0.088 # average of the two (splitting was within 0.002)
+0.880953 -0.046
+0.880953 -0.048
+2.02381 0.092
+2.02381 0.087
 3.35714 -0.206 # g3s
 3.35714 -0.291 # g3r
 3.59524 -0.182
