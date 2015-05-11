@@ -423,10 +423,10 @@ CHARMM36~\cite{klauda10}  & POPC &  72 & 2242 & 303 &  30 &  20 & [\citenum{char
 CHARMM36}~\cite{klauda10} & POPC & 128 & 5120 & 303 & 200 & 100 & [\citenum{charmm36files}]$^*$      & SI \\
 %CHARMM36\cite{klauda10}\todoi{Not included in the Fig. 2. Should we remove or include?}        & DOPC   & 128 &  5120    & 303 & 150 & 100  & ?\todoi{Permanent link in progress by Hubert Santuz}  & SI \\
 %\todoi{Permanent link for DOPC CHARMM36 simulation by Hubert Santuz is not required now. However, it would be probably useful in the future.}
-MacRog~\cite{maciejewski14}  & POPC & 288 & 12600 & 310 & 100 &  80 & [\citenum{macrogFILES}]$^*$      & SI  \\
+MacRog~\cite{kulig15b}  & POPC & 288 & 12600 & 310 & 100 &  80 & [\citenum{macrogFILES}]$^*$      & SI  \\
 {\bf
-MacRog}~\cite{maciejewski14} & POPC & 128 &  6400 & 310 & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$  & SI  \\
-MacRog~\cite{maciejewski14}  & POPC & 288 & 14400 & 310 &  90 &  40 & [\citenum{macrogdehydFILES}]$^*$ & SI  \\
+MacRog}~\cite{kulig15b} & POPC & 128 &  6400 & 310 & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$  & SI  \\
+MacRog~\cite{kulig15b}  & POPC & 288 & 14400 & 310 &  90 &  40 & [\citenum{macrogdehydFILES}]$^*$ & SI  \\
 GAFFlipid~\cite{dickson12}   & DPPC &  72 & 2197 & 323 &  90 & 50 & [\citenum{GAFFlipidFILESdppc}]$^*$ & SI \\
 GAFFlipid~\cite{dickson12}   & DPPC &  72 & 2167 & 323 & 250 &  250 & -   &  [\citenum{dickson12}]$^i$   \\
 {\bf
@@ -475,7 +475,7 @@ CHARMM36\cite{klauda10}          & POPC   & 40 & 128 &  5120   & 303 & 150 & 100
                                  & POPC   & 31  & 72  &  2242 & 303 & 30 & 20 & [\citenum{charmm36filesSHORT}]$^*$ & SI \\
                                & POPC   & 15 & 72 &  1080  & 303 & 59 & 40 & [\citenum{charmm36files15wPERl}]$^*$ & SI \\
                             & POPC   & 7  & 72  &  504  & 303 & 60 & 20 & [\citenum{charmm36files7wPERl}]$^*$ & SI \\
-MacRog\cite{maciejewski14}     & POPC   & 50 & 288  & 14400 & 310 & 90 & 40 & [\citenum{macrogdehydFILES}]$^*$ & SI \\
+MacRog\cite{kulig15b}     & POPC   & 50 & 288  & 14400 & 310 & 90 & 40 & [\citenum{macrogdehydFILES}]$^*$ & SI \\
                                & POPC   & 25 & 288  & 7200 & 310 & 100 & 50 & [\citenum{macrogdehydFILES}]$^*$ & SI \\
                                 & POPC   & 20 & 288  & 5760 & 310 & 100 & 50 & [\citenum{macrogdehydFILES}]$^*$ & SI \\
                                 & POPC   & 15 & 288  & 4320 & 310 & 100 & 50 & [\citenum{macrogdehydFILES}]$^*$ & SI \\
@@ -520,7 +520,7 @@ CHARMM36\cite{klauda10,lim12}   & POPC   & 128& 0& 0\% & 5120  & 303  & 150 & 10
                                 & POPC   & 332& 180& 35\% & 21340  & 298  & 170 & 100 & [\citenum{charmmPOPC512files}]$^*$  & SI  \\
                                 & POPC   & 256& 256& 50\% & 20334  & 298  & 170 & 100 & [\citenum{charmmPOPC512files}]$^*$  & SI  \\
                                & POPC   & 80 & 80 &50\%  &  4496    & 303 & 200 & 100 & [\citenum{charmm36files50perCHOL}]$^*$ & SI \\
-MacRog\cite{maciejewski14}     & POPC   & 128 & 0 & 0\% & 6400  & 310 & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$ & SI \\ 
+MacRog\cite{kulig15b}     & POPC   & 128 & 0 & 0\% & 6400  & 310 & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$ & SI \\ 
                           & POPC   & 114  & 14 & 11\% & 6400  & 310  & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$ & SI    \\
                           & POPC   & 72   & 56 &  44\% & 6400  & 310  & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$ & SI    \\
                              & POPC   & 64  & 64 & 50\% & 6400  & 310  & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$ & SI    \\
@@ -1094,8 +1094,8 @@ Pressure was semi-isotropically coupled to the atmospheric pressure with the Ber
 method.
 
 \subsubsection{MacRog}
-The lipid force field parameters were obtained from the developers and they correspond to the published DPPC parameters~\cite{maciejewski14} with the inclusion of the 
-double bond parameters~\cite{kulig15}. 
+The lipid force field parameters were obtained from the developers and the parameters are presented in Refs.~\citenum{maciejewski14,kulig15b}. 
+%correspond to the published DPPC parameters~\cite{maciejewski14} with the inclusion of the double bond parameters~\cite{kulig15}. 
 %This inclusion of unsaturated lipid tails will be published in the near future. 
 %\todo{You have recent paper where you use POPC/chol simulations with this model: Kulig et al. BBA 1848 (2015) 422-432 http://dx.doi.org/10.1016/j.bbamem.2014.10.032.
 %would this be a correct refence here?}
