@@ -1,33 +1,29 @@
 set term pdfcairo enhanced rounded color dashed dashlength 1 size 10cm, 21cm #16.2cm
 set out "cholesterolization.pdf"
 
-set multiplot layout 7,1 tit " "
+set multiplot layout 7,1 tit ""
 set tmargin 0
 set bmargin 0
-set rmargin 1
-set lmargin 11
+set rmargin 10.5
+set lmargin 8.5
 set xtics format " "
 set mxtics 2
 set ytics 0.02
 set mytics 2
-set ylabel "S_{CH}" offset screen -0.02, graph 0.43 norotate font ",18"
-set label 141 at screen 0.09, graph 0.77 right font ",9" tc rgb "#00A368" # MacRog
-set label 111 at screen 0.09, graph 0.67 right font ",9" tc rgb "#D70039" # Berger
-set label 121 at screen 0.09, graph 0.57 right font ",9" tc rgb "#0088BF" # CHARMM36
-#set label 131 at screen 0.09, graph 0.47 right font ",9" tc rgb "#FFD300" # GAFF
+set ylabel "S_{CH}" font ",18" offset screen 0.01 #, graph 0.43
 
 mPOPC=760.076
 mH2O=18.01528 
 
-we=1   # linewidth experimental
-re=0.4 # point radius experimental
+we=5   # linewidth experimental
+re=0.7 # point radius experimental
 
 w=2   # linewidth simulation
 r=0.5 # point radius simulation
 
-set style line  1 lt 3 pt 4 ps re lw we lc rgb "#000000" # for Brown (EXP)
-set style line  2 lt 3 pt 6 ps re lw we lc rgb "#000000" # for Ferreira (EXP)
-set style line  3 lt 3 pt 8 ps re lw we lc rgb "#000000" # for  (EXP)
+set style line  1 lt 1 pt 4 ps re lw we lc rgb "#000000" # for Brown (EXP)
+set style line  2 lt 1 pt 6 ps re lw we lc rgb "#000000" # for Ferreira (EXP)
+set style line  3 lt 1 pt 8 ps re lw we lc rgb "#000000" # for  (EXP)
 
 set style line 11 lt 1 pt 7 ps r lw w lc rgb "#D70039" # for Berger
 set style line 12 lt 1 pt 7 ps r lw w lc rgb "#0088BF" # for CHARMM36
@@ -38,30 +34,120 @@ set style line 15 lt 1 pt 6 ps r lw w lc rgb "#0088BF" # for CHARMM36
 set ytics -2,0.02,2
 
 # Carbon: beta ####################################
-set label 100 "{/Symbol b}" at graph 0.05,0.15 font ",18"
-set key l at screen 0.02,0.07 Left reverse samplen 2 width 2 maxrows 4 font ",14"
+set label 100 "{/Symbol b}" at graph 0.05,0.85 font ",18"
+set key l at screen 0.025,0.08 Left reverse samplen 2 width 4 maxrows 4 font ",14" 
 # offsets:
-d_MR=-0.05 # MacRog
-set label 141 sprintf("S_{CH} %+g",d_MR) # MacRog
+d_MR=-0.06 # MacRog
 d_Be=-0.07 # Berger
-set label 111 sprintf("S_{CH} %+g",d_Be) # Berger
-d_CH=0.03 # CHARMM36
-set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
-#d_GA=-0.04 # GAFF
-#set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [-5:65][-0.07:0.01]\
-    "./DPPC/cholesterol/EXP-Brown1978.dat" u ($1):($2) every :::0::0 w lp ls 1 \
-    t "DPPC 331K ^{_{^{2}}}H-NMR", \
-    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::1::1 w lp ls 2 \
-    t "@{POPC}&{DPPC} 300K ^{_{^{13}}}C-NMR", \
-    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::0::1 w lp ls 14 \
-    t " {&{PO}}{@{\"}}&{PC} 310K MacRog", \
-    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::0::1 w lp ls 11 \
+d_CH=0.045 # CHARMM36
+# show just offsets:
+set label 111 sprintf("S_{CH}%+g",d_Be) at graph 1.06, graph 0.5 center rotate by 90 font ",17" tc rgb "#D70039"
+set label 141 sprintf("S_{CH}%+g",d_MR) at graph 1.15, graph 0.5 center rotate by 90 font ",17" tc rgb "#00A368"
+set label 121 sprintf("S_{CH}%+g",d_CH) at graph 1.24, graph 0.5 center rotate by 90 font ",17" tc rgb "#0088BF"
+# show also shifted y-axes:
+#miny=-0.04
+#maxy=-0.01
+#
+#set arrow 1 from graph 1.03,first miny to graph 1.03, first maxy heads size graph 0.01,90 ls 11 # Berger
+#set label 111 "S_{CH}" at graph 1.065, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#D70039"
+#set label 112 sprintf("%g",miny-d_Be) at graph 1.065, first miny center rotate by 90 font ",10" tc rgb "#D70039"
+#set label 113 sprintf("%g",maxy-d_Be) at graph 1.065, first maxy center rotate by 90 font ",10" tc rgb "#D70039"
+#
+#set arrow 2 from graph 1.13,first miny to graph 1.13, first maxy heads size graph 0.01,90 ls 14 # MacRog
+#set label 141 "S_{CH}" at graph 1.165, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#00A368"
+#set label 142 sprintf("%g",miny-d_MR) at graph 1.165, first miny center rotate by 90 font ",10" tc rgb "#00A368"
+#set label 143 sprintf("%g",maxy-d_MR) at graph 1.165, first maxy center rotate by 90 font ",10" tc rgb "#00A368"
+#
+#miny=miny-0.005
+#maxy=maxy+0.005
+#set arrow 3 from graph 1.23,first miny to graph 1.23, first maxy heads size graph 0.01,90 ls 15 # CHARMM36
+#set label 121 "S_{CH}" at graph 1.265, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#0088BF"
+#set label 122 sprintf("%g",miny-d_CH) at graph 1.265, first miny center rotate by 90 font ",10" tc rgb "#0088BF"
+#set label 123 sprintf("%g",maxy-d_CH) at graph 1.265, first maxy center rotate by 90 font ",10" tc rgb "#0088BF"
+
+# fits for the guides-to-the-eye:
+f(x,a,b,c,d)=a*x**3+b*x**2+c*x+d
+fit f(x,a,b,c,d) "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2) ev :::0::0 via a,b,c,d
+aMR1=a
+bMR1=b
+cMR1=c
+dMR1=d+d_MR
+fit f(x,a,b,c,d) "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2) ev :::1::1 via a,b,c,d
+aMR2=a
+bMR2=b
+cMR2=c
+dMR2=d+d_MR
+fit f(x,a,b,c,d) "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2) ev :::0::0 via a,b,c,d
+aBe1=a
+bBe1=b
+cBe1=c
+dBe1=d+d_Be
+fit f(x,a,b,c,d) "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2) ev :::1::1 via a,b,c,d
+aBe2=a
+bBe2=b
+cBe2=c
+dBe2=d+d_Be
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+# the upper:
+fit f(x,0,b,c,d) "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2) ev :::0::0 via b,c,d
+aCH1=0
+bCH1=b
+cCH1=c
+dCH1=d+d_CH
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+# the lower:
+fit f(x,0,b,c,d) "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2) ev :::1::1 via b,c,d
+aCH2=0
+bCH2=b
+cCH2=c
+dCH2=d+d_CH
+# the lower:
+fit f(x,a,b,c,d) "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2) ev :::0::0 via a,b,c,d
+aCH3=a
+bCH3=b
+cCH3=c
+dCH3=d+d_CH
+# the upper:
+fit f(x,a,b,c,d) "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2) ev :::1::1 via a,b,c,d
+aCH4=a
+bCH4=b
+cCH4=c
+dCH4=d+d_CH
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+fit f(x,0,b,c,d) "./DPPC/cholesterol/EXP-Brown1978.dat" u ($1):($2) ev :::0::0 via b,c,d
+aEX1=0
+bEX1=b
+cEX1=c
+dEX1=d
+fit f(x,a,b,c,d) "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) ev :::1::1 via a,b,c,d
+aEX2=a
+bEX2=b
+cEX2=c
+dEX2=d
+
+set samples 100
+plot [-5:65][-0.05:0.0] \
+    (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
+    (x>-1&&x<61)?f(x,aBe2,bBe2,cBe2,dBe2):(1/0) ls 11 notitle, \
+    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<61)?f(x,aMR2,bMR2,cMR2,dMR2):(1/0) ls 14 notitle, \
+    (x>-1&&x<51)?(f(x,aCH1,bCH1,cCH1,dCH1)+f(x,aCH4,bCH4,cCH4,dCH4))/2:(1/0) ls 12 notitle, \
+    (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
+    (x>-1&&x<61)?(f(x,aEX1,bEX1,cEX1,dEX1)+f(x,aEX2,bEX2,cEX2,dEX2))/2:(1/0) ls 1 notitle, \
+    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::0::1 w p ls 11 \
     t " POPC 298K Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::0::1 w lp ls 12 \
-    t " &{PO}@{\"}&{PC} 303K CHARMM36", \
-    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::0::1 w lp ls 15 \
-    t " &{PO}@{\"}&{PC} 298K CHARMM36"
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::0::1 w p ls 15 \
+    t " &{PO}@{\"}&{PC}@{\\ \\   \"}&{298K}  CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::0::1 w p ls 12 \
+    t " &{PO}@{\"}&{PC} 303K &{CHA}@{\"}&{RMM36}", \
+    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::0::1 w p ls 14 \
+    t " {&{PO}}{@{\"}}&{PC} 310K MacRog", \
+    "./DPPC/cholesterol/EXP-Brown1978.dat" u ($1):($2) every :::0::0 w p ls 1 \
+    t "DPPC 331K ^{_{^{2}}}H-NMR", \
+    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::1::1 w p ls 2 \
+    t "@{POPC}&{DPPC} 300K ^{_{^{13}}}C-NMR", \
+    x w p ls 0 ps 0 lc rgb "white" t " "
+
 #    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::0::1 w lp ls 13 \
 #    t " {&{PO}}{@{\"}}&{PC} &{30}@{\"}&{3K} GAFF"
 unset key
@@ -69,100 +155,438 @@ unset key
 # Carbon: alpha ###################################
 set label 100 "{/Symbol a}"
 # offsets:
-d_MR=+0.01 #MacRog
-set label 141 sprintf("S_{CH} %+g",d_MR) # MacRog
-d_Be=-0.04 # Berger
-set label 111 sprintf("S_{CH} %+g",d_Be) # Berger
-d_CH=0.01 # CHARMM36
-set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
-#d_GA=-0.01 # GAFF
-#set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [-5:65][0.01:0.11] \
-    "./DPPC/cholesterol/EXP-Brown1978.dat" u ($1):($2) every :::1::2 w lp ls 1 t "Brown", \
-    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::2::2 w lp ls 2 t "Ferreira", \
-    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::2::3 w lp ls 14 t "MacRog", \
-    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::2::3 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::2::3 w lp ls 12 t "CHARMM36", \
-    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::2::3 w lp ls 15 t "CHARMM36"
-#    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::2::3 w lp ls 13 t "GAFF"
+d_MR=-0.02 #MacRog
+d_Be=-0.07 # Berger
+d_CH=0.03 # CHARMM36
+
+# show just offsets:
+set label 111 sprintf("S_{CH}%+g",d_Be)
+set label 141 sprintf("S_{CH}%+g",d_MR)
+set label 121 sprintf("S_{CH}%+g",d_CH)
+# show also shifted y-axes:
+#miny=0.02
+#maxy=0.07
+#
+#set arrow 1 from graph 1.03,first miny to graph 1.03, first maxy heads size graph 0.01,90 ls 11 # Berger
+#set label 111 at graph 1.065, first (miny+maxy)/2 
+#set label 112 sprintf("%g",miny-d_Be) at graph 1.065, first miny center 
+#set label 113 sprintf("%g",maxy-d_Be) at graph 1.065, first maxy center 
+#
+#set arrow 2 from graph 1.13,first miny to graph 1.13, first maxy heads size graph 0.01,90 ls 14 # MacRog
+#set label 141 "S_{CH}" at graph 1.165, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#00A368"
+#set label 142 sprintf("%g",miny-d_MR) at graph 1.165, first miny center rotate by 90 font ",10" tc rgb "#00A368"
+#set label 143 sprintf("%g",maxy-d_MR) at graph 1.165, first maxy center rotate by 90 font ",10" tc rgb "#00A368"
+#
+#set arrow 3 from graph 1.23,first miny to graph 1.23, first maxy heads size graph 0.01,90 ls 15 # CHARMM36
+#set label 121 "S_{CH}" at graph 1.265, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#0088BF"
+#set label 122 sprintf("%g",miny-d_CH) at graph 1.265, first miny center rotate by 90 font ",10" tc rgb "#0088BF"
+#set label 123 sprintf("%g",maxy-d_CH) at graph 1.265, first maxy center rotate by 90 font ",10" tc rgb "#0088BF"
+
+
+# fits for the guides-to-the-eye:
+fit f(x,a,b,c,d) "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2) ev :::2::2 via a,b,c,d
+aBe1=a
+bBe1=b
+cBe1=c
+dBe1=d+d_Be
+fit f(x,a,b,c,d) "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2) ev :::3::3 via a,b,c,d
+aBe2=a
+bBe2=b
+cBe2=c
+dBe2=d+d_Be
+fit f(x,a,b,c,d) "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2) ev :::2::2 via a,b,c,d
+aMR1=a
+bMR1=b
+cMR1=c
+dMR1=d+d_MR
+fit f(x,a,b,c,d) "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2) ev :::3::3 via a,b,c,d
+aMR2=a
+bMR2=b
+cMR2=c
+dMR2=d+d_MR
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+# the upper:
+fit f(x,0,b,c,d) "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2) ev :::2::2 via b,c,d
+aCH1=0
+bCH1=b
+cCH1=c
+dCH1=d+d_CH
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+# the lower:
+fit f(x,0,b,c,d) "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2) ev :::3::3 via b,c,d
+aCH2=0
+bCH2=b
+cCH2=c
+dCH2=d+d_CH
+# the lower:
+fit f(x,a,b,c,d) "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2) ev :::2::2 via a,b,c,d
+aCH3=a
+bCH3=b
+cCH3=c
+dCH3=d+d_CH
+# the upper:
+fit f(x,a,b,c,d) "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2) ev :::3::3 via a,b,c,d
+aCH4=a
+bCH4=b
+cCH4=c
+dCH4=d+d_CH
+fit f(x,a,b,c,d) "./DPPC/cholesterol/EXP-Brown1978.dat" u ($1):($2) ev :::1::2 via a,b,c,d
+aEX1=a
+bEX1=b
+cEX1=c
+dEX1=d
+fit f(x,a,b,c,d) "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) ev :::2::2 via a,b,c,d
+aEX2=a
+bEX2=b
+cEX2=c
+dEX2=d
+plot [-5:65][0:0.09] \
+    (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
+    (x>-1&&x<61)?f(x,aBe2,bBe2,cBe2,dBe2):(1/0) ls 11 notitle, \
+    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<61)?f(x,aMR2,bMR2,cMR2,dMR2):(1/0) ls 14 notitle, \
+    (x>-1&&x<51)?(f(x,aCH1,bCH1,cCH1,dCH1)+f(x,aCH4,bCH4,cCH4,dCH4))/2:(1/0) ls 12 notitle, \
+    (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
+    (x>-1&&x<61)?(f(x,aEX1,bEX1,cEX1,dEX1)+f(x,aEX2,bEX2,cEX2,dEX2))/2:(1/0) ls 1 notitle, \
+    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::2::3 w p ls 11 t "Berger", \
+    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::2::3 w p ls 14 t "MacRog", \
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::2::3 w p ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::2::3 w p ls 15 t "CHARMM36", \
+    "./DPPC/cholesterol/EXP-Brown1978.dat" u ($1):($2) every :::1::2 w p ls 1 t "Brown", \
+    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::2::2 w p ls 2 t "Ferreira"
+
+
+
 
 # Carbon: g3 ######################################
 # R and S together:
 set label 100 "g_{3}" at graph 0.05,0.85
 # offsets:
-d_MR=+0.0 #MacRog
-set label 141 sprintf("S_{CH} %+g",d_MR) # MacRog
-d_Be=+0.03 # Berger
-set label 111 sprintf("S_{CH} %+3.2f",d_Be) # Berger
-d_CH=0.02 # CHARMM36
-set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
-#d_GA=0.03 # GAFF
-#set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [-5:65][-0.25:-0.07]\
-    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::3::3 w lp ls 2 t "Ferreira", \
-    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::4::5 w lp ls 14 t "MacRog", \
-    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::4::5 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::4::5 w lp ls 12 t "CHARMM36", \
-    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::4::5 w lp ls 15 t "CHARMM36"
-#    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::4::5 w lp ls 13 t "GAFF"
+d_MR=-0.04 #MacRog
+d_Be=0.0 # Berger
+d_CH=0.03 # CHARMM36
+
+# show just offsets:
+set label 111 sprintf("S_{CH}%+g",d_Be)
+set label 141 sprintf("S_{CH}%+g",d_MR)
+set label 121 sprintf("S_{CH}%+g",d_CH)
+# show also shifted y-axes:
+#miny=-0.26
+#maxy=-0.14
+#
+#set arrow 1 from graph 1.03,first miny to graph 1.03, first maxy heads size graph 0.01,90 ls 11 # Berger
+#set label 111 at graph 1.065, first (miny+maxy)/2 
+#set label 112 sprintf("%g",miny-d_Be) at graph 1.065, first miny center 
+#set label 113 sprintf("%g",maxy-d_Be) at graph 1.065, first maxy center 
+#
+#set arrow 2 from graph 1.13,first miny to graph 1.13, first maxy heads size graph 0.01,90 ls 14 # MacRog
+#set label 141 "S_{CH}" at graph 1.165, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#00A368"
+#set label 142 sprintf("%g",miny-d_MR) at graph 1.165, first miny center rotate by 90 font ",10" tc rgb "#00A368"
+#set label 143 sprintf("%g",maxy-d_MR) at graph 1.165, first maxy center rotate by 90 font ",10" tc rgb "#00A368"
+#
+#set arrow 3 from graph 1.23,first miny to graph 1.23, first maxy heads size graph 0.01,90 ls 15 # CHARMM36
+#set label 121 "S_{CH}" at graph 1.265, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#0088BF"
+#set label 122 sprintf("%g",miny-d_CH) at graph 1.265, first miny center rotate by 90 font ",10" tc rgb "#0088BF"
+#set label 123 sprintf("%g",maxy-d_CH) at graph 1.265, first maxy center rotate by 90 font ",10" tc rgb "#0088BF"
+
+# fits for the guides-to-the-eye:
+fit f(x,a,b,c,d) "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2) ev :::4::4 via a,b,c,d
+aBe1=a
+bBe1=b
+cBe1=c
+dBe1=d+d_Be
+fit f(x,a,b,c,d) "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2) ev :::5::5 via a,b,c,d
+aBe2=a
+bBe2=b
+cBe2=c
+dBe2=d+d_Be
+fit f(x,a,b,c,d) "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2) ev :::4::4 via a,b,c,d
+aMR1=a
+bMR1=b
+cMR1=c
+dMR1=d+d_MR
+fit f(x,a,b,c,d) "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2) ev :::5::5 via a,b,c,d
+aMR2=a
+bMR2=b
+cMR2=c
+dMR2=d+d_MR
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+# the upper:
+fit f(x,0,b,c,d) "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2) ev :::4::4 via b,c,d
+aCH1=0
+bCH1=b
+cCH1=c
+dCH1=d+d_CH
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+# the lower:
+fit f(x,0,b,c,d) "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2) ev :::5::5 via b,c,d
+aCH2=0
+bCH2=b
+cCH2=c
+dCH2=d+d_CH
+# the upper:
+fit f(x,a,b,c,d) "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2) ev :::4::4 via a,b,c,d
+aCH3=a
+bCH3=b
+cCH3=c
+dCH3=d+d_CH
+# the lower:
+fit f(x,a,b,c,d) "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2) ev :::5::5 via a,b,c,d
+aCH4=a
+bCH4=b
+cCH4=c
+dCH4=d+d_CH
+fit f(x,a,b,c,d) "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) ev :::3::3 via a,b,c,d
+aEX1=a
+bEX1=b
+cEX1=c
+dEX1=d
+plot [-5:65][:-0.12]\
+    (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
+    (x>-1&&x<61)?f(x,aBe2,bBe2,cBe2,dBe2):(1/0) ls 11 notitle, \
+    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<61)?f(x,aMR2,bMR2,cMR2,dMR2):(1/0) ls 14 notitle, \
+    (x>-1&&x<51)?(f(x,aCH1,bCH1,cCH1,dCH1)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
+    (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH4,bCH4,cCH4,dCH4))/2:(1/0) ls 12 notitle, \
+    (x>-1&&x<61)?f(x,aEX1,bEX1,cEX1,dEX1):(1/0) ls 1 notitle, \
+    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::4::5 w p ls 11 t "Berger", \
+    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::4::5 w p ls 14 t "MacRog", \
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::4::5 w p ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::4::5 w p ls 15 t "CHARMM36", \
+    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::3::3 w p ls 2 t "Ferreira"
+
 
 
 # Carbon: g2 ######################################
 set label 100 "g_{2}"
 # offsets:
 d_MR=0.0 #MacRog
-set label 141 sprintf("S_{CH} %+g",d_MR) # MacRog
-d_Be=-0.02 # Berger
-set label 111 sprintf("S_{CH} %+3.2f",d_Be) # Berger
-d_CH=0.0 # CHARMM36
-set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
+d_Be=-0.01 # Berger
+d_CH=-0.03 # CHARMM36
 #d_GA=0.06 # GAFF
 #set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [-5:65][-0.25:-0.15] \
-    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::4::4 w lp ls 2 t "Ferreira", \
-    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::6::6 w lp ls 14 t "MacRog", \
-    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::6::6 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::6::6 w lp ls 12 t "CHARMM36", \
-    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::6::6 w lp ls 15 t "CHARMM36"
-#    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::6::6 w lp ls 13 t "GAFF"
+
+# show just offsets:
+set label 111 sprintf("S_{CH}%+g",d_Be)
+set label 141 sprintf("S_{CH}%+g",d_MR)
+set label 121 sprintf("S_{CH}%+g",d_CH)
+# show also shifted y-axes:
+#miny=-0.24
+#maxy=-0.18
+#
+#set arrow 1 from graph 1.03,first miny to graph 1.03, first maxy heads size graph 0.01,90 ls 11 # Berger
+#set label 111 at graph 1.065, first (miny+maxy)/2 
+#set label 112 sprintf("%g",miny-d_Be) at graph 1.065, first miny center 
+#set label 113 sprintf("%g",maxy-d_Be) at graph 1.065, first maxy center 
+#
+#set arrow 2 from graph 1.13,first miny to graph 1.13, first maxy heads size graph 0.01,90 ls 14 # MacRog
+#set label 141 "S_{CH}" at graph 1.165, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#00A368"
+#set label 142 sprintf("%g",miny-d_MR) at graph 1.165, first miny center rotate by 90 font ",10" tc rgb "#00A368"
+#set label 143 sprintf("%g",maxy-d_MR) at graph 1.165, first maxy center rotate by 90 font ",10" tc rgb "#00A368"
+#
+#set arrow 3 from graph 1.23,first miny to graph 1.23, first maxy heads size graph 0.01,90 ls 15 # CHARMM36
+#set label 121 "S_{CH}" at graph 1.265, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#0088BF"
+#set label 122 sprintf("%g",miny-d_CH) at graph 1.265, first miny center rotate by 90 font ",10" tc rgb "#0088BF"
+#set label 123 sprintf("%g",maxy-d_CH) at graph 1.265, first maxy center rotate by 90 font ",10" tc rgb "#0088BF"
+
+# fits for the guides-to-the-eye:
+fit f(x,a,b,c,d) "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2) ev :::6::6 via a,b,c,d
+aBe1=a
+bBe1=b
+cBe1=c
+dBe1=d+d_Be
+# NOTE! Excluding the 50% data point from the guide-to-the-eye fit, because it
+#       causes the cubic polynomial to fluctuate between 0% and 40%, although
+#       the data is practically flat in this region.
+fit [:][-0.20:] f(x,a,b,c,d) "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2) ev :::6::6 via a,b,c,d
+aMR1=a
+bMR1=b
+cMR1=c
+dMR1=d+d_MR
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+fit f(x,0,b,c,d) "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2) ev :::6::6 via b,c,d
+aCH2=0
+bCH2=b
+cCH2=c
+dCH2=d+d_CH
+fit f(x,a,b,c,d) "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2) ev :::6::6 via a,b,c,d
+aCH3=a
+bCH3=b
+cCH3=c
+dCH3=d+d_CH
+fit f(x,a,b,c,d) "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) ev :::4::4 via a,b,c,d
+aEX1=a
+bEX1=b
+cEX1=c
+dEX1=d
+
+plot [-5:65][:-0.15] \
+    (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
+    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
+    (x>-1&&x<61)?f(x,aEX1,bEX1,cEX1,dEX1):(1/0) ls 1 notitle, \
+    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::6::6 w p ls 11 t "Berger", \
+    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::6::6 w p ls 14 t "MacRog", \
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::6::6 w p ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::6::6 w p ls 15 t "CHARMM36", \
+    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::4::4 w p ls 2 t "Ferreira"
+
 
 # Carbon: g1 ######################################
 # R:
 set label 100 "g_{1R}" #at graph 0.05,0.15
 # offsets:
-d_MR=0.01 #MacRog
-set label 141 sprintf("S_{CH} %+g",d_MR) # MacRog
-d_Be=-0.32 # Berger
-set label 111 sprintf("S_{CH} %+3.2f",d_Be) # Berger
-d_CH=0.03 # CHARMM36
-set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
-#d_GA=0.03 # GAFF
-#set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [-5:65][-0.21:-0.09] \
-    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::5::5 w lp ls 2 t "Ferreira", \
-    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::7::7 w lp ls 14 t "MacRog", \
-    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::7::7 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::7::7 w lp ls 12 t "CHARMM36", \
-    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::7::7 w lp ls 15 t "CHARMM36"
-#    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::7::7 w lp ls 13 t "GAFF"
+d_MR=0.015 #MacRog
+d_Be=-0.295 # Berger
+d_CH=0.06 # CHARMM36
+
+# show just offsets:
+set label 111 sprintf("S_{CH}%+g",d_Be)
+set label 141 sprintf("S_{CH}%+g",d_MR)
+set label 121 sprintf("S_{CH}%+g",d_CH)
+# show also shifted y-axes:
+#miny=-0.155
+#maxy=-0.105
+#
+#set arrow 1 from graph 1.03,first miny to graph 1.03, first maxy heads size graph 0.01,90 ls 11 # Berger
+#set label 111 at graph 1.065, first (miny+maxy)/2 
+#set label 112 sprintf("%g",miny-d_Be) at graph 1.065, first miny center 
+#set label 113 sprintf("%g",maxy-d_Be) at graph 1.065, first maxy center 
+#
+#set arrow 2 from graph 1.13,first miny to graph 1.13, first maxy heads size graph 0.01,90 ls 14 # MacRog
+#set label 141 "S_{CH}" at graph 1.165, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#00A368"
+#set label 142 sprintf("%g",miny-d_MR) at graph 1.165, first miny center rotate by 90 font ",10" tc rgb "#00A368"
+#set label 143 sprintf("%g",maxy-d_MR) at graph 1.165, first maxy center rotate by 90 font ",10" tc rgb "#00A368"
+#
+#miny=miny+0.005
+#maxy=maxy-0.005
+#set arrow 3 from graph 1.23,first miny to graph 1.23, first maxy heads size graph 0.01,90 ls 15 # CHARMM36
+#set label 121 "S_{CH}" at graph 1.265, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#0088BF"
+#set label 122 sprintf("%g",miny-d_CH) at graph 1.265, first miny center rotate by 90 font ",10" tc rgb "#0088BF"
+#set label 123 sprintf("%g",maxy-d_CH) at graph 1.265, first maxy center rotate by 90 font ",10" tc rgb "#0088BF"
+
+# fits for the guides-to-the-eye:
+fit f(x,a,b,c,d) "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2) ev :::7::7 via a,b,c,d
+aBe1=a
+bBe1=b
+cBe1=c
+dBe1=d+d_Be
+fit f(x,a,b,c,d) "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2) ev :::7::7 via a,b,c,d
+aMR1=a
+bMR1=b
+cMR1=c
+dMR1=d+d_MR
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+fit f(x,0,b,c,d) "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2) ev :::7::7 via b,c,d
+aCH2=0
+bCH2=b
+cCH2=c
+dCH2=d+d_CH
+fit f(x,a,b,c,d) "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2) ev :::7::7 via a,b,c,d
+aCH3=a
+bCH3=b
+cCH3=c
+dCH3=d+d_CH
+fit f(x,a,b,c,d) "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) ev :::5::5 via a,b,c,d
+aEX1=a
+bEX1=b
+cEX1=c
+dEX1=d
+
+plot [-5:65][-0.165:-0.09] \
+    (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
+    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
+    (x>-1&&x<61)?f(x,aEX1,bEX1,cEX1,dEX1):(1/0) ls 1 notitle, \
+    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::7::7 w p ls 11 t "Berger", \
+    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::7::7 w p ls 14 t "MacRog", \
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::7::7 w p ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::7::7 w p ls 15 t "CHARMM36", \
+    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::5::5 w p ls 2 t "Ferreira"
+
+
+
+
 # S:
 set label 100 "g_{1S}"
 set xtics format "%g"
 set xlabel "cholesterol content (mol%)"
 # offsets:
-d_MR=-0.02 #MacRog
-set label 141 sprintf("S_{CH} %+g",d_MR) # MacRog
-d_Be=-0.08 # Berger
-set label 111 sprintf("S_{CH} %+3.2f",d_Be) # Berger
-d_CH=0.04 # CHARMM36
-set label 121 sprintf("S_{CH} %+g",d_CH) # CHARMM36
-#d_GA=-0.08 # GAFF
-#set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
-plot [-5:65][-0.09:0.05] \
-    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::6::6 w lp ls 2 t "Ferreira", \
-    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::8::8 w lp ls 14 t "MacRog", \
-    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::8::8 w lp ls 11 t "Berger", \
-    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::8::8 w lp ls 12 t "CHARMM36", \
-    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::8::8 w lp ls 15 t "CHARMM36"
+d_MR=-0.05 #MacRog
+d_Be=-0.06 # Berger
+d_CH=0.03 # CHARMM36
+
+# show just offsets:
+set label 111 sprintf("S_{CH}%+g",d_Be)
+set label 141 sprintf("S_{CH}%+g",d_MR)
+set label 121 sprintf("S_{CH}%+g",d_CH)
+# show also shifted y-axes:
+#miny=-0.05
+#maxy=0.03
+#
+#set arrow 1 from graph 1.03,first miny to graph 1.03, first maxy heads size graph 0.01,90 ls 11 # Berger
+#set label 111 at graph 1.065, first (miny+maxy)/2 
+#set label 112 sprintf("%g",miny-d_Be) at graph 1.065, first miny center 
+#set label 113 sprintf("%g",maxy-d_Be) at graph 1.065, first maxy center 
+#
+#set arrow 2 from graph 1.13,first miny to graph 1.13, first maxy heads size graph 0.01,90 ls 14 # MacRog
+#set label 141 "S_{CH}" at graph 1.165, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#00A368"
+#set label 142 sprintf("%g",miny-d_MR) at graph 1.165, first miny center rotate by 90 font ",10" tc rgb "#00A368"
+#set label 143 sprintf("%g",maxy-d_MR) at graph 1.165, first maxy center rotate by 90 font ",10" tc rgb "#00A368"
+#
+#set arrow 3 from graph 1.23,first miny to graph 1.23, first maxy heads size graph 0.01,90 ls 15 # CHARMM36
+#set label 121 "S_{CH}" at graph 1.265, first (miny+maxy)/2 center rotate by 90 font ",12" tc rgb "#0088BF"
+#set label 122 sprintf("%g",miny-d_CH) at graph 1.265, first miny center rotate by 90 font ",10" tc rgb "#0088BF"
+#set label 123 sprintf("%g",maxy-d_CH) at graph 1.265, first maxy center rotate by 90 font ",10" tc rgb "#0088BF"
+
+# fits for the guides-to-the-eye:
+fit f(x,a,b,c,d) "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2) ev :::8::8 via a,b,c,d
+aBe1=a
+bBe1=b
+cBe1=c
+dBe1=d+d_Be
+fit f(x,a,b,c,d) "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2) ev :::8::8 via a,b,c,d
+aMR1=a
+bMR1=b
+cMR1=c
+dMR1=d+d_MR
+# Note! Only three data points, thus can only fit a quadratic polynomial:
+fit f(x,0,b,c,d) "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2) ev :::8::8 via b,c,d
+aCH2=0
+bCH2=b
+cCH2=c
+dCH2=d+d_CH
+fit f(x,a,b,c,d) "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2) ev :::8::8 via a,b,c,d
+aCH3=a
+bCH3=b
+cCH3=c
+dCH3=d+d_CH
+
+plot [-5:65][-0.06:0.05] \
+    (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
+    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
+    "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::8::8 w p ls 11 t "Berger", \
+    "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::8::8 w p ls 14 t "MacRog", \
+    "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::8::8 w p ls 12 t "CHARMM36", \
+    "./POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat" u ($1):($2+d_CH) ev :::8::8 w p ls 15 t "CHARMM36", \
+    "./POPC/cholesterol/EXP-Ferreira2013.dat" u ($1):($2) every :::6::6 w lp ls 2 t "Ferreira"
+
 #    "./POPC/cholesterol/GAFF-303K.dat" u ($1):($2+d_GA) ev :::8::8 w lp ls 13 t "GAFF"
+
+#unset label 111
+#unset label 112
+#unset label 113
+#unset arrow 1
+#
+#unset label 141
+#unset label 142
+#unset label 143
+#unset arrow 2
+#
+#unset label 121
+#unset label 122
+#unset label 123
+#unset arrow 3
+
 unset multiplot
