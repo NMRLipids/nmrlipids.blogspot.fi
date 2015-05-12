@@ -1,5 +1,5 @@
 set term pdfcairo enhanced rounded color dashed dashlength 1 size 10cm, 21cm #16.2cm
-set out "stereospecificOPs.pdf"
+set out OUTPUTFILE
 
 # write name of the blog on the plot:
 # set label 1 right at screen 0.982,0.995 "nmrlipids.blogspot.fi" font ",9" tc rgb "gray"
@@ -49,17 +49,12 @@ set linetype 24  lt 1 lw w lc rgb "#FFD300" # for GAFF
 set linetype 30  lt 1 lw w lc rgb "#00A368" # for MacRog
 
 plot [0.5:7.5][0.152659:-0.26] \
-  "./POPC-for-stereospecific/BERGER-298K_recalculated-22-04-15.dat" u ($1-0.4):($2):($3) w ye lt 21 pt 7 ps r \
-  t "{298K}  Berger", \
-  "./POPC-for-stereospecific/MACROG-310K_recalculated-29-04-15.dat" u ($1-0.2):($2):($3) w ye lt 30 pt 7 ps r \
-  t "{310K}  MacRog", \
-  "./POPC-for-stereospecific/EXP-Ferreira2013.dat" u ($1):($2):($3) w ye lt 101 pt 7 ps 1.5*r \
-  t "300K  ^{_{^{13}}}C-NMR", \
+  DATA_BERGER u ($1-0.4):($2):($3) w ye lt 21 pt 7 ps r t "{298K}  Berger", \
+  DATA_MACROG u ($1-0.2):($2):($3) w ye lt 30 pt 7 ps r t "{310K}  MacRog", \
+  DATA_EXP u ($1):($2):($3) w ye lt 101 pt 7 ps 1.5*r t "300K  ^{_{^{13}}}C-NMR", \
   x w p ls 1 ps 0 t " ", \
-  "./POPC-for-stereospecific/GAFF-303K_blogged-12-11-14.dat" u ($1+0.2):($2):($3) w ye lt 24 pt 7 ps r \
-  t "{303K}  GAFFlipid", \
-  "./POPC-for-stereospecific/CHARMM36-303K_blogged-01-12-14.dat" u ($1+0.4):($2):($3) w ye lt 23 pt 7 ps r \
-  t "@{\\ \\  \"}&{303K}  CHARMM36"
+  DATA_GAFF u ($1+0.2):($2):($3) w ye lt 24 pt 7 ps r t "{303K}  GAFFlipid", \
+  DATA_CHARMM36 u ($1+0.4):($2):($3) w ye lt 23 pt 7 ps r t "@{\\ \\  \"}&{303K}  CHARMM36"
 
 
 
