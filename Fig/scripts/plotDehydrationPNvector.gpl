@@ -21,7 +21,7 @@ set mxtics 2
 set ylabel "deviation of P-N vector from \nmembrane normal (degrees)" offset +1
 
 plot [60:0][65:105] \
-     DATA_BERGER_DLPC u ($1):($2) w lp ls 15 \
+     DATA_BERGER_DLPC u ($1):($2) ev 2 w lp ls 15 \
      t " DLPC 300K Berger", \
      DATA_BERGER u ($1):($2) w lp ls 11 \
      t " POPC 298K &{Be}@{\"}&{rger}", \
