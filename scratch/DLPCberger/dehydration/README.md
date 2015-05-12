@@ -1,0 +1,1 @@
+This folder contains scripts and data files for the order parameters (headgroups & chains) in dehydration condition for DLPC/Berger forcefield.

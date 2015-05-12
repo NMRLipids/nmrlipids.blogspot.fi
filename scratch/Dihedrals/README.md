@@ -1,0 +1,1 @@
+This folder contains the dihedral angle distributions for g3-g2-g1-O(sn-1), N-beta-alpha-O, O(P)-g3-g2-g1 and O(P)-g3-g2-O(sn-2) for the forcefield CHARMM36 in various amount of cholesterol (folder `charmm36`) along with the script `plot_dihedrals.py` to produce the figure `out.pdf`.
