@@ -20,7 +20,7 @@ A README inside each relevant folder indicates:
 
 | Forcefield            | Lipid | Nl*  | Condition                               | Path                            | DOI                                              |
 |:---------------------:|:-----:|:----:|:---------------------------------------:|:-------------------------------:|:------------------------------------------------:|
-| Berger-DPPC-98        | DPPC  | 72   | -                                       | Berger-DPPC-98/DPPCpure/        | [10.5281/zenodo.13934](http://dx.doi.org/10.5281/zenodo.13934) |
+| Berger-DPPC-98        | DPPC  | 72   | -                                       | Berger-DPPC-98/DPPCpure/        | [Zenodo](http://dx.doi.org/10.5281/zenodo.13934) |
 | Berger-POPC-07        | POPC  | 128  | -                                       | Berger-POPC-O7/POPCpure/        | [Zenodo](http://dx.doi.org/10.5281/zenodo.13279) |
 | Berger-POPC-07        | POPC  | 128  | Dehydration (7 w/l)                     | Berger-POPC-O7/POPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.13814) |
 | Berger-POPC-07/Höltje | POPC  | 120  | Cholesterol (6%)                        | Berger-POPC-O7/POPCchol/        | [Zenodo](http://dx.doi.org/10.5281/zenodo.13282) |
