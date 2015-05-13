@@ -1,4 +1,5 @@
-# From: https://github.com/NMRLipids/nmrlipids.blogspot.fi/tree/master/HGmodelMANUSCRIPT/DATAforDEHYDRATIONfig
+# Data from Fig. 2 and 3 from Dvinskikh et al. http://dx.doi.org/10.1039/b508190d 
+# extracted by using g3data program https://github.com/pn2200/g3data
 
 # beta:
 4.78843430492 -0.0186549
