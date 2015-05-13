@@ -84,7 +84,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Mon Feb 16 16:15:27 2015"
+@timestamp def "Wed May 13 11:17:09 2015"
 @with string
 @    string on
 @    string loctype view
@@ -712,7 +712,7 @@
 @    xaxis  label "Dihedral angle (degrees)"
 @    xaxis  label layout para
 @    xaxis  label place auto
-@    xaxis  label char size 1.000000
+@    xaxis  label char size 1.250000
 @    xaxis  label font 0
 @    xaxis  label color 1
 @    xaxis  label place normal
@@ -915,7 +915,7 @@
 @    xaxis  label "Dihedral angle (degrees)"
 @    xaxis  label layout para
 @    xaxis  label place auto
-@    xaxis  label char size 1.000000
+@    xaxis  label char size 1.250000
 @    xaxis  label font 0
 @    xaxis  label color 1
 @    xaxis  label place normal
