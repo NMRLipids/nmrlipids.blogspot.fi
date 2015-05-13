@@ -61,3 +61,4 @@ A README inside each relevant folder indicates:
 | Ulmschneiders         | POPC  | 128  | -                                       | Ulmschneiders/POPCpure/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.13392) |
 | Tjornhammar14         | DPPC  | 144  | -                                       | Tjornhammar14/POPCpure/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.12743) |
 | Botan-CHARMM36-UA     | DLPC  | 128  | -                                       | Botan-CHARMM36-UA/DLPCpure/     | [Zenodo](http://dx.doi.org/10.5281/zenodo.13821) |
+| Lee-CHARMM36-UA       | DPPC  | 72   | -                                       | Lee-CHARMM36-UA/DPPCpure/       | [Zenodo](http://dx.doi.org/10.5281/zenodo.17004) |
