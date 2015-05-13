@@ -1,7 +1,7 @@
 ## Input Files
 
 In this folder, you'll find all files required to relaunch the MD simulations.
-Due to size limitations of GitHub and binary format, the trajectory files of this MD simulations are stored in our [Zenodo Organization](https://zenodo.org/collection/user-nmrlipids).
+Due to size limitations of GitHub and binary format, the trajectory files of these MD simulations are stored in our [Zenodo Organization](https://zenodo.org/collection/user-nmrlipids).
 
 ### Organization
 
@@ -19,7 +19,7 @@ A README inside each relevant folder indicates:
 
 | Forcefield            | Lipid | Nl*  | Condition                               | Path                            | DOI                                              |
 |:---------------------:|:-----:|:----:|:---------------------------------------:|:-------------------------------:|:------------------------------------------------:|
-| Berger-DPPC-98        | DPPC  | 72   | -                                       | Berger-DPPC-98/DPPCpure/        | [Zenodo](http://dx.doi.org/10.5281/zenodo.13934) |
+| Berger-DPPC-98        | DPPC  | 72   | -                                       | Berger-DPPC-98/DPPCpure/        | [10.5281/zenodo.13934](http://dx.doi.org/10.5281/zenodo.13934) |
 | Berger-POPC-07        | POPC  | 128  | -                                       | Berger-POPC-O7/POPCpure/        | [Zenodo](http://dx.doi.org/10.5281/zenodo.13279) |
 | Berger-POPC-07        | POPC  | 128  | Dehydration (7 w/l)                     | Berger-POPC-O7/POPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.13814) |
 | Berger-POPC-07/Höltje | POPC  | 120  | Cholesterol (6%)                        | Berger-POPC-O7/POPCchol/        | [Zenodo](http://dx.doi.org/10.5281/zenodo.13282) |
@@ -35,6 +35,7 @@ A README inside each relevant folder indicates:
 | Berger-DLPC-13        | DLPC  | 72   | Dehydration (24 w/l)                    | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16289) |
 | Berger-DLPC-13        | DLPC  | 72   | Dehydration (28 w/l)                    | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16287) |
 | Charmm36              | POPC  | 72   |    -                                    | charmm36/POPCpure/              | [Zenodo](http://dx.doi.org/10.5281/zenodo.13944) |
+| Charmm36              | POPC  | 128  |    -                                    | charmm36/POPCchol/0%/           | [Zenodo](http://dx.doi.org/10.5281/zenodo.14066) |
 | Charmm36              | POPC  | 72   | NaCl (13, 26, 52, 78)                   | charmm36/POPCnacl/              | -                                                |
 | Charmm36              | POPC  | 72   | Dehydration (15 w/l)                    | charmm36/POPCdehydration/       | [Zenodo](http://dx.doi.org/10.5281/zenodo.13946) |
 | Charmm36              | POPC  | 72   | Dehydration (7 w/l)                     | charmm36/POPCdehydration/       | [Zenodo](http://dx.doi.org/10.5281/zenodo.13945) |

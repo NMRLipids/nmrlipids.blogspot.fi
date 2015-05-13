@@ -1,0 +1,72 @@
+integrator  = md
+constraints = all-bonds
+nsteps      = 75000000    ; 150ns
+dt          = 0.002 ; 2fs
+
+
+; OUTPUT CONTROL OPTIONS
+; Output frequency for coords (x), velocities (v) and forces (f)
+nstxout                  = 50000 ; every 100ps
+nstvout                  = 50000 ; every 100ps
+nstfout                  = 0
+; Output frequency for energies to log file and energy file
+nstlog                   = 5000 ; every 10ps
+nstcalcenergy            = -1
+nstenergy                = 5000 ; every 10ps
+; Output frequency and precision for .xtc file
+nstxtcout                = 5000 ; every 10ps
+xtc-precision            = 1000
+
+
+
+
+; Parameters describing how to find the neighbors of each atom and how to calculate the interactions
+nstlist     = 10        ; Frequency to update the neighbor list and long range forces
+ns_type     = grid      ; Method to determine neighbor list (simple, grid)
+
+; Parameters from Bjelkmar et al, JCTC 2010 doi : 10.1021/ct900549c and Piggot et al (for charmm36), doi : 10.1021/ct3003157
+; and from http://lists.gromacs.org/pipermail/gmx-users/2013-February/079038.html
+
+rlist                   = 1.2       ; Cut-off for making neighbor list (short range forces)
+rlistlong               = 1.4
+
+coulombtype             = PME       ; Treatment of long range electrostatic interactions
+fourierspacing          = 0.12
+pme_order               = 4
+rcoulomb                = 1.2       ; Short-range electrostatic cut-off
+
+;VdW
+vdwtype                 = Switch 
+rvdw                    = 1.2       ; short-range van der Waals cutoff (in nm)
+rvdw_switch             = 0.8
+
+pbc                     = xyz       ; Periodic Boundary Conditions (yes/no)
+
+
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+; Temperature coupling  
+tcoupl                   = V-rescale
+; Groups to couple separately
+tc-grps                  = POPC SOL
+; Time constant (ps) and reference temperature (K)
+tau_t                    = 0.1  0.1
+ref_t                    = 303  303 
+; Pressure coupling     
+Pcoupl                   = Parrinello-Rahman
+Pcoupltype               = semiisotropic
+; Time constant (ps), compressibility (1/bar) and reference P (bar)
+tau_p                    = 1.0  1.0
+compressibility          = 4.5e-5 4.5e-5
+ref_p                    = 1.0  1.0
+
+refcoord_scaling       = all
+
+; COM motion removal
+; These options remove motion of the protein/bilayer relative to the solvent/ions
+comm-mode   = Linear
+comm_grps   =  POPC SOL
+
+
+;generate velocites is on at 310K
+gen_vel                = no
