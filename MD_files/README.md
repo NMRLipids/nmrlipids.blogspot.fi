@@ -1,7 +1,8 @@
 ## Input Files
 
 In this folder, you'll find all files required to relaunch the MD simulations.
-Due to size limitations of GitHub and binary format, the trajectory files of this MD simulations are stored in our [Zenodo Organization](https://zenodo.org/collection/user-nmrlipids).
+Due to size limitations of GitHub and binary format, the trajectory files of these MD simulations are stored in our [Zenodo Organization](https://zenodo.org/collection/user-nmrlipids).
+Not all simulations files from the manuscript are there because, sometimes, only the trajectory files are stored (happened for 3 simulations).
 
 ### Organization
 
@@ -35,6 +36,7 @@ A README inside each relevant folder indicates:
 | Berger-DLPC-13        | DLPC  | 72   | Dehydration (24 w/l)                    | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16289) |
 | Berger-DLPC-13        | DLPC  | 72   | Dehydration (28 w/l)                    | Berger-DLPC-13/DLPCdehydration/ | [Zenodo](http://dx.doi.org/10.5281/zenodo.16287) |
 | Charmm36              | POPC  | 72   |    -                                    | charmm36/POPCpure/              | [Zenodo](http://dx.doi.org/10.5281/zenodo.13944) |
+| Charmm36              | POPC  | 128  |    -                                    | charmm36/POPCchol/0%/           | [Zenodo](http://dx.doi.org/10.5281/zenodo.14066) |
 | Charmm36              | POPC  | 72   | NaCl (13, 26, 52, 78)                   | charmm36/POPCnacl/              | -                                                |
 | Charmm36              | POPC  | 72   | Dehydration (15 w/l)                    | charmm36/POPCdehydration/       | [Zenodo](http://dx.doi.org/10.5281/zenodo.13946) |
 | Charmm36              | POPC  | 72   | Dehydration (7 w/l)                     | charmm36/POPCdehydration/       | [Zenodo](http://dx.doi.org/10.5281/zenodo.13945) |
@@ -58,3 +60,5 @@ A README inside each relevant folder indicates:
 | Hogberg08             | POPC  | 128  | -                                       | Hogberg08/POPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.16724) |
 | Ulmschneiders         | POPC  | 128  | -                                       | Ulmschneiders/POPCpure/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.13392) |
 | Tjornhammar14         | DPPC  | 144  | -                                       | Tjornhammar14/POPCpure/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.12743) |
+| Botan-CHARMM36-UA     | DLPC  | 128  | -                                       | Botan-CHARMM36-UA/DLPCpure/     | [Zenodo](http://dx.doi.org/10.5281/zenodo.13821) |
+| Lee-CHARMM36-UA       | DPPC  | 72   | -                                       | Lee-CHARMM36-UA/DPPCpure/       | [Zenodo](http://dx.doi.org/10.5281/zenodo.17004) |

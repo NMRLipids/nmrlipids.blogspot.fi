@@ -1,0 +1,179 @@
+#############################################################
+## ADJUSTABLE PARAMETERS                                   ##
+#############################################################
+
+set temperature    323.15
+set output         dppc_c36_AU.minimize
+set restart        0
+#set restartfile   dppc_c36_AU.equil.0
+
+#############################################################
+
+
+# procedure to get the first time step for the new simulation
+# from the old simulation whether it be a completed sim or one
+# to be restarted
+if {$restart} {
+
+
+# use restart  files
+bincoordinates      $restartfile.restart.coor
+binvelocities       $restartfile.restart.vel
+extendedSystem      $restartfile.restart.xsc
+
+proc get_first_ts { xscfile } {
+  set fd [open $xscfile r]
+  gets $fd
+  gets $fd
+  gets $fd line
+  set ts [lindex $line 0]
+  close $fd
+  return $ts
+}
+
+if [file exists $restartfile.xsc] {
+set firsttime [get_first_ts $restartfile.xsc]
+firsttimestep $firsttime
+} else {
+set firsttime [get_first_ts $restartfile.restart.xsc]
+firsttimestep $firsttime
+}
+
+} else {
+firsttimestep      0
+}
+
+
+#############################################################
+# ABF SECTION
+#############################################################
+
+colvars              off
+colvarsConfig        meta_2D_tZ.4.in
+colvarsInput         meta_2D_tZ.19.restart.colvars.state 
+
+#############################################################
+##   INPUT                                                 ##
+#############################################################
+
+#INPUT
+coordinates            bilayer-72DPPC-c36-AU.pdb 
+structure              bilayer-72DPPC-c36-AU.psf
+
+paratypecharmm          on
+parameters               ./par_all36_lipid.namd.prm
+parameters               ./toppar_water_ions.namd.str
+parameters               ./c36ua.namd.prm
+
+#parameters               ./toppar/par_all36_lipid.prm 
+#parameters              ./chol_par27.inp
+#parameters              ./par_AFC_Cui2010.prm
+
+
+#############################################################
+## SIMULATION PARAMETERS                                   ##
+#############################################################
+
+fixedAtoms              off
+temperature         	$temperature # initial temperature
+
+
+# Force-Field Parameters
+exclude             scaled1-4
+1-4scaling          1.0
+cutoff              12.0
+switching           on
+switchdist          10.0
+pairlistdist        14.0
+dielectric 	    1.0
+COMmotion           no
+waterModel 	    tip3p
+vdwForceSwitching   on
+
+# Multiple timestepping
+#timestep                1 ;# 1fs/step
+#stepspercycle           20 ;# redo pairlists every ten steps
+#nonbondedFreq           2
+#fullElectFrequency      4
+
+timestep                2 ;# 2fs/step
+stepspercycle           10 ;# redo pairlists every ten steps
+nonbondedFreq           1
+fullElectFrequency      2
+
+
+# PME (for full-system periodic electrostatics)
+PME                  yes
+PMEGridSpacing       1.0 
+
+# constraints
+rigidBonds	all	
+
+
+#############################################################
+##          Boundary Conditions                            ##
+#############################################################
+
+# Periodic Boundary Conditions
+cellBasisVector1    47.4222    0.   0.
+cellBasisVector2     0.   47.4222   0.
+cellBasisVector3     0.    0   68.333
+cellOrigin           0.    0.   0.
+wrapAll             on
+
+
+
+#############################################################
+##       Pressure and temperature control                  ##
+#############################################################
+
+# Constant Temperature Control
+langevin            on    ;# do langevin dynamics
+langevinDamping     5     ;# damping coefficient (gamma) of 5/ps
+langevinTemp        $temperature
+langevinHydrogen    off    ;# don't couple langevin bath to hydrogens
+
+# Constant Pressure Control (variable volume)
+useGroupPressure      yes ;# needed for rigidBonds
+
+langevinPiston        off
+langevinPistonTarget  1.0 ;#  in bar (1 atm = 1.01325 bar)
+langevinPistonPeriod  100.
+langevinPistonDecay   50.
+langevinPistonTemp    $temperature
+
+useFlexibleCell        no 
+useConstantArea        no
+#SurfaceTensionTarget   99.0
+
+#############################################################
+##  OUTPUT                                                 ##
+#############################################################
+outputname              $output
+DCDUnitCell		yes
+dcdfile                 ${output}.dcd
+xstFile                 ${output}.xst
+dcdfreq                 500
+xstFreq                 500
+
+binaryoutput            yes
+binaryrestart           yes
+outputEnergies          500
+restartfreq             500
+outputPressure		500
+outputTiming		500
+
+# output pressure profile
+pressureProfile        off
+pressureProfileSlabs   100
+pressureProfileFreq    500
+
+
+#############################################################
+##       Scripting                                         ##
+#############################################################
+
+minimize             10000
+run		     50000 ; #  
+@
+

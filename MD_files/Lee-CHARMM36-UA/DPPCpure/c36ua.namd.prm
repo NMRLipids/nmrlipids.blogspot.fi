@@ -1,0 +1,152 @@
+* Toppar stream file for C36 United Atom Chain Model must also include
+* standard C36 all-atom parameter and topology files first (listed below)
+* top_all36_lipid.rtf
+* and
+* par_all36_lipid.rtf
+*
+
+* C36UA parameters
+*
+
+BONDS
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2
+!b0: A
+!
+!atom type Kb          b0
+!
+
+! *** United atom model for hydrocarbon
+! Jerome Henin, 10-2006, 02-2007, 10-2009
+CH2E  CTL2     222.5      1.53   ! C27 CTL2-CTL2 : alkanes, 3/92
+CH2E  CH2E     225.0      1.53   ! Tobias and Brooks, JCP 1990
+CH2E  CH3E     225.0      1.53   ! Tobias and Brooks, JCP 1990
+CH1E  CH2E     365.0      1.502  ! C27 CEL1-CTL2 : butene; from propene, yin,adm jr., 12/95
+CH1E  CH1E     440.0      1.340  ! C27 CEL1-CEL1 : butene, yin,adm jr., 12/95
+
+
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+!
+!atom types     Ktheta    Theta0   Kub     S0
+!
+
+! *** United model for the hydrocarbon chain
+CH2E CTL2 CL     52.0      108.00   ! C27 CTL2 CTL2 CL : alkane
+HAL2 CTL2 CH2E   26.50     110.10   22.53   2.179  ! C27 HAL2 CTL2 CTL2 : alkane, 4/98
+CTL2 CH2E CH2E   58.350    113.60   11.16   2.561  ! C27 CTL2 CTL2 CTL2 : alkane, 3/92
+CH2E CH2E CH2E   58.350    113.60   11.16   2.561  ! C27 CTL2 CTL2 CTL2 : alkane, 3/92
+CH2E CH2E CH3E   58.000    115.00    8.00   2.561  ! C27 CTL2 CTL2 CTL3 : alkane, 3/92
+CH1E CH1E CH2E   48.00     123.50   ! C27 CEL1 CEL1 CTL2 : 2-butene, yin,adm jr., 12/95
+CH1E CH2E CH2E   32.00     112.20   ! C27 CEL1 CTL2 CTL2 : 1-butene; from propene, yin,adm jr., 12/95
+
+
+
+DIHEDRALS
+!
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+!atom types             Kchi    n   delta
+!
+
+! United atom model for the hydrocarbon chain
+! Jerome Henin, Oct-Nov 2006, 02-2007, 10-2009, 06-2012
+
+! JH 2009-2012, C36 methylhexanoate
+CH2E CTL2 CL   OSL      0.786  1     0.0
+CH2E CTL2 CL   OSL      0.121  2   180.0
+CH2E CTL2 CL   OSL      0.068  3     0.0
+CH2E CTL2 CL   OSL      0.027  4   180.0
+CH2E CTL2 CL   OSL     -0.004  5     0.0
+CH2E CTL2 CL   OSL     -0.010  6   180.0
+
+! Generic parameter will apply to CH2E CTL2 CL OBL
+!CH2E CH2E CL   OBL      0.05    6   180.00 ! C27 X CTL2 CL X : methyl acetate
+
+! JH 2009-2012, C36 methylhexanoate
+CL    CTL2  CH2E  CH2E  0.243  1    0.0
+CL    CTL2  CH2E  CH2E -0.562  2  180.0
+CL    CTL2  CH2E  CH2E  1.567  3    0.0
+CL    CTL2  CH2E  CH2E  0.073  4  180.0
+CL    CTL2  CH2E  CH2E  0.020  5    0.0
+CL    CTL2  CH2E  CH2E -0.100  6  180.0
+
+HAL2  CTL2  CH2E  CH2E  0.0    1    0.0
+
+CTL2  CH2E  CH2E  CH2E  0.051  1    0.0
+CTL2  CH2E  CH2E  CH2E -0.139  2  180.0
+CTL2  CH2E  CH2E  CH2E  1.495  3    0.0
+CTL2  CH2E  CH2E  CH2E -0.057  4  180.0
+CTL2  CH2E  CH2E  CH2E  0.099  5    0.0
+CTL2  CH2E  CH2E  CH2E -0.057  6  180.0
+
+! JH 06-2012, C36 pentadecane
+CH2E  CH2E  CH2E  CH2E  1.003  1    0.0
+CH2E  CH2E  CH2E  CH2E -0.590  2  180.0
+CH2E  CH2E  CH2E  CH2E  1.609  3    0.0
+CH2E  CH2E  CH2E  CH2E -0.056  4  180.0
+CH2E  CH2E  CH2E  CH2E  0.102  5    0.0
+CH2E  CH2E  CH2E  CH2E -0.067  6  180.0
+! JH 06-2012, C36 pentadecane
+CH2E  CH2E  CH2E  CH3E  1.058  1    0.0
+CH2E  CH2E  CH2E  CH3E -0.675  2  180.0
+CH2E  CH2E  CH2E  CH3E  1.725  3    0.0
+CH2E  CH2E  CH2E  CH3E -0.116  4  180.0
+CH2E  CH2E  CH2E  CH3E  0.210  5    0.0
+CH2E  CH2E  CH2E  CH3E -0.110  6  180.0
+
+! JH 06-2012, C36 dec-5-ene (cis)
+CH2E  CH2E  CH2E  CH1E  0.468  1    0.0
+CH2E  CH2E  CH2E  CH1E -0.497  2  180.0
+CH2E  CH2E  CH2E  CH1E  1.864  3    0.0
+CH2E  CH2E  CH2E  CH1E  0.112  4  180.0
+CH2E  CH2E  CH2E  CH1E -0.050  5    0.0
+CH2E  CH2E  CH2E  CH1E -0.065  6  180.0
+! JH 06-2012, C36 dec-5-ene (cis)
+CH2E  CH2E  CH1E  CH1E -1.184  1    0.0
+CH2E  CH2E  CH1E  CH1E  0.114  2  180.0
+CH2E  CH2E  CH1E  CH1E -0.348  3    0.0
+CH2E  CH2E  CH1E  CH1E  0.105  4  180.0
+CH2E  CH2E  CH1E  CH1E -0.079  5    0.0
+CH2E  CH2E  CH1E  CH1E  0.008  6  180.0
+! JH 06-2012, C36 dec-5-ene (cis)
+CH2E  CH1E  CH1E  CH2E 39.131  1  180.0
+
+
+NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch -
+cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
+                !adm jr., 5/08/91, suggested cutoff scheme
+!
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!
+!epsilon: kcal/mole, Eps,i,j = sqrt(eps,i * eps,j)
+!Rmin/2: A, Rmin,i,j = Rmin/2,i + Rmin/2,j
+!
+!atom  ignored    epsilon      Rmin/2   ignored   eps,1-4       Rmin/2,1-4
+!
+
+! *** United atom model for the hydrocarbon
+! Jerome Henin, 10-2006, from Jorgensen, Madura and Swenson, JACS 1984
+CH1E      0.0       -0.115    2.133     0.0   0.0   2.133   ! CH  (sp2) but-2-ene
+CH2E      0.0       -0.118    2.192     0.0   0.0   2.192   ! CH2 (sp3) butane
+CH3E      0.0       -0.175    2.192     0.0   0.0   2.192   ! CH3 (sp3) butane
+
+END
+
+
+!return

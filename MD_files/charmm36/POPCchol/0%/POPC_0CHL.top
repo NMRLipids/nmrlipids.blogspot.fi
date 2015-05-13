@@ -1,0 +1,18 @@
+; Include forcefield parameters
+#include "../charmm36.ff_lipids_Piggot/forcefield.itp"
+
+;Include lipid topology
+#include "../popc.itp"
+
+; Include water topology
+#include "../charmm36.ff_lipids_Piggot/tips3p.itp"
+
+
+[ system ]
+; Name
+Pure POPC Bilayer
+
+[ molecules ]
+; Compound        #mols
+POPC              128
+SOL                5120     

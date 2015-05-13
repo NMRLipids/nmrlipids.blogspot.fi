@@ -1,0 +1,48 @@
+# LIPID BILAYER: DLPC+TIP3P
+variable Nnoneq equal 30000000
+variable Nsteps equal 1000000
+variable T equal 323.00
+variable dt equal 1.0
+variable Na equal 20
+variable Loopvar equal 1
+clear
+
+units          real
+dimension      3
+newton         on
+boundary       p p p
+
+atom_style     full
+
+read_data   config30.dat
+timestep  1.0
+include    FFhybrid36DLPCions.set
+
+neigh_modify delay 0 every 1 check yes
+fix SHAKE tip3p shake 0.0001 20 0 b 13 a 23
+
+variable Al equal (lx*ly)/64.0
+
+fix  THERMO all npt temp ${T} ${T} 100 aniso 1 1 500
+fix RC lipid recenter INIT INIT INIT
+
+#EQUILIBRATION
+thermo_style custom step temp
+thermo 500
+run ${Nnoneq}
+write_restart restartfile.eq
+
+reset_timestep 0
+
+#PRODUCT RUN
+label loopa
+variable a loop ${Loopvar} ${Na}
+	thermo_style    custom step temp etotal ke pe v_Al lx ly lz        
+        thermo  ${Nevery}
+        dump PRINTdump  all  custom 500 dump.$a id mol type x y z
+	dump_modify PRINTdump sort id
+        run ${Nsteps}
+        write_restart restartfile.$a
+        undump PRINTdump
+next a
+jump in.lmp loopa

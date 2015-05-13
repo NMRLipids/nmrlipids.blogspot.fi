@@ -12,6 +12,11 @@ SPE calculation was done to assess the conversion.
 
 ### How to run (Gromacs 4.5.X)
 
+0%:
+```
+grompp -f mdrun.mdp -c POPC_0CHOL.gro -p POPC_0CHOL.top -n index.ndx -o md.tpr  >& grompp.log
+mdrun -deffnm md &> mdrun.log
+
 20%:
 ```
 grompp -f mdrun.mdp -c POPC_20CHOL.gro -p POPC_20CHOL.top -n index.ndx -o md.tpr  >& grompp.log
@@ -25,6 +30,7 @@ mdrun -deffnm md &> mdrun.log
 
 ### Retrieve data
 
+-  0%: [http://dx.doi.org/10.5281/zenodo.14067](http://dx.doi.org/10.5281/zenodo.14066)
 - 20%: [http://dx.doi.org/10.5281/zenodo.14067](http://dx.doi.org/10.5281/zenodo.14067)
 - 50%: [http://dx.doi.org/10.5281/zenodo.14068](http://dx.doi.org/10.5281/zenodo.14068)
 
