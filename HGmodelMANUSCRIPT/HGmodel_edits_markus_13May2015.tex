@@ -1,4 +1,7 @@
 
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL ../../../nmrlipids.blogspot.fi/HGmodelMANUSCRIPT/HGmodel_ACStemplate.tex   Wed May 13 21:33:27 2015
+%DIF ADD HGmodel_ACStemplate.tex                                                    Wed May 13 21:32:28 2015
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% This is a (brief) model paper using the achemso class
 %% The document class accepts keyval options, which should include
@@ -158,6 +161,26 @@
 %% The manuscript does not need to include \maketitle, which is
 %% executed automatically.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -289,7 +312,7 @@ Choline headgroup order parameters as function of ion concentration, and their r
 
   \caption{\label{POPCstructure}
     Chemical structure of  1-palmitoyl-2-oleoylphosphatidylcholine (POPC).}
-  
+
 \end{figure}
 
 \section{methods}
@@ -737,21 +760,40 @@ in different situations, and, if the quality is good, to potentially interpret t
 Here we exemplify such comparison for a lipid bilayer under low hydration levels and when varying amounts of cholesterol is included in the bilayer. 
 The interaction between ions and a phosphatidylcholine bilayer will be discussed in a separate study~\cite{ionpaper}.
 
-\pagebreak
-\subsubsection{Phospholipid bilayer with low hydration level}
-Fig.~\ref{ordPhydr} shows the published~\cite{dvinskikh05b,ulrich94,bechinger91} experimental order parameters
-for the glycerol backbone and choline as a function of hydration level.
-Despite slight differences in temperature and acyl chain composition,
-the three independently reported data sets for the choline ($\beta$ and $\alpha$) segments agree well with each other:
-Both order parameters increase with decreasing hydration level.
-The glycerol backbone order parameters (g$_{3}$, g$_{2}$, g$_{1}$), in contrast,
-have been observed~\cite{dvinskikh05b} to slightly decrease with dehydration.
-Note that the original experiments~\cite{dvinskikh05b,ulrich94,bechinger91} measured only 
+\DIFaddbegin \pagebreak
+\DIFaddend \subsubsection{Phospholipid bilayer with low hydration level}
+\DIFdelbegin \DIFdel{The experimental order parameters available in the literature~\mbox{%DIFAUXCMD
+\cite{dvinskikh05b,ulrich94,bechinger91}
+}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{Fig.~\ref{ordPhydr} shows the published~\mbox{%DIFAUXCMD
+\cite{dvinskikh05b,ulrich94,bechinger91}
+}%DIFAUXCMD
+experimental order parameters
+}\DIFaddend for the glycerol backbone and choline as a function of hydration level\DIFdelbegin \DIFdel{are shown in Fig.
+~\ref{ordPhydr}. 
+The independently reported values for the choline segments are in good agreement with each other (despite 
+}\DIFdelend \DIFaddbegin \DIFadd{.
+Despite }\DIFaddend slight differences in temperature and acyl chain composition\DIFdelbegin \DIFdel{),
+and both }\DIFdelend \DIFaddbegin \DIFadd{,
+the three independently reported data sets for the choline }\DIFaddend ($\beta$ and $\alpha$) \DIFdelbegin \DIFdel{show }\DIFdelend \DIFaddbegin \DIFadd{segments agree well with each other:
+Both order parameters }\DIFaddend increase with decreasing hydration level.
+\DIFdelbegin \DIFdel{It should be noted that only 
+absolute values were measured in }\DIFdelend \DIFaddbegin \DIFadd{The glycerol backbone order parameters (g$_{3}$, g$_{2}$, g$_{1}$), in contrast,
+have been observed~\mbox{%DIFAUXCMD
+\cite{dvinskikh05b}
+}%DIFAUXCMD
+to slightly decrease with dehydration.
+Note that }\DIFaddend the original experiments~\cite{dvinskikh05b,ulrich94,bechinger91} \DIFdelbegin \DIFdel{, but
+we have }\DIFdelend \DIFaddbegin \DIFadd{measured only 
 absolute values, but here
-we included the signs measured in separate studies~\cite{hong95a,hong95b,gross97}. 
-Consequently, the negative $\beta$ order parameter actually increases with dehydration 
-as its absolute value decreases~\cite{dvinskikh05b,ulrich94,bechinger91}.
-\begin{figure}[]
+we }\DIFaddend included the signs measured in separate studies~\cite{hong95a,hong95b,gross97}. 
+Consequently, the \DIFaddbegin \DIFadd{negative }\DIFaddend $\beta$ order parameter \DIFdelbegin \DIFdel{with negative sign }\DIFdelend actually increases with dehydration 
+\DIFdelbegin \DIFdel{since the }\DIFdelend \DIFaddbegin \DIFadd{as its }\DIFaddend absolute value decreases~\cite{dvinskikh05b,ulrich94,bechinger91}.
+\DIFdelbegin \DIFdel{Slight decrease for the glycerol backbone order parameters have been observed with dehydration~\mbox{%DIFAUXCMD
+\cite{dvinskikh05b}
+}%DIFAUXCMD
+.
+}\DIFdelend \begin{figure}[]
   \centering
   \includegraphics[width=7.3cm]{../DATAreportediINblog/dehydration_lp.pdf}
     \includegraphics[width=7.3cm]{../DATAreportediINblog/dehydration_smooth.pdf}
@@ -772,38 +814,56 @@ as its absolute value decreases~\cite{dvinskikh05b,ulrich94,bechinger91}.
 \end{figure}
 
 Lipid bilayer dehydration has been studied also with molecular dynamics simulations~\cite{mashl01,pertsin05,pertsin07,eun09,eun10,schneck12},
-typically motivated by the  discussion concerning the origin of the ``hydration repulsion''~\cite{israelachvili,israelachvili96,sparr11}.
-Only one~\cite{mashl01} of these studies, however, compared their simulation model to the experimental choline and glycerol backbone
-order parameters.
-Fig.~\ref{ordPhydr} shows these order parameters as a function of hydration level for the CHARMM36, 
-MacRog and GAFFlipid models (having the most realistic atomistic resolution structures) and a Berger-based model 
-(which is the most used lipid model);
-note that the simulation results have been vertically shifted to ease the comparison with experimental response to dehydration.
-Despite of some fluctuations, the increase of the choline ($\beta$ and $\alpha$) order parameters is seen in all four
-models. The response of the choline order parameters to dehydration can, therefore, be
-interpreted to qualitatively agree with experiments.
-The situation is significantly more complicated for the glycerol backbone: 
+typically motivated by the  discussion \DIFdelbegin \DIFdel{about }\DIFdelend \DIFaddbegin \DIFadd{concerning }\DIFaddend the origin of the ``hydration repulsion''~\cite{israelachvili,israelachvili96,sparr11}.
+\DIFdelbegin \DIFdel{However, the used simulation models are typically not compared }\DIFdelend \DIFaddbegin \DIFadd{Only one~\mbox{%DIFAUXCMD
+\cite{mashl01}
+}%DIFAUXCMD
+of these studies, however, compared their simulation model }\DIFaddend to the experimental choline and glycerol backbone
+order parameters\DIFdelbegin \DIFdel{(except by Mashl et al.
+~\mbox{%DIFAUXCMD
+\cite{mashl01}
+}%DIFAUXCMD
+).
+In }\DIFdelend \DIFaddbegin \DIFadd{.
+}\DIFaddend Fig.~\ref{ordPhydr} \DIFdelbegin \DIFdel{the glycerol backbone and choline order parameters are shown }\DIFdelend \DIFaddbegin \DIFadd{shows these order parameters }\DIFaddend as a function of hydration level for the CHARMM36, 
+MacRog and GAFFlipid models (having the most realistic atomistic resolution structures) \DIFdelbegin \DIFdel{together with the Berger based }\DIFdelend \DIFaddbegin \DIFadd{and a Berger-based }\DIFaddend model 
+(which is the most used lipid model)\DIFdelbegin \DIFdel{. 
+To elucidate changes }\DIFdelend \DIFaddbegin \DIFadd{;
+note that }\DIFaddend the simulation results \DIFdelbegin \DIFdel{are shifted to match better with experiments with full hydration.
+The magnitude of shifting is written in the y-axis label.
+The }\DIFdelend \DIFaddbegin \DIFadd{have been vertically shifted to ease the comparison with experimental response to dehydration.
+Despite of some fluctuations, the }\DIFaddend increase of the choline \DIFdelbegin \DIFdel{order parameters with dehydration }\DIFdelend \DIFaddbegin \DIFadd{($\beta$ and $\alpha$) order parameters }\DIFaddend is seen in all \DIFdelbegin \DIFdel{models despite of some additional fluctuations. Thus }\DIFdelend \DIFaddbegin \DIFadd{four
+models. The response of }\DIFaddend the choline order \DIFdelbegin \DIFdel{parameter response }\DIFdelend \DIFaddbegin \DIFadd{parameters }\DIFaddend to dehydration can\DIFdelbegin \DIFdel{be
+intepreted to be in qualitative agreement }\DIFdelend \DIFaddbegin \DIFadd{, therefore, be
+interpreted to qualitatively agree }\DIFaddend with experiments.
+The situation is significantly more complicated for the glycerol backbone\DIFdelbegin \DIFdel{segments 
+and none of the models can be interpreted to qualitatively agree with experiments
+for all the segmets}\DIFdelend \DIFaddbegin \DIFadd{: 
 None of the four models produced the experimentally seen trends
-in all the (g$_{3}$, g$_{2}$, g$_{1}$) segments.
+in all the (g$_{3}$, g$_{2}$, g$_{1}$) segments}\DIFaddend .
 
-The qualitative agreement of the $\alpha$ and $\beta$ order parameters with experiments in all four simulation models (Fig.~\ref{ordPhydr}) indicates that,
+The qualitative agreement \DIFdelbegin \DIFdel{with experiments in all simulation models for }\DIFdelend \DIFaddbegin \DIFadd{of }\DIFaddend the $\alpha$ and $\beta$ order parameters \DIFdelbegin \DIFdel{as a function of hydration indicates thatthe }\DIFdelend \DIFaddbegin \DIFadd{with experiments in all four simulation models (Fig.~\ref{ordPhydr}) indicates that,
 despite the unrealistic structures at full hydration (Figs.~\ref{HGorderparameters} and~\ref{FullHydrationComparisonTable}),
-the structural response of the choline headgroup to dehydration is somewhat realistic.
-A likely explanation is that as the interlamellar space shrinks with dehydration, the whole choline group
-orients more parallel to the membrane.
-Indeed, upon dehydration the angle between P--N (phoshate phosphorus to choline nitrogen) vector and membrane normal increases for
-all the four models (Fig.~\ref{PNangle}). However,
+the }\DIFaddend structural response of the choline headgroup to dehydration is somewhat realistic\DIFdelbegin \DIFdel{despite the unrealistic structures at full hydration.
+The most }\DIFdelend \DIFaddbegin \DIFadd{.
+A }\DIFaddend likely explanation is that \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{as the interlamellar space shrinks with dehydration, the whole }\DIFaddend choline group
+orients more parallel to the membrane\DIFdelbegin \DIFdel{plane with dehydration due to restricted interlamellar space}\DIFdelend .
+Indeed, \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{upon dehydration the angle between }\DIFaddend P--N (phoshate phosphorus to choline nitrogen) vector \DIFdelbegin \DIFdel{angle with membrane normal shows an increase for
+all models as a function of dehydration }\DIFdelend \DIFaddbegin \DIFadd{and membrane normal increases for
+all the four models }\DIFaddend (Fig.~\ref{PNangle}). However,
 the amount of increase depends on the model. Especially the DLPC simulations with Berger model
-predict significantly stronger P--N vector tilt than the other models. The Berger model
+predict significantly stronger P--N vector tilt \DIFdelbegin \DIFdel{compared with }\DIFdelend \DIFaddbegin \DIFadd{than }\DIFaddend the other models. The Berger model
 has also generally larger P--N vector angles and its choline order parameters are more off from
-experiments than the other three models (Fig.~\ref{HGorderparameters2}). Thus the relatively modest tilting with dehydration
+experiments than the other three models \DIFdelbegin \DIFdel{. }\DIFdelend \DIFaddbegin \DIFadd{(Fig.~\ref{HGorderparameters2}). }\DIFaddend Thus the relatively modest tilting with dehydration
 predicted by MacRog, CHARMM36 and GAFFlipid is probably more realistic.
 
-It must be stressed that in the models which
-incapable of reproducing the experimental order parameters the free energy landscape is not correct. Thus
-even though the order parameter response to dehydration is qualitatively correct,
+It \DIFdelbegin \DIFdel{should be also noted that the free energy landscape is not correct }\DIFdelend \DIFaddbegin \DIFadd{must be stressed that }\DIFaddend in the models which
+\DIFdelbegin \DIFdel{are not able to reproduce }\DIFdelend \DIFaddbegin \DIFadd{incapable of reproducing }\DIFaddend the experimental order parameters \DIFdelbegin \DIFdel{. Thus the energetical response
+to the dehydration may not be correct}\DIFdelend \DIFaddbegin \DIFadd{the free energy landscape is not correct. Thus
+}\DIFaddend even though the order parameter response \DIFaddbegin \DIFadd{to dehydration }\DIFaddend is qualitatively correct\DIFdelbegin \DIFdel{.
+This issue }\DIFdelend \DIFaddbegin \DIFadd{,
 the energetic response is likely to be incorrect.
-This may have some influence on dehydration energetic calculations made using the Berger model~\cite{eun09,schneck12}.
+This }\DIFaddend may have some influence on \DIFdelbegin \DIFdel{the }\DIFdelend dehydration energetic calculations made \DIFdelbegin \DIFdel{with }\DIFdelend \DIFaddbegin \DIFadd{using }\DIFaddend the Berger model~\cite{eun09,schneck12}.
 \begin{figure}[]
   \centering
   \includegraphics[width=8.6cm]{../Fig/dehydrationPN.pdf}
@@ -814,9 +874,10 @@ This may have some influence on dehydration energetic calculations made using th
   }
 \end{figure}
 
-The response of the glycerol backbone seems to be more subtle than that of the choline headgroup;
-none of the four models reproduced the experimental trends upon dehydration with enough accuracy to invite a
-structural interpretation.
+The response of the glycerol backbone \DIFdelbegin \DIFdel{to dehydration }\DIFdelend seems to be more subtle than that of the choline headgroup\DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{;
+}\DIFaddend none of the \DIFaddbegin \DIFadd{four }\DIFaddend models reproduced the experimental \DIFdelbegin \DIFdel{results with the accuracy allowing
+the }\DIFdelend \DIFaddbegin \DIFadd{trends upon dehydration with enough accuracy to invite a
+}\DIFaddend structural interpretation.
 
 
 
