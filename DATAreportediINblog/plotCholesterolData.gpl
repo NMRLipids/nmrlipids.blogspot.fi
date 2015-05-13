@@ -35,7 +35,7 @@ set ytics -2,0.02,2
 
 # Carbon: beta ####################################
 set label 100 "{/Symbol b}" at graph 0.05,0.85 font ",18"
-set key l at screen 0.025,0.08 Left reverse samplen 2 width 4 maxrows 4 font ",14" 
+set key l at screen 0.025,0.075 Left reverse samplen 2 width 4 maxrows 4 font ",14" 
 # offsets:
 d_MR=-0.06 # MacRog
 d_Be=-0.07 # Berger
@@ -129,8 +129,8 @@ set samples 100
 plot [-5:65][-0.05:0.0] \
     (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
     (x>-1&&x<61)?f(x,aBe2,bBe2,cBe2,dBe2):(1/0) ls 11 notitle, \
-    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
-    (x>-1&&x<61)?f(x,aMR2,bMR2,cMR2,dMR2):(1/0) ls 14 notitle, \
+    (x>-1&&x<57)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<57)?f(x,aMR2,bMR2,cMR2,dMR2):(1/0) ls 14 notitle, \
     (x>-1&&x<51)?(f(x,aCH1,bCH1,cCH1,dCH1)+f(x,aCH4,bCH4,cCH4,dCH4))/2:(1/0) ls 12 notitle, \
     (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
     (x>-1&&x<61)?(f(x,aEX1,bEX1,cEX1,dEX1)+f(x,aEX2,bEX2,cEX2,dEX2))/2:(1/0) ls 1 notitle, \
@@ -243,8 +243,8 @@ dEX2=d
 plot [-5:65][0:0.09] \
     (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
     (x>-1&&x<61)?f(x,aBe2,bBe2,cBe2,dBe2):(1/0) ls 11 notitle, \
-    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
-    (x>-1&&x<61)?f(x,aMR2,bMR2,cMR2,dMR2):(1/0) ls 14 notitle, \
+    (x>-1&&x<57)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<57)?f(x,aMR2,bMR2,cMR2,dMR2):(1/0) ls 14 notitle, \
     (x>-1&&x<51)?(f(x,aCH1,bCH1,cCH1,dCH1)+f(x,aCH4,bCH4,cCH4,dCH4))/2:(1/0) ls 12 notitle, \
     (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
     (x>-1&&x<61)?(f(x,aEX1,bEX1,cEX1,dEX1)+f(x,aEX2,bEX2,cEX2,dEX2))/2:(1/0) ls 1 notitle, \
@@ -344,8 +344,8 @@ dEX1=d
 plot [-5:65][:-0.12]\
     (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
     (x>-1&&x<61)?f(x,aBe2,bBe2,cBe2,dBe2):(1/0) ls 11 notitle, \
-    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
-    (x>-1&&x<61)?f(x,aMR2,bMR2,cMR2,dMR2):(1/0) ls 14 notitle, \
+    (x>-1&&x<57)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<57)?f(x,aMR2,bMR2,cMR2,dMR2):(1/0) ls 14 notitle, \
     (x>-1&&x<51)?(f(x,aCH1,bCH1,cCH1,dCH1)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
     (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH4,bCH4,cCH4,dCH4))/2:(1/0) ls 12 notitle, \
     (x>-1&&x<61)?f(x,aEX1,bEX1,cEX1,dEX1):(1/0) ls 1 notitle, \
@@ -422,7 +422,7 @@ dEX1=d
 
 plot [-5:65][:-0.15] \
     (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
-    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<57)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
     (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
     (x>-1&&x<61)?f(x,aEX1,bEX1,cEX1,dEX1):(1/0) ls 1 notitle, \
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::6::6 w p ls 11 t "Berger", \
@@ -495,7 +495,7 @@ dEX1=d
 
 plot [-5:65][-0.165:-0.09] \
     (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
-    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<57)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
     (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
     (x>-1&&x<61)?f(x,aEX1,bEX1,cEX1,dEX1):(1/0) ls 1 notitle, \
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::7::7 w p ls 11 t "Berger", \
@@ -510,7 +510,7 @@ plot [-5:65][-0.165:-0.09] \
 # S:
 set label 100 "g_{1S}"
 set xtics format "%g"
-set xlabel "cholesterol content (mol%)"
+set xlabel "Cholesterol content (mol%)" font ",18" 
 # offsets:
 d_MR=-0.05 #MacRog
 d_Be=-0.06 # Berger
@@ -564,7 +564,7 @@ dCH3=d+d_CH
 
 plot [-5:65][-0.06:0.05] \
     (x>-1&&x<61)?f(x,aBe1,bBe1,cBe1,dBe1):(1/0) ls 11 notitle, \
-    (x>-1&&x<61)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
+    (x>-1&&x<57)?f(x,aMR1,bMR1,cMR1,dMR1):(1/0) ls 14 notitle, \
     (x>-1&&x<51)?(f(x,aCH2,bCH2,cCH2,dCH2)+f(x,aCH3,bCH3,cCH3,dCH3))/2:(1/0) ls 12 notitle, \
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::8::8 w p ls 11 t "Berger", \
     "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::8::8 w p ls 14 t "MacRog", \

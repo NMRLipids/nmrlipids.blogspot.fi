@@ -16,9 +16,9 @@ set style line 13 lt 2 pt 7 ps r lw w lc rgb "#FFD300" # for GAFF
 set style line 14 lt 1 pt 7 ps r lw w lc rgb "#00A368" # for MacRog
 
 set key l at graph 0.05,0.95 Left reverse samplen 5 spacing 1.5 width 2 maxrows 5 
-set xlabel "hydration level (n_{w/l})" 
+set xlabel "Hydration level (n_{w/l})" 
 set mxtics 2
-set ylabel "deviation of P-N vector from \nmembrane normal (degrees)" offset +1
+set ylabel "Deviation of P-N vector from \nmembrane normal (degrees)" offset +1
 
 plot [60:0][65:105] \
      DATA_BERGER_DLPC u ($1):($2) ev 2 w lp ls 15 \
