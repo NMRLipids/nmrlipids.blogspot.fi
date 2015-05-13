@@ -1,0 +1,273 @@
+mass 1    14.0070 # NTL N
+mass 2    12.0110 # CTL5 C13
+mass 3     1.0080 # HL H13A
+mass 4     1.0080 # HL H13B
+mass 5     1.0080 # HL H13C
+mass 6    12.0110 # CTL5 C14
+mass 7     1.0080 # HL H14A
+mass 8     1.0080 # HL H14B
+mass 9     1.0080 # HL H14C
+mass 10    12.0110 # CTL5 C15
+mass 11     1.0080 # HL H15A
+mass 12     1.0080 # HL H15B
+mass 13     1.0080 # HL H15C
+mass 14    12.0110 # CTL2 C12
+mass 15     1.0080 # HL H12A
+mass 16     1.0080 # HL H12B
+mass 17    12.0110 # CTL2 C11
+mass 18     1.0080 # HAL2 H11A
+mass 19     1.0080 # HAL2 H11B
+mass 20    30.9740 # PL P
+mass 21    15.9994 # O2L O13
+mass 22    15.9994 # O2L O14
+mass 23    15.9994 # OSLP O11
+mass 24    15.9994 # OSLP O12
+mass 25    12.0110 # CTL2 C1
+mass 26     1.0080 # HAL2 HA
+mass 27     1.0080 # HAL2 HB
+mass 28    12.0110 # CTL1 C2
+mass 29     1.0080 # HAL1 HS
+mass 30    15.9994 # OSL O21
+mass 31    12.0110 # CL C21
+mass 32    15.9994 # OBL O22
+mass 33    14.0270 # CH2E C22
+mass 34    12.0110 # CTL2 C3
+mass 35     1.0080 # HAL2 HX
+mass 36     1.0080 # HAL2 HY
+mass 37    15.9994 # OSL O31
+mass 38    12.0110 # CL C31
+mass 39    15.9994 # OBL O32
+mass 40    14.0270 # CH2E C32
+mass 41    14.0270 # CH2E C23
+mass 42    14.0270 # CH2E C24
+mass 43    14.0270 # CH2E C25
+mass 44    14.0270 # CH2E C26
+mass 45    14.0270 # CH2E C27
+mass 46    14.0270 # CH2E C28
+mass 47    14.0270 # CH2E C29
+mass 48    14.0270 # CH2E C210
+mass 49    14.0270 # CH2E C211
+mass 50    15.0350 # CH3E C212
+mass 51    14.0270 # CH2E C33
+mass 52    14.0270 # CH2E C34
+mass 53    14.0270 # CH2E C35
+mass 54    14.0270 # CH2E C36
+mass 55    14.0270 # CH2E C37
+mass 56    14.0270 # CH2E C38
+mass 57    14.0270 # CH2E C39
+mass 58    14.0270 # CH2E C310
+mass 59    14.0270 # CH2E C311
+mass 60    15.0350 # CH3E C312
+mass 61    15.9994 # OW -
+mass 62     1.0080 # HW -
+mass 63    6.94100 # Li LIT 
+mass 64   22.98977 # Na SOD
+mass 65   24.30500 # Mg MAG 
+mass 66   39.09830 # K POT
+mass 67   40.08000 # Ca CAL
+mass 68  132.90545 # Cs CES
+mass 69   35.45000 # Cl CLA 
+mass 70    28.0855 # Si SIL
+mass 71    15.9994 # Os OXG
+
+
+pair_style lj/charmm/coul/long 8 12
+pair_modify mix arithmetic
+pair_coeff   1   1  0.2000  3.2963  0.2000  3.2963 # NTL
+pair_coeff   2   2  0.0800  3.6705  0.0100  3.3854 # CTL5
+pair_coeff   3   3  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff   4   4  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff   5   5  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff   6   6  0.0800  3.6705  0.0100  3.3854 # CTL5
+pair_coeff   7   7  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff   8   8  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff   9   9  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff  10  10  0.0800  3.6705  0.0100  3.3854 # CTL5
+pair_coeff  11  11  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff  12  12  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff  13  13  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff  14  14  0.0560  3.5814  0.0100  3.3854 # CTL2
+pair_coeff  15  15  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff  16  16  0.0460  1.2473  0.0460  1.2473 # HL
+pair_coeff  17  17  0.0560  3.5814  0.0100  3.3854 # CTL2
+pair_coeff  18  18  0.0280  2.3876  0.0280  2.3876 # HAL2
+pair_coeff  19  19  0.0280  2.3876  0.0280  2.3876 # HAL2
+pair_coeff  20  20  0.5850  3.8309  0.5850  3.8309 # PL
+pair_coeff  21  21  0.1200  3.0291  0.1200  3.0291 # O2L
+pair_coeff  22  22  0.1200  3.0291  0.1200  3.0291 # O2L
+pair_coeff  23  23  0.1000  2.9400  0.1000  2.9400 # OSLP
+pair_coeff  24  24  0.1000  2.9400  0.1000  2.9400 # OSLP
+pair_coeff  25  25  0.0560  3.5814  0.0100  3.3854 # CTL2
+pair_coeff  26  26  0.0280  2.3876  0.0280  2.3876 # HAL2
+pair_coeff  27  27  0.0280  2.3876  0.0280  2.3876 # HAL2
+pair_coeff  28  28  0.0200  4.0536  0.0100  3.3854 # CTL1
+pair_coeff  29  29  0.0220  2.3520  0.0220  2.3520 # HAL1
+pair_coeff  30  30  0.1000  2.9400  0.1000  2.9400 # OSL
+pair_coeff  31  31  0.0700  3.5636  0.0700  3.5636 # CL
+pair_coeff  32  32  0.1200  3.0291  0.1200  2.4945 # OBL
+pair_coeff  33  33  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  34  34  0.0560  3.5814  0.0100  3.3854 # CTL2
+pair_coeff  35  35  0.0280  2.3876  0.0280  2.3876 # HAL2
+pair_coeff  36  36  0.0280  2.3876  0.0280  2.3876 # HAL2
+pair_coeff  37  37  0.1000  2.9400  0.1000  2.9400 # OSL
+pair_coeff  38  38  0.0700  3.5636  0.0700  3.5636 # CL
+pair_coeff  39  39  0.1200  3.0291  0.1200  2.4945 # OBL
+pair_coeff  40  40  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  41  41  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  42  42  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  43  43  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  44  44  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  45  45  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  46  46  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  47  47  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  48  48  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  49  49  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  50  50  0.1960  3.7500  0.0000  3.9592 # CH3E
+pair_coeff  51  51  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  52  52  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  53  53  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  54  54  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  55  55  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  56  56  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  57  57  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  58  58  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  59  59  0.1004  4.0500  0.0000  3.9592 # CH2E
+pair_coeff  60  60  0.1960  3.7500  0.0000  3.9592 # CH3E
+pair_coeff  61  61  0.1521  3.1507  # OW
+pair_coeff  62  62  0.0460  0.4000  # HW
+pair_coeff  61  62  0.0836  1.7753  #OW-HW
+#source toppar_water_ions.xxx
+pair_coeff  63  63  0.00233 2.31188 # Li from S Noskov (see JPC B, Lamoureux&Roux,2006)
+pair_coeff  64  64  0.0469  2.51367 # Na from S Noskov new CHARMM Sodium   
+pair_coeff  65  65  0.0150  2.11143 # Mg from B. Roux dA    
+pair_coeff  66  66  0.0870  3.14265 # K  from D. Beglovd and B. Roux        
+pair_coeff  67  67  0.120   2.43572 # Ca from S. Marchand and B. Roux   
+pair_coeff  68  68  0.1900  3.74177 # Cs  
+pair_coeff  69  69  0.150   4.04468 # Cl from D. Beglovd and B. Roux 
+
+# to modify!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+pair_coeff  70  70  0.1640  3.374  
+pair_coeff  71  71  0.0000  0.000    #2.084   3.374
+
+
+special_bonds  charmm
+
+bond_style     harmonic
+bond_coeff   1 215.00000   1.51000
+bond_coeff   2 300.00000   1.08000
+bond_coeff   3 222.50000   1.53000
+bond_coeff   4 309.00000   1.11100
+bond_coeff   5 340.00000   1.43000
+bond_coeff   6 580.00000   1.48000
+bond_coeff   7 270.00000   1.60000
+bond_coeff   8 222.50000   1.53800
+bond_coeff   9 150.00000   1.33400
+bond_coeff  10 750.00000   1.22000
+bond_coeff  11 200.00000   1.52200
+bond_coeff  12 225.00000   1.53000
+bond_coeff  13 450.00000   0.95720 # OW-HW
+
+angle_style  hybrid  charmm harmonic
+angle_coeff  1  charmm   60.00   109.50    26.00    2.466
+angle_coeff  2  charmm  40.00   109.50    27.00    2.130
+angle_coeff  3  charmm  24.00   109.50    28.00    1.767
+angle_coeff  4  charmm  67.70   115.00     0.00    0.000
+angle_coeff  5  charmm  33.43   110.10    22.53    2.179
+angle_coeff  6  charmm  26.50   110.10    22.53    2.179
+angle_coeff  7  charmm  75.70   110.10     0.00    0.000
+angle_coeff  8  charmm  35.50   109.00     5.40    1.802
+angle_coeff  9  charmm  60.00   109.50     0.00    0.000
+angle_coeff 10  charmm 120.00   120.00     0.00    0.000
+angle_coeff 11  charmm  98.90   111.60     0.00    0.000
+angle_coeff 12  charmm  80.00   104.30     0.00    0.000
+angle_coeff 13  charmm  20.00   120.00    35.00    2.330
+angle_coeff 14  charmm  34.50   110.10    22.53    2.179
+angle_coeff 15  charmm  58.35   113.50    11.16    2.561
+angle_coeff 16  charmm  40.00   109.60    30.00    2.265
+angle_coeff 17  charmm  90.00   125.90   160.00    2.258
+angle_coeff 18  charmm  55.00   109.00    20.00    2.326
+angle_coeff 19  charmm  70.00   125.00    20.00    2.442
+angle_coeff 20  charmm  52.00   108.00     0.00    0.000
+angle_coeff 21  charmm  58.35   113.60    11.16    2.561
+angle_coeff 22  charmm  58.00   115.00     8.00    2.561
+angle_coeff 23  harmonic  55.00   104.52  # HW-OW-HW
+
+dihedral_style charmm
+dihedral_coeff 1   0.23000   3      0 1.00
+dihedral_coeff 2   0.26000   3      0 1.00
+dihedral_coeff 3   0.19000   3      0 1.00
+dihedral_coeff 4   3.30000   1    180 1.00
+dihedral_coeff 5  -0.40000   3    180 0.00
+dihedral_coeff 6   0.40700   2      0 1.00
+dihedral_coeff 7   0.24100   1    180 0.00
+dihedral_coeff 8   0.00000   3      0 1.00
+dihedral_coeff 9   0.10000   3      0 1.00
+dihedral_coeff 10   1.20000   1    180 1.00
+dihedral_coeff 11   0.10000   2    180 0.00
+dihedral_coeff 12   0.10000   3    180 0.00
+dihedral_coeff 13   0.20000   3      0 1.00
+dihedral_coeff 14   0.20000   3      0 0.00
+dihedral_coeff 15   0.00000   4      0 1.00
+dihedral_coeff 16   0.60700   3    180 0.00
+dihedral_coeff 17   0.25400   2     60 0.00
+dihedral_coeff 18   2.01600   1    180 0.00
+dihedral_coeff 19   0.15000   3    180 0.00
+dihedral_coeff 20   1.45300   2    180 0.00
+dihedral_coeff 21   0.83700   1    180 0.00
+dihedral_coeff 22  -0.42900   4     60 1.00
+dihedral_coeff 23   0.61400   3      0 0.00
+dihedral_coeff 24  -0.11500   2     60 0.00
+dihedral_coeff 25   0.70300   1    180 0.00
+dihedral_coeff 26   0.96500   1    180 1.00
+dihedral_coeff 27   3.85000   2    180 0.00
+dihedral_coeff 28   2.05000   2    180 1.00
+dihedral_coeff 29   0.47330   1      0 0.00
+dihedral_coeff 30   0.14360   2    180 0.00
+dihedral_coeff 31   0.37740   3      0 0.00
+dihedral_coeff 32   0.07370   4    180 0.00
+dihedral_coeff 33   0.03530   5      0 0.00
+dihedral_coeff 34  -0.02560   6    180 0.00
+dihedral_coeff 35   0.05000   6    180 0.00
+dihedral_coeff 36  -0.55670   1      0 0.00
+dihedral_coeff 37   0.04340   2    180 0.00
+dihedral_coeff 38   2.11050   3      0 0.00
+dihedral_coeff 39   0.06770   4    180 0.00
+dihedral_coeff 40   0.02700   5      0 0.00
+dihedral_coeff 41  -0.08350   6    180 0.00
+dihedral_coeff 42   0.26700   3    180 1.00
+dihedral_coeff 43   0.17300   2      0 0.00
+dihedral_coeff 44   0.78100   1    180 0.00
+dihedral_coeff 45   0.99840   1      0 0.00
+dihedral_coeff 46  -0.56170   2    180 0.00
+dihedral_coeff 47   1.60310   3      0 0.00
+dihedral_coeff 48  -0.08110   4    180 0.00
+dihedral_coeff 49   0.12590   5      0 0.00
+dihedral_coeff 50  -0.06980   6    180 0.00
+dihedral_coeff 51   1.03310   1      0 0.00
+dihedral_coeff 52  -0.63760   2    180 0.00
+dihedral_coeff 53   1.67360   3      0 0.00
+dihedral_coeff 54  -0.07380   4    180 0.00
+dihedral_coeff 55   0.19970   5      0 0.00
+dihedral_coeff 56  -0.07660   6    180 0.00
+
+improper_style harmonic
+improper_coeff 1 100.00000   0.00000
+
+kspace_style pppm 1e-5
+
+group tip3p type 61 62
+group Ow type 61
+group Hw type 62
+
+group CH3E type 50 60
+group CH2E type 33 40 41 42 43 44 45 46 47 48 49 51 52 53 54 55 56 57 58 59
+group N type 1
+group C type 2 6 10 14 17 25 28 31 34 38
+group O type 21 22 23 24 30 32 37 39
+group H type 3 4 5 7 8 9 11 12 13 15 16 18 19 26 27 29 35 36
+group P type 20
+group lipid union CH3E CH2E N C O H P
+group ions type 63 64 65 66 67 68 69
+group liquid union tip3p ions
+group wall type 70 71  
+

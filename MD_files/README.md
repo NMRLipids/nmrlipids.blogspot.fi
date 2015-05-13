@@ -2,6 +2,7 @@
 
 In this folder, you'll find all files required to relaunch the MD simulations.
 Due to size limitations of GitHub and binary format, the trajectory files of these MD simulations are stored in our [Zenodo Organization](https://zenodo.org/collection/user-nmrlipids).
+Not all simulations files from the manuscript are there because, sometimes, only the trajectory files are stored (happened for 3 simulations).
 
 ### Organization
 
@@ -59,3 +60,4 @@ A README inside each relevant folder indicates:
 | Hogberg08             | POPC  | 128  | -                                       | Hogberg08/POPCpure/             | [Zenodo](http://dx.doi.org/10.5281/zenodo.16724) |
 | Ulmschneiders         | POPC  | 128  | -                                       | Ulmschneiders/POPCpure/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.13392) |
 | Tjornhammar14         | DPPC  | 144  | -                                       | Tjornhammar14/POPCpure/         | [Zenodo](http://dx.doi.org/10.5281/zenodo.12743) |
+| Botan-CHARMM36-UA     | DLPC  | 128  | -                                       | Botan-CHARMM36-UA/DLPCpure/     | [Zenodo](http://dx.doi.org/10.5281/zenodo.13821) |
