@@ -741,14 +741,14 @@ The interaction between ions and a phosphatidylcholine bilayer will be discussed
 \subsubsection{Phospholipid bilayer with low hydration level}
 The experimental order parameters available in the literature~\cite{dvinskikh05b,ulrich94,bechinger91} 
 for the glycerol backbone and choline as a function of hydration level are shown in Fig.~\ref{ordPhydr}. 
-The independently reported values for choline segments are in good agreement with each other (despite 
+The independently reported values for the choline segments are in good agreement with each other (despite 
 slight differences in temperature and acyl chain composition),
-showing increase for both segments with decreasing hydration level. It should be noted that only 
+and both ($\beta$ and $\alpha$) show increase with decreasing hydration level. It should be noted that only 
 absolute values were measured in the original experiments~\cite{dvinskikh05b,ulrich94,bechinger91}, but
 we have included the signs measured in separate studies~\cite{hong95a,hong95b,gross97}. 
 Consequently, the $\beta$ order parameter with negative sign actually increases with dehydration 
 since the absolute value decreases~\cite{dvinskikh05b,ulrich94,bechinger91}.
-Slight decrease for the glycerol backbone order parameters were observed with dehydration~\cite{dvinskikh05b}.
+Slight decrease for the glycerol backbone order parameters have been observed with dehydration~\cite{dvinskikh05b}.
 \begin{figure}[]
   \centering
   \includegraphics[width=7.3cm]{../DATAreportediINblog/dehydration_lp.pdf}
@@ -771,14 +771,14 @@ Slight decrease for the glycerol backbone order parameters were observed with de
 
 Lipid bilayer dehydration has been studied also with molecular dynamics simulations~\cite{mashl01,pertsin05,pertsin07,eun09,eun10,schneck12},
 typically motivated by the  discussion about the origin of the ``hydration repulsion''~\cite{israelachvili,israelachvili96,sparr11}.
-However, the used simulation models are not typically compared to the experimental choline and glycerol backbone
+However, the used simulation models are typically not compared to the experimental choline and glycerol backbone
 order parameters (except by Mashl et al.~\cite{mashl01}).
 In Fig.~\ref{ordPhydr} the glycerol backbone and choline order parameters are shown as a function of hydration level for the CHARMM36, 
 MacRog and GAFFlipid models (having the most realistic atomistic resolution structures) together with the Berger based model 
 (which is the most used lipid model). 
 To elucidate changes the simulation results are shifted to match better with experiments with full hydration.
 The magnitude of shifting is written in the y-axis label.
-The choline order parameter increase with dehydration is seen in all
+The increase of the choline order parameters with dehydration is seen in all
 models despite of some additional fluctuations. Thus the choline order parameter response to dehydration can be
 intepreted to be in qualitative agreement with experiments.
 The situation is significantly more complicated for the glycerol backbone segments 
@@ -795,7 +795,7 @@ all models as a function of dehydration (Fig.~\ref{PNangle}). However,
 the amount of increase depends on the model. Especially the DLPC simulations with Berger model
 predict significantly stronger P--N vector tilt compared with the other models. The Berger model
 has also generally larger P--N vector angles and its choline order parameters are more off from
-experiments than other models. Thus the relatively modest tilting with dehydration
+experiments than the other three models. Thus the relatively modest tilting with dehydration
 predicted by MacRog, CHARMM36 and GAFFlipid is probably more realistic.
 
 It should be also noted that the free energy landscape is not correct in the models which
@@ -807,7 +807,7 @@ This issue may have some influence on the dehydration energetic calculations mad
   \includegraphics[width=8.6cm]{../Fig/dehydrationPN.pdf}
 
   \caption{\label{PNangle}
-    The angle between membrane normal and P--N vector as function of
+    The average angle between membrane normal and P--N vector as function of
     hydration level calculated from different simulations.
   }
 \end{figure}
