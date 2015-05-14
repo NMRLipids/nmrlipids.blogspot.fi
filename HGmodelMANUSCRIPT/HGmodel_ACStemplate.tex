@@ -902,23 +902,23 @@ Interestingly, according to our results, tuning did not lead to overfitting prob
 \section{Conclusions}
 The atomistic resolution structures sampled by the glycerol backbone and choline headgroup
 in phoshatidylcholine bilayers are not known despite of vast amount of accurate experimental
-data. Atomistic resolution molecular dynamics simulation model which reproduced the
-experimental data would automatically resolve the structures giving an interpretation of experimental results.
+data. An atomistic resolution molecular dynamics simulation model that would reproduce the
+experimental data would automatically resolve the structures, thus giving an unprecedently detailed interpretation of the experimental data.
 In this work we have collected and reviewed the experimental C--H bond vector order
-parameters available in the literature. These experimental parameters are then compared to
-different atomistic resolution simulation models for a fully hydrated bilayer, bilayers dehydrated to different extents, and
-lipid bilayers containing various amounts of cholesterol. Our results have led to the following conclusions:
+parameters available in the literature. These accurate experimental data are then compared to 13
+different atomistic resolution simulation models for a fully hydrated lipid bilayer system, followed by bilayers dehydrated to different extents, and
+finally bilayers containing various amounts of cholesterol. We are led to the following four main conclusions:
 
-- The C--H bond order parameters measured with different NMR techniques are in good agreement
-with each others. By combining the experimental results from various sources we concluded
+(1) The C--H bond order parameters measured with different NMR techniques are consistent.
+By combining the experimental results from various sources we concluded
 that the order parameters for each C--H bond are known with a quantitative accuracy of $\pm$0.02.
 
-- Comparison of order parameters between experiments and different atomistic resolution models 
-together with the structural analysis shows that these parameters can be used
-to judge the structural accuracy of the model. Thus the combination of atomistic resolution 
+(2) Comparison of order parameters between experiments and different atomistic resolution models 
+together with structural analysis showed that the order parameters can be used
+to judge the structural accuracy of a model. Thus the combination of atomistic resolution 
 molecular dynamics simulations and NMR experiments can be used to resolve the atomistic resolution
 structures of biomolecules in biologically relevant conditions. 
-This approach can be extended from lipids also, for example, to membrane proteins.
+This approach can be extended from lipids to, for example, membrane proteins.
 
 %None of the tested models (13 different models) produces the order parameters with the experimental
 %accuracy for a fully hydrated phoshatidylcholine lipid bilayer. However, the CHARMM36, GAFFlipid and MacRog 
@@ -929,38 +929,38 @@ This approach can be extended from lipids also, for example, to membrane protein
 %suggesting that careful adjustment of dihedral potentials would potentially lead to the model with a correct
 %structure.
 
-- The review of previous experimental results revealed that the 
-choline order parameters are increasing when the bilayer is dehydrated. Our simulations suggest that
-this can be explained by P--N vector tilting more parallel to the membrane. 
-These results strongly supports and complements the idea that the charge induced choline tilting and 
-partition can be measured by using the order parameter changes~\cite{ionpaper,scherer89}.
+(3) The review of previous experimental results revealed that when a bilayer is dehydrated the 
+choline order parameters increase. Our simulations suggested that
+this can be explained by the P--N vector tilting more parallel to the membrane. 
+This strongly supports and complements the idea that charge-induced choline tilting
+can be measured using order parameter changes~\cite{ionpaper,scherer89}.
 
 %Independent of the accuracy for a fully hydrated lipid bilayer, all the models reproduced the choline response
 %to dehydration. This can be explained by the change in the P--N vector tilting more parallel to the membrane,
 %which leads to the increase of order parameters despite of the initial configuration. It should be noted, however,
 %that the correct qualitative response does not necessarily indicate correct energetics. 
 
-- Only modest changes of glycerol backbone and choline order parameters are observed experimentally with increasing cholesterol concentration.
-When interpreted by using the simulations with the most realistic response to the cholesterol concentration,
-this observation can be explained such that the cholesterol induces only minor changes in the g$_3$-g$_2$-g$_1$-O(sn-1)
-dihedral in the glycerol backbone.
+(4) Only modest changes of glycerol backbone and choline order parameters are observed experimentally with increasing cholesterol content.
+When interpreted using the computational lipid model that we found to have the most realistic response to cholesterol,
+this observation means that cholesterol induces only minor changes in (the g$_3$-g$_2$-g$_1$-O(sn-1)
+dihedral of) the glycerol backbone, in other words, there is no major conformational change of the lipid.
 
 %- The response of glycerol backbone and choline headgroup to the cholesterol content is described more
 %realistically in CHARMM36 and MacRog models than in the Berger based model.
 
-- Besides the main conclusions, we have created the most extensive
+(+) Besides these four main conclusions, we note that we have created the most extensive
 publicly available collection of molecular dynamics simulation trajectories of lipid bilayers
-into the Zenodo community \url{https://zenodo.org/collection/user-nmrlipids}. 
-This collection opens up numerous possiblities for different analyses with
-much less effort than previously required.
+(\url{https://zenodo.org/collection/user-nmrlipids}). The mere existence of
+this collection opens up numerous possibilities for unforeseen analyses, such as data mining,
+and rapid testing of ideas with
+much less computational effort than previously required.
 
-In general, we conclude that to fully utilize the potential of atomistic resolution classical molecular dynamics simulations
-in the structural interpretation of the high resolution NMR data~\cite{ferreira14} for lipid bilayers one has to  
-improve the phoshatidylcholine glycerol backbone and choline headgroup parameters.
+In general, we conclude that in order to fully utilize the potential of atomistic-resolution classical molecular dynamics simulations
+in the structural interpretation of high resolution NMR data~\cite{ferreira14} for lipid bilayers, one must  
+improve the phoshatidylcholine glycerol backbone and choline headgroup parameters of the existing force fields.
 
-This work has been done as an open collaboration by using the \url{nmrlipids.blogspot.fi} as an communication
-platform. All the scientific contributions have been done through the blog and are publicly
-available~\cite{nmrlipids}. 
+This work has been done as a fully open collaboration, using \url{nmrlipids.blogspot.fi} as the communication
+platform. All the scientific contributions have been communicated publicly through this blog~\cite{nmrlipids}.
 
 %This work has been, and continues to be, progressed and discussed through a blog at \url{nmrlipids.blogspot.fi}. 
 %Everyone is invited to join the discussion and make contributions through the blog. 
