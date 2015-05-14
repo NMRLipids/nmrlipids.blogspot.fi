@@ -817,34 +817,43 @@ The response of the glycerol backbone seems to be more subtle than that of the c
 none of the four models reproduced the experimental trends upon dehydration with enough accuracy to invite a
 structural interpretation.
 
-
-
 \subsubsection{Cholesterol-containing phospholipid bilayer}
-Phospholipid--cholesterol interactions have been widely studied with theoretical~\cite{huang99,zhu07,rog09,alwarawrah12} and
-experimental methods~\cite{brown78,marsh10,ferreira13,marsh13}, since cholesterol is abundant in biological membranes.
-It has been suggested to be an important player, for example, in domain formation~\cite{simons04,somerharju09}.
-It is widely agreed that cholesterol orders lipid acyl tails thus decreasing the area per molecule (condensing effect),
-however, the influence of cholesterol on the lipid headgroup and glycerol backbone are still debated~\cite{huang99,simons04,somerharju09}.
-For example, it has been suggested that the surrounding lipids shield cholesterol from interactions with water by 
-reorienting their headgroups (``umbrella model'')~\cite{huang99} or that cholesterol acts as a spacer for the headgroups thus increasing 
+As cholesterol is abundant in biological membranes and
+has been suggested to be an important player, for example, in domain formation~\cite{simons04,somerharju09},
+phospholipid--cholesterol interactions have been extensively studied with theoretical~\cite{huang99,zhu07,rog09,alwarawrah12} and
+experimental~\cite{brown78,marsh10,ferreira13,marsh13} methods.
+It is widely agreed that cholesterol orders lipid acyl tails and thus decreases the area per molecule (condensing effect),
+but its influence on the lipid headgroup and glycerol backbone remains debated~\cite{huang99,simons04,somerharju09}.
+It has been suggested, for example, that the surrounding phospholipids shield cholesterol from exposure to water by 
+reorienting their headgroups (``umbrella model'')~\cite{huang99} or that cholesterol acts as a spacer between the headgroups to increase 
 their entropy and dynamics (``superlattice model'')~\cite{somerharju09}. 
 %\todo{It has been suggested that we should use direct quotations from original papers here for clarity.}
-Both of these suggestions have been supported
-by molecular dynamics simulations~\cite{zhu07,alwarawrah12}, and other simulations suggest specific
-interactions between the glycerol backbone and cholesterol~\cite{rog09}. However,
-in the above mentioned studies, the glycerol backbone and choline headgroup behaviour
-as a function of cholesterol content has not been compared to experiments. 
+%Both of these suggestions 
+Molecular dynamics simulations have supported both
+the umbrella~\cite{alwarawrah12} as well as the superlattice~\cite{zhu07} model,
+in addition to suggesting specific interactions of cholesterol with the glycerol backbone~\cite{rog09}.
+In these studies~\cite{zhu07,rog09,alwarawrah12}
+the responses of the glycerol backbone and choline headgroup 
+to increasing cholesterol content were not, however, compared to experiments. 
 
-The choline headgroup and glycerol backbone order parameters for POPC measured by $^1$H-$^{13}$C NMR~\cite{ferreira13} and DPPC choline order parameters 
-measured by $^{2}$H NMR~\cite{brown78} are shown in Fig.~\ref{ordPchol} as a function of cholesterol content.
-The agreement between different experimental results is again very good, showing only very modest changes in 
-the choline order parameters as a function of cholesterol content. It should be noted, however, that very small
-changes are measurable with high resolution $^{2}$H NMR experiments
-and cholesterol causes a measurable increase in the $\beta$ order parameter and a forking in the $\alpha$ order
-parameter~\cite{brown78}. These effects are, however, so small that they are barely visible on the scale used in Fig.~\ref{ordPchol}.
-Further, the effects of cholesterol on the glycerol backbone order parameters for POPC from $^1$H-$^{13}$C NMR experiment~\cite{ferreira13} 
-are in good agreement with the results for the phosphatidylethanolamine (PE) measured by $^{2}$H NMR~\cite{ghosh82}.
-These results further support the idea that the glycerol backbone structural behaviour is independent of the
+Fig.~\ref{ordPchol} shows the responses of the choline headgroup ($\beta$ and $\alpha$)
+order parameters of POPC (measured by $^1$H-$^{13}$C NMR~\cite{ferreira13}) and DPPC
+($^{2}$H NMR~\cite{brown78}) to increasing cholesterol content.
+Again, the two independent data sets agree very well:
+Only very modest ($\Delta S_\mathrm{CH}<0.03$) changes occur in  the choline order parameters as cholesterol content
+increases from 0 to 60\%.
+The extreme sensitivity of the
+high resolution $^{2}$H NMR experiments
+is beautifully demonstrated by the measurable~\cite{brown78}
+(but barely visible on the scale used in Fig.~\ref{ordPchol})
+cholesterol-induced forking of the $\alpha$ order parameter.
+
+We note that the modest ($\Delta S_\mathrm{CH}<0.02$ for g$_1$; $<0.04$ for g$_2$, g$_3$; see Fig.~\ref{ordPchol})
+effects of cholesterol
+on the glycerol backbone order parameters of POPC
+measured by $^1$H-$^{13}$C NMR~\cite{ferreira13}
+agree well with the results for phosphatidylethanolamine (PE) measured by $^{2}$H NMR~\cite{ghosh82}.
+This further supports the ideas that the glycerol backbone structural behaviour is independent of the
 headgroup composition~\cite{gally81} and that the headgroup structure is largely independent of the acyl chain region content unless
 charges are present~\cite{scherer87}.
 \begin{figure}[]
@@ -865,24 +874,28 @@ charges are present~\cite{scherer87}.
 	Samuli likes the one on left, Markus the one on right. Do others have opinions?}
 \end{figure}
 
-In addition to the experimental data, the previously published simulation results from the Berger-POPC-07/H\"oltje-CHOL-13 model~\cite{ferreira13},
-and our results from CHARMM36 and MacRog force fields are shown in Fig.~\ref{ordPchol}. 
-To elucidate changes, the simulation results are shifted to match better with experiments without cholesterol.
-The magnitude of shifting is written in the y-axis label.
-As already pointed out previously, the Berger-POPC-07/H\"oltje-CHOL-13 model
-seriously exaggerates the effect of cholesterol on the phospholipid glycerol backbone and choline segments~\cite{ferreira13}.
-In comprasion, the choline responses of both CHARMM36 and MacRog are in better qualitative agreement with experiments,
-and also the glycerol backbone responses appear less drastic.
-%However, CHARMM36 seems to better reproduce the experimentally observed modest changes in the glycerol backbone segments 
-%g$_2$ and g$_3$ with high concentrations of cholesterol. 
-Thus we have calculated the glycerol backbone dihedral angle distributions
-as a function of cholesterol in CHARMM36 (shown in Supplementary material) to resolve the cholesterol-induced structural changes. The only detectable change due to the
-addition of cholesterol is the small decrease of gauche(-) and increase of gaughe(+) probability of the g$_3$-g$_2$-g$_1$-O(\textit{sn}-1) dihedral.
-In conclusion, the results suggest that the significant effect of cholesterol on the lipid structures observed in simulations~\cite{zhu07,rog09,alwarawrah12} are overestimated by the model used in these studies, and the cholesterol only induces very small structural changes in the glycerol backbone.
+In addition to the experimental data, Fig.~\ref{ordPchol} shows
+our results for the CHARMM36 and MacRog force fields
+and the previously published~\cite{ferreira13}
+Berger-POPC-07/H\"oltje-CHOL-13 results.
+Note that the simulation data are shifted vertically to ease comparison with experimental responses.
+As previously pointed out~\cite{ferreira13}, the Berger-based model
+seriously exaggerates the effect of cholesterol on the phospholipid glycerol backbone and choline headgroup.
+In comparison, the choline responses of CHARMM36 and MacRog are in better qualitative agreement with experiments, and the glycerol backbone responses, 
+although still somewhat larger than what is seen experimentally,
+much less drastic.
+Therefore,
+to resolve the nature of cholesterol-induced structural changes,
+we calculated from CHARMM36 the glycerol backbone dihedral angle distributions
+at various cholesterol contents (Supplementary material): The only detectable change
+is the small decrease of gauche(-) and increase of gaughe(+) probability of the g$_3$-g$_2$-g$_1$-O(\textit{sn}-1) dihedral.
+In conclusion, our results suggest that the significant effects of cholesterol on lipid conformations observed in simulations~\cite{zhu07,rog09,alwarawrah12} are overestimated by the computational models used;
+cholesterol only induces very small structural changes in the glycerol backbone.
 
-It should be noted that the CHARMM36 force field parameters (dihedral potentials) for the glycerol backbone have been tuned to reproduce the correct order parameters at fully hydrated conditions~\cite{klauda10}. 
-This procedure contains a risk of overfitting, which would manifest itself as wrong responses to changing conditions. 
-According to our results, this tuning does not seem to lead to overfitting problems in the case of dehydration or lipid--cholesterol mixtures. 
+Finally, it is important to note that the CHARMM36 force field parameters (glycerol backbone dihedral potentials)
+have been tuned to reproduce the experimental order parameters at full hydration~\cite{klauda10}. 
+This approach introduces a risk of overfitting, which would manifest itself as wrong responses to changing conditions. 
+Interestingly, according to our results, tuning did not lead to overfitting problems as far as dehydration or cholesterol content are considered. 
 
 
 \pagebreak
