@@ -231,58 +231,59 @@ publicly available collection of molecular dynamics simulation trajectories of l
 Phospholipids containing various polar headgroups and acyl chains are essential building blocks of 
 biological membranes. Lamellar phospholipid bilayer structures have been widely studied with various experimental 
 and theoretical techniques as a simple model for cellular membranes~\cite{lipowsky95,tieleman97,klauda08,edholm08,tieleman10,piggot12,rabinovich13,marsh13}. 
-Phospholipid molecules are composed of hydrophobic acyl chains which are connected by a glycerol backbone to a hydrophilic headgroup.
-See Fig.~\ref{POPCstructure} for the structure of 1-palmitoyl-2-oleoylphosphatidylcholine (POPC).
+Phospholipid molecules are composed of hydrophobic acyl chains connected by a glycerol backbone to a hydrophilic headgroup;
+see Fig.~\ref{POPCstructure} for the structure of 1-palmitoyl-2-oleoyl\-phosphatidyl\-choline (POPC).
 The behaviour of the acyl chains in a lipid bilayer is relatively well understood~\cite{Israelachvili80,lipowsky95,tieleman97,klauda08,edholm08,tieleman10,marsh13}. 
 The conformations sampled by the glycerol backbone and choline in a fluid bilayer are, however, not fully 
-resolved since even the most accurate scattering and Nuclear Magnetic Resonance (NMR)
-techniques give only a set of values that the structure has to fulfil, but
+resolved as even the most accurate scattering and Nuclear Magnetic Resonance (NMR)
+techniques give only a set of values that the structure has to fulfill, but
 there is no unique way to derive the actual structure from them~\cite{seelig77b,skarjune79,Israelachvili80,jacobs80,davis83,strenk85,akutsu91,hong95b,hong96,semchyschyn04}.
-Some structural details have been extracted from crystal structure, $^1$H NMR studies and Raman spectroscopy~\cite{hauser80,hauser81,hauser81b,akutsu81b,pascher92,hauser88,marsh06}
-but general consensus about the structures sampled in the fluid state have not been reached~\cite{seelig77b,skarjune79,Israelachvili80,jacobs80,davis83,strenk85,hauser88,akutsu91,hong95b,hong96,semchyschyn04,marsh06}. 
-On the other hand, the structural parameters for the glycerol backbone are similar for various biologically
+Some structural details have been extracted from crystal structures, $^1$H NMR studies, and Raman spectroscopy~\cite{hauser80,hauser81,hauser81b,akutsu81b,pascher92,hauser88,marsh06},
+but general consensus concerning the structures sampled in the fluid state has not been reached~\cite{seelig77b,skarjune79,Israelachvili80,jacobs80,davis83,strenk85,hauser88,akutsu91,hong95b,hong96,semchyschyn04,marsh06}. 
+Importantly, the structural parameters for the glycerol backbone are similar for various biologically
 relevant lipid species (phosphatidylcholine (PC), phosphatidylethanolamine (PE) and phosphatidylglycerol (PG)) 
-in various environments~\cite{gally81} and the structural parameters for the headgroup choline structures are similar in model membranes and
+in various environments~\cite{gally81}, and the structural parameters for the choline headgroup are similar in model membranes and
 real cells (mouse fibroblast L-M cell)~\cite{scherer87}.
-Thus, the solution of phosphatidylcholine glycerol backbone and choline structures would be 
+Thus, resolving the PC-lipid glycerol and choline structures would be 
 useful for understanding a wide range of different biological membranes.
 
 Classical atomistic molecular dynamics simulations have been widely used to study  
 lipid bilayers~\cite{tieleman97,klauda08,edholm08,tieleman10,piggot12,rabinovich13}. As these models provide an atomistic
-resolution description of the whole lipid molecule, they have potential to solve the glycerol backbone and 
-headgroup structures. In particular, the experimental C--H bond order parameters for the glycerol backbone 
-(g$_1$, g$_2$ and g$_3$) and choline ($\alpha$ and $\beta$) segments (see Fig.~\ref{POPCstructure} for definitions) are among the main parameters used in
+resolution description of the whole lipid molecule, they have the potential to solve the glycerol backbone and 
+headgroup structures. The experimental C--H bond order parameters
+(routinely compared between experiments and simulations for the acyl chains~\cite{tieleman97,klauda08,edholm08,tieleman10,piggot12})
+are also known for the glycerol backbone 
+(g$_1$, g$_2$, and g$_3$) and choline ($\alpha$ and $\beta$) segments (see Fig.~\ref{POPCstructure} for definitions) and are among the main parameters used in
 attempts to derive lipid structures from experimental data~\cite{seelig77b,skarjune79,jacobs80,davis83,akutsu91,hong95b,semchyschyn04}.
-These parameters are also routinely compared between experiments and simulations for the acyl chains~\cite{tieleman97,klauda08,edholm08,tieleman10,piggot12}.
-Thus, the structures sampled in a simulation model that reproduces these and other experimental parameters, automatically
-give an interpretation of the experiments. In other words they can be considered as reasonable atomistic resolution descriptions of
+Notably, the structures sampled in a simulation that reproduces these %and other experimental
+parameters will automatically comprise an interpretation of the experiments. In other words, such simulations can be considered as an accurate atomistic resolution description of
 the behavior of lipid molecules in a bilayer.
 
-The glycerol backbone and choline headgroup order parameters have been compared between simulations and experiments
-in some studies~\cite{shinoda97,hogberg08,castro08,klauda10,kapla12,dickson12,poger12,ferreira13,chowdhary13,maciejewski14}, 
-however much less frequently than for the acyl  chains~\cite{tieleman97,klauda08,edholm08,tieleman10,piggot12}.
-The main reason is probably that the existing experimental data for the glycerol backbone
-and choline headgroups is scattered over many publications and published in a format that is difficult to understand without some NMR expertise. 
-In addition to the order parameters, also dihedral angles for glycerol backbone and headgroup estimated from experiments have been sometimes used to 
+Only a few studies~\cite{shinoda97,hogberg08,castro08,klauda10,kapla12,dickson12,poger12,ferreira13,chowdhary13,maciejewski14}
+have compared
+the glycerol backbone and choline headgroup order parameters between simulations and experiments. 
+The main reason probably is that the existing experimental data for the glycerol backbone
+and choline headgroups are scattered over many publications and published in a format that is difficult to understand without some NMR expertise. 
+In addition to the order parameters, dihedral angles for the glycerol backbone and headgroup estimated from experiments have sometimes been used to 
 assess the quality of a simulation model~\cite{robinson94,essex94,kothekar96,hyvonen97,shinoda97,duong99}.
 
-In this work we first review the most relevant experimental data for the glycerol backbone and choline headgroup order parameters
+In this work, we first review the most relevant experimental data for the glycerol backbone and choline headgroup order parameters
 in a phosphatidylcholine lipid bilayer. Then the available atomistic resolution lipid models are carefully compared to the 
-experimental data. The comparison reveals that the CHARMM36~\cite{klauda10}, GAFFlipid~\cite{dickson12} and MacRog models~\cite{maciejewski14}
+experimental data. The comparison reveals that the CHARMM36~\cite{klauda10}, GAFFlipid~\cite{dickson12}, and MacRog~\cite{maciejewski14} models
 have the most realistic glycerol backbone and choline structures. We also compare the glycerol backbone and choline 
-structures between the most often used (Berger based) lipid model~\cite{berger97} 
+structures between the most often used (Berger-based) lipid model~\cite{berger97} 
 %\todo{If there are no objections, we will leave the naming convention of different Berger versions as it is now.}
 and the best performing models, to demonstrate that by using the 
 order parameters we can distinguish the more reasonable structures from the less reasonable ones. However, none of the current models 
-is accurate enough to properly resolve the atomistic resolution stuctures.
+is accurate enough to properly resolve the atomistic resolution structures.
 
 In addition to fully hydrated single component lipid bilayers, the glycerol backbone and choline order parameters
-have been measured under a large number of different conditions. For example, as a function of hydration level~\cite{bechinger91,ulrich94,dvinskikh05b}, cholesterol content~\cite{brown78,ferreira13}
+have been measured under a large number of changing conditions: hydration level~\cite{bechinger91,ulrich94,dvinskikh05b}, cholesterol content~\cite{brown78,ferreira13},
 ion concentration~\cite{brown77,akutsu81,altenbach84,roux90,roux91}, temperature~\cite{gally75}, charged lipid content~\cite{roux90,roux91}, charged surfactant content~\cite{scherer89}, 
 drug molecule concentration~\cite{browning82,kelusky84,castro08}, and protein content~\cite{roux89,kuchinka89} (listing only the publications most relevant for this work and the pioneering studies).
-Awareness of the existence of this type of data allows the comparison of structural responses to varying conditions between simulations and experiments,
-which can be used to validate the simulation models and to interpret the original experiments. 
-In this publication we demonstrate the power of this approach for understanding the behaviour of a bilayer as a function of hydration level and cholesterol concentration.
+Existence of these data allows the comparison of structural responses to varying conditions between simulations and experiments,
+in other words, validation of the simulation models and interpretation of the original experiments. 
+Here we demonstrate the power of this approach in understanding the behaviour of a bilayer as a function of hydration level and cholesterol content.
 Choline headgroup order parameters as function of ion concentration, and their relation to the ion binding affinity, are discussed elsewhere~\cite{ionpaper}.
 
   \begin{figure}[]
@@ -294,28 +295,28 @@ Choline headgroup order parameters as function of ion concentration, and their r
   
 \end{figure}
 
-\section{methods}
+\section{Methods}
 
 \subsection{Open collaboration}
 %\todo{Should we write more about this?}
 
-This work has been done as an open collaboration by using \url{nmrlipids.blogspot.fi}~\cite{nmrlipids}
+This work has been done as a fully open collaboration, using the \url{nmrlipids.blogspot.fi} blog~\cite{nmrlipids}
 as a communication platform.
-The approach is inspired by the Polymath project~\cite{gowers09}, however there are some essential differences. 
-The present approach was started by publishing a manuscript~\cite{ollila13} discussing the glycerol backbone and choline structures 
-in a Berger based model (the most used molecular dynamics simulation model for lipid bilayers).
-After publishing the initial manuscript, the open invitation for further contributions and discussion through the blog was presented.
-All the scientific contributions are done publicly through the blog and all contributors were offered coauthorship
-according to the guidelines defined in the beginning of the project~\cite{creditsPOST}.
-The acception of authorship is based on the self-assesment of the authors' scientific contribution to the project.
-The contributions from each author are summarized in the Supplementary Information. %(the location depends on the journal probably).
+Our approach is inspired by the Polymath project~\cite{gowers09}, however there are some essential differences. 
+We started by publishing a manuscript~\cite{ollila13} discussing the glycerol backbone and choline structures 
+in a Berger-based model (the most used molecular dynamics simulation model for lipid bilayers).
+Simultaneously,  we presented an open invitation for further contributions and discussion on the blog.
+All the scientific contributions were made publicly through the blog. Every contributor was offered coauthorship
+according to the guidelines defined in the beginning of the project~\cite{creditsPOST};
+the acceptance of the offer was based on authors' self-assesment of their scientific contribution.
+These contributions are summarized in the Supplementary Information. %(the location depends on the journal probably).
 
-Almost all simulation data, including running parameters for reprocution and trajectories for further analysis, are collected
-to the nmrlipids community in Zenodo file repository \url{https://zenodo.org/collection/user-nmrlipids}.
-Thus, besides the main topic of this manuscript we present the most extensive available collection of simulations trajectories
-for lipid bilayers, which opens up numerous possiblities for different analyses with much less effort than previously required.
-Further information, e.g. scripts, figures and manuscript text files, are available in the GitHub 
-organization \url{https://github.com/NMRlipids} \todo{I will not assign a doi yet. We can wait for the journal decision.}.
+Almost all simulation data, including input files for reproduction and trajectories for further analysis, are collected
+on our CERN-hosted Zenodo file repository (\url{https://zenodo.org/collection/user-nmrlipids}).
+Thus, in addition to the main topic of this manuscript, we present the most extensive publicly available collection of simulation trajectories
+for lipid bilayers, opening up numerous possiblities for different analyses with much less effort than previously required.
+Further information, such as scripts, figures, and manuscript text files, are available through our GitHub 
+repository (\url{https://github.com/NMRlipids}). \todo{I will not assign a doi yet. We can wait for the journal decision.}.
 
 
 \subsection{Order parameters from experiments}\label{expORDp}
