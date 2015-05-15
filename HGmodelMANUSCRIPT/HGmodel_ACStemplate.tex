@@ -207,13 +207,6 @@ data for dehydrated bilayers and cholesterol-containing bilayers, and interprete
 Although none of the existing models reached experimental accuracy, by critically comparing them we were able to distill relevant chemical information:
 (1) increase of choline order parameters indicates the P--N vector tilting more parallel to the membrane,
 and (2) cholesterol induces only minor changes to the PC (glycerol backbone) structure.
-%None of the current models is not accurately enough to resolve the structure with experimental accuracy.
-%However, closer inspection of three best performing models (CHARMM36, GAFFlipid and MacRog) suggest
-%that improvements in the sampled dihedral angle distributions would potentilly lead to the model which
-%would resolve the structure. Despite of the inaccuracy in the fully hydrated
-%structures, the response to dehydration, i.e. the tilting of the P--N vector more parallel to membrane normal, 
-%is qualitatively correct in all models. The CHARMM36 and MacRog models describe the interactions
-%between lipids and cholesterol better than the Berger/H\"oltje model.
 This work has been done as a fully open collaboration, using \url{nmrlipids.blogspot.fi} as a
 communication platform; all the scientific contributions were made publicly on this blog.
 During the open research process, the repository holding our simulation trajectories and files
@@ -255,7 +248,7 @@ headgroup structures. The experimental C--H bond order parameters
 are also known for the glycerol backbone 
 (g$_1$, g$_2$, and g$_3$) and choline ($\alpha$ and $\beta$) segments (see Fig.~\ref{POPCstructure} for definitions) and are among the main parameters used in
 attempts to derive lipid structures from experimental data~\cite{seelig77b,skarjune79,jacobs80,davis83,akutsu91,hong95b,semchyschyn04}.
-Notably, the structures sampled in a simulation that reproduces these %and other experimental
+Notably, the structures sampled in a simulation that reproduces these 
 parameters will automatically comprise an interpretation of the experiments. In other words, such simulations can be considered as an accurate atomistic resolution description of
 the behavior of lipid molecules in a bilayer.
 
@@ -272,7 +265,6 @@ in a phosphatidylcholine lipid bilayer. Then the available atomistic resolution 
 experimental data. The comparison reveals that the CHARMM36~\cite{klauda10}, GAFFlipid~\cite{dickson12}, and MacRog~\cite{maciejewski14} models
 have the most realistic glycerol backbone and choline structures. We also compare the glycerol backbone and choline 
 structures between the most often used (Berger-based) lipid model~\cite{berger97} 
-%\todo{If there are no objections, we will leave the naming convention of different Berger versions as it is now.}
 and the best performing models, to demonstrate that by using the 
 order parameters we can distinguish the more reasonable structures from the less reasonable ones. However, none of the current models 
 is accurate enough to properly resolve the atomistic resolution structures.
@@ -298,7 +290,6 @@ Choline headgroup order parameters as function of ion concentration, and their r
 \section{Methods}
 
 \subsection{Open collaboration}
-%\todo{Should we write more about this?}
 
 This work has been done as a fully open collaboration, using the \url{nmrlipids.blogspot.fi} blog~\cite{nmrlipids}
 as a communication platform.
@@ -309,7 +300,7 @@ Simultaneously,  we presented an open invitation for further contributions and d
 All the scientific contributions were made publicly through the blog. Every contributor was offered coauthorship
 according to the guidelines defined in the beginning of the project~\cite{creditsPOST};
 the acceptance of the offer was based on authors' self-assesment of their scientific contribution.
-These contributions are summarized in the Supporting Information. %(the location depends on the journal probably).
+These contributions are summarized in the Supporting Information. 
 
 Almost all simulation data, including input files for reproduction and trajectories for further analysis, are collected
 on our CERN-hosted Zenodo file repository (\url{https://zenodo.org/collection/user-nmrlipids}).
@@ -358,7 +349,6 @@ separate populations of lipid conformations~\cite{engel81,gally81}.
 
 \subsection{Order parameters from simulations}
 The order parameters from simulations were calculated directly using the definition as in Eq.~\ref{orderP}.
-%$S_{{\rm CH}}=\frac{3}{2} \langle \cos^2 \theta-1 \rangle$. 
 For the united atom models the hydrogen positions were generated 
 in the trajectories post-simulationally using the positions of the heavy atoms and the known hydrocarbon geometries.
 For the statistical error estimates, the time average of order parameters were first calculated separately
@@ -393,7 +383,6 @@ The references pointing to simulation details and files are also listed in Table
 \centering
 \caption{Fully hydrated single component lipid bilayer systems simulated for Fig.~\ref{HGorderparameters}:
   1,2-dimyristoyl-sn-glycero-3-phosphocholine (DMPC),
-  %1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC),
   dilauroylphosphatidylcholine (DLPC),
   dipalmitoylphosphatidylcholine (DPPC), and
   1-palmitoyl-2-oleoylphosphatidylcholine (POPC).
@@ -424,8 +413,6 @@ CHARMM36~\cite{klauda10}  & DPPC &  72 & 2189 & 323 &  130  & - & -   & [\citenu
 CHARMM36~\cite{klauda10}  & POPC &  72 & 2242 & 303 &  30 &  20 & [\citenum{charmm36filesSHORT}]$^*$ & SI \\
 {\bf
 CHARMM36}~\cite{klauda10} & POPC & 128 & 5120 & 303 & 200 & 100 & [\citenum{charmm36files}]$^*$      & SI \\
-%CHARMM36\cite{klauda10}\todoi{Not included in the Fig. 2. Should we remove or include?}        & DOPC   & 128 &  5120    & 303 & 150 & 100  & ?\todoi{Permanent link in progress by Hubert Santuz}  & SI \\
-%\todoi{Permanent link for DOPC CHARMM36 simulation by Hubert Santuz is not required now. However, it would be probably useful in the future.}
 MacRog~\cite{kulig15b}  & POPC & 288 & 12600 & 310 & 100 &  80 & [\citenum{macrogFILES}]$^*$      & SI  \\
 {\bf
 MacRog}~\cite{kulig15b} & POPC & 128 &  6400 & 310 & 400 & 200 & [\citenum{macrogCHOLfiles}]$^*$  & SI  \\
@@ -545,8 +532,6 @@ and choline order parameters from various publications~\cite{gally75,akutsu81,gr
 %  \centering
   \includegraphics[width=8.6cm]{../DATAreportediINblog/comparisonSorted.pdf}
 \newline
-%\todo{There is also the interactive version by Hubert Santuz now in https://plot.ly/~HubertSantuz/72/lipid-force-field-comparison/
-%we should figure out which is the most practical way to put that behind permalink once it finalized (Zenodo, figshare or something else?) and then put a citation in the paper.}
   \caption{\label{HGorderparameters}
   Order parameteres from simulations listed in Table~\ref{systems} and experiments for glycerol and choline groups.
 The experimental values were taken from the following publications:
@@ -575,12 +560,6 @@ For more details, see Ref.~\citenum{accuracyPOST}.
 Motivated by the high experimental reproducibility, we have highlighted in 
 Fig.~\ref{HGorderparameters} the subjective sweet spots (light blue areas), within which we expect the calculated absolute 
 values of the order parameters of a well-performing force field to fall.
-
-%In addition to the phosphatidylcholine lipids, similar values of the glycerol backbone order parameters have been measured
-%for phophatidylethanolamine (PE) and phopshatidylglycerol (PG) in E. Coli extract~\cite{gally81},
-%indicating that the glycerol backbone structure is similar independent of the headgroup chemistry and lipid environment.
-%Further, choline order parameters measured from mouse fibroblast L-M cell are similar to the ones in model
-%membranes~\cite{scherer87}.
 
 In addition to the numerical values, an important feature of the glycerol backbone is the 
 forking (see section~\ref{expORDp}) of the order parameters in g$_1$ and g$_3$ segments, in contrast to the choline segments $\alpha$ and $\beta$. 
@@ -701,12 +680,6 @@ sign (negative) for the $\beta$ order parameter. This result is again in agreeme
 crystal structure, $^1$H NMR and Raman spectroscopy studies~\cite{hauser80,hauser81,hauser81b,akutsu81b} which suggest that
 this dihedral is in the gauche conformation in the absence of ions.
 
-%Interestingly, the probability of the gaughe conformations correlates with the order parameter difference between the $\beta$ and $\alpha$ segments:
-%the larger the gaughe fraction the larger the order parameter difference. This suggestion together with the results in 
-%Fig.~\ref{HGorderparameters2} would indicate that the correct gaughe-trans fraction for N-$\beta$-$\alpha$-O dihedral is 
-%larger than in GAFFlipid but smaller than in CHARMM36. This happens to be quite close to the gaughe-trans fraction in
-%the Berger model. However, there is significant forking and numerical values are off from the experiments in the Berger
-%model suggesting that it has some other inaccuracies.
 \begin{figure}[]
   \centering
   \includegraphics[width=8.6cm]{../Fig/a-bDIHS2.eps}
@@ -768,9 +741,6 @@ as its absolute value decreases~\cite{dvinskikh05b,ulrich94,bechinger91}.
     matches (within $\pm$0.01) the experimental value at full hydration;
     the shift magnitudes for each of the force fields are listed ($S_\mathrm{CH}$+shift) in the y-label.
   }
-%  	\todo{Markus prepared two versions of this plot. The one on left has all the data points joint by lines;
-%	the one on right shows smooth trend lines (cubic polynomials) to ease qualitative comparison.
-%	Samuli likes the one on left, Markus the one on right. Do others have opinions?}
 \end{figure}
 
 Lipid bilayer dehydration has been studied also with molecular dynamics simulations~\cite{mashl01,pertsin05,pertsin07,eun09,eun10,schneck12},
@@ -830,8 +800,6 @@ but its influence on the lipid headgroup and glycerol backbone remains debated~\
 It has been suggested, for example, that the surrounding phospholipids shield cholesterol from exposure to water by 
 reorienting their headgroups (``umbrella model'')~\cite{huang99} or that cholesterol acts as a spacer between the headgroups to increase 
 their entropy and dynamics (``superlattice model'')~\cite{somerharju09}. 
-%\todo{It has been suggested that we should use direct quotations from original papers here for clarity.}
-%Both of these suggestions 
 Molecular dynamics simulations have supported both
 the umbrella~\cite{alwarawrah12} as well as the superlattice~\cite{zhu07} model,
 in addition to suggesting specific interactions of cholesterol with the glycerol backbone~\cite{rog09}.
@@ -872,9 +840,6 @@ charges are present~\cite{scherer87}.
     matches (within $\pm$0.01) the experimental value without cholesterol;
     the shift magnitudes for each of the force fields are listed ($S_\mathrm{CH}$+shift) in the y-label.
 }
-%	\todo{Markus prepared two versions of this plot. The one on left has all the data points joint by lines;
-%	the one on right shows smooth trend lines (cubic polynomials) to ease qualitative comparison.
-%	Samuli likes the one on left, Markus the one on right. Do others have opinions?}
 \end{figure}
 
 In addition to the experimental data, Fig.~\ref{ordPchol} shows
@@ -921,33 +886,16 @@ molecular dynamics simulations and NMR experiments can be used to resolve the at
 structures of biomolecules in biologically relevant conditions. 
 This approach can be extended from lipids to, for example, membrane proteins.
 
-%None of the tested models (13 different models) produces the order parameters with the experimental
-%accuracy for a fully hydrated phoshatidylcholine lipid bilayer. However, the CHARMM36, GAFFlipid and MacRog 
-%models are relatively close. The structures of these models together with the most used lipid model (Berger based) 
-%were subjected to more careful studies. The results revealed that the current models are not accurate
-%enough to resolve the atomistic resolution structures sampled by glycerol backbone and choline headgroup.  
-%However, the correlation between dihedral angle distributions and order parameter differences was found, 
-%suggesting that careful adjustment of dihedral potentials would potentially lead to the model with a correct
-%structure.
-
 (3) The review of previous experimental results revealed that when a bilayer is dehydrated the 
 choline order parameters increase. Our simulations suggested that
 this can be explained by the P--N vector tilting more parallel to the membrane. 
 This strongly supports and complements the idea that charge-induced choline tilting
 can be measured using order parameter changes~\cite{ionpaper,scherer89}.
 
-%Independent of the accuracy for a fully hydrated lipid bilayer, all the models reproduced the choline response
-%to dehydration. This can be explained by the change in the P--N vector tilting more parallel to the membrane,
-%which leads to the increase of order parameters despite of the initial configuration. It should be noted, however,
-%that the correct qualitative response does not necessarily indicate correct energetics. 
-
 (4) Only modest changes of glycerol backbone and choline order parameters are observed experimentally with increasing cholesterol content.
 When interpreted using the computational lipid model that we found to have the most realistic response to cholesterol,
 this observation means that cholesterol induces only minor changes in (the g$_3$-g$_2$-g$_1$-O(sn-1)
 dihedral of the glycerol backbone, in other words, there is no major conformational change of the lipid.
-
-%- The response of glycerol backbone and choline headgroup to the cholesterol content is described more
-%realistically in CHARMM36 and MacRog models than in the Berger based model.
 
 (+) Besides these four main conclusions, we note that we have created the most extensive
 publicly available collection of molecular dynamics simulation trajectories of lipid bilayers
@@ -962,18 +910,6 @@ improve the phoshatidylcholine glycerol backbone and choline headgroup parameter
 
 This work has been done as a fully open collaboration, using \url{nmrlipids.blogspot.fi} as the communication
 platform. All the scientific contributions have been communicated publicly through this blog~\cite{nmrlipids}.
-
-%This work has been, and continues to be, progressed and discussed through a blog at \url{nmrlipids.blogspot.fi}. 
-%Everyone is invited to join the discussion and make contributions through the blog. 
-%The manuscript will be eventually submitted to an appropriate scientific journal. 
-%Everyone who has contributed to the work through the blog will be offered 
-%coauthorship. For more details, see \url{nmrlipids.blogspot.fi}. 
-
-
-%\listoftodos
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The "Acknowledgement" section can be given in all manuscript
