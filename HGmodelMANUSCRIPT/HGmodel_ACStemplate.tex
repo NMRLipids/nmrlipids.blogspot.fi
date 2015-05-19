@@ -348,21 +348,26 @@ separate populations of lipid conformations~\cite{engel81,gally81}.
 
 
 \subsection{Order parameters from simulations}
-The order parameters from simulations were calculated directly using the definition as in Eq.~\ref{orderP}.
-For the united atom models the hydrogen positions were generated 
-in the trajectories post-simulationally using the positions of the heavy atoms and the known hydrocarbon geometries.
-For the statistical error estimates, the time average of order parameters were first calculated separately
-for each lipid in the system. Then it was assumed that different lipids are statistically independent 
-entities (which should be the case in fluid phase) and the error of the mean for the average over individual 
-lipids in the system was calculated and used as error bar for the order parameters.
+The order parameters from simulations were calculated directly using the definition of Eq.~\ref{orderP}.
+For the united atom models, the hydrogen positions were generated 
+post-simulationally from the positions of the heavy atoms and the known hydrocarbon geometries.
+The statistical error was estimated based on the assumption that different lipids are statistically independent 
+entities (which should be the case in fluid phase):
+The time average of a given order parameter was first calculated separately for each lipid,
+and the standard error of the mean over these time averages then taken as the error bar for this order parameter.
 
-It has been recently pointed out that the sampling of individual dihedral angles might be very
-slow compared to the typical simulation timescales~\cite{vogel12}. On the other hand, another recent
-study shows that the slowest rotational correlation functions of a C--H bond (g$_1$) reaches a plateau (S$_{CH}^2$)
-after 200~ns in the Berger-POPC-07~\cite{ollila07a} model, and that the dynamics of this segment is significantly too slow in simulations
-compared to the experiments~\cite{ferreira15}. In practise, less than 200~ns of simulation data is enough for the order parameter
-calculation due to the average over different lipid molecules. In conclusion, if the sampling with typical simulation times
-is not enough for the convergence of the order parameters, then the simulation models has significantly too slow dynamics.
+It has been pointed out that the sampling of individual dihedral angles might be very
+slow compared to the typical (100~ns) simulation timescales~\cite{vogel12}.
+After 200~ns, however, even the slowest rotational correlation function of a C--H bond  (g$_1$) reaches
+a plateau ($S_\mathrm{CH}^2$) in the Berger-POPC-07 model~\cite{ollila07a}---and, notably,
+the dynamics of this segment have been shown to be significantly slower in simulations
+than in experiments~\cite{ferreira15}.
+In practise,
+due to averaging over different lipid molecules,
+less than 200~ns of simulation data should be enough for the order parameter calculation;
+if the sampling within typical simulation times
+is not enough for the convergence of the order parameters,
+then the simulation model in question has unphysically slow dynamics.
 
 
 
