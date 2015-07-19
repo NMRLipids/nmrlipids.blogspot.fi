@@ -27,7 +27,8 @@ it is written on page 19:
 "In conclusion, models preferring the anti conformation for this dihedral give more 
 realistic order parameters and this is in agreement with previous crystal structure and 1H NMR studies.19–21,23–25" 
 and about N-b-a-O dihedral it is writte on page 20: 
-"This result is again in agreement with previous crystal structure, 1H NMR and Raman spectroscopy studies19–22 which suggest that this dihedral is in the gauche conformation in the absence of ions."  
+"This result is again in agreement with previous crystal structure, 1H NMR and Raman spectroscopy studies19–22 
+which suggest that this dihedral is in the gauche conformation in the absence of ions."  
 
 REPLY TO 4 (a): We do not know that the other models have exatcly the correct dihedral distribution 
 and we do not claim this in the manuscript. Actually they cannot be all correct since they are not 
@@ -50,7 +51,8 @@ probability, and would give a valid interpretation for experiments, as stated se
 manuscript, for example on page 21: 
 "If the improved atomistic molecular dynamics simulation model reproduced the order parameters 
 and other experimental observables (like chemical shift anisotropy) with experimental accuracy, 
-it would give an interpretation for the atomistic resolution structure of the glycerol backbone and choline.10–13,15,16,18". 
+it would give an interpretation for the atomistic resolution structure of the glycerol backbone and 
+choline.10–13,15,16,18". 
 
 REPLY TO 4 (c): As stated in the replies above, there is also previous experimental evidence for 
 the conclusions made about dihedral distributions and these conclusions can be extended for the 
