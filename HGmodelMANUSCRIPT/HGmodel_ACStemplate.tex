@@ -16,6 +16,7 @@
 \usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
 %\usepackage[obeyFinal]{easy-todo}
 \usepackage{rotating}
+\usepackage{epstopdf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% If issues arise when submitting your manuscript, you may want to
 %% un-comment the next line.  This provides information on the
@@ -257,8 +258,10 @@ have compared
 the glycerol backbone and choline headgroup order parameters between simulations and experiments. 
 The main reason probably is that the existing experimental data for the glycerol backbone
 and choline headgroups are scattered over many publications and published in a format that is difficult to understand without some NMR expertise. 
-In addition to the order parameters, dihedral angles for the glycerol backbone and headgroup estimated from experiments have sometimes been used to 
-assess the quality of a simulation model~\cite{robinson94,essex94,kothekar96,hyvonen97,shinoda97,duong99}.
+In addition to the order parameters, dihedral angles for the glycerol backbone and headgroup estimated 
+from experiments~\cite{robinson94,essex94,kothekar96,hyvonen97,shinoda97,duong99}, 
+$^{31}$P chemical shift anisotropy~\cite{chowdhary13} and $^{31}$P-$^{13}$C dipolar couplings~\cite{prakash10}
+have been used to assess the quality of a simulation model.
 
 In this work, we first review the most relevant experimental data for the glycerol backbone and choline headgroup order parameters
 in a phosphatidylcholine lipid bilayer. Then the available atomistic resolution lipid models are carefully compared to the 
@@ -698,7 +701,8 @@ The used examples show that the glycerol backbone and headgroup order parameters
 and that the comparison with experiments allows the assessment of the quality of the suggested structure. We were able to pinpoint
 specific problems in the structures in different models and suggest potential improvement strategies.
 If the improved atomistic
-molecular dynamics simulation model reproduced the order parameters and other experimental observables (like chemical shift anisotropy)
+molecular dynamics simulation model reproduced the order parameters and other experimental observables 
+(like $^{31}$P chemical shift anisotropy~\cite{chowdhary13} and $^{31}$P-$^{13}$C dipolar couplings~\cite{prakash10})
 with experimental accuracy, it would give an interpretation for the atomistic resolution structure of the glycerol backbone and 
 choline~\cite{seelig77b,skarjune79,jacobs80,davis83,akutsu91,hong95b,semchyschyn04}. The research along these lines is left, however,
 for future studies.
