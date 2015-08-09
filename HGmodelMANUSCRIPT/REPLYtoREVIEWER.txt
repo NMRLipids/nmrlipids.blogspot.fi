@@ -1,9 +1,18 @@
 REPLY TO 1: We were trying to resolve the atomistic resolution structure of glycerol backbone 
 and choline by using the available atomistic resolution models. In all of the used models the 
 most recent version published by the developers was intended to be used in NPT ensemble with 
-zero tension. The improvements of the models and testing of influence of changes in parameters, 
-including the ensemble, is beyond the scope of the work. Further, it is not very likely that the 
-change in the ensemble would significantly change the glycerol backbone or choline structure.
+zero tension, indicating that the general opinion in the field consider the zero tension ensemble 
+being more realistic. Most notably, the two popular lipid force fields that required the use of either 
+a fixed membrane area or a nonzero surface tension, Charmm27 and Lipid11, were recently updated 
+to Charmm36 and Lipid14, which removed this requirement. The older versions of the force fields
+ment to be ran in non-zero tension are not discussed in the manuscript. Thus, the more detailed discussion
+on this issue is beyond the scope of the work. Also, the improvements of the models and testing 
+of influence of changes in parameters, including the ensemble, is beyond the scope of the work. 
+Further, it is not very likely that the change in the ensemble would significantly change the 
+glycerol backbone or choline structure. We have clarified that we only reproduce the simulations
+with original parametrizations by the sentence: "All simulation parameters were set as close to the original 
+parametrization works as possible." in the page 10.
+
  
 REPLY TO 2: It is known experimentally that the glycerol backbone order parameters are essentially 
 the same for PC, PE and PG lipids, as written in the manuscript (page 15): 
