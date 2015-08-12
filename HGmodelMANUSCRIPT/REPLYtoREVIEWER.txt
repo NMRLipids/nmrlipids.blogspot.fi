@@ -86,10 +86,20 @@ and 31P-13C dipolar couplings 43 have been used to assess the quality of a simul
 where Ref. 43 is the mentioned work. We also mention the work now also in page 21: 
 "...(like 31P chemical shift anisotropy 36 and 31P-13C dipolar couplings 43)..."
 
-REPLY TO 6: This is indeed relevant for the simulations with cholesterol since the glycerol tilt 
-may also explain the minor changes in the order parameters when adding cholesterol. 
-WE SHOULD CALCULATE THIS FROM CHOLESTEROL SIMULATIONS WITH CHARMM SINCE THOSE ARE USED FOR THE 
-DIHEDRAL ANALYSIS IN SI. MAYBE HUBERT COULD DO THIS? 
+REPLY TO 6: This is a relevant point from the reviwer since the glycerol tilt 
+may indeed also explain the minor changes in the order parameters when adding cholesterol. 
+We have now added the analysis in the supplementary information and there is indeed
+a detectable change in the tilt. However, as in the dihedral angles this change is very small,
+thus our main conclusions are not changed. The related text in the manuscript is now rewritten:
+"Therefore, to resolve the nature of
+cholesterol-induced structural changes, we calculated from CHARMM36 the glycerol backbone
+orientation and dihedral angle distributions at various cholesterol contents (Supporting
+material). The only detectable changes are the small decrease of gauche(-) and increase of
+gaughe(+) probability of the g3-g2-g1-O(sn-1) dihedral and slight (less than 5 degrees) change
+in the glycerol backbone orientation. In conclusion, our results suggest that the significant
+effects of cholesterol on lipid conformations observed in simulations153-155 are overestimated
+by the computational models used; cholesterol only induces very small structural changes in
+the glycerol backbone."
 As a function of hydration level unfortunately (from page 24): 
 "The response of the glycerol backbone seems to be more subtle than that of the choline 
 headgroup; none of the four models reproduced the experimental trends upon dehydration 
