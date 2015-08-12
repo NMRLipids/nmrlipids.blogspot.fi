@@ -16,6 +16,7 @@
 \usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
 \usepackage[obeyFinal]{easy-todo}
 \usepackage{rotating}
+\usepackage{epstopdf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% If issues arise when submitting your manuscript, you may want to
 %% un-comment the next line.  This provides information on the
@@ -475,13 +476,23 @@ is first equilibrated for 30~ns in the NP$\gamma$T ensemble (Nos\'{e}--Hoover~\c
 at 323~K and 1~bar with timestep of 1~fs. The following 20~ns of dynamics are taken for calculation of configurational averages. 
 Simulations were carried out by using the LAMMPS package~\cite{plimpton95}. %( http://doi.org/10.1006/jcph.1995.1039 )., the input files are available ( http://dx.doi.org/10.5281/zenodo.13821 ).
 
-\section{Dihedral angle distributions as a function of cholesterol in CHARMM36}
+\section{The effect of cholesterol on glycerol backbone structure}
 \begin{figure*}[]
   \centering
   \includegraphics[width=17.2cm]{../Fig/dihsCHOLcharmm.pdf}
   \caption{\label{dihsCHOLcharmm}
     The effect of cholesterol content on the POPC glycerol backbone and choline dihedral angles in CHARMM36 model (T=303~K).}
 \end{figure*}
+
+\begin{figure*}[]
+  \centering
+  \includegraphics[height=17.2cm]{../Fig/GlycerolOrientation.eps}
+  \caption{\label{GlycerolOrientation}
+    Orientation of g$_1$-g$_3$ (a) and g$_1$-g$_2$ (b) respect to membrane normal as a function of cholesterol content
+    calculated from CHARMM36 simulations in 298K and 303K.}
+\end{figure*}
+
+\newpage
 
 \section{Author Contributions}
 {\it Alexandru Botan} provided simulation results for charmm36-UA\\
