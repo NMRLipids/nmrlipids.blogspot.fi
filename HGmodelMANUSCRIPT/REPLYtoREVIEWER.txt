@@ -39,7 +39,7 @@ and about N-b-a-O dihedral it is writte on page 20:
 "This result is again in agreement with previous crystal structure, 1H NMR and Raman spectroscopy studies19–22 
 which suggest that this dihedral is in the gauche conformation in the absence of ions."  
 
-REPLY TO 4 (a): We do not know that the other models have exatcly the correct dihedral distribution 
+REPLY TO 4 (a): We do not know that the other models have exactly the correct dihedral distribution 
 and we do not claim this in the manuscript. Actually they cannot be all correct since they are not 
 the exactly same and also the order parameters are not the same and none of them really satisfy the 
 experiments, as discussed in the manuscript. However, as said in the manuscript and in the above reply, 
