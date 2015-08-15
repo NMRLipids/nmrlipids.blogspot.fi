@@ -23,7 +23,7 @@ set yrange [46:51]
 set label 100 "b)" at graph 0.1,0.85 font ",18"
 #set xrange [1:18] 
 #set yrange [-0.015:0.11]
-set ylabel "Deviation of g_1-g_2 vector from \nmembrane normal (degrees)"
+set ylabel "Deviation of g_2-g_3 vector from \nmembrane normal (degrees)"
 set xlabel "cholesterol content (mol%)"
 set origin 0,0
 set size 0.65, 0.35
