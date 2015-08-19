@@ -1,9 +1,12 @@
 [I suggest reporting the question/comment before the reply, to make this more readable. LM]
+[This will be done finally, however, we we are not allowed to this publicly:
+http://nmrlipids.blogspot.com/2015/07/revision-requested-for-first-manuscript.html?showComment=1438341838923#c5455772628464564266]
 
 REPLY TO 1: In the present work, we analyze the atomic-level structure of the glycerol backbone 
-and the choline group of phosphatidylcholine lipids using available simulation models with atomistic resolution. 
+and the choline group of phosphatidylcholine lipids using available state of the art simulation models with atomistic resolution. 
 All the models used here were intended to be used in the NPT ensemble with 
-zero surface tension, indicating that the zero tension ensemble is currently considered the most appropriate ensemble for lipid blayer simulations by most experts in this field. 
+zero surface tension, indicating that the zero tension ensemble is currently considered the most appropriate 
+ensemble for lipid blayer simulations by most experts in this field. 
 Notably, two popular lipid force fields that required the use of either 
 a fixed membrane area or a nonzero surface tension, Charmm27 and Lipid11, were recently updated 
 (to Charmm36 and GAFFlipid/Lipid14), which removed this requirement. The older versions of the force fields
