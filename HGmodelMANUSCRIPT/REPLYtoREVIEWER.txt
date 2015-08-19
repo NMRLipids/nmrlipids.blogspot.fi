@@ -1,38 +1,38 @@
-REPLY TO 1: We were trying to resolve the atomistic resolution structure of glycerol backbone 
-and choline by using the available atomistic resolution models. In all of the used models the 
-most recent version published by the developers was intended to be used in NPT ensemble with 
-zero tension, indicating that the general opinion in the field consider the zero tension ensemble 
-being more realistic. Most notably, the two popular lipid force fields that required the use of either 
+[I suggest reporting the question/comment before the reply, to make this more readable. LM]
+
+REPLY TO 1: In the present work, we analyze the atomic-level structure of the glycerol backbone 
+and the choline group of phosphatidylcholine lipids using available simulation models with atomistic resolution. 
+All the models used here were intended to be used in the NPT ensemble with 
+zero surface tension, indicating that the zero tension ensemble is currently considered the most appropriate ensemble for lipid blayer simulations by most experts in this field. 
+Notably, two popular lipid force fields that required the use of either 
 a fixed membrane area or a nonzero surface tension, Charmm27 and Lipid11, were recently updated 
-to Charmm36 and GAFFlipid/Lipid14, which removed this requirement. The older versions of the force fields
-ment to be ran in non-zero tension are not discussed in the manuscript. Thus, the more detailed discussion
-on this issue is beyond the scope of the work. Also, the improvements of the models and testing 
-the influence of changes in parameters, including the ensemble, is beyond the scope of the work. 
-Further, it is not very likely that the change in the ensemble would significantly change the 
-glycerol backbone or choline structure. We have clarified that we only reproduce the simulations
-with original parametrizations by the sentence: "All simulation parameters were set as close to the original 
-parametrization works as possible." in the page 10.
+(to Charmm36 and GAFFlipid/Lipid14), which removed this requirement. The older versions of the force fields
+meant to be used in non-zero tension are not discussed in the manuscript. Thus, we believe a detailed discussion
+of this issue is beyond the scope of the present work. 
+Also, the improvements of the models and testing the influence of changes in parameters, including the ensemble, is beyond the scope of the work. 
+Finally, it is not very likely that the change in the ensemble would significantly change the 
+glycerol backbone or choline structure. We clarified that we only reproduce the simulations
+with original parametrizations in the sentence: "All simulation parameters were set as close to the original 
+parametrization works as possible." (page 10).
 
  
 REPLY TO 2: It is known experimentally that the glycerol backbone order parameters are essentially 
 the same for PC, PE and PG lipids, as written in the manuscript (page 15): 
 "Since the glycerol backbone order parameters are very similar irrespective of the headgroup 
-chemistry (PC,PE and PG) or lipid environment,26 it is reasonable to assume that the stereospecifity 
-measured for the PE lipids holds also for the PC lipids." 
-It is extremely unlikely scenario that the stereospecific labeling would be different while the 
-order parameters would be numerically equal. Thus the assumption has quite strong experimental justification.
+chemistry (PC,PE, and PG) or lipid environment,(ref. 26) it is reasonable to assume that the stereospecifity 
+measured for the PE lipids holds also for PC lipids." 
+With numerically very similar order parameters, a difference in the stereospecific labeling represents a very unlikely scenario. Thus, our assumption has quite strong experimental justification.
 
-REPLY TO 3: The quantification used is explained in the figure caption. MAYBE MARKUS SHOULD CLARIFY THIS A LITTLE BIT? 
+REPLY TO 3: The quantification used is explained in the figure caption. MAYBE MARKUS SHOULD CLARIFY THIS A LITTLE BIT? AGREED, PLEASE ADD HERE MORE DETAILS (LM).
 It is based on the distance between simulated and experimental order parameters. The figure is made 
 and color coding is used to make the message in Fig. 2 more easily readable, thus all the details are 
 also available for the readers who are willing to take a closer look. If the force fields are ranked based 
 on the distance of the results from the experimental values, the order of the force fields in the figure will 
-not change. The color coding may change if another researcher prefers some other coding. Since all the data 
-is available, anyone is free to do that. 
+not change.  
 
-REPLY TO 4: As written in the manuscript there is actually also previous experimental support, in addition 
-to the current results, for the dihedral distributions suggested in the manuscript. About g3-g2-g1-O dihedral 
-it is written on page 19: 
+REPLY TO 4: As explained in the manuscript, there is actually also previous experimental support, in addition 
+to the current results, for the dihedral distributions suggested in the manuscript. 
+About g3-g2-g1-O dihedral, it is written on page 19: 
 "In conclusion, models preferring the anti conformation for this dihedral give more 
 realistic order parameters and this is in agreement with previous crystal structure and 1H NMR studies.19–21,23–25" 
 and about N-b-a-O dihedral it is written on page 20: 
@@ -41,8 +41,8 @@ which suggest that this dihedral is in the gauche conformation in the absence of
 
 REPLY TO 4 (a): We do not know that the other models have exactly the correct dihedral distribution 
 and we do not claim this in the manuscript. Actually they cannot be all correct since they are not 
-the exactly same and also the order parameters are not the same, and none of them really satisfy the 
-experiments, as discussed in the manuscript. However, as said in the manuscript and in the above reply, 
+the exactly same and also the order parameters are not the same, and none of them really satisfies the 
+experiments, as discussed in the manuscript. However, as explained in the manuscript and in the above reply, 
 there is strong evidence that dihedrals in other models are significantly more realistic than in Berger.
  
 The justification for usage of the phrase "biologically relevant conditions" in the manuscript is given 
@@ -54,8 +54,8 @@ membranes and real cells (mouse fibroblast L-M cell).27".
 Since the order parameters for these parts are the same in real cells (at least E. Coli and mouse 
 fibroblast L-M cell) as in model systems, most likely the structure is the same as well.
 
-REPLY TO 4 (b): Yes, they can. However, if molecular dynamics simulation model would reproduce all 
-the experimental parameters correctly (including order parameters) it would be correct with very high 
+REPLY TO 4 (b): Yes, they can. However, if molecular dynamics simulations reproduced all 
+the experimental parameters correctly (including order parameters), it would be correct with very high 
 probability, and would give a valid interpretation to experiments, as stated several times in the 
 manuscript, for example on page 21: 
 "If the improved atomistic molecular dynamics simulation model reproduced the order parameters 
@@ -66,7 +66,7 @@ glycerol backbone and choline.10–13,15,16,18".
 REPLY TO 4 (c): As stated in the replies above, there is also previous experimental evidence for 
 the conclusions made about dihedral distributions and these conclusions can be extended for the 
 real cells as well. However, it is true that, in principle one cannot exclude 
-other dihedrals than these two without further evidence. However, the previous experiments supports 
+other dihedrals than these two without further evidence. However, previous experiments support
 the conclusions and the main purpose of this analysis here is to  (from page 17-18) 
 "demonstrate that 1) the differences in order parameters indicate significantly different 
 structural sampling strongly correlating with the dihedral angles of the related bonds, 
@@ -74,7 +74,7 @@ and that 2) the comparison between experimental and simulated order parameters c
 to exclude nonrealistic structural samping in molecular dynamics simulations." 
 And further from page 19 
 "We note that performing a similar comparison through all the dihedrals in all the 13 
-models would probably give highly useful information on how to improve the accuracy of the models 
+models would probably give highly useful information on how to improve the accuracy of the models, 
 yet this is beyond the scope of the current report."
 
 REPLY TO 5: This is indeed relevant work and we were aware of it. However, the reference was accidentally 
@@ -83,10 +83,10 @@ This work is now mentioned in page 5:
 "In addition to the order parameters, dihedral angles for the glycerol
 backbone and headgroup estimated from experiments,28,38-42 31P chemical shift anisotropy 36
 and 31P-13C dipolar couplings 43 have been used to assess the quality of a simulation model."
-where Ref. 43 is the work by Prakash and Sankararamakrishnan. We also mention the work now also in page 21: 
+where Ref. 43 is the work by Prakash and Sankararamakrishnan. We also mention the work now also at page 21: 
 "...(like 31P chemical shift anisotropy 36 and 31P-13C dipolar couplings 43)..."
 
-REPLY TO 6: This is a relevant point from the reviwer since the glycerol tilt 
+REPLY TO 6: This is a very relevant point, since the glycerol tilt 
 may indeed also explain the minor changes in the order parameters when adding cholesterol. 
 We have now added the analysis in the supplementary information and there is indeed
 a detectable change in the tilt. However, as in the dihedral angles this change is very small,
@@ -100,12 +100,12 @@ in the glycerol backbone orientation. In conclusion, our results suggest that th
 effects of cholesterol on lipid conformations observed in simulations153-155 are overestimated
 by the computational models used; cholesterol only induces very small structural changes in
 the glycerol backbone."
-As a function of hydration level unfortunately (from page 24): 
+As a function of hydration level, unfortunately (from page 24): 
 "The response of the glycerol backbone seems to be more subtle than that of the choline 
 headgroup; none of the four models reproduced the experimental trends upon dehydration 
 with enough accuracy to invite a structural interpretation."
 
 REPLY TO 7: The scope of this manuscript has been limited on purpose on the glycerol backbone 
-and choline segments to avoid exhausting the reader, thus this analysis is beyond the scope 
+and choline segments to avoid exhausting the reader, thus we believe this analysis is beyond the scope 
 of the work. The acyl chain region will be discussed in the context of the NMRLipids III 
 project (see http://nmrlipids.blogspot.fi/p/about.html).
