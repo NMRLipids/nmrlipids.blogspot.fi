@@ -17,7 +17,7 @@ All the scientific contributions are done publicly through the blog and all cont
 ## Organization of the repository
 
 This repository structure has been designed for this kind of projects during the progress of this work,
-see https://github.com/NMRLipids/nmrlipids.blogspot.fi/issues/17, https://github.com/NMRLipids/nmrlipids.blogspot.fi/issues/15 
+see [Issue 17](https://github.com/NMRLipids/nmrlipids.blogspot.fi/issues/17), [Issue 15](https://github.com/NMRLipids/nmrlipids.blogspot.fi/issues/15)
 and the [workflow](http://nmrlipids.blogspot.fi/p/how-to-follow-and-make-contributions.html) page from the blog.
 However, in practise the organization of the whole repository has not been completed,
 thus some files may not be located in their correct places.
