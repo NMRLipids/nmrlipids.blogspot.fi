@@ -31,6 +31,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand*\mycommand[1]{\texttt{\emph{#1}}}
 
+\renewcommand{\thefigure}{S\arabic{figure}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Meta-data block
 %% ---------------
@@ -476,6 +478,97 @@ is first equilibrated for 30~ns in the NP$\gamma$T ensemble (Nos\'{e}--Hoover~\c
 at 323~K and 1~bar with timestep of 1~fs. The following 20~ns of dynamics are taken for calculation of configurational averages. 
 Simulations were carried out by using the LAMMPS package~\cite{plimpton95}. %( http://doi.org/10.1006/jcph.1995.1039 )., the input files are available ( http://dx.doi.org/10.5281/zenodo.13821 ).
 
+\section{Details of the rough subjective force field ranking (Figure 4)} 
+
+The assessment was based fully on the Fig. 2.
+%
+First, for each carbon (the columns in Fig. 4) in each force field (the rows),
+we looked separately at deviations in magnitude and forking.
+
+{\bf Magnitude} deviations, i.e., how close to the experimentally obtained C--H order parameters (OPs)
+the force-field-produced OPs were.
+%
+For each carbon, the following 5-step scale was used:
+%
+\begin{description}
+\item [0 (~):] \noindent {More than half of all the calculated OPs (that is, of all different hydrogens in all different lipids) were within the {\it subjective sweet spots} (SSP, blue-shaded areas in Fig. 2).}
+%
+\item [1 ({\textsf{\tiny M}}):] \noindent {All the calculated OPs  were $< 0.03$ units away from the SSP.}
+%
+\item [2  ({\textsf{\small M}}):] \noindent {All the calculated OPs  were $< 0.05$ units away from the SSP.}
+%
+\item [3 ({\textsf{\large M}}):] \noindent {All the calculated OPs  were $< 0.10$ units away from the SSP.}
+%
+\item [4 ({\textsf{\Large M}}):] \noindent {Some of the calculated OPs  were $> 0.10$ units  away from the SSP.}
+\end{description}
+
+{\bf Forking} deviations, i.e., how well the difference in order parameters of two hydrogens attached to a given carbon matched that obtained experimentally. Note that this is not relevant for $\mathrm{g_2}$, which has only one hydrogen. For the $\beta$ and $\alpha$ carbons, for which no forking is experimentally seen, the following 5-step scale was used:
+\begin{description}
+\item [0 (~):] \noindent {The distance $D$ between the dots (that mark the measurement-time-weighted averages in Fig.~2) was $< 0.005$ units for all the calculated OPs (that is, for all different lipids).}
+%
+\item [1 ({\textsf{\tiny F}}):] \noindent {$D < 0.015$.}
+%
+\item [2  ({\textsf{\small F}}):] \noindent {$ 0.015 < D < 0.030$.}
+%
+\item [3 ({\textsf{\large F}}):] \noindent {$ 0.030 < D < 0.050$.}
+%
+\item [4 ({\textsf{\Large F}}):] \noindent {$ 0.050 < D $.}
+\end{description}
+%
+For the $\mathrm{g_3}$ carbon, for which a small forking of 0.02 is indicated by experiments, the following 5-step scale was used:
+%
+\begin{description}
+\item [0 (~):] \noindent {$0.010 < D< 0.030$.}
+%
+\item [1 ({\textsf{\tiny F}}):] \noindent {$(D <0.010)$  OR $(0.030 < D < 0.040)$.}
+%
+\item [2  ({\textsf{\small F}}):] \noindent {$0.040 < D < 0.055$.}
+%
+\item [3 ({\textsf{\large F}}):] \noindent {$0.055 < D < 0.070$.}
+%
+\item [4 ({\textsf{\Large F}}):] \noindent {$0.070 < D$.}
+\end{description}
+%
+For the $\mathrm{g_1}$ carbon, for which a considerable forking of 0.15 is experimentally seen, the following 5-step scale was used:
+%
+\begin{description}
+\item [0 (~):] \noindent {$0.13 < D < 0.17$.}
+%
+\item [1 ({\textsf{\tiny F}}):] \noindent {$(0.11 < D < 0.13)$ OR $(0.17 < D < 0.19)$.}
+%
+\item [2  ({\textsf{\small F}}):] \noindent {$(0.09 < D < 0.11)$ OR $(0.19 < D < 0.21)$.}
+%
+\item [3 ({\textsf{\large F}}):] \noindent {$(0.07 < D < 0.09)$ OR $(0.21 < D < 0.23)$.}
+%
+\item [4 ({\textsf{\Large F}}):] \noindent {$(D<0.07)$ OR $(0.23<D)$.}
+\end{description}
+
+Based on these assessments of magnitude and forking deviations,
+each carbon was then assigned to one of the following groups:
+"within experimental error"
+(magnitude and forking deviations both on step 0 of the scales described above),
+"almost within experimental error"
+(sum of the magnitude and forking deviation steps 1 or 2),
+"clear deviation from experiments"
+(sum of magnitude and forking deviation steps from 3 to 5), and
+"major deviation from experiments"
+(sum of magnitude and forking deviation steps from 6 to 8).
+These groups are indicated by colors in Fig.~2.
+(Note that for $\mathrm{g_2}$, for which there can be no forking,
+the corresponding group assigment limits were: 0, 1, 2, and 3.)
+
+Finally, the total ability of the force field to describe the headgroup and
+glycerol structure was estimated.
+To this end, the groups were given the following weights:
+0 (within experimental error),
+1 (almost within experimental error),
+2 (clear deviation from experiments),
+4 (major deviation from experiments),
+and the weights of the five carbons were summed up.
+The sum, given in the $\Sigma$-column of Fig.~2,
+was then used to (roughly and subjectively, as should be clear from the
+above description) rank the force fields.
+
 \section{The effect of cholesterol on glycerol backbone structure}
 \begin{figure*}[]
   \centering
@@ -492,25 +585,27 @@ Simulations were carried out by using the LAMMPS package~\cite{plimpton95}. %( h
     calculated from CHARMM36 simulations in 298K and 303K.}
 \end{figure*}
 
+
 \newpage
 
 \section{Author Contributions}
 {\it Alexandru Botan} provided simulation results for charmm36-UA\\
 {\it Fernando Favela} prepared, performed and analyzed simulations
 with popc and cholesterol for the CHARMM36 All-Atom FF. \\
-{\it Patrick F. J. Fuchs} Ran and analyzed the Poger simulations. Provided scientific information which significantly advanced the project (signs and forking of order parameters). \\
+{\it Patrick F. J. Fuchs} ran and analyzed the Poger simulations. Provided scientific information which significantly advanced the project (signs and forking of order parameters). \\
 {\it Matti Javanainen} prepared and performed simulations with multiple lipid models and analyzed the results. Supervised the work of JT.\\
 {\it Matej Kanduc} provided simulation results for the Berger DLPC model \\
 {\it Waldemar Kulig} prepared the MD simulations with cholesterol for the MacRog FF \\
-{\it Antti Lamberg} Prepared and performed simulations with Berger and its variants to show the importance of the signs and stereospecific labeling of the order parameters. \\
+{\it Antti Lamberg} prepared and performed simulations with Berger and its variants to show the importance of the signs and stereospecific labeling of the order parameters. \\
 {\it Claire Loison} provided simulation results for charmm36-UA. \\
 {\it Alexander Lyubartsev} provided simulation results for Högberg08 force field.\\
-{\it Markus S. Miettinen} Co-designed the project with OHSO and supported in the work management. Provided trajectories for Berger DMPC; prepared parameter files for 72 lipids \\
-{\it Luca Monticelli} Critical discussions in all phases of the project. Collaboration with Jukka  M{\"a}{\"a}tt{\"a}. \\
+{\it Markus S. Miettinen} co-designed the project with OHSO and supported in the work management. Provided Berger DMPC trajectory; prepared parameter files for 72 lipids %POPC \& DPPC
+CHARMM36. Made Figures 2--4 and 7--9.\\
+{\it Luca Monticelli}: Critical discussions in all phases of the project. Collaboration with Jukka  M{\"a}{\"a}tt{\"a}. \\
 {\it Jukka M{\"a}{\"a}tt{\"a}}  prepared and performed simulations with Berger and Slipids models and analyzed the results.\\
-{\it O. H. Samuli Ollila} Co-designed the project with MSM and managed the work. Ran and analyzed several simulations. Wrote the manuscript. \\
-{\it Marius Retegan} Prepared and validated the GROMACS compatible parameter files for GAFFlipid and Lipid14 force fields.\\
-{\it Tomasz Rog} Provided the topologies for the MacRog model and also the full hydration simulation data with this model. \\
+{\it O. H. Samuli Ollila} co-designed the project with MSM and managed the work. Ran and analyzed several simulations. Wrote the manuscript. \\
+{\it Marius Retegan} prepared and validated the GROMACS compatible parameter files for GAFFlipid and Lipid14 force fields.\\
+{\it Tomasz Rog} provided the topologies for the MacRog model and also the full hydration simulation data with this model. \\
 {\it Hubert Santuz} prepared and performed the cholesterol simulations with CHARMM36 and analyzed the results. 
 Made significant contribution in the data management of the project.\\
 {\it Joona Tynkkynen} prepared and performed the dehydration simulations with the MacRog FF.\\
