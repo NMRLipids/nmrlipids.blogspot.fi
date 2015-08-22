@@ -623,17 +623,22 @@ The results for each force field in respect to the above criteria are summarized
   \includegraphics[width=8.6cm]{../DATAreportediINblog/comparisonTable.pdf}
   \newline
   \caption{\label{FullHydrationComparisonTable}
-Rough ranking of force fields based on data of Fig.~\ref{HGorderparameters}.
-"M" indicates a magnitude problem,
-"F" a forking problem.
-Letter size shows the level (0-4) of severity;
-the $\Sigma$-column shows the sum of these, i.e., the "total severity".
+Rough subjective ranking of force fields based on Fig.~\ref{HGorderparameters}.
+%
+Here "M" indicates a magnitude problem, "F" a forking problem;
+letter size increases with problem severity.
+%
 Color scheme:
 "within experimental error" (dark green),
 "almost within experimental error" (light green),
 "clear deviation from experiments" (light red), and
 "major deviation from experiments" (dark red).
-  } 
+%
+The $\Sigma$-column shows the total deviation of the force field,
+when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation).
+%
+For full details of the assessment, see Supporting Information.
+} 
 \end{figure}
 
 None of the studied force fields fulfils these criteria completely, however CHARMM36 is pretty close. 
@@ -860,7 +865,7 @@ In comparison, the choline and glycerol backbone responses of CHARMM36 and MacRo
 agreement with experiments. 
 Therefore, to resolve the nature of cholesterol-induced structural changes,
 we calculated from CHARMM36 the glycerol backbone orientation and dihedral angle distributions
-at various cholesterol contents (Supporting material). The only detectable changes
+at various cholesterol contents (Supporting Information). The only detectable changes
 are the small decrease of gauche(-) and increase of gaughe(+) probability of 
 the g$_3$-g$_2$-g$_1$-O(\textit{sn}-1) dihedral and slight (less than 5 degrees) change
 in the glycerol backbone orientation. In conclusion, our results suggest that the significant 
@@ -958,7 +963,7 @@ resources granted from GENCI-CINES (Grant 2014-c2014077209) and computer facilit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{suppinfo}
 
-Simulation details, one figure and author contributions.
+Simulation and analysis details, two figures, and author contributions.
 
 %This will usually read something like: ``Experimental procedures and
 %characterization data for all new compounds. The class will
