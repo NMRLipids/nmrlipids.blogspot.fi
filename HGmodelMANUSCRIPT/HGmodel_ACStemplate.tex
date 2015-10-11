@@ -616,14 +616,14 @@ The order parameters of the glycerol backbone and headgroup calculated from diff
 previously compared to experiments~\cite{shinoda97,hogberg08,castro08,klauda10,kapla12,dickson12,poger12,ferreira13,chowdhary13,maciejewski14}. 
 The general conclusion from these studies seems to be that the CHARMM based~\cite{hogberg08,klauda10}, GAFFlipid~\cite{dickson12} and
 MacRog~\cite{maciejewski14} force fields perform better for the glycerol backbone and headgroup structures than the GROMOS based models~\cite{castro08,kapla12,poger12,ferreira13}.
-However, none of the studies exploits the full potential of the available experimental data discussed in previous section, i.e. the quantitative accuracy, known signs and stereospecific labeling of
+However, none of the studies exploits the full potential of the available experimental data discussed in the previous section, i.e. the quantitative accuracy, known signs and stereospecific labeling of
 the experimental order parameters.
 
 To get a general idea of the quality of the glycerol backbone and choline headgroup structures in different models, we calculated 
 the order parameters for these parts from thirteen different lipid models (Table~\ref{systems}) and 
 plotted the results together with experimental values in Fig.~\ref{HGorderparameters}.
-Two criteria were used to judge the quality of the model: there must not be significant  {\bf forking} in the $\alpha$ and $\beta$ carbons,
-there must be only moderate forking in the g$_3$ carbon and there must be significant forking in the g$_1$ carbon, the {\bf magnitude}
+Two criteria were used to judge the quality of the model: 1) there must not be significant  {\bf forking} in the $\alpha$ and $\beta$ carbons,
+there must be only moderate forking in the g$_3$ carbon and there must be significant forking in the g$_1$ carbon, and 2) the {\bf magnitude}
 should be preferably inside to the subjective sweet spots determined from experiments (blue shaded regions in Fig.~\ref{HGorderparameters}).
 The results for each force field with respect to the above criteria are summarized in Figure~\ref{FullHydrationComparisonTable}.
 \begin{figure}[]
@@ -650,14 +650,14 @@ For full details of the assessment, see Supporting Information.
 \end{figure}
 
 None of the studied force fields fulfils these criteria completely, however CHARMM36 is close. 
-This is not surprising since the dihedral potentials in this model are tuned to reproduce these 
-parameters better against experiments~\cite{klauda10}.
-The next models in the list are CHARMM36-UA~\cite{henin08,lee14} and H\"ogberg08~\cite{hogberg08} which is also not surprising since
-these models are using CHARMM bonded potentials for glycerol backbone and choline. The fourth and the fifth models in the list, MacRog~\cite{maciejewski14} and
+This is not surprising since the dihedral potentials in this model are tuned against experiments to better reproduce these 
+order parameters~\cite{klauda10}.
+The next models in the list are CHARMM36-UA~\cite{henin08,lee14} and H\"ogberg08~\cite{hogberg08}, which is also not surprising since
+these models are using the CHARMM bonded potentials for glycerol backbone and choline. The fourth and the fifth models in the list, MacRog~\cite{maciejewski14} and
 GAFFlipid~\cite{dickson12}, have independently determined dihedral potentials. All the models based on Gromos potentials and Slipids perform less well.
-In the present work we subject the CHARMM36, MacRog, GAFFlipid and Berger-POPC-07 to a more careful comparison including the sterospecific labeling  
-(Fig.~\ref{HGorderparameters2}), and atomistic level structure and responses to the dehydration and cholesterol content in the following sections.
-These models are selected for more detailed studies since they are the best representatives of different dihedral potential parametrization techniques 
+In the following sections we subject CHARMM36, MacRog, GAFFlipid and Berger-POPC-07 to a more careful comparison including the stereospecific labeling  
+(Fig.~\ref{HGorderparameters2}), atomistic level structure, and responses to dehydration and cholesterol content.
+These models are selected for more detailed study since they are the best representatives of different dihedral potential parametrization techniques 
 (CHARMM36, MacRog, GAFFlipid), and the Berger based models are the most used lipid models in the literature.
 
 
