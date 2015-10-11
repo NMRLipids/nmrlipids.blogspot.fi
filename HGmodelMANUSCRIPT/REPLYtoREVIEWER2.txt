@@ -3,15 +3,30 @@ Reviewer 2.
 We thank for the very positive feedback. The errors in English are
 now fixed as suggested.
 
-Reviewer1. 
+Reviewer 1. 
 
 1.
 Author reply:
 
 2.
 Author reply:
-The subjective sweet spots span +-0.02 AROUND WHAT? IS THIS THE AVERAGE
-OF EXPERIMENTAL VALUE?
+
+All the "subjective sweet spots" in Fig. 2 have exactly the same size: 0.04 units.
+
+This size was agreed on based on the high experimental repeatibility of the order
+parameters that we discuss in the text (p12): "Almost all the reported values are
+within a variation of ±0.02 [...] for all fully hydrated PC bilayers, regardless
+of the variation in their acyl chain composition and temperature."
+
+To make the (equal) size of the sweet spots clear to the reader, we now explicitly
+point out this size when introcuding them in the text (p15):
+
+Motivated by the high experimental reproducibility, we have highlighted in Fig. 2
+the subjective sweet spots (light blue areas **spanning 0.04 units**), within which
+we expect the calculated absolute values of the order parameters of a well-performing
+force field to fall.
+
+The added words are those between the stars (**).
 
 3.
 Author reply:
