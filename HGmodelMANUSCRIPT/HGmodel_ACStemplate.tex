@@ -1,4 +1,3 @@
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% This is a (brief) model paper using the achemso class
 %% The document class accepts keyval options, which should include
@@ -331,8 +330,9 @@ The absolute values of order parameters can be measured by detecting quadrupolar
 splitting with $^1$H-$^{13}$C NMR~\cite{hong95a,gross97,dvinskikh05a,ferreira13}. The measurements are based on
 different physical interactions, and also the connections between order parameter and quadrupolar or dipolar splitting
 are different. The absolute values of order parameters from the measured quadrupolar splitting $\Delta \nu_Q$ ($^2$H NMR) are calculated using 
-the equation $|S_{{\rm CD}}|=\frac{4}{3} \frac{e^2qQ}{h} \Delta \nu_Q$, where the value for the static quadrupole
-splitting constant is estimated from various experiments to be 170~kHz leading to a numerical relation $|S_{{\rm CD}}|=0.00784 \times \Delta \nu_Q$~\cite{seelig77c}. 
+the equation $|S_{{\rm CD}}|=\frac{4}{3} \frac{h}{e^2qQ} \Delta \nu_Q$, where the value for the static quadrupole
+splitting constant is estimated from various experiments to be 170~kHz leading to a numerical relation 
+$|S_{{\rm CD}}|=0.00784 \times \Delta \nu_Q$~\cite{seelig77c}. 
 The absolute values of order parameters from the effective dipolar coupling $d_\mathrm{CH}$ ($^1$H-$^{13}$C NMR) are calculated using the equation
 $|S_{{\rm CH}}|=\frac{4\pi\langle r_\mathrm{CH}^3 \rangle}{\hbar \mu_0 \gamma_h \gamma_c} d_\mathrm{CH}$, where
 values between 20.2--22.7~kHz are used for $\frac{4\pi\langle r_\mathrm{CH}^3 \rangle}{\hbar \mu_0 \gamma_h \gamma_c}$,
@@ -625,7 +625,7 @@ plotted the results together with experimental values in Fig.~\ref{HGorderparame
 Two criteria were used to judge the quality of the model: there must not be significant  {\bf forking} in the $\alpha$ and $\beta$ carbons,
 there must be only moderate forking in the g$_3$ carbon and there must be significant forking in the g$_1$ carbon, the {\bf magnitude}
 should be preferably inside to the subjective sweet spots determined from experiments (blue shaded regions in Fig.~\ref{HGorderparameters}).
-The results for each force field in respect to the above criteria are summarized in Figure~\ref{FullHydrationComparisonTable}.
+The results for each force field with respect to the above criteria are summarized in Figure~\ref{FullHydrationComparisonTable}.
 \begin{figure}[]
   \centering
   \includegraphics[width=8.6cm]{../DATAreportediINblog/comparisonTable.pdf}
@@ -649,15 +649,16 @@ For full details of the assessment, see Supporting Information.
 } 
 \end{figure}
 
-None of the studied force fields fulfils these criteria completely, however CHARMM36 is pretty close. 
-This is not surprising since the dihedral potentials in this model are tuned to reproduce these parameters better against experiments~\cite{klauda10}.
+None of the studied force fields fulfils these criteria completely, however CHARMM36 is close. 
+This is not surprising since the dihedral potentials in this model are tuned to reproduce these 
+parameters better against experiments~\cite{klauda10}.
 The next models in the list are CHARMM36-UA~\cite{henin08,lee14} and H\"ogberg08~\cite{hogberg08} which is also not surprising since
 these models are using CHARMM bonded potentials for glycerol backbone and choline. The fourth and the fifth models in the list, MacRog~\cite{maciejewski14} and
 GAFFlipid~\cite{dickson12}, have independently determined dihedral potentials. All the models based on Gromos potentials and Slipids perform less well.
 In the present work we subject the CHARMM36, MacRog, GAFFlipid and Berger-POPC-07 to a more careful comparison including the sterospecific labeling  
 (Fig.~\ref{HGorderparameters2}), and atomistic level structure and responses to the dehydration and cholesterol content in the following sections.
 These models are selected for more detailed studies since they are the best representatives of different dihedral potential parametrization techniques 
-(CHARMM36, MacRog, GAFFlipid), and the Berger based models are the most used lipid model in the literature.
+(CHARMM36, MacRog, GAFFlipid), and the Berger based models are the most used lipid models in the literature.
 
 
 \subsection{Full hydration: Atomistic resolution structures in different models}
