@@ -23,7 +23,7 @@ within a variation of ±0.02 [...] for all fully hydrated PC bilayers, regardles
 of variation in their acyl chain composition and temperature."
 
 To make the definition of the sweet spots clear to the reader, we now explicitly
-point this out when introcuding them in the text (p15):
+point this out when introducing them in the text (p15):
 
 "Motivated by the high experimental reproducibility, we have highlighted in Fig. 2
 subjective sweet spots (light blue areas **spanning 0.04 units around the average
