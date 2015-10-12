@@ -1,3 +1,7 @@
+The original reviewer comments are not written in this publicly available
+file we do not have permission to publish those. The original comments
+will be added to the version which will be submitted to the JPCB.
+
 Reviewer 2.
 
 We thank for the very positive feedback. The errors in English are
@@ -18,11 +22,12 @@ parameters that we discuss in the text (p12): "Almost all the reported values ar
 within a variation of ±0.02 [...] for all fully hydrated PC bilayers, regardless
 of variation in their acyl chain composition and temperature."
 
-To make the (equal) size of the sweet spots clear to the reader, we now explicitly
-point out this size when introcuding them in the text (p15):
+To make the definition of the sweet spots clear to the reader, we now explicitly
+point this out when introcuding them in the text (p15):
 
 "Motivated by the high experimental reproducibility, we have highlighted in Fig. 2
-subjective sweet spots (light blue areas **spanning 0.04 units**), within which
+subjective sweet spots (light blue areas **spanning 0.04 units around the average
+of the extremal experimental values**), within which
 we expect the calculated values of the order parameters of a well-performing
 force field to fall."
 
