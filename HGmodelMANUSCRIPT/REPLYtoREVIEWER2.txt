@@ -11,10 +11,32 @@ Reviewer 1.
 
 1.
 Author reply:
+In the publications mentioned by the reviewer it is shown that the
+the membrane properties are affected by interfacial tension rather than the ensemble. 
+This is also explicitly said in the abstract of
+J. Chem. Phys. 111, 1281-1287
+"Equivalence between the constant area and constant surface tension ensembles is
+investigated by comparing the present simulations with earlier work from our laboratories and we
+find simulation results to depend much more strongly on the specified surface area or surface tension
+than on the ensemble employed"
+It should be also noted that the total lengths of the simulations are around 1ns 
+in the mentioned publications while our simulations are 1-2 orders of magnitude longer. 
+Thus, even though the dependence on the ensemble would be observed in these short simulations
+it could very well be due to insufficient sampling.
+
+As we have already pointed out we have restricted our work to the available models and
+the improvement of these models has been left for further studies. Since all the developers
+of the tested models have used NPT ensemble in zero tension, there seems to be consensus on 
+this.
+
+It is also much more likely that the force field parameters affect the glycerol backbone and
+choline structures much more than the used ensemble or interfacial tension. We have 
+left the more detailed discussion on the force field parameters for further studies, 
+thus the same should be done for the discussion about ensemble and surface tension which
+is most likely less relevant.
 
 2.
 Author reply:
-
 All the "subjective sweet spots" in Fig. 2 have exactly the same size: 0.04 units.
 
 This size was agreed on based on the high experimental repeatibility of the order
