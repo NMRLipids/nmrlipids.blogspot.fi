@@ -67,7 +67,7 @@ in the introduction we write:
 by a glycerol backbone to a hydrophilic headgroup ..."
 This is widely used naming convention for phospholipid molecules.
 According to the title and the naming convention used in the manuscript, 
-the beginnings of the acyl chains are not the part of headgroup and are 
+the beginnings of the acyl chains are not part of the headgroup and are 
 beyond the scope defined in the title. Their presence at the interface
 or their chemical environment do not change this.
 
