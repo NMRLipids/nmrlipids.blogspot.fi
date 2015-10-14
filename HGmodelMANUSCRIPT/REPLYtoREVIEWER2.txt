@@ -61,18 +61,18 @@ Author reply:
 The title of our manuscript is:
 "Towards atomistic resolution structure of
 phosphatidylcholine headgroup and glycerol
-backbone at different ambient conditions"
+backbone at different ambient conditions", and
 in the introduction we write:
 "Phospholipid molecules are composed of hydrophobic acyl chains connected
 by a glycerol backbone to a hydrophilic headgroup ..."
 This is widely used naming convention for phospholipid molecules.
-According to the title and the naming convetion used in the manuscript, 
-the beginning of acyl chains are not the part of headgroup and are 
-beoynd the scope defined in the title. Their presence at the interface
+According to the title and the naming convention used in the manuscript, 
+the beginnings of the acyl chains are not part of the headgroup and are 
+beyond the scope defined in the title. Their presence at the interface
 or their chemical environment do not change this.
 
 We are not willing to extend the scope of the manuscript since it
-would signifincantly increase already massive information content and 
-length. Instead, the acyl chains order parameters will be discussed in 
+would significantly increase the already massive information content and 
+length. Instead, the acyl chain order parameters will be discussed in 
 the context of the NMRLipids III project, see 
 http://nmrlipids.blogspot.fi/p/about.html.
