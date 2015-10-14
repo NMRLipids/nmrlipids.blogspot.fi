@@ -1,7 +1,7 @@
-set term pdfcairo enhanced rounded color dashed dashlength 1 size 16.2cm, 10cm font ",18"
+set term pdfcairo enhanced rounded color dashed dashlength 0.9 size 16.2cm, 10cm font ",18"
 set out OUTPUTFILE
 
-w=10 # linewidth simulation
+w=5 # linewidth simulation
 r=2  # point radius simulation
 
 set tmargin 0.5
@@ -10,9 +10,9 @@ set rmargin 1
 set lmargin 9
 
 set style line 15 lt 1 pt 11 ps r lw w lc rgb "#D70039" # for Berger DLPC
-set style line 11 lt 2 pt 7 ps r lw w lc rgb "#D70039" # for Berger POPC
+set style line 11 lt 2 pt 7 dt 3 ps r lw w lc rgb "#D70039" # for Berger POPC
 set style line 12 lt 1 pt 7 ps r lw w lc rgb "#0088BF" # for CHARMM36
-set style line 13 lt 2 pt 7 ps r lw w lc rgb "#FFD300" # for GAFF
+set style line 13 lt 2 pt 7 dt 3 ps r lw w lc rgb "#FFD300" # for GAFF
 set style line 14 lt 1 pt 7 ps r lw w lc rgb "#00A368" # for MacRog
 
 set key l at graph 0.05,0.95 Left reverse samplen 5 spacing 1.5 width 2 maxrows 5 
