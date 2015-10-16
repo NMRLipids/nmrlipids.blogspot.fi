@@ -18,7 +18,7 @@ stereospecific = stereospecificOPs.pdf
 
 
 # Generate TARGETs from all filenames
-TARGETS = $(dehydrationPN)
+TARGETS = $(stereospecific)
 
 all: $(TARGETS)
 
@@ -58,7 +58,7 @@ $(dehydrationPN): $(SCRIPT_DEHY) $(DEHY_BERGER) $(DEHY_BERGER_DLPC) $(DEHY_MACRO
 # =========
 SCRIPT_STER = scripts/plotWithStereospecificity.gpl
 STER_EXP = ../DATAreportediINblog/POPC-for-stereospecific/EXP-Ferreira2013.dat
-STER_BERGER = ../DATAreportediINblog/POPC-for-stereospecific/BERGER-298K_recalculated-22-04-15.dat
+STER_BERGER = ../DATAreportediINblog/POPC-for-stereospecific/BERGER-298K_recalculated-15-10-15.dat
 STER_MACROG = ../DATAreportediINblog/POPC-for-stereospecific/MACROG-310K_recalculated-29-04-15.dat
 STER_CHARMM36 = ../DATAreportediINblog/POPC-for-stereospecific/CHARMM36-303K_blogged-01-12-14.dat
 STER_GAFF = ../DATAreportediINblog/POPC-for-stereospecific/GAFF-303K_blogged-12-11-14.dat

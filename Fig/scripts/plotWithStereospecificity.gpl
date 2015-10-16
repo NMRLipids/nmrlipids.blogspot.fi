@@ -48,7 +48,7 @@ set linetype 24  lt 1 lw w lc rgb "#FFD300" # for GAFF
 # OPLS-family:
 set linetype 30  lt 1 lw w lc rgb "#00A368" # for MacRog
 
-plot [0.5:7.5][0.152659:-0.26] \
+plot [0.5:7.5][0.1952659:-0.27] \
   DATA_BERGER u ($1-0.4):($2):($3) w ye lt 21 pt 7 ps r t "{298K}  Berger", \
   DATA_MACROG u ($1-0.2):($2):($3) w ye lt 30 pt 7 ps r t "{310K}  MacRog", \
   DATA_EXP u ($1):($2):($3) w ye lt 101 pt 7 ps 1.5*r t "300K  ^{_{^{13}}}C-NMR", \

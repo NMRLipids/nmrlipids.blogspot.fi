@@ -1,14 +1,6 @@
 # Collection of dehydration data for the Berger force field.
 #
-# 57 w/l was posted on nmrlipids.blogspot.fi by Samuli Ollila
-# 	 (as a part of the initial version of the manuscript)
-#	 on 10 Sep 2013. New set of data (total 270 ns, last
-#	 240 ns analyzed) provided by Samuli Ollila on 10 April
-#	 2014. These, however, were slightly affected by a bug
-#	 in the analysis script, and the current data were added
-#	 by Markus Miettinen on 12 May 2015 from the full hydration
-#	 data file "BERGER-298K_recalculated-22-04-15.dat".
-#	 POPC. 298K. 128 lipids, 7290 waters.
+# 57 w/l data from ../BERGER-298K_recalculated-15-10-15.dat
 #
 #  7 w/l was uploaded by Samuli Ollila on 28 Jan 2015 to GitHub:
 #
@@ -28,34 +20,34 @@
 
 # beta:
 7 	0.0437658
-56.9531	0.0284171	0.000216035
+56.9531	0.0373922       0.00334012 
 
 7	0.0864591
-56.9531	0.0541737	0.000402495
+56.9531	0.0666543       0.00359751 
 
 # alpha:
 7	0.114736
-56.9531	0.081043	0.000588776
+56.9531	0.0930187       0.00474096 
 
 7	0.148468
-56.9531	0.130752	0.00091446
+56.9531 0.151657        0.00671933
 
 # g3R:
 7	-0.159144 
-56.9531	-0.159623	0.00155831     (R)
+56.9531	-0.174842       0.00539879      (R)
 
 # g3S:
 7	-0.247685
-56.9531	-0.234955	0.00296874     (S) 
+56.9531	-0.265716       0.00315051      (S) 
 
 # g2:
 7	-0.185312
-57	-0.168462	0.00167646
+57	-0.163065       0.0052155 
 
 # g1R:
 7	0.16771
-57	0.152659	0.0010512       (R)
+57	0.18418 0.00799631             (R)
 
 # g1S:
 7	0.0689376
-57	0.0752981	0.000549603    (S)
+57	0.0897172 0.00564491           (S)

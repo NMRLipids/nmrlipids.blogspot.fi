@@ -70,10 +70,10 @@ set linetype 30  lt 1 lw w lc rgb "#00A368" # for MacRog
 
 
 # Arrows pointing data outside the graph:
-set arrow 261 from 2.5485, graph 0 to 2.5485, graph -0.02 lt 26 lw 3 # Kukol g3
+set arrow 261 from 3.17, graph 0 to 3.17, graph -0.02 lt 26 lw 3 # Kukol g3
 
 # Labels for reporting the values outside the graph:
-set label 262 at 2.67, graph 0.008 rotate by 30 "0.28" font ",9" tc rgb "#FF8300" # Kukol g3
+set label 262 at 3.22, graph 0.008 rotate by 30 "0.28" font ",9" tc rgb "#FF8300" # Kukol g3
 
 # Explanations for superscripts:
 set label 2 at screen 0.54,0.015 \
@@ -117,7 +117,7 @@ plot [0.5:5.5][0.153471:-0.3211] \
   t "@{POPC}{&{DMPC}}  296K   ^{_{^2}}H-NMR", \
   "./POPC/EXP-Ferreira2013.dat" u ($1+dxl):($2) w l ls 4 lc 16 lw 3 \
   t "@{POPC}{&{DMPC}}  300K  ^{_{^{13}}}C-NMR ^{_{^{(3)}}}", \
-  "./sortedForPlot/POPC/BERGER-298K_recalculated-22-04-15.dat" u ($1):($2) w p lt 21 pt 7 ps r \
+  "./sortedForPlot/POPC/BERGER-298K_recalculated-15-10-15.dat" u ($1):($2) w p lt 21 pt 7 ps r \
   t "  &{M}@{\"}&{DPC}{298K}  Berger", \
   "./sortedForPlot/POPC/CHIU-298K_recalculated-04-05-15.dat" u ($1):($2) w p lt 27 pt 6 ps r \
   t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{298K}  Chiu", \
