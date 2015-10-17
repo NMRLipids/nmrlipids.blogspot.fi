@@ -64,4 +64,9 @@ cat ./sortedForPlot/POPC/KUKOL-298K_blogged-20-09-14.dat \
     | sed 's/0.2792/0.153471/' \
     > foo.bar
 mv foo.bar ./sortedForPlot/POPC/KUKOL-298K_blogged-20-09-14.dat
-
+# Berger POPC's larger g1:
+echo 'Berger POPC g1: 0.18418 -> 0.153471'
+cat ./sortedForPlot/POPC/BERGER-298K_recalculated-15-10-15.dat \
+    | sed 's/0.18418/0.153471/' \
+    > foo.bar
+mv foo.bar ./sortedForPlot/POPC/BERGER-298K_recalculated-15-10-15.dat
