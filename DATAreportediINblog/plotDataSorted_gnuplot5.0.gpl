@@ -1,0 +1,164 @@
+set term pdfcairo enhanced rounded color dashed dashlength 0.7 size 10cm, 21cm #16.2cm
+set out "comparisonSorted.pdf"
+
+# write name of the blog on the plot:
+# set label 1 right at screen 0.982,0.995 "nmrlipids.blogspot.fi" font ",9" tc rgb "gray"
+# set tmargin at screen 0.987
+
+set tmargin at screen 0.995
+set ylabel "S_{CH}" font "Arial,20" offset 2,-2.3
+
+set bmargin at screen 0.24 #0.31
+set key l at screen -0.01,0.225 Left reverse samplen 2 width -2 maxrows 14 #12
+#set key below horizontal left Left reverse samplen 1 maxcols 2 maxrows 6
+
+set lmargin at screen 0.122 #0.157
+set rmargin at screen 0.99
+
+#set key left reverse Left at 0.5,0.375 samplen 3 
+set xtics ("{/Symbol b}" 1, "{/Symbol a}" 2, "g_3" 3, "g_2" 4, "g_1" 5) offset 0,48.5 scale 0 font "Arial,25"
+set ytics 0.1 out nomirror
+set mytics 2
+dx = 0.05
+r = 0.7 #-- point radius
+w = 3 #-- line thickness
+dxl = 0.021
+set bars small # no tics in the ends of error bars
+
+
+# column dividers:
+set arrow 1 from 1.5, graph 0 to 1.5, graph 1 nohead lw 0.5
+set arrow 2 from 2.5, graph 0 to 2.5, graph 1 nohead lw 0.5
+set arrow 3 from 3.5, graph 0 to 3.5, graph 1 nohead lw 0.5
+set arrow 4 from 4.5, graph 0 to 4.5, graph 1 nohead lw 0.5
+
+set style rectangle fillstyle noborder
+
+# Subjective sweet spots:
+set object 1 rectangle \
+         from 0.0,-0.017 to 1.5,-0.057 fillcolor rgb "#D6F0FE" behind lw 0 
+set object 2 rectangle \
+         from 1.5,0.027 to 2.5,0.067 fillcolor rgb "#D6F0FE" behind lw 0
+set object 3 rectangle \
+         from 2.5,-0.198 to 3.5,-0.238 fillcolor rgb "#D6F0FE" behind lw 0
+set object 4 rectangle \
+         from 3.5,-0.176 to 4.5,-0.216 fillcolor rgb "#D6F0FE" behind lw 0
+set object 5 rectangle \
+         from 4.5,-0.120 to 5.5,-0.160 fillcolor rgb "#D6F0FE" behind lw 0
+set object 6 rectangle \
+         from 4.5,0.015 to 5.5,-0.025 fillcolor rgb "#D6F0FE" behind lw 0
+
+# Line- and point types for different force fields:
+# GROMOS-family:
+set linetype 21  lw w lc rgb "#D70039" # for Berger
+set linetype 32  lw w lc rgb "#FA0059" # for Tjornhammar
+set linetype 25  lw w lc rgb "#E8007C" # for Poger
+set linetype 27  lw w lc rgb "#F70000" # for Chiu
+set linetype 26  lw w lc rgb "#FF8300" # for Kukol
+set linetype 31  lw w lc rgb "#FFA0A3" # for Ulmschneider
+# between GROMOS and CHARMM:
+set linetype 231 lw w lc rgb "#9966B6" # for CHARMM36-UA
+# CHARMM-family:
+set linetype 23  lw w lc rgb "#0088BF" # for CHARMM36
+# between CHARMM and AMBER:
+set linetype 22  lw w lc rgb "#7AEE9E" # "#7AEE9E" # for Slipids
+set linetype 28  lw w lc rgb "#9FE100" # for HoNiLy
+# AMBER-family:
+set linetype 24  lw w lc rgb "#FFD300" # for GAFF
+set linetype 241 lw w lc rgb "#FFD300" # for Amber Lipid14
+# OPLS-family:
+set linetype 29  lw w lc rgb "#FF578F" # for OPLS-AA
+set linetype 30  lw w lc rgb "#00A368" # for MacRog
+
+
+# Arrows pointing data outside the graph:
+set arrow 261 from 2.54762, graph 0 to 2.54762, graph -0.02 lt 26 lw 1.5 # Kukol g3
+set arrow 263 from 4.54762, graph 0 to 4.54762, graph -0.02 lt 21 lw 1.5 # Berger POPC g1
+
+# Labels for reporting the values outside the graph:
+set label 262 at 2.6, graph 0.008 rotate by 30 "0.28" font ",9" tc rgb "#FF8300" # Kukol g3
+set label 264 at 4.6, graph 0.008 rotate by 30 "0.18" font ",9" tc rgb "#D70039" # Berger POPC g1
+
+# Explanations for superscripts:
+set label 2 at screen 0.54,0.015 \
+  "^{_{(1)}} DROSS, ^{_{(2)}} APM-CP, ^{_{(3)}} R-PDLF" font ",10"
+
+# DROSS = Dipolar Recoupling On-axis with Scaling and Shape preservation
+# R-PDLF = R-type Proton Detected Local Field
+
+#plot [0.5:5.5][0.171045:-0.3211] \
+
+plot [0.5:5.5][0.153471:-0.3211] \
+  "./DMPC/EXP-Gross1997.dat" u ($1):($2) w l ls 8 lc rgb "#5F5F5F" lw 3 dt 3 \
+  t "DMPC  303K  ^{_{^{13}}}C-NMR ^{_{^{(1)}}}", \
+  "./DMPC/EXP-Dvinskikh2005b.dat" u ($1):($2) w l ls 8 lc 16 lw 1.5 dt 3 \
+  t "  &{M}@{\"}&{DPC}314K  ^{_{^{13}}}C-NMR ^{_{^{(2)}}}", \
+  "./sortedForPlot/DMPC/BERGER-323K_blogged-24-10-13.dat" u ($1):($2) w p lt 21 pt 9 ps 1.1*r \
+  t "  &{M}@{\"}&{DPC}323K  Berger", \
+  "./sortedForPlot/DMPC/HONILY-303K_blogged-15-10-13.dat" u ($1):($2) w p lt 28 pt 8 ps 1.1*r \
+  t "  &{M}@{\"}&{DPC}303K  Högberg08", \
+  "./sortedForPlot/DLPC/CHARMM36UA-323K_blogged-24-10-14.dat" u ($1):($2)  w p lt 231 pt 10 ps 1.1*r  \
+  t "@{DLPC}{&{DMPC}}  323K  CHARMM36-UA", \
+  "./DPPC/EXP-Gally1975.dat" u ($1):($2) w l ls 16 lc rgb "#5F5F5F" lw 3 \
+  t "D@{PPC}{&{MPC}}  322K  ^{_{^2}}H-NMR", \
+  "./DPPC/EXP-Akutsu1981.dat" u ($1):($2) w l ls 16 lw 1.5 \
+  t "  &{M}@{\"}&{DPC}332K       \"", \
+  "./sortedForPlot/DPPC/BERGER-323K_blogged-13-01-15.dat"  u ($1):($2) w p lt 21 pt 5 ps r \
+  t "  &{M}@{\"}&{DPC}323K  Berger", \
+  "./sortedForPlot/DPPC/TJORNHAMMAR-323K_blogged-14-11-14.dat" u ($1):($2) w p lt 32 pt 4 ps r \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  Tjörnhammar14", \
+  "./sortedForPlot/DPPC/POGER-323K_joint.dat"   u ($1):($2):($3):($4) w ye lt 25 pt 4 ps r \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  Poger", \
+  "./sortedForPlot/DPPC/CHARMM36UA-323K_blogged-25-03-15.dat" u ($1):($2) w p lt 231 pt 4 ps r \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  CHARMM36-UA", \
+  "./sortedForPlot/DPPC/CHARMM36-323K_joint.dat"     u ($1):((130*$2+25*$3)/155):($2):($3) w ye lt 23 pt 5 ps r \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  CHARMM36", \
+  "./sortedForPlot/DPPC/SLIPIDS-323K_blogged-11-12-14.dat" u ($1):($2) w p lt 22 pt 4 ps r \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  Slipid", \
+  "./sortedForPlot/DPPC/GAFF-323K_joint.dat"        u ($1):($2):($3):($4) w ye lt 24 pt 5 ps r \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  GAFFlipid", \
+  "./POPC/EXP-Bechinger1991.dat" u ($1+dxl):($2) w l ls 4 lc rgb "#5F5F5F" lw 3.4 dt 4 \
+  t "@{POPC}{&{DMPC}}  296K   ^{_{^2}}H-NMR", \
+  "./POPC/EXP-Ferreira2013.dat" u ($1+dxl):($2) w l ls 4 lc 16 lw 1.8 dt 4 \
+  t "  &{M}@{\"}&{DPC}{300K}  ^{_{^{13}}}C-NMR ^{_{^{(3)}}}", \
+  "./sortedForPlot/POPC/BERGER-298K_recalculated-15-10-15.dat" u ($1):($2) w p lt 21 pt 7 ps r \
+  t "  &{M}@{\"}&{DPC}{298K}  Berger", \
+  "./sortedForPlot/POPC/CHIU-298K_recalculated-04-05-15.dat" u ($1):($2) w p lt 27 pt 6 ps r \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{298K}  Chiu", \
+  "./sortedForPlot/POPC/KUKOL-298K_blogged-20-09-14.dat" u ($1):($2) w p lt 26 pt 6 ps r \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{298K}  Kukol", \
+  "./sortedForPlot/POPC/ULMSCHNEIDER-310K_blogged-26-03-14.dat" u ($1):($2) w p lt 31 pt 6 ps r \
+  t "  &{M}@{\"}&{DPC}{310K}  Ulmschneiders", \
+  "./sortedForPlot/POPC/CHARMM36-303K_joint.dat" u ($1):($2):($3):($4) w ye lt 23 pt 7 ps r \
+  t "  &{M}@{\"}&{DPC}{303K}  CHARMM36",\
+  "./sortedForPlot/POPC/SLIPIDS-310K_blogged-12-01-15.dat" u ($1):($2) w p lt 22 pt 6 ps r \
+  t "  &{M}@{\"}&{DPC}{310K}  Slipid",\
+  "./sortedForPlot/POPC/HONILY-303K_blogged-15-10-13.dat" u ($1):($2) w p lt 28 pt 6 ps r \
+  t "  &{M}@{\"}&{DPC}{303K}  Högberg08", \
+  "./sortedForPlot/POPC/GAFF-303K_blogged-12-11-14.dat"        u ($1):($2) w p lt 24 pt 7 ps r \
+  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{303K}  GAFFlipid", \
+  "./sortedForPlot/POPC/AMBERLIPID14-303K_blogged-26-03-14.dat" u ($1):($2) w p lt 241 pt 6 ps r \
+  t "  &{M}@{\"}&{DPC}{298K}  Lipid14",\
+  "./sortedForPlot/POPC/MACROG-310K_joint.dat" u ($1):($2):($6):($7) w ye lt 30 pt 7 ps r \
+  t "  &{M}@{\"}&{DPC}{310K}  MacRog" , \
+  x w p ls 0 ps 0 lc rgb "white" t " "
+
+
+
+
+
+#  x w p ls 1 ps 0 t " ", \
+#  x w p ls 1 ps 0 t " "
+
+
+# Markus Miettinen 9 Jan 2015:
+#
+# (1) OPLS-AA force field we only have with NaCl, so let us leave it out here.
+#
+#  "./POPC/NaCl/OPLSAA-310K_blogged-19-10-13.dat"  u ($1+6.9*dx):($2) w p lt 29 pt 7 ps r \
+#  t "  &{M}@{\"}&{DPC}{310K}  OPLS-AA ^{_{^{(3)}}}", \
+#
+# (2) Orange force field was not the final version, so let us leave it out here.
+#
+#  "./DPPC/ORANGE-323K_blogged-02-04-14.dat" u ($1-4.6*dx):($2) w p lt -1 pt 5 ps r \
+#  t "  &{M}@{\"}&{DPC}@{\\ \\  \"}&{323K}  Orange", \
