@@ -327,7 +327,7 @@ aEX1=a
 bEX1=b
 cEX1=c
 dEX1=d
-plot [-5:65][:-0.12]\
+plot [-5:65][:-0.121]\
     "./POPC/cholesterol/BERGER-298K.dat" u ($1):($2+d_Be) ev :::4::5 w lp ls 11 t "Berger", \
     "./POPC/cholesterol/MACROG-310K_blogged-18-09-14.dat" u ($1):($2+d_MR) ev :::4::5 w lp ls 14 t "MacRog", \
     "./POPC/cholesterol/CHARMM36-303K_blogged-01-12-14.dat" u ($1):($2+d_CH) ev :::4::5 w lp ls 12 t "CHARMM36", \
@@ -340,7 +340,7 @@ plot [-5:65][:-0.12]\
 set label 100 "g_{2}"
 # offsets:
 d_MR=0.0 #MacRog
-d_Be=-0.01 # Berger
+d_Be=-0.07 # Berger
 d_CH=-0.03 # CHARMM36
 #d_GA=0.06 # GAFF
 #set label 131 sprintf("S_{CH} %+g",d_GA) # GAFF
@@ -479,7 +479,7 @@ plot [-5:65][-0.165:-0.09] \
 
 
 # S:
-set label 100 "g_{1S}"
+set label 100 "g_{1S}" at graph 0.05,0.75
 set xtics format "%g"
 set xlabel "Cholesterol content (mol%)" font ",18" 
 # offsets:
