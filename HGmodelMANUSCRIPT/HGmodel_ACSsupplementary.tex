@@ -13,10 +13,11 @@
 %% extensions are not currently available on the ACS conversion
 %% servers.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
-\usepackage[obeyFinal]{easy-todo}
+%\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+%\usepackage[obeyFinal]{easy-todo}
 \usepackage{rotating}
 \usepackage{epstopdf}
+\usepackage{setspace}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% If issues arise when submitting your manuscript, you may want to
 %% un-comment the next line.  This provides information on the
@@ -77,10 +78,10 @@
 %\alsoaffiliation[Second University]
 %{Department of Chemistry, Second University, Nearby Town}
 
-\author{Alexandru Botan}
+\author{\setstretch{1.05} Alexandru Botan}
 %\affiliation{The authors are listed in alphaphetical order.}
 %\affiliation{The author list is not completed.}
-\affiliation[Lyon CNRS]{Institut Lumi\`ere Mati\`ere, UMR5306 Universit\'e Lyon 1-CNRS, Universit\'e de Lyon 69622 Villeurbanne, France}
+\affiliation[Lyon CNRS]{\small\setstretch{1.0} Institut Lumi\`ere Mati\`ere, UMR5306 Universit\'e Lyon 1-CNRS, Universit\'e de Lyon 69622 Villeurbanne, France}
 %
 %\author{Andrea Catte}
 %\affiliation{University of East Anglia, Norwich, United Kingdom}
@@ -94,8 +95,8 @@
 \affiliation[Tampere University of Technology]
 {Department of Physics, Tampere University of Technology, Tampere, Finland}
 \author{Matej Kandu\v{c}}
-\affiliation[Freie Universit\"{a}t Berlin] 
-{Fachbereich Physik, Freie Universitat Berlin, Berlin, Germany}
+\affiliation[Freie Universitat Berlin] 
+{Fachbereich Physik, Freie Universit{\"a}t Berlin, Berlin, Germany}
 \author{Waldemar Kulig}
 \affiliation[Tampere University of Technology]
 {Department of Physics, Tampere University of Technology, Tampere, Finland}
@@ -108,8 +109,8 @@
 \affiliation[Stockholm University]
 {Division of Physical Chemistry, Department of Materials and Environmental Chemistry, Stockholm University, S-106 91 Stockholm, SWEDEN}
 \author{Markus S. Miettinen}
-\affiliation[Freie Universit\"{a}t Berlin] 
-{Fachbereich Physik, Freie Universitat Berlin, Berlin, Germany}
+\affiliation[Freie Universitat Berlin] 
+{Fachbereich Physik, Freie Universit{\"a}t Berlin, Berlin, Germany}
 \author{Luca Monticelli}
 \affiliation[IBCP] 
 {Institut de Biologie et Chimie des Prot\'eines (IBCP), CNRS UMR 5086, Lyon, France}
@@ -147,7 +148,8 @@
 %% optional argument to \title.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title[An \textsf{achemso} demo]
-  {SUPPORTING INFORMATION: Towards atomistic resolution structure of phosphatidylcholine headgroup and glycerol backbone at different ambient conditions\footnote{Publication about results presented in the NMRlipids project}}
+  {\setstretch{1.05} SUPPORTING INFORMATION:\\
+  Towards atomistic resolution structure of phosphatidylcholine headgroup and glycerol backbone at different ambient conditions\footnote{Publication about results presented in the NMRlipids project (\url{nmrlipids.blogspot.fi})}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Some journals require a list of abbreviations or keywords to be
@@ -199,33 +201,34 @@
 %% Start the main part of the manuscript here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 %\begin{center}
 %{\bf SUPPLEMENTARY INFORMATION}
 %\end{center}
+\setstretch{1.025}
 \section{Simulation details} 
-\subsection{Berger based models}
-For the Berger based models we use here the following naming convention: 
+\subsection{Berger-based models}
+For the Berger-based models we used the following naming convention: 
 Berger - \{{\it molecule name}\} - \{{\it year when model published first time}\} \{{\it citation}\}.
-The reason is that there are several different molecular topologies which are using the non-bonded parameters originally
-developed by Berger et al.~\cite{berger97}. Thus the common factor in the Berger based models are the non-bonded parameters,
-while the molecule specific parameters might somewhat vary. However, the majority of the molecular level topologies are 
-relying (especially for the glycerol backbone and headgroup) on the parameters originally introduced by Marrink et al.~\cite{marrink98}.
-This is the case for all the Berger based simulations discussed in this work.
+The reason was that there are several different molecular topologies %which are
+using the non-bonded parameters originally
+developed by Berger et al.~\cite{berger97}. Thus the common factor in the Berger-based models are the non-bonded parameters,
+while the molecule-specific parameters might somewhat vary. However, the majority of the molecular-level topologies  
+rely (especially for the glycerol backbone and headgroup) on the parameters originally introduced by Marrink et al.~\cite{marrink98};
+this is the case for all the Berger-based simulations discussed in this work.
 
-POPC simulations at full hydration at 298~K and simulations studying the effect of cholesterol are the same as in previous publications~\cite{ferreira13,ferreira15}.
-In these simulation the POPC parameters introduced by Ollila et al~\cite{ollila07a} are used, which are using the non-bonded parameters of Berger~\cite{berger97}
-and a molecular topology from Tieleman et al.~\cite{tieleman99} with improved double bond dihedrals by Bachar et al.~\cite{bachar04}. 
-Thus they are called Berger-POPC-07~\cite{ollila07a}. The cholesterol model is based on the parameters by H\"oltje et al.~\cite{holtje01} with the
-exception that the atom types were changed from CH2/CH3 to LP2/LP3 to avoid overcondensation of the bilayer as suggested in ref.~\cite{tieleman06}.
-Since this modification was introduced by Ferreira et al.~\cite{ferreira13}, we call the used cholesterol model as H\"oltje-CHOL-13~\cite{ferreira13}.
+POPC simulations at full hydration at 298~K, and simulations studying the effect of cholesterol, were the same as in previous publications~\cite{ferreira13,ferreira15}.
+In these simulations, the POPC parameters introduced in 2007 by Ollila et al.~\cite{ollila07a} were used (the non-bonded parameters of Berger et al.~\cite{berger97}
+and a molecular topology from Tieleman et al.~\cite{tieleman99} with improved double bond dihedrals by Bachar et al.~\cite{bachar04}), thus
+they were called Berger-POPC-07~\cite{ollila07a}. The cholesterol model was based on the parameters by H\"oltje et al.~\cite{holtje01} with the
+exception that the atom types were changed from CH2/CH3 to LP2/LP3 to avoid overcondensation of the bilayer as suggested in Ref.~\citenum{tieleman06}.
+Since this modification was introduced in 2013 by Ferreira et al.~\cite{ferreira13}, we call this cholesterol model H\"oltje-CHOL-13~\cite{ferreira13}.
 
-For the POPC at 323~K and POPC in low hydration the same force field parameters are used.
-For DPPC the implementation of Berger parameters~\cite{berger97} by Peter Tieleman et al. are used~\cite{marrink98}.
-For all of these simulations a timestep of 2~fs was used with a leapfrog integrator. Covalent bond lengths were constrained with the LINCS algorithm~\cite{hess97,hess07}. 
-Coordinates were written every 10~ps. PME~\cite{darden93,essman95} with real space cut-off of 1.0~nm was used 
-for electrostatics. Plain cut-off was used for the Lennard-Jones interactions with a 1.0~nm cut-off.
-The neighbor lists with cut-off of 1.0~nm were updated every 5 steps. Temperature was coupled separately
+For the POPC at 323~K and POPC at low hydration, the same force field parameters were used.
+For DPPC, the implementation of Berger parameters~\cite{berger97} by Peter Tieleman et al. was used~\cite{marrink98}.
+For all  these simulations, a timestep of 2~fs was used with a leapfrog integrator. Covalent bond lengths were constrained with the LINCS algorithm~\cite{hess97,hess07}. 
+Coordinates were written every 10~ps. PME~\cite{darden93,essman95} with a real space cut-off of 1.0~nm was used 
+for electrostatics. Plain cut-off was used for the Lennard-Jones interactions, with a 1.0~nm cut-off.
+The neighbor lists with a cut-off of 1.0~nm were updated every 5 steps. Temperature was coupled separately
 for lipids and water to 298~K using the velocity-rescale method~\cite{bussi07} with coupling constant 0.1~ps.
 Pressure was semi-isotropically coupled to the atmospheric pressure with the Berendsen method~\cite{berendsen84}.
 
@@ -244,54 +247,54 @@ The publicly available CHARMM36 parameters in Gromacs format
 (September 2013 update: {\tt charmm36\_gmx\_format\_sep13.tgz})
 from the MacKerell Lab website
 (\url{http://mackerell.umaryland.edu/CHARMM_ff_params.html}) were used.
-Timestep of 1~fs was used with the leapfrog integrator. Covalent bonds with hydrogens were constrained with LINCS algorithm~\cite{hess97,hess07}. 
+Timestep of 1~fs was used with the leapfrog integrator. Covalent bonds with hydrogens were constrained with the LINCS algorithm~\cite{hess97,hess07}. 
 Coordinates were written every 5~ps. PME~\cite{darden93,essman95} with real space cut-off of 1.4~nm was used 
 for electrostatics. Lennard-Jones interactions were switched to zero between 0.8~nm and 1.2~nm.
-The neighbour lists with a cut-off of 1.4~nm were updated every 5 steps. Temperature was coupled separately
-for lipids and water to 303~K using the velocity-rescale method~\cite{bussi07} with coupling constant of 0.2~ps.
+The neighbor lists with a cut-off of 1.4~nm were updated every 5 steps. Temperature was coupled separately
+for lipids and water to 303~K using the velocity-rescale method~\cite{bussi07} with a coupling constant of 0.2~ps.
 Pressure was semi-isotropically coupled to the atmospheric pressure with the Berendsen method~\cite{berendsen84}.
 
-{\it POPC with 128 lipids}
-The starting structures for the pure POPC simulations was taken from the Slipids~\cite{jambeck12b} website (\url{http://mmkluster.fos.su.se/slipids/Downloads.html}).
-The starting structures for mixed POPC/Cholesterol simulations were constructed with the CHARMM-GUI website~\cite{jo08}. 
-They contained 100 POPC/24 cholesterol molecules and 80 POPC/80 cholesterol molecules for
-the simulations of 20\% cholesterol and 50\% cholesterol respectively. The TIP3P water model~\cite{jorgensen83} was used to
+{\it POPC with 128 lipids.}
+The starting structures for the pure POPC simulation was taken from the Slipids~\cite{jambeck12b} website (\url{http://mmkluster.fos.su.se/slipids/Downloads.html}).
+The starting structures for the mixed POPC/Cholesterol simulations were constructed with the CHARMM-GUI website~\cite{jo08}. 
+They contained 100 POPC~/~24 cholesterol molecules and 80 POPC~/~80 cholesterol molecules for
+the simulations of 20\% cholesterol and 50\% cholesterol, respectively. The TIP3P water model~\cite{jorgensen83} was used to
 solvate the system.
 The publicly available CHARMM36 forcefield parameters
 (\url{http://www.gromacs.org/@api/deki/files/184/=charmm36.ff\\\_4.5.4\_ref.tgz}) 
 by Piggot et al. \cite{piggot12} were used. Cholesterol parameters came
-from Lim et al. \cite{lim12} and were converted into GROMACS format with the PyTopol tool~\cite{salari15}.  
-Single point energy calculation was done to assess the conversion. 
+from Lim et al. \cite{lim12}, and were converted into GROMACS format with the PyTopol tool~\cite{salari15}.  
+Single-point energy calculation was done to assess the conversion. 
 %(At the time I've made the simulations, the charmm36 ff for cholesterol in gromacs format was not available at
 %http://mackerell.umaryland.edu/charmm_ff.shtml#gromacs).
-Simulations were performed for 200~ns and the last 100~ns was used for the calculations. Timestep of 2~fs was
+Simulations were performed for 200~ns and the last 100~ns was used for the analysis. Timestep of 2~fs was
 used with leapfrog integrator. All bond lengths were constrained with LINCS~\cite{hess97,hess07}. Temperature was maintened at
-303~K with the velocity-rescale method~\cite{bussi07} and a time constant of 0.2~ps. Pressure was maintained semiisotropically
-at 1~bar using the Parrinello--Rahman algorithm~\cite{parrinello81} with a time constant of 1.0~ps. The neighbour list with a cut-off of 1.2~nm
+303~K using the velocity-rescale method~\cite{bussi07} with a time constant of 0.2~ps. Pressure was maintained semi-isotropically
+at 1~bar using the Parrinello--Rahman algorithm~\cite{parrinello81} with a time constant of 1.0~ps. The neighbor list with a cut-off of 1.2~nm
 was updated every 10 steps. Lennard-Jones interactions were switched to zero
-between 0.8~nm and 1.2~nm. PME~\cite{darden93,essman95} with real space cut-off of 1.2~nm was used for electrostatics.
+between 0.8~nm and 1.2~nm. PME~\cite{darden93,essman95} with a real space cut-off of 1.2~nm was used for electrostatics.
 
 {\it POPC with 512 lipids.}
 %
-POPC The starting structures for simulations were constructed with
+The starting structures for simulations were constructed with
 the CHARMM-GUI website~\cite{jo08}. 512 POPC lipids (256 per leafleat) were 
-used for the initial 0\% concentration and they were subsequently 
-substituted by cholesterol molecules to fulfil the desired concentration.
+used for the initial 0\% cholesterol content, and they were subsequently 
+substituted by cholesterol molecules to obtain the desired content.
 The TIP3P~\cite{jorgensen83} water model was used to solvate the system. 
-The publicly available port of the CHARMM36 forcefield parameters (\url{mackerell.umaryland.edu/CHARMM_ff_params.html}) 
-was used for both POPC and cholesterol. 
-Simulations were performed for 170 ns and the last 100 ns was used for the calculations.
-Timestep of 1 fs was used with the leapfrog integrator. Covalent bonds with hydrogen 
-were constrained with LINCS algorithm. Coordinates were written every 10 ps.
-PME with real space cut-off of 1.2 nm was used for electrostatics. Lennard-Jones 
-interactions were switched to zero between 0.8 nm and 1.2 nm. The neighbour lists with a
-cut-off of 1.2 nm were updated every 5 steps. Temperature was coupled separately for cholesterol, lipids
-and water to 298 K using the velocity-rescale method with coupling constant of 0.2 ps.
+The publicly available port of the CHARMM36~\cite{klauda10} forcefield parameters (\url{mackerell.umaryland.edu/CHARMM_ff_params.html}) 
+was used for both the POPC and cholesterol. 
+Simulations were performed for 170~ns, and the last 100~ns was used for the analysis.
+Timestep of 1~fs was used with the leapfrog integrator. Covalent bonds with hydrogen 
+were constrained with the LINCS~\cite{hess97,hess07} algorithm. Coordinates were written every 10~ps.
+PME~\cite{darden93,essman95} with real space cut-off of 1.2~nm was used for electrostatics. Lennard-Jones 
+interactions were switched to zero between 0.8~nm and 1.2~nm. The neighbor lists with a
+cut-off of 1.2~nm were updated every 5 steps. Temperature was coupled separately for cholesterol, lipids
+and water to 298~K using the velocity-rescale method~\cite{bussi07} with coupling constant of 0.2~ps.
 Pressure was semi-isotropically coupled to the atmospheric pressure with the Berendsen
-method.
+method~\cite{berendsen84}.
 
 \subsection{MacRog}
-The lipid force field parameters were obtained from the developers and the parameters are presented in Refs.~\citenum{maciejewski14,kulig15b}. 
+The lipid force field parameters were obtained from the developers; the parameters are presented in Refs.~\citenum{maciejewski14,kulig15b}. 
 %correspond to the published DPPC parameters~\cite{maciejewski14} with the inclusion of the double bond parameters~\cite{kulig15}. 
 %This inclusion of unsaturated lipid tails will be published in the near future. 
 %\todo{You have recent paper where you use POPC/chol simulations with this model: Kulig et al. BBA 1848 (2015) 422-432 http://dx.doi.org/10.1016/j.bbamem.2014.10.032.
@@ -303,182 +306,187 @@ with a target temperature of 310~K and a time constant of 0.4~ps. Semi-isotropic
 barostat~\cite{parrinello81} with a time constant of 1~ps. PME~\cite{darden93,essman95} was employed to calculate the long-range electrostatic interactions. Lennard-Jones interactions were cut off 
 at 1~nm and the dispersion correction was applied to both energy and pressure. A neighbour list with a radius of 1~nm was updated every step. 
 
-Identical parameters were employed for both full hydration and for the dehydration simulations. The dehydration simulations were also run for 100~ns 
+Identical parameters were employed for the full hydration and the dehydration simulations. The dehydration simulations were also run for 100~ns 
 with data saved every 10~ps.
 
-The initial structures for the simulations with 10, 40, 50 and 60 mol\% of cholesterol were obtained by replacing 14, 56, 64 or 72 POPC molecules 
+The initial structures for the simulations with 10, 40, 50 and 60 mol-\% of cholesterol were obtained by replacing 14, 56, 64 or 72 POPC molecules 
 with cholesterol molecules in the initial structure containing 128 POPC molecules. These systems were simulated for 400 ns and the first 200 ns was 
 discarded from analysis. Data was saved every 100 ps.
 
 
 
-\subsection{GAFFLipid}
+\subsection{GAFFlipid}
 The initial structure in Lipidbook \cite{domanski10} had different glycerol backbone isomers in different leaflets. 
-To generate the initial structure we took the structure delivered by Slipids developers~\cite{jambeck12b}. Also this structure
+To generate the initial structure, we took the structure delivered by the Slipids developers~\cite{jambeck12b}. Also this structure
 had one lipid with different glycerol backbone isomer. This lipid and one lipid from opposite leaflet were removed
 after the system was equilibrated.
 
 The force field parameters were generated using files obtained from the Lipidbook website (\url{http://lipidbook.bioch.ox.ac.uk/package/show/id/150.html})~\cite{domanski10}. 
-The conversion to GROMACS compatible formats was performed using the acpype tool~\cite{silva12}. The accuracy of the conversion was checked by calculating 
-the total energy of a single POPC lipid molecule using the sander program which is part of the AmberTools14 package~\cite{ferrer13} and version 4.6.5 of GROMACS. 
+The conversion to GROMACS compatible formats was performed using the acpype tool~\cite{silva12}. Accuracy of the conversion was checked by calculating 
+the total energy of a single POPC lipid molecule using the sander program, which is part of the AmberTools14 package~\cite{ferrer13}, and version 4.6.5 of GROMACS. 
 A difference of 0.002 kcal/mol was obtained between the two programs.
 
 Timestep of 2~fs was used in Langevin dynamics with zero friction term and collision frequency of 1.0~ps$^{-1}$. 
 Covalent bonds with hydrogens were constrained with the LINCS algorithm~\cite{hess97,hess07}.
 Coordinates were written every 10~ps. PME~\cite{darden93,essman95} with a real space cut-off at 1.0~nm was used 
-for electrostatics. Plain cut-off with 1~nm was used for Lennard-Jones interactions. 
-The neighbour lists with a cut-off of 1.0~nm were updated every 5 steps. 
-Pressure was semi-isotropically coupled to a pressure of 1~bar with the Berendsen method~\cite{berendsen84}.
+for electrostatics. Plain cut-off at 1~nm was used for Lennard-Jones interactions. 
+The neighbor lists with a cut-off of 1.0~nm were updated every 5 steps. 
+Pressure was semi-isotropically coupled to 1~bar with the Berendsen method~\cite{berendsen84}.
 
 It should be noted that the area per molecule with these settings for the GAFFlipid model was 61.6~\AA$^2$,
-while the original publication reported 63.9~\AA$^2$~\cite{dickson12}. However, the same parameters and Amber to Gromacs
-conversion reproduced the area per molecule from original publication for the lipid14 model (see next section).
+while the original publication~\cite{dickson12} reported 63.9~\AA$^2$. Notably, however, the same parameters and Amber-to-Gromacs
+conversion procedure reproduced the area per molecule from the original publication~\cite{dickson14} for the Lipid14 model (see the Subsec.~Lipid14).
 
 \subsection{Lipid14}
 The initial structure was taken directly from the Lipidbook~\cite{domanski10}.
-The Amber compatible force field parameters were generated using the tleap program which is integrated in the AmberTools14 package~\cite{ferrer13}. 
-A workflow similar to the one used previously for the conversion and validation of the GAFFLipid parameters was followed here. 
-As before, a negligible energy difference of 0.003 kcal/mol was obtained between the two programs.
+The Amber-compatible force field parameters were generated using the tleap program, which is integrated in the AmberTools14 package~\cite{ferrer13}. 
+A workflow similar to the one used for the conversion and validation of the GAFFlipid parameters was followed;
+here a negligible energy difference of 0.003 kcal/mol was obtained between sander and GROMACS.
 
-Timestep of 2~fs was used in Langevin dynamics with zero friction term and collision frequency of 1.0~ps$^{-1}$. 
-Covalent bonds with hydrogens were constrained with LINCS algorithm~\cite{hess97,hess07}.
-Coordinates were written every 10~ps. PME~\cite{darden93,essman95} with real space cut-off of 1.0~nm was used 
+Timestep of 2~fs was used in Langevin dynamics with zero friction term and a collision frequency of 1.0~ps$^{-1}$. 
+Covalent bonds with hydrogens were constrained with the LINCS algorithm~\cite{hess97,hess07}.
+Coordinates were written every 10~ps. PME~\cite{darden93,essman95} with real space cut-off at 1.0~nm was used 
 for electrostatics. Plain cut-off with 1~nm was used for Lennard-Jones interactions. Dispersion correction
 was applied for both energy and pressure. The neighbor lists with a cut-off of 1.0~nm were updated every 5 steps. 
 Pressure was semi-isotropically coupled to a pressure of 1~bar with the Berendsen method~\cite{berendsen84}.
 
-The area per molecule with these settings was 65.4~\AA$^2$ which is in agreement with the value reported in the original publication 65.6$\pm$0.5~\AA$^2$~\cite{dickson14}.
+The area per molecule with these settings was 65.4~\AA$^2$, which is in agreement with the value 65.6$\pm$0.5~\AA$^2$ reported in the original publication~\cite{dickson14}.
 
-\subsection{Poger et al.}
+\subsection{Poger}
 The Poger lipids are derived from GROMOS G53A6~\cite{poger10} and were initially coined 53A6-L (L for lipids). They are now part of GROMOS G54A7~\cite{poger12} 
 and parametrized to work with the SPC water model~\cite{berendsen81}. The initial hydrated bilayer structure of 128 DPPC and 5841 water molecules as well as force field parameters were downloaded 
 from David Poger's web site (\url{http://compbio.chemistry.uq.edu.au/~david/}) on April 2012. 
 We noticed that the same files downloaded in October 2013 appear to lack two dihedral angles in the choline headgroup (only one dihedral of type gd\_29 allowing 
 the rotation of the 3 choline methyls) compared to the April 2012 version (3 dihedrals of type gd\_29 for the 3 choline methyls). This should not affect the 
-bilayer structure and only change the kinetics of the choline methyls rotation. However the October 2013 version has not been tested in this study.
+bilayer structure and only change the kinetics of the choline methyls rotation. However, the October 2013 version has not been tested in this study.
 
-MD Simulations (two repetitions with independent initial velocities) were run for 100~ns using a 2~fs time step and the analysis 
+Simulations (two repetitions with independent initial velocities) were run for 100~ns using a 2~fs time step and the analysis 
 was performed on the last 50~ns. Coordinates were saved every 50~ps for analysis. All bond lengths were constrained with the LINCS algorithm~\cite{hess97,hess07}. Temperature was kept 
-at 323~K employing the velocity-rescale~\cite{bussi07} thermostat with a time constant of 0.1~ps (DPPC and water coupled separetly). Pressure was maintained semi-isotropically at 1~bar using 
-the Parrinello--Rahman barostat~\cite{parrinello81} using a 4~ps time constant and a compressibility of 4.5e-5~bar$^{-1}$. For non-bonded interactions, two conditions were tested:
-i) A 0.8--1.4 nm twin-range cut-off with the neighbor list updated every 5 steps for both electrostatics and Lennard-Jones (LJ) interactions 
-(simulation files available at~\cite{pogerFILESrf1,pogerFILESrf2}). For the former the generalized reaction 
+at 323~K employing the velocity-rescale~\cite{bussi07} thermostat with a time constant of 0.1~ps (DPPC and water coupled separately). Pressure was maintained semi-isotropically at 1~bar using 
+the Parrinello--Rahman barostat~\cite{parrinello81} with a 4~ps time constant and a compressibility of 4.5e-5~bar$^{-1}$. For non-bonded interactions, two conditions were tested:
+\begin{description}
+\item[i)]
+{\noindent A 0.8--1.4 nm twin-range cut-off with the neighbor list updated every 5 steps for both electrostatics and Lennard-Jones (LJ) interactions 
+(simulation files available at Refs.~\citenum{pogerFILESrf1,pogerFILESrf2}). For the former, the generalized reaction 
 field (RF) with a dielectric permittivity of 62 was used beyond the 1.4~nm cut-off~\cite{tironi95}. This is the original setup that Poger et al.~\cite{poger10} used.
-ii) PME~\cite{darden93,essman95} electrostatics with a real space cut-off of 1.0~nm, a Fourier spacing of 0.12~nm and an interpolation order of 4, LJ interactions computed with a 1.0--1.4~nm twin-range cut-off,
-neighbor list updated every 5 steps (simulation files available at~\cite{pogerFILESpme1,pogerFILESpme2}). 
-Note that Poger and Mark tested the effect of PME vs RF in ref.~\cite{poger12}, but used a 1.0~nm cut-off with PME and 1.4~nm with RF for LJ
-interactions. Since 0.8--1.4~nm twin-range cut-off for LJ interations is used in the parametrization of GROMOS force field, we decided to use that
-also in the simulations with PME.
+}
+\item[ii)]
+{\noindent PME~\cite{darden93,essman95} electrostatics with a real space cut-off of 1.0~nm, a Fourier spacing of 0.12~nm and an interpolation order of 4, LJ interactions computed with a 1.0--1.4~nm twin-range cut-off,
+neighbor list updated every 5 steps (simulation files available at Refs.~\citenum{pogerFILESpme1,pogerFILESpme2}).
+}
+\end{description}
+Note that Poger and Mark tested the effect of PME vs RF in Ref.~\citenum{poger12}, but used for LJ interactions a 1.0~nm cut-off with PME and 1.4~nm with RF. Since 0.8--1.4~nm twin-range cut-off for LJ interactions is used in the parametrization of the GROMOS force field, we decided to use that also in the simulations with PME.
 
 Since Poger lipids come from the GROMOS force field, it is important to note that GROMOS uses the RF scheme for computing electrostatics (this is the method used for the 
 force field parameterization). Using setup i) based on RF, we were able to reproduce the results (i.e. area per lipid value of 0.63~nm$^2$) from the original work only with 
 GROMACS versions 4.0.X and earlier (the original authors~\cite{poger10} used GROMACS version 3.3.3). When switching to versions 4.5.X and above, the area per lipid dropped to below 0.58~nm$^2$. 
-The GROMACS developers were contacted and a redmine issue opened (\url{http://redmine.gromacs.org/issues/1400}). The difference comes from the new Trotter decomposition 
+The GROMACS developers were contacted and a redmine issue opened (\url{http://redmine.gromacs.org/issues/1400}). Outcome: the difference comes from the new Trotter decomposition 
 introduced in versions 4.5.X. A fix has been introduced in version 4.6.6 that allows a recovery of an area per lipid value of 0.615~nm$^2$. The results in terms of area per lipid using the different 
-GROMACS versions are available at~\cite{pogerFILESrf2}.
-Thus we decided to use only the PME setup ii) for computing the order parameter since it gives stable results regardless of the GROMACS version. We obtained an area per 
-lipid of 0.615~nm$^2$, below 0.648 nm$^2$ found by the original authors with their PME setup (see~\cite{poger12}). We explained that by the fact that we used 
-a 1.4~nm for the LJ cut-off whereas a value of 1.0~nm was used in the original publication. 
+GROMACS versions are available at Ref.~\citenum{pogerFILESrf2}.
+
+We decided to use only the PME setup ii) for computing the order parameters, since it gives stable results regardless of the GROMACS version. We obtained an area per 
+lipid of 0.615~nm$^2$, which is below the 0.648 nm$^2$ found by the original authors with their PME setup (see Ref.~\citenum{poger12}). We explain this by the fact that we used
+1.4~nm for the LJ cut-off, whereas a value of 1.0~nm was used in the original publication. 
 
 \subsection{Slipids}
-Initial coordinates for a hydrated DPPC (at 323~K) and POPC (at 310~K) bilayers (30 and 40 waters/lipid, respectively) were taken directly from the 
-Slipids home page \url{http://mmkluster.fos.su.se/slipids/Downloads.html}.  The Slipids force field~\cite{jambeck12,jambeck12b} was used for the the all atom descriptions of DPPC and POPC, and
+Initial coordinates for hydrated DPPC (at 323~K) and POPC (at 310~K) bilayers (30 and 40 waters/lipid, respectively) were taken directly from the 
+Slipids home page (\url{http://mmkluster.fos.su.se/slipids/Downloads.html}).  The Slipids force field~\cite{jambeck12,jambeck12b} was used for the the all atom descriptions of DPPC and POPC, and
 water was described with the TIP3P water model~\cite{jorgensen83}. Simulations were performed within the NPT ensemble using the GROMACS 4.6.X simulation
 package~\cite{hess08}. The Nos\'{e}--Hoover thermostat~\cite{nose84,hoover85} was used with reference temperatures of
-323~K (DPPC) and 310~K (POPC) and a relaxation time constant of 0.5~ps. Water and lipids were coupled separately to
+323~K (DPPC) and 310~K (POPC) and a relaxation time constant of 0.5~ps; water and lipids were coupled separately to
 the heat bath. Pressure was kept constant at 1.013~bar using a semi--isotropic Parrinello--Rahman
 barostat~\cite{parrinello81} with a time constant of 10.0~ps. Equations of motion were
-integrated with the leapfrog algorithm using a timestep of 2~fs. Long range
+integrated with the leapfrog algorithm using a timestep of 2~fs. Long-range
 electrostatic interactions were calculated using the PME method~\cite{darden93,essman95}, with a fourth order
 smoothing spline. A real space cut-off of 1.0~nm was employed with grid spacing of 0.12~nm in the reciprocal space.
 Lennard-Jones potentials were cut off at 1.4~nm, with a dispersion correction applied to both energy and pressure. All covalent bonds in lipids were constrained using the LINCS algorithm~\cite{hess97}, 
 whereas water molecules were constrained using SETTLE~\cite{miyamoto92}. Twin-range cutoffs,
-1.0~nm and 1.6~nm, were used for the neighbor lists with the longrange neighbor list updated every
-10 steps. This simulation protocol corresponds to the protocol used in Ref~\cite{jambeck13}. 
+1.0~nm and 1.6~nm, were used for the neighbor lists with the long-range neighbor list updated every
+10 steps. This simulation protocol corresponds to the protocol used in Ref~\citenum{jambeck13}. 
 
 \subsection{Kukol}
-A bilayer patch with 512 POPC lipids was constructed and hydrated with $\sim$40 SPC water molecules per lipid. 
+A bilayer patch with 512 POPC lipids was constructed and hydrated with $\sim$40 SPC~\cite{berendsen81} water molecules per lipid. 
 The force field parameters were obtained from Lipidbook \cite{domanski10}.
 This bilayer was simulated with a 2~fs time step for a total of 50~ns and coordinates were saved every 100~ps. 
 All bonds were constrained with LINCS~\cite{hess97,hess07}. PME~\cite{darden93,essman95} was employed for the long-range electrostatics. Lennard-Jones interactions 
-were cut off at 1.4~nm. A neighbour list with a radius of 0.8~nm was updated every 5~steps. The constant temperature of 298~K 
+were cut off at 1.4~nm. A neighbor list with a radius of 0.8~nm was updated every 5~steps. Temperature of 298~K 
 was maintained with the Berendsen thermostat \cite{berendsen84} with a time constant of 0.1~ps. The Berendsen barostat \cite{berendsen84} 
 was employed for semi-isotropical pressure coupling at 1~bar.
 
-\subsection{Chiu et al.}
+\subsection{Chiu}
 The force field parameters and the initial configuration were available through the Lipidbook~\cite{domanski10}.
-Timestep of 2~fs was used with leapfrog integrator. Covalent bond lengths were constrained with LINCS algorithm~\cite{hess97,hess07}. 
-Coordinates were written every 10~ps. PME~\cite{darden93,essman95} with real space cut-off of 1.0~nm was used 
+Timestep of 2~fs was used with leapfrog integrator. Covalent bond lengths were constrained with the LINCS algorithm~\cite{hess97,hess07}. 
+Coordinates were written every 10~ps. PME~\cite{darden93,essman95} with a real space cut-off of 1.0~nm was used 
 for electrostatics. Twin range cut-off was used for the Lennard-Jones interactions with short and long cut-offs of 1.0~nm and 1.6~nm, respectively.
-The neighbour lists with a cut-off of 1.0~nm were updated every 5 steps. Temperature was coupled separately
+The neighbor lists with a cut-off of 1.0~nm were updated every 5 steps. Temperature was coupled separately
 for lipids and water to 298~K with the velocity-rescale method~\cite{bussi07} with a coupling constant 0.2~ps.
 Pressure was semi-isotropically coupled to the atmospheric pressure with the Parrinello--Rahman method~\cite{parrinello81}.
 
-\subsection{Ulmschneider}
+\subsection{Ulmschneiders}
 The initial structure containing 128 POPC molecules with 3328 TIP3P water~\cite{jorgensen83} molecules (26 per lipid) was downloaded from Lipidbook \cite{domanski10} 
 together with the topologies. This bilayer was simulated for 100~ns with a time step of 2~fs and the data was saved every 10~ps. The bonds involving hydrogen atoms were 
 constrained with LINCS~\cite{hess97,hess07}. The temperature was kept at 298~K with the Berendsen thermostat~\cite{berendsen84}. The pressure was semi-isotropically coupled to the Berendsen 
-barostat~\cite{berendsen84} with a time constant of 1~ps and a target pressure of 1~bar. PME~\cite{darden93,essman95} was employed for long range electrostatics and a cut-off of 1~ns was employed for 
-the Lennard-Jones interactions. A neighbour list with a radius of 1~nm was updated every 10~steps. 
+barostat~\cite{berendsen84} with a time constant of 1~ps and a target pressure of 1~bar. PME~\cite{darden93,essman95} was employed for long-range electrostatics and a cut-off of 1~ns was employed for 
+the Lennard-Jones interactions. A neighbor list with a radius of 1~nm was updated every 10~steps. 
 
-Additionally, the simulations were repeated with the dispersion correction applied to pressure and temperature. Even though the area per lipid decrease
-d slightly, the headgroup order parameters were only slightly affected.
+Additionally, the simulations were repeated with the dispersion correction applied to pressure and temperature. Even though the area per lipid decreased slightly, the headgroup order parameters were only slightly affected.
 
-\subsection{Tj\"ornhammar et al.}
+\subsection{Tj\"ornhammar14}
 The gel phase DPPC bilayer structure delivered by Tj\"ornhammar  and Edholm~\cite{tjornhammar14} was ran for 5~ns at 343~K in order to destroy the 
 ordered gel configuration. This was followed by a 200~ns simulation at 323~K, i.e. in the fluid phase. The last 100~ns of this simulation was used for analysis. 
-The same mdp file as in the Supplementary Information section of the original paper ~\cite{tjornhammar14} was used except for the simulation temperature.
+Except for the simulation temperature, the same mdp file as in the Supplementary Information of the original paper~\cite{tjornhammar14} was used.
 
 \subsection{Lee-CHARMM36-UA}
 A hydrated bilayer consisting of 72 DLPC lipids and 2189 water molecules
- is constructed using the model by Lee et al. ~\cite{lee14}. This model describes 
- the important all-atom CHARMM36 character of the lipid headgroup but 
+ was constructed using the model by Lee et al.~\cite{lee14}. This model describes 
+ the important all-atom CHARMM36 character of the lipid headgroup, but 
 reduces the details of the lipid chains into a united-atom model.
-The initial  equilibrated structure was downloaded from the web page of J. Klauda, 
-Department of Chemical and Biomolecular Engineering University of Maryland.
- The parameter files are taken from the Supplementary Material of Ref. \citenum{lee14}.  
-This bilayer was equilibrated for 20~ns and the production run was 50~ns long,  with data was saved every 20~ps. 
+The initial  equilibrated structure was downloaded from the web page of J.~Klauda, 
+Department of Chemical and Biomolecular Engineering, University of Maryland.
+ The parameter files were taken from the Supplementary Material of Ref.~\citenum{lee14}.  
+This bilayer was equilibrated for 20~ns and the production run was 50~ns long,  with data saved every 20~ps. 
  The equations of motion were integrated using the multiple time step Verlet r-RESPA algorithm with
-a time step of 2 fs, and a calculation of the electrostatic forces only every two timesteps.
+a time step of 2 fs, and electrostatic forces calculated only every two timesteps.
  Covalent bonds between heavy and hydrogen atoms were constrained 
 using SHAKE/RATTLE algorithm~\cite{miyamoto92}.
 
 The temperature was kept at 323~K with a Langevin thermostat
 with a damping coefficient of 5~ps.  The modified NAMD version of the
-Nose-Hoover barostat with Langevin dynamics (piston period of
+Nos\'{e}--Hoover barostat with Langevin dynamics (piston period of
 0.1 ps and piston decay time of 0.05 ps)  was used semi-isotropically 
 to reach the averaged target pressure of 1~bar and an averaged zero surface tension.
 PME~\cite{darden93,essman95} was employed for long range electrostatics. 
 A cut-off of 1.2~nm was employed for  the Lennard-Jones interactions, with 
 a force-based switching function  for distances beyond 1~nm.
-A neighbour list with a radius of 1.4~nm was updated every 10~timesteps. 
+Neighbor lists with a radius of 1.4~nm were updated every 10~timesteps. 
 
 NAMD was developed by the Theoretical and Computational Biophysics Group in the
  Beckman Institute for Advanced Science and Technology at the University
  of Illinois at Urbana-Champaign\cite{phillips05}.
 
 \subsection{Botan-CHARMM36-UA}
-This model is similar to the Lee-CHARMM36-UA model with a few  differences.
+This model was similar to the Lee-CHARMM36-UA model with a few  differences.
 A hydrated bilayer consisting of 128 DLPC lipids and 3840 water
-molecules is described by a model derived from the CHARMM27-UA model by H\'enin et al.~\cite{henin08}.
+molecules was described by a model derived from the CHARMM27-UA model by H\'enin et al.~\cite{henin08}.
 
-The distribution into all-atom  (AA) and united-atom (UA) parts within the lipids is the same
+The distribution into all-atom  (AA) and united-atom (UA) parts within the lipids was the same
 as in the original CHARMM27-UA model by H\'enin et al.~\cite{henin08}.  
 This distribution differs from the one by Lee-CHARMM36-UA model solely
 for the first methylene groups of the two acyl chains (C22 and C32 in CHARMM36 topology): 
-their hydrogens are merged into  united atoms, whereas in Lee's model their hydrogens are described explicitely.
-The  united-atom Berger model ~\cite{berger97} was used for the tails and the UA-AA interactions as in Ref. ~\citenum{henin08}. 
-The difference between this model and the original one by H\'enin~\cite{henin08} is the replacement of the 
-AA parameters for the heads by  the parameters of the all-atom
- CHARMM36 force-field~\cite{klauda10}. Contrarily to the model by Lee et al.~\cite{lee14}, no reparametrization was done.
+Their hydrogens are merged into  united atoms, whereas in Lee's model their hydrogens are described explicitly.
+The UA Berger model~\cite{berger97} was used for the tails and the UA-AA interactions as in Ref.~\citenum{henin08}. 
+The difference between this model and the original one by H\'enin~\cite{henin08} was the replacement of the 
+AA parameters for the heads by  the parameters of the AA
+ CHARMM36 force-field~\cite{klauda10}. Contrarily to the model by Lee et al.~\cite{lee14}, no reparameterization was done.
 
-The non-bonded interactions are calculated using an atom-based switching function with short and long cut-offs of 0.8 and 1.2~nm. 
-Long range electrostatic interactions are implemented using the particle-particle particle-mesh solver with a relative accuracy of $10^{-4}$. The system 
-is first equilibrated for 30~ns in the NP$\gamma$T ensemble (Nos\'{e}--Hoover~\cite{nose84,hoover85} style thermostat and barostat with anisotropic pressure coupling) 
-at 323~K and 1~bar with timestep of 1~fs. The following 20~ns of dynamics are taken for calculation of configurational averages. 
-Simulations were carried out by using the LAMMPS package~\cite{plimpton95}. %( http://doi.org/10.1006/jcph.1995.1039 )., the input files are available ( http://dx.doi.org/10.5281/zenodo.13821 ).
+The non-bonded interactions were calculated using an atom-based switching function with short and long cut-offs of 0.8 and 1.2~nm. 
+Long-range electrostatic interactions were implemented using the particle-particle particle-mesh solver with a relative accuracy of $10^{-4}$. The system 
+was first equilibrated for 30~ns in the NP$\gamma$T ensemble (Nos\'{e}--Hoover~\cite{nose84,hoover85} style thermostat and barostat with anisotropic pressure coupling) 
+at 323~K and 1~bar with a timestep of 1~fs. The following 20~ns of dynamics were taken for calculation of configurational averages. 
+Simulations were carried out using the LAMMPS package~\cite{plimpton95}. %( http://doi.org/10.1006/jcph.1995.1039 )., the input files are available ( http://dx.doi.org/10.5281/zenodo.13821 ).
 
-\section{Details of the rough subjective force field ranking (Figure 4)} 
+\pagebreak
+\section{Details of the rough subjective force field ranking (Fig.~4)} 
 
 The assessment was based fully on the Fig. 2.
 %
@@ -553,7 +561,7 @@ each carbon was then assigned to one of the following groups:
 (sum of magnitude and forking deviation steps from 3 to 5), and
 "major deviation from experiments"
 (sum of magnitude and forking deviation steps from 6 to 8).
-These groups are indicated by colors in Fig.~2.
+These groups are indicated by colors in Fig.~4.
 (Note that for $\mathrm{g_2}$, for which there can be no forking,
 the corresponding group assigment limits were: 0, 1, 2, and 3.)
 
@@ -565,55 +573,57 @@ To this end, the groups were given the following weights:
 2 (clear deviation from experiments),
 4 (major deviation from experiments),
 and the weights of the five carbons were summed up.
-The sum, given in the $\Sigma$-column of Fig.~2,
+The sum, given in the $\Sigma$-column of Fig.~4,
 was then used to (roughly and subjectively, as should be clear from the
 above description) rank the force fields.
 
 \newpage
 
-\section{The effect of cholesterol on glycerol backbone structure}
+\section{Effect of cholesterol on glycerol backbone structure}
 \begin{figure*}[]
   \centering
   \includegraphics[width=17.2cm]{../Fig/dihsCHOLcharmm.pdf}
   \caption{\label{dihsCHOLcharmm}
-    The effect of cholesterol content on the POPC glycerol backbone and choline dihedral angles in CHARMM36 model (T=303~K).}
+    The effect of cholesterol content on the POPC glycerol backbone and choline dihedral angles in the CHARMM36 model (T=303~K).}
 \end{figure*}
 
 \begin{figure*}[]
   \centering
   \includegraphics[height=17.2cm]{../Fig/GlycerolOrientation.eps}
   \caption{\label{GlycerolOrientation}
-    Orientation of g$_1$-g$_3$ (a) and g$_2$-g$_3$ (b) respect to membrane normal as a function of cholesterol content
-    calculated from CHARMM36 simulations in 298K and 303K.}
+    Orientations of the (a) g$_1$--g$_3$ and (b) g$_2$--g$_3$ vectors with respect to the membrane normal
+    as a function of cholesterol content.
+    Calculated from the CHARMM36 simulations at 298 and 303~K.}
 \end{figure*}
 
 
 \newpage
 
 \section{Author Contributions}
-{\it Alexandru Botan} provided simulation results for charmm36-UA\\
+
+{\it Alexandru Botan} provided simulation results for CHARMM36-UA.\\[0.7ex]
 {\it Fernando Favela} prepared, performed and analyzed simulations
-with popc and cholesterol for the CHARMM36 All-Atom FF. \\
-{\it Patrick F. J. Fuchs} ran and analyzed the Poger simulations. Provided scientific information which significantly advanced the project (signs and forking of order parameters). \\
-{\it Matti Javanainen} prepared and performed simulations with multiple lipid models and analyzed the results. Supervised the work of JT.\\
-{\it Matej Kanduc} provided simulation results for the Berger DLPC model \\
-{\it Waldemar Kulig} prepared the MD simulations with cholesterol for the MacRog FF \\
-{\it Antti Lamberg} prepared and performed simulations with Berger and its variants to show the importance of the signs and stereospecific labeling of the order parameters. \\
-{\it Claire Loison} provided simulation results for charmm36-UA. \\
-{\it Alexander Lyubartsev} provided simulation results for Högberg08 force field.\\
-{\it Markus S. Miettinen} co-designed the project with OHSO and supported in the work management. Provided Berger DMPC trajectory; prepared parameter files for 72 lipids %POPC \& DPPC
-CHARMM36. Made Figures 2--4 and 7--9.\\
-{\it Luca Monticelli}: Critical discussions in all phases of the project. Collaboration with Jukka  M{\"a}{\"a}tt{\"a}. \\
-{\it Jukka M{\"a}{\"a}tt{\"a}}  prepared and performed simulations with Berger and Slipids models and analyzed the results.\\
-{\it O. H. Samuli Ollila} co-designed the project with MSM and managed the work. Ran and analyzed several simulations. Wrote the manuscript. \\
-{\it Marius Retegan} prepared and validated the GROMACS compatible parameter files for GAFFlipid and Lipid14 force fields.\\
-{\it Tomasz Rog} provided the topologies for the MacRog model and also the full hydration simulation data with this model. \\
+with POPC and cholesterol for the CHARMM36 all-atom force field. \\[0.7ex]
+{\it Patrick F. J. Fuchs} ran and analyzed the Poger simulations. Provided scientific information which significantly advanced the project (signs and forking of order parameters). \\[0.7ex]
+{\it Matti Javanainen} prepared and performed simulations with multiple lipid models and analyzed the results. Supervised the work of JT.\\[0.7ex]
+{\it Matej Kandu\v{c}} provided simulation results for the Berger DLPC model. \\[0.7ex]
+{\it Waldemar Kulig} prepared the simulations with cholesterol for the MacRog force field. \\[0.7ex]
+{\it Antti Lamberg} prepared and performed simulations with Berger and its variants to show the importance of the signs and stereospecific labeling of the order parameters. \\[0.7ex]
+{\it Claire Loison} provided simulation results for CHARMM36-UA. \\
+{\it Alexander Lyubartsev} provided simulation results for H\"ogberg08 force field.\\[0.7ex]
+{\it Markus S. Miettinen} co-designed the project with OHSO and supported in the work management. Provided the Berger DMPC trajectory; prepared parameter files for 72 lipids %POPC \& DPPC
+CHARMM36. Made the Figs. 2--4 and 7--9.\\[0.7ex]
+{\it Luca Monticelli} contributed critical discussions in all phases of the project. Collaborated with JM. \\[0.7ex]
+{\it Jukka M{\"a}{\"a}tt{\"a}}  prepared and performed simulations with Berger and Slipids models and analyzed the results.\\[0.7ex]
+{\it O. H. Samuli Ollila} co-designed the project with MSM and managed the work. Ran and analyzed several simulations. Wrote the manuscript. \\[0.7ex]
+{\it Marius Retegan} prepared and validated the GROMACS compatible parameter files for GAFFlipid and Lipid14 force fields.\\[0.7ex]
+{\it Tomasz R\'og} provided the topologies for the MacRog model, as well as the full hydration simulation data with this model. \\[0.7ex]
 {\it Hubert Santuz} prepared and performed the cholesterol simulations with CHARMM36 and analyzed the results. 
-Made significant contribution in the data management of the project.\\
-{\it Joona Tynkkynen} prepared and performed the dehydration simulations with the MacRog FF.\\
+Made significant contribution in the data management of the project.\\[0.7ex]
+{\it Joona Tynkkynen} prepared and performed the dehydration simulations with the MacRog force field.\\
 
 
-%\newpage
+\newpage
 
 \bibliography{refs}
 
