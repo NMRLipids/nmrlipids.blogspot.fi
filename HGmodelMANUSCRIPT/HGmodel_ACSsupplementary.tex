@@ -379,7 +379,7 @@ Note that Poger and Mark tested the effect of PME vs RF in Ref.~\citenum{poger12
 
 Since Poger lipids come from the GROMOS force field, it is important to note that GROMOS uses the RF scheme for computing electrostatics (this is the method used for the 
 force field parameterization). Using setup i) based on RF, we were able to reproduce the results (i.e. area per lipid value of 0.63~nm$^2$) from the original work only with 
-GROMACS versions 4.0.X and earlier (the original authors~\cite{poger10} used GROMACS version 3.3.3). When switching to versions 4.5.X and above, the area per lipid dropped to below 0.58~nm$^2$. 
+GROMACS versions 4.0.X and earlier (the original authors~\cite{poger10} used GROMACS version 3.3.3). When switching to versions 4.5.X and above, the area per lipid dropped below 0.58~nm$^2$. 
 The GROMACS developers were contacted and a redmine issue opened (\url{http://redmine.gromacs.org/issues/1400}). Outcome: the difference comes from the new Trotter decomposition 
 introduced in versions 4.5.X. A fix has been introduced in version 4.6.6 that allows a recovery of an area per lipid value of 0.615~nm$^2$. The results in terms of area per lipid using the different 
 GROMACS versions are available at Ref.~\citenum{pogerFILESrf2}.
@@ -465,7 +465,7 @@ NAMD was developed by the Theoretical and Computational Biophysics Group in the
  of Illinois at Urbana-Champaign\cite{phillips05}.
 
 \subsection{Botan-CHARMM36-UA}
-This model was similar to the Lee-CHARMM36-UA model with a few  differences.
+This model was similar to the Lee-CHARMM36-UA model with a few  differences~\cite{botan15}.
 A hydrated bilayer consisting of 128 DLPC lipids and 3840 water
 molecules was described by a model derived from the CHARMM27-UA model by H\'enin et al.~\cite{henin08}.
 
